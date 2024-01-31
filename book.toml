@@ -1,5 +1,7 @@
 [book]
-authors = []
+title = "PlaynPlay SDK 연동 가이드 문서"
+authors = ["(주)뉴인"]
+description = "Desktop, android, iOS 용 PlaynPlay SDK 연동 가이드 문서입니다."
 language = "ko"
 multilingual = true
 src = "src"
