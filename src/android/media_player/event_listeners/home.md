@@ -1,45 +1,45 @@
 # 이벤트 리스너
 
-EventListener는 이벤트 처리를 위한 인터페이스로, 다음과 같은 함수를 제공합니다. 각각 함수에 대한 자세한 설명은 [이벤트 핸들러](../event_handlers/home.md)를, 사용 방법은 [addEventListener()](../event_listeners/home.md)를 참고하시면 됩니다. 단, Player에 이미 존재하는 이벤트 리스너일 경우에는, 안드로이드 SDK는 이벤트 핸들러만 제공합니다.
+EventListener는 이벤트 처리를 위한 인터페이스로, 다음과 같은 함수를 제공합니다. 각각 함수에 대한 자세한 설명은 [이벤트 핸들러](../event_handlers/home.md)를, 사용 방법은 [addEventListener()](../methods/details.md#addeventlistener)를 참고하시면 됩니다. 단, Player에 이미 존재하는 이벤트 리스너일 경우에는, 안드로이드 SDK는 이벤트 핸들러만 제공합니다.
 
-[onDurationChange()](./on_duration_change.md)
+- [onDurationChange()](./details.md#ondurationchange)
 
-[onEmptied()](./on_emptied.md)
+- [onEmptied()](./details.md#onemptied)
 
-[onEnded()](./on_ended.md)
+- [onEnded()](./details.md#onended)
 
-[onError()](./on_error.md)
+- [onError()](./details.md#onerror)
 
-[onLoadedData()](./on_loaded_data.md)
+- [onLoadedData()](./details.md#onloadeddata)
 
-[onLoadedMetadata()](./on_loaded_metadata.md)
+- [onLoadedMetadata()](./details.md#onloadedmetadata)
 
-[onLoadStart()](./on_load_start.md)
+- [onLoadStart()](./details.md#onloadstart)
 
-[onPause()](./on_pause.md)
+- [onPause()](./details.md#onpause)
 
-[onPlay()](./on_play.md)
+- [onPlay()](./details.md#onplay)
 
-[onPlaying()](./on_playing.md)
+- [onPlaying()](./details.md#onplaying)
 
-[onPositionDiscontinuity()](./on_position_discontinuity.md)
+- [onPositionDiscontinuity()](./details.md#onpositiondiscontinuity)
 
-[onProgress()](./on_progress.md)
+- [onProgress()](./details.md#onprogress)
 
-[onRateChange()](./on_rate_change.md)
+- [onRateChange()](./details.md#onratechange)
 
-[onRepeatRangeChange()](./on_repeat_range_change.md)
+- [onRepeatRangeChange()](./details.md#onrepeatrangechange)
 
-[onResizeModeChange()](./on_resize_mode_change.md)
+- [onResizeModeChange()](./details.md#onresizemodechange)
 
-[onSeeked()](./on_seeked.md)
+- [onSeeked()](./details.md#onseeked)
 
-[onSeeking()](./on_seeking.md)
+- [onSeeking()](./details.md#onseeking)
 
-[onSuspend()](./on_suspend.md)
+- [onSuspend()](./details.md#onsuspend)
 
-[onTimeUpdate()](./on_time_update.md)
+- [onTimeUpdate()](./details.md#ontimeupdate)
 
-[onVolumeChange()](./on_volume_change.md)
+- [onVolumeChange()](./details.md#onvolumechange)
 
-[onWaiting()](./on_waiting.md)
+- [onWaiting()](./details.md#onwaiting)

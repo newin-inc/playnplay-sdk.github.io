@@ -1,54 +1,54 @@
 # 이벤트 핸들러
 
 이벤트 핸들러의 종류와 사용 방법에 대한 설명입니다.
-이벤트 핸들러 대신 사용 방법에 따라서 [이벤트 리스너](../event_listeners/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 리스너에서 사용되는 파라미터는 이벤트 핸들러의 파라미터와 동일합니다. 이벤트 리스너의 사용 방법은 [addEventListener()](../event_listeners/home.md)를 참고하시면 됩니다.
+이벤트 핸들러 대신 사용 방법에 따라서 [이벤트 리스너](../event_listeners/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 리스너에서 사용되는 파라미터는 이벤트 핸들러의 파라미터와 동일합니다. 이벤트 리스너의 사용 방법은 [addEventListener()](../methods/details.md#addeventlistener)를 참고하시면 됩니다.
 
-[DurationChange](./duration_change.md)
+- [DurationChange](./details.md#durationchange)
 
-[Emptied](./emptied.md)
+- [Emptied](./details.md#emptied)
 
-[Ended](./ended.md)
+- [Ended](./details.md#ended)
 
-[Error](./error.md)
+- [Error](./details.md#error)
 
-[LoadedData](./loaded_data.md)
+- [LoadedData](./details.md#loadeddata)
 
-[LoadedMetadata](./loaded_metadata.md)
+- [LoadedMetadata](./details.md#loadedmetadata)
 
-[LoadStart](./load_start.md)
+- [LoadStart](./details.md#loadstart)
 
-[MediaItemTransition](./media_item_transition.md)
+- [MediaItemTransition](./details.md#mediaitemtransition)
 
-[Pause](./pause.md)
+- [Pause](./details.md#pause)
 
-[Play](./play.md)
+- [Play](./details.md#play)
 
-[PlaybackStateChange](./playback_state_change.md)
+- [PlaybackStateChange](./details.md#playbackstatechange)
 
-[Playing](./playing.md)
+- [Playing](./details.md#playing)
 
-[PositionDiscontinuity](./position_discontinuity.md)
+- [PositionDiscontinuity](./details.md#positiondiscontinuity)
 
-[Progress](./progress.md)
+- [Progress](./details.md#progress)
 
-[RateChange](./rate_change.md)
+- [RateChange](./details.md#ratechange)
 
-[RepeatModeChange](./repeat_mode_change.md)
+- [RepeatModeChange](./details.md#repeatmodechange)
 
-[RepeatRangeChange](./repeat_range_change.md)
+- [RepeatRangeChange](./details.md#repeatrangechange)
 
-[ResizeModeChange](./resize_mode_change.md)
+- [ResizeModeChange](./details.md#resizemodechange)
 
-[Seeked](./seeked.md)
+- [Seeked](./details.md#seeked)
 
-[Seeking](./seeking.md)
+- [Seeking](./details.md#seeking)
 
-[Suspend](./suspend.md)
+- [Suspend](./details.md#suspend)
 
-[TimeUpdate](./time_update.md)
+- [TimeUpdate](./details.md#timeupdate)
 
-[VideoSizeChange](./video_size_change.md)
+- [VideoSizeChange](./details.md#videosizechange)
 
-[VolumeChange](./volume_change.md)
+- [VolumeChange](./details.md#volumechange)
 
-[Waiting](./waiting.md)
+- [Waiting](./details.md#waiting)

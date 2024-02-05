@@ -1,7 +1,7 @@
 # 기타 데이터 클래스
 
-[RepeatRange](./repeat_range.md)
+- [RepeatRange](./details.md#repeatrange)
 
-[TimeRange](./time_range.md)
+- [TimeRange](./details.md#timerange)
 
-[TimeRanges](./time_ranges.md)
+- [TimeRanges](./details.md#timeranges)

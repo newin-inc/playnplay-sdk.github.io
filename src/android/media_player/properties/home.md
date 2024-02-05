@@ -1,43 +1,43 @@
 # 속성
 
-[autoplay](./autoplay.md)
+- [autoplay](./details.md#autoplay)
 
-[buffered](./buffered.md)
+- [buffered](./details.md#buffered)
 
-[currentMediaItem](./current_media_item.md)
+- [currentMediaItem](./details.md#currentmediaitem)
 
-[currentMediaItemIndex](./current_media_item_index.md)
+- [currentMediaItemIndex](./details.md#currentmediaitemindex)
 
-[currentSrc](./current_src.md)
+- [currentSrc](./details.md#currentsrc)
 
-[currentTime](./current_time.md)
+- [currentTime](./details.md#currenttime)
 
-[defaultMuted](./default_muted.md)
+- [defaultMuted](./details.md#defaultmuted)
 
-[defaultPlaybackRate](./default_playback_rate.md)
+- [defaultPlaybackRate](./details.md#defaultplaybackrate)
 
-[deviceVolume](./device_volume.md)
+- [deviceVolume](./details.md#devicevolume)
 
-[duration](./duration.md)
+- [duration](./details.md#duration)
 
-[ended](./ended.md)
+- [ended](./details.md#ended)
 
-[error](./error.md)
+- [error](./details.md#error)
 
-[loop](./loop.md)
+- [loop](./details.md#loop)
 
-[mediaItems](./media_items.md)
+- [mediaItems](./details.md#mediaitems)
 
-[muted](./muted.md)
+- [muted](./details.md#muted)
 
-[paused](./paused.md)
+- [paused](./details.md#paused)
 
-[playbackRate](./playback_rate.md)
+- [playbackRate](./details.md#playbackrate)
 
-[preservesPitch](./preserves_pitch.md)
+- [preservesPitch](./details.md#preservespitch)
 
-[repeatRange](./repeat_range.md)
+- [repeatRange](./details.md#repeatrange)
 
-[resizeMode](./resize_mode.md)
+- [resizeMode](./details.md#resizemode)
 
-[seeking](./seeking.md)
+- [seeking](./details.md#seeking)

@@ -167,7 +167,7 @@ mediaPlayer.addEventHandler(
 EventHandler.pause는 미디어가 일시 정지 상태로 진입하는 시점에 사용하기 위한 핸들러입니다.
 <div aligh="right">
 이벤트 리스너: <a href="../event_listeners/details.md#onpause">onPause()</a>
-비교: <a href="./play.md">play</a>
+비교: <a href="#play">play</a>
 </div>
 
 ```swift

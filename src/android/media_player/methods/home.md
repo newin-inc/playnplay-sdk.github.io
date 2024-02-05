@@ -1,27 +1,27 @@
 # 메서드
 
-[fastSeek()](./fast_seek.md)
+- [fastSeek()](./details.md#fastseek)
 
-[load()](./load.md)
+- [load()](./details.md#load)
 
-[pause()](./pause.md)
+- [pause()](./details.md#pause)
 
-[play()](./play.md)
+- [play()](./details.md#play)
 
-[prepare()](./prepare.md)
+- [prepare()](./details.md#prepare)
 
-[release()](./release.md)
+- [release()](./details.md#release)
 
-[seekBack()](./seek_back.md)
+- [seekBack()](./details.md#seekback)
 
-[seekForward()](./seek_forward.md)
+- [seekForward()](./details.md#seekforward)
 
-[seekTo()](./seekTo.md)
+- [seekTo()](./details.md#seekto)
 
-[addEventHandler()](./add_event_handler.md)
+- [addEventHandler()](./details.md#addeventhandler)
 
-[removeEventHandler()](./remove_event_handler.md)
+- [removeEventHandler()](./details.md#removeeventhandler)
 
-[addEventListener()](./add_event_listener.md)
+- [addEventListener()](./details.md#addeventlistener)
 
-[removeEventListener()](./remove_event_listener.md)
+- [removeEventListener()](./details.md#removeeventlistener)

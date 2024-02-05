@@ -1,6 +1,6 @@
 # 키보드, 패드를 사용한 미디어 제어
 
-presentMediaPlayer()를 호출하여 미디어 플레이어를 생성하면, 키보드 또는 패드로 미디어를 제어할 수 있습니다. 또한 presnetMediaPlayer()를 통해 미디어 플레이어를 생성할 때  안드로이드 SDK에서 제공하는 MediaPlayerView를 이용하는데, 이 MediaPlayerView는 더 많은 제어 기능을 지원합니다. 사용 가능한 키 및 제스처는 아래와 같습니다.
+[presentMediaPlayer()](../../how_to_use/home.md#presentmediaplayer)를 호출하여 미디어 플레이어를 생성하면, 키보드 또는 패드로 미디어를 제어할 수 있습니다. 또한 presnetMediaPlayer()를 통해 미디어 플레이어를 생성할 때, 안드로이드 SDK에서 제공하는 MediaPlayerView를 이용하는데, 이 MediaPlayerView는 더 많은 제어 기능을 지원합니다. 사용 가능한 키 및 제스처는 아래와 같습니다.
 
 |키 또는 제스처|동작|
 |---|---|
