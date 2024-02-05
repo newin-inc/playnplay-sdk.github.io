@@ -61,7 +61,7 @@ Embedded Content** 섹션이 있습니다. SDK를 추가하기 위해서 **+** �
 --------
 ## AppDelegate 설정
 
-미디어 재생 서비스를 설정하는 부분을 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:  [UIApplication.LaunchOptionsKey: Any]?)에 추가합니다. 이때, CP ID를 파라미터로 사용합니다.
+미디어 재생 서비스를 설정하는 부분을 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:  [UIApplication.LaunchOptionsKey: Any]?)에 추가합니다.
 
 ```swift
 func application(
@@ -69,15 +69,11 @@ func application(
     didFinishLaunchingWithOptions launchOptions:
     [UIApplication.LaunchOptionsKey: Any]?
 ) -> Bool {
-    MediaPlaybackService.initialize("xxx-xx-xxx") // CP ID
+    MediaPlaybackService.initialize(appId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx")
 
     return true
 }
 ```
-
-CP ID는 콘솔의 메인 화면에서 확인가능합니다. 복사를 하여 붙여넣기를 하실 수 있습니다.
-
-![](./img/get_cp_id.png)
 
 <br><br><br><br>
 

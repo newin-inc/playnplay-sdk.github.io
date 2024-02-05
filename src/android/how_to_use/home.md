@@ -15,7 +15,7 @@ class MainActivity : ComponentActivity() {
 		super.onCreate(savedInstanceState)
 		// 먼저 startMediaPlayerService를 호출하여 서비스를 시작합니다.
 		if (savedInstanceState == null) {
-			startMediaPlayerService()
+			startMediaPlayerService("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx") // App 아이디
 		}
 	}
 }
@@ -27,7 +27,7 @@ Button(
 		// uri를 입력 받아서 아이템을 만듭니다. 이때, 반드시 DRM 설정을 합니다.
 		val mediaItem = MediaItem.fromUri("미디어주소.mp4")
 			.withDrmConfiguration(
-				appId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
+				appId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx", // App 아이디
 				userId = "사용자 아이디"
 			)
 		// 미디어를 엽니다.

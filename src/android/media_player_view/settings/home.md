@@ -14,14 +14,14 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (savedInstanceState == null) {
-            startMediaPlayerService()
+            startMediaPlayerService("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx")  // App 아이디
         }
     }
 
     fun openMedia(uri: String) {
         val mediaItem = MediaItem.fromUri(uri) // "미디어주소.mp4"
             .withDrmConfiguration(
-                appId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
+                appId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",  // App 아이디
                 userId = "사용자 아이디"
             )
         presentMediaPlayer(mediaItem)
