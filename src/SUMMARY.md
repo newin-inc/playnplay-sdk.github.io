@@ -41,6 +41,7 @@
             - [상세](./android/media_player_view/screen_layout/details.md)
         - [키보드, 패드를 사용한 미디어 제어](./android/media_player_view/media_control_using_keyboard_and_pad/home.md)
     - [FAQ](./android/faq/home.md)
+    - [변경 이력](./android/revision_history/home.md)
 
 - [iOS](./ios/home.md)
     - [시작하기](./ios/introduction/home.md)
