@@ -2,7 +2,8 @@
 
 onDurationChange()
 <div align="right">
-이벤트 핸들러: <a href="../event_handlers/details.md#durationchange">DurationChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#durationchange">DurationChange</a><br>
+참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
 </div>
 
 ```kotlin
@@ -41,7 +42,8 @@ fun onEnded()
 # onError()
 
 <div align="right">
-이벤트 핸들러: <a href="../event_handlers/details.md#error">Error</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#error">Error</a><br>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">PlaybackException</a>
 </div>
 
 ```kotlin
@@ -134,7 +136,9 @@ fun onPlaying()
 주의: Player.Listener의 [onPositionDiscontinuity()](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onPositionDiscontinuity(androidx.media3.common.Player.PositionInfo,androidx.media3.common.Player.PositionInfo,int))는 이름만 같고, 사용 방법이 다릅니다.
 
 <div align="right">
-이벤트 핸들러: <a href="../event_handlers/details.md#positiondiscontinuity">PositionDiscontinuity</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#positiondiscontinuity">PositionDiscontinuity</a><br>
+참고: <a href="../../media_player/home.md">MediaPlayer</a><br>
+참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
 </div>
 
 ```kotlin
@@ -164,7 +168,8 @@ fun onProgress()
 # onRateChange()
 
 <div align="right">
-이벤트 핸들러: <a href="../event_handlers/details.md#ratechange">RateChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#ratechange">RateChange</a><br>
+참고: <a href="../properties/details.md#playbackrate">playbackRate</a>
 </div>
 
 ```kotlin
@@ -177,7 +182,8 @@ fun onRateChange(playbackRate: Float)
 # onRepeatRangeChange()
 
 <div align="right">
-이벤트 핸들러: <a href="../event_handlers/details.md#repeatrangechange">RepeatRangeChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#repeatrangechange">RepeatRangeChange</a><br>
+참고: <a href="../../media_player/etc/details.md#repeatrange">MediaPlayer.RepeatRange</a>
 </div>
 
 ```kotlin
@@ -190,7 +196,8 @@ fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?)
 # onResizeModeChange()
 
 <div align="right">
-이벤트 핸들러: <a href="../event_handlers/details.md#resizemodechange">ResizeModeChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#resizemodechange">ResizeModeChange</a><br>
+참고: <a href="https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode">AspectRatioFrameLayout.ResizeMode</a>
 </div>
 
 ```kotlin
@@ -242,7 +249,8 @@ fun onSuspend()
 # onTimeUpdate()
 
 <div align="right">
-이벤트 핸들러: <a href="../event_handlers/details.md#timeupdate">TimeUpdate</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#timeupdate">TimeUpdate</a><br>
+참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
 </div>
 
 ```kotlin
@@ -255,7 +263,8 @@ fun onTimeUpdate(position: Duration)
 # onVolumeChange()
 
 <div align="right">
-이벤트 핸들러: <a href="../event_handlers/details.md#volumechange">VolumeChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#volumechange">VolumeChange</a><br>
+참고: <a href="../properties/details.md#devicevolume">deviceVolume</a>
 </div>
 
 ```kotlin
