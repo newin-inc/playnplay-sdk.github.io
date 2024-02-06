@@ -20,7 +20,7 @@
 ## 수정
 
 ### [AppDelegate 설정](../how_to_set/project_settings.md#appdelegate-설정)
-CP 아이디를 App 아이디로 수정
+CP 아이디를 App 아이디로 변경
 
 ### [seekBackIncrement](../media_player/properties/details.md#seekbackincrement)
 표에 설정 부분 추가

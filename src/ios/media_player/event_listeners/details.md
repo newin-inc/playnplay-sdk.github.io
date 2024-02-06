@@ -1,6 +1,6 @@
 # onDurationChange(duration:)
 <div align="right">
-<a href="../event_handlers/details.md#durationchange">이벤트 핸들러: EventHandler.durationChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#durationchange">EventHandler.durationChange</a>
 </div>
 
 ```swift
@@ -12,7 +12,7 @@ func onDurationChange(duration: Duration)
 --------
 # onEmptied()
 <div align="right">
-<a href="../event_handlers/details.md#emptied">이벤트 핸들러: EventHandler.emptied</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#emptied">EventHandler.emptied</a>
 </div>
 
 ```swift
@@ -24,7 +24,7 @@ func onEmptied()
 --------
 # onEnded()
 <div align="right">
-<a href="../event_handlers/details.md#ended">이벤트 핸들러: EventHandler.ended</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#ended">EventHandler.ended</a>
 </div>
 
 ```swift
@@ -36,7 +36,7 @@ func onEnded()
 --------
 # onError(error:)
 <div align="right">
-<a href="../event_handlers/details.md#error">이벤트 핸들러: EventHandler.error</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#error">EventHandler.error</a>
 </div>
 
 ```swift
@@ -48,7 +48,7 @@ func onError(error: Error)
 --------
 # onLoadedData()
 <div align="right">
-<a href="../event_handlers/details.md#loadeddata">이벤트 핸들러: EventHandler.loadedData</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#loadeddata">EventHandler.loadedData</a>
 </div>
 
 ```swift
@@ -60,7 +60,7 @@ func onLoadedData()
 --------
 # onLoadStart()
 <div align="right">
-<a href="../event_handlers/details.md#loadstart">이벤트 핸들러: EventHandler.loadStart</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#loadstart">EventHandler.loadStart</a>
 </div>
 
 ```swift
@@ -72,7 +72,7 @@ func onLoadStart()
 --------
 # onMediaItemTransition(item:)
 <div align="right">
-<a href="../event_handlers/details.md#mediaitemtransition">이벤트 핸들러: EventHandler.mediaItemTransition</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#mediaitemtransition">EventHandler.mediaItemTransition</a>
 </div>
 
 ```swift
@@ -84,7 +84,7 @@ func onMediaItemTransition(item: MediaItem?)
 --------
 # onPause()
 <div align="right">
-<a href="../event_handlers/details.md#pause">이벤트 핸들러: EventHandler.pause</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#pause">EventHandler.pause</a>
 </div>
 
 ```swift
@@ -96,7 +96,7 @@ func onPause()
 --------
 # onPictureInPictureActiveChange(active:)
 <div align="right">
-<a href="../event_handlers/details.md#pictureinpictureactivechange">이벤트 핸들러: EventHandler.pictureInPictureActiveChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#pictureinpictureactivechange">EventHandler.pictureInPictureActiveChange</a>
 </div>
 
 ```swift
@@ -108,7 +108,7 @@ func onPictureInPictureActiveChange(active: Bool)
 --------
 # onPictureInPicturePossibleChange(possible:)
 <div align="right">
-<a href="../event_handlers/details.md#pictureinpicturepossiblechange">이벤트 핸들러: EventHandler.pictureInPicturePossibleChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#pictureinpicturepossiblechange">EventHandler.pictureInPicturePossibleChange</a>
 </div>
 
 ```swift
@@ -120,7 +120,7 @@ func onPictureInPicturePossibleChange(possible: Bool)
 --------
 # onPictureInPictureDid(Will)Start(Stop)()
 <div align="right">
-<a href="../event_handlers/details.md#pictureinpicturedidwillstartstop">이벤트 핸들러: EventHandler.pictureInPictureDid(Will)Start(Stop)</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#pictureinpicturedidwillstartstop">EventHandler.pictureInPictureDid(Will)Start(Stop)</a>
 </div>
 
 ```swift
@@ -132,7 +132,7 @@ func onPictureInPictureDidStart()
 --------
 # onPlay()
 <div align="right">
-<a href="../event_handlers/details.md#play">이벤트 핸들러: EventHandler.play</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#play">EventHandler.play</a>
 </div>
 
 ```swift
@@ -144,7 +144,7 @@ func onPlay()
 --------
 # onPlaybackStateChange(state:)
 <div align="right">
-<a href="../event_handlers/details.md#playbackstatechange">이벤트 핸들러: EventHandler.playbackStateChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#playbackstatechange">EventHandler.playbackStateChange</a>
 </div>
 
 ```swift
@@ -156,7 +156,7 @@ func onPlaybackStateChange(state: MediaPlayer.PlaybackState)
 --------
 # onPlaying()
 <div align="right">
-<a href="../event_handlers/details.md#playing">이벤트 핸들러: EventHandler.playing</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#playing">EventHandler.playing</a>
 </div>
 
 ```swift
@@ -168,7 +168,7 @@ func onPlaying()
 --------
 # onPositionDiscontinuity(oldPosition:newPosition:)
 <div align="right">
-<a href="../event_handlers/details.md#positiondiscontinuity">이벤트 핸들러: EventHandler.positionDiscontinuity</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#positiondiscontinuity">EventHandler.positionDiscontinuity</a>
 </div>
 
 ```swift
@@ -180,7 +180,7 @@ func onPositionDiscontinuity(oldPosition: Duration, newPosition: Duration)
 --------
 # onProgress()
 <div align="right">
-<a href="../event_handlers/details.md#progress">이벤트 핸들러: EventHandler.progress</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#progress">EventHandler.progress</a>
 </div>
 
 ```swift
@@ -192,7 +192,7 @@ func onProgress()
 --------
 # onRateChange(rate:)
 <div align="right">
-<a href="../event_handlers/details.md#ratechange">이벤트 핸들러: EventHandler.rateChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#ratechange">EventHandler.rateChange</a>
 </div>
 
 ```swift
@@ -204,7 +204,7 @@ func onRateChange(rate: Float)
 --------
 # onRepeatModeChange(mode:)
 <div align="right">
-<a href="../event_handlers/details.md#repeatmodechange">이벤트 핸들러: EventHandler.repeatModeChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#repeatmodechange">EventHandler.repeatModeChange</a>
 </div>
 
 ```swift
@@ -216,7 +216,7 @@ func onRepeatModeChange(mode: MediaPlayer.RepeatMode)
 --------
 # onRepeatRangeChange(range:)
 <div align="right">
-<a href="../event_handlers/details.md#repeatrangechange">이벤트 핸들러: EventHandler.repeatRangeChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#repeatrangechange">EventHandler.repeatRangeChange</a>
 </div>
 
 ```swift
@@ -228,7 +228,7 @@ func onRepeatRangeChange(range: MediaPlayer.RepeatRange?)
 --------
 # onScalingModeChange(mode:)
 <div align="right">
-<a href="../event_handlers/details.md#scalingmodechange">이벤트 핸들러: EventHandler.scalingModeChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#scalingmodechange">EventHandler.scalingModeChange</a>
 </div>
 
 ```swift
@@ -240,7 +240,7 @@ func onScalingModeChange(mode: MediaPlayer.ScalingMode)
 --------
 # onSeeked()
 <div align="right">
-<a href="../event_handlers/details.md#seeked">이벤트 핸들러: EventHandler.seeked</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#seeked">EventHandler.seeked</a>
 </div>
 
 ```swift
@@ -252,7 +252,7 @@ func onSeeked()
 --------
 # onSeeking()
 <div align="right">
-<a href="../event_handlers/details.md#seeking">이벤트 핸들러: EventHandler.seeking</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#seeking">EventHandler.seeking</a>
 </div>
 
 ```swift
@@ -264,7 +264,7 @@ func onSeeking()
 --------
 # onTimeUpdate(position:)
 <div align="right">
-<a href="../event_handlers/details.md#timeupdate">이벤트 핸들러: EventHandler.timeUpdate</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#timeupdate">EventHandler.timeUpdate</a>
 </div>
 
 ```swift
@@ -276,7 +276,7 @@ func onTimeUpdate(position: Duration)
 --------
 # onVideoSizeChange(size:)
 <div align="right">
-<a href="../event_handlers/details.md#videosizechange">이벤트 핸들러: EventHandler.videoSizeChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#videosizechange">EventHandler.videoSizeChange</a>
 </div>
 
 ```swift
@@ -288,7 +288,7 @@ func onVideoSizeChange(size: CGSize)
 --------
 # onVolumeChange(volume:muted:)
 <div align="right">
-<a href="../event_handlers/details.md#volumechange">이벤트 핸들러: EventHandler.volumeChange</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#volumechange">EventHandler.volumeChange</a>
 </div>
 
 ```swift
@@ -300,7 +300,7 @@ func onVolumeChange(volume: Float, muted: Bool)
 --------
 # onWaiting()
 <div align="right">
-<a href="../event_handlers/details.md#waiting">이벤트 핸들러: EventHandler.waiting</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#waiting">EventHandler.waiting</a>
 </div>
 
 ```swift

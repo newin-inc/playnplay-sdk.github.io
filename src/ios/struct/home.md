@@ -1,5 +1,5 @@
 # 구조체
 
-[Duration](./details.md#duration)
+* [Duration](./details.md#duration)
 
-[TimeRange](./details.md#timerange)
+* [TimeRange](./details.md#timerange)

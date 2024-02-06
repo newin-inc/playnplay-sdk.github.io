@@ -108,7 +108,7 @@ func load(src: URL)
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
-|src|URL|입력된 주소의 미디어를 로드합니다.<br>[URL](https://developer.apple.com/documentation/foundation/url) 참고|
+|src|[URL](https://developer.apple.com/documentation/foundation/url)|로드할 미디어의 주소|
 
 
 <br><br><br><br>

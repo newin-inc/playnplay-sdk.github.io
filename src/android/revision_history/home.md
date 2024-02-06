@@ -13,40 +13,44 @@
 ## 추가
 
 ### [currentMediaItem](../media_player/properties/details.md#currentmediaitem)
-속성 currentMediaItem가 새롭게 추가되어 문서에 추가
+속성 Player.currentMediaItem에 대한 설명 추가
 
 ### [currentMediaItemIndex](../media_player/properties/details.md#currentmediaitemindex)
-속성 currentMediaItemIndex가 새롭게 추가되어 문서에 추가
+속성 Player.currentMediaItemIndex에 대한 설명 추가
 
 ### [deviceVolume](../media_player/properties/details.md#devicevolume)
-속성 deviceVolume가 새롭게 추가되어 문서에 추가
+속성 MediaPlayer.deviceVolume가 새롭게 추가되어 문서에 추가
 
 ### [mediaItems](../media_player/properties/details.md#mediaitems)
-속성 mediaItems가 새롭게 추가되어 문서에 추가
+속성 MediaPlayer.mediaItems가 새롭게 추가되어 문서에 추가
 
 ### [resizeMode](../media_player/properties/details.md#resizemode)
-속성 resizeMode가 새롭게 추가되어 문서에 추가
+속성 MediaPlayer.resizeMode가 새롭게 추가되어 문서에 추가
 
 ### [prepare()](../media_player/methods/details.md#prepare)
-메서드 prepare()에 대한 설명 추가
+메서드 MediaPlayer.prepare()에 대한 설명 추가
 
 ### [release()](../media_player/methods/details.md#release)
-메서드 release()에 대한 설명 추가
+메서드 MediaPlayer.release()에 대한 설명 추가
 
 ### [addEventListener()](../media_player/methods/details.md#addeventlistener)
-메서드 addEventListener()에 대한 설명 추가
+메서드 MediaPlayer.addEventListener()에 대한 설명 추가
 
 ### [removeEventListener()](../media_player/methods/details.md#removeeventlistener)
-메서드 removeEventListener()에 대한 설명 추가
+메서드 MediaPlayer.removeEventListener()에 대한 설명 추가
 
 ### [이벤트 핸들러](../media_player/event_handlers/details.md)
 * 이벤트 핸들러 파라미터에 대한 설명 추가
 
 * 다음 이벤트 핸들러에 대한 설명 추가
     * [MediaItemTransition](../media_player/event_handlers/details.md#mediaitemtransition) 추가
+
     * [PlaybackStateChange](../media_player/event_handlers/details.md#playbackstatechange) 추가
+
     * [RepeatModeChange](../media_player/event_handlers/details.md#repeatmodechange) 추가
+
     * [ResizeModeChange](../media_player/event_handlers/details.md#resizemodechange) 추가
+
     * [VideoSizeChange](../media_player/event_handlers/details.md#videosizechange) 추가
 
 
@@ -84,6 +88,9 @@ fun onWaiting()
 ### [키보드, 패드를 사용한 미디어 제어](../media_player_view/media_control_using_keyboard_and_pad/home.md#키보드-패드를-사용한-미디어-제어)
 * Directional Pad의 방향키 길게 꾹 누르는 제어 내용 추가
 
+### 링크 추가
+* 효율적인 탐색을 위해서 속성, 메서드 등의 설명에 문서 링크 혹은 외부 링크를 추가하였습니다.
+
 
 ## 수정
 
@@ -95,6 +102,9 @@ fun onWaiting()
 
 ### [액티비티 구성](../how_to_use/home.md#액티비티-구성)
 * 앱 아이디 설정 관련 추가 및 액티비티 구성함에 있어서 코드 분리 및 수정
+
+### [presentMediaPlayer()](../how_to_use/home.md#presentmediaplayer)
+* presentMediaPlayer() 설명 내의 미디어 아이템과 관련하여 클래스 MediaItem 링크 추가
 
 ### [ABRepeatRangeChange → RepeatRangeChange](../media_player/event_handlers/details.md#repeatrangechange)
 * ABRepeatRangeChange를 RepeatRangeChange로 이름 변경

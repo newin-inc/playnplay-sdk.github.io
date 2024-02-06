@@ -169,7 +169,7 @@ mediaPlayer.addEventHandler(EventHandler.LoadStart {
 EventHandler.MediaItemTransition는 미디어 아이템이 교체 되는 시점에 사용하기 위한 핸들러입니다. 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onMediaItemTransition(androidx.media3.common.MediaItem,int))에서 제공하는 것을 사용하시면 됩니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/media/media3/exoplayer/media-items">MediaItem</a><br>
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">MediaItem</a><br>
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player.MediaItemTransitionReason">MediaItemTransitionReason</a>
 </div>
 

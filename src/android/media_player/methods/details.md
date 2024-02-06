@@ -73,7 +73,7 @@ Player.play()는 미디어를 재생하기 위한 메서드입니다.\
 --------
 # prepare()
 
-Player.prepare()는 미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [defaultPlaybackRate](../properties/details.md#defaultplaybackrate), [defaultMuted](../properties/details.md#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하기 시작하고 재생에 필요한 리소스를 확보합니다.\
+MediaPlayer.prepare()는 미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [defaultPlaybackRate](../properties/details.md#defaultplaybackrate), [defaultMuted](../properties/details.md#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하기 시작하고 재생에 필요한 리소스를 확보합니다.\
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#prepare()">Player.prepare()</a>
@@ -84,7 +84,7 @@ Player.prepare()는 미디어 관련 기본 설정을 하기 위한 메서드입
 --------
 # release()
 
-Player.release()는 미디어 목록, 이벤트 핸들러, 리스너 등 미디어에 관련하여 설정했던 것들을 모두 해제한 후, 미디어 플레이어를 릴리스 시키기 위한 메서드입니다.\
+MediaPlayer.release()는 미디어 목록, 이벤트 핸들러, 리스너 등 미디어에 관련하여 설정했던 것들을 모두 해제한 후, 미디어 플레이어를 릴리스 시키기 위한 메서드입니다.\
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#release()">Player.release()</a>

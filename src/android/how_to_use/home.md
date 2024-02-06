@@ -84,7 +84,7 @@ fun presentMediaPlayer(mediaItem: MediaItem)
 ```
 | 파라미터 | 타입 | 설명 |
 |:----:|:---:|----|
-| mediaItem | [MediaItem](https://developer.android.com/media/media3/exoplayer/media-items) | [Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 | 
+| mediaItem | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem) | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 | 
 
 \
 \
@@ -93,7 +93,7 @@ fun presentMediaPlayer(mediaItems: Collection<MediaItem>)
 ```
 | 파라미터 | 타입 | 설명 |
 |:----:|:---:|----|
-| mediaItem | Collection<[MediaItem](https://developer.android.com/media/media3/exoplayer/media-items)> | [Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
+| mediaItem | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
 
 \
 \
@@ -105,8 +105,8 @@ fun presentMediaPlayer(
 ```
 | 파라미터 | 타입 | 설명 |
 |:----:|:---:|----|
-| mediaItems | Collection<[MediaItem](https://developer.android.com/media/media3/exoplayer/media-items)> | [Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
-| startMediaItem | [MediaItem](https://developer.android.com/media/media3/exoplayer/media-items) | 목록 중에서 처음 재생할 미디어 아이템.<br>mediaItems에 포함되어 있어야 합니다. |
+| mediaItems | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
+| startMediaItem | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem) | 목록 중에서 처음 재생할 미디어 아이템.<br>mediaItems에 포함되어 있어야 합니다. |
 
 \
 \
@@ -118,7 +118,7 @@ fun presentMediaPlayer(
 ```
 | 파라미터 | 타입 | 설명 |
 |:----:|:---:|----|
-| mediaItems | Collection<[MediaItem](https://developer.android.com/media/media3/exoplayer/media-items)> | [Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
+| mediaItems | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고  |
 | startIndex | Int | 목록 중에서 처음 재생할 미디어 아이템의 index.<br>0 이상 mediaItems 개수 - 1 이하의 값이어야 합니다. |
 
 ### 재생 목록을 사용한 예제
