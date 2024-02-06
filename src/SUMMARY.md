@@ -72,4 +72,6 @@
     - [구조체](./ios/struct/home.md)
         - [상세](./ios/struct/details.md)
     - [FAQ](./ios/faq/home.md)
+    - [변경 이력](./ios/revision_history/home.md)
+
 
