@@ -9,8 +9,8 @@ init(start: Duration, end: Duration)
 ## 생성자 파라미터
 |이름|타입|설명|필수|
 |:--:|:--:|:--|:--:|
-|start|Duration|반복 구간의 시작 위치|O|
-|end|Duration|반복 구간의 종료 위치|O|
+|start|[Duration](../../struct/details.md#duration)|반복 구간의 시작 위치|O|
+|end|[Duration](../../struct/details.md#duration)|반복 구간의 종료 위치|O|
 
 ## 속성
 ```swift
@@ -21,12 +21,12 @@ var end: Duration
 ### start
 |타입|설명|
 |:--:|:--|
-|Duration|반복 구간의 시작 위치|
+|[Duration](../../struct/details.md#duration)|반복 구간의 시작 위치|
 
 ### end
 |타입|설명|
 |:--:|:--|
-|Duration|반복 구간의 종료 위치|
+|[Duration](../../struct/details.md#duration)|반복 구간의 종료 위치|
 
 ## 메서드
 ```swift
@@ -38,12 +38,12 @@ func with(end: Duration) -> RepeatRange
 
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|:--|
-|start|Duration|RepeatRange|반복 구간 시작 위치를 변경한 뒤 구간 범위를 반환|
+|start|[Duration](../../struct/details.md#duration)|RepeatRange|반복 구간 시작 위치를 변경한 뒤 구간 범위를 반환|
 
 ### with(end:) -> RepeatRange
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|:--|
-|end|Duration|RepeatRange|반복 구간 종료 위치를 변경한 뒤 구간 범위를 반환|
+|end|[Duration](../../struct/details.md#duration)|RepeatRange|반복 구간 종료 위치를 변경한 뒤 구간 범위를 반환|
 
 
 ### 사용 예제

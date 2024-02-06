@@ -80,7 +80,7 @@ MediaPlayer.currentSrc는 미디어 리소스의 uri를 의미하는 속성입�
 --------
 # currentTime
 
-MediaPlayer.currentTime은 현재 재생 위치를 Duration 단위로 지정합니다.
+MediaPlayer.currentTime은 현재 재생 위치를 [Duration](../../struct/details.md#duration) 단위로 지정합니다.
 
 |타입|설명|설정|
 |:--:|--|:--:|
@@ -127,7 +127,7 @@ mediaPlayer.defaultPlaybackRate = 2
 --------
 # duration
 
-MediaPlayer.duration은 현재 미디어 길이를 나타냅니다. 재생 가능한 미디어가 없을 경우 0에 해당하는 Duration을 반환합니다.
+MediaPlayer.duration은 현재 미디어 길이를 나타냅니다. 재생 가능한 미디어가 없을 경우 0에 해당하는 [Duration](../../struct/details.md#duration)을 반환합니다.
 
 |타입|설명|설정|
 |:--:|--|:--:|
@@ -234,7 +234,7 @@ MediaPlayer.maxSeekToPreviousPosition는 이전 버튼을 눌렀을 때, 이전 
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|Duration|하단 인터페이스의 이전 버튼을 클릭하였을 때, 이전 미디어로 갈 것인지 현재 미디어의 맨 앞으로 갈 것인지에 대한 기준 값. 이 값보다 작으면 이전 미디어로 이동하고, 그렇지 않으면 현재 미디어의 맨 앞으로 이동합니다.|가능|3초|
+|[Duration](../../struct/details.md#duration)|하단 인터페이스의 이전 버튼을 클릭하였을 때, 이전 미디어로 갈 것인지 현재 미디어의 맨 앞으로 갈 것인지에 대한 기준 값. 이 값보다 작으면 이전 미디어로 이동하고, 그렇지 않으면 현재 미디어의 맨 앞으로 이동합니다.|가능|3초|
 
 사용 예제
 ```swift
@@ -442,7 +442,7 @@ MediaPlayer.seekBackIncrement는 왼쪽 방향키를 입력 받거나 하단 인
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|Duration|현재 위치에서 전으로 이동하는 시간의 크기|O|10초|
+|[Duration](../../struct/details.md#duration)|현재 위치에서 전으로 이동하는 시간의 크기|O|10초|
 
 사용 예제
 ```swift
@@ -458,7 +458,7 @@ MediaPlayer.seekForwardIncrement는 오른쪽 방향키를 입력 받거나 하�
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|Duration|현재 위치에서 후로 이동하는 시간의 크기|O|10초|
+|[Duration](../../struct/details.md#duration)|현재 위치에서 후로 이동하는 시간의 크기|O|10초|
 
 사용 예제
 ```swift

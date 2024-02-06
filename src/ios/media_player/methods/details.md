@@ -11,7 +11,7 @@ func fastSeekTo(position: Duration)
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
-|to|Duration|재생하고자 하는 위치 값|
+|to|[Duration](../../struct/details.md#duration)|재생하고자 하는 위치 값|
 
 사용 예제
 ```swift
@@ -169,7 +169,7 @@ func seekBack(increment: Duration)
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
-|increment|Duration|새로운 위치는 현재 위치에서 입력된 파라미터를 뺀 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 후로 이동합니다.|
+|increment|[Duration](../../struct/details.md#duration)|새로운 위치는 현재 위치에서 입력된 파라미터를 뺀 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 후로 이동합니다.|
 
 사용 예제
 ```swift
@@ -205,7 +205,7 @@ func seekForward(increment: Duration)
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
-|increment|Duration|새로운 위치는 현재 위치에서 입력된 파라미터를 더한 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 되돌아갑니다.|
+|increment|[Duration](../../struct/details.md#duration)|새로운 위치는 현재 위치에서 입력된 파라미터를 더한 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 되돌아갑니다.|
 
 사용 예제
 ```swift
@@ -233,7 +233,7 @@ func seekTo(position: Duration)
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
-|position|Duration|입력된 값으로 재생 위치를 이동합니다.|
+|position|[Duration](../../struct/details.md#duration)|입력된 값으로 재생 위치를 이동합니다.|
 
 사용 예제
 ```swift
@@ -254,7 +254,7 @@ func seekTo(mediaItemIndex: Int, position: Duration = .indefinite)
 |파라미터|타입|설명|필수|
 |:--:|:--:|--|:--:|
 |mediaItemIndex|Int|재생 목록에서 미디어 아이템의 index|O|
-|position|Duration|해당 미디어에서 재생하고하 하는 위치<br>입력하지 않으면, 마지막에 재생했던 위치에서 시작합니다.|X|
+|position|[Duration](../../struct/details.md#duration)|해당 미디어에서 재생하고하 하는 위치<br>입력하지 않으면, 마지막에 재생했던 위치에서 시작합니다.|X|
 
 사용 예제
 ```swift
