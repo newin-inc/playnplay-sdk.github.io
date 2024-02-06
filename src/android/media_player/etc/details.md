@@ -13,8 +13,8 @@ data class RepeatRange(
 
 |이름|타입|설명|필수|
 |:--:|:--:|--|:--:|
-|start|kotlin.time.Duration|구간 반복 시작 위치 값|O|
-|end|kotlin.time.Duration|구간 반복 종료 위치 값|O|
+|start|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 반복 시작 위치 값|O|
+|end|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 반복 종료 위치 값|O|
 
 ## 속성
 ```kotlin
@@ -25,12 +25,12 @@ val end: Duration
 ### start
 |타입|설명|
 |:--:|--|
-|kotlin.time.Duration|구간 반복 시작 위치를 반환|
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 반복 시작 위치를 반환|
 
 ### end
 |타입|설명|
 |:--:|--|
-|kotlin.time.Duration|구간 반복 종료 위치를 반환|
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 반복 종료 위치를 반환|
 
 ## 메서드
 ```kotlin
@@ -41,12 +41,12 @@ fun withEnd(end: Duration): RepeatRange
 ### withStart()
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|--|
-|start|kotlin.time.Duration|RepeatRange|구간 반복 시작 위치를 업데이트한 오브젝트를 반환|
+|start|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|RepeatRange|구간 반복 시작 위치를 업데이트한 오브젝트를 반환|
 
 ### withEnd()
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|--|
-|end|kotlin.time.Duration|RepeatRange|구간 반복 종료 위치를 업데이트한 오브젝트를 반환|
+|end|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|RepeatRange|구간 반복 종료 위치를 업데이트한 오브젝트를 반환|
 
 ## 사용 예제
 ```kotlin
@@ -80,8 +80,8 @@ data class TimeRange(val start: Duration, val duration: Duration)
 
 |이름|타입|설명|필수|
 |:--:|:--:|--|:--:|
-|start|kotlin.time.Duration|구간 시작 위치 값|O|
-|duration|kotlin.time.Duration|구간 길이 값|O|
+|start|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 시작 위치 값|O|
+|duration|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 길이 값|O|
 
 ## 속성
 ```kotlin
@@ -92,12 +92,12 @@ val end: Duration
 ### start
 |타입|설명|
 |:--:|--|
-|kotlin.time.Duration|구간 시작 위치 값을 반환|
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 시작 위치 값을 반환|
 
 ### end
 |타입|설명|
 |:--:|--|
-|kotlin.time.Duration|구간 종료 위치 값을 반환|
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 종료 위치 값을 반환|
 
 ## 사용 예제
 ```kotlin
@@ -141,12 +141,12 @@ fun end(index: Int): Duration
 ### start()
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|--|
-|index|Int|kotlin.time.Duration|index 번째 데이터의 구간 시작 위치를 반환|
+|index|Int|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|index 번째 데이터의 구간 시작 위치를 반환|
 
 ### end()
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|--|
-|index|Int|kotlin.time.Duration|index 번째 데이터의 구간 종료 위치를 반환|
+|index|Int|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|index 번째 데이터의 구간 종료 위치를 반환|
 
 ## 사용 예제
 ```kotlin

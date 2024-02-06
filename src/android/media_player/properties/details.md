@@ -81,7 +81,7 @@ MediaPlayer.currentTime은 현재 재생 위치를 Duration 단위로 지정합�
 
 | 타입 | 설명 | 설정 |
 |:---:|----|:---:|
-| kotlin.time.Duration | 설정 시, 재생하고 싶은 특정 위치<br>반환 시, 현재 재생 시점| 가능 |
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)| 설정 시, 재생하고 싶은 특정 위치<br>반환 시, 현재 재생 시점| 가능 |
 
 \
 사용 예제
@@ -151,7 +151,7 @@ MediaPlayer.duration은 현재 미디어 길이를 나타냅니다. 재생 가�
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|kotlin.time.Duration|현재 미디어의 전체 길이|불가능|
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 미디어의 전체 길이|불가능|
 
 \
 사용 예제
