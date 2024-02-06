@@ -33,9 +33,9 @@ fun load(mediaItems: List<MediaItem>)
 |파라미터|타입|설명|
 |:--:|:--:|---|
 |uri|String|스트링 형태의 미디어 주소|
-|uri|Uri| [Uri](https://developer.android.com/reference/android/net/Uri) 참고|
-|mediaItem|MediaItem|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem) 참고|
-|mediaItems|List<MediaItem>|미디어 아이템의 리스트|
+|uri|Uri| [Uri](https://developer.android.com/reference/android/net/Uri)|
+|mediaItem|MediaItem|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)|
+|mediaItems|List\<MediaItem\>|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)의 리스트|
 
 \
 사용 예제

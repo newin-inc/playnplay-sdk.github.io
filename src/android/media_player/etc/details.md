@@ -120,7 +120,7 @@ data class TimeRanges(private val ranges: ArrayList<TimeRange>)
 ## 생성자 파라미터
 |이름|타입|설명|필수|
 |:--:|:--:|--|:--:|
-|ranges|ArrayList<TimeRange>|구간 범위 값들의 array list|O|
+|ranges|ArrayList\<[TimeRange](#timerange)\>|구간 범위 값들의 array list|O|
 
 ## 속성
 ```kotlin

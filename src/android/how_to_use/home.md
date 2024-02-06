@@ -191,7 +191,7 @@ mediaPlayer에 값이 들어오면 버튼을 활성화하는 방법 등을 사�
 fun MediaPlayer(context: Context): MediaPlayer
 ```
 
-안드로이드 SDK에서 제공하는 MediaPlayer가 아니라, Jetpack Media3에서 제공하는 [ExoPlayer](https://developer.android.com/media/media3/exoplayer)를 사용하려면 아래와 같이 사용하면 됩니다. ExoPlayer는 Player를 확장한 클래스로 Jetpack Media3에서 제공합니다.
+안드로이드 SDK에서 제공하는 MediaPlayer가 아니라, [Jetpack Media3](https://developer.android.com/jetpack/androidx/releases/media3)에서 제공하는 [ExoPlayer](https://developer.android.com/media/media3/exoplayer)를 사용하려면 아래와 같이 사용하면 됩니다. [ExoPlayer](https://developer.android.com/media/media3/exoplayer)는 [Player](https://developer.android.com/reference/androidx/media3/common/Player)를 확장한 클래스로 [Jetpack Media3](https://developer.android.com/jetpack/androidx/releases/media3)에서 제공합니다.
 
 사용 예제
 ```kotlin

@@ -62,7 +62,7 @@ MediaPlayer.currentSrc는 미디어 리소스의 uri를 의미하는 속성입�
 
 | 타입 | 설명 | 설정 | 기본값 |
 |:---:|----|:---:|:---:|
-| android.net.Uri? | 설정 시, 교체할 미디어 아이템의 Uri<br>반환 시, 현재 선택된 미디어 아이템의 Uri | 가능 | null |
+|[android.net.Uri](https://developer.android.com/reference/android/net/Uri)? | 설정 시, 교체할 미디어 아이템의 Uri<br>반환 시, 현재 선택된 미디어 아이템의 Uri | 가능 | null |
 
 \
 사용 예제
@@ -187,7 +187,7 @@ MediaPlayer.error는 최근 발생한 에러를 나타내는 속성입니다.
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|PlaybackException?<br>(참고: [PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException))|최근에, 즉, 마지막으로 발생한 에러. 발생한 에러가 없을 경우 null을 반환|불가능|
+|[PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)?|최근에, 즉, 마지막으로 발생한 에러. 발생한 에러가 없을 경우 null을 반환|불가능|
 
 \
 사용 예제
@@ -223,7 +223,7 @@ MediaPlayer.mediaItems는 미디어 아이템들의 목록을 나타내는 속�
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|List<MediaItem>|현재 재생 목록에 있는 미디어 아이템들|불가능|[]|
+|List\<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)\>|현재 재생 목록에 있는 미디어 아이템들|불가능|[]|
 
 \
 사용 예제

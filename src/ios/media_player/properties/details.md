@@ -73,7 +73,7 @@ MediaPlayer.currentSrc는 미디어 리소스의 uri를 의미하는 속성입�
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|URL?|현재 선택된 미디어 아이템의 URL|불가능|
+|[URL](https://developer.apple.com/documentation/foundation/url)?|현재 선택된 미디어 아이템의 [URL](https://developer.apple.com/documentation/foundation/url)|불가능|
 
 <br><br><br><br>
 
@@ -166,7 +166,7 @@ MediaPlayer.error는 최근 발생한 에러를 나타내는 속성입니다.
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|Error?<br>(참고: [Error](https://developer.apple.com/documentation/swift/error))|에러를 반환|불가능|
+|[Error](https://developer.apple.com/documentation/swift/error)?|에러를 반환|불가능|
 
 사용 예제
 ```swift
@@ -330,7 +330,7 @@ MediaPlayer.playbackState는 미디어의 현재 상태를 나타냅니다.
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|PlaybackState|미디어의 현재 상태를 나타냅니다.|불가능|
+|[PlaybackState](../enum/details.md#playbackstate)|미디어의 현재 상태를 나타냅니다.|불가능|
 
 
 사용 예제
@@ -492,7 +492,7 @@ MediaPlayer.videoSize는 현재 재생 중인 미디어의 원래 크기를 나�
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|CGSize|width와 height를 속성으로 가지는 구조체|불가능|
+|[CGSize](https://developer.apple.com/documentation/corefoundation/cgsize)|width와 height를 속성으로 가지는 구조체|불가능|
 
 사용 예제
 ```swift
@@ -509,7 +509,7 @@ MediaPlayer.view는 미디어 플레이어 뷰를 나타내는 속성입니다.
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|UIView|[MediaPlayerView](../../media_player_view/home.md) 참고|불가능|
+|[UIView](https://developer.apple.com/documentation/uikit/uiview)|[MediaPlayerView](../../media_player_view/home.md) 참고|불가능|
 
 사용 예제
 ```swift
