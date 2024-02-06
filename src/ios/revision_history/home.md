@@ -17,6 +17,10 @@
         * [AppDelegate 설정](../how_to_set/project_settings.md#appdelegate-설정)<br>
         CP 아이디를 App 아이디로 변경
 
+* [MediaItem](../media_item/home.md)
+    
+    * [메서드](../media_item/methods/home.md), [클래스](../media_item/class/home.md)로 세분화
+
 * [MediaPlayer](../media_player/home.md)
 
     * [속성](../media_player/properties/details.md)
