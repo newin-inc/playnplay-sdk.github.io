@@ -4,13 +4,17 @@
 
 * 플레이어 실행 절차는 Windows, macOS, iOS, Android 동일합니다.
 
+```typescript
+async function launchAgent(type, url, options);
+```
+
 * type: 실행 타입
 
-    * “stream” - 재생
-
-    * “download” - 다운로드
-
-    * “open” - 커스텀 페이지 열기
+|타입|설명|
+|:--:|:--|
+|stream| 동영상 재생|
+|download| 동영상 다운로드|
+|open|커스텀 페이지 열기|
 
 * url: 재생, 다운로드 또는 커스텀 페이지 URL
 
@@ -20,14 +24,22 @@
 
         * [1. 라이선스 발급](./license_issue.md#라이선스-발급) 참조
 
+* options: 추가 옵션
 
-* 실행 함수 ([https://app.playnplay.com/modules/agent.min.js](https://app.playnplay.com/modules/agent.min.js))
+|속성|타입|설명|
+|:--:|:--:|:--:|
+|returnUrl|string \| URL \| undefined| 리턴Url 설정을 위한 속성 |
+|seekable|boolean \| undefined| Seek 기능을 허용할 것인가에 대한 속성 |
+
+## 실행 함수
+[https://app.playnplay.com/modules/agent.min.js](https://app.playnplay.com/modules/agent.min.js)
+[https://app.playnplay.com/modules/agent.js](https://app.playnplay.com/modules/agent.js)
 
 ```typescript
 const LaunchType = {
     STREAMING: 'stream', // 동영상 재생
     DOWNLOAD: 'download', // 동영상 다운로드
-    OPEN: 'open', // 커스텀 페이지
+    OPEN: 'open' // 커스텀 페이지
 };
 
 /**
@@ -45,7 +57,7 @@ const LaunchType = {
 async function launchAgent(type, url, options);
 ```
 
-* 사용 예
+## 사용 예
 
 ```html
 <script type="text/javascript" src="https://app.playnplay.com/modules/agent.js">

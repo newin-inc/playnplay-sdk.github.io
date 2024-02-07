@@ -9,13 +9,13 @@
 
 * 지원 OS : Windows 7 이상, macOS 10.13 이상
 
-* Windows와 macOS 버전은 별도 설치 파일로 제공됩니다.
+* 별도 설치 파일로 제공됩니다.
 
 ## PlaynPlay Console
 
 <img width="48%" src="./img/console_graph.png" style="margin-right: 4%"/><img width="48%" src="./img/console_user_info.png" />
 
-* PlaynPlay 콘솔 사이트는 PlaynPlay App과 연동하여, 사용자 및 세션 통계, 녹화 차단 관리, 디바이스 관리, 재생 통계, 보안 및 워터마크 관리 등 미디어 서비스에 필요한 다양한 기능들을 제공합니다.
+* PlaynPlay 콘솔 사이트는 PlaynPlay 앱과 연동하여, 사용자 및 세션 통계, 녹화 차단 관리, 디바이스 관리, 재생 통계, 보안 및 워터마크 관리 등 미디어 서비스에 필요한 다양한 기능들을 제공합니다.
 
 ## PlaynPlay DRM packaging tool
 
