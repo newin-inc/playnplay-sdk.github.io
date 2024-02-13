@@ -1,5 +1,9 @@
 # PlaynPlay SDK
 
+PlaynPlay는 미디어 서비스에 필요한 동영상 플레이어 부터 콘텐츠 보안, 통계, 분석 등 각종 기능들을 제공하는 토탈 미디어 솔루션입니다.
+
+![](./img/what_is_playnplay.png)
+
 * [Desktop](./desktop/home.md)
 
 * [Android](./android/home.md)

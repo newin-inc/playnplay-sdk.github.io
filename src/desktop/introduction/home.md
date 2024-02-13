@@ -1,4 +1,4 @@
-# 구성 요소
+# 소개
 
 ## PlaynPlay App
 

@@ -3,18 +3,10 @@
 
 ---
 - [Desktop](./desktop/home.md)
-    - [Information](./desktop/information/home.md)
-        - [솔루션 소개 및 구성도](./desktop/information/solution.md)
-        - [구성 요소](./desktop/information/components.md)
-    - [Settings](./desktop/settings/home.md)
-        - [플로우](./desktop/settings/details.md)
-    - [Playback guide](./desktop/playback_guide/home.md)
-        - [라이선스 발급](./desktop/playback_guide/license_issue.md)
-        - [Agent(플레이어) 실행](./desktop/playback_guide/agent_launch.md)
-    - [Callback](./desktop/callback/home.md)
-        - [접근 권한 검사](./desktop/callback/access_rights_check.md)
-        - [재생 진행 상태 보고](./desktop/callback/playback_progress_notify.md)
-        - [다운로드 완료 보고](./desktop/callback/download_completion_notify.md)
+    - [시작하기](./desktop/introduction/home.md)
+    - [설정 방법](./desktop/settings/home.md)
+    - [사용 방법](./desktop/how_to_use/home.md)
+        - [상세](./desktop/how_to_use/details.md)
     - [변경 이력](./desktop/revision_history/home.md)
 
 - [Android](./android/home.md)
