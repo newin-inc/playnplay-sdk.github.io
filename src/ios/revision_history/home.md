@@ -27,7 +27,9 @@
         * [seekForwardIncrement](../media_player/properties/details.md#seekforwardincrement)<br>
         표에 설정 부분 추가
 
-* [MediaPlayerView](../media_player_view/home.md)
+* [미디어 플레이어 화면](../media_player_view/home.md)
+
+    * 제목을 MediaPlayerView에서 **미디어 플레이어 화면**으로 변경
 
     * [화면 구성](../media_player_view/screen_layout/details.md)
 

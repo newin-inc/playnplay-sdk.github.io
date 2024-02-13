@@ -119,7 +119,9 @@
         fun onWaiting()
         ```
 
-* [MediaPlayerView](../media_player_view/home.md)
+* [미디어 플레이어 화면](../media_player_view/home.md)
+
+    * 제목을 MediaPlayerView에서 **미디어 플레이어 화면**으로 변경
 
     * [설정](../media_player_view/settings/home.md#설정)<br>
     앱 아이디 설정 관련 추가

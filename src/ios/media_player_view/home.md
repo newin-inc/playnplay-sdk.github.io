@@ -1,4 +1,4 @@
-# MediaPlayerView
+# 미디어 플레이어 화면
 
 - [화면 구성](./screen_layout/home.md)
 
