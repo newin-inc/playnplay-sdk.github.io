@@ -1,6 +1,7 @@
 # Home
 [PlaynPlay SDK](./home.md)
 
+---
 - [Desktop](./desktop/home.md)
     - [Information](./desktop/information/home.md)
         - [솔루션 소개 및 구성도](./desktop/information/solution.md)
