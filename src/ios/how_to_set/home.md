@@ -8,6 +8,4 @@
 
     - [Capability 추가](./project_settings.md#capability-추가)
 
-    - [AppDelegate 설정](./project_settings.md#appdelegate-설정)
-
     - [Destination 선택](./project_settings.md#destination-선택)

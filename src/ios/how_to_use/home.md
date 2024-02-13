@@ -1,5 +1,21 @@
 # 사용 방법
 
+## AppDelegate 설정
+
+미디어 재생 서비스를 설정하는 부분을 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:  [UIApplication.LaunchOptionsKey: Any]?)에 추가합니다. 여기서 [오디오세션](https://developer.apple.com/documentation/avfaudio/avaudiosession)을 구성하고, 앱 아이디를 사용하여 Drm 기본 설정을 합니다.
+
+```swift
+func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions:
+    [UIApplication.LaunchOptionsKey: Any]?
+) -> Bool {
+    MediaPlaybackService.initialize(appId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx")
+
+    return true
+}
+```
+
 ## 뷰 컨트롤러 구성
 
 ### 하나의 미디어 열기

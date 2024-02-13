@@ -59,25 +59,6 @@ Embedded Content** 섹션이 있습니다. SDK를 추가하기 위해서 **+** �
 <br><br><br><br>
 
 --------
-## AppDelegate 설정
-
-미디어 재생 서비스를 설정하는 부분을 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:  [UIApplication.LaunchOptionsKey: Any]?)에 추가합니다.
-
-```swift
-func application(
-    _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions:
-    [UIApplication.LaunchOptionsKey: Any]?
-) -> Bool {
-    MediaPlaybackService.initialize(appId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx")
-
-    return true
-}
-```
-
-<br><br><br><br>
-
---------
 ## Destination 선택
 
 다시 프로젝트로 돌아간 후, Run destination을 선택합니다. My Mac을 선택하면, 실 디바이스 없이 테스트 및 디버깅을 할 수 있습니다.
