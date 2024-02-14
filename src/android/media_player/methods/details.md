@@ -143,12 +143,13 @@ val currentTime = mediaPlayer.currentTime	// 40s
 
 MediaPlayer.seekTo()는 입력된 시간 위치로 이동하기 위한 메서드입니다.
 ```kotlin
-fun seekTo(position: Duration)
+fun seekTo(position: Duration, force: Boolean = false)
 ```
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
 |position|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|입력된 파라미터로 재생 위치를 이동합니다.|
+|force|Boolean|강제로 위치를 바꿔야할 때, true로 설정. 기본값은 false입니다.|
 
 \
 사용 예제

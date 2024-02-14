@@ -92,6 +92,39 @@ Button(
 | appId | String | App 아이디 | O |
 | userId | String | 사용자 아이디 | O |
 
+## 자막을 추가한 예제
+Media3에서 제공하는 setSubtitleConfigurations() 사용하여 자막을 추가할 수 있습니다. \
+<div align="right">
+참고: <a href="https://developer.android.com/media/media3/exoplayer/media-items#sideloading-subtitle">Media item 자막</a>
+</div>
+
+```kotlin
+val mediaItem = MediaItem.Builder()
+	.setUri("비디오주소.mp4")
+	.setSubtitleConfigurations(
+		listOf(
+			MediaItem.SubtitleConfiguration.Builder(
+				Uri.parse("자막주소.vtt")
+			)
+			.setMimeType(MimeTypes.TEXT_VTT)
+			.setLanguage("en")
+			.build()
+		)
+	)
+	.build()
+```
+
+## Seek 기능을 제한한 예제
+미디어 아이템을 구성할 때, setSeekable(false)을 사용하여 Seek 기능을 제한할 수 있습니다.
+
+```kotlin
+val mediaItem = MediaItem.Builder()
+	.setUri("비디오주소.mp4")
+    .setSeekable(false)
+    .build()
+```
+
+
 ## presentMediaPlayer()
 presentMediaPlayer()를 사용하여 미디어를 엽니다.
 
@@ -160,28 +193,6 @@ fun presentMediaPlayer(
 presentMediaPlayer(mediaItems)			// 0번째 아이템부터 시작
 presentMediaPlayer(mediaItems, mediaItems[0])	// 0번째 아이템부터 시작
 presentMediaPlayer(mediaItems, 0)		// 0번째 아이템부터 시작
-```
-
-### 자막을 추가한 예제
-Media3에서 제공하는 setSubtitleConfigurations() 사용하면 됩니다. \
-<div align="right">
-참고: <a href="https://developer.android.com/media/media3/exoplayer/media-items#sideloading-subtitle">Media item 자막</a>
-</div>
-
-```kotlin
-val mediaItem = MediaItem.Builder()
-	.setUri("비디오주소.mp4")
-	.setSubtitleConfigurations(
-		listOf(
-			MediaItem.SubtitleConfiguration.Builder(
-				Uri.parse("자막주소.vtt")
-			)
-			.setMimeType(MimeTypes.TEXT_VTT)
-			.setLanguage("en")
-			.build()
-		)
-	)
-	.build()
 ```
 
 ## getMediaPlayer()

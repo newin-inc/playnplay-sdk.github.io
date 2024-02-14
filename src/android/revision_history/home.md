@@ -31,6 +31,12 @@
     * [액티비티 구성](../how_to_use/home.md#액티비티-구성)<br>
     App 아이디 설정 관련 추가 및 액티비티 구성함에 있어서 코드 분리 및 수정
 
+    * [자막을 추가한 예제](../how_to_use/home.md#자막을-추가한-예제)
+    위치를 액티비티 구성 아래로 이동하고 설명 수정
+
+    * [Seek 기능을 제한한 예제](../how_to_use/home.md#seek-기능을-제한한-예제)<br>
+    Seek 기능 제한 방법이 추가되어 해당 설명 추가
+
     * [presentMediaPlayer()](../how_to_use/home.md#presentmediaplayer)<br>
     presentMediaPlayer() 설명 내의 미디어 아이템과 관련하여 클래스 MediaItem 링크 추가
 
@@ -61,6 +67,9 @@
 
         * [release()](../media_player/methods/details.md#release)<br>
         메서드 MediaPlayer.release()에 대한 설명 추가
+
+        * [seekTo()](../media_player/methods/details.md#seekto)<br>
+        메서드 MediaPlayer.seekTo()에 대한 설명 수정
 
         * [addEventListener()](../media_player/methods/details.md#addeventlistener)<br>
         메서드 MediaPlayer.addEventListener()에 대한 설명 추가
