@@ -7,7 +7,7 @@
 | <!-- -->    | <!-- --> |
 |-------------|----------|
 | Version     | 0.1.2    |
-| Latest update | 2024.2.6. |
+| Latest update | 2024.2.15. |
 | Contact     | 감형렬 (hyeongryeol.kam@newin.co.kr) |
 
 \

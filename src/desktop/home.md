@@ -8,7 +8,7 @@
 | <!-- -->    | <!-- --> |
 |-------------|----------|
 | Version     | 1.2    |
-| Latest update | 2024.2.6. |
+| Latest update | 2024.2.15. |
 | Contact     | 김아론 (ron0929@newin.co.kr) |
 
 \
