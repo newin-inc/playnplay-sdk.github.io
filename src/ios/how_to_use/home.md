@@ -1,8 +1,30 @@
 # 사용 방법
 
+## 번들 아이디 추가
+
+콘솔에 로그인하고 설정 > 애플리케이션으로 이동합니다.
+
+![](./img/console_menu_settings_application.png)
+
+아래 Bundle ID (Package name) 섹션에서 추가 버튼을 클릭합니다.
+
+![](./img/console_add_app_button.png)
+
+번들 아이디를 추가합니다.
+
+![](./img/console_add_app.png)
+
+번들 아이디는 Xcode의 설정 창에서 **TARGETS** 아래의 아이템을 선택한 후, **General** 탭 내의 **Identity** 섹션의 Bundle Identifier 에서 확인할 수 있습니다. 
+
+![](./img/bundle_id_from_general.png)
+
+혹은 **Signing & Capabilities** 탭 내의 **Signing** 섹션에서 확인 및 수정할 수 있습니다.
+
+![](./img/bundle_id_from_signing.png)
+
 ## AppDelegate 설정
 
-미디어 재생 서비스를 설정하는 부분을 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:  [UIApplication.LaunchOptionsKey: Any]?)에 추가합니다. 여기서 [오디오세션](https://developer.apple.com/documentation/avfaudio/avaudiosession)을 구성하고, 앱 아이디를 사용하여 Drm 기본 설정을 합니다.
+미디어 재생 서비스를 설정하는 부분을 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:  [UIApplication.LaunchOptionsKey: Any]?)에 추가합니다. 여기서 [오디오세션](https://developer.apple.com/documentation/avfaudio/avaudiosession)을 구성하고, App 아이디를 사용하여 DRM 기본 설정을 합니다.
 
 ```swift
 func application(
@@ -10,11 +32,19 @@ func application(
     didFinishLaunchingWithOptions launchOptions:
     [UIApplication.LaunchOptionsKey: Any]?
 ) -> Bool {
-    MediaPlaybackService.initialize(appId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx")
+    MediaPlaybackService.initialize(appId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx") // App 아이디
 
     return true
 }
 ```
+
+App 아이디는 콘솔에서 설정 > 애플리케이션 > App ID > 보기를 클릭하여 확인 가능합니다. 복사하여 붙여넣기를 하실 수 있습니다.
+
+![](./img/console_app_id_btn.png)
+![](./img/console_app_id.png)
+
+\
+\
 
 ## 뷰 컨트롤러 구성
 

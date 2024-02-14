@@ -17,6 +17,12 @@
         * [AppDelegate 설정](../how_to_set/project_settings.md#appdelegate-설정)<br>
         CP 아이디를 App 아이디로 변경
 
+
+* [사용 방법](../how_to_use/home.md)
+
+    * [번들 아이디 추가](../how_to_use/home.md#번들-아이디-추가)<br>
+    번들 아이디 추가와 관련한 이미지 및 설명 추가
+
 * [MediaPlayer](../media_player/home.md)
 
     * [속성](../media_player/properties/details.md)
