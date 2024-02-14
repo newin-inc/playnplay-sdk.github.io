@@ -25,8 +25,11 @@
 
 * [사용 방법](../how_to_use/home.md)
 
+    * [패키지 이름 추가](../how_to_use/home.md#패키지-이름-추가)<br>
+    패키지 이름 추가와 관련한 이미지 및 설명 추가
+
     * [액티비티 구성](../how_to_use/home.md#액티비티-구성)<br>
-    앱 아이디 설정 관련 추가 및 액티비티 구성함에 있어서 코드 분리 및 수정
+    App 아이디 설정 관련 추가 및 액티비티 구성함에 있어서 코드 분리 및 수정
 
     * [presentMediaPlayer()](../how_to_use/home.md#presentmediaplayer)<br>
     presentMediaPlayer() 설명 내의 미디어 아이템과 관련하여 클래스 MediaItem 링크 추가
@@ -124,7 +127,7 @@
     * 제목을 MediaPlayerView에서 **미디어 플레이어 화면**으로 변경
 
     * [설정](../media_player_view/settings/home.md#설정)<br>
-    앱 아이디 설정 관련 추가
+    App 아이디 설정 관련 추가
 
     * [화면 구성](../media_player_view/screen_layout/details.md)
 

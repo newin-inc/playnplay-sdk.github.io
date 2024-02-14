@@ -1,7 +1,32 @@
 # 사용 방법
 
+## 패키지 이름 추가
+
+콘솔에 로그인하고 설정 > 애플리케이션으로 이동합니다.
+
+![](./img/console_menu_settings_application.png)
+
+아래 Bundle ID (Package name) 섹션에서 추가 버튼을 클릭합니다.
+
+![](./img/console_add_app_button.png)
+
+패키지 이름을 **추가**합니다.
+
+![](./img/console_add_app.png)
+
+패키지 이름은 build.gradle.kts 파일 내의 applicationId에서 찾을 수 있습니다.
+
+```kotlin
+android {
+    defaultConfig {
+        applicationId = "com.nplayersdk.sample" // 패키지 이름
+    }
+}
+```
+
 ## 액티비티 구성
 
+먼저 startMediaPlayerService를 호출하여 서비스를 시작합니다. 여기서 플레이어와 미디어세션을 만들고 DRM 기본 설정을 합니다.
 ```kotlin
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,7 +38,7 @@ import com.newin.nplayer.sdk.withDrmConfiguration
 class MainActivity : ComponentActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		// 먼저 startMediaPlayerService를 호출하여 서비스를 시작합니다.
+
 		if (savedInstanceState == null) {
 			startMediaPlayerService("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx") // App 아이디
 		}
@@ -21,6 +46,15 @@ class MainActivity : ComponentActivity() {
 }
 ```
 
+App 아이디는 콘솔에서 설정 > 애플리케이션 > App ID > 보기를 클릭하여 확인 가능합니다. 복사하여 붙여넣기를 하실 수 있습니다.
+
+![](./img/console_app_id_btn.png)
+![](./img/console_app_id.png)
+
+\
+\
+
+아래처럼, 미디어 아이템을 구성하고 열 수 있습니다.
 ```kotlin
 Button(
 	onClick = { 
