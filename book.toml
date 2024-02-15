@@ -6,5 +6,6 @@ language = "ko"
 multilingual = true
 src = "src"
 
-[output.html]
-no-section-label=true
+[output.html.fold]
+enable = true
+level = 1
