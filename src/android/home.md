@@ -14,7 +14,7 @@
 \
 \
 
-## [안드로이드 SDK 다운로드](http://app.playnplay.com/sdks/latest/NPlayerSDKSample-android.zip)
+## [안드로이드 SDK 다운로드](https://app.playnplay.com/sdks/latest/NPlayerSDKSample-android.zip)
 
 \
 \

@@ -6,7 +6,7 @@
 
 ### 안드로이드 SDK 다운로드
 
-[여기](http://app.playnplay.com/sdks/latest/NPlayerSDKSample-android.zip)에서 다운 받으세요.
+[여기](https://app.playnplay.com/sdks/latest/NPlayerSDKSample-android.zip)에서 다운 받으세요.
 
 ### 안드로이드 SDK 추가
 
