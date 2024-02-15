@@ -1,27 +1,33 @@
 # 메서드
 
-- [fastSeek()](./details.md#fastseek)
+- [fun fastSeek(to: Duration)](./details.md#fastseek)
 
-- [load()](./details.md#load)
+- [fun load(uri: String)](./details.md#load)
 
-- [pause()](./details.md#pause)
+- [fun load(uri: Uri)](./details.md#load-1)
 
-- [play()](./details.md#play)
+- [fun load(mediaItem: MediaItem)](./details.md#load-2)
 
-- [prepare()](./details.md#prepare)
+- [fun load(mediaItems: List<MediaItem>)](./details.md#load-3)
 
-- [release()](./details.md#release)
+- [fun pause()](./details.md#pause)
 
-- [seekBack()](./details.md#seekback)
+- [fun play()](./details.md#play)
 
-- [seekForward()](./details.md#seekforward)
+- [fun prepare()](./details.md#prepare)
 
-- [seekTo()](./details.md#seekto)
+- [fun release()](./details.md#release)
 
-- [addEventHandler()](./details.md#addeventhandler)
+- [fun seekBack(increment: Duration)](./details.md#seekback)
 
-- [removeEventHandler()](./details.md#removeeventhandler)
+- [fun seekForward(increment: Duration)](./details.md#seekforward)
 
-- [addEventListener()](./details.md#addeventlistener)
+- [fun seekTo(position: Duration, force: Boolean)](./details.md#seekto)
 
-- [removeEventListener()](./details.md#removeeventlistener)
+- [fun addEventHandler(handler: EventHandler): EventHandler](./details.md#addeventhandler)
+
+- [fun removeEventHandler(handler: EventHandler)](./details.md#removeeventhandler)
+
+- [fun addEventListener(listener: EventListener)](./details.md#addeventlistener)
+
+- [fun removeEventListener(listener: EventListener)](./details.md#removeeventlistener)

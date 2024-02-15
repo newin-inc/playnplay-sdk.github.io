@@ -57,32 +57,37 @@ MediaPlayer는 미디어 관련 확장성을 제공하기 위해 [Player](https:
     <a href="./methods/home.md">메서드</a>
 </summary>
 
+- [fun fastSeek(to: Duration)](./methods/details.md#fastseek)
 
-- [fastSeek()](./methods/details.md#fastseek)
+- [fun load(uri: String)](./methods/details.md#load)
 
-- [load()](./methods/details.md#load)
+- [fun load(uri: Uri)](./methods/details.md#load-1)
 
-- [pause()](./methods/details.md#pause)
+- [fun load(mediaItem: MediaItem)](./methods/details.md#load-2)
 
-- [play()](./methods/details.md#play)
+- [fun load(mediaItems: List<MediaItem>)](./methods/details.md#load-3)
 
-- [prepare()](./methods/details.md#prepare)
+- [fun pause()](./methods/details.md#pause)
 
-- [release()](./methods/details.md#release)
+- [fun play()](./methods/details.md#play)
 
-- [seekBack()](./methods/details.md#seekback)
+- [fun prepare()](./methods/details.md#prepare)
 
-- [seekForward()](./methods/details.md#seekforward)
+- [fun release()](./methods/details.md#release)
 
-- [seekTo()](./methods/details.md#seekto)
+- [fun seekBack(increment: Duration)](./methods/details.md#seekback)
 
-- [addEventHandler()](./methods/details.md#addeventhandler)
+- [fun seekForward(increment: Duration)](./methods/details.md#seekforward)
 
-- [removeEventHandler()](./methods/details.md#removeeventhandler)
+- [fun seekTo(position: Duration, force: Boolean)](./methods/details.md#seekto)
 
-- [addEventListener()](./methods/details.md#addeventlistener)
+- [fun addEventHandler(handler: EventHandler): EventHandler](./methods/details.md#addeventhandler)
 
-- [removeEventListener()](./methods/details.md#removeeventlistener)
+- [fun removeEventHandler(handler: EventHandler)](./methods/details.md#removeeventhandler)
+
+- [fun addEventListener(listener: EventListener)](./methods/details.md#addeventlistener)
+
+- [fun removeEventListener(listener: EventListener)](./methods/details.md#removeeventlistener)
 
 </details>
 <br>

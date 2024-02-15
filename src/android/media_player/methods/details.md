@@ -1,9 +1,9 @@
-# fastSeek()
+# fastSeek
 
-MediaPlayer.fastSeek()는 입력된 시간으로 바로 이동하기 위한 메서드입니다.
 ```kotlin
 fun fastSeek(to: Duration)
 ```
+입력된 시간으로 바로 이동하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:---:|:--:|---|
@@ -20,22 +20,16 @@ mediaPlayer.fastSeek(50.seconds)
 <br><br><br><br>
 
 --------
-# load()
+# load
 
-MediaPlayer.load()는 미디어를 로드하기 위한 메서드입니다.
 ```kotlin
 fun load(uri: String)
-fun load(uri: Uri)
-fun load(mediaItem: MediaItem)
-fun load(mediaItems: List<MediaItem>)
 ```
+미디어 주소를 문자열로 입력 받아서 미디어를 로드하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
 |uri|String|스트링 형태의 미디어 주소|
-|uri|Uri| [Uri](https://developer.android.com/reference/android/net/Uri)|
-|mediaItem|MediaItem|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)|
-|mediaItems|List\<MediaItem\>|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)의 리스트|
 
 \
 사용 예제
@@ -49,9 +43,72 @@ mediaPlayer.load(listOf(mediaItem1, mediaItem2))    // 타입: List<MediaItem>
 <br><br><br><br>
 
 --------
-# pause()
+# load
 
-Player.pause()는 미디어를 일시 정지하기 위한 메서드입니다.\
+```kotlin
+fun load(uri: Uri)
+```
+미디어 주소를 Uri 타입으로 입력 받아서 미디어를 로드하기 위한 메서드입니다.
+
+|파라미터|타입|설명|
+|:--:|:--:|---|
+|uri|Uri| [Uri](https://developer.android.com/reference/android/net/Uri)|
+
+\
+사용 예제
+```kotlin
+mediaPlayer.load(uri)   // 타입: Uri
+```
+
+<br><br><br><br>
+
+--------
+# load
+
+```kotlin
+fun load(mediaItem: MediaItem)
+```
+미디어 아이템을 로드하기 위한 메서드입니다.
+
+|파라미터|타입|설명|
+|:--:|:--:|---|
+|mediaItem|MediaItem|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)|
+
+\
+사용 예제
+```kotlin
+mediaPlayer.load(mediaItem) // 타입: MediaItem
+```
+
+<br><br><br><br>
+
+--------
+# load
+
+```kotlin
+fun load(mediaItems: List<MediaItem>)
+```
+미디어 아이템 목록을 로드하기 위한 메서드입니다.
+
+|파라미터|타입|설명|
+|:--:|:--:|---|
+|mediaItems|List\<MediaItem\>|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)의 리스트|
+
+\
+사용 예제
+```kotlin
+mediaPlayer.load(listOf(mediaItem1, mediaItem2))    // 타입: List<MediaItem>
+```
+
+<br><br><br><br>
+
+--------
+# pause
+
+```kotlin
+fun pause()
+```
+미디어를 일시 정지하기 위한 메서드입니다.\
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#pause()">Player.pause</a>
@@ -60,9 +117,12 @@ Player.pause()는 미디어를 일시 정지하기 위한 메서드입니다.\
 <br><br><br><br>
 
 --------
-# play()
+# play
 
-Player.play()는 미디어를 재생하기 위한 메서드입니다.\
+```kotlin
+fun play()
+```
+미디어를 재생하기 위한 메서드입니다.\
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#play()">Player.play</a>
@@ -71,9 +131,12 @@ Player.play()는 미디어를 재생하기 위한 메서드입니다.\
 <br><br><br><br>
 
 --------
-# prepare()
+# prepare
 
-MediaPlayer.prepare()는 미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [defaultPlaybackRate](../properties/details.md#defaultplaybackrate), [defaultMuted](../properties/details.md#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하기 시작하고 재생에 필요한 리소스를 확보합니다.\
+```kotlin
+fun prepare()
+```
+미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [defaultPlaybackRate](../properties/details.md#defaultplaybackrate), [defaultMuted](../properties/details.md#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하기 시작하고 재생에 필요한 리소스를 확보합니다.\
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#prepare()">Player.prepare()</a>
@@ -82,9 +145,13 @@ MediaPlayer.prepare()는 미디어 관련 기본 설정을 하기 위한 메서�
 <br><br><br><br>
 
 --------
-# release()
+# release
 
-MediaPlayer.release()는 미디어 목록, 이벤트 핸들러, 리스너 등 미디어에 관련하여 설정했던 것들을 모두 해제한 후, 미디어 플레이어를 릴리스 시키기 위한 메서드입니다.\
+```kotlin
+fun release()
+```
+
+미디어 목록, 이벤트 핸들러, 리스너 등 미디어에 관련하여 설정했던 것들을 모두 해제한 후, 미디어 플레이어를 릴리스 시키기 위한 메서드입니다.\
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#release()">Player.release()</a>
@@ -93,12 +160,12 @@ MediaPlayer.release()는 미디어 목록, 이벤트 핸들러, 리스너 등 �
 <br><br><br><br>
 
 --------
-# seekBack()
+# seekBack
 
-MediaPlayer.seekBack()는 현재 위치에서 입력된 시간 전으로 이동하기 위한 메서드입니다.
 ```kotlin
 fun seekBack(increment: Duration)
 ```
+현재 위치에서 입력된 시간 전으로 이동하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:---:|:--:|---|
@@ -106,7 +173,7 @@ fun seekBack(increment: Duration)
 
 \
 사용 예제
-```kolint
+```kotlin
 mediaPlayer.seekTo(30.seconds)
 	
 mediaPlayer.seekBack(10.seconds)
@@ -116,12 +183,12 @@ val currentTime = mediaPlayer.currentTime   // 20s
 <br><br><br><br>
 
 --------
-# seekForward()
+# seekForward
 
-MediaPlayer.seekForward()는 현재 위치에서 입력된 시간 후로 이동하기 위한 메서드입니다.
 ```kotlin
 fun seekForward(increment: Duration)
 ```
+현재 위치에서 입력된 시간 후로 이동하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
@@ -139,12 +206,12 @@ val currentTime = mediaPlayer.currentTime	// 40s
 <br><br><br><br>
 
 --------
-# seekTo()
+# seekTo
 
-MediaPlayer.seekTo()는 입력된 시간 위치로 이동하기 위한 메서드입니다.
 ```kotlin
 fun seekTo(position: Duration, force: Boolean = false)
 ```
+입력된 시간 위치로 이동하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
@@ -161,13 +228,14 @@ val currentTime = mediaPlayer.currentTime	// 30s
 <br><br><br><br>
 
 --------
-# addEventHandler()
+# addEventHandler
 
-MediaPlayer.addEventHandler()는 [이벤트 핸들러](../event_handlers/home.md)를 추가하기 위한 메서드입니다.
-반환된 핸들러는 이벤트 핸들러를 제거할 목적으로 [MediaPlayer.removeEventHandler()](#removeeventhandler)에서 사용할 수 있습니다.
 ```kotlin
 fun addEventHandler(handler: EventHandler): EventHandler
 ```
+
+[이벤트 핸들러](../event_handlers/home.md)를 추가하기 위한 메서드입니다.
+반환된 핸들러는 이벤트 핸들러를 제거할 목적으로 [MediaPlayer.removeEventHandler()](#removeeventhandler)에서 사용할 수 있습니다.
 
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|---|
@@ -184,12 +252,12 @@ mediaPlayer.addEventHandler(EventHandler.Ended {
 <br><br><br><br>
 
 --------
-# removeEventHandler()
+# removeEventHandler
 
-MediaPlayer.removeEventHandler()는 [이벤트 핸들러](../event_handlers/home.md)를 제거하기 위한 메서드입니다.
 ```kotlin
 fun removeEventHandler(handler: EventHandler)
 ```
+[이벤트 핸들러](../event_handlers/home.md)를 제거하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:---:|:--:|---|
@@ -212,12 +280,12 @@ mediaPlayer.removeEventHandler(endedHandler)
 <br><br><br><br>
 
 --------
-# addEventListener()
+# addEventListener
 
-MediaPlayer.addEventListener()는 [이벤트 리스너](../event_listeners/home.md)를 추가하기 위한 메서드입니다.
 ```kotlin
 fun addEventListener(listener: EventListener)
 ```
+[이벤트 리스너](../event_listeners/home.md)를 추가하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
@@ -240,12 +308,12 @@ mediaPlayer.addEventListener(componentListener)
 <br><br><br><br>
 
 --------
-# removeEventListener()
+# removeEventListener
 
-MediaPlayer.removeEventListener()는 [이벤트 리스너](../event_listeners/home.md)를 제거하기 위한 메서드입니다.
 ```kotlin
 fun removeEventListener(listener: EventListener)
 ```
+[이벤트 리스너](../event_listeners/home.md)를 제거하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
