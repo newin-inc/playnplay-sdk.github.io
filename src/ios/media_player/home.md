@@ -81,57 +81,57 @@ MediaPlayer는 미디어 플레이어로 아래의 속성과 메서드를 지원
     <a href="./methods/home.md">메서드</a>
 </summary>
 
-- [fastSeekTo(position:)](./methods/details.md#fastseektoposition)
+- [func fastSeekTo(position: Duration)](./methods/details.md#fastseektoposition)
 
-- [hasNextMediaItem()](./methods/details.md#hasnextmediaitem)
+- [func hasNextMediaItem() -> Bool](./methods/details.md#hasnextmediaitem)
 
-- [hasPreviousMediaItem()](./methods/details.md#haspreviousmediaitem)
+- [func hasNextMediaItem() -> Bool](./methods/details.md#haspreviousmediaitem)
 
-- [load(mediaItem:)](./methods/details.md#loadmediaitem)
+- [func load(mediaItem: MediaItem)](./methods/details.md#loadmediaitem)
 
-- [load(mediaItems:startMediaItemIndex:)](./methods/details.md#loadmediaitemsstartmediaitemindex)
+- [func load(mediaItems: [MediaItem], startMediaItemIndex: Int)](./methods/details.md#loadmediaitemsstartmediaitemindex)
 
-- [load(src:)](./methods/details.md#loadsrc)
+- [func load(src: URL)](./methods/details.md#loadsrc)
 
-- [pause()](./methods/details.md#pause)
+- [func pause()](./methods/details.md#pause)
 
-- [play()](./methods/details.md#play)
+- [func play()](./methods/details.md#play)
 
-- [prepare()](./methods/details.md#prepare)
+- [func prepare()](./methods/details.md#prepare)
 
-- [seekBack](./methods/details.md#seekback)
+- [func seekBack()](./methods/details.md#seekback)
 
-- [seekBack(increment:)](./methods/details.md#seekbackincrement)
+- [func seekBack(increment: Duration)](./methods/details.md#seekbackincrement)
 
-- [seekForward()](./methods/details.md#seekforward)
+- [func seekForward()](./methods/details.md#seekforward)
 
-- [seekForward(increment:)](./methods/details.md#seekforwardincrement)
+- [func seekForward(increment: Duration)](./methods/details.md#seekforwardincrement)
 
-- [seekTo(position:)](./methods/details.md#seektoposition)
+- [func seekTo(position: Duration)](./methods/details.md#seektoposition)
 
-- [seekTo(mediaItemIndex:position:)](./methods/details.md#seektomediaitemindexposition)
+- [func seekTo(mediaItemIndex: Int, position: Duration = .indefinite)](./methods/details.md#seektomediaitemindexposition)
 
-- [seekToNext()](./methods/details.md#seektonext)
+- [func seekToNext()](./methods/details.md#seektonext)
 
-- [seekToNextMediaItem()](./methods/details.md#seektonextmediaitem)
+- [func seekToNextMediaItem()](./methods/details.md#seektonextmediaitem)
 
-- [seekToPrevious()](./methods/details.md#seektoprevious)
+- [func seekToPrevious()](./methods/details.md#seektoprevious)
 
-- [seekToPreviousMediaItem()](./methods/details.md#seektopreviousmediaitem)
+- [func seekToPreviousMediaItem()](./methods/details.md#seektopreviousmediaitem)
 
-- [startPictureInPicture()](./methods/details.md#startpictureinpicture)
+- [func startPictureInPicture()](./methods/details.md#startpictureinpicture)
 
-- [stopPictureInPicture()](./methods/details.md#stoppictureinpicture)
+- [func stopPictureInPicture()](./methods/details.md#stoppictureinpicture)
 
-- [stop()](./methods/details.md#stop)
+- [func stop()](./methods/details.md#stop)
 
-- [addEventHandler(_)](./methods/details.md#addeventhandler_)
+- [func addEventHandler(_ handler: MediaPlayer.Handler) -> EventTarget](./methods/details.md#addeventhandler_)
 
-- [removeEventHandler(_)](./methods/details.md#removeeventhandler_)
+- [func removeEventHandler(target: EventTarget)](./methods/details.md#removeeventhandler_)
 
-- [addEventListener(_)](./methods/details.md#addeventlistener_)
+- [func addEventListener(_ listener: MediaPlayer.EventListener)](./methods/details.md#addeventlistener_)
 
-- [removeEventListener(_)](./methods/details.md#removeeventlistener_)
+- [func removeEventListener(_ listener: MediaPlayer.EventListener)](./methods/details.md#removeeventlistener_)
 
 </details>
 <br>

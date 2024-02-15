@@ -1,13 +1,13 @@
 # fastSeekTo(position:)
 
-MediaPlayer.fastSeekTo()는 입력된 시간으로 빠르게 이동하기 위한 메서드입니다. 언제나 딱 정확한 위치로 가지는 않습니다.
+```swift
+func fastSeekTo(position: Duration)
+```
+입력된 시간으로 빠르게 이동하기 위한 메서드입니다. 언제나 딱 정확한 위치로 가지는 않습니다.
 <div align="right">
 비교: <a href="#seektoposition">seekTo(position:)</a>
 </div>
 
-```swift
-func fastSeekTo(position: Duration)
-```
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -23,11 +23,11 @@ mediaPlayer.fastSeekTo(position: .seconds(50))
 --------
 # hasNextMediaItem()
 
-MediaPlayer.hasNextMediaItem()은 다음에 재생할 미디어가 있는지를 반환하는 메서드입니다. 목록의 마지막이 아니거나, 전체 반복 모드일 경우 true를 반환합니다.
-
 ```swift
 func hasNextMediaItem() -> Bool
 ```
+다음에 재생할 미디어가 있는지를 반환하는 메서드입니다. 목록의 마지막이 아니거나, 전체 반복 모드일 경우 true를 반환합니다.
+
 
 사용 예제
 ```swift
@@ -41,11 +41,10 @@ if (mediaPlayer.hasNextMediaItem()) {
 --------
 # hasPreviousMediaItem()
 
-MediaPlayer.hasPreviousMediaItem()은 바로 앞에  재생할 미디어가 있는지를 반환하는 메서드입니다. 목록의 처음이 아니거나, 전체 반복 모드일 경우 true를 반환합니다.
-
 ```swift
 func hasNextMediaItem() -> Bool
 ```
+바로 앞에 재생할 미디어가 있는지를 반환하는 메서드입니다. 목록의 처음이 아니거나, 전체 반복 모드일 경우 true를 반환합니다.
 
 사용 예제
 ```swift
@@ -59,11 +58,10 @@ if (mediaPlayer.hasPreviousMediaItem()) {
 --------
 # load(mediaItem:)
 
-MediaPlayer.load(mediaItem:)는 하나의 미디어를 로드하기 위한 메서드입니다.
-
 ```swift
 func load(mediaItem: MediaItem)
 ```
+하나의 미디어를 로드하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -74,14 +72,13 @@ func load(mediaItem: MediaItem)
 --------
 # load(mediaItems:startMediaItemIndex:)
 
-MediaPlayer.load(mediaItems:startMediaItemIndex:)는 여러 개의 미디어를 로드하기 위한 메서드입니다. 처음으로 재생할 미디어를 정할 수 있습니다.
-
 ```swift
 func load(
     mediaItems: [MediaItem],
     startMediaItemIndex: Int = 0
 )
 ```
+여러 개의 미디어를 로드하기 위한 메서드입니다. 처음으로 재생할 미디어를 정할 수 있습니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -99,73 +96,65 @@ mediaPlayer.load(mediaItems: mediaItems, 0) // 0번째 아이템부터 시작.�
 --------
 # load(src:)
 
-load(src:)
-MediaPlayer.load(src:)는 URL을 사용하여 미디어를 로드하기 위한 메서드입니다.
-
 ```swift
 func load(src: URL)
 ```
+URL을 사용하여 미디어를 로드하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |src|[URL](https://developer.apple.com/documentation/foundation/url)|로드할 미디어의 주소|
-
 
 <br><br><br><br>
 
 --------
 # pause()
 
-MediaPlayer.pause()는 미디어를 일시 정지하기 위한 메서드입니다.
-
 ```swift
 func pause()
 ```
-
+미디어를 일시 정지하기 위한 메서드입니다.
 
 <br><br><br><br>
 
 --------
 # play()
 
-MediaPlayer.play()는 미디어를 재생하기 위한 메서드입니다.
-
 ```swift
 func play()
 ```
+미디어를 재생하기 위한 메서드입니다.
 
 <br><br><br><br>
 
 --------
 # prepare()
 
-MediaPlayer.prepare()는 미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [autoplay](../properties/details.md#autoplay), [defaultPlaybackRate](../properties/details.md#defaultplaybackrate), [defaultMuted](../properties/details.md#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하는 과정까지 진행합니다.
-
 ```swift
 func prepare()
 ```
+미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [autoplay](../properties/details.md#autoplay), [defaultPlaybackRate](../properties/details.md#defaultplaybackrate), [defaultMuted](../properties/details.md#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하는 과정까지 진행합니다.
 
 <br><br><br><br>
 
 --------
-# seekBack
-
-MediaPlayer.seekBack()는 현재 위치에서 속성 [seekBackIncrement](../properties/details.md#seekbackincrement) 만큼 전으로 이동하기 위한 메서드입니다.
+# seekBack()
 
 ```swift
 func seekBack()
 ```
+현재 위치에서 속성 [seekBackIncrement](../properties/details.md#seekbackincrement) 만큼 전으로 이동하기 위한 메서드입니다.
+
 
 <br><br><br><br>
 
 --------
 # seekBack(increment:)
 
-MediaPlayer.seekBack()는 현재 위치에서 입력된 시간 전으로 이동하기 위한 메서드입니다.
-
 ```swift
 func seekBack(increment: Duration)
 ```
+현재 위치에서 입력된 시간 전으로 이동하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -186,22 +175,20 @@ mediaPlayer.seekBack()
 --------
 # seekForward()
 
-MediaPlayer.seekForward()는 현재 위치에서 속성 [seekForwardIncrement](../properties/details.md#seekforwardincrement) 만큼 후로 이동하기 위한 메서드입니다.
-
 ```swift
 func seekForward()
 ```
+현재 위치에서 속성 [seekForwardIncrement](../properties/details.md#seekforwardincrement) 만큼 후로 이동하기 위한 메서드입니다.
 
 <br><br><br><br>
 
 --------
 # seekForward(increment:)
 
-MediaPlayer.seekForward()는 현재 위치에서 입력된 시간 후로 이동하기 위한 메서드입니다.
-
 ```swift
 func seekForward(increment: Duration)
 ```
+현재 위치에서 입력된 시간 후로 이동하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -222,14 +209,13 @@ mediaPlayer.seekForward()
 --------
 # seekTo(position:)
 
-MediaPlayer.seekTo(position:)는 입력된 시간 위치로 정확하게 이동하기 위한 메서드입니다.
-<div align="right">
-비교: <a href="#fastseektoposition">fastSeekTo(position:)</a>
-</div>
-
 ```swift
 func seekTo(position: Duration)
 ```
+입력된 시간 위치로 정확하게 이동하기 위한 메서드입니다.
+<div align="right">
+비교: <a href="#fastseektoposition">fastSeekTo(position:)</a>
+</div>
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -245,11 +231,10 @@ mediaPlayer.seekTo(position: .seconds(30))
 --------
 # seekTo(mediaItemIndex:position:)
 
-MediaPlayer.seekTo(mediaItemIndex:position:)는 현재 재생 중인 미디어를 정지하고 다른 미디어를 재생하기 위한 메서드입니다. 재생 목록의 index만 파라미터로 넘겨줄 경우에는, 해당 미디어의 마지막에 재생했던 위치에서 시작합니다.
-
 ```swift
-func seekTo(mediaItemIndex: Int, position: Duration = .indefinite) 
+func seekTo(mediaItemIndex: Int, position: Duration = .indefinite)
 ```
+현재 재생 중인 미디어를 정지하고 다른 미디어를 재생하기 위한 메서드입니다. 재생 목록의 index만 파라미터로 넘겨줄 경우에는, 해당 미디어의 마지막에 재생했던 위치에서 시작합니다.
 
 |파라미터|타입|설명|필수|
 |:--:|:--:|--|:--:|
@@ -270,90 +255,85 @@ mediaPlayer.seekTo(mediaItemIndex: 3, position: .seconds(120))
 --------
 # seekToNext()
 
-[MediaPlayer.seekToNexMediaItemt()](#seektonextmediaitem)와 동일합니다.
+```swift
+func seekToNext()
+```
+[seekToNexMediaItemt()](#seektonextmediaitem)와 동일합니다.
 
 <br><br><br><br>
 
 --------
 # seekToNextMediaItem()
 
-MediaPlayer.seekToNextMediaItem()은 다음으로 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 다음 미디어로 이동하는 메서드입니다. 목록의 맨 뒤에 위치한 미디어이지만 전체 반복 모드일 경우, 목록의 맨 앞으로 이동합니다.
-
 ```swift
 func seekToNextMediaItem()
 ```
+다음으로 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 다음 미디어로 이동하는 메서드입니다. 목록의 맨 뒤에 위치한 미디어이지만 전체 반복 모드일 경우, 목록의 맨 앞으로 이동합니다.
 
 <br><br><br><br>
 
 --------
 # seekToPrevious()
 
-MediaPlayer.seekToPrevious()는 현재 재생 위치가 속성 maxSeekToPreviousPosition보다 앞이면 이전 미디어로 이동합니다.(참고: [seekToPreviousMediaItem()](#seektopreviousmediaitem)) 
+```swift
+func seekToPrevious()
+```
+현재 재생 위치가 속성 maxSeekToPreviousPosition보다 앞이면 이전 미디어로 이동합니다.(참고: [seekToPreviousMediaItem()](#seektopreviousmediaitem)) 
 그렇지 않으면 현재 미디어의 맨 앞으로 이동합니다.
 <div align="right">
 참고: <a href="../properties/details.md#maxseektopreviousposition">maxSeekToPreviousPosition</a>
 </div>
-
-```swift
-func seekToPrevious()
-```
 
 <br><br><br><br>
 
 --------
 # seekToPreviousMediaItem()
 
-MediaPlayer.seekToPreviousMediaItem()은 앞에 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 이전 미디어로 이동하는 메서드입니다. 목록의 맨 앞에 위치한 미디어일 경우, 목록의 마지막 미디어로 이동합니다.
-
 ```swift
 func seekToPreviousMediaItem()
 ```
+앞에 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 이전 미디어로 이동하는 메서드입니다. 목록의 맨 앞에 위치한 미디어일 경우, 목록의 마지막 미디어로 이동합니다.
 
 <br><br><br><br>
 
 --------
 # startPictureInPicture()
 
-MediaPlayer.startPictureInPicture()는 화면 속 화면 모드를 시작하는 메서드입니다.
-
 ```swift
 func startPictureInPicture()
 ```
+화면 속 화면 모드를 시작하는 메서드입니다.
 
 <br><br><br><br>
 
 --------
 # stopPictureInPicture()
 
-MediaPlayer.stopPictureInPicture()는 화면 속 화면 모드를 종료하는 메서드입니다.
-
 ```swift
 func stopPictureInPicture()
 ```
+화면 속 화면 모드를 종료하는 메서드입니다.
 
 <br><br><br><br>
 
 --------
 # stop()
 
-stop()
-MediaPlayer.stop()은 미디어를 완전 종료할 때 부르는 메서드입니다. MediaPlayer가 종료되면 자동으로 호출됩니다. 이 메서드가 호출되면, 미디어를 멈추고, [emptied](../event_handlers/details.md#emptied) 핸들러를 호출하고, [playbackState](../enum/details.md#playbackstate)가 .idle상태로 바뀝니다.
-
 ```swift
 func stop()
 ```
+미디어를 완전 종료할 때 부르는 메서드입니다. MediaPlayer가 종료되면 자동으로 호출됩니다. 이 메서드가 호출되면, 미디어를 멈추고, [emptied](../event_handlers/details.md#emptied) 핸들러를 호출하고, [playbackState](../enum/details.md#playbackstate)가 .idle상태로 바뀝니다.
 
 <br><br><br><br>
 
 --------
 # addEventHandler(_)
 
-MediaPlayer.addEventHandler()는 [이벤트 핸들러](../event_handlers/home.md)를 추가하기 위한 메서드입니다.
-반환된 target은 이벤트 핸들러를 제거할 목적으로 [MediaPlayer.removeEventHandler()](#removeeventhandler_)에서 사용할 수 있습니다.
-
 ```swift
 func addEventHandler(_ handler: MediaPlayer.Handler) -> EventTarget
 ```
+[이벤트 핸들러](../event_handlers/home.md)를 추가하기 위한 메서드입니다.
+반환된 target은 이벤트 핸들러를 제거할 목적으로 [removeEventHandler()](#removeeventhandler_)에서 사용할 수 있습니다.
 
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|--|
@@ -373,11 +353,10 @@ mediaPlayer.addEventHandler(
 --------
 # removeEventHandler(_)
 
-MediaPlayer.removeEventHandler()는 이벤트 핸들러를 제거하기 위한 메서드입니다.
-
 ```swift
 func removeEventHandler(target: EventTarget)
 ```
+이벤트 핸들러를 제거하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -400,12 +379,10 @@ mediaPlayer.removeEventHandler(target)
 --------
 # addEventListener(_)
 
-addEventListener(_)
-MediaPlayer.addEventListener()는 [이벤트 리스너](../event_listeners/home.md)를 추가하기 위한 메서드입니다.
-
 ```swift
 func addEventListener(_ listener: MediaPlayer.EventListener)
 ```
+[이벤트 리스너](../event_listeners/home.md)를 추가하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -429,11 +406,10 @@ mediaPlayer.addEventListener(compoenentListener)
 --------
 # removeEventListener(_)
 
-MediaPlayer.removeEventListener()는 [이벤트 리스너](../event_listeners/home.md)를 제거하기 위한 메서드입니다.
-
 ```swift
 func removeEventListener(_ listener: MediaPlayer.EventListener)
 ```
+[이벤트 리스너](../event_listeners/home.md)를 제거하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|

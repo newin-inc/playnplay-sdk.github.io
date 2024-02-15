@@ -1,53 +1,53 @@
 # 메서드
 
-- [fastSeekTo(position:)](./details.md#fastseektoposition)
+- [func fastSeekTo(position: Duration)](./details.md#fastseektoposition)
 
-- [hasNextMediaItem()](./details.md#hasnextmediaitem)
+- [func hasNextMediaItem() -> Bool](./details.md#hasnextmediaitem)
 
-- [hasPreviousMediaItem()](./details.md#haspreviousmediaitem)
+- [func hasNextMediaItem() -> Bool](./details.md#haspreviousmediaitem)
 
-- [load(mediaItem:)](./details.md#loadmediaitem)
+- [func load(mediaItem: MediaItem)](./details.md#loadmediaitem)
 
-- [load(mediaItems:startMediaItemIndex:)](./details.md#loadmediaitemsstartmediaitemindex)
+- [func load(mediaItems: [MediaItem], startMediaItemIndex: Int)](./details.md#loadmediaitemsstartmediaitemindex)
 
-- [load(src:)](./details.md#loadsrc)
+- [func load(src: URL)](./details.md#loadsrc)
 
-- [pause()](./details.md#pause)
+- [func pause()](./details.md#pause)
 
-- [play()](./details.md#play)
+- [func play()](./details.md#play)
 
-- [prepare()](./details.md#prepare)
+- [func prepare()](./details.md#prepare)
 
-- [seekBack](./details.md#seekback)
+- [func seekBack()](./details.md#seekback)
 
-- [seekBack(increment:)](./details.md#seekbackincrement)
+- [func seekBack(increment: Duration)](./details.md#seekbackincrement)
 
-- [seekForward()](./details.md#seekforward)
+- [func seekForward()](./details.md#seekforward)
 
-- [seekForward(increment:)](./details.md#seekforwardincrement)
+- [func seekForward(increment: Duration)](./details.md#seekforwardincrement)
 
-- [seekTo(position:)](./details.md#seektoposition)
+- [func seekTo(position: Duration)](./details.md#seektoposition)
 
-- [seekTo(mediaItemIndex:position:)](./details.md#seektomediaitemindexposition)
+- [func seekTo(mediaItemIndex: Int, position: Duration = .indefinite)](./details.md#seektomediaitemindexposition)
 
-- [seekToNext()](./details.md#seektonext)
+- [func seekToNext()](./details.md#seektonext)
 
-- [seekToNextMediaItem()](./details.md#seektonextmediaitem)
+- [func seekToNextMediaItem()](./details.md#seektonextmediaitem)
 
-- [seekToPrevious()](./details.md#seektoprevious)
+- [func seekToPrevious()](./details.md#seektoprevious)
 
-- [seekToPreviousMediaItem()](./details.md#seektopreviousmediaitem)
+- [func seekToPreviousMediaItem()](./details.md#seektopreviousmediaitem)
 
-- [startPictureInPicture()](./details.md#startpictureinpicture)
+- [func startPictureInPicture()](./details.md#startpictureinpicture)
 
-- [stopPictureInPicture()](./details.md#stoppictureinpicture)
+- [func stopPictureInPicture()](./details.md#stoppictureinpicture)
 
-- [stop()](./details.md#stop)
+- [func stop()](./details.md#stop)
 
-- [addEventHandler(_)](./details.md#addeventhandler_)
+- [func addEventHandler(_ handler: MediaPlayer.Handler) -> EventTarget](./details.md#addeventhandler_)
 
-- [removeEventHandler(_)](./details.md#removeeventhandler_)
+- [func removeEventHandler(target: EventTarget)](./details.md#removeeventhandler_)
 
-- [addEventListener(_)](./details.md#addeventlistener_)
+- [func addEventListener(_ listener: MediaPlayer.EventListener)](./details.md#addeventlistener_)
 
-- [removeEventListener(_)](./details.md#removeeventlistener_)
+- [func removeEventListener(_ listener: MediaPlayer.EventListener)](./details.md#removeeventlistener_)
