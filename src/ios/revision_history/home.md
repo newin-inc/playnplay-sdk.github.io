@@ -12,6 +12,9 @@
 
 * [설정 방법](../how_to_set/project_settings.md)
     
+    * [시작하기](../how_to_set/get_started.md)<br>
+    시작하기 섹션을 설정 방법 아래로 이동하였습니다.
+
     * [프로젝트 설정](../how_to_set/project_settings.md)
 
         * [AppDelegate 설정](../how_to_set/project_settings.md#appdelegate-설정)<br>

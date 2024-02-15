@@ -10,8 +10,8 @@
     - [변경 이력](./desktop/revision_history/home.md)
 
 - [Android](./android/home.md)
-    - [시작하기](./android/introduction/home.md)
     - [설정 방법](./android/how_to_set/home.md)
+        - [시작하기](./android/how_to_set/get_started.md)
         - [프로젝트 생성](./android/how_to_set/create_project.md)
         - [프로젝트 설정](./android/how_to_set/project_settings.md)
     - [사용 방법](./android/how_to_use/home.md)
@@ -35,8 +35,8 @@
     - [변경 이력](./android/revision_history/home.md)
 
 - [iOS](./ios/home.md)
-    - [시작하기](./ios/introduction/home.md)
     - [설정 방법](./ios/how_to_set/home.md)
+        - [시작하기](./ios/how_to_set/get_started.md)
         - [프로젝트 생성](./ios/how_to_set/create_project.md)
         - [프로젝트 설정](./ios/how_to_set/project_settings.md)
     - [사용 방법](./ios/how_to_use/home.md)

@@ -13,6 +13,9 @@
 
 * [설정 방법](../how_to_set/home.md)
 
+    * [시작하기](../how_to_set/get_started.md)<br>
+    시작하기 섹션을 설정 방법 아래로 이동하였습니다.
+
     * [프로젝트 설정](../how_to_set/project_settings.md)
 
         * [build.gradle.kts 수정](../how_to_set/project_settings.md#buildgradlekts-수정)
