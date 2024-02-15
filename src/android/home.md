@@ -7,9 +7,9 @@
 
 | <!-- -->    | <!-- --> |
 |-------------|----------|
-| Version     | 0.1.2    |
-| Latest update | 2024.2.15. |
-| Contact     | 감형렬 (hyeongryeol.kam@newin.co.kr) |
+| 버전    | 0.1.2    |
+| 업데이트 날짜 | 2024.2.15. |
+| 작성자     | 감형렬 (hyeongryeol.kam@newin.co.kr) |
 
 \
 \
