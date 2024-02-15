@@ -216,23 +216,23 @@ let mediaItem = MediaItem.Builder(url: URL(string: "미디어주소.mp4")!)
 #### MediaItem.Builder(url:)
 제목을 설정하기 위해 Builder()를 사용합니다.
 <div align="right">
-참고: <a href="../media_item/home.md#mediaitembuilder">MediaItem.Builder</a>
+참고: <a href="../struct/details.md#builder">MediaItem.Builder</a>
 </div>
 
 #### .metadataConfiguration(_)
 제목 정보를 넘겨줍니다.
 <div align="right">
-참고: <a href="../media_item/home.md#metadataconfiguration_---builder">metadataConfiguration(_)</a>
+참고: <a href="../struct/details.md#metadataconfiguration_">metadataConfiguration(_)</a>
 </div>
 
 #### .drmConfiguration(_)
 DRM설정값을 넘겨줍니다.
 <div align="right">
-참고: <a href="../media_item/home.md#drmconfiguration_---builder">drmConfiguration(_)</a>
+참고: <a href="../struct/details.md#drmconfiguration_">drmConfiguration(_)</a>
 </div>
 
 #### .build()
 앞에서 입력받은 정보를 바탕으로 미디어 아이템을 만듭니다.
 <div align="right">
-참고: <a href="../media_item/home.md#build---mediaitem">build()</a>
+참고: <a href="../struct/details.md#build">build()</a>
 </div>
