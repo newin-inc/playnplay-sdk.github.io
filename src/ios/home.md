@@ -13,16 +13,10 @@
 
 \
 \
-\
-\
-\
-\
-\
-\
-* Overview
 
-본 문서는 iOS용 PlaynPlay SDK 연동을 위한 가이드 문서입니다.
+## [iOS SDK 다운로드](http://app.playnplay.com/sdks/latest/NPlayerSDKSample-iOS.zip)
 
-* Revision History
+\
+\
 
-변경 이력은 [여기](./revision_history/home.md)에서 확인 가능합니다.
+문서 변경 이력은 [여기](./revision_history/home.md)에서 확인 가능합니다.

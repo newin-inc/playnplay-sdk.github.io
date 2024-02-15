@@ -4,6 +4,10 @@
 
 ![](./img/build_gradle_kts.png)
 
+### 안드로이드 SDK 다운로드
+
+[여기](http://app.playnplay.com/sdks/latest/NPlayerSDKSample-android.zip)에서 다운 받으세요.
+
 ### 안드로이드 SDK 추가
 
 안드로이드 SDK가 포함된 디렉토리는 프로젝트 내 어디든 상관없습니다.

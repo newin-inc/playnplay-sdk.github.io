@@ -1,5 +1,9 @@
 # 프로젝트 설정
 
+## iOS SDK 다운로드
+
+[여기](http://app.playnplay.com/sdks/latest/NPlayerSDKSample-iOS.zip)에서 다운 받으세요.
+
 ## iOS SDK 추가
 
 왼쪽 탭에서 방금 만든 프로젝트를 클릭하면 오른쪽에 아래 그림과 같은 설정 창이 열립니다. **PROJECT** 아래의 아이템이 선택되어 있으면, 여기에서 iOS Deployment Target 등 원하는 설정을 해주시면 됩니다.
