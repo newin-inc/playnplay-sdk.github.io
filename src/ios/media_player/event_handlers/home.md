@@ -23,7 +23,13 @@
 
 - [pictureInPicturePossibleChange](./details.md#pictureinpicturepossiblechange)
 
-- [pictureInPictureDid(Will)Start(Stop)](./details.md#pictureinpicturedidwillstartstop)
+- [pictureInPictureDidStart](./details.md#pictureinpicturedidstart)
+
+- [pictureInPictureDidStop](./details.md#pictureinpicturedidstop)
+
+- [pictureInPictureWillStart](./details.md#pictureinpicturewillstart)
+
+- [pictureInPictureWillStop](./details.md#pictureinpicturewillstop)
 
 - [play](./details.md#play)
 

@@ -118,13 +118,49 @@ func onPictureInPicturePossibleChange(possible: Bool)
 <br><br><br><br>
 
 --------
-# onPictureInPictureDid(Will)Start(Stop)()
+# onPictureInPictureDidStart()
 <div align="right">
-이벤트 핸들러: <a href="../event_handlers/details.md#pictureinpicturedidwillstartstop">EventHandler.pictureInPictureDid(Will)Start(Stop)</a>
+이벤트 핸들러: <a href="../event_handlers/details.md#pictureinpicturedidstart">EventHandler.pictureInPictureDidStart</a>
 </div>
 
 ```swift
 func onPictureInPictureDidStart()
+```
+
+<br><br><br><br>
+
+--------
+# onPictureInPictureDidStop()
+<div align="right">
+이벤트 핸들러: <a href="../event_handlers/details.md#pictureinpicturedidstop">EventHandler.pictureInPictureDidStop</a>
+</div>
+
+```swift
+func onPictureInPictureDidStart()
+```
+
+<br><br><br><br>
+
+--------
+# onPictureInPictureWillStart()
+<div align="right">
+이벤트 핸들러: <a href="../event_handlers/details.md#pictureinpicturewillstart">EventHandler.pictureInPictureWillStart</a>
+</div>
+
+```swift
+func onPictureInPictureWillStart()
+```
+
+<br><br><br><br>
+
+--------
+# onPictureInPictureWillStop()
+<div align="right">
+이벤트 핸들러: <a href="../event_handlers/details.md#pictureinpicturewillstop">EventHandler.pictureInPictureWillStop</a>
+</div>
+
+```swift
+func onPictureInPictureWillStop()
 ```
 
 <br><br><br><br>

@@ -191,7 +191,10 @@ mediaPlayer.addEventHandler(
 EventHandler.pictureInPictureActiveChange는 화면 속 화면 모드가 켜지거나 꺼지는 시점에 사용하기 위한 핸들러입니다.
 <div align="right">
 이벤트 리스너: <a href="../event_listeners/details.md#onpictureinpictureactivechangeactive">onPictureInPictureActiveChange(active:)</a><br>
-참고: <a href="#pictureinpicturedidwillstartstop">pictureInPictureDid(Will)Start(Stop)</a>
+참고: <a href="#pictureinpicturedidstart">pictureInPictureDidStart</a>,
+<a href="#pictureinpicturedidstop">pictureInPictureDidStop</a>,
+<a href="#pictureinpicturewillstart">pictureInPictureWillStart</a>,   
+<a href="#pictureinpicturewillstop">pictureInPictureWillStop</a><br>
 </div>
 
 ```swift
@@ -239,21 +242,66 @@ mediaPlayer.addEventHandler(
 <br><br><br><br>
 
 --------
-# pictureInPictureDid(Will)Start(Stop)
+# pictureInPictureDidStart
 
-EventHandler.pictureInPictureDidStart, EventHandler.pictureInPictureDidStop, EventHandler.pictureInPictureWillStart, EventHandler.pictureInPictureWillStop은 화면 속 화면 모드 전환 과정에 좀더 세분화하여 사용하기 위한 핸들러입니다.
+EventHandler.pictureInPictureDidStart는 화면 속 화면 모드가 시작한 후 사용하기 위한 핸들러입니다.
 <div align="right">
-이벤트 리스너: <a href="../event_listeners/details.md#onpictureinpicturedidwillstartstop">onPictureInPictureDid(Will)Start(Stop)()</a>
+이벤트 리스너: <a href="../event_listeners/details.md#onpictureinpicturedidstart">onPictureInPictureDidStart()</a>
 </div>
 
 ```swift
 case pictureInPictureDidStart(() -> Void)
-case pictureInPictureDidStop(() -> Void)
-case pictureInPictureWillStart(() -> Void)
-case pictureInPictureWillStop(() -> Void
 ```
 
-화면 속 화면 모드로 들어가면, pictureInPictureWillStart → [pictureInPictureActiveChange](#pictureinpictureactivechange)(true) → pictureInPictureDidStart의 순서대로, 화면 속 화면 모드가 종료되면, pictureInPictureWillStop → [pictureInPictureActiveChange](#pictureinpictureactivechange)(false) → pictureInPictureDidStop의 순서대로 호출됩니다.
+화면 속 화면 모드로 들어가면, [pictureInPictureWillStart](#pictureinpicturewillstart) → [pictureInPictureActiveChange](#pictureinpictureactivechange)(true) → [pictureInPictureDidStart](#pictureinpicturedidstart)의 순서대로 호출됩니다.
+
+<br><br><br><br>
+
+--------
+# pictureInPictureDidStop
+
+EventHandler.pictureInPictureDidStop은 화면 속 화면 모드가 끝나고 난 후 사용하기 위한 핸들러입니다.
+<div align="right">
+이벤트 리스너: <a href="../event_listeners/details.md#onpictureinpicturedidstop">onPictureInPictureDidStop()</a>
+</div>
+
+```swift
+case pictureInPictureDidStop(() -> Void)
+```
+
+화면 속 화면 모드가 종료되면, [pictureInPictureWillStop](#pictureinpicturewillstop) → [pictureInPictureActiveChange](#pictureinpictureactivechange)(false) → [pictureInPictureDidStop](#pictureinpicturedidstop)의 순서대로 호출됩니다.
+
+<br><br><br><br>
+
+--------
+# pictureInPictureWillStart
+
+EventHandler.pictureInPictureWillStart는 화면 속 화면 모드가 시작하기 직전에 사용하기 위한 핸들러입니다.
+<div align="right">
+이벤트 리스너: <a href="../event_listeners/details.md#onpictureinpicturewillstart">onPictureInPictureWillStart()</a>
+</div>
+
+```swift
+case pictureInPictureWillStart(() -> Void)
+```
+
+화면 속 화면 모드로 들어가면, [pictureInPictureWillStart](#pictureinpicturewillstart) → [pictureInPictureActiveChange](#pictureinpictureactivechange)(true) → [pictureInPictureDidStart](#pictureinpicturedidstart)의 순서대로 호출됩니다.
+
+<br><br><br><br>
+
+--------
+# pictureInPictureWillStop
+
+화면 속 화면 모드가 끝나기 직전애 사용하기 위한 핸들러입니다.
+<div align="right">
+이벤트 리스너: <a href="../event_listeners/details.md#onpictureinpicturewilltstop">onPictureInPictureWillStop()</a>
+</div>
+
+```swift
+case pictureInPictureWillStop(() -> Void)
+```
+
+화면 속 화면 모드가 종료되면, [pictureInPictureWillStop](#pictureinpicturewillstop) → [pictureInPictureActiveChange](#pictureinpictureactivechange)(false) → [pictureInPictureDidStop](#pictureinpicturedidstop)의 순서대로 호출됩니다.
 
 <br><br><br><br>
 

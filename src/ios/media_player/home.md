@@ -161,7 +161,13 @@ MediaPlayer는 미디어 플레이어로 아래의 속성과 메서드를 지원
 
 - [pictureInPicturePossibleChange](./event_handlers/details.md#pictureinpicturepossiblechange)
 
-- [pictureInPictureDid(Will)Start(Stop)](./event_handlers/details.md#pictureinpicturedidwillstartstop)
+- [pictureInPictureDidStart](./event_handlers/details.md#pictureinpicturedidstart)
+
+- [pictureInPictureDidStop](./event_handlers/details.md#pictureinpicturedidstop)
+
+- [pictureInPictureWillStart](./event_handlers/details.md#pictureinpicturewillstart)
+
+- [pictureInPictureWillStop](./event_handlers/details.md#pictureinpicturewillstop)
 
 - [play](./event_handlers/details.md#play)
 
@@ -221,7 +227,13 @@ MediaPlayer는 미디어 플레이어로 아래의 속성과 메서드를 지원
 
 - [onPictureInPicturePossibleChange(possible:)](./event_listeners/details.md#onpictureinpicturepossiblechangepossible)
 
-- [onPictureInPictureDid(Will)Start(Stop)()](./event_listeners/details.md#onpictureinpicturedidwillstartstop))
+- [onPictureInPictureDidStart()](./event_listeners/details.md#onpictureinpicturedidstart)
+
+- [onPictureInPictureDidStop()](./event_listeners/details.md#onpictureinpicturedidstop)
+
+- [onPictureInPictureWillStart()](./event_listeners/details.md#onpictureinpicturewillstart)
+
+- [onPictureInPictureWillStop()](./event_listeners/details.md#onpictureinpicturewillstop)
 
 - [onPlay()](./event_listeners/details.md#onplay)
 

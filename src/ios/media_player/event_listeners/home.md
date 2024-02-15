@@ -22,7 +22,13 @@ EventListener는 이벤트 처리를 위한 프로토콜로, 다음과 같은 �
 
 - [onPictureInPicturePossibleChange(possible:)](./details.md#onpictureinpicturepossiblechangepossible)
 
-- [onPictureInPictureDid(Will)Start(Stop)()](./details.md#onpictureinpicturedidwillstartstop)
+- [onPictureInPictureDidStart()](./details.md#onpictureinpicturedidstart)
+
+- [onPictureInPictureDidStop()](./details.md#onpictureinpicturedidstop)
+
+- [onPictureInPictureWillStart()](./details.md#onpictureinpicturewillstart)
+
+- [onPictureInPictureWillStop()](./details.md#onpictureinpicturewillstop)
 
 - [onPlay()](./details.md#onplay)
 
