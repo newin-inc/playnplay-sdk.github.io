@@ -1,4 +1,4 @@
-# 목록
+# 열거형
 
 - [EventHandler](./details.md#eventhandler)
 

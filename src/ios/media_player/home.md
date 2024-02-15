@@ -268,7 +268,7 @@ MediaPlayer는 미디어 플레이어로 아래의 속성과 메서드를 지원
 
 <details>
 <summary>
-    <a href="./enum/home.md">목록</a>
+    <a href="./enum/home.md">열거형</a>
 </summary>
 
 - [EventHandler](./enum/details.md#eventhandler)

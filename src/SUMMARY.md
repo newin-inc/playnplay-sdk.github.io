@@ -51,7 +51,7 @@
             - [상세](./ios/media_player/event_listeners/details.md)
         - [구조체](./ios/media_player/struct/home.md)
             - [상세](./ios/media_player/struct/details.md)
-        - [목록](./ios/media_player/enum/home.md)
+        - [열거형](./ios/media_player/enum/home.md)
             - [상세](./ios/media_player/enum/details.md)
         - [클래스](./ios/media_player/class/home.md)
             - [상세](./ios/media_player/class/details.md)
