@@ -348,7 +348,6 @@ func stop()
 --------
 # addEventHandler(_)
 
-addEventHandler(_)
 MediaPlayer.addEventHandler()는 [이벤트 핸들러](../event_handlers/home.md)를 추가하기 위한 메서드입니다.
 반환된 target은 이벤트 핸들러를 제거할 목적으로 [MediaPlayer.removeEventHandler()](#removeeventhandler_)에서 사용할 수 있습니다.
 

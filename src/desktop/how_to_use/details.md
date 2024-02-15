@@ -87,7 +87,7 @@ async function launchAgent(type, url, options);
 |seekable|boolean \| undefined| Seek 기능을 허용할 것인가에 대한 속성 |
 
 ### 실행 함수
-[https://app.playnplay.com/modules/agent.min.js](https://app.playnplay.com/modules/agent.min.js)
+[https://app.playnplay.com/modules/agent.min.js](https://app.playnplay.com/modules/agent.min.js)<br/>
 [https://app.playnplay.com/modules/agent.js](https://app.playnplay.com/modules/agent.js)
 
 ```typescript
