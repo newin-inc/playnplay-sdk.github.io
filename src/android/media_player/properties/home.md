@@ -1,43 +1,43 @@
 # 속성
 
-- [autoplay](./details.md#autoplay)
+- [var autoplay: Boolean](./details.md#autoplay)
 
-- [buffered](./details.md#buffered)
+- [val buffered: TimeRanges](./details.md#buffered)
 
-- [currentMediaItem](./details.md#currentmediaitem)
+- [val currentMediaItem: MediaItem](./details.md#currentmediaitem)
 
-- [currentMediaItemIndex](./details.md#currentmediaitemindex)
+- [val currentMediaItemIndex: Int](./details.md#currentmediaitemindex)
 
-- [currentSrc](./details.md#currentsrc)
+- [val currentSrc: Uri?](./details.md#currentsrc)
 
-- [currentTime](./details.md#currenttime)
+- [var currentTime: Duration](./details.md#currenttime)
 
-- [defaultMuted](./details.md#defaultmuted)
+- [var defaultMuted: Boolean](./details.md#defaultmuted)
 
-- [defaultPlaybackRate](./details.md#defaultplaybackrate)
+- [var defaultPlaybackRate: Float](./details.md#defaultplaybackrate)
 
-- [deviceVolume](./details.md#devicevolume)
+- [var deviceVolume: Float](./details.md#devicevolume)
 
-- [duration](./details.md#duration)
+- [val duration: Duration](./details.md#duration)
 
-- [ended](./details.md#ended)
+- [val ended: Boolean](./details.md#ended)
 
-- [error](./details.md#error)
+- [val error: PlaybackException?](./details.md#error)
 
-- [loop](./details.md#loop)
+- [var loop: Boolean](./details.md#loop)
 
-- [mediaItems](./details.md#mediaitems)
+- [val mediaItems: List<MediaItem>](./details.md#mediaitems)
 
-- [muted](./details.md#muted)
+- [var muted: Boolean](./details.md#muted)
 
-- [paused](./details.md#paused)
+- [val paused: Boolean](./details.md#paused)
 
-- [playbackRate](./details.md#playbackrate)
+- [var playbackRate: Float](./details.md#playbackrate)
 
-- [preservesPitch](./details.md#preservespitch)
+- [var preservesPitch: Boolean](./details.md#preservespitch)
 
-- [repeatRange](./details.md#repeatrange)
+- [var repeatRange: RepeatRange?](./details.md#repeatrange)
 
-- [resizeMode](./details.md#resizemode)
+- [var resizeMode: @ResizeMode Int](./details.md#resizemode)
 
-- [seeking](./details.md#seeking)
+- [val seeking: Boolean](./details.md#seeking)

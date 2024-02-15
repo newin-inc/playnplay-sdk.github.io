@@ -36,7 +36,7 @@
 
 - [var mediaItems: [MediaItem]](./details.md#mediaitems)
 
-- [var muted: Bool {](./details.md#muted)
+- [var muted: Bool](./details.md#muted)
 
 - [var paused: Bool](./details.md#paused)
 

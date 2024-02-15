@@ -1,6 +1,9 @@
 # autoplay
 
-MediaPlayer.autoplay는 미디어가 중단되지 않고 충분한 양의 미디어 사용이 가능할 때 즉시 재생이 시작되어야 하는지를 나타내는 속성입니다. true면 자동 재생합니다.
+```kotlin
+var autoplay: Boolean
+```
+미디어가 중단되지 않고 충분한 양의 미디어 사용이 가능할 때 즉시 재생이 시작되어야 하는지를 나타내는 속성입니다. true면 자동 재생합니다.
 
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
@@ -17,7 +20,10 @@ mediaPlayer.autoplay = false	// 다음 미디어로 이동 시, 자동 재생 �
 --------
 # buffered
 
-MediaPlayer.buffered는 버퍼에 있는 미디어 리소스의 구간을 반환합니다.
+```kotlin
+val buffered: TimeRanges
+```
+버퍼에 있는 미디어 리소스의 구간을 반환합니다.
 
 | 타입 | 설명 | 설정 |
 |:---:|---|:---:|
@@ -36,7 +42,10 @@ val end = mediaPlayer.buffered.end(0)		// 첫 번째 timeRange의 종료 위치
 --------
 # currentMediaItem
 
-Player.currentMediaItem는 현재 재생 중인 미디어 아이템을 의미하는 속성입니다.
+```kotlin
+val currentMediaItem: MediaItem
+```
+현재 재생 중인 미디어 아이템을 의미하는 속성입니다.
 
 | 타입 | 설명 | 설정 |
 |:---:|:---:|-----|
@@ -47,7 +56,10 @@ Player.currentMediaItem는 현재 재생 중인 미디어 아이템을 의미하
 --------
 # currentMediaItemIndex
 
-Player.currentMediaItemIndex는 현재 재생 중인 미디어 아이템의 index를 의미하는 속성입니다.
+```kotlin
+val currentMediaItemIndex: Int
+```
+현재 재생 중인 미디어 아이템의 index를 의미하는 속성입니다.
 
 | 타입 | 설명 | 설정 |
 |:---:|----|:----:|
@@ -58,7 +70,10 @@ Player.currentMediaItemIndex는 현재 재생 중인 미디어 아이템의 inde
 --------
 # currentSrc
 
-MediaPlayer.currentSrc는 미디어 리소스의 uri를 의미하는 속성입니다.
+```kotlin
+val currentSrc: Uri?
+```
+미디어 리소스의 uri를 의미하는 속성입니다.
 
 | 타입 | 설명 | 설정 | 기본값 |
 |:---:|----|:---:|:---:|
@@ -77,7 +92,10 @@ val currentUri = mediaPlayer.currentSrc // "미디어주소.mp4"
 --------
 # currentTime
 
-MediaPlayer.currentTime은 현재 재생 위치를 Duration 단위로 지정합니다.
+```kotlin
+var currentTime: Duration
+```
+현재 재생 위치를 Duration 단위로 지정합니다.
 
 | 타입 | 설명 | 설정 |
 |:---:|----|:---:|
@@ -96,7 +114,10 @@ val currentTime = mediaPlayer.currentTime // 20s
 --------
 # defaultMuted
 
-MediaPlayer.defaultMuted는 오디오의 음소거 기본 설정을 나타내는 속성입니다.
+```kotlin
+var defaultMuted: Boolean
+```
+오디오의 음소거 기본 설정을 나타내는 속성입니다.
 
 |타입|설명|설정|기본값|
 |:---:|---|:---:|:---:|
@@ -113,7 +134,10 @@ mediaPlayer.defaultMuted = true
 --------
 # defaultPlaybackRate
 
-MediaPlayer.defaultPlaybackRate는 미디어의 기본 재생 속도를 나타내는 속성입니다.
+```kotlin
+var defaultPlaybackRate: Float
+```
+미디어의 기본 재생 속도를 나타내는 속성입니다.
 
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
@@ -130,7 +154,10 @@ mediaPlayer.defaultPlaybackRate = 2.0f
 --------
 # deviceVolume
 
-MediaPlayer.deviceVolume은 현재 미디어 플레이어의 음량을 나타내는 속성입니다.
+```kotlin
+var deviceVolume: Float
+```
+현재 미디어 플레이어의 음량을 나타내는 속성입니다.
 
 |타입|설명|범위|설정|
 |:--:|--|:--:|:--:|
@@ -147,7 +174,10 @@ mediaPlayer.deviceVolume = 1.0f // 100%의 음량
 --------
 # duration
 
-MediaPlayer.duration은 현재 미디어 길이를 나타냅니다. 재생 가능한 미디어가 없을 경우 [C.TIME_UNSET](https://developer.android.com/reference/kotlin/androidx/media3/common/C#TIME_UNSET())를 반환
+```kotlin
+val duration: Duration
+```
+현재 미디어 길이를 나타냅니다. 재생 가능한 미디어가 없을 경우 [C.TIME_UNSET](https://developer.android.com/reference/kotlin/androidx/media3/common/C#TIME_UNSET())를 반환
 
 |타입|설명|설정|
 |:--:|--|:--:|
@@ -164,7 +194,10 @@ val duration = mediaPlayer.duration // 2m 12s
 --------
 # ended
 
-MediaPlayer.ended는 미디어 재생 완료 여부를 나타내는 속성입니다.
+```kotlin
+val ended: Boolean
+```
+미디어 재생 완료 여부를 나타내는 속성입니다.
 
 |타입|설명|설정|
 |:--:|--|:--:|
@@ -183,7 +216,10 @@ if (mediaPlayer.ended) {
 --------
 # error
 
-MediaPlayer.error는 최근 발생한 에러를 나타내는 속성입니다.
+```kotlin
+val error: PlaybackException?
+```
+최근 발생한 에러를 나타내는 속성입니다.
 
 |타입|설명|설정|
 |:--:|--|:--:|
@@ -202,7 +238,10 @@ when(mediaPlayer.error?.errorCode) {
 --------
 # loop
 
-MediaPlayer.loop는 미디어 재생이 끝났을 때 다시 처음부터 재생할 지 여부를 나타내는 속성입니다.
+```kotlin
+var loop: Boolean
+```
+미디어 재생이 끝났을 때 다시 처음부터 재생할 지 여부를 나타내는 속성입니다.
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
@@ -219,7 +258,10 @@ mediaPlayer.loop = true
 --------
 # mediaItems
 
-MediaPlayer.mediaItems는 미디어 아이템들의 목록을 나타내는 속성입니다. 해당 속성은 설정이 불가능합니다. 목록 전체를 바꾸고 싶을 때는 Player.setMediaItems()를 사용하시면 됩니다.
+```kotlin
+val mediaItems: List<MediaItem>
+```
+미디어 아이템들의 목록을 나타내는 속성입니다. 해당 속성은 설정이 불가능합니다. 목록 전체를 바꾸고 싶을 때는 Player.setMediaItems()를 사용하시면 됩니다.
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
@@ -239,7 +281,10 @@ mediaPlayer.setMediaItems(newMediaItems)    // 잘라낸 아이템으로 목록 
 --------
 # muted
 
-MediaPlayer.muted는 음소거 여부를 나타내는 속성입니다. 음소거면 true, 아니면 false입니다.
+```kotlin
+var muted: Boolean
+```
+음소거 여부를 나타내는 속성입니다. 음소거면 true, 아니면 false입니다.
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
@@ -258,7 +303,10 @@ button.setOnClickListener {
 --------
 # paused
 
-MediaPlayer.paused는 미디어가 일시 정지 상태인지 나타내는 속성입니다.
+```kotlin
+val paused: Boolean
+```
+미디어가 일시 정지 상태인지 나타내는 속성입니다.
 다음과 같은 조건 중 하나라도 해당할 때, true를 반환합니다.
 1. playWhenReady의 값이 false일 때,
 2. playbackState가 STATE_IDLE일 때 (제한된 리소스를 가지고 있을 때),
@@ -281,7 +329,10 @@ if (mediaPlayer.paused) {
 --------
 # playbackRate
 
-MediaPlayer.playbackRate는 미디어가 재생 속도를 나타내는 속성입니다. 정상 속도는 1.0이고, 1보다 작을 때는 느리게, 1보다 클 때는 빠르게 재생합니다. 이 때, 오디오 피치 유지 여부는 MediaPlayer.preservesPitch의 값으로 제어할 수 있습니다.
+```kotlin
+var playbackRate: Float
+```
+미디어가 재생 속도를 나타내는 속성입니다. 정상 속도는 1.0이고, 1보다 작을 때는 느리게, 1보다 클 때는 빠르게 재생합니다. 이 때, 오디오 피치 유지 여부는 [preservesPitch](#preservespitch)의 값으로 제어할 수 있습니다.
 
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
@@ -298,7 +349,10 @@ mediaPlayer.playbackRate = 2.0f
 --------
 # preservesPitch
 
-MediaPlayer.preservesPitch는 재생 속도에 따른 오디오 피치 유지 여부를 나타내는 속성입니다. 값이 true면 재생 속도가 변해도 오디오 피치는 변함 없으며, false일 경우 재생 속도에 따라 오디오 피치가 변합니다.
+```kotlin
+var preservesPitch: Boolean
+```
+재생 속도에 따른 오디오 피치 유지 여부를 나타내는 속성입니다. 값이 true면 재생 속도가 변해도 오디오 피치는 변함 없으며, false일 경우 재생 속도에 따라 오디오 피치가 변합니다.
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
@@ -315,7 +369,10 @@ mediaPlayer.preservesPitch = false // 재생 속도에 따라 오디오 피치�
 --------
 # repeatRange
 
-MediaPlayer.repeatRange는 반복 구간 범위를 나타내는 속성입니다.
+```kotlin
+var repeatRange: RepeatRange?
+```
+반복 구간 범위를 나타내는 속성입니다.
 null이 아닌 값으로 설정을 했을 경우 해당 구간을 지속해서 반복 재생합니다. start가 설정되어 있지 않을 경우에는 반복 구간의 시작은 미디어의 맨 앞부분이며, end가 설정되어 있지 않을 경우에는 반복 구간의 끝은 미디어의 맨 마지막 부분으로 간주합니다.
 
 |타입|설명|설정|
@@ -343,7 +400,10 @@ val end2 = mediaPlayer.repeateRange?.end        // 30s
 --------
 # resizeMode
 
-MediaPlayer.resizeMode는 화면 크기 상태를 나타내는 속성입니다.
+```kotlin
+var resizeMode: @ResizeMode Int
+```
+화면 크기 상태를 나타내는 속성입니다.
 
 |타입|설명|설정|기본값|
 |:--:|---|:--:|:--:|
@@ -354,7 +414,10 @@ MediaPlayer.resizeMode는 화면 크기 상태를 나타내는 속성입니다.
 --------
 # seeking
 
-MediaPlayer.seeking은 미디어가 탐색 중이지를 나타내는 속성입니다. 현재 미디어가 새로운 위치로 이동하고 있거나 탐색중이면 true를 반홥합니다.
+```kotlin
+val seeking: Boolean
+```
+미디어가 탐색 중이지를 나타내는 속성입니다. 현재 미디어가 새로운 위치로 이동하고 있거나 탐색중이면 true를 반홥합니다.
 
 |타입|설명|설정|
 |:--:|--|:--:|

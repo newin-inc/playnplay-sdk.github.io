@@ -7,47 +7,47 @@ MediaPlayer는 미디어 관련 확장성을 제공하기 위해 [Player](https:
     <a href="./properties/home.md">속성</a>
 </summary>
 
-- [autoplay](./properties/details.md#autoplay)
+- [var autoplay: Boolean](./properties/details.md#autoplay)
 
-- [buffered](./properties/details.md#buffered)
+- [val buffered: TimeRanges](./properties/details.md#buffered)
 
-- [currentMediaItem](./properties/details.md#currentmediaitem)
+- [val currentMediaItem: MediaItem](./properties/details.md#currentmediaitem)
 
-- [currentMediaItemIndex](./properties/details.md#currentmediaitemindex)
+- [val currentMediaItemIndex: Int](./properties/details.md#currentmediaitemindex)
 
-- [currentSrc](./properties/details.md#currentsrc)
+- [val currentSrc: Uri?](./properties/details.md#currentsrc)
 
-- [currentTime](./properties/details.md#currenttime)
+- [var currentTime: Duration](./properties/details.md#currenttime)
 
-- [defaultMuted](./properties/details.md#defaultmuted)
+- [var defaultMuted: Boolean](./properties/details.md#defaultmuted)
 
-- [defaultPlaybackRate](./properties/details.md#defaultplaybackrate)
+- [var defaultPlaybackRate: Float](./properties/details.md#defaultplaybackrate)
 
-- [deviceVolume](./properties/details.md#devicevolume)
+- [var deviceVolume: Float](./properties/details.md#devicevolume)
 
-- [duration](./properties/details.md#duration)
+- [val duration: Duration](./properties/details.md#duration)
 
-- [ended](./properties/details.md#ended)
+- [val ended: Boolean](./properties/details.md#ended)
 
-- [error](./properties/details.md#error)
+- [val error: PlaybackException?](./properties/details.md#error)
 
-- [loop](./properties/details.md#loop)
+- [var loop: Boolean](./properties/details.md#loop)
 
-- [mediaItems](./properties/details.md#mediaitems)
+- [val mediaItems: List<MediaItem>](./properties/details.md#mediaitems)
 
-- [muted](./properties/details.md#muted)
+- [var muted: Boolean](./properties/details.md#muted)
 
-- [paused](./properties/details.md#paused)
+- [val paused: Boolean](./properties/details.md#paused)
 
-- [playbackRate](./properties/details.md#playbackrate)
+- [var playbackRate: Float](./properties/details.md#playbackrate)
 
-- [preservesPitch](./properties/details.md#preservespitch)
+- [var preservesPitch: Boolean](./properties/details.md#preservespitch)
 
-- [repeatRange](./properties/details.md#repeatrange)
+- [var repeatRange: RepeatRange?](./properties/details.md#repeatrange)
 
-- [resizeMode](./properties/details.md#resizemode)
+- [var resizeMode: @ResizeMode Int](./properties/details.md#resizemode)
 
-- [seeking](./properties/details.md#seeking)
+- [val seeking: Boolean](./properties/details.md#seeking)
 
 </details>
 <br>
