@@ -1,67 +1,67 @@
 # 속성
 
-- [autoplay](./details.md#autoplay)
+- [var autoplay: Bool](./details.md#autoplay)
 
-- [buffered](./details.md#buffered)
+- [var buffered: [TimeRange]](./details.md#buffered)
 
-- [canStartPictureInPictureAutomatically](./details.md#canstartpictureinpictureautomatically)
+- [var canStartPictureInPictureAutomatically: Bool](./details.md#canstartpictureinpictureautomatically)
 
-- [currentMediaItem](./details.md#currentmediaitem)
+- [var currentMediaItem: MediaItem?](./details.md#currentmediaitem)
 
-- [currentMediaItemIndex](./details.md#currentmediaitemindex)
+- [var currentMediaItemIndex: Int](./details.md#currentmediaitemindex)
 
-- [currentSrc](./details.md#currentsrc)
+- [var currentSrc: URL?](./details.md#currentsrc)
 
-- [currentTime](./details.md#currenttime)
+- [var currentTime: Duration](./details.md#currenttime)
 
-- [defaultMuted](./details.md#defaultmuted)
+- [var defaultMuted: Bool](./details.md#defaultmuted)
 
-- [defaultPlaybackRate](./details.md#defaultplaybackrate)
+- [var defaultPlaybackRate: Float](./details.md#defaultplaybackrate)
 
-- [duration](./details.md#duration)
+- [var duration: Duration](./details.md#duration)
 
-- [ended](./details.md#ended)
+- [var ended: Bool](./details.md#ended)
 
-- [error](./details.md#error)
+- [var error: Error?](./details.md#error)
 
-- [isPictureInPictureActive](./details.md#ispictureinpictureactive)
+- [var isPictureInPictureActive: Bool](./details.md#ispictureinpictureactive)
 
-- [isPictureInPicturePossible](./details.md#ispictureinpicturepossible)
+- [var isPictureInPicturePossible: Bool](./details.md#ispictureinpicturepossible)
 
-- [isSeekable](./details.md#isseekable)
+- [var isSeekable: Bool](./details.md#isseekable)
 
-- [loop](./details.md#loop)
+- [var loop: Bool](./details.md#loop)
 
-- [maxSeekToPreviousPosition](./details.md#maxseektopreviousposition)
+- [var maxSeekToPreviousPosition: Duration](./details.md#maxseektopreviousposition)
 
-- [mediaItems](./details.md#mediaitems)
+- [var mediaItems: [MediaItem]](./details.md#mediaitems)
 
-- [muted](./details.md#muted)
+- [var muted: Bool {](./details.md#muted)
 
-- [paused](./details.md#paused)
+- [var paused: Bool](./details.md#paused)
 
-- [playbackRate](./details.md#playbackrate)
+- [var playbackRate: Float](./details.md#playbackrate)
 
-- [playbackState](./details.md#playbackstate)
+- [var playbackState: PlaybackState](./details.md#playbackstate)
 
-- [preservesPitch](./details.md#preservespitch)
+- [var preservesPitch: Bool](./details.md#preservespitch)
 
-- [repeatMode](./details.md#repeatmode)
+- [var repeatMode: RepeatMode](./details.md#repeatmode)
 
-- [repeatRange](./details.md#repeatrange)
+- [var repeatRange: RepeatRange?](./details.md#repeatrange)
 
-- [scalingMode](./details.md#scalingmode)
+- [var scalingMode: ScalingMode](./details.md#scalingmode)
 
-- [seekable](./details.md#seekable)
+- [var seekable: [TimeRange]](./details.md#seekable)
 
-- [seekBackIncrement](./details.md#seekbackincrement)
+- [var seekBackIncrement: Duration](./details.md#seekbackincrement)
 
-- [seekForwardIncrement](./details.md#seekforwardincrement)
+- [var seekForwardIncrement: Duration](./details.md#seekforwardincrement)
 
-- [seeking](./details.md#seeking)
+- [var seeking: Bool](./details.md#seeking)
 
-- [videoSize](./details.md#videosize)
+- [var videoSize: CGSize](./details.md#videosize)
 
-- [view](./details.md#view)
+- [var view: UIView](./details.md#view)
 
-- [volume](./details.md#volume)
+- [var volume: Float](./details.md#volume)
