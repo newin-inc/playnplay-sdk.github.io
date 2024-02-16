@@ -12,6 +12,18 @@ fun onDurationChange(duration: Duration)
 참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onDurationChange(duration: Duration) {
+        updateTimeBar(duration)
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -26,6 +38,17 @@ fun onEmptied()
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#emptied">Emptied</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onEmptied() {
+        hideMedia()
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
 
 <br><br><br><br>
 
@@ -40,6 +63,18 @@ fun onEnded()
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#ended">Ended</a>
 </div>
+
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onEnded() {
+        finish()
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
 
 <br><br><br><br>
 
@@ -56,6 +91,18 @@ fun onError(error: PlaybackException)
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">PlaybackException</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onError(error: PlaybackException) {
+        handleError(it.errorCode)
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -69,6 +116,18 @@ fun onLoadedData()
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#loadeddata">LoadedData</a>
 </div>
+
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onLoadedData() {
+        val audioTracks = mediaPlayer.audioTracks	// 오디오 트랙들
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
 
 <br><br><br><br>
 
@@ -84,6 +143,18 @@ fun onLoadedMetadata()
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#loadedmetadata">LoadedMetadata</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onLoadedMetadata() {
+        val title = mediaPlayer.mediaMetadata.title // 미디어 타이틀
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -97,6 +168,18 @@ fun onLoadStart()
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#loadstart">LoadStart</a>
 </div>
+
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onLoadStart() {
+        displayScreen()
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
 
 <br><br><br><br>
 
@@ -112,6 +195,18 @@ fun onPause()
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#pause">Pause</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onPause() {
+        displayPlayIcon()
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -126,6 +221,18 @@ fun onPlay()
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#play">Play</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onPlay() {
+        displayPauseIcon()
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -139,6 +246,23 @@ fun onPlaying()
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#playing">Playing</a>
 </div>
+
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onPlaying() {
+        removeBufferingText()	// 버퍼링 텍스트 제거
+    }
+    override fun onPlay() {
+        displayPauseIcon()		// 아이콘 변경
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+
+mediaPlayer.play()  // 아이콘을 변경 한 후, 버퍼링 텍스트를 제거합니다.
+```
 
 <br><br><br><br>
 
@@ -162,6 +286,22 @@ fun onPositionDiscontinuity(
 참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onPositionDiscontinuity(
+        player: MediaPlayer,
+        oldPosition: Duration,
+        newPosition: Duration
+    ) {
+        mediaPlayer.updateStatusText("$oldPosition -> $newPosition")   // 26.7s -> 3m 20s	
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -175,6 +315,18 @@ fun onProgress()
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#progress">Progress</a>
 </div>
+
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun fun onProgress() {
+        removeWaitText()
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
 
 <br><br><br><br>
 
@@ -192,6 +344,18 @@ fun onRateChange(playbackRate: Float)
 참고: <a href="../../interface/media-player/details.md#playbackrate">playbackRate</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onRateChange(playbackRate: Float) {
+        val currentPlaybackRate = it	// 예: 2.0f
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -206,6 +370,19 @@ fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?)
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#repeatrangechange">RepeatRangeChange</a><br>
 참고: <a href="../../class/repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
+
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?) {
+        val repeatA = repeatRange?.start
+        val repeatB = repeatRange?.end
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
 
 <br><br><br><br>
 
@@ -222,6 +399,18 @@ fun onResizeModeChange(mode: Int)
 참고: <a href="https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode">AspectRatioFrameLayout.ResizeMode</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onResizeModeChange(mode: Int) {
+        val currentResizeMode = it
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -235,6 +424,18 @@ seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, �
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#seeked">Seeked</a>
 </div>
+
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onSeeked() {
+        assert(mediaPlayer.seeking, false)
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
 
 <br><br><br><br>
 
@@ -250,6 +451,18 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#seeking">Seeking</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onSeeking() {
+        assert(mediaPlayer.seeking, true)
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -263,6 +476,18 @@ fun onSuspend()
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#suspend">Suspend</a>
 </div>
+
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onSuspend() {
+        displayWaitText()
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
 
 <br><br><br><br>
 
@@ -279,6 +504,19 @@ currentTime이 변경되는 시점에 실행합니다. 즉, 미디어가 재생�
 참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onTimeUpdate(position: Duration) {
+        updateTimeBar(position)
+        updateTimeLeft(position)
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -294,6 +532,18 @@ fun onVolumeChange(volume: Float, muted: Boolean)
 참고: <a href="../../interface/media-player/details.md#devicevolume">deviceVolume</a>
 </div>
 
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onVolumeChange(volume: Float, muted: Boolean) {
+        updateVolumeView(volume, muted)
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
+
 <br><br><br><br>
 
 --------
@@ -307,4 +557,16 @@ fun onWaiting()
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#waiting">Waiting</a>
 </div>
+
+\
+사용 예제
+```kotlin
+class ComponentListener: EventListener {
+    override fun onWaiting() {
+        displayAlert("Try it again, later!")
+    }
+}
+val componentListener = ComponentListener()
+mediaPlayer.addEventListener(componentListener)
+```
 
