@@ -5,7 +5,31 @@
 | [0.1](#버전-01) | 2023.12.27. | 첫 버전 문서 |
 | [0.1.1](#버전-011) | 2024.1.12. | 기능 설명 추가 |
 | [0.1.2](#버전-012) | 2024.2.15. | 이벤트 관련 설명 추가 |
+| [0.1.3](#버전-013) | 2024.2.19 | 목차 구조 변경 |
 
+# 버전 0.1.3
+2024.2.19.
+<h1>목차 구조 변경</h1>
+보다 더 사용하고 이해하기 쉽게, 인터페이스 및 클래스로 분류하여 구조를 변경하였습니다.
+
+* [인터페이스](../interface/home.md)
+    * [interface MediaPlayer](../interface/media-player/home.md)
+
+    * [interface EventListener](../interface/event-listeners/home.md)
+
+* [클래스](../class/home.md)
+
+    * [class EventHandler](../class/event-handlers/home.md)
+
+    * [data class RepeatRange](../class/media-player-repeat-range/home.md)<br>
+
+    * [data class TimeRange](../class/time-range/home.md)
+
+    * [data class TimeRanges](../class/time-ranges/home.md)
+
+<br><br><br><br>
+
+-------
 # 버전 0.1.2
 2024.2.15.
 <h1>이벤트 관련 설명 추가</h1>
@@ -44,65 +68,65 @@
     presentMediaPlayer() 설명 내의 미디어 아이템과 관련하여 클래스 MediaItem 링크 추가
 
 
-* [MediaPlayer](../media_player/home.md)
+* MediaPlayer
 
-    * [속성](../media_player/properties/details.md)
+    * 속성
 
-        * [currentMediaItem](../media_player/properties/details.md#currentmediaitem)<br>
+        * currentMediaItem<br>
         속성 Player.currentMediaItem에 대한 설명 추가
 
-        * [currentMediaItemIndex](../media_player/properties/details.md#currentmediaitemindex)<br>
+        * currentMediaItemIndex<br>
         속성 Player.currentMediaItemIndex에 대한 설명 추가
 
-        * [deviceVolume](../media_player/properties/details.md#devicevolume)<br>
+        * deviceVolume<br>
         속성 MediaPlayer.deviceVolume가 새롭게 추가되어 문서에 추가
 
-        * [mediaItems](../media_player/properties/details.md#mediaitems)<br>
+        * mediaItems<br>
         속성 MediaPlayer.mediaItems가 새롭게 추가되어 문서에 추가
 
-        * [resizeMode](../media_player/properties/details.md#resizemode)<br>
+        * resizeMode<br>
         속성 MediaPlayer.resizeMode가 새롭게 추가되어 문서에 추가
 
-    * [메서드](../media_player//methods/details.md)
+    * 메서드
 
-        * [prepare()](../media_player/methods/details.md#prepare)<br>
+        * prepare()<br>
         메서드 MediaPlayer.prepare()에 대한 설명 추가
 
-        * [release()](../media_player/methods/details.md#release)<br>
+        * release()<br>
         메서드 MediaPlayer.release()에 대한 설명 추가
 
-        * [seekTo()](../media_player/methods/details.md#seekto)<br>
+        * seekTo()<br>
         메서드 MediaPlayer.seekTo()에 대한 설명 수정
 
-        * [addEventListener()](../media_player/methods/details.md#addeventlistener)<br>
+        * addEventListener()<br>
         메서드 MediaPlayer.addEventListener()에 대한 설명 추가
 
-        * [removeEventListener()](../media_player/methods/details.md#removeeventlistener)<br>
+        * removeEventListener()<br>
         메서드 MediaPlayer.removeEventListener()에 대한 설명 추가
 
-    * [이벤트 핸들러](../media_player/event_handlers/details.md)
+    * 이벤트 핸들러
 
         * 이벤트 핸들러 파라미터에 대한 설명 추가
         
         * 다음 이벤트 핸들러에 대한 설명 추가
 
-            * [MediaItemTransition](../media_player/event_handlers/details.md#mediaitemtransition)
+            * MediaItemTransition
 
-            * [PlaybackStateChange](../media_player/event_handlers/details.md#playbackstatechange)
+            * PlaybackStateChange
 
-            * [RepeatModeChange](../media_player/event_handlers/details.md#repeatmodechange)
+            * RepeatModeChange
 
-            * [ResizeModeChange](../media_player/event_handlers/details.md#resizemodechange)
+            * ResizeModeChange
 
-            * [VideoSizeChange](../media_player/event_handlers/details.md#videosizechange)
+            * VideoSizeChange
 
         * 다음 이벤트 핸들러 이름 변경
 
-            * [ABRepeatRangeChange → RepeatRangeChange](../media_player/event_handlers/details.md#repeatrangechange)
+            * ABRepeatRangeChange → RepeatRangeChange
 
-            * [onABRepeatRangeChange → onRepeatRangeChange](../media_player/event_listeners/details.md#onrepeatrangechange)
+            * onABRepeatRangeChange → onRepeatRangeChange
 
-    * [이벤트 리스너](../media_player/event_listeners/details.md)
+    * 이벤트 리스너
 
         * 아래의 함수들을 이벤트 리스너 챕터 아래에 추가
 
@@ -171,7 +195,7 @@
 버전 0.1은 아주 기본적인 정보만 담고 있었기 때문에, 실제 첫 문서는 버전 0.1.1로 보는 것이 옳을 수도 있습니다. 버전 0.1의 거의 대부분이 수정되었고, 40여 페이지가 추가가 되었기 때문에, 추가, 수정 목록은 여기서 큰 의미가 없다고 봐도 무방합니다.
 
 
-* [시작하기](../introduction/home.md#시작하기)<br>
+* 시작하기<br>
 SDK 소개 및 배경 설명 추가
 
 * [설정 방법](../how_to_set/home.md)<br>
@@ -191,10 +215,10 @@ SDK 소개 및 배경 설명 추가
 * [사용 방법](../how_to_use/home.md)<br>
 버전 0.1의 사용 예제를 기반으로 하여 코드 설명 및 사용 방법에 대해서 기술 새로 작성
 
-    * [사용 예제](../how_to_use/home.md#액티비티-구성)<br>
+    * [액티비티 구성](../how_to_use/home.md#액티비티-구성)<br>
     코드 및 명령어 설명 추가
 
-* [MediaPlayer](../media_player/home.md)<br>
+* MediaPlayer<br>
 미디어 플레이어 인터페이스의 속성, 메서드 등에 대해서 기술
 
 * [MediaPlayerView](../media_player_view/home.md)<br>
