@@ -379,7 +379,7 @@ null이 아닌 값으로 설정을 했을 경우 해당 구간을 지속해서 �
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|[MediaPlayer.RepeatRange](../../class/repeat-range/home.md)?|반복 구간 범위|가능|
+|[MediaPlayer.RepeatRange](../../class/media-player-repeat-range/home.md)?|반복 구간 범위|가능|
 
 \
 사용 예제
@@ -784,4 +784,4 @@ mediaPlayer.removeEventListener(componentListener)
 
 ## RepeatRange
 
-[여기](../../class/repeat-range/home.md)에 자세한 설명이 있습니다. 
+[여기](../../class/media-player-repeat-range/home.md)에 자세한 설명이 있습니다. 

@@ -432,13 +432,13 @@ data class RepeatRangeChange(val listener: (MediaPlayer.RepeatRange?) -> Unit) :
 ```
 | 파라미터 타입 | 설명 |
 |:--:|:--|
-|[MediaPlayer.RepeatRange](../repeat-range/home.md)?|구간 반복의 구간을 나타내는 데이터 클래스|
+|[MediaPlayer.RepeatRange](../media-player-repeat-range/home.md)?|구간 반복의 구간을 나타내는 데이터 클래스|
 
 구간 반복 모드가 시작되거나 종료되었을 때, 그리고 구간 반복의 시작 위치 또는 종료 위치가 바뀌었을 때를 처리하기 위한 핸들러입니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onrepeatrangechange">onRepeatRangeChange()</a><br>
-참고: <a href="../repeat-range/home.md">MediaPlayer.RepeatRange</a>
+참고: <a href="../media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
 
 \

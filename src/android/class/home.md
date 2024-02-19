@@ -1,9 +1,10 @@
 # 클래스
 
-- [EventHandler](./event-handlers/home.md)
+- [class EventHandler](./event-handlers/home.md)
 
-- [MediaPlayer.RepeatRange](./repeat-range/home.md)
+- [data class RepeatRange](./media-player-repeat-range/home.md)<br>
+MediaPlayer.RepeatRange
 
-- [TimeRange](./time-range/home.md)
+- [data class TimeRange](./time-range/home.md)
 
-- [TimeRanges](./time-ranges/home.md)
+- [data class TimeRanges](./time-ranges/home.md)

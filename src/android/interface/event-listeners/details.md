@@ -368,7 +368,7 @@ fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?)
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#repeatrangechange">RepeatRangeChange</a><br>
-참고: <a href="../../class/repeat-range/home.md">MediaPlayer.RepeatRange</a>
+참고: <a href="../../class/media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
 
 \
