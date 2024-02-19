@@ -325,9 +325,9 @@ case play(() -> Void)
 사용 예제
 ```swift
 mediaPlayer.addEventHandler(
-EventHandler.play({
-	displayPauseIcon()
-})
+    EventHandler.play({
+        displayPauseIcon()
+    })
 )
 ```
 
@@ -349,14 +349,14 @@ case playbackStateChange((_ state: MediaPlayer.PlaybackState) -> Void)
 사용 예제
 ```swift
 mediaPlayer.addEventHandler(
-EventHandler.playbackStateChange({ state in
-switch state {
-case .idle: handleIdleState()
-case .ready: handleReadyState()
-case .buffering: handleBufferingState()
-case .ended: handleEndedState()
-}
-})
+    EventHandler.playbackStateChange({ state in
+        switch state {
+        case .idle: handleIdleState()
+        case .ready: handleReadyState()
+        case .buffering: handleBufferingState()
+        case .ended: handleEndedState()
+        }
+    })
 )
 ```
 
@@ -379,15 +379,15 @@ case playing(() -> Void)
 사용 예제
 ```swift
 mediaPlayer.addEventHandler(
-EventHandler.playing({
-	removeBufferingText()	// 버퍼링 텍스트 제거
-})
+    EventHandler.playing({
+        removeBufferingText()	// 버퍼링 텍스트 제거
+    })
 )
 
 mediaPlayer.addEventHandler(
-EventHandler.play({
-	displayPauseIcon()		// 아이콘 변경
-})
+    EventHandler.play({
+        displayPauseIcon()		// 아이콘 변경
+    })
 )
 
 mediaPlayer.play() 			// 아이콘을 변경 한 후, 버퍼링 텍스트를 제거합니다.
@@ -405,16 +405,16 @@ EventHandler.positionDiscontinuity는 재생 위치가 변경되는 시점에 �
 
 ```swift
 case positionDiscontinuity(
-(_ oldPosition: Duration, _ newPosition: Duration) -> Void
+    (_ oldPosition: Duration, _ newPosition: Duration) -> Void
 )
 ```
 
 사용 예제
 ```swift
 mediaPlayer.addEventHandler(
-EventHandler.positionDiscontinuity({ oldPosition, newPosition in
-showText("\(oldPosition.seconds) -> \(newPosition.seconds)")
-})
+    EventHandler.positionDiscontinuity({ oldPosition, newPosition in
+        showText("\(oldPosition.seconds) -> \(newPosition.seconds)")
+    })
 )
 ```
 
@@ -435,9 +435,9 @@ case progress(() -> Void)
 사용 예제
 ```swift
 mediaPlayer.addEventHandler(
-EventHandler.progress({
-	showProgressingText()
-})
+    EventHandler.progress({
+        showProgressingText()
+    })
 )
 ```
 
@@ -458,9 +458,9 @@ case rateChange((_ rate: Float) -> Void)
 사용 예제
 ```swift
 mediaPlayer.addEventHandler(
-EventHandler.rateChange({ rate in
-displayPlaybackRate(rate)
-})
+    EventHandler.rateChange({ rate in
+        displayPlaybackRate(rate)
+    })
 )
 ```
 
@@ -482,13 +482,13 @@ case repeatModeChange((_ mode: MediaPlayer.RepeatMode) -> Void)
 사용 예제
 ```swift
 mediaPlayer.addEventHandler(
-EventHandler.repeatModeChange({ mode in
-switch mode {
-case .none: showNoRepeatIcon()
-case .one: showRepeatOneIcon()
-case .all: showRepeatAllIcon()
-}
-})
+    EventHandler.repeatModeChange({ mode in
+        switch mode {
+        case .none: showNoRepeatIcon()
+        case .one: showRepeatOneIcon()
+        case .all: showRepeatAllIcon()
+        }
+    })
 )
 ```
 
@@ -510,13 +510,13 @@ case repeatRangeChange((_ range: MediaPlayer.RepeatRange?) -> Void)
 사용 예제
 ```swift
 mediaPlayer.addEventHandler(
-EventHandler.repeatRangeChange({ range in 
-guard let repeatRange = range else {
-stopRepeatMode()
-return
-}
-resetRepeatMode(repeatRange)
-})
+    EventHandler.repeatRangeChange({ range in 
+        guard let repeatRange = range else {
+            stopRepeatMode()
+            return
+        }
+        resetRepeatMode(repeatRange)
+    })
 )
 ```
 
@@ -540,9 +540,9 @@ case scalingModeChange((_ mode: MediaPlayer.ScalingMode) -> Void)
 mediaPlayer.addEventHandler(
     EventHandler.scalingModeChange({ mode in
         switch mode {
-            case .aspectFit: asepectFit()
-            case .aspectFill: aspectFill()
-            case .fill: fill()
+        case .aspectFit: asepectFit()
+        case .aspectFill: aspectFill()
+        case .fill: fill()
         }
     })
 )
