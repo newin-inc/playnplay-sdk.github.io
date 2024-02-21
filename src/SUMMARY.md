@@ -6,7 +6,12 @@
     - [시작하기](./desktop/introduction/home.md)
     - [설정 방법](./desktop/settings/home.md)
     - [사용 방법](./desktop/how_to_use/home.md)
-        - [상세](./desktop/how_to_use/details.md)
+        - [Agent(플레이어) 실행](./desktop/how_to_use/launch-agent.md)
+        - [Callback URL](./desktop/how_to_use/callback-url/home.md)
+            - [접근 권한 검사](./desktop/how_to_use/callback-url/check-access-right.md)
+            - [재생 진행 상태 보고](./desktop/how_to_use/callback-url/notifiy-playback-progress.md)
+            - [다운로드 완료 보고](./desktop/how_to_use/callback-url/notifiy-download-completion.md)
+        - [샘플](./desktop/how_to_use/samples/home.md)
     - [변경 이력](./desktop/revision_history/home.md)
 
 - [Android](./android/home.md)
