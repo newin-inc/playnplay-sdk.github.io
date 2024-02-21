@@ -52,10 +52,10 @@ Embedded Content** 섹션이 있습니다. SDK를 추가하기 위해서 **+** �
 
 커서 있는 곳에서 **Background Modes**를 직접 입력하여 검색을 하거나 아래 목록에서 **Background Modes**를 찾아서, 더블 클릭을 하시면 해당 모드가 추가 됩니다.
 
+![](./img/select_background_modes_from_list.png)
+              
 ![](./img/select_background_modes_thru_typing.png)
 
-![](./img/select_background_modes_thru_typing.png)
-              
 추가한 **Background Modes**에서 **Audio, AirPlay, and Pictures in Picture**를 활성화합니다.
 
 ![](./img/activate_audio_airplay_and_pip.png)

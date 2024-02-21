@@ -497,7 +497,7 @@ mediaPlayer.addEventListener(componentListener)
 ```kotlin
 fun onTimeUpdate(position: Duration)
 ```
-currentTime이 변경되는 시점에 실행합니다. 즉, 미디어가 재생이 되는 동안 수행하려는 작업을 이곳에 구현하시면 됩니다.
+[currentTime](../../interface/media-player/details.md#currenttime)이 변경되는 시점에 실행합니다. 즉, 미디어가 재생이 되는 동안 수행하려는 작업을 이곳에 구현하시면 됩니다.
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#timeupdate">TimeUpdate</a><br>

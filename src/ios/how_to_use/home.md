@@ -152,25 +152,25 @@ DRM 구성을 위해 초기 설정을 합니다. 제공받은 앱 ID와 사용�
 #### MediaItem.from(url:)
 미디어 주소를 파라미터로 입력하여 미디어 아이템을 구성합니다.
 <div align="right">
-참고: <a href="../media_item/home.md#fromurl---mediaitem">from(url:)</a>
+참고: <a href="../struct/details.md#fromurl">from(url:)</a>
 </div>
 
 #### .buildUpon()
 Builder를 사용하여 초기 설정을 완료합니다.
 <div align="right">
-참고: <a href="../media_item/home.md#buildupon---builder">buildUpon()</a>
+참고: <a href="../struct/details.md#buildupon">buildUpon()</a>
 </div>
 
 #### .drmConfiguration(_)
 앞에서 만든 DRM설정값을 넘겨줍니다.
 <div align="right">
-참고: <a href="../media_item/home.md#drmconfiguration_---builder">drmConfiguration(_)</a>
+참고: <a href="../struct/details.md#drmconfiguration_">drmConfiguration(_)</a>
 </div>
 
 #### .build()
 앞에서 입력받은 정보를 바탕으로 미디어 아이템을 만듭니다.
 <div align="right">
-참고: <a href="../media_item/home.md#build---mediaitem">build()</a>
+참고: <a href="../struct/details.md#build">build()</a>
 </div>
 
 ### 미디어뷰 컨트롤러 구성
