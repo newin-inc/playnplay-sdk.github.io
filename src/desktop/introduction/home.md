@@ -24,7 +24,3 @@
 ## PlaynPlay auth server
 
 * 미디어 파일 재생을 위한 라이선스 키를 발급하며, 세션을 관리합니다.
-
-https://sample.playnplay.com/sample.html
-
-https://sample.playnplay.com/test.html
