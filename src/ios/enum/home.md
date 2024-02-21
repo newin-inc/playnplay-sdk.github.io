@@ -1,0 +1,11 @@
+# 열거형
+
+* [enum EventHandler](./event-handlers/home.md)
+
+* [enum MediaPlayer.PlaybackState](./media-player-playback-state/home.md)
+
+* [enum MediaPlayer.RepeatMode](./media-player-repeat-mode/home.md)
+
+* [enum MediaPlayer.ScalingMode](./media-player-scaling-mode/home.md)
+
+* [enum SubtitleConfiguration.Mode](./subtitle-configuration-mode/home.md)
