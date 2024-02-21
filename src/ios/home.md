@@ -14,7 +14,9 @@
 \
 \
 
-## [iOS SDK 다운로드](https://app.playnplay.com/sdks/latest/NPlayerSDKSample-iOS.zip)
+## [iOS SDK 다운로드](https://app.playnplay.com/sdks/latest/NPlayerSDK-iOS.zip)
+
+## [iOS SDK 샘플 다운로드](https://app.playnplay.com/sdks/latest/NPlayerSDKSample-iOS.zip)
 
 \
 \

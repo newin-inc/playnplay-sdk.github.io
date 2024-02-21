@@ -4,11 +4,14 @@
 
 ![](./img/build_gradle_kts.png)
 
-### 안드로이드 SDK 다운로드
+## 안드로이드 SDK 다운로드
 
-[여기](https://app.playnplay.com/sdks/latest/NPlayerSDKSample-android.zip)에서 다운 받으세요.
+[안드로이드 SDK 다운로드](https://app.playnplay.com/sdks/latest/NPlayerSDK-android.zip)
 
-### 안드로이드 SDK 추가
+[안드로이드 SDK 샘플 다운로드](https://app.playnplay.com/sdks/latest/NPlayerSDKSample-android.zip)
+
+
+## 안드로이드 SDK 추가
 
 안드로이드 SDK가 포함된 디렉토리는 프로젝트 내 어디든 상관없습니다.
 
@@ -18,7 +21,7 @@ dependencies {
 }
 ```
 
-### 외부 라이브러리 의존성 추가
+## 외부 라이브러리 의존성 추가
 
 라이브러리 프로젝트 의존성은 안드로이드 SDK가 업데이트 됨에 따라 변동될 수 있습니다. 업데이트가 될 경우 해당 문서를 통해서 알려드리겠습니다.
 
@@ -40,7 +43,7 @@ dependencies {
 참고: <a href="https://developer.android.com/studio/write/java8-support?hl=ko#library-desugaring">디슈가링 지원</a>
 </div>
 
-### 자바 버전
+## 자바 버전
 
 안드로이드 SDK에서 사용하는 자바 관련 버전은 아래와 같습니다.
 

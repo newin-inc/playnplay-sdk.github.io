@@ -2,7 +2,9 @@
 
 ## iOS SDK 다운로드
 
-[여기](https://app.playnplay.com/sdks/latest/NPlayerSDKSample-iOS.zip)에서 다운 받으세요.
+[iOS SDK 다운로드](https://app.playnplay.com/sdks/latest/NPlayerSDK-iOS.zip)
+
+[iOS SDK 샘플 다운로드](https://app.playnplay.com/sdks/latest/NPlayerSDKSample-iOS.zip)
 
 ## iOS SDK 추가
 
