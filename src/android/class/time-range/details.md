@@ -17,6 +17,6 @@ val end: Duration
 ## 사용 예제
 ```kotlin
 val timeRange = TimeRange(0.milliseconds, 5.seconds)
-val start = timeRange.start	    // 0s
+val start = timeRange.start // 0s
 val end = timeRange.duration    // 5s
 ```

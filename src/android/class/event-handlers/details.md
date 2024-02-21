@@ -313,7 +313,7 @@ mediaPlayer.play() // 아이콘을 변경 한 후, 버퍼링 텍스트를 제거
 <br><br><br><br>
 
 --------
-# PositionDiscontinuity
+## PositionDiscontinuity
 
 ```kotlin
 data class PositionDiscontinuity(

@@ -32,11 +32,11 @@ buffered 속성에서 사용되는 데이터 클래스다.
     <a href="./details.md#메서드">메서드</a>
 </summary>
 
-* [fun start(index: Int): Duration](./details.md#withstart)
+* [fun start(index: Int): Duration](./details.md#start)
 
-* [fun end(index: Int): Duration](./details.md#withend)
+* [fun end(index: Int): Duration](./details.md#end)
 
-* [사용 예제](./details.md#사용-예제-1)
+* [사용 예제](./details.md#사용-예제)
 
 </details>
 <br>

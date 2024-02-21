@@ -2,8 +2,7 @@
 
 - [class EventHandler](./event-handlers/home.md)
 
-- [data class RepeatRange](./media-player-repeat-range/home.md)<br>
-MediaPlayer.RepeatRange
+- [data class MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)<br>
 
 - [data class TimeRange](./time-range/home.md)
 

@@ -28,9 +28,11 @@ val oldA = mediaPlayer.repeatRange?.start	// 0s
 val oldB = mediaPlayer.repeatRange?.end		// 미디어 전체 길이 (예: 7m 19s)
 ```
 
+<br><br><br><br>
+
 # 메서드
 
-## withStart()
+## withStart
 ```kotlin
 fun withStart(start: Duration): RepeatRange
 ```
@@ -38,7 +40,7 @@ fun withStart(start: Duration): RepeatRange
 |:--:|:--:|:--:|--|
 |start|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|RepeatRange|구간 반복 시작 위치를 업데이트한 오브젝트를 반환|
 
-## withEnd()
+## withEnd
 ```kotlin
 fun withEnd(end: Duration): RepeatRange
 ```

@@ -29,7 +29,7 @@ val buffered: TimeRanges
 
 | 타입 | 설명 | 설정 |
 |:---:|---|:---:|
-| [com.newin.nplayer.<br>sdk.utils.TimeRanges](../../class/time-ranges/homd.md)) | 현재 버퍼에 담고 있는 미디어 리소스의 구간 데이터 | 불가능 |
+|[com.newin.nplayer.<br>sdk.utils.TimeRanges](../../class/time-ranges/home.md)| 현재 버퍼에 담고 있는 미디어 리소스의 구간 데이터 | 불가능 |
 
 \
 사용 예제
@@ -517,7 +517,7 @@ fun load(mediaItem: MediaItem)
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|mediaItem|MediaItem|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)|
+|mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)|
 
 \
 사용 예제
@@ -537,7 +537,7 @@ fun load(mediaItems: List<MediaItem>)
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|mediaItems|List\<MediaItem\>|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)의 리스트|
+|mediaItems|List\<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)\>|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)의 리스트|
 
 \
 사용 예제
@@ -680,11 +680,11 @@ fun addEventHandler(handler: EventHandler): EventHandler
 ```
 
 [이벤트 핸들러](../../class/event-handlers/home.md)를 추가하기 위한 메서드입니다.
-반환된 핸들러는 이벤트 핸들러를 제거할 목적으로 [MediaPlayer.removeEventHandler()](#removeeventhandler)에서 사용할 수 있습니다.
+반환된 핸들러는 이벤트 핸들러를 제거할 목적으로 [removeEventHandler()](#removeeventhandler)에서 사용할 수 있습니다.
 
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|---|
-|handler|EventHandler|EventHandler|[이벤트 핸들러](../../class/event-handlers/home.md) 참고|
+|handler|[EventHandler](../../class/event-handlers/home.md)|[EventHandler](../../class/event-handlers/home.md)|[이벤트 핸들러](../../class/event-handlers/home.md) 참고|
 
 \
 사용 예제
@@ -706,7 +706,7 @@ fun removeEventHandler(handler: EventHandler)
 
 |파라미터|타입|설명|
 |:---:|:--:|---|
-|handler|EventHandler|[이벤트 핸들러](../../class/event-handlers/home.md) 참고|
+|handler|[EventHandler](../../class/event-handlers/home.md)|[이벤트 핸들러](../../class/event-handlers/home.md) 참고|
 
 \
 사용 예제
@@ -734,7 +734,7 @@ fun addEventListener(listener: EventListener)
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|listener|EventListener|[이벤트 리스너](../event-listeners/home.md) 참고|
+|listener|[EventListener](../event-listeners/home.md)|[이벤트 리스너](../event-listeners/home.md) 참고|
 
 \
 사용 예제
@@ -762,7 +762,7 @@ fun removeEventListener(listener: EventListener)
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|listener|EventListener|[이벤트 리스너](../event-listeners/home.md) 참고|
+|listener|[EventListener](../event-listeners/home.md)|[이벤트 리스너](../event-listeners/home.md) 참고|
 
 \
 사용 예제

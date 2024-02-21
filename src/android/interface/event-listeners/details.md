@@ -20,7 +20,9 @@ class ComponentListener: EventListener {
         updateTimeBar(duration)
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -46,7 +48,9 @@ class ComponentListener: EventListener {
         hideMedia()
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -72,7 +76,9 @@ class ComponentListener: EventListener {
         finish()
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -99,7 +105,9 @@ class ComponentListener: EventListener {
         handleError(it.errorCode)
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -125,7 +133,9 @@ class ComponentListener: EventListener {
         val audioTracks = mediaPlayer.audioTracks	// 오디오 트랙들
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -151,7 +161,9 @@ class ComponentListener: EventListener {
         val title = mediaPlayer.mediaMetadata.title // 미디어 타이틀
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -177,7 +189,9 @@ class ComponentListener: EventListener {
         displayScreen()
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -203,7 +217,9 @@ class ComponentListener: EventListener {
         displayPlayIcon()
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -229,7 +245,9 @@ class ComponentListener: EventListener {
         displayPauseIcon()
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -258,7 +276,9 @@ class ComponentListener: EventListener {
         displayPauseIcon()		// 아이콘 변경
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 
 mediaPlayer.play()  // 아이콘을 변경 한 후, 버퍼링 텍스트를 제거합니다.
@@ -298,7 +318,9 @@ class ComponentListener: EventListener {
         mediaPlayer.updateStatusText("$oldPosition -> $newPosition")   // 26.7s -> 3m 20s	
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -324,7 +346,9 @@ class ComponentListener: EventListener {
         removeWaitText()
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -352,7 +376,9 @@ class ComponentListener: EventListener {
         val currentPlaybackRate = it	// 예: 2.0f
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -380,7 +406,9 @@ class ComponentListener: EventListener {
         val repeatB = repeatRange?.end
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -407,7 +435,9 @@ class ComponentListener: EventListener {
         val currentResizeMode = it
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -433,7 +463,9 @@ class ComponentListener: EventListener {
         assert(mediaPlayer.seeking, false)
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -459,7 +491,9 @@ class ComponentListener: EventListener {
         assert(mediaPlayer.seeking, true)
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -485,7 +519,9 @@ class ComponentListener: EventListener {
         displayWaitText()
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -513,7 +549,9 @@ class ComponentListener: EventListener {
         updateTimeLeft(position)
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -540,7 +578,9 @@ class ComponentListener: EventListener {
         updateVolumeView(volume, muted)
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
 
@@ -566,7 +606,8 @@ class ComponentListener: EventListener {
         displayAlert("Try it again, later!")
     }
 }
+
 val componentListener = ComponentListener()
+
 mediaPlayer.addEventListener(componentListener)
 ```
-
