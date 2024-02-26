@@ -20,6 +20,18 @@
 
 * 서비스할 미디어 파일들을 DRM 패키징하여 준비합니다. (Non DRM도 서비스 가능)
 
+* 다운로드
+    * macOS
+        * [arm64](https://app.playnplay.com/tools/ndrm-pkg-macos-aarch64.zip)
+        * [x86_64](https://app.playnplay.com/tools/ndrm-pkg-macos-x86_64.zip)
+    * Windows
+        * [x86_64](https://app.playnplay.com/tools/ndrm-pkg-windows-x86_64.zip)
+        * [x86](https://app.playnplay.com/tools/ndrm-pkg-windows-i686.zip)
+    * Linux
+        * [aarch64](https://app.playnplay.com/tools/ndrm-pkg-linux-aarch64.zip)
+        * [x86_64](https://app.playnplay.com/tools/ndrm-pkg-linux-x86_64.zip)
+        * [x86](https://app.playnplay.com/tools/ndrm-pkg-linux-i686.zip)
+
 ## 3. 미디어 업로드
 
 * 발급 받은 계정으로 DRM 패키징한 파일을 미디어 서버(콘솔 사이트를 이용)에 업로드합니다.
