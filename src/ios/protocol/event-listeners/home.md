@@ -36,7 +36,7 @@ protocol EventListener : AnyObject {
 }
 ```
 
-EventListener는 이벤트 처리를 위한 프로토콜로, 위과 같은 함수를 제공합니다. 각각 함수에 대한 자세한 설명은 [이벤트 핸들러](../../enum/event-handlers/home.md)를, 사용 방법은 [addEventListener(_)](../../class/media-player/details.md#addeventlistener_)를 참고하시면 됩니다.
+EventListener는 이벤트 처리를 위한 프로토콜로, 위와 같은 함수를 제공합니다. 각각 함수에 대한 자세한 설명은 [이벤트 핸들러](../../enum/event-handlers/home.md)를, 사용 방법은 [addEventListener(_)](../../class/media-player/details.md#addeventlistener_)를 참고하시면 됩니다.
 
 <details>
 <summary>

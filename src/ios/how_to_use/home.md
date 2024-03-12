@@ -102,12 +102,24 @@ let mediaItem = MediaItem.Builder(url: URL(string: "미디어주소.mp4")!)
     .metadataConfiguration(
         MetadataConfiguration.Builder().title("제목").build()
     )
-    .drmConfiguration(drmConfiguration)
     .build()
 ```
 
 <div align="right">
 참고: <a href="../class/media-item-builder/details.md#metadataconfiguration_">metadataConfiguration()</a>
+</div>
+
+### Seek 기능 제한
+미디어 아이템을 구성할 때, seekable(false)을 사용하여 Seek 기능을 제한할 수 있습니다.
+
+```swift
+let mediaItem = MediaItem.Builder(url: URL(string: "미디어주소.mp4")!)
+    .seekable(false)
+    .build()
+```
+
+<div align="right">
+참고: <a href="../class/media-item-builder/details.md#seekable_">seekable(_)</a>
 </div>
 
 ## 구성 관련 코드 추가 설명
