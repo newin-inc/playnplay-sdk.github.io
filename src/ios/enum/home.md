@@ -2,6 +2,8 @@
 
 * [enum EventHandler](./event-handlers/home.md)
 
+* [enum DownloadItem.Status](./download-item-status/home.md)
+
 * [enum MediaPlayer.PlaybackState](./media-player-playback-state/home.md)
 
 * [enum MediaPlayer.RepeatMode](./media-player-repeat-mode/home.md)
