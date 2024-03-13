@@ -28,6 +28,20 @@ func metadataConfiguration(_ metadataConfiguration: MetadataConfiguration?) -> M
 
 메타데이터 설정을 넘겨줍니다.
 
+## seekable(_)
+```swift
+func seekable(_ seekable: Bool) -> MediaItem.Builder
+```
+|파라미터|타입|설명|필수|
+|:--:|:--:|--|:--:|
+|seekable|[Bool|Seek 기능을 허용할 지에 대한 여부|O|
+
+<div align="right">
+참고: <a href="../../how_to_use/home.md#seek-기능-제한">Seek 기능 제한</a>
+</div>
+
+Seek 기능 허용 여부를 설정합니다. seekable(false)일 경우, Seek 기능이 제한됩니다.
+
 ## subtitleConfigurations(_)
 ```swift
 func subtitleConfigurations(_ subtitleConfigurations: [SubtitleConfiguration]) -> MediaItem.Builder

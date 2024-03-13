@@ -1,6 +1,8 @@
 # 구조체
 
-* [struct MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)<br>
+* [struct MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)
+
+* [struct DownloadItem](./download-item/home.md)
 
 * [struct Duration](./duration/home.md)
 
