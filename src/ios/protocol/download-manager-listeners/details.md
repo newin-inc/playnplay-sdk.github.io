@@ -62,7 +62,7 @@ class DownloadListener: DownloadManager.Listener {
         case .completed: showPopup("Done.")
         case .downloading: showPopup("Item is downloading.")
         case .failed: showPopup("Downloading failed.")
-        case .pause: showPopup("Paused.")
+        case .paused: showPopup("Paused.")
         case .pending: showPopup("Pending..")
         }
     }

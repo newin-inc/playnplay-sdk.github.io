@@ -9,7 +9,7 @@ extension DownloadItem {
 
         case downloading = "Downloading"
 
-        case pause = "Paused"
+        case paused = "Paused"
 
         case failed = "Failed"
 
@@ -22,7 +22,7 @@ extension DownloadItem {
 |:--:|--|
 |pending|다운로드를 할 수 있는 상태 혹은 다운로드를 기다리는 상태|
 |downloading|다운로드 중인 상태|
-|pause|다운로드를 일시 정지한 상태|
+|paused|다운로드를 일시 정지한 상태|
 |failed|다운로드를 실패한 상태|
 |completed|다운로드를 완료한 상태|
 
@@ -32,6 +32,10 @@ extension DownloadItem {
 ```swift
 let firstPendingItem = DownloadManager.shared.items.first(where: { item in
     item.status == DownloadItem.Status.pending
+})
+
+let firstCompletedItem = DownloadManager.shared.items.first(where: { item in
+    item.status == .completed
 })
 ```
 
