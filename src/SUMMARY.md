@@ -73,6 +73,8 @@
     - [프로토콜](./ios/protocol/home.md)
         - [EventListener](./ios/protocol/event-listeners/home.md)
             - [상세](./ios/protocol/event-listeners/details.md)
+        - [DownloadManager.Listener](./ios/protocol/download-manager-listeners/home.md)
+            - [상세](./ios/protocol/download-manager-listeners/details.md)
     - [열거형](./ios/enum/home.md)
         - [EventHandler](./ios/enum/event-handlers/home.md)
             - [상세](./ios/enum/event-handlers/details.md)
