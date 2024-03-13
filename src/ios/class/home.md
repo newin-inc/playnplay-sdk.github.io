@@ -4,6 +4,8 @@
 
 * [class MediaItem.Builder](./media-item-builder/home.md)
 
+* [class DownloadManager](./download-manager/home.md)
+
 * [class DrmConfiguration.Builder](./drm-configuration-builder/home.md)
 
 * [class MetadataConfiguration.Builder](./metadata-configuration-builder/home.md)

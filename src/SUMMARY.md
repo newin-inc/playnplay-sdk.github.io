@@ -49,6 +49,8 @@
             - [상세](./ios/class/media-player/details.md)
         - [MediaItem.Builder](./ios/class/media-item-builder/home.md)
             - [상세](./ios/class/media-item-builder/details.md)
+        - [DownloadManager](./ios/class/download-manager/home.md)
+            - [상세](./ios/class/download-manager/details.md)
         - [DrmConfiguration.Builder](./ios/class/drm-configuration-builder/home.md)
         - [MetadataConfiguration.Builder](./ios/class/metadata-configuration-builder/home.md)
         - [SubtitleConfiguration.Builder](./ios/class/subtitle-configuration-builder/home.md)
