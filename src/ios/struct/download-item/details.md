@@ -80,3 +80,19 @@ if let progress = DownloadManager.shared.items[0].progress {
     let rate = Double(progress.0) / Double(progress.1) * 100.0
 }
 ```
+
+## failedReason
+```swift
+public let failedReason: String?
+```
+|타입|설명|
+|:--:|:--|
+|String?|다운로드가 실패한 이유|
+
+사용 예제
+```swift
+let failedItems = DownloadManager.shared.itemsByStatus(.failed)
+if let item = failedItems.first {
+    let reason = item.failedReason ?? "Unknown"
+}
+```

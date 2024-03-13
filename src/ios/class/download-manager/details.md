@@ -82,7 +82,7 @@ DownloadManager.shared.removeAll()
 
 ## add(mediaItem:)
 ```swift
-@discardableResult public func add(mediaItem: MediaItem) throws -> DownloadItem.Id
+@discardableResult public func add(mediaItem: MediaItem) -> DownloadItem.Id
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -92,12 +92,7 @@ DownloadManager.shared.removeAll()
 
 사용 예제
 ```swift
-do {
-    let id = try DownloadManager.shared.add(mediaItem: mediaItem)
-    ...
-} catch {
-    os_log(.info, "%@", error.localizedDescription)
-}
+let id = DownloadManager.shared.add(mediaItem: mediaItem)
 ```
 
 ## itemsByStatus(_)

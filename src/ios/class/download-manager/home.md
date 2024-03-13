@@ -28,7 +28,7 @@ public class DownloadManager: NSObject, URLSessionDownloadDelegate {
     public var maxParallelDownloads: Int = 3
     public static let shared: DownloadManager
 
-    @discardableResult public func add(mediaItem: MediaItem) throws -> DownloadItem.Id
+    @discardableResult public func add(mediaItem: MediaItem) -> DownloadItem.Id
     public func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
     public func pause(id: DownloadItem.Id)
     public func pauseAll()
@@ -64,29 +64,27 @@ public class DownloadManager: NSObject, URLSessionDownloadDelegate {
     <a href="./details.md#메서드">메서드</a>
 </summary>
 
-- [func add(mediaItem: MediaItem) throws -> DownloadItem.Id](./details.md)
+- [func add(mediaItem: MediaItem) -> DownloadItem.Id](./details.md#addmediaitem)
 
-- [func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]](./details.md)
+- [func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]](./details.md#items)
 
-- [func pause(id: DownloadItem.Id)](./details.md)
+- [func pause(id: DownloadItem.Id)](./details.md#pauseid)
 
-- [func pauseAll()](./details.md)
+- [func pauseAll()](./details.md#pauseall)
 
-- [func remove(id: DownloadItem.Id)](./details.md)
+- [func remove(id: DownloadItem.Id)](./details.md#removeid)
 
-- [func removeAll()](./details.md)
+- [func removeAll()](./details.md#removeall)
 
-- [func removeCompleted()](./details.md)
+- [func removeCompleted()](./details.md#removecompleted)
 
-- [func resume(id: DownloadItem.Id)](./details.md)
+- [func resume(id: DownloadItem.Id)](./details.md#resumeid)
 
-- [func resume(entity: DownloadItemEntity)](./details.md)
+- [func resumeAll()](./details.md#resumeall)
 
-- [func resumeAll()](./details.md)
+- [func addListener(_ listener: DownloadManagerListener)](./details.md#addlistener_)
 
-- [func addListener(_ listener: DownloadManagerListener)](./details.md)
-
-- [func removeListener(_ listener: DownloadManagerListener)](./details.md)
+- [func removeListener(_ listener: DownloadManagerListener)](./details.md#removelistener_)
 
 </details>
 <br>

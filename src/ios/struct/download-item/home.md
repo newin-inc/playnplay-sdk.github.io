@@ -8,6 +8,7 @@ struct DownloadItem {
     public let toUrl: URL
     public let status: Status
     public let progress: (Int64, Int64)?
+    public let failedReason: String?
 }
 ```
 <div align="right">
@@ -32,6 +33,8 @@ struct DownloadItem {
 * [let status: Status](./details.md#status)
 
 * [let progress: (Int64, Int64)?](./details.md#progress)
+
+* [let failedReason: String?](./details.md#failedreason)
 
 </details>
 <br>
