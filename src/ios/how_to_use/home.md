@@ -82,7 +82,7 @@ func openTestMedia() {
 </div>
 
 ### 재생 목록으로 열기
-iOS SDK에서 제공하는 present(mediaItems:startIndex:) 함수를 사용하면, 쉽게 재생 목록을 열 수 있습니다.
+iOS SDK에서 제공하는 present(mediaItems:startIndex:) 메서드를 사용하면, 쉽게 재생 목록을 열 수 있습니다.
 
 ```swift
 let mediaItems: [MediaItem] = [ mediaItem1, mediaItem2, mediaItem3, ...]

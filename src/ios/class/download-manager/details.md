@@ -103,7 +103,7 @@ public func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
 |:--:|:--:|--|
 |status|[DownloadItem.Status](../../enum/download-item-status/home.md)|구분하고자 하는 아이템의 다운로드 상태|
 
-특정 다운로드 상태의 아이템 목록을 가져오기 위해서 이 메서드를 사용하면 됩니다.
+특정 다운로드 상태의 아이템 목록을 가져오기 위해서 사용하는 메서드입니다.
 
 사용 예제
 ```swift
@@ -118,7 +118,7 @@ public func pause(id: DownloadItem.Id)
 |:--:|:--:|--|
 |id|[Id](../../struct/download-item/details.md#id-downloaditemid)|일서 정지할 다운로드 아이템의 아이디|
 
-다운로드를 일시 정지할 때 이 메서드를 사용하면 됩니다.
+다운로드를 일시 정지할 때 사용하는 메서드입니다.
 
 사용 예제
 ```swift
@@ -186,6 +186,8 @@ public func resume(id: DownloadItem.Id)
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |id|[Id](../../struct/download-item/details.md#id-downloaditemid)|계속 진행할 다운로드 아이템의 아이디|
+
+일시 정지한 아이템을 다시 다운로드하게 하는 메서드입니다.
 
 사용 예제
 ```swift

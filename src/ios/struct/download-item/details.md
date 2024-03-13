@@ -53,7 +53,7 @@ public let status: Status
 ```
 |타입|설명|
 |:--:|:--|
-|Status|다운로드 아이템의 현재 상태|
+|[Status](../../enum/download-item-status/home.md)|다운로드 아이템의 현재 상태|
 
 <div align="right">
 참고: <a href="../../enum/download-item-status/">DownloadItem.Status</a>

@@ -26,7 +26,7 @@ extension DownloadItem {
 |failed|다운로드를 실패한 상태|
 |completed|다운로드를 완료한 상태|
 
-현재 아이템의 다운로드 상태를 나타냅니다.
+아이템의 현재 다운로드 상태를 나타냅니다.
 
 ## 사용 예제
 ```swift

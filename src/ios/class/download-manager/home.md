@@ -45,7 +45,7 @@ public class DownloadManager: NSObject, URLSessionDownloadDelegate {
 
 <details>
 <summary>
-    <a href="./details.md#메서드">속성</a>
+    <a href="./details.md#속성">속성</a>
 </summary>
 
 - [var downloadRootUrl: URL](./details.md#downloadrooturl)
