@@ -23,6 +23,9 @@ if !mediaPlayer.audioTracks.isEmpty,
 } 
 ```
 
+<br><br><br><br>
+
+--------
 ## autoplay
 
 ```swift

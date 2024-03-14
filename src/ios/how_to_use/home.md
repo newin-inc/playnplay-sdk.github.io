@@ -24,7 +24,7 @@
 
 ## AppDelegate 설정
 
-미디어 재생 서비스를 설정하는 부분을 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:  [UIApplication.LaunchOptionsKey: Any]?)에 추가합니다. 여기서 [오디오세션](https://developer.apple.com/documentation/avfaudio/avaudiosession)을 구성하고, App 아이디를 사용하여 DRM 기본 설정을 합니다.
+미디어 재생 서비스를 설정하는 부분을 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:  [UIApplication.LaunchOptionsKey: Any]?)에 추가합니다. 여기서 [오디오 세션](https://developer.apple.com/documentation/avfaudio/avaudiosession)을 구성하고, App 아이디를 사용하여 DRM 기본 설정을 합니다.
 
 ```swift
 func application(
@@ -42,6 +42,25 @@ App 아이디는 콘솔에서 설정 > 애플리케이션 > App ID > 보기를 �
 
 ![](./img/console_app_id_btn.png)
 ![](./img/console_app_id.png)
+
+
+\
+\
+
+[다운로드 매니저](../class/download-manager/home.md)를 사용하기 위해서 func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void)에 백그라운드 처리를 위한 부분을 추가합니다.
+
+```swift
+func application(
+    _ application: UIApplication,
+    handleEventsForBackgroundURLSession identifier: String,
+    completionHandler: @escaping () -> Void
+) {
+    DownloadManager.shared.setBackgroundCompletionHandler(
+        sessionIdentifier: identifier,
+        completionHandler: completionHandler
+    )
+}
+```
 
 \
 \

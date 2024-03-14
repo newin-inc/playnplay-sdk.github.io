@@ -6,7 +6,7 @@ public var downloadRootUrl: URL { get }
 ```
 |타입|설명|설정|
 |:--:|--|:--:|
-|[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)|다운로드된 아이템이 저장되는 최상위 디렉토리|X|
+|[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)|다운로드된 아이템이 저장되는 최상위 디렉토리|불가능|
 
 다운로드된 아이템이 저장되는 디렉토리 중 최상위 디렉토리를 나타내는 속성입니다.
 
@@ -21,7 +21,7 @@ public var items: [DownloadItem] { get }
 ```
 |타입|설명|설정|
 |:--:|--|:--:|
-|\[[DownloadItem](../../struct/download-item/home.md)\]|현재 다운로드 목록에 있는 아이템들|X|
+|\[[DownloadItem](../../struct/download-item/home.md)\]|현재 다운로드 목록에 있는 아이템들|불가능|
 
 현재 다운로드 목록에 있는 아이템들을 반환하는 속성입니다.
 
@@ -38,7 +38,7 @@ public var maxParallelDownloads: Int { get set }
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|Int|동시에 다운받을 수 있는 아이템 최대 개수|O|3|
+|Int|동시에 다운받을 수 있는 아이템 최대 개수|가능|3|
 
 동시에 받을 수 있는 아이템의 최대 개수를 반환하거나 설정합니다.
 
@@ -57,7 +57,7 @@ public static let shared: DownloadManager { get }
 ```
 |타입|설명|설정|
 |:--:|--|:--:|
-|DownloadManager|현재 활성화된 다운로드 매니저에 접근하기 위한 속성|X|
+|DownloadManager|현재 활성화된 다운로드 매니저에 접근하기 위한 속성|불가능|
 
 다운로드 매니저에 접근하기 위한 속성입니다. 아래와 같은 방법으로 사용할 수 있습니다.
 
