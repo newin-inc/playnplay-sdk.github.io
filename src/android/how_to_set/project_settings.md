@@ -27,15 +27,16 @@ dependencies {
 
 ```kotlin
 dependencies {
-    implementation("androidx.media3:media3-ui:1.2.1")
-    implementation("androidx.media3:media3-session:1.2.1")
-    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.2.1")
+    implementation("androidx.media3:media3-ui:1.3.0")
+    implementation("androidx.media3:media3-session:1.3.0")
+    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.3.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-compose:2.7.7")
+    implementation("androidx.room:room-runtime:2.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
-
-	coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
+	
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 }
 ```
 
@@ -81,6 +82,23 @@ android {
 | android.permission.<br>READ_MEDIA_VIDEO | 외부 저장소에서 비디오 파일을 열기 위한 설정<br>타겟 API 수준 33 이상에서 설정<br>타겟 API 수준 32 이하는 android.permission.READ_EXTERNAL_STORAGE를 사용 |
 | android.permission.<br>FOREGROUND_SERVICE | 서비스를 포그라운드에서 사용하기 위해서 설정<br>타겟 API 수준 28 이상에서 설정 |
 | android.permission.<br>FOREGROUND_SERVICE_MEDIA_PLAYBACK | 백그라운드에서  동영상을 계속 재생하기 위한 설정<br>타겟 API 수준 34 이상에서 설정 - 적절한 포그라운드 서비스 유형을 지정해야 합니다. |
+
+### 다운로드를 위한 브로드캐스트 수신기 선언
+
+```xml
+<receiver
+    android:name="com.newin.nplayer.sdk.DownloadCompleteReceiver"
+    android:exported="true">
+    <intent-filter>
+        <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+    </intent-filter>
+</receiver>
+```
+
+| 이름   | 설명 |
+|-------|-----|
+| android.intent.action.<br>DOWNLOAD_COMPLETE | 다운로드가 완료될 때 다운로드 매니저가 보내는 브로드캐스트 인텐트 액션 |
+
 
 ### 미디어 및 플레이어 관련 설정 추가
 

@@ -51,7 +51,7 @@ interface EventListener {
 
 }
 ```
-EventListener는 이벤트 처리를 위한 인터페이스로, 위와 같은 함수를 제공합니다. 각각 함수에 대한 자세한 설명은 [이벤트 핸들러](../../class/event-handlers/home.md)를, 사용 방법은 [addEventListener](../media-player/details.md#addeventlistener)를 참고하시면 됩니다. 단, Player에 이미 존재하는 이벤트 리스너일 경우에는, 안드로이드 SDK는 이벤트 핸들러만 제공합니다.
+EventListener는 이벤트 처리를 위한 인터페이스로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 자세한 설명은 [이벤트 핸들러](../../class/event-handlers/home.md)를, 사용 방법은 [addEventListener](../media-player/details.md#addeventlistener)를 참고하시면 됩니다. 단, Player에 이미 존재하는 이벤트 리스너일 경우에는, 안드로이드 SDK는 이벤트 핸들러만 제공합니다.
 
 <details>
 <summary>
