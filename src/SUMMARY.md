@@ -1,4 +1,4 @@
-[PlaynPlay](./playnplay/home.md)
+[PlaynPlay](./home.md)
     - [시작 하기](./playnplay/settings/home.md)
 
 ---
