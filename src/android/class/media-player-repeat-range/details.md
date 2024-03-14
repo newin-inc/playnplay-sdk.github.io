@@ -28,8 +28,9 @@ val oldA = mediaPlayer.repeatRange?.start	// 0s
 val oldB = mediaPlayer.repeatRange?.end		// 미디어 전체 길이 (예: 7m 19s)
 ```
 
-<br><br><br><br>
-
+<br><br><br>
+------
+------
 # 메서드
 
 ## withStart

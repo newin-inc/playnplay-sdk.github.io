@@ -81,7 +81,7 @@ val toUri: Uri
 </div>
 
 다운로드된 아이템이 저장되는 절대 경로입니다.<br>
-[displayPath](#displaypath)와 [downloadsUri](../download-manager/details.md#downloadsuri)와의 관계에 관한 보다 더 자세한 설명은 [displayPath](#displaypath)를 참고하세요.
+[displayPath](#displaypath)와 [DownloadManager.shared.downloadRootUrl](../download-manager/details.md#downloadsuri)와의 관계에 관한 보다 더 자세한 설명은 [displayPath](#displaypath)를 참고하세요.
 
 ## status
 ```kotlin

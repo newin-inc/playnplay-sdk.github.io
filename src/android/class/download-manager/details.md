@@ -143,6 +143,7 @@ fun pauseAll()
 ```
 다운로드 목록에 있는 모든 아이템의 다운로드를 일시 정지하게 하는 메서드입니다.
 
+사용 예제: 모든 아이템의 다운로드를 일시 정지하게 하는 예제
 ```kotlin
 DownloadManager.shared.pauseAll()
 ```
@@ -232,7 +233,7 @@ fun addListener(listener: Listener)
 
 [다운로드 매니저 리스너](../../interface/download-manager-listener/home.md)를 추가하기 위한 메서드입니다.
 
-사용 예제: 다운로드가 진행됨에 따라, 진행률이 변경됨에 따라 어떠한 처리를 하고자 하는 예제
+사용 예제: 다운로드가 진행되며 진행률이 변경될 때 마다 어떠한 처리를 하고자 하는 예제
 ```kotlin
 class ComponentListener : DownloadManager.Listener {
     override fun onProgressUpdated(item: DownloadItem) {

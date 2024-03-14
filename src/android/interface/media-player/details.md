@@ -17,9 +17,7 @@ var autoplay: Boolean
 mediaPlayer.autoplay = false	// 다음 미디어로 이동 시, 자동 재생 하지 않음
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## buffered
 
 ```kotlin
@@ -39,9 +37,7 @@ val end = mediaPlayer.buffered.end(0)		// 첫 번째 timeRange의 종료 위치
 ```
 이때, 사용되는 start(index)와 end(index)의 타입은 [kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## currentMediaItem
 
 ```kotlin
@@ -53,9 +49,7 @@ val currentMediaItem: MediaItem
 |:---:|:---:|-----|
 | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem) | 현재 재생 중인 미디어 아이템 | 불가능 |
 
-<br><br><br><br>
-
---------
+<br><br>
 ## currentMediaItemIndex
 
 ```kotlin
@@ -67,9 +61,7 @@ val currentMediaItemIndex: Int
 |:---:|----|:----:|
 | Int | 현재 재생 중인 미디어 아이템의 index | 불가능 |
 
-<br><br><br><br>
-
---------
+<br><br>
 ## currentSrc
 
 ```kotlin
@@ -89,9 +81,7 @@ mediaPlayer.currentSrc = "미디어주소.mp4"
 val currentUri = mediaPlayer.currentSrc // "미디어주소.mp4"
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## currentTime
 
 ```kotlin
@@ -111,9 +101,7 @@ mediaPlayer.currentTime = 20.seconds // 20초로 가기
 val currentTime = mediaPlayer.currentTime // 20s
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## defaultMuted
 
 ```kotlin
@@ -131,9 +119,7 @@ var defaultMuted: Boolean
 mediaPlayer.defaultMuted = true
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## defaultPlaybackRate
 
 ```kotlin
@@ -151,9 +137,7 @@ var defaultPlaybackRate: Float
 mediaPlayer.defaultPlaybackRate = 2.0f
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## deviceVolume
 
 ```kotlin
@@ -171,9 +155,7 @@ var deviceVolume: Float
 mediaPlayer.deviceVolume = 1.0f // 100%의 음량
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## duration
 
 ```kotlin
@@ -191,9 +173,7 @@ val duration: Duration
 val duration = mediaPlayer.duration // 2m 12s
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## ended
 
 ```kotlin
@@ -213,9 +193,7 @@ if (mediaPlayer.ended) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## error
 
 ```kotlin
@@ -235,9 +213,7 @@ when(mediaPlayer.error?.errorCode) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## loop
 
 ```kotlin
@@ -255,9 +231,7 @@ var loop: Boolean
 mediaPlayer.loop = true
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## mediaItems
 
 ```kotlin
@@ -278,9 +252,7 @@ val newMediaItems = mediaItems.slice(3..8)  // index 3이상 8이하 아이템�
 mediaPlayer.setMediaItems(newMediaItems)    // 잘라낸 아이템으로 목록 교체
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## muted
 
 ```kotlin
@@ -300,9 +272,7 @@ button.setOnClickListener {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## paused
 
 ```kotlin
@@ -326,9 +296,7 @@ if (mediaPlayer.paused) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## playbackRate
 
 ```kotlin
@@ -346,9 +314,7 @@ var playbackRate: Float
 mediaPlayer.playbackRate = 2.0f
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## preservesPitch
 
 ```kotlin
@@ -366,9 +332,7 @@ var preservesPitch: Boolean
 mediaPlayer.preservesPitch = false // 재생 속도에 따라 오디오 피치가 변하게 됨
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## repeatRange
 
 ```kotlin
@@ -397,9 +361,7 @@ val start2 = mediaPlayer.repeatRange?.start     // 20s
 val end2 = mediaPlayer.repeateRange?.end        // 30s
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## resizeMode
 
 ```kotlin
@@ -411,9 +373,7 @@ var resizeMode: @ResizeMode Int
 |:--:|---|:--:|:--:|
 |Int|[화면 크기 상태](../../media_player_view/screen_layout/details.md#7-화면-크기-조절-버튼)를 나타냄.<br>참고: [AspectRatioFrameLayout.ResizeMode](https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode)|가능|0|
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seeking
 
 ```kotlin
@@ -462,9 +422,7 @@ fun fastSeek(to: Duration)
 mediaPlayer.fastSeek(50.seconds)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## load
 
 ```kotlin
@@ -485,9 +443,7 @@ mediaPlayer.load(mediaItem) // 타입: MediaItem
 mediaPlayer.load(listOf(mediaItem1, mediaItem2))    // 타입: List<MediaItem>
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## load
 
 ```kotlin
@@ -505,9 +461,7 @@ fun load(uri: Uri)
 mediaPlayer.load(uri)   // 타입: Uri
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## load
 
 ```kotlin
@@ -525,9 +479,7 @@ fun load(mediaItem: MediaItem)
 mediaPlayer.load(mediaItem) // 타입: MediaItem
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## load
 
 ```kotlin
@@ -545,9 +497,7 @@ fun load(mediaItems: List<MediaItem>)
 mediaPlayer.load(listOf(mediaItem1, mediaItem2))    // 타입: List<MediaItem>
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## pause
 
 ```kotlin
@@ -559,9 +509,7 @@ fun pause()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#pause()">Player.pause</a>
 </div>
 
-<br><br><br><br>
-
---------
+<br><br>
 ## play
 
 ```kotlin
@@ -573,9 +521,7 @@ fun play()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#play()">Player.play</a>
 </div>
 
-<br><br><br><br>
-
---------
+<br><br>
 ## prepare
 
 ```kotlin
@@ -587,9 +533,7 @@ fun prepare()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#prepare()">Player.prepare()</a>
 </div>
 
-<br><br><br><br>
-
---------
+<br><br>
 ## release
 
 ```kotlin
@@ -602,9 +546,7 @@ fun release()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#release()">Player.release()</a>
 </div>
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekBack
 
 ```kotlin
@@ -625,9 +567,7 @@ mediaPlayer.seekBack(10.seconds)
 val currentTime = mediaPlayer.currentTime   // 20s
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekForward
 
 ```kotlin
@@ -648,9 +588,7 @@ mediaPlayer.seekForward(10.seconds)
 val currentTime = mediaPlayer.currentTime	// 40s
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekTo
 
 ```kotlin
@@ -670,9 +608,7 @@ mediaPlayer.seekTo(30.seconds)
 val currentTime = mediaPlayer.currentTime	// 30s
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## addEventHandler
 
 ```kotlin
@@ -694,9 +630,7 @@ mediaPlayer.addEventHandler(EventHandler.Ended {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## removeEventHandler
 
 ```kotlin
@@ -722,9 +656,7 @@ val endedHandler = mediaPlayer.addEventHandler(EventHandler.Ended {
 mediaPlayer.removeEventHandler(endedHandler)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## addEventListener
 
 ```kotlin
@@ -750,9 +682,7 @@ val componentListener = ComponentListener(this)
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## removeEventListener
 
 ```kotlin

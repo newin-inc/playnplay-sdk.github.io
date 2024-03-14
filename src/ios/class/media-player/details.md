@@ -23,9 +23,8 @@ if !mediaPlayer.audioTracks.isEmpty,
 } 
 ```
 
-<br><br><br><br>
+<br><br>
 
---------
 ## autoplay
 
 ```swift
@@ -42,9 +41,7 @@ var autoplay: Bool { get set }
 mediaPlayer.autoplay = false    // 다음 미디어로 이동 시, 자동 재생 하지 않습니다.
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## buffered
 
 ```swift
@@ -64,9 +61,7 @@ let start = buffered[0].start	// 첫 번째 버퍼의 시작 위치
 let end = buffered[0].end		// 첫 번째 버퍼의 종료 위치
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## canStartPictureInPictureAutomatically
 
 ```swift
@@ -78,9 +73,7 @@ var canStartPictureInPictureAutomatically: Bool { get set }
 
 앱이 백그라운드에 있을 때, 화면 속 화면 모드를 자동으로 시작할 수 있는지 여부를 의미하는 속성입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## currentMediaItem
 
 ```swift
@@ -92,9 +85,7 @@ var currentMediaItem: MediaItem? { get }
 
 현재 재생 중인 미디어 아이템을 반환하는 속성입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## currentMediaItemIndex
 
 ```swift
@@ -106,9 +97,7 @@ var currentMediaItemIndex: Int { get }
 
 현재 재생 중인 미디어 아이템의 index를 반환하는 속성입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## currentSrc
 
 ```swift
@@ -120,9 +109,7 @@ var currentSrc: URL? { get }
 
 미디어 리소스의 uri를 반환하는 속성입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## currentTime
 
 ```swift
@@ -143,9 +130,7 @@ mediaPlayer.currentTime = duration  // 60초로 가기
 let currentTime = mediaPlayer.currentTime   // 60초
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## defaultMuted
 
 ```swift
@@ -157,9 +142,7 @@ var defaultMuted: Bool { get set }
 
 오디오의 음소거 기본 설정을 나타내는 속성입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## defaultPlaybackRate
 
 ```swift
@@ -176,9 +159,7 @@ var defaultPlaybackRate: Float { get set }
 mediaPlayer.defaultPlaybackRate = 2
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## duration
 
 ```swift
@@ -196,9 +177,7 @@ let duration = mediaPlayer.duration
     // CMTime(value: 532799, timescale: 600, flags: __C.CMTimeFlags(rawValue: 1), epoch: 0)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## ended
 
 ```swift
@@ -217,9 +196,7 @@ if (mediaPlayer.ended) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## error
 
 ```swift
@@ -236,9 +213,7 @@ var error: Error? { get }
 let errorString = mediaPlayer.error?.localizedDescription
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## isPictureInPictureActive
 
 ```swift
@@ -250,9 +225,7 @@ var isPictureInPictureActive: Bool { get }
 
 현재 재생되는 미디어가 화면 속 화면 모드인지를 반환하는 속성입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## isPictureInPicturePossible
 
 ```swift
@@ -264,9 +237,7 @@ var isPictureInPicturePossible: Bool { get }
 
 미디어가 화면 속 모드로 전환할 수 있는지 여부를 반환하는 속성입니다.
  
-<br><br><br><br>
-
---------
+<br><br>
 ## isSeekable
 
 ```swift
@@ -285,9 +256,7 @@ if (mediaPlayer.isSeekable) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## isSubtitlesVisible
 
 ```swift
@@ -309,9 +278,7 @@ if (mediaPlayer.isSubtitlesVisible) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## loop
 
 ```swift
@@ -323,9 +290,7 @@ var loop: Bool { get set }
 
 미디어 재생이 끝났을 때 다시 처음부터 재생할 지 여부를 나타내는 속성입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## maxSeekToPreviousPosition
 
 ```swift
@@ -345,9 +310,7 @@ mediaPlayer.maxSeekToPreviousPosition = .seconds(5)
 	// 그렇지 않으면, 현재 미디어의 맨 앞으로 이동합니다.
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## mediaItems
 
 ```swift
@@ -367,9 +330,7 @@ mediaPlayer.mediaItems = Array(mediaItems.prefix(4))
     // 현재 미디어 아이템 중 앞에 있는 4개의 미디어 아이템만 잘라내어서 다시 설정합니다.
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## muted
 
 ```swift
@@ -390,9 +351,7 @@ Button {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## paused
 
 ```swift
@@ -411,9 +370,7 @@ if (mediaPlayer.paused) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## playbackRate
 
 ```swift
@@ -430,9 +387,7 @@ var playbackRate: Float { get set }
 mediaPlayer.playbackRate = 2
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## playbackState
 ```swift
 var playbackState: MediaPlayer.PlaybackState { get }
@@ -457,9 +412,7 @@ switch mediaPlayer.playbackState {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## preservesPitch
 
 ```swift
@@ -476,9 +429,7 @@ var preservesPitch: Bool { get set }
 mediaPlayer.preservesPitch = false // 재생 속도에 따라 오디오 피치가 변하게 됨
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## repeatMode
 
 ```swift
@@ -497,9 +448,7 @@ mediaPlayer.repeatMode = .one   // 하나의 미디어 아이템만 반복 하�
 mediaPlayer.repeatMode = .all   // 전체 목록 반복 하기
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## repeatRange
 
 ```swift
@@ -520,9 +469,7 @@ let repeatRange = MediaPlayer.RepeatRange(
 mediaPlayer.repeatRange = repeatRange   // 0초 ~ 30초 구간을 반복
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekable
 
 ```swift
@@ -541,9 +488,7 @@ if (mediaPlayer.seekable.count > 0) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekBackIncrement
 
 ```swift
@@ -560,9 +505,7 @@ var seekBackIncrement: Duration { get set }
 mediaPlayer.seekBackIncrement = .seconds(3)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekForwardIncrement
 
 ```swift
@@ -579,9 +522,7 @@ var seekForwardIncrement: Duration { get set }
 mediaPlayer.seekForwardIncrement = .seconds(20)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seeking
 
 ```swift
@@ -600,9 +541,7 @@ if (mediaPlayer.seeking) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## textTracks
 
 ```swift
@@ -644,9 +583,7 @@ let sizeText = "\(Int(player.videoSize.width))x\(Int(player.videoSize.height))"
     // 예: 1920x1080
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## videoTracks
 
 ```swift
@@ -687,9 +624,7 @@ var view: UIView { get }
 mediaPlayer.view.backgroundColor = .green
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## volume
 ```swift
 var volume: Float { get set }
@@ -730,9 +665,7 @@ func fastSeekTo(position: Duration)
 mediaPlayer.fastSeekTo(position: .seconds(50))
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## hasNextMediaItem()
 
 ```swift
@@ -748,9 +681,7 @@ if (mediaPlayer.hasNextMediaItem()) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## hasPreviousMediaItem()
 
 ```swift
@@ -765,9 +696,7 @@ if (mediaPlayer.hasPreviousMediaItem()) {
 }
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## load(mediaItem:)
 
 ```swift
@@ -779,9 +708,7 @@ func load(mediaItem: MediaItem)
 |:--:|:--:|--|
 |mediaItem|[MediaItem](../../struct/media-item/home.md)|입력된 미디어 아이템을 로드합니다.|[미디어 아이템](../../struct/media-item/home.md) 참고|
 
-<br><br><br><br>
-
---------
+<br><br>
 ## load(mediaItems:startMediaItemIndex:)
 
 ```swift
@@ -803,9 +730,7 @@ mediaPlayer.load(mediaItems: mediaItems)    // 0번째 아이템부터 시작
 mediaPlayer.load(mediaItems: mediaItems, 0) // 0번째 아이템부터 시작.위와 동일한 결과
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## load(src:)
 
 ```swift
@@ -817,9 +742,7 @@ URL을 사용하여 미디어를 로드하기 위한 메서드입니다.
 |:--:|:--:|--|
 |src|[URL](https://developer.apple.com/documentation/foundation/url)|로드할 미디어의 주소|
 
-<br><br><br><br>
-
---------
+<br><br>
 ## pause()
 
 ```swift
@@ -827,9 +750,7 @@ func pause()
 ```
 미디어를 일시 정지하기 위한 메서드입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## play()
 
 ```swift
@@ -837,9 +758,7 @@ func play()
 ```
 미디어를 재생하기 위한 메서드입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## prepare()
 
 ```swift
@@ -847,9 +766,7 @@ func prepare()
 ```
 미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [autoplay](#autoplay), [defaultPlaybackRate](#defaultplaybackrate), [defaultMuted](#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하는 과정까지 진행합니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekBack()
 
 ```swift
@@ -858,9 +775,7 @@ func seekBack()
 현재 위치에서 속성 [seekBackIncrement](#seekbackincrement) 만큼 전으로 이동하기 위한 메서드입니다.
 
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekBack(increment:)
 
 ```swift
@@ -882,9 +797,7 @@ mediaPlayer.seekBackIncrement = .seconds(30)
 mediaPlayer.seekBack()
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekForward()
 
 ```swift
@@ -892,9 +805,7 @@ func seekForward()
 ```
 현재 위치에서 속성 [seekForwardIncrement](#seekforwardincrement) 만큼 후로 이동하기 위한 메서드입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekForward(increment:)
 
 ```swift
@@ -916,9 +827,7 @@ mediaPlayer.seekForwardIncrement = .seconds(30)
 mediaPlayer.seekForward()
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekTo(position:)
 
 ```swift
@@ -938,9 +847,7 @@ func seekTo(position: Duration)
 mediaPlayer.seekTo(position: .seconds(30))
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekTo(mediaItemIndex:position:)
 
 ```swift
@@ -962,9 +869,7 @@ mediaPlayer.seekTo(mediaItemIndex: 2)
 mediaPlayer.seekTo(mediaItemIndex: 3, position: .seconds(120))
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekToNext()
 
 ```swift
@@ -972,9 +877,7 @@ func seekToNext()
 ```
 [seekToNexMediaItemt()](#seektonextmediaitem)와 동일합니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekToNextMediaItem()
 
 ```swift
@@ -982,9 +885,7 @@ func seekToNextMediaItem()
 ```
 다음으로 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 다음 미디어로 이동하는 메서드입니다. 목록의 맨 뒤에 위치한 미디어이지만 전체 반복 모드일 경우, 목록의 맨 앞으로 이동합니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekToPrevious()
 
 ```swift
@@ -996,9 +897,7 @@ func seekToPrevious()
 참고: <a href="#maxseektopreviousposition">maxSeekToPreviousPosition</a>
 </div>
 
-<br><br><br><br>
-
---------
+<br><br>
 ## seekToPreviousMediaItem()
 
 ```swift
@@ -1006,9 +905,7 @@ func seekToPreviousMediaItem()
 ```
 앞에 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 이전 미디어로 이동하는 메서드입니다. 목록의 맨 앞에 위치한 미디어일 경우, 목록의 마지막 미디어로 이동합니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## startPictureInPicture()
 
 ```swift
@@ -1016,9 +913,7 @@ func startPictureInPicture()
 ```
 화면 속 화면 모드를 시작하는 메서드입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## stop()
 
 ```swift
@@ -1026,9 +921,7 @@ func stop()
 ```
 미디어를 완전 종료할 때 부르는 메서드입니다. MediaPlayer가 종료되면 자동으로 호출됩니다. 이 메서드가 호출되면, 미디어를 멈추고, [emptied](../../enum/event-handlers/details.md#emptied) 핸들러를 호출하고, [playbackState](../../enum/media-player-playback-state/home.md)가 .idle상태로 바뀝니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## stopPictureInPicture()
 
 ```swift
@@ -1036,9 +929,7 @@ func stopPictureInPicture()
 ```
 화면 속 화면 모드를 종료하는 메서드입니다.
 
-<br><br><br><br>
-
---------
+<br><br>
 ## addEventHandler(_)
 
 ```swift
@@ -1060,9 +951,7 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## removeEventHandler(_)
 
 ```swift
@@ -1089,9 +978,7 @@ let target = mediaPlayer.addEventHandler(
 mediaPlayer.removeEventHandler(target)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## addEventListener(_)
 
 ```swift
@@ -1116,9 +1003,7 @@ let compoenentListener = ComponentListener()
 mediaPlayer.addEventListener(compoenentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## removeEventListener(_)
 
 ```swift

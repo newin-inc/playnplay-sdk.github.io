@@ -29,6 +29,7 @@ extension DownloadItem {
 아이템의 현재 다운로드 상태를 나타냅니다.
 
 ## 사용 예제
+다운로드를 기다리는 첫 번째 아이템을 가져오고, 다운로드가 완료된 첫 번째 아이템을 가져오는 예제
 ```swift
 let firstPendingItem = DownloadManager.shared.items.first(where: { item in
     item.status == DownloadItem.Status.pending

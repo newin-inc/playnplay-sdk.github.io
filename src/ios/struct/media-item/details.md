@@ -35,8 +35,9 @@ public let url: URL
 ```
 미디어 주소입니다.
 
-<br><br><br><br>
-
+<br><br><br>
+------
+------
 # 메서드
 
 ## buildUpon()
@@ -60,8 +61,9 @@ static func from(url: URL) -> MediaItem
 |:--:|--|
 |URL|[URL](https://developer.apple.com/documentation/foundation/url) 참고|
 
-<br><br><br><br>
-
+<br><br><br>
+------
+------
 # 클래스
 
 ## Builder
