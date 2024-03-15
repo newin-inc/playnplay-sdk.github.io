@@ -10,8 +10,8 @@
 
 * [struct TimeRange](./time-range/home.md)
 
-* [struct DrmConfiguration](./drm-configuration/home.md)
+* [struct MediaMetadata](./media-metadata/home.md)
 
-* [struct MetadataConfiguration](./metadata-configuration/home.md)
+* [struct DrmConfiguration](./drm-configuration/home.md)
 
 * [struct SubtitleConfiguration](./subtitle-configuration/home.md)

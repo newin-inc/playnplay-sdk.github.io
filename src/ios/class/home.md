@@ -8,7 +8,7 @@
 
 * [class DrmConfiguration.Builder](./drm-configuration-builder/home.md)
 
-* [class MetadataConfiguration.Builder](./metadata-configuration-builder/home.md)
+* [class MediaMetadata.Builder](./media-metadata-builder/home.md)
 
 * [class SubtitleConfiguration.Builder](./subtitle-configuration-builder/home.md)
 

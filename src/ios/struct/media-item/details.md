@@ -7,12 +7,12 @@ public let drmConfiguration: DrmConfiguration?
 ```
 drm 설정 정보입니다. [여기](../drm-configuration/home.md)를 참고하세요.
 
-## metadataConfiguration
+## mediaMetadata
 
 ```swift
-public let metadataConfiguration: MetadataConfiguration?
+public let mediaMetadata: MediaMetadata?
 ```
-메타데이터 설정 정보입니다. [여기](../metadata-configuration/home.md)를 참고하세요.
+메타데이터 설정 정보입니다. [여기](../media-metadata/home.md)를 참고하세요.
 
 ## subtitleConfigurations
 
@@ -79,7 +79,7 @@ extension MediaItem {
 
         public func subtitleConfigurations(_ subtitleConfigurations: [SubtitleConfiguration]) -> MediaItem.Builder
 
-        public func metadataConfiguration(_ metadataConfiguration: MetadataConfiguration?) -> MediaItem.Builder
+        public func mediaMetadata(_ mediaMetadata: MediaMetadata?) -> MediaItem.Builder
 
         public func drmConfiguration(_ drmConfiguration: DrmConfiguration?) -> MediaItem.Builder
 

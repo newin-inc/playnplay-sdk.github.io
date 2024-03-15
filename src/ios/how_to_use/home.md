@@ -118,14 +118,14 @@ self.present(mediaItems: mediaItems, startIndex: 0)
 
 ```swift
 let mediaItem = MediaItem.Builder(url: URL(string: "미디어주소.mp4")!)
-    .metadataConfiguration(
-        MetadataConfiguration.Builder().title("제목").build()
+    .mediaMetadata(
+        MediaMetadata.Builder().title("제목").build()
     )
     .build()
 ```
 
 <div align="right">
-참고: <a href="../class/media-item-builder/details.md#metadataconfiguration_">metadataConfiguration()</a>
+참고: <a href="../class/media-item-builder/details.md#mediametadata_">mediaMetadata()</a>
 </div>
 
 ### Seek 기능 제한

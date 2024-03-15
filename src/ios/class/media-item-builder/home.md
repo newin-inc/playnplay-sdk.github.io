@@ -11,7 +11,7 @@ extension MediaItem {
 
         public func drmConfiguration(_ drmConfiguration: DrmConfiguration?) -> MediaItem.Builder
 
-        public func metadataConfiguration(_ metadataConfiguration: MetadataConfiguration?) -> MediaItem.Builder
+        public func mediaMetadata(_ mediaMetadata: MediaMetadata?) -> MediaItem.Builder
 
         public func seekable(_ seekable: Bool) -> MediaItem.Builder
 
@@ -43,7 +43,7 @@ init(url: URL)
 
  - [drmConfiguration(_)](./details.md#drmconfiguration_)
 
- - [metadataConfiguration(_)](./details.md#metadataconfiguration_)
+ - [mediaMetadata(_)](./details.md#mediametadata_)
 
  - [seekable(_)](./details.md#seekable_)
 

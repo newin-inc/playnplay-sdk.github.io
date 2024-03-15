@@ -7,3 +7,4 @@
 | 0.1.2 | 2024.2.15. | 추가 구현 내용에 대한 설명 추가 |
 | 0.1.3 | 2024.2.21. | 목차 구조 변경 |
 | 0.1.4 | 2024.3.13. | [Seek 기능 제한](../how_to_use/home.md#seek-기능-제한), [다운로드 매니저](../class/download-manager/home.md) 추가 |
+| 0.1.5 | 2024.3.15. | MetadataConfiguration에서 [MediaMetadata](../struct/media-metadata/home.md)로 이름 변경 |

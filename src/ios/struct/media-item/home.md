@@ -5,7 +5,7 @@ struct MediaItem {
 
     public let drmConfiguration: DrmConfiguration?
 
-    public let metadataConfiguration: MetadataConfiguration?
+    public let mediaMetadata: MediaMetadata?
 
     public let subtitleConfigurations: [SubtitleConfiguration]
 
@@ -30,7 +30,7 @@ MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등�
 
 * [let drmConfiguration: DrmConfiguration?](./details.md#drmconfiguration)
 
-* [let metadataConfiguration: MetadataConfiguration?](./details.md#metadataconfiguration)
+* [let mediaMetadata: MediaMetadata?](./details.md#mediametadata)
 
 * [let subtitleConfigurations: [SubtitleConfiguration]](./details.md#subtitleconfigurations)
 

@@ -1,17 +1,19 @@
-# MetadataConfiguration.Builder
+# MediaMetadata.Builder
 
 ```swift
-extension MetadataConfiguration {
+extension MediaMetadata {
 
     public class Builder {
 
         public init()
 
-        public func title(_ title: String?) -> MetadataConfiguration.Builder
+        public func title(_ title: String?) -> MediaMetadata.Builder
 
-        public func artworkUrl(_ artworkUrl: URL?) -> MetadataConfiguration.Builder
+        public func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
 
-        public func build() -> MetadataConfiguration
+        public func downloadPath(_ downloadPath: String?) -> MediaMetadata.Builder
+
+        public func build() -> MediaMetadata
     }
 }
 ```
@@ -27,25 +29,31 @@ public init()
 
 ### title(_)
 ```swift
-public func title(_ title: String?) -> MetadataConfiguration.Builder
+public func title(_ title: String?) -> MediaMetadata.Builder
 ``` 
 제목을 추가합니다.
 
 ### artworkUrl(_)
 ```swift
-public func artworkUrl(_ artworkUrl: URL?) -> MetadataConfiguration.Builder
+public func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
 ``` 
 아트워크를 추가합니다.
 
+### downloadPath(_)
+```swift
+public func downloadPath(_ downloadPath: String?) -> MediaMetadata.Builder
+``` 
+다운로드할 경로를 추가합니다.
+
 ### build()
 ```swift
-public func build() -> MetadataConfiguration
+public func build() -> MediaMetadata
 ``` 
 추가로 입력 받은 정보로부터 메타데이터를 최종 구성합니다.
 
 ## 사용 예제
 ```swift
-let metadataConfiguration = MetadataConfiguration
+let mediaMetadata = MediaMetadata
     .Builder()
     .title("제목")
     .artworkUrl(URL(string:"이미지주소.jpg")!)
@@ -53,7 +61,7 @@ let metadataConfiguration = MetadataConfiguration
 
 let mediaItem = MediaItem
     .Builder(url: URL(string: "미디어주소.mp3")!)
-    .metadataConfiguration(metadataConfiguration)
+    .mediaMetadata(mediaMetadata)
     .build()
 ```
 

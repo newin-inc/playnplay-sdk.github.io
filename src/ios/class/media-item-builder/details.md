@@ -18,13 +18,13 @@ func drmConfiguration(_ drmConfiguration: DrmConfiguration?) -> MediaItem.Builde
 
 DRM 설정을 넘겨줍니다.
 
-## metadataConfiguration(_)
+## mediaMetadata(_)
 ```swift
-func metadataConfiguration(_ metadataConfiguration: MetadataConfiguration?) -> MediaItem.Builder
+func mediaMetadata(_ mediaMetadata: MediaMetadata?) -> MediaItem.Builder
 ```
 |파라미터|타입|설명|필수|
 |:--:|:--:|--|:--:|
-|metadataConfiguration|[MetadataConfiguration](../../struct/metadata-configuration/home.md)?|메타데이터 설정|O|
+|mediaMetadata|[MediaMetadata](../../struct/media-metadata/home.md)?|메타데이터 설정|O|
 
 메타데이터 설정을 넘겨줍니다.
 
