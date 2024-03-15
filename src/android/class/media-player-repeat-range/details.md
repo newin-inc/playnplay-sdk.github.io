@@ -8,6 +8,7 @@ val start: Duration
 |:--:|--|
 |[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 반복 시작 위치를 반환|
 
+<br><br>
 ## end
 ```kotlin
 val end: Duration
@@ -16,6 +17,7 @@ val end: Duration
 |:--:|--|
 |[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 반복 종료 위치를 반환|
 
+<br><br>
 ## 사용 예제
 ```kotlin
 mediaPlayer.repeatRange = 
@@ -41,6 +43,7 @@ fun withStart(start: Duration): RepeatRange
 |:--:|:--:|:--:|--|
 |start|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|RepeatRange|구간 반복 시작 위치를 업데이트한 오브젝트를 반환|
 
+<br><br>
 ## withEnd
 ```kotlin
 fun withEnd(end: Duration): RepeatRange
@@ -49,6 +52,7 @@ fun withEnd(end: Duration): RepeatRange
 |:--:|:--:|:--:|--|
 |end|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|RepeatRange|구간 반복 종료 위치를 업데이트한 오브젝트를 반환|
 
+<br><br>
 ## 사용 예제
 ```kotlin
 mediaPlayer.repeatRange = 

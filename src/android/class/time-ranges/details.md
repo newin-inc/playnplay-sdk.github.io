@@ -8,6 +8,9 @@ val length: Int
 |:--:|--|
 |Int|구간 범위 값들의 개수를 반환|
 
+<br><br><br>
+------
+------
 # 메서드
 
 ## start
@@ -18,6 +21,7 @@ fun start(index: Int): Duration
 |:--:|:--:|:--:|--|
 |index|Int|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|index 번째 데이터의 구간 시작 위치를 반환|
 
+<br><br>
 ## end
 ```kotlin
 fun end(index: Int): Duration
@@ -26,6 +30,7 @@ fun end(index: Int): Duration
 |:--:|:--:|:--:|--|
 |index|Int|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|index 번째 데이터의 구간 종료 위치를 반환|
 
+<br><br>
 ## 사용 예제
 ```kotlin
 val timeRange1 = TimeRange(0.milliseconds, 3.seconds)

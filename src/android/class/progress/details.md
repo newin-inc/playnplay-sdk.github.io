@@ -6,19 +6,22 @@ val downloadedSize: Long
 ```
 현재까지 다운로드된 파일의 크기를 나타내는 속성입니다. 단위는 바이트입니다.
 
+<br><br>
 ## fileSize
 ```kotlin
 val fileSize: Long
 ```
 파일 전체 크기를 나타내는 속성입니다. 단위는 바이트입니다.
 
-### 사용 예제
+<br><br>
+## 사용 예제
 다운로드 중인 아이템들의 진행률을 화면에 출력하는 예제
 ```kotlin
 val downloadingItems =
     DownloadManager.shared.items.filter { 
         it.status == DownloadItem.Status.Downloading
     }
+
 downloadingItems.forEach { item ->
     val progress = item.progress ?: return@forEach
     val rate = progress.downloadedSize.toDouble() / progress.fileSize * 100

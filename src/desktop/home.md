@@ -25,4 +25,4 @@
 
 * Revision History
 
-변경 이력은 [여기](./revision_history/home.md)에서 확인 가능합니다.
+변경 이력은 [여기](./revision-history/home.md)에서 확인 가능합니다.

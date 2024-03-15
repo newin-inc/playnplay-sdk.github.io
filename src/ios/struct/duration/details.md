@@ -5,6 +5,7 @@ var microseconds: Float64
 var nanoseconds: Float64
 ```
 
+<br><br>
 # 정적 메서드
 ```swift
 static func seconds(_ seconds: Float64) -> Duration
@@ -16,6 +17,7 @@ static func microseconds(_ microseconds: Float64) -> Duration
 static func nanoseconds<T: BinaryInteger>(_ nanoseconds: T) -> Duration
 ```
 
+<br><br>
 ## 사용 예제
 ```swift
 let duration1: Duration = .seconds(3)

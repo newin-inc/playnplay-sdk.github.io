@@ -24,9 +24,7 @@ mediaPlayer.addEventHandler(EventHandler.DurationChange {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Emptied
 
 ```kotlin
@@ -46,9 +44,7 @@ mediaPlayer.addEventHandler(EventHandler.Emptied {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Ended
 
 ```kotlin
@@ -68,9 +64,7 @@ mediaPlayer.addEventHandler(EventHandler.Ended {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Error
 
 ```kotlin
@@ -95,9 +89,7 @@ mediaPlayer.addEventHandler(EventHandler.Error {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## LoadedData
 
 ```kotlin
@@ -118,9 +110,7 @@ mediaPlayer.addEventHandler(EventHandler.LoadedData {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## LoadedMetadata
 
 ```kotlin
@@ -141,9 +131,7 @@ mediaPlayer.addEventHandler(EventHandler.LoadedMetadata {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## LoadStart
 
 ```kotlin
@@ -162,9 +150,7 @@ mediaPlayer.addEventHandler(EventHandler.LoadStart {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## MediaItemTransition
 
 ```kotlin
@@ -191,9 +177,7 @@ mediaPlayer.addEventHandler(EventHandler.MediaItemTransition {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Pause
 
 ```kotlin
@@ -217,9 +201,7 @@ mediaPlayer.addEventHandler(EventHandler.Pause {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Play
 
 ```kotlin
@@ -245,9 +227,7 @@ mediaPlayer.addEventHandler(EventHandler.Play {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## PlaybackStateChange
 
 ```kotlin
@@ -279,9 +259,7 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Playing
 
 ```kotlin
@@ -310,9 +288,7 @@ mediaPlayer.addEventHandler(EventHandler.Play {
 mediaPlayer.play() // 아이콘을 변경 한 후, 버퍼링 텍스트를 제거합니다.
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## PositionDiscontinuity
 
 ```kotlin
@@ -343,9 +319,7 @@ mediaPlayer.addEventHandler(EventHandler.PositionDiscontinuity {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Progress
 
 ```kotlin
@@ -366,9 +340,7 @@ mediaPlayer.addEventHandler(EventHandler.Progress {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## RateChange
 
 ```kotlin
@@ -395,9 +367,7 @@ mediaPlayer.addEventHandler(EventHandler.RateChange {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## RepeatModeChange
 
 ```kotlin
@@ -422,9 +392,7 @@ mediaPlayer.addEventHandler(EventHandler.RepeatModeChange {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## RepeatRangeChange
 
 ```kotlin
@@ -450,9 +418,7 @@ mediaPlayer.addEventHandler(EventHandler.RepeatRangeChange {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## ResizeModeChange
 
 ```kotlin
@@ -478,9 +444,7 @@ mediaPlayer.addEventHandler(EventHandler.ResizeModeChange {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Seeked
 
 ```kotlin
@@ -501,9 +465,7 @@ mediaPlayer.addEventHandler(EventHandler.Seeked {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Seeking
 
 ```kotlin
@@ -524,9 +486,7 @@ mediaPlayer.addEventHandler(EventHandler.Seeking {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Suspend
 
 ```kotlin
@@ -547,9 +507,7 @@ mediaPlayer.addEventHandler(EventHandler.Suspend {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## TimeUpdate
 
 ```kotlin
@@ -575,9 +533,7 @@ mediaPlayer.addEventHandler(EventHandler.TimeUpdate {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## VideoSizeChange
 
 ```kotlin
@@ -629,9 +585,7 @@ mediaPlayer.addEventHandler(EventHandler.VolumeChange {
 })
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## Waiting
 
 ```kotlin

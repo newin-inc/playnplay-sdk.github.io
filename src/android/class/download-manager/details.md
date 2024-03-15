@@ -20,6 +20,7 @@ var downloadsUri: Uri
 val rootUrl = DownloadManager.shared.downloadsUri
 ```
 
+<br><br>
 ## items
 ```kotlin
 val items: List<DownloadItem>
@@ -39,6 +40,7 @@ DownloadManager.shared.items.forEach { item ->
 }
 ```
 
+<br><br>
 ## maxParallelDownloads
 ```kotlin
 var maxParallelDownloads: Int
@@ -49,7 +51,7 @@ var maxParallelDownloads: Int
 
 동시에 받을 수 있는 아이템의 최대 개수를 반환하거나 설정합니다.
 
-사용 예제: 다운로드를 모두 일시 정지한 후, 동시 다운로드 개수를 2개로 제한한 뒤에, 다시 다운로드를 시작하는 예제
+사용 예제: 다운로드를 모두 일시 정지한 후, 동시 다운로드 개수를 2개로 제한한 뒤에, 다운로드를 재개하는 예제
 ```kotlin
 DownloadManager.shared.pauseAll()   // 다운로드를 모두 일시 정지한 후,
 
@@ -58,6 +60,7 @@ DownloadManager.shared.maxParallelDownloads = 2 // 동시에 2개의 다운로�
 DownloadManager.shared.resumeAll()  // 다운로드 작업을 재개합니다.
 ```
 
+<br><br>
 ## shared
 ```kotlin
 val shared: DownloadManager
@@ -95,29 +98,35 @@ fun add(mediaItem: MediaItem): DownloadItem.Id
 |:--:|:--:|--|
 |mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)|추가하고자 하는 미디어 아이템|
 
+<div align="right">
+참고: <a href="../download-item/details.md#id">DownloadItem.id</a>
+</div>
+
 다운로드를 할 미디어 아이템을 추가합니다. 현재 다운로드가 진행되고 있는 아이템의 수가 [maxParallelDownloads](#maxparalleldownloads) 보다 적으면 바로 다운로드를 시작합니다.
 
-사용 예제: 미디어 아이템을 다운로드 매니저에 추가하고, 아이디를 저장하는 예제
+사용 예제: 미디어 아이템을 다운로드 목록에 추가하고, 아이디를 저장하는 예제
 ```kotlin
 val id = DownloadManager.shared.add(mediaItem) // Id(value=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)
 ```
 
+<br><br>
 ## getItemsByStatus
 ```kotlin
 fun getItemsByStatus(status: DownloadItem.Status): List<DownloadItem>
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
-|status|[DownloadItem.Status](../../enum/download-item-status/home.md)|구분하고자 하는 아이템의 다운로드 상태|
+|status|[DownloadItem.Status](../../enum/download-item-status/home.md)|가져오고자 하는 아이템의 다운로드 상태|
 
 특정 다운로드 상태의 아이템 목록을 가져오기 위해서 사용하는 메서드입니다.<br>
 
-사용 예제: 다운로드가 완료된 아이템의 개수 구하는 예제
+사용 예제: 다운로드가 완료된 아이템의 개수를 구하는 예제
 ```kotlin
 val completedItemsCount =
     DownloadManager.shared.getItemsByStatus(DownloadItem.Status.Completed).count()
 ```
 
+<br><br>
 ## pause
 ```kotlin
 fun pause(id: DownloadItem.Id)
@@ -132,11 +141,13 @@ fun pause(id: DownloadItem.Id)
 ```kotlin
 val downloadingItems =
     DownloadManager.shared.getItemsByStatus(DownloadItem.Status.Downloading)
+
 downloadingItems.firstOrNull()?.apply {
     DownloadManager.shared.pause(id)
 }
 ```
 
+<br><br>
 ## pauseAll
 ```kotlin
 fun pauseAll()
@@ -148,6 +159,7 @@ fun pauseAll()
 DownloadManager.shared.pauseAll()
 ```
 
+<br><br>
 ## remove
 ```kotlin
 fun remove(id: DownloadItem.Id)
@@ -167,6 +179,7 @@ failedItems.forEach { item ->
 }
 ```
 
+<br><br>
 ## removeAll
 ```kotlin
 fun removeAll()
@@ -178,6 +191,7 @@ fun removeAll()
 DownloadManager.shared.removeAll()
 ```
 
+<br><br>
 ## removeCompleted
 ```kotlin
 fun removeCompleted()
@@ -193,6 +207,7 @@ val isEmpty =
 assert(isEmpty)
 ```
 
+<br><br>
 ## resume
 ```kotlin
 fun resume(id: DownloadItem.Id)
@@ -201,7 +216,7 @@ fun resume(id: DownloadItem.Id)
 |:--:|:--:|--|
 |id|[Id](../download-item/details.md#id)|다운로드 재개할 아이템의 아이디|
 
-일시 정지한 아이템을 다시 다운로드하게 하는 메서드입니다.
+다운로드를 일시 정지한 아이템의 다운로드를 재개하는 메서드입니다.
 
 사용 예제: 일시 정지된 다운로드 아이템들을 순차적으로 다운로드 재개하게 만드는 예제
 ```kotlin
@@ -212,17 +227,19 @@ pausedItems.forEach { item ->
 }
 ```
 
+<br><br>
 ## resumeAll
 ```kotlin
 fun resumeAll()
 ```
-일시 정지한 모든 아이템을 다시 다운로드하게 하는 메서드입니다.
+일시 정지한 모든 아이템의 다운로드를 재개하는 메서드입니다.
 
 사용 예제: 모든 아이템의 다운로드를 재개하게 만드는 예제
 ```kotlin
 DownloadManager.shared.resumeAll()
 ```
 
+<br><br>
 ## addListener
 ```kotlin
 fun addListener(listener: Listener)
@@ -245,9 +262,11 @@ class ComponentListener : DownloadManager.Listener {
 }
 
 val componentListener = ComponentListener()
+
 DownloadManager.shared.addListener(componentListener)
 ```
 
+<br><br>
 ## removeListener
 ```kotlin
 fun removeListener(listener: Listener)

@@ -4,23 +4,23 @@
 
 콘솔에 로그인하고 설정 > 애플리케이션으로 이동합니다.
 
-![](./img/console_menu_settings_application.png)
+![](./img/console-menu-settings-application.png)
 
 아래 Bundle ID (Package name) 섹션에서 추가 버튼을 클릭합니다.
 
-![](./img/console_add_app_button.png)
+![](./img/console-add-app-button.png)
 
 번들 아이디를 추가합니다.
 
-![](./img/console_add_app.png)
+![](./img/console-add-app.png)
 
 번들 아이디는 Xcode의 설정 창에서 **TARGETS** 아래의 아이템을 선택한 후, **General** 탭 내의 **Identity** 섹션의 Bundle Identifier 에서 확인할 수 있습니다. 
 
-![](./img/bundle_id_from_general.png)
+![](./img/bundle-id-from-general.png)
 
 혹은 **Signing & Capabilities** 탭 내의 **Signing** 섹션에서 확인 및 수정할 수 있습니다.
 
-![](./img/bundle_id_from_signing.png)
+![](./img/bundle-id-from-signing.png)
 
 ## AppDelegate 설정
 
@@ -40,8 +40,8 @@ func application(
 
 App 아이디는 콘솔에서 설정 > 애플리케이션 > App ID > 보기를 클릭하여 확인 가능합니다. 복사하여 붙여넣기를 하실 수 있습니다.
 
-![](./img/console_app_id_btn.png)
-![](./img/console_app_id.png)
+![](./img/console-app-id-btn.png)
+![](./img/console-app-id.png)
 
 
 \

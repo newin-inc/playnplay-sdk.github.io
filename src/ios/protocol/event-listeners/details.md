@@ -21,9 +21,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onDurationChange(duration:)
 ```swift
 func onDurationChange(duration: Duration)
@@ -46,9 +44,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onEmptied()
 ```swift
 func onEmptied()
@@ -70,9 +66,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onEnded()
 ```swift
 func onEnded()
@@ -95,9 +89,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onError(error:)
 ```swift
 func onError(error: Error)
@@ -120,9 +112,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onLoadedData()
 ```swift
 func onLoadedData()
@@ -144,9 +134,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onLoadStart()
 ```swift
 func onLoadStart()
@@ -169,9 +157,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onMediaItemTransition(item:)
 ```swift
 func onMediaItemTransition(item: MediaItem?)
@@ -196,9 +182,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPause()
 ```swift
 func onPause()
@@ -222,9 +206,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPictureInPictureActiveChange(active:)
 ```swift
 func onPictureInPictureActiveChange(active: Bool)
@@ -255,9 +237,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPictureInPicturePossibleChange(possible:)
 ```swift
 func onPictureInPicturePossibleChange(possible: Bool)
@@ -282,9 +262,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPictureInPictureDidStart()
 ```swift
 func onPictureInPictureDidStart()
@@ -309,9 +287,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPictureInPictureDidStop()
 ```swift
 func onPictureInPictureDidStart()
@@ -336,9 +312,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPictureInPictureWillStart()
 ```swift
 func onPictureInPictureWillStart()
@@ -363,9 +337,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPictureInPictureWillStop()
 ```swift
 func onPictureInPictureWillStop()
@@ -390,9 +362,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPlay()
 ```swift
 func onPlay()
@@ -420,9 +390,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPlaybackStateChange(state:)
 ```swift
 func onPlaybackStateChange(state: MediaPlayer.PlaybackState)
@@ -451,9 +419,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPlaying()
 ```swift
 func onPlaying()
@@ -483,9 +449,7 @@ mediaPlayer.addEventListener(componentListener)
 
 mediaPlayer.play()  // 아이콘을 변경 한 후, 버퍼링 텍스트를 제거합니다.
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onPositionDiscontinuity(oldPosition:newPosition:)
 ```swift
 func onPositionDiscontinuity(oldPosition: Duration, newPosition: Duration)
@@ -508,9 +472,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onProgress()
 ```swift
 func onProgress()
@@ -533,9 +495,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onRateChange(rate:)
 ```swift
 func onRateChange(rate: Float)
@@ -558,9 +518,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onRepeatModeChange(mode:)
 ```swift
 func onRepeatModeChange(mode: MediaPlayer.RepeatMode)
@@ -586,9 +544,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onRepeatRangeChange(range:)
 ```swift
 func onRepeatRangeChange(range: MediaPlayer.RepeatRange?)
@@ -615,9 +571,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onScalingModeChange(mode:)
 ```swift
 func onScalingModeChange(mode: MediaPlayer.ScalingMode)
@@ -643,9 +597,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onSeeked()
 ```swift
 func onSeeked()
@@ -673,9 +625,7 @@ let componentListener = ComponentListener(mediaPlayer)
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onSeeking()
 ```swift
 func onSeeking()
@@ -703,9 +653,7 @@ let componentListener = ComponentListener(mediaPlayer)
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onTimeUpdate(position:)
 ```swift
 func onTimeUpdate(position: Duration)
@@ -729,9 +677,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onVideoSizeChange(size:)
 ```swift
 func onVideoSizeChange(size: CGSize)
@@ -756,9 +702,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onVolumeChange(volume:muted:)
 ```swift
 func onVolumeChange(volume: Float, muted: Bool)
@@ -781,9 +725,7 @@ let componentListener = ComponentListener()
 
 mediaPlayer.addEventListener(componentListener)
 ```
-<br><br><br><br>
-
---------
+<br><br>
 ## onWaiting()
 ```swift
 func onWaiting()

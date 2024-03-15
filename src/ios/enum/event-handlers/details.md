@@ -1,6 +1,6 @@
 # 케이스
 
-# durationChange
+## durationChange
 
 ```swift
 case durationChange((_ duration: Duration) -> Void)
@@ -19,10 +19,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# emptied
+<br><br>
+## emptied
 
 ```swift
 case emptied(() -> Void)
@@ -41,10 +39,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# ended
+<br><br>
+## ended
 
 ```swift
 case ended(() -> Void)
@@ -63,10 +59,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# error
+<br><br>
+## error
 
 ```swift
 case error((_ error: Error) -> Void)
@@ -86,10 +80,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# loadedData
+<br><br>
+## loadedData
 
 ```swift
 case loadedData(() -> Void)
@@ -108,10 +100,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# loadStart
+<br><br>
+## loadStart
 
 ```swift
 case loadStart(() -> Void)
@@ -130,10 +120,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# mediaItemTransition
+<br><br>
+## mediaItemTransition
 
 ```swift
 case mediaItemTransition((_ item: MediaItem?) -> Void)
@@ -154,10 +142,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# pause
+<br><br>
+## pause
 
 ```swift
 case pause(() -> Void)
@@ -177,10 +163,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# pictureInPictureActiveChange
+<br><br>
+## pictureInPictureActiveChange
 
 ```swift
 case pictureInPictureActiveChange((_ active: Bool) -> Void)
@@ -207,10 +191,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# pictureInPicturePossibleChange
+<br><br>
+## pictureInPicturePossibleChange
 
 ```swift
 case pictureInPicturePossibleChange((_ possible: Bool) -> Void)
@@ -231,10 +213,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# pictureInPictureDidStart
+<br><br>
+## pictureInPictureDidStart
 
 ```swift
 case pictureInPictureDidStart(() -> Void)
@@ -255,10 +235,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# pictureInPictureDidStop
+<br><br>
+## pictureInPictureDidStop
 
 ```swift
 case pictureInPictureDidStop(() -> Void)
@@ -279,10 +257,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# pictureInPictureWillStart
+<br><br>
+## pictureInPictureWillStart
 
 ```swift
 case pictureInPictureWillStart(() -> Void)
@@ -303,10 +279,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# pictureInPictureWillStop
+<br><br>
+## pictureInPictureWillStop
 
 ```swift
 case pictureInPictureWillStop(() -> Void)
@@ -327,10 +301,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# play
+<br><br>
+## play
 
 ```swift
 case play(() -> Void)
@@ -354,10 +326,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# playbackStateChange
+<br><br>
+## playbackStateChange
 
 ```swift
 case playbackStateChange((_ state: MediaPlayer.PlaybackState) -> Void)
@@ -382,10 +352,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# playing
+<br><br>
+## playing
 
 ```swift
 case playing(() -> Void)
@@ -414,10 +382,8 @@ mediaPlayer.addEventHandler(
 mediaPlayer.play()  // 아이콘을 변경 한 후, 버퍼링 텍스트를 제거합니다.
 ```
 
-<br><br><br><br>
-
---------
-# positionDiscontinuity
+<br><br>
+## positionDiscontinuity
 
 ```swift
 case positionDiscontinuity(
@@ -438,10 +404,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# progress
+<br><br>
+## progress
 
 ```swift
 case progress(() -> Void)
@@ -460,10 +424,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# rateChange
+<br><br>
+## rateChange
 
 ```swift
 case rateChange((_ rate: Float) -> Void)
@@ -482,10 +444,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# repeatModeChange
+<br><br>
+## repeatModeChange
 
 ```swift
 case repeatModeChange((_ mode: MediaPlayer.RepeatMode) -> Void)
@@ -509,10 +469,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# repeatRangeChange
+<br><br>
+## repeatRangeChange
 
 ```swift
 case repeatRangeChange((_ range: MediaPlayer.RepeatRange?) -> Void)
@@ -536,10 +494,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# scalingModeChange
+<br><br>
+## scalingModeChange
 
 ```swift
 case scalingModeChange((_ mode: MediaPlayer.ScalingMode) -> Void)
@@ -563,10 +519,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# seeked
+<br><br>
+## seeked
 
 ```swift
 case seeked(() -> Void)
@@ -586,10 +540,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# seeking
+<br><br>
+## seeking
 
 ```swift
 case seeking(() -> Void)
@@ -609,10 +561,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# textCueChange
+<br><br>
+## textCueChange
 
 ```swift
 case textCueChange((_ textCues: [TextTrack.Cue]) -> Void)
@@ -632,10 +582,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# timeUpdate
+<br><br>
+## timeUpdate
 
 ```swift
 case timeUpdate((_ position: Duration) -> Void)
@@ -655,10 +603,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# videoSizeChange
+<br><br>
+## videoSizeChange
 
 ```swift
 case videoSizeChange((_ size: CGSize) -> Void)
@@ -679,10 +625,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# volumeChange
+<br><br>
+## volumeChange
 
 ```swift
 case volumeChange((_ volume: Float, _ muted: Bool) -> Void)
@@ -701,10 +645,8 @@ mediaPlayer.addEventHandler(
 )
 ```
 
-<br><br><br><br>
-
---------
-# waiting
+<br><br>
+## waiting
 
 ```swift
 case waiting(() -> Void)

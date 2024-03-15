@@ -1,6 +1,6 @@
 # 설정
 
-앞에 보여준 [사용 방법](../../how_to_use/home.md)대로 구현하여 presentMediaPlayer를 호출하면, 안드로이드 SDK의 미디어 플레이어 뷰를 사용할 수 있습니다. MediaPlayerView는 PlayerView를 확장한 클래스기 때문에, PlayerView에서 제공하는 기능을 그대로 이용할 수 있습니다. 
+앞에 보여준 [사용 방법](../../how-to-use/home.md)대로 구현하여 presentMediaPlayer를 호출하면, 안드로이드 SDK의 미디어 플레이어 뷰를 사용할 수 있습니다. MediaPlayerView는 PlayerView를 확장한 클래스기 때문에, PlayerView에서 제공하는 기능을 그대로 이용할 수 있습니다. 
 
 ```kotlin
 import android.os.Bundle

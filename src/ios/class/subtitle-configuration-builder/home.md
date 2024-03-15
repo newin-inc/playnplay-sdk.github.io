@@ -30,6 +30,7 @@ public init(url: URL)
 
 URL을 입력받아서 초기 설정을 합니다.
 
+<br><br>
 ## 메서드
 
 ### language(_)
@@ -38,12 +39,14 @@ public func language(_ language: String?) -> SubtitleConfiguration.Builder
 ```
 언어를 설정합니다.
 
+<br><br>
 ### label(_)
 ```swift
 public func label(_ language: String?) -> SubtitleConfiguration.Builder
 ```
 라벨을 설정합니다.
 
+<br><br>
 ### func mode(_)
 ```swift
 public func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Builder
@@ -53,12 +56,14 @@ public func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Bu
 참고: <a href="../../struct/subtitle-configuration/home.md">SubtitleConfiguration.Mode</a>
 </div>
 
+<br><br>
 ### build()
 ```swift
 public func build() -> SubtitleConfiguration
 ```
 입력된 구성 요소를 바탕으로 자막을 구성합니다.
 
+<br><br>
 ## 사용 예제
 ```swift
 let subtitleConfigurations = [

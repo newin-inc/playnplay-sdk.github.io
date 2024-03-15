@@ -24,7 +24,6 @@ if !mediaPlayer.audioTracks.isEmpty,
 ```
 
 <br><br>
-
 ## autoplay
 
 ```swift
@@ -565,7 +564,7 @@ if !mediaPlayer.textTracks.isEmpty,
     }
 ```
 
---------
+<br><br>
 ## videoSize
 
 ```swift
@@ -608,7 +607,7 @@ if !mediaPlayer.videoTracks.isEmpty,
     } 
 ```
 
---------
+<br><br>
 ## view
 ```swift
 var view: UIView { get }

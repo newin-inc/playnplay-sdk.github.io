@@ -7,6 +7,7 @@ public let drmConfiguration: DrmConfiguration?
 ```
 drm 설정 정보입니다. [여기](../drm-configuration/home.md)를 참고하세요.
 
+<br><br>
 ## mediaMetadata
 
 ```swift
@@ -14,6 +15,7 @@ public let mediaMetadata: MediaMetadata?
 ```
 메타데이터 설정 정보입니다. [여기](../media-metadata/home.md)를 참고하세요.
 
+<br><br>
 ## subtitleConfigurations
 
 ```swift
@@ -21,6 +23,7 @@ public let subtitleConfigurations: [SubtitleConfiguration]
 ```
 미디어의 자막 정보입니다. [여기](../subtitle-configuration/home.md)를 참고하세요.
 
+<br><br>
 ## title
 
 ```swift
@@ -28,6 +31,7 @@ public var title: String { get }
 ```
 미디어의 제목입니다.
 
+<br><br>
 ## url
 
 ```swift
@@ -50,6 +54,7 @@ Builder를 사용하여 미디어 아이템에 대한 초기 설정을 합니다
 참고: <a href="#builder">Builder</a>
 </div>
 
+<br><br>
 ## from(url:)
 
 ```swift

@@ -2,7 +2,7 @@
 
 ## build.gradle.kts 수정
 
-![](./img/build_gradle_kts.png)
+![](./img/build-gradle-kts.png)
 
 ## 안드로이드 SDK 다운로드
 
@@ -63,7 +63,7 @@ android {
 
 ## AndroidManifest.xml 수정
 
-![](./img/android_manifest.png)
+![](./img/android-manifest.png)
 
 ### 퍼미션 추가
 

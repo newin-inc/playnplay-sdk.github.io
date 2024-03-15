@@ -19,15 +19,16 @@ data class DownloadItem {
 참고: <a href="https://developer.android.com/reference/kotlin/java/util/UUID">UUID</a>
 </div>
 
-사용 예제: 다운로드 매니저에 아이템을 추가하고, 이후에 일시 정지를 하는 예제
+사용 예제: 다운로드 목록에 아이템을 추가하고, 이후에 일시 정지를 하는 예제
 ```kotlin
-val id = DownloadManager.shared.add(mediaItem)
+val id = DownloadManager.shared.add(mediaItem)  // Id(value=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)
 
 ...
 
 DownloadManager.shared.pause(id)
 ```
 
+<br><br>
 ## displayPath
 ```kotlin
 val displayPath: String
@@ -58,6 +59,7 @@ file:///data/user/0/com.xxx.xxx/files                   // downloadsUri
 /video/test.mp4                                         // displayPath
 ```
 
+<br><br>
 ## fromUri
 ```kotlin
 val fromUri: Uri
@@ -68,6 +70,7 @@ val fromUri: Uri
 
 다운로드할 아이템의 주소입니다.
 
+<br><br>
 ## toUri
 ```kotlin
 val toUri: Uri
@@ -83,6 +86,7 @@ val toUri: Uri
 다운로드된 아이템이 저장되는 절대 경로입니다.<br>
 [displayPath](#displaypath)와 [DownloadManager.shared.downloadRootUrl](../download-manager/details.md#downloadsuri)와의 관계에 관한 보다 더 자세한 설명은 [displayPath](#displaypath)를 참고하세요.
 
+<br><br>
 ## status
 ```kotlin
 val status: Status
@@ -106,6 +110,7 @@ failedItems.forEach { item ->
 }
 ```
 
+<br><br>
 ## progress
 ```kotlin
 val progress: Progress?
@@ -121,13 +126,14 @@ val progress: Progress?
 사용 예제: 다운로드 중인 아이템들의 현재 진행률을 화면에 출력하는 예제
 ```kotlin
 val downloadingItems =
-    DownloadManager.shared.items.filter { 
-        it.status == DownloadItem.Status.Downloading
-    }
+    DownloadManager.shared.getItemsByStatus(DownloadItem.Status.Downloading) 
+
 downloadingItems.forEach { item ->
     val progress = item.progress ?: return@forEach
+
     val progressText = progress.toString()
     println(progressText)
+
     val rate = progress.downloadedSize.toDouble() / progress.fileSize * 100
     println(rate)
 }
@@ -141,6 +147,7 @@ downloadingItems.forEach { item ->
 ...
 ```
 
+<br><br>
 ## failedReason
 ```kotlin
 val failedReason: FailedReason?
@@ -158,6 +165,7 @@ val failedReason: FailedReason?
 ```kotlin
 val failedItems =
     DownloadManager.shared.getItemsByStatus(DownloadItem.Status.Failed)
+
 failedItems.forEach { item ->
     val reason = item.failedReason?.toString()
     println(reason)
@@ -190,7 +198,7 @@ DownloadManager.shared.items.forEach { item ->
 }
 ```
 
-실행 결과로 문자열 형태로 아래와 같이 출력이 됩니다.
+실행 결과로 다운로드 아이템이 아래와 같이 문자열 형태로 출력됩니다.
 ```log
 ...
 DownloadItem(

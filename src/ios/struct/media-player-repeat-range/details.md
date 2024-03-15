@@ -9,6 +9,7 @@ var start: Duration
 |:--:|:--|
 |[Duration](../../struct/duration/home.md)|반복 구간의 시작 위치|
 
+<br><br>
 ## end
 ```swift
 var end: Duration
@@ -18,6 +19,7 @@ var end: Duration
 |:--:|:--|
 |[Duration](../../struct/duration/home.md)|반복 구간의 종료 위치|
 
+<br><br>
 # 메서드
 
 ## with(start:) -> RepeatRange
@@ -29,6 +31,7 @@ func with(start: Duration) -> MediaPlayer.RepeatRange
 |:--:|:--:|:--:|:--|
 |start|[Duration](../../struct/duration/home.md)|[MediaPlayer.RepeatRange](./home.md)|반복 구간 시작 위치를 변경한 뒤 구간 범위를 반환|
 
+<br><br>
 ## with(end:) -> RepeatRange
 ```swift
 func with(end: Duration) -> MediaPlayer.RepeatRange
@@ -39,6 +42,7 @@ func with(end: Duration) -> MediaPlayer.RepeatRange
 |end|[Duration](../../struct/duration/home.md)|[MediaPlayer.RepeatRange](./home.md)|반복 구간 종료 위치를 변경한 뒤 구간 범위를 반환|
 
 
+<br><br>
 ## 사용 예제
 ```swift
 let repeatRange = MediaPlayer.RepeatRange(

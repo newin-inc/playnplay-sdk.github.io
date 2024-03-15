@@ -26,9 +26,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onEmptied
 
 ```kotlin
@@ -54,9 +52,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onEnded
 
 ```kotlin
@@ -82,9 +78,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onError
 
 ```kotlin
@@ -111,9 +105,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onLoadedData
 
 ```kotlin
@@ -139,9 +131,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onLoadedMetadata
 
 ```kotlin
@@ -167,9 +157,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onLoadStart
 
 ```kotlin
@@ -195,9 +183,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onPause
 
 ```kotlin
@@ -223,9 +209,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onPlay
 
 ```kotlin
@@ -251,9 +235,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onPlaying
 
 ```kotlin
@@ -284,9 +266,7 @@ mediaPlayer.addEventListener(componentListener)
 mediaPlayer.play()  // 아이콘을 변경 한 후, 버퍼링 텍스트를 제거합니다.
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onPositionDiscontinuity
 
 ```kotlin
@@ -324,9 +304,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onProgress
 
 ```kotlin
@@ -352,9 +330,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onRateChange
 
 ```kotlin
@@ -382,9 +358,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onRepeatRangeChange
 
 ```kotlin
@@ -412,9 +386,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onResizeModeChange
 
 ```kotlin
@@ -441,9 +413,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onSeeked
 
 ```kotlin
@@ -469,9 +439,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onSeeking
 
 ```kotlin
@@ -497,9 +465,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onSuspend
 
 ```kotlin
@@ -525,9 +491,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onTimeUpdate
 
 ```kotlin
@@ -555,9 +519,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onVolumeChange
 
 ```kotlin
@@ -584,9 +546,7 @@ val componentListener = ComponentListener()
 mediaPlayer.addEventListener(componentListener)
 ```
 
-<br><br><br><br>
-
---------
+<br><br>
 ## onWaiting
 
 ```kotlin

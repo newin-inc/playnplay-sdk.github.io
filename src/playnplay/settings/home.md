@@ -16,7 +16,7 @@
 
 * 콘솔 사이트에서 DRM 패키징 툴을 다운로드합니다.
 
-    ![](./img/drm_packaging_tool.png)
+    ![](./img/drm-packaging-tool.png)
 
 * 서비스할 미디어 파일들을 DRM 패키징하여 준비합니다. (Non DRM도 서비스 가능)
 
@@ -40,4 +40,4 @@
 
 * 콘솔 사이트의 테스트 메뉴에서 업로드한 미디어 파일 주소 등을 입력하여 재생 테스트를 진행합니다.
 
-    ![](./img/media_edit.png) -->
+    ![](./img/media-edit.png) -->

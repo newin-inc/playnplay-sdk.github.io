@@ -25,6 +25,7 @@ public init(appId: String, userId: String)
 |appId|String|앱 ID|O|
 |userId|String|사용자 ID|O|
 
+<br><br>
 ## 메서드
 
 ### userData(_)
@@ -34,6 +35,7 @@ public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
 ```
 유저 데이터를 추가합니다.
 
+<br><br>
 ### build()
 
 ```swift
@@ -41,6 +43,7 @@ public func build() -> DrmConfiguration
 ```
 추가로 입력 받은 정보로부터 DRM을 최종 구성합니다.
 
+<br><br>
 ## 사용 예제
 ```swift
 let drmConfiguration = DrmConfiguration

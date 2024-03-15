@@ -16,7 +16,7 @@ extension DownloadItem {
 }
 ```
 
-사용 예제: 다운로드 매니저에 아이템을 추가하고, 이후에 목록에서 제거하는 예제
+사용 예제: 다운로드 목록에 아이템을 추가하고, 이후에 목록에서 제거하는 예제
 ```swift
 let id = DownloadManager.shared.add(mediaItem: mediaItem)
 
@@ -25,6 +25,7 @@ let id = DownloadManager.shared.add(mediaItem: mediaItem)
 DownloadManager.shared.remove(id: id)
 ```
 
+<br><br>
 ## displayPath
 ```swift
 public let displayPath: String
@@ -53,6 +54,7 @@ file:///Users/user/xxx/xxx/Documents/                   // downloadRootUrl
 /video/test.mp4                                         // displayPath
 ```
 
+<br><br>
 ## fromUrl
 ```swift
 public let fromUrl: URL
@@ -63,6 +65,7 @@ public let fromUrl: URL
 
 다운로드할 아이템의 주소입니다.
 
+<br><br>
 ## toUrl
 ```swift
 public let toUrl: URL
@@ -77,6 +80,7 @@ public let toUrl: URL
 다운로드된 아이템이 저장되는 절대 경로입니다.<br>
 [displayPath](#displaypath)와 [DownloadManager.shared.downloadRootUrl](../../class/download-manager/details.md#downloadrooturl)와의 관계에 관한 보다 더 자세한 설명은 [displayPath](#displaypath)를 참고하세요.
 
+<br><br>
 ## status
 ```swift
 public let status: Status
@@ -96,13 +100,14 @@ let firstPendingItem = DownloadManager.shared.items.first(where: { item in
 })
 ```
 
+<br><br>
 ## progress
 ```swift
 public let progress: (Int64, Int64)?
 ```
 |타입|설명|
 |:--:|:--|
-|(Int64, Int64)?|다운로드 아이템의 다운로드 진행을 나타냅니다. 첫 번째는 현재까지 다운로드된 파일의 크기, 두 번째는 파일 전체 크기를 나타냅니다.|
+|(Int64, Int64)?|다운로드 아이템의 다운로드 진행 정도를 나타냅니다. 첫 번째는 현재까지 다운로드된 파일의 크기, 두 번째는 파일 전체 크기를 나타냅니다.|
 
 사용 예제: 다운로드 목록에 있는 첫 번째 아이템의 진행률을 계산하는 예제
 ```swift
@@ -111,6 +116,7 @@ if let progress = DownloadManager.shared.items[0].progress {
 }
 ```
 
+<br><br>
 ## failedReason
 ```swift
 public let failedReason: String?

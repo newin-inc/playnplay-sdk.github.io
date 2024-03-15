@@ -21,4 +21,4 @@
 \
 \
 
-문서 및 SDK 변경 이력은 [여기](./revision_history/home.md)에서 확인 가능합니다.
+문서 및 SDK 변경 이력은 [여기](./revision-history/home.md)에서 확인 가능합니다.
