@@ -72,11 +72,15 @@ Button(
 }
 ```
 
-## startMediaPlayerService()
+## startMediaPlayerService
 
 플레이어와 [미디어세션](https://developer.android.com/media/media3/session/control-playback#creating-media)을 만들고 DRM 기본 설정을 합니다.
+<div align="right">
+참고: <a href="../class/context/home.md#startmediaplayerservice">startMediaPlayerService</a>
+</div>
 
-## MediaItem.fromUri()
+<br><br>
+## MediaItem.fromUri
 미디어 주소를 파라미터로 입력하여 미디어 아이템을 구성합니다. 파라미터로 받을 수 있는 타입은 아래와 같습니다.
 
 | 타입 | 설명 |
@@ -84,14 +88,26 @@ Button(
 | String | 스트링 형태의 미디어 주소 |
 | Uri | [Uri \| Android Developers](https://developer.android.com/reference/android/net/Uri) 참고 |
 
-## withDrmConfiguration()
-그리고, uri를 입력받아서 미디어 아이템을 만듭니다. 이때, 반드시 DRM 설정을 합니다. 제공받은 App 아이디와 사용자 아이디(User ID)를 입력하면 됩니다.
+<div align="right">
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem#fromUri(java.lang.String)">MediaItem.fromUri(String)</a>,
+<a href="https://developer.android.com/reference/androidx/media3/common/MediaItem#fromUri(android.net.Uri)">MediaItem.fromUri(Uri)</a>
+</div>
 
-| 이름 | 타입 | 설명 | 필수|
-|:---:|:---:|-----|:--:|
-| appId | String | App 아이디 | O |
-| userId | String | 사용자 아이디 | O |
+<br><br>
+## withDrmConfiguration
+uri를 입력받아서 미디어 아이템을 만들 때, 반드시 DRM 설정을 합니다. 제공받은 App 아이디와 사용자 아이디(User ID)를 입력하면 됩니다.
+<div align="right">
+참고: <a href="../class/media-item/home.md#withdrmconfiguration">MediaItem.withDrmConfiguration</a>
+</div>
 
+<br><br>
+## presentMediaPlayer
+구성을 마친 미디어 아이템을 화면에 재생합니다.
+<div align="right">
+참고: <a href="../class/context/home.md#presentmediaplayer">Context.presentMediaPlayer</a>
+</div>
+
+<br><br>
 ## 자막을 추가한 예제
 Media3에서 제공하는 setSubtitleConfigurations() 사용하여 자막을 추가할 수 있습니다. \
 <div align="right">
@@ -114,8 +130,12 @@ val mediaItem = MediaItem.Builder()
 	.build()
 ```
 
+<br><br>
 ## Seek 기능을 제한한 예제
 미디어 아이템을 구성할 때, setSeekable(false)을 사용하여 Seek 기능을 제한할 수 있습니다.
+<div align="right">
+참고: <a href="../class/media-item-builder/home.md#setseekable">setSeekable</a>
+</div>
 
 ```kotlin
 val mediaItem = MediaItem.Builder()
@@ -124,114 +144,8 @@ val mediaItem = MediaItem.Builder()
     .build()
 ```
 
-
-## presentMediaPlayer()
-presentMediaPlayer()를 사용하여 미디어를 엽니다.
-
-```kotlin
-fun presentMediaPlayer(uri: String)
-```
-| 파라미터 | 타입 | 설명 |
-|:-----:|:---:|----|
-| uri | String | 스트링 형태의 미디어 주소 |
-
-\
-\
-```kotlin
-fun presentMediaPlayer(uri: Uri)
-```
-| 파라미터 | 타입 | 설명 |
-|:----:|:---:|----|
-| uri | Uri | [Uri \| Android Developers](https://developer.android.com/reference/android/net/Uri) 참고 |
-
-\
-\
-```kotlin
-fun presentMediaPlayer(mediaItem: MediaItem)
-```
-| 파라미터 | 타입 | 설명 |
-|:----:|:---:|----|
-| mediaItem | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem) | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 | 
-
-\
-\
-```kotlin
-fun presentMediaPlayer(mediaItems: Collection<MediaItem>)
-```
-| 파라미터 | 타입 | 설명 |
-|:----:|:---:|----|
-| mediaItem | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
-
-\
-\
-```kotlin
-fun presentMediaPlayer(
-	mediaItems: Collection<MediaItem>,
-	startMediaItem: MediaItem
-)
-```
-| 파라미터 | 타입 | 설명 |
-|:----:|:---:|----|
-| mediaItems | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
-| startMediaItem | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem) | 목록 중에서 처음 재생할 미디어 아이템.<br>mediaItems에 포함되어 있어야 합니다. |
-
-\
-\
-```kotlin
-fun presentMediaPlayer(
-	mediaItems: Collection<MediaItem>,
-	startIndex: Int
-)
-```
-| 파라미터 | 타입 | 설명 |
-|:----:|:---:|----|
-| mediaItems | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고  |
-| startIndex | Int | 목록 중에서 처음 재생할 미디어 아이템의 index.<br>0 이상 mediaItems 개수 - 1 이하의 값이어야 합니다. |
-
-### 재생 목록을 사용한 예제
-```kotlin
-presentMediaPlayer(mediaItems)			// 0번째 아이템부터 시작
-presentMediaPlayer(mediaItems, mediaItems[0])	// 0번째 아이템부터 시작
-presentMediaPlayer(mediaItems, 0)		// 0번째 아이템부터 시작
-```
-
-## getMediaPlayer()
-
-현재 화면에 있는 플레이어를 제어하고 싶을 때는 아래처럼 구현하면 됩니다.
-
-```kotlin
-getMediaPlayer { mediaPlayer ->
-    mediaPlayer.pause()
-}
-```
-
-또는 아래처럼 미디어 플레이어에 접근하여 제어할 수 있습니다. 미디어 플레이어를 비동기 방식으로 가지고 옵니다. 아래의 예를 참고하십시오. 
-
-```kotlin
-val mediaPlayer: MediaPlayer? = null
-
-getMediaPlayer { _mediaPlayer ->
-    mediaPlayer = _mediaPlayer
-}
-
-/**
-getMediaPlayer 바로 밑에 mediaPlayer?.play()를 호출하지만
-여기서 mediaPlayer는 null일 수 있기 때문에, 높은 확률로 재생할 수 없습니다.
-*/
-mediaPlayer?.play()
-
-button.setOnClickListener {
-/** 
-매우 낮은 확률로 mediaPlayer가 null일 수 있습니다.
-mediaPlayer에 값이 들어오면 버튼을 활성화하는 방법 등을 사용하시면
-부작용을 막을 수 있습니다.
-*/
-    mediaPlayer?.play()
-}
-```
-
-## MediaPlayer()
-
+<br><br>
+## MediaPlayer
 ```kotlin
 fun MediaPlayer(context: Context): MediaPlayer
 ```

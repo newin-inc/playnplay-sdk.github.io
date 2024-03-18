@@ -2,6 +2,8 @@
 
 * [interface MediaPlayer](./media-player/home.md)
 
+* [interface Player](./player/home.md)
+
 * [interface DownloadManager.Listener](./download-manager-listener/home.md)
 
 * [interface EventListener](./event-listeners/home.md)

@@ -117,10 +117,10 @@ val progress: Progress?
 ```
 |타입|설명|
 |:--:|:--|
-|[Progress](../progress/home.md)?|다운로드 아이템의 다운로드 진행을 나타냅니다.|
+|[Progress](../download-item-progress/home.md)?|다운로드 아이템의 다운로드 진행을 나타냅니다.|
 
 <div align="right">
-참고: <a href="../progress/home.md">Progress</a>
+참고: <a href="../download-item-progress/home.md">Progress</a>
 </div>
 
 사용 예제: 다운로드 중인 아이템들의 현재 진행률을 화면에 출력하는 예제

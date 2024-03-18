@@ -21,7 +21,7 @@ data class DownloadItem(
 ```
 <div align="right">
 참고: <a href="../../enum/download-item-status/home.md">Status</a>,
-<a href="../../class/progress/home.md">Progress</a>
+<a href="../../class/download-item-progress/home.md">Progress</a>
 </div>
 
 다운로드 아이템을 나타내는 데이터 클래스입니다. 다운로드에 대한 정보, 진행 상태 등의 정보를 가지고 있습니다.

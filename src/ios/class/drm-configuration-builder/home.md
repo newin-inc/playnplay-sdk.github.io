@@ -33,7 +33,7 @@ public init(appId: String, userId: String)
 ```swift
 public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
 ```
-유저 데이터를 추가합니다.
+사용자 데이터(Callback URL에 전달할 데이터)를 추가합니다.
 
 <br><br>
 ### build()

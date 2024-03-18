@@ -7,8 +7,8 @@ import androidx.media3.common.MediaMetadata
 ```java
 public final class MediaMetadata implements Bundleable {
     ...
-    @Nullable public final CharSequence title
     @Nullable public final Uri artworkUri
+    @Nullable public final CharSequence title
 
     public Builder buildUpon()
 
@@ -21,22 +21,13 @@ val MediaMetadata.expiresOn: java.time.Instant?
 val MediaMetadata.lastPlayedTime: kotlin.time.Duration?
 ```
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#buildUpon()">MediaMetadata.buildUpon()</a>, 
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata">MediaMetadata</a>, 
+<a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#buildUpon()">MediaMetadata.buildUpon()</a>, 
 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/MediaMetadata.Builder">MediaMetadata.Builder</a>
 </div>
 
 ## 속성
 
-### title
-```java
-@Nullable public final CharSequence title
-```
-미디어 아이템의 제목을 나타내는 속성입니다.
-<div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#title()">title</a>
-</div>
-
-<br><br>
 ### artworkUrl
 ```java
 @Nullable public final Uri artworkUri
@@ -44,6 +35,16 @@ val MediaMetadata.lastPlayedTime: kotlin.time.Duration?
 미디어 아이템의 아트워크 경로를 나타내는 속성입니다.
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#artworkUri()">artworkUri</a>
+</div>
+
+<br><br>
+### title
+```java
+@Nullable public final CharSequence title
+```
+미디어 아이템의 제목을 나타내는 속성입니다.
+<div align="right">
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#title()">title</a>
 </div>
 
 <!-- <br><br>
@@ -58,8 +59,6 @@ val androidx.media3.common.MediaMetadata.downloadPath: kotlin.String?
 <br><br>
 ### expiresOn
 ```kotlin
-import com.newin.nplayer.sdk.extensions.expiresOn
-
 val androidx.media3.common.MediaMetadata.expiresOn: java.time.Instant?
 ```
 | 타입 |설명|
@@ -78,8 +77,6 @@ val expiresOn = mediaItem.mediaMetadata.expiresOn
 <br><br>
 ### lastPlayedTime
 ```kotlin
-import com.newin.nplayer.sdk.extensions.lastPlayedTime
-
 val androidx.media3.common.MediaMetadata.lastPlayedTime: kotlin.time.Duration?
 ```
 | 타입 | 설명 |
@@ -115,7 +112,7 @@ public MediaMetadata.Builder buildUpon()
 </div>
 
 <br><br>
-## 사용 예제: 미디어 메타 데이터의 타이틀을 바꾸는 예제
+### 사용 예제: 미디어 메타 데이터의 타이틀을 바꾸는 예제
 ```kotlin
 fun renameMediaItem(mediaItem: MediaItem, name: String): MediaItem {
     val builder = mediaItem.buildUpon()
@@ -127,3 +124,6 @@ fun renameMediaItem(mediaItem: MediaItem, name: String): MediaItem {
 
 val mediaItem = renameMediaItem(oldMediaItem, "New Title")
 ```
+<div align="right">
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem.Builder#setMediaMetadata(androidx.media3.common.MediaMetadata)">setMediaMetadata</a>
+</div>
