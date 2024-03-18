@@ -76,9 +76,9 @@ val currentSrc: Uri?
 \
 사용 예제
 ```kotlin
-mediaPlayer.currentSrc = "미디어주소.mp4"
+mediaPlayer.currentSrc = "https://example.com/media.mp4"
 
-val currentUri = mediaPlayer.currentSrc // "미디어주소.mp4"
+val currentUri = mediaPlayer.currentSrc // "https://example.com/media.mp4"
 ```
 
 <br><br>
@@ -437,7 +437,7 @@ fun load(uri: String)
 \
 사용 예제
 ```kotlin
-mediaPlayer.load("https://미디어주소.mp4")  // 타입: String
+mediaPlayer.load("https://example.com/media.mp4")  // 타입: String
 mediaPlayer.load(uri)   // 타입: Uri
 mediaPlayer.load(mediaItem) // 타입: MediaItem
 mediaPlayer.load(listOf(mediaItem1, mediaItem2))    // 타입: List<MediaItem>

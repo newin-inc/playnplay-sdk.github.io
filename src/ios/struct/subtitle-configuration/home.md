@@ -37,7 +37,7 @@ public struct SubtitleConfiguration {
 ```swift
 let subtitleConfigurations = [
     SubtitleConfiguration
-        .Builder(url: URL(string: "자막주소.vtt")!)
+        .Builder(url: URL(string: "https://example.com/subtitle.vtt")!)
         .language("언어")
         .label("라벨")
         .mode(.autoSelect)
@@ -46,7 +46,7 @@ let subtitleConfigurations = [
 ]
 
 let mediaItem = MediaItem
-    .Builder(url: URL(string: "미디어주소.mp3")!)
+    .Builder(url: URL(string: "https://example.com/media.mp4")!)
     .subtitleConfigurations(subtitleConfigurations)
     .build()
 ```

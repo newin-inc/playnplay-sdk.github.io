@@ -52,7 +52,7 @@ let drmConfiguration = DrmConfiguration
     .build()
 
 let mediaItem = MediaItem
-    .Builder(url: URL(string: "미디어주소.mp3")!)
+    .Builder(url: URL(string: "https://example.com/media.mp4")!)
     .drmConfiguration(drmConfiguration)
     .build()
 ```

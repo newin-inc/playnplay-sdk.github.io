@@ -59,7 +59,7 @@ App 아이디는 콘솔에서 설정 > 애플리케이션 > App ID > 보기를 �
 Button(
 	onClick = { 
 		// uri를 입력 받아서 아이템을 만듭니다. 이때, 반드시 DRM 설정을 합니다.
-		val mediaItem = MediaItem.fromUri("미디어주소.mp4")
+		val mediaItem = MediaItem.fromUri("https://example.com/media.mp4")
 			.withDrmConfiguration(
 				appId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx", // App 아이디
 				userId = "사용자 아이디"
@@ -100,11 +100,11 @@ Media3에서 제공하는 setSubtitleConfigurations() 사용하여 자막을 추
 
 ```kotlin
 val mediaItem = MediaItem.Builder()
-	.setUri("비디오주소.mp4")
+	.setUri("https://example.com/video.mp4")
 	.setSubtitleConfigurations(
 		listOf(
 			MediaItem.SubtitleConfiguration.Builder(
-				Uri.parse("자막주소.vtt")
+				Uri.parse("https://example.com/subtitle.vtt")
 			)
 			.setMimeType(MimeTypes.TEXT_VTT)
 			.setLanguage("en")
@@ -119,7 +119,7 @@ val mediaItem = MediaItem.Builder()
 
 ```kotlin
 val mediaItem = MediaItem.Builder()
-	.setUri("비디오주소.mp4")
+	.setUri("https://www.example.com/video.mp4")
     .setSeekable(false)
     .build()
 ```

@@ -89,12 +89,12 @@ public func buildUpon() -> MediaMetadata.Builder
 let mediaMetadata = MediaMetadata
     .Builder()
     .title("제목")
-    .artworkUrl(URL(string:"이미지주소.jpg")!)
+    .artworkUrl(URL(string:"https://www.example.com/image.jpg")!)
     .build()
     
 
 let mediaItem = MediaItem
-    .Builder(url: URL(string: "미디어주소.mp3")!)
+    .Builder(url: URL(string: "https://example.com/media.mp4")!)
     .mediaMetadata(mediaMetadata)
     .build()
 

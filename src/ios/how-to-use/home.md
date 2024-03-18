@@ -70,7 +70,7 @@ func application(
 ### 하나의 미디어 열기
 
 ```swift
-func openTestMedia() {
+func openMedia() {
     // DRM 설정을 합니다.
     let drmConfiguration = DrmConfiguration.Builder(
         appId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
@@ -78,25 +78,20 @@ func openTestMedia() {
     ).build()
 
     // 미디어 파일을 구성하며, DRM 설정을 합니다.
-    let mediaItem = MediaItem.from(url: URL(string: "미디어주소.mp4")!)
+    let mediaItem = MediaItem.from(url: URL(string: "https://example.com/media.mp4")!)
         .buildUpon()
         .drmConfiguration(drmConfiguration)
         .build()
 	
     // 미디어를 엽니다. 
-    let playerViewController = MediaPlayerViewController.new() // 뷰컨트롤러를 만듭니다.
-    self.present(playerViewController, animated: animated) {
-        playerViewController.player.load(
-            mediaItem: mediaItem
-        )
-    }
+    self.present([mediaItem], 0)
 }
 ```
 
 <div align="right">
 관련 코드 설명: <a href="../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a>,<br>
 <a href="../struct/media-item/home.md">MediaItem</a>,<br>
-<a href="#uiviewcontrollerpresent_animatedcompletion">self.present(_:animated:completion:)</a>,<br>
+<a href="#presentmediaitemsstartindex">present(mediaItems:startIndex:)</a>,<br>
 <a href="../class/media-player/details.md#loadmediaitem">playerViewcontroller.player.load(mediaItem:)</a>
 </div>
 
@@ -117,7 +112,7 @@ self.present(mediaItems: mediaItems, startIndex: 0)
 빌드하기 전에 제목을 설정할 수 있습니다.
 
 ```swift
-let mediaItem = MediaItem.Builder(url: URL(string: "미디어주소.mp4")!)
+let mediaItem = MediaItem.Builder(url: URL(string: "https://example.com/media.mp4")!)
     .mediaMetadata(
         MediaMetadata.Builder().title("제목").build()
     )
@@ -132,7 +127,7 @@ let mediaItem = MediaItem.Builder(url: URL(string: "미디어주소.mp4")!)
 미디어 아이템을 구성할 때, seekable(false)을 사용하여 Seek 기능을 제한할 수 있습니다.
 
 ```swift
-let mediaItem = MediaItem.Builder(url: URL(string: "미디어주소.mp4")!)
+let mediaItem = MediaItem.Builder(url: URL(string: "https://example.com/media.mp4")!)
     .seekable(false)
     .build()
 ```
