@@ -30,6 +30,7 @@
             - [상세](./android/class/download-manager/details.md) 
         - [EventHandler](./android/class/event-handlers/home.md)
             - [상세](./android/class/event-handlers/details.md)
+        - [MediaMetadata](./android/class/media-metadata/home.md)
         - [Progress](./android/class/progress/home.md)
             - [상세](./android/class/progress/details.md)
         - [MediaPlayer.RepeatRange](./android/class/media-player-repeat-range/home.md)
