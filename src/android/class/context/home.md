@@ -41,32 +41,6 @@ getMediaPlayer { mediaPlayer ->
 }
 ```
 
-사용 예제: 비동기로 인한 부작용 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.getMediaPlayer
-
-val mediaPlayer: MediaPlayer? = null
-
-getMediaPlayer { _mediaPlayer ->
-    mediaPlayer = _mediaPlayer
-}
-
-/**
-getMediaPlayer 바로 밑에 mediaPlayer?.play()를 호출하지만
-여기서 mediaPlayer는 null일 수 있기 때문에, 높은 확률로 재생할 수 없습니다.
-*/
-mediaPlayer?.play()
-
-button.setOnClickListener {
-/** 
-매우 낮은 확률로 mediaPlayer가 null일 수 있습니다.
-mediaPlayer에 값이 들어오면 버튼을 활성화하는 방법 등을 사용하시면
-부작용을 막을 수 있습니다.
-*/
-    mediaPlayer?.play()
-}
-```
-
 <br><br>
 ### startMediaPlayerService
 ```kotlin
