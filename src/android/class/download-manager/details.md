@@ -92,14 +92,14 @@ DownloadManager.shared.removeAll()
 
 ## add
 ```kotlin
-fun add(mediaItem: MediaItem): DownloadItem.Id
+fun add(mediaItem: MediaItem): DownloadItemId
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)|추가하고자 하는 미디어 아이템|
 
 <div align="right">
-참고: <a href="../download-item/details.md#id">DownloadItem.id</a>
+참고: <a href="../download-item/details.md#id">DownloadItemId</a>
 </div>
 
 다운로드를 할 미디어 아이템을 추가합니다. 현재 다운로드가 진행되고 있는 아이템의 수가 [maxParallelDownloads](#maxparalleldownloads) 보다 적으면 바로 다운로드를 시작합니다.
@@ -129,7 +129,7 @@ val completedItemsCount =
 <br><br>
 ## pause
 ```kotlin
-fun pause(id: DownloadItem.Id)
+fun pause(id: DownloadItemId)
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -162,7 +162,7 @@ DownloadManager.shared.pauseAll()
 <br><br>
 ## remove
 ```kotlin
-fun remove(id: DownloadItem.Id)
+fun remove(id: DownloadItemId)
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -210,7 +210,7 @@ assert(isEmpty)
 <br><br>
 ## resume
 ```kotlin
-fun resume(id: DownloadItem.Id)
+fun resume(id: DownloadItemId)
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|

@@ -2,7 +2,7 @@
 
 ## id
 ```kotlin
-val id: Id
+val id: DownloadItemId
 ```
 |타입|설명|
 |:--:|:--|
@@ -11,9 +11,7 @@ val id: Id
 다운로드 아이템의 고유의 아이디입니다. 다운로드를 일시정지하거나, 다시 시작할 때, 삭제할 때 등에 사용됩니다. 이때, Id는 value class로 아래와 같습니다.
 
 ```kotlin
-data class DownloadItem {
-    value class Id(val value: UUID)
-}
+typealias DownloadItemId = UUID
 ```
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/java/util/UUID">UUID</a>

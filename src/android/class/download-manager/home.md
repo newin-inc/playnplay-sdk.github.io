@@ -24,14 +24,14 @@ class DownloadManager private constructor(private val context: Context) {
     val items: List<DownloadItem>
     var maxParallelDownloads: Int
 
-    fun add(mediaItem: MediaItem): DownloadItem.Id
+    fun add(mediaItem: MediaItem): DownloadItemId
     fun getItemsByStatus(status: DownloadItem.Status): List<DownloadItem>
-    fun pause(id: DownloadItem.Id)
+    fun pause(id: DownloadItemId)
     fun pauseAll()
-    fun remove(id: DownloadItem.Id)
+    fun remove(id: DownloadItemId)
     fun removeAll()
     fun removeCompleted()
-    fun resume(id: DownloadItem.Id)
+    fun resume(id: DownloadItemId)
     fun resumeAll()
 
     fun addListener(listener: Listener)
@@ -64,21 +64,21 @@ class DownloadManager private constructor(private val context: Context) {
     <a href="./details.md#메서드">메서드</a>
 </summary>
 
-- [fun add(mediaItem: MediaItem): DownloadItem.Id](./details.md#add)
+- [fun add(mediaItem: MediaItem): DownloadItemId](./details.md#add)
     
 - [fun getItemsByStatus(status: DownloadItem.Status): List<DownloadItem>](./details.md#getitemsbystatus)
 
-- [fun pause(id: DownloadItem.Id)](./details.md#pause)
+- [fun pause(id: DownloadItemId)](./details.md#pause)
 
 - [fun pauseAll()](./details.md#pauseall)
 
-- [fun remove(id: DownloadItem.Id)](./details.md#remove)
+- [fun remove(id: DownloadItemId)](./details.md#remove)
 
 - [fun removeAll()](./details.md#removeall)
 
 - [fun removeCompleted()](./details.md#removecompleted)
 
-- [fun resume(id: DownloadItem.Id)](./details.md#resume)
+- [fun resume(id: DownloadItemId)](./details.md#resume)
 
 - [fun resumeAll()](./details.md#resumeall)
 

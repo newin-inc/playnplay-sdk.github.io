@@ -5,7 +5,7 @@ import com.newin.nplayer.sdk.DownloadItem
 
 ```kotlin
 data class DownloadItem(
-    val id: Id,
+    val id: DownloadItemId,
     val fromUri: Uri,
     val toUri: Uri,
     val status: Status,
@@ -20,7 +20,8 @@ data class DownloadItem(
 }
 ```
 <div align="right">
-참고: <a href="../../enum/download-item-status/home.md">Status</a>,
+참고: <a href="./details.md#id">DownloadItemId</a>, 
+<a href="../../enum/download-item-status/home.md">Status</a>,
 <a href="../../class/download-item-progress/home.md">Progress</a>
 </div>
 
@@ -31,7 +32,7 @@ data class DownloadItem(
     <a href="./details.md#속성">속성</a>
 </summary>
 
-* [val id: Id](./details.md#id)
+* [val id: DownloadItemId](./details.md#id)
 
 * [val displayPath: String](./details.md#displaypath)
 
