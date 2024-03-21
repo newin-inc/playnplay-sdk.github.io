@@ -134,8 +134,8 @@ fun Player.loadBookmark(completion: (Result<Bookmark>) -> Unit)
 ```kotlin
 import com.newin.nplayer.sdk.extensions.loadBookmark
 
-player.loadBookmark {
-    val bookmark = it.getOrNull()
+player.loadBookmark { result ->
+    val bookmark = result.getOrNull()
     val size = bookmark?.size ?: 0
 }
 ```

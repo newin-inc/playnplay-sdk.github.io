@@ -2,6 +2,10 @@
 
 - [class AudioTrack](./audio-track/home.md)
 
+- [class Bookmark](./bookmark/home.md)
+
+- [data class BookmarkItem](./bookmark-item/home.md)
+
 - [class Context](./context/home.md)
 
 - [data class DownloadItem](./download-item/home.md)

@@ -19,6 +19,8 @@ public final class MediaMetadata implements Bundleable {
 val MediaMetadata.expiresOn: java.time.Instant?
 
 val MediaMetadata.lastPlayedTime: kotlin.time.Duration?
+
+val MediaMetadata.duration: Duration?
 ```
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata">MediaMetadata</a>, 
@@ -97,6 +99,31 @@ println(expiresOn)
 실행 후 다음과 같은 결과를 볼 수 있습니다.
 ```log
 4m 13.445s
+```
+
+<br><br>
+### duration
+```kotlin
+val androidx.media3.common.MediaMetadata.duration: kotlin.time.Duration?
+```
+| 타입 | 설명 |
+|:--:|--|
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|미디어 아이템의 전체 길이|
+
+미디어 아이템의 전체 길이를 나타내는 속성입니다.
+
+사용 예제: 미디어의 전체 길이를 가져오는 예제
+```kotlin
+import com.newin.nplayer.sdk.extensions.duration
+
+val duration = mediaItem.mediaMetadata.duration
+
+println(duration)
+```
+
+실행 후 다음과 같은 결과를 볼 수 있습니다.
+```log
+14m 48.064s
 ```
 
 <br><br>
