@@ -15,7 +15,6 @@ val Player.videoTracks: List<Track>
 
 fun Player.enterPictureInPicture(activity: Activity, sourceRectHint: Rect? = null)
 fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
-fun Player.loadBookmark(completion: (Result<Bookmark>) -> Unit)
 fun Player.selectTrack(track: Track)
 ```
 <div align="right">
@@ -116,28 +115,6 @@ import com.newin.nplayer.sdk.extensions.enterPictureInPicture
 
 val activity = context.activity() ?: return
 player.enterPictureInPicture(activity, this)
-```
-
-
-<br><br>
-### loadBookmark
-```kotlin
-fun Player.loadBookmark(completion: (Result<Bookmark>) -> Unit)
-```
-|파라미터|타입|설명|
-|:--:|:--:|---|
-|completion|(Result<Bookmark>) -> Unit|북마크를 읽어온 뒤 수행할 작업|
-
-북마크를 읽어오는 메서드입니다. 
-
-사용 예제: 북마크 개수를 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.loadBookmark
-
-player.loadBookmark { result ->
-    val bookmark = result.getOrNull()
-    val size = bookmark?.size ?: 0
-}
 ```
 
 <br><br>
