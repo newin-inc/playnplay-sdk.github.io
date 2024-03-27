@@ -55,7 +55,7 @@ const LaunchType = {
 {
     "appId": string,
     "userId": string,
-    "userData": object
+    "userData": object | undefined
 }
 ```
 

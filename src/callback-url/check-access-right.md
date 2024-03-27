@@ -27,7 +27,7 @@ Authorization: Bearer <Authorization>
 * mediaUrl - 미디어 URL
 * deviceId - 디바이스 ID
 * userId - 사용자 ID
-* userData - 라이선스 발급 시 입력한 정보 (사용자 및 컨텐츠 식별 등의 용도)
+* userData - [launchAgent](../desktop/how-to-use/launch-agent.html) 호출 시 [입력한 정보](../desktop/how-to-use/launch-agent.html#drm) (사용자 및 컨텐츠 식별 등의 용도)
 * offline - 다운로드 컨텐츠의 경우 true, 그 외에는 false
 
 ### 반환
