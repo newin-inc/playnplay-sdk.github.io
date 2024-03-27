@@ -61,7 +61,7 @@ const LaunchType = {
 
 * appId: 앱 ID
 * userId: 사용자 ID
-* userData: Callback URL에 전달할 데이터 (옵션)
+* userData: 고객사의 필요에 따라 Callback URL에 전달할 데이터 (옵션)
 
 ## Subtitle 
 
