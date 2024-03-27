@@ -32,7 +32,7 @@ Authorization: Bearer <Authorization>
 * appId:  앱 ID
 * sessionId: 세션 ID
 * userId: 사용자 ID
-* userData - 라이선스 발급 시 입력한 정보 (사용자 및 컨텐츠 식별 등의 용도)
+* userData - [launchAgent](../desktop/how-to-use/launch-agent.html) 호출 시 [입력한 정보](../desktop/how-to-use/launch-agent.html#drm) (사용자 및 컨텐츠 식별 등의 용도)
 * position - 현재 재생 위치
 * duration - 전체 재생 길이
 * progress - 현재 세션의 진행 상태
