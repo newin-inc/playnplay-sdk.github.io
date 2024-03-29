@@ -1,6 +1,6 @@
 # 상단 인터페이스
 
-![](./img/top_interface_full.png)
+![](./img/top-interface-full.png)
 
 ## 1. 종료 버튼
 미디어 플레이어를 종료합니다.
@@ -10,7 +10,7 @@
 
 왼쪽에는 현재 재생되는 위치가 시:분:초로 표시되며, 오른쪽에는 남은 시간이 표시됩니다.
 
-![](./img/timebar_with_normal_playbackrate.png)
+![](./img/timebar-with-normal-playbackrate.png)
 
 위의 예제 그림을 보면, 미디어는 지금 10분 1초 부분을 재생하고 있고, 앞으로 4분 47초 남아있음을 나타냅니다.
 
@@ -18,7 +18,7 @@
 
 아래의 그림은 재생 속도가 1.8배속일 때의 타임바를 보여줍니다.
 
-![](./img/timebar_with_1.8x_playbackrate.png)
+![](./img/timebar-with-1.8x-playbackrate.png)
 
 ## 3. 메뉴 버튼
 [메뉴](../menu/home.md)를 엽니다.
@@ -51,26 +51,26 @@
 
 좌측 상단의 플러스(+) 버튼을 클릭하여 현재 재생되고 있는 위치를 저장할 수 있습니다. 해당 버튼을 클릭하면, 북마크 제목을 넣을 수 있는 팝업창이 뜹니다. 확인을 클릭하여 현재 재생되는 위치를 북마크로 저장할 수 있습니다. 제목을 넣지 않아도, Untitled라는 이름의 북마크가 생성됩니다.
 
-![](./img/new_bookmark.png)
+![](./img/new-bookmark.png)
 
 북마크 이름을 변경하려면 해당 아이템 행의 오른쪽에 있는 연필 버튼을 클릭하면 됩니다.
 
-![](./img/edit_bookmark.png)
+![](./img/edit-bookmark.png)
 
 북마크를 삭제 하려면 해당 아이템 행의 맨 오른쪽의 휴지통 버튼을 클릭하면 됩니다.
 
-![](./img/delete_bookmark.png)
+![](./img/delete-bookmark.png)
 
 ## 화면 속 화면
 
 화면 속 화면 모드를 활성화 하는 기능입니다. 상단 인터페이스의 화면 속 화면 버튼과 같은 기능입니다. 
 화면 속 화면 모드로 진입하면 아래와 같이 미디어가 표시됩니다.
 
-![](./img/pip_screenshot.png)
+![](./img/pip-screenshot.png)
 
 화면 속 화면에 싱글 클릭하면, 다음과 같은 컨트롤러 화면이 나타납니다. 해당 화면은 안드로이드 8.0이상에서 기본적으로 제공되는 화면입니다.
 
-![](./img/controller_in_pip.png)
+![](./img/controller-in-pip.png)
 
 1. 설정 버튼
 화면 속 화면 모드에 대한 설정을 수정합니다.
@@ -95,7 +95,7 @@
 --------
 # 중앙 인터페이스
 
-![](./img/buttons_on_left.png)
+![](./img/buttons-on-left.png)
 
 ## 1.화면 회전 잠금 버튼 
 
@@ -105,13 +105,13 @@
 
 구간 반복 버튼을 한 번 클릭하면, 구간 반복 모드로 들어갑니다. 반대로, 구간 반복 모드일 때 이 버튼을 다시 클릭하면 구간 반복 모드가 해제됩니다.
 
-![](./img/repeat_mode_at_first.png)
+![](./img/repeat-mode-at-first.png)
 
 구간 반복 모드로 들어가면 화면 하단에 시작 위치와 종료 위치를 보여주는 버튼이 나타납니다. 위 그림처럼 버튼에 보이는 구간 사이를 반복하여 재생을 합니다.
 
 버튼이 흰색일 경우는 각각 미디어의 맨 처음과 끝을 의미합니다. 버튼을 클릭하면 현재 위치를 업데이트 하며 구간 범위가 변경되고, 해당 버튼이 활성화된 색으로 변경 됩니다. 
 
-![](./img/repeat_mode_clicked.png)
+![](./img/repeat-mode-clicked.png)
 
 방금 눌렀던(활성화 된) 버튼을 한 번 더 클릭하면, 현재 위치를 업데이트를 하는 것이 아니라 입력된 기존 위치를 초기화 하여, 맨 처음 또는 맨 끝으로 위치가 변경되고 버튼이 흰색으로 변경됩니다.
 
@@ -122,41 +122,41 @@
 ### 1) 비디오 트랙 설정
 현재 재생되는 비디오 트랙이 간단한 정보와 함께 화면에 표시됩니다.
 
-![](./img/video_track_main.png)
+![](./img/video-track-main.png)
 
 비디오 트랙을 클릭하면, 비디오 트랙을 선택할 수 있는 화면이 나옵니다.
 
-![](./img/video_track_selector.png)
+![](./img/video-track-selector.png)
 
 ### 2) 오디오 트랙 설정
 현재 재생되는 오디오 트랙이 간단한 정보와 함께 화면에 표시됩니다.
 
-![](./img/audio_track_main.png)
+![](./img/audio-track-main.png)
 
 오디오 트랙을 클릭하면, 오디오 트랙을 선택할 수 있는 화면이 나옵니다.
 
-![](./img/audio_track_selector.png)
+![](./img/audio-track-selector.png)
 
 ### 3) 자막 트랙 설정	
 현재 재생되는 미디어에 자막이 포함되어 있는 경우, 자막 보기 스위치 버튼을 사용하여, 자막을 끄고 켤 수 있습니다. 
 
-![](./img/subtitle_off.png)
+![](./img/subtitle-off.png)
 
 자막 보기를 활성화 하면, 해당 미디어가 가지고 있는 모든 자막이 표시되며, 해당 자막을 클릭하여 자막 설정을 합니다.
 
-![](./img/subtitle_selector.png)
+![](./img/subtitle-selector.png)
 
 \
 \
 \
 
-![](./img/buttons_on_right.png)
+![](./img/buttons-on-right.png)
 
 ## 4. 재생 속도 증가 버튼
 재생 속도를 0.1배 만큼 증가 시킵니다.
 버튼을 클릭하면 화면 중앙에 증가된 재생 속도를 보여줍니다. 최대 4.0배 까지 가능합니다.
 
-![](./img/playbackrate_2.6x.png)
+![](./img/playbackrate-2.6x.png)
 
 ## 5. 재생 속도 복구 버튼
 현재 재생 속도를 보여줍니다.
@@ -171,7 +171,7 @@
 --------
 # 하단 인터페이스
 
-![](./img/bottom_interface.png)
+![](./img/bottom-interface.png)
 
 ## 1. 화면 잠금 버튼 
 화면을 잠급니다. 화면을 길게 꾹 누르는 것과 동일합니다.

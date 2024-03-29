@@ -616,7 +616,7 @@ var view: UIView { get }
 ```
 |타입|설명|설정|
 |:--:|--|:--:|
-|[UIView](https://developer.apple.com/documentation/uikit/uiview)|[미디어 플레이어 화면](../../media_player_view/home.md) 참고|불가능|
+|[UIView](https://developer.apple.com/documentation/uikit/uiview)|[미디어 플레이어 화면](../../medi-player-view/home.md) 참고|불가능|
 
 미디어 플레이어 뷰를 반환하는 속성입니다.
 

@@ -6,4 +6,4 @@
 ## 미디어 파일이 재생되지 않습니다.
 Destination을 My Mac으로 합니다. 그렇게 해도 안 되면 연락 부탁드립니다.
 
-![](./img/my_mac_as_destination.png)
+![](./img/my-mac-as-destination.png)
