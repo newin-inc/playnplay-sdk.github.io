@@ -374,6 +374,44 @@ var resizeMode: @ResizeMode Int
 |Int|[화면 크기 상태](../../media_player_view/screen_layout/details.md#7-화면-크기-조절-버튼)를 나타냄.<br>참고: [AspectRatioFrameLayout.ResizeMode](https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode)|가능|0|
 
 <br><br>
+## seekBackIncrement
+
+```kotlin
+var seekBackIncrement: Duration
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
+
+[seekBack()](#seekback)을 호출하여 이동할 때, 현재 위치에서 전으로 이동하는 시간 정도를 나타내는 속성입니다.
+왼쪽 방향키를 입력 받거나 하단 인터페이스의 되감기 버튼을 클릭했을 때 이 속성을 사용합니다.
+
+\
+사용 예제
+```kotlin
+mediaPlayer.seekBackIncrement = 20.seconds
+```
+
+<br><br>
+## seekForwardIncrement
+
+```kotlin
+var seekForwardIncrement: Duration
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
+
+[seekForward()](#seekforward)을 호출하여 이동할 때, 현재 위치에서 후로 이동하는 시간 정도를 나타내는 속성입니다.
+오른쪽 방향키를 입력 받거나 하단 인터페이스의 빨리 감기 버튼을 클릭했을 때 이 속성을 사용합니다.
+
+\
+사용 예제
+```kotlin
+mediaPlayer.seekForwardIncrement = 30.seconds
+```
+
+<br><br>
 ## seeking
 
 ```kotlin
@@ -550,6 +588,25 @@ fun release()
 ## seekBack
 
 ```kotlin
+fun seekBack()
+```
+현재 위치에서 속성 [seekBackIncrement](#seekbackincrement) 만큼 전으로 이동하기 위한 메서드입니다.
+
+\
+사용 예제
+```kotlin
+mediaPlayer.seekBack(20.seconds)
+// 미디어 재생 위치의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
+// seekBackIncrement 값은 변하지 않는 게 다른 점입니다.
+
+mediaPlayer.seekBackIncrement = 20.seconds
+mediaPlayer.seekBack()
+```
+
+<br><br>
+## seekBack
+
+```kotlin
 fun seekBack(increment: Duration)
 ```
 현재 위치에서 입력된 시간 전으로 이동하기 위한 메서드입니다.
@@ -565,6 +622,25 @@ mediaPlayer.seekTo(30.seconds)
 	
 mediaPlayer.seekBack(10.seconds)
 val currentTime = mediaPlayer.currentTime   // 20s
+```
+
+<br><br>
+## seekForward
+
+```kotlin
+fun seekForward()
+```
+현재 위치에서 속성 [seekForwardIncrement](#seekforwardincrement) 만큼 후로 이동하기 위한 메서드입니다.
+
+\
+사용 예제
+```kotlin
+mediaPlayer.seekForward(20.seconds)
+// 미디어 재생 위치의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
+// seekForwardIncrement 값은 변하지 않는 게 다른 점입니다.
+
+mediaPlayer.seekForwardIncrement = 20.seconds
+mediaPlayer.seekForward()
 ```
 
 <br><br>

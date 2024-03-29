@@ -24,6 +24,8 @@ interface MediaPlayer : Player {
     var preservesPitch: Boolean
     var repeatRange: RepeatRange?
     var resizeMode: @ResizeMode Int
+    var seekBackIncrement: Duration
+    var seekForwardIncrement: Duration
     val seeking: Boolean
     var deviceVolume: Float
 
@@ -31,8 +33,10 @@ interface MediaPlayer : Player {
     fun load(uri: String) 
     fun load(uri: Uri)
     fun load(mediaItem: MediaItem)
-    fun load(mediaItems: List<MediaItem>)
+    fun load(mediaItems: List<MediaItem>
+    fun seekBack()
     fun seekBack(increment: Duration)
+    fun seekForward()
     fun seekForward(increment: Duration)
     fun seekTo(position: Duration, force: Boolean)
     fun addEventHandler(handler: EventHandler): EventHandler
@@ -92,6 +96,10 @@ interface MediaPlayer : Player {
 
 - [var resizeMode: @ResizeMode Int](./details.md#resizemode)
 
+- [var seekBackIncrement: Duration](./details.md#seekbackincrement)
+    
+- [var seekForwardIncrement: Duration](./details.md#seekforwardincrement)
+
 - [val seeking: Boolean](./details.md#seeking)
 
 </details>
@@ -120,9 +128,13 @@ interface MediaPlayer : Player {
 
 - [fun release()](./details.md#release)
 
-- [fun seekBack(increment: Duration)](./details.md#seekback)
+- [fun seekBack()](./details.md#seekback)
 
-- [fun seekForward(increment: Duration)](./details.md#seekforward)
+- [fun seekBack(increment: Duration)](./details.md#seekback-1)
+
+- [fun seekForward()](./details.md#seekforward)
+
+- [fun seekForward(increment: Duration)](./details.md#seekforward-1)
 
 - [fun seekTo(position: Duration, force: Boolean)](./details.md#seekto)
 

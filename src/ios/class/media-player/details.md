@@ -497,7 +497,8 @@ var seekBackIncrement: Duration { get set }
 |:--:|--|:--:|:--:|
 |[Duration](../../struct/duration/home.md)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
 
-왼쪽 방향키를 입력 받거나 하단 인터페이스의 되감기 버튼을 클릭했을 때, 현재 위치에서 전으로 이동하는 시간 정도를 나타내는 속성입니다.
+[seekBack()](#seekback)을 호출하여 이동할 때, 현재 위치에서 전으로 이동하는 시간 정도를 나타내는 속성입니다.
+왼쪽 방향키를 입력 받거나 하단 인터페이스의 되감기 버튼을 클릭했을 때 이 속성을 사용합니다.
 
 사용 예제
 ```swift
@@ -514,7 +515,8 @@ var seekForwardIncrement: Duration { get set }
 |:--:|--|:--:|:--:|
 |[Duration](../../struct/duration/home.md)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
 
-오른쪽 방향키를 입력 받거나 하단 인터페이스의 빨리 감기 버튼을 클릭했을 때, 현재 위치에서 후로 이동하는 시간 정도를 나타내는 속성입니다.
+[seekForward()](#seekforward)을 호출하여 이동할 때, 현재 위치에서 후로 이동하는 시간 정도를 나타내는 속성입니다.
+오른쪽 방향키를 입력 받거나 하단 인터페이스의 빨리 감기 버튼을 클릭했을 때 이 속성을 사용합니다.
 
 사용 예제
 ```swift
@@ -789,7 +791,7 @@ func seekBack(increment: Duration)
 사용 예제
 ```swift
 mediaPlayer.seekBack(increment: .seconds(30))
-// 미디어의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
+// 미디어 재생 위치의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
 // seekBackIncrement 값은 변하지 않는 게 다른 점입니다.
 
 mediaPlayer.seekBackIncrement = .seconds(30)
@@ -819,7 +821,7 @@ func seekForward(increment: Duration)
 사용 예제
 ```swift
 mediaPlayer.seekForward(increment: .seconds(30))
-// 미디어의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
+// 미디어 재생 위치의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
 // seekForwardIncrement 값은 변하지 않는 게 다른 점입니다.
 
 mediaPlayer.seekForwardIncrement = .seconds(30)
