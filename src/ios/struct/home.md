@@ -2,6 +2,8 @@
 
 * [struct MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)
 
+* [struct MediaPlayerViewController.Configuration](./media-player-view-controller-configuration/home.md)
+
 * [struct DownloadItem](./download-item/home.md)
 
 * [struct Duration](./duration/home.md)

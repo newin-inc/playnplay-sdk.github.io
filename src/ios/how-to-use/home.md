@@ -96,7 +96,7 @@ func openMedia() {
 </div>
 
 ### 재생 목록으로 열기
-iOS SDK에서 제공하는 present(mediaItems:startIndex:) 메서드를 사용하면, 쉽게 재생 목록을 열 수 있습니다.
+iOS SDK에서 제공하는 present(mediaItems:startIndex:configuration:) 메서드를 사용하면, 쉽게 재생 목록을 열 수 있습니다.
 
 ```swift
 let mediaItems: [MediaItem] = [ mediaItem1, mediaItem2, mediaItem3, ...]
@@ -138,18 +138,23 @@ let mediaItem = MediaItem.Builder(url: URL(string: "https://example.com/media.mp
 
 ## 구성 관련 코드 추가 설명
 
-### present(mediaItems:startIndex:)
+### present(mediaItems:startIndex:configuration:)
 ```swift
 extension UIViewController {
-    public func present(mediaItems: [MediaItem], startIndex: Int = 0)
+    public func present(
+        mediaItems: [MediaItem],
+        startIndex: Int = 0,
+        configuration: configuration: MediaPlayerViewController.Configuration = .defaultConfiguration()
+    )
 }
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |mediaItems|\[[MediaItem]\]|미디어 아이템 목록|
 |startIndex|Int|재생할 미디어의 인덱스|
+|configuration|[MediaPlayerViewController.Configuration](../struct/media-player-view-controller-configuration/home.md)|설정 값|
 
-위 [재생 목록 열기](#재생-목록으로-열기)에서 사용한 present(mediaItems:startIndex:)는 아래와 같이 구현되어 있으니 참고하여 확장해서 사용하십시오.
+위 [재생 목록 열기](#재생-목록으로-열기)에서 사용한 present(mediaItems:startIndex:configuration:)는 아래와 같이 구현되어 있으니 참고하여 확장해서 사용하십시오.
 
 ```swift
 public func present(mediaItems: [MediaItem], startIndex: Int = 0) {
@@ -162,7 +167,7 @@ public func present(mediaItems: [MediaItem], startIndex: Int = 0) {
             return
         }
 
-    let playerViewController = MediaPlayerViewController.new()
+    let playerViewController = MediaPlayerViewController.new(configuration: configuration))
 
     self.present(playerViewController, animated: true) {
         let player = playerViewController.player
