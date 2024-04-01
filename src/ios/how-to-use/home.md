@@ -91,7 +91,7 @@ func openMedia() {
 <div align="right">
 관련 코드 설명: <a href="../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a>,<br>
 <a href="../struct/media-item/home.md">MediaItem</a>,<br>
-<a href="#presentmediaitemsstartindex">present(mediaItems:startIndex:)</a>,<br>
+<a href="#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a>,<br>
 <a href="../class/media-player/details.md#loadmediaitem">playerViewcontroller.player.load(mediaItem:)</a>
 </div>
 
@@ -200,25 +200,6 @@ public func present(mediaItems: [MediaItem], startIndex: Int = 0) {
     }
 }
 ```
-
-### present(_:animated:completion:)
-```swift
-class UIViewController {
-    func present(
-        _ viewControllerToPresent: UIViewController,
-        animated flag: Bool,
-        completion: (() -> Void)? = nil
-    )
-}
-```
-|파라미터|타입|설명|
-|:--:|:--:|--|
-|viewControllerToPresent|UIViewController|화면에 보여줄 뷰컨트롤러입니다.|
-|flag|Bool|화면에 보일 때, 애니메이션을 추가할 지 여부입니다.|
-|completion|(() -> Void)?|뷰컨트롤러가 화면에 보인 후 실행할 블록입니다. 위의 예제에서는 미디어를 읽어옵니다.|
-
-화면에 뷰컨트롤러를 표시합니다. [재생 목록 열기](#재생-목록으로-열기)에서 사용한 [present(mediaItems:startIndex:)](#presentmediaitemsstartindex)를 활용하시면 좋습니다.
-
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621380-present">present(_:animated:completion:)</a>
 </div>

@@ -39,3 +39,6 @@ val configuration = MediaPlayerActivityConfiguration(
 
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../../class/context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>

@@ -71,6 +71,10 @@ Button(
 	Text("Open player")
 }
 ```
+<div align="right">
+참고: <a href="../class/context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
+
 
 ## startMediaPlayerService
 

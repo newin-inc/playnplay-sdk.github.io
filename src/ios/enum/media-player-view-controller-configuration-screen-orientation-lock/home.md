@@ -33,7 +33,7 @@ public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDel
 var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
 configuration.screenOrientationLock = .landscape
 
-self.present([mediaItem], configuration)
+present([mediaItem], configuration)
 ```
 <div align="right">
 참고: <a href="../../how-to-use/home.md#presentmediaitemsstartindexconfiguration">present</a>

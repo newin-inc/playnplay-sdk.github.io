@@ -16,7 +16,7 @@ public var allowsPictureInPicturePlayback: Bool = true
 var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
 configuration.allowsPictureInPicturePlayback = false
 
-self.present([mediaItem], configuration)
+present([mediaItem], configuration)
 ```
 <div align="right">
 참고: <a href="../../how-to-use/home.md#presentmediaitemsstartindexconfiguration">present</a>
@@ -37,7 +37,7 @@ public var controllerShowTimeout: Duration = .seconds(5)
 var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
 configuration.controllerShowTimeout = .seconds(0)
 
-self.present([mediaItem], configuration)
+present([mediaItem], configuration)
 ```
 <div align="right">
 참고: <a href="../../how-to-use/home.md#presentmediaitemsstartindexconfiguration">present</a>
@@ -58,7 +58,7 @@ public var defaultPlaybackRate: Float = 1
 var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
 configuration.controllerShowTimeout = 2.0
 
-self.present([mediaItem], configuration)
+present([mediaItem], configuration)
 ```
 <div align="right">
 참고: <a href="../../how-to-use/home.md#presentmediaitemsstartindexconfiguration">present</a>
@@ -79,7 +79,7 @@ public var seekBackwardIncrement: Duration = .seconds(10)
 var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
 configuration.seekBackwardIncrement = .seconds(20)
 
-self.present([mediaItem], configuration)
+present([mediaItem], configuration)
 ```
 <div align="right">
 참고: <a href="../../how-to-use/home.md#presentmediaitemsstartindexconfiguration">present</a>
@@ -100,7 +100,7 @@ public var seekForwardIncrement: Duration = .seconds(10)
 var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
 configuration.seekForwardIncrement = .seconds(20)
 
-self.present([mediaItem], configuration)
+present([mediaItem], configuration)
 ```
 <div align="right">
 참고: <a href="../../how-to-use/home.md#presentmediaitemsstartindexconfiguration">present</a>
@@ -122,7 +122,7 @@ public var screenOrientationLock: ScreenOrientationLock = .off
 var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
 configuration.screenOrientationLock = .landscape
 
-self.present([mediaItem], configuration)
+present([mediaItem], configuration)
 ```
 <div align="right">
 참고: <a href="../../how-to-use/home.md#presentmediaitemsstartindexconfiguration">present</a>
@@ -140,7 +140,7 @@ static func defaultConfiguration() -> Configuration
 
 사용 예제: 기본 설정 값으로 미디어 아이템을 재생하는 예제
 ```kotlin
-self.present([mediaItem], MediaPlayerViewController.Configuration.defaultConfiguration())
+present([mediaItem], MediaPlayerViewController.Configuration.defaultConfiguration())
 ```
 <div align="right">
 참고: <a href="../../how-to-use/home.md#presentmediaitemsstartindexconfiguration">present</a>

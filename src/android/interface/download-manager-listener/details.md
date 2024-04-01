@@ -122,3 +122,6 @@ val componentListener = ComponentListener()
 
 DownloadManager.shared.addListener(componentListener)
 ```
+<div align="right">
+참고: <a href="../../class/context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>

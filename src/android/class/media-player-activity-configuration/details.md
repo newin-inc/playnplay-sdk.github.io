@@ -2,7 +2,7 @@
 
 ## allowsPictureInPicturePlayback
 ```kotlin
-var allowsPictureInPicturePlayback: Boolean = true,
+var allowsPictureInPicturePlayback: Boolean = true
 ```
 
 |타입|설명|설정|기본값|
@@ -21,10 +21,13 @@ val configuration = MediaPlayerActivityConfiguration(
 )
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
 
 ## controllerShowTimeout
 ```kotlin
-var controllerShowTimeout: Duration = 5.seconds,
+var controllerShowTimeout: Duration = 5.seconds
 ```
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
@@ -42,10 +45,13 @@ val configuration = MediaPlayerActivityConfiguration(
 )
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
 
 ## defaultPlaybackRate
 ```kotlin
-var defaultPlaybackRate: Float = 1f,
+var defaultPlaybackRate: Float = 1f
 ```
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
@@ -63,10 +69,13 @@ val configuration = MediaPlayerActivityConfiguration(
 )
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
 
 ## seekBackwardIncrement
 ```kotlin
-var seekBackwardIncrement: Duration = 10.seconds,
+var seekBackwardIncrement: Duration = 10.seconds
 ```
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
@@ -84,10 +93,13 @@ val configuration = MediaPlayerActivityConfiguration(
 )
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
 
 ## seekForwardIncrement
 ```kotlin
-var seekForwardIncrement: Duration = 10.seconds,
+var seekForwardIncrement: Duration = 10.seconds
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
@@ -105,10 +117,13 @@ val configuration = MediaPlayerActivityConfiguration(
 )
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
 
 ## screenOrientationLock
 ```kotlin
-var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off,
+var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off
 ```
 
 |타입|설명|설정|기본값|
@@ -130,6 +145,9 @@ val configuration = MediaPlayerActivityConfiguration(
 )
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
 
 ## defaultConfiguration
 ```kotlin
@@ -146,6 +164,9 @@ val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
 
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
 
 <br><br>
 # 열거형

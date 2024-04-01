@@ -48,6 +48,10 @@ val configuration = MediaPlayerActivityConfiguration(
 )
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
+
 <br><br>
 탐색 시간을 5초로 설정하고(나머지는 기본값) 미디어 아이템을 재생하는 예제
 ```kotlin
@@ -60,6 +64,9 @@ val configuration = MediaPlayerActivityConfiguration(
 )
 presentMediaPlayer(mediaItem, configuration)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
 
 
 <br><br>

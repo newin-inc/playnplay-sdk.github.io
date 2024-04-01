@@ -28,3 +28,6 @@ val mediaItem = uri.toMediaItem()
 
 presentMediaPlayer(mediaItem)
 ```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
