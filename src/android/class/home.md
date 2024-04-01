@@ -22,6 +22,8 @@
 
 - [class MediaMetadata](./media-metadata/home.md)
 
+- [data class MediaPlayerActivityConfiguration](./media-player-activity-configuration/home.md)
+
 - [data class MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)<br>
 
 - [class SubtitleTrack](./subtitle-track/home.md)

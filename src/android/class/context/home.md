@@ -9,11 +9,17 @@ public abstract class Context
 fun Context.getMediaPlayer(block: (MediaPlayer) -> Unit)
 fun Context.startMediaPlayerService(appId: String)
 fun Context.presentMediaPlayer(mediaItem: MediaItem)
+fun Context.presentMediaPlayer(mediaItem: MediaItem, configuration: MediaPlayerActivityConfiguration)
 fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>)
+fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, configuration: MediaPlayerActivityConfiguration)
 fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, startMediaItem: MediaItem)
+fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, startMediaItem: MediaItem, configuration: MediaPlayerActivityConfiguration)
 fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, startIndex: Int)
+fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, startIndex: Int, configuration: MediaPlayerActivityConfiguration)
 fun Context.presentMediaPlayer(uri: String)
+fun Context.presentMediaPlayer(uri: String, configuration: MediaPlayerActivityConfiguration)
 fun Context.presentMediaPlayer(uri: Uri)
+fun Context.presentMediaPlayer(uri: String, configuration: MediaPlayerActivityConfiguration)
 ```
 
 <div align="right">
@@ -82,11 +88,35 @@ fun Context.presentMediaPlayer(mediaItem: MediaItem)
 
 <br><br>
 ```kotlin
+fun Context.presentMediaPlayer(
+    mediaItem: MediaItem,
+    configuration: MediaPlayerActivityConfiguration
+)
+```
+| 파라미터 | 타입 | 설명 |
+|:----:|:---:|----|
+| mediaItem | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem) | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 | 
+|configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|
+
+<br><br>
+```kotlin
 fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>)
 ```
 | 파라미터 | 타입 | 설명 |
 |:----:|:---:|----|
 | mediaItem | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
+
+<br><br>
+```kotln
+fun Context.presentMediaPlayer(
+    mediaItems: Collection<MediaItem>,
+    configuration: MediaPlayerActivityConfiguration
+)
+```
+| 파라미터 | 타입 | 설명 |
+|:----:|:---:|----|
+| mediaItem | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
+|configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|
 
 <br><br>
 ```kotlin
@@ -103,6 +133,20 @@ fun Context.presentMediaPlayer(
 <br><br>
 ```kotlin
 fun Context.presentMediaPlayer(
+    mediaItems: Collection<MediaItem>,
+    startMediaItem: MediaItem,
+    configuration: MediaPlayerActivityConfiguration
+)
+```
+| 파라미터 | 타입 | 설명 |
+|:----:|:---:|----|
+| mediaItems | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고 |
+| startMediaItem | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem) | 목록 중에서 처음 재생할 미디어 아이템.<br>mediaItems에 포함되어 있어야 합니다. |
+|configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|
+
+<br><br>
+```kotlin
+fun Context.presentMediaPlayer(
 	mediaItems: Collection<MediaItem>,
 	startIndex: Int
 )
@@ -114,11 +158,37 @@ fun Context.presentMediaPlayer(
 
 <br><br>
 ```kotlin
+fun Context.presentMediaPlayer(
+    mediaItems: Collection<MediaItem>,
+    startIndex: Int,
+    configuration: MediaPlayerActivityConfiguration
+)
+```
+| 파라미터 | 타입 | 설명 |
+|:----:|:---:|----|
+| mediaItems | Collection<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)> | [MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem),<br>[Media items](https://developer.android.com/media/media3/exoplayer/media-items) 참고  |
+| startIndex | Int | 목록 중에서 처음 재생할 미디어 아이템의 index.<br>0 이상 mediaItems 개수 - 1 이하의 값이어야 합니다. |
+|configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|
+
+<br><br>
+```kotlin
 fun Context.presentMediaPlayer(uri: String)
 ```
 | 파라미터 | 타입 | 설명 |
 |:-----:|:---:|----|
 | uri | String | 스트링 형태의 미디어 주소 |
+
+<br><br>
+```kotlin
+fun Context.presentMediaPlayer(
+    uri: String,
+    configuration: MediaPlayerActivityConfiguration
+)
+```
+| 파라미터 | 타입 | 설명 |
+|:-----:|:---:|----|
+| uri | String | 스트링 형태의 미디어 주소 |
+|configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|
 
 <br><br>
 ```kotlin
@@ -129,6 +199,18 @@ fun Context.presentMediaPlayer(uri: Uri)
 | uri | Uri | [Uri \| Android Developers](https://developer.android.com/reference/android/net/Uri) 참고 |
 
 <br><br>
+```kotlin
+fun Context.presentMediaPlayer(
+    uri: Uri,
+    configuration: MediaPlayerActivityConfiguration
+)
+```
+| 파라미터 | 타입 | 설명 |
+|:----:|:---:|----|
+| uri | Uri | [Uri \| Android Developers](https://developer.android.com/reference/android/net/Uri) 참고 |
+|configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|
+
+<br><br>
 ### 재생 목록을 사용한 예제
 ```kotlin
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer
@@ -136,4 +218,9 @@ import com.newin.nplayer.sdk.extensions.presentMediaPlayer
 presentMediaPlayer(mediaItems)			// 0번째 아이템부터 시작
 presentMediaPlayer(mediaItems, mediaItems[0])	// 0번째 아이템부터 시작
 presentMediaPlayer(mediaItems, 0)		// 0번째 아이템부터 시작
+
+presentMediaPlayer(mediaItems, configuration)   // 설정한 값으로 0번째 아이템부터 시작
 ```
+<div align="right">
+참고: <a href="../media-player-activity-configuration/home.md">MediaPlayerActivityConfiguration</a>
+</div>

@@ -34,12 +34,13 @@ data class DownloadItem {
         NoAccessRights(SessionException.ERROR_CODE_NO_ACCESS_RIGHTS),
 
         Unauthorized(SessionException.ERROR_CODE_UNAUTHORIZED);
-    }
+ 
 
-    override fun toString(): String
+        override fun toString(): String
 
-    companion object {
-        fun fromRawValue(value: Int): FailedReason
+        companion object {
+            fun fromRawValue(value: Int): FailedReason
+        }
     }
 }
 ```
