@@ -13,9 +13,8 @@ import com.newin.nplayer.sdk.withDrmConfiguration
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (savedInstanceState == null) {
-            startMediaPlayerService("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx")  // App 아이디
-        }
+
+        startMediaPlayerService("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx")  // App 아이디
     }
 
     fun openMedia(uri: String) {
