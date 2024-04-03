@@ -86,6 +86,7 @@
         - [MediaTrack](./ios/class/media-track/home.md)
         - [TextTrack](./ios/class/text-track/home.md)
         - [VideoTrack](./ios/class/video-track/home.md)
+        - [UIViewController](./ios/class/uiviewcontroller/home.md)
     - [구조체](./ios/struct/home.md)
         - [MediaPlayer.RepeatRange](./ios/struct/media-player-repeat-range/home.md)
             - [상세](./ios/struct/media-player-repeat-range/details.md)
