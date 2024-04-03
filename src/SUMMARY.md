@@ -74,6 +74,7 @@
     - [클래스](./ios/class/home.md)
         - [MediaPlayer](./ios/class/media-player/home.md)
             - [상세](./ios/class/media-player/details.md)
+        - [MediaPlayerViewController](./ios/class/media-player-view-controller/home.md)
         - [MediaItem.Builder](./ios/class/media-item-builder/home.md)
             - [상세](./ios/class/media-item-builder/details.md)
         - [DownloadManager](./ios/class/download-manager/home.md)

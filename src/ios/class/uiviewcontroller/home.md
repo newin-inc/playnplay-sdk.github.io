@@ -27,4 +27,4 @@ var mediaPlayerViewController: MediaPlayerViewController? { get }
 |:--:|--|:--:|
 |[MediaPlayerViewController](../../class/media-player-view-controller/home.md)|이 뷰 컨트롤러가 제공하는 [미디어 뷰 컨트롤러](../../class/media-player-view-controller/home.md)|불가능
 
-이 [뷰 컨트롤러](https://developer.apple.com/documentation/uikit/uiviewcontroller)가 제공하는 [미디어 뷰 컨트롤러]((../../class/media-player-view-controller/home.md)) 또는 뷰 컨트롤러 계층 구조에서 그 상위 미디어 뷰 컨트롤러 중 하나입니다.
+이 [뷰 컨트롤러](https://developer.apple.com/documentation/uikit/uiviewcontroller)가 제공하는 [미디어 뷰 컨트롤러](../../class/media-player-view-controller/home.md) 또는 뷰 컨트롤러 계층 구조에서 그 상위 미디어 뷰 컨트롤러 중 하나입니다.
