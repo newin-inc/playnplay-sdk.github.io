@@ -2,7 +2,7 @@
 
 - [설정](./settings/home.md)
 
-- [화면 구성](./screen-layout/home.md)
+- [컨트롤러 화면 구성](./screen-layout/home.md)
 
     - [상단 인터페이스](./screen-layout/details.md#상단-인터페이스)
 

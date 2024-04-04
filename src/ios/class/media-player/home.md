@@ -71,6 +71,9 @@ final public class MediaPlayer {
 }
 ```
 
+활성화된 미디어 플레이어에 접근하는 방법은 [여기](../media-player-view-controller/details.md#player)를 참고하세요.
+
+
 <details>
 <summary>
     <a href="./details.md#속성">속성</a>

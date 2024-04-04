@@ -31,7 +31,7 @@ data class MediaPlayerActivityConfiguration(
 |이름|타입|설명|필수|기본값|
 |:--:|:--:|--|:--:|:--:|
 |allowsPictureInPicturePlayback|Boolean|화면 속 화면 모드를 허용할 지 여부|X|true|
-|controllerShowTimeout|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|콘트롤러를 보여줄 최대 시간|X|5초|
+|controllerShowTimeout|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|컨트롤러를 보여줄 최대 시간|X|5초|
 |defaultPlaybackRate|Float|미디어의 재생 속도|X|1.0|
 |seekBackwardIncrement|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 전으로 이동하는 시간의 크기|X|10초|
 |seekForwardIncrement|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 후로 이동하는 시간의 크기|X|10초|

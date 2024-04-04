@@ -1,4 +1,4 @@
-# 화면 구성
+# 컨트롤러 화면 구성
 
 ![](./img/screen-layout-full.png)
 

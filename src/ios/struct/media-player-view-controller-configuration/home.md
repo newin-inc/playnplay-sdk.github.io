@@ -25,7 +25,7 @@ public class MediaPlayerViewController {
 }
 ```
 
-미디어 플레이어의 설정을 도와주는 데이터 클래스입니다. 아래와 같은 속성, 메서드 및 열거형을 가지고 있습니다.
+미디어 플레이어의 설정을 도와주는 구조체입니다. 아래와 같은 속성, 메서드 및 열거형을 가지고 있습니다.
 
 <br><br>
 <details open>
@@ -33,17 +33,17 @@ public class MediaPlayerViewController {
     <a href="./details.md#속성">속성</a>
 </summary>
 
+* [var allowsPictureInPicturePlayback: Boolean](./details.md#allowspictureinpictureplayback)
+
 * [var controllerShowTimeout: Duration](./details.md#controllershowtimeout)
+
+* [var defaultPlaybackRate: Float](./details.md#defaultplaybackrate)
 
 * [var seekBackwardIncrement: Duration](./details.md#seekbackwardincrement)
 
 * [var seekForwardIncrement: Duration](./details.md#seekforwardincrement)
 
-* [var defaultPlaybackRate: Float](./details.md#defaultplaybackrate)
-
 * [var screenOrientationLock: ScreenOrientationLock](./details.md#screenorientationlock)
-
-* [var allowsPictureInPicturePlayback: Boolean](./details.md#allowspictureinpictureplayback)
 
 </details>
 <br>

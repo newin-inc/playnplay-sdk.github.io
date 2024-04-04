@@ -54,6 +54,14 @@ Builder를 사용하여 미디어 아이템에 대한 초기 설정을 합니다
 참고: <a href="#builder">Builder</a>
 </div>
 
+사용 예제: 이미 만들어진 미디어 아이템에 DRM 설정을 하여 미디어 아이템을 만드는 예제
+```swift
+let mediaItem = oldMediaItem
+    .buildUpon()
+    .drmConfiguration(drmConfiguration)
+    .build()
+```
+
 <br><br>
 ## from(url:)
 
@@ -65,6 +73,15 @@ static func from(url: URL) -> MediaItem
 |타입|설명|
 |:--:|--|
 |URL|[URL](https://developer.apple.com/documentation/foundation/url) 참고|
+
+
+사용 예제: 웹 주소로부터 미디어 아이템을 만들고, DRM 설정을 하는 예제
+```swift
+let mediaItem = MediaItem.from(url: URL(string: "https://example.com/media.mp4")!)
+    .buildUpon()
+    .drmConfiguration(drmConfiguration)
+    .build()
+```
 
 <br><br><br>
 ------

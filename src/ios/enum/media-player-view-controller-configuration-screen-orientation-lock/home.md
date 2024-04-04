@@ -36,7 +36,7 @@ configuration.screenOrientationLock = .landscape
 present([mediaItem], configuration)
 ```
 <div align="right">
-참고: <a href="../../how-to-use/home.md#presentmediaitemsstartindexconfiguration">present</a>
+참고: <a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
 </div>
 
 ## 메서드

@@ -2,29 +2,35 @@
 
 ```swift
 extension UIViewController { 
+
+    public var mediaPlayerViewController: MediaPlayerViewController? { get }
+
     public func present(
         mediaItems: [MediaItem],
         startIndex: Int = 0,
-        configuration: configuration: MediaPlayerViewController.Configuration = .defaultConfiguration()
+        configuration: MediaPlayerViewController.Configuration = .defaultConfiguration()
     )
-
-    public var mediaPlayerViewController: MediaPlayerViewController? { get }
 }
 ```
 
-## present(mediaItems:startIndex:configuration:)
-|파라미터|타입|설명|
-|:--:|:--:|--|
-|mediaItems|\[[MediaItem]\]|미디어 아이템 목록|
-|startIndex|Int|재생할 미디어의 인덱스|
-|configuration|[MediaPlayerViewController.Configuration](../../struct/media-player-view-controller-configuration/home.md)|설정 값|
+뷰 컨트롤러에서 [미디어 플레이어 뷰 컨트롤러](../media-player-view-controller/home.md)에 접근할 수 있는 속성과 미디어를 재생하는 메서드를 제공합니다.
 
-## mediaPlayerViewController
-```swift
-var mediaPlayerViewController: MediaPlayerViewController? { get }
-```
-|타입|설명|설정|
-|:--:|--|:--:|
-|[MediaPlayerViewController](../../class/media-player-view-controller/home.md)|이 뷰 컨트롤러가 제공하는 [미디어 뷰 컨트롤러](../../class/media-player-view-controller/home.md)|불가능
+<details open>
+<summary>
+    <a href="./details.md#속성">속성</a>
+</summary>
 
-이 [뷰 컨트롤러](https://developer.apple.com/documentation/uikit/uiviewcontroller)가 제공하는 [미디어 뷰 컨트롤러](../../class/media-player-view-controller/home.md) 또는 뷰 컨트롤러 계층 구조에서 그 상위 미디어 뷰 컨트롤러 중 하나입니다.
+* [var mediaPlayerViewController](./details.md#mediaplayerviewcontroller)
+    
+</details>
+<br>
+
+<details open>
+<summary>
+    <a href="./details.md#메서드">메서드</a>
+</summary>
+
+* [func present(mediaItems: [MediaItem], startIndex: Int, configuration: MediaPlayerViewController.Configuration)](./details.md#presentmediaitemsstartindexconfiguration)
+    
+</details>
+<br>

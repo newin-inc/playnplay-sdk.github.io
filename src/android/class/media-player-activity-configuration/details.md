@@ -31,11 +31,11 @@ var controllerShowTimeout: Duration = 5.seconds
 ```
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|콘트롤러를 자동으로 숨기는 시간| 가능 | 5초 |
+|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|컨트롤러를 자동으로 숨기는 시간| 가능 | 5초 |
 
-해당 시간만큼 아무 것도 입력하지 않으면 콘트롤러가 사라집니다. 0초로 설정할 경우에는 콘트롤러를 자동으로 숨기지 않습니다.
+해당 시간만큼 아무 것도 입력하지 않으면 컨트롤러가 사라집니다. 0초로 설정할 경우에는 컨트롤러를 자동으로 숨기지 않습니다.
 
-사용 예제: 콘트롤러를 계속 항상 켜두는 설정을 하고, 미디어 아이템을 재생하는 예제
+사용 예제: 컨트롤러를 계속 항상 켜두는 설정을 하고, 미디어 아이템을 재생하는 예제
 ```kotlin
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer

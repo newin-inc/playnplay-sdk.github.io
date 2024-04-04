@@ -84,15 +84,14 @@ func openMedia() {
         .build()
 	
     // 미디어를 엽니다. 
-    self.present([mediaItem], 0)
+    present([mediaItem], 0)
 }
 ```
 
 <div align="right">
 관련 코드 설명: <a href="../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a>,<br>
 <a href="../struct/media-item/home.md">MediaItem</a>,<br>
-<a href="#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a>,<br>
-<a href="../class/media-player/details.md#loadmediaitem">playerViewcontroller.player.load(mediaItem:)</a>
+<a href="../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a>
 </div>
 
 ### 재생 목록으로 열기
@@ -101,11 +100,11 @@ iOS SDK에서 제공하는 present(mediaItems:startIndex:configuration:) 메서�
 ```swift
 let mediaItems: [MediaItem] = [ mediaItem1, mediaItem2, mediaItem3, ...]
 
-self.present(mediaItems: mediaItems, startIndex: 0)
+present(mediaItems: mediaItems, startIndex: 0)
 ```
 
 <div align="right">
-관련 코드 설명: <a href="#presentmediaitemsstartindex">present(mediaItems:startIndex:)</a>
+관련 코드 설명: <a href="../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a>
 </div>
 
 ### 제목 설정
@@ -134,72 +133,4 @@ let mediaItem = MediaItem.Builder(url: URL(string: "https://example.com/media.mp
 
 <div align="right">
 참고: <a href="../class/media-item-builder/details.md#seekable_">seekable(_)</a>
-</div>
-
-## 구성 관련 코드 추가 설명
-
-### present(mediaItems:startIndex:configuration:)
-```swift
-extension UIViewController {
-    public func present(
-        mediaItems: [MediaItem],
-        startIndex: Int = 0,
-        configuration: configuration: MediaPlayerViewController.Configuration = .defaultConfiguration()
-    )
-}
-```
-|파라미터|타입|설명|
-|:--:|:--:|--|
-|mediaItems|\[[MediaItem]\]|미디어 아이템 목록|
-|startIndex|Int|재생할 미디어의 인덱스|
-|configuration|[MediaPlayerViewController.Configuration](../struct/media-player-view-controller-configuration/home.md)|설정 값|
-
-위 [재생 목록 열기](#재생-목록으로-열기)에서 사용한 present(mediaItems:startIndex:configuration:)는 아래와 같이 구현되어 있으니 참고하여 확장해서 사용하십시오.
-
-```swift
-public func present(mediaItems: [MediaItem], startIndex: Int = 0) {
-    if case .some(let playerViewController) = 
-        self.presentedViewController as? MediaPlayerViewController {
-            playerViewController.player.load(
-                mediaItems: mediaItems,
-                startMediaItemIndex: startIndex
-            )
-            return
-        }
-
-    let playerViewController = MediaPlayerViewController.new(configuration: configuration))
-
-    self.present(playerViewController, animated: true) {
-        let player = playerViewController.player
-        player.addEventHandler(
-            .ended({ [weak self] in
-                self?.dismiss(animated: true) })
-            )
-        player.addEventHandler(
-            .error({ [weak playerViewController] error in
-                let alert = UIAlertController(
-                    title: nil,
-                    message: error.localizedDescription,
-                    preferredStyle: .alert
-                )
-                alert.addAction(
-                    UIAlertAction.init(
-                        title: "Close",
-                        style: .default
-                    ) { [weak self] _ in
-                        self?.dismiss(animated: true)
-                    }
-                )
-                playerViewController?.present(alert, animated: true)
-            })
-        )
-        player.load(
-            mediaItems: mediaItems,
-            startMediaItemIndex: startIndex
-        )
-    }
-}
-```
-<div align="right">
-참고: <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621380-present">present(_:animated:completion:)</a>
 </div>

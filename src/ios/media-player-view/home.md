@@ -1,6 +1,6 @@
 # 미디어 플레이어 화면
 
-- [화면 구성](./screen-layout/home.md)
+- [컨트롤러 화면 구성](./screen-layout/home.md)
 
     - [상단 인터페이스](./screen-layout/details.md#상단-인터페이스)
 
