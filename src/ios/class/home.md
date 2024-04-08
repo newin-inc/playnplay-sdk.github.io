@@ -14,6 +14,8 @@
 
 * [class EventTarget](./event-target/home.md)
 
+* [class PlaybackInfoRepository](./playback-info-repository/home.md)
+
 * [class AudioTrack](./audio-track/home.md)
 
 * [class MediaTrack](./media-track/home.md)

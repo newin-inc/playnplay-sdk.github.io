@@ -3,3 +3,5 @@
 * [protocol EventListener](./event-listeners/home.md)
 
 * [protocol DownloadManager.Listener](./download-manager-listeners/home.md)
+
+* [protocol PlaybackInfo](./playback-info/home.md)
