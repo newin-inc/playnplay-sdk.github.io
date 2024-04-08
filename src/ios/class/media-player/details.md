@@ -480,6 +480,11 @@ var scalingMode: ScalingMode { get set }
 
 현대 미디어 화면의 스케일링 상태를 나타내는 속성입니다.
 
+사용 예제: 미디어를 화면에 빈 틈이 없이 가득 채우는 예제
+```swift
+mediaPlayer.scalingMode = .fill
+```
+
 <br><br>
 ## seekable
 
