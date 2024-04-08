@@ -9,9 +9,11 @@ public struct MediaMetadata {
 
     public let downloadPath: String?
 
+    public var duration: Duration? 
+
     public let expiresOn: Date?
 
-    public let lastPlayedTime: Duration?
+    public var lastPlayedTime: Duration?
 
     public func buildUpon() -> MediaMetadata.Builder
 
@@ -58,18 +60,34 @@ public let downloadPath: String?
 디바이스에 저장된 경로를 나타내는 속성입니다.
 
 <br><br>
+### duration
+```swift
+public var duration: Duration? 
+```
+미디어 아이템의 전체 길이를 나타내는 속성입니다.
+
+<text style="color:red;">Deprecated: </text><a href="../../protocol/playback-info/home.md">PlaybackInfo</a>의 
+<a href="../../protocol/playback-info/home.md#duration">duration</a>을 사용하세요.
+
+<br><br>
 ### expiresOn
 ```swift
 public let expiresOn: Date?
 ```
 미디어 아이템의 만료 일시를 나타내는 속성입니다.
 
+<text style="color:red;">Deprecated: </text><a href="../../protocol/playback-info/home.md">PlaybackInfo</a>의 
+<a href="../../protocol/playback-info/home.md#expireson">expiresOn</a>을 사용하세요.
+
 <br><br>
 ### lastPlayedTime
 ```swift
-public let lastPlayedTime: Duration?
+public var lastPlayedTime: Duration?
 ```
 미디어 아이템이 마지막으로 재생한 위치를 나타내는 속성입니다.
+
+<text style="color:red;">Deprecated: </text><a href="../../protocol/playback-info/home.md">PlaybackInfo</a>의 
+<a href="../../protocol/playback-info/home.md#lastplayedtime">lastPlayedTime</a>을 사용하세요.
 
 <br><br>
 ## 메서드

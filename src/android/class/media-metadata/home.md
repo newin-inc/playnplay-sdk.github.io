@@ -69,6 +69,9 @@ val androidx.media3.common.MediaMetadata.expiresOn: java.time.Instant?
 
 미디어 아이템의 만료 일시를 나타내는 속성입니다.
 
+<text style="color:red;">Deprecated: </text><a href="../playback-info/home.md">PlaybackInfo</a>의 
+<a href="../playback-info/home.md#expireson">expiresOn</a>을 사용하세요.
+
 사용 예제: 미디어의 만료 일시를 가져오는 예제
 ```kotlin
 import com.newin.nplayer.sdk.extensions.expiresOn
@@ -86,6 +89,9 @@ val androidx.media3.common.MediaMetadata.lastPlayedTime: kotlin.time.Duration?
 |[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|마지막 재생 위치|
 
 미디어 아이템이 마지막으로 재생한 위치를 나타내는 속성입니다.
+
+<text style="color:red;">Deprecated: </text><a href="../playback-info/home.md">PlaybackInfo</a>의 
+<a href="../playback-info/home.md#lastplayedtime">lastPlayedTime</a>을 사용하세요.
 
 사용 예제: 미디어의 마지막 재생 위치를 가져오는 예제
 ```kotlin
@@ -111,6 +117,9 @@ val androidx.media3.common.MediaMetadata.duration: kotlin.time.Duration?
 |[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|미디어 아이템의 전체 길이|
 
 미디어 아이템의 전체 길이를 나타내는 속성입니다.
+
+<text style="color:red;">Deprecated: </text><a href="../playback-info/home.md">PlaybackInfo</a>의 
+<a href="../playback-info/home.md#duration">duration</a>을 사용하세요.
 
 사용 예제: 미디어의 전체 길이를 가져오는 예제
 ```kotlin
