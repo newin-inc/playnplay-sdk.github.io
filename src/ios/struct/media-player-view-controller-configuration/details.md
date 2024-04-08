@@ -139,7 +139,7 @@ static func defaultConfiguration() -> Configuration
 기본 설정 값을 가져오는 메서드입니다.
 
 사용 예제: 기본 설정 값으로 미디어 아이템을 재생하는 예제
-```kotlin
+```swift
 present([mediaItem], MediaPlayerViewController.Configuration.defaultConfiguration())
 ```
 <div align="right">
@@ -150,7 +150,7 @@ present([mediaItem], MediaPlayerViewController.Configuration.defaultConfiguratio
 # 열거형
 
 ## ScreenOrientationLock
-```kotlin
+```swift
 public enum ScreenOrientationLock: String {
     case portrait = "portrait"
     case landscape = "landscape"

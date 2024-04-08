@@ -2,6 +2,8 @@
 
 * [class MediaPlayer](./media-player/home.md)
 
+* [class MediaPlayerViewController](./media-player-view-controller/home.md)
+
 * [class MediaItem.Builder](./media-item-builder/home.md)
 
 * [class DownloadManager](./download-manager/home.md)
