@@ -30,6 +30,7 @@ final public class MediaPlayer {
     final public var preservesPitch: Bool { get set }
     final public var repeatMode: MediaPlayer.RepeatMode { get set }
     final public var repeatRange: MediaPlayer.RepeatRange? { get set }
+    final public var scalingMode: ScalingMode { get set }
     final public var seekable: [TimeRange] { get }
     final public var seekBackIncrement: Duration { get set }
     final public var seekForwardIncrement: Duration { get set }
@@ -132,6 +133,8 @@ final public class MediaPlayer {
 - [var repeatMode: RepeatMode](./details.md#repeatmode)
 
 - [var repeatRange: RepeatRange?](./details.md#repeatrange)
+
+- [var scalingMode: ScalingMode](./details.md#scalingmode)
 
 - [var seekable: [TimeRange]](./details.md#seekable)
 

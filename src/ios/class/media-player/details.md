@@ -469,6 +469,18 @@ mediaPlayer.repeatRange = repeatRange   // 0초 ~ 30초 구간을 반복
 ```
 
 <br><br>
+## scalingMode
+
+```swift
+var scalingMode: ScalingMode { get set }
+```
+|타입|설명|설정|
+|:--:|--|:--:|
+|[ScalingMode](../../enum/media-player-scaling-mode/home.md)|화면 스케일링 상태|가능|
+
+현대 미디어 화면의 스케일링 상태를 나타내는 속성입니다.
+
+<br><br>
 ## seekable
 
 ```swift
