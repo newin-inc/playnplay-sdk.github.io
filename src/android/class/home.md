@@ -26,6 +26,10 @@
 
 - [data class MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)<br>
 
+- [data class PlaybackInfo](./playback-info/home.md)
+
+- [class PlaybackInfoRepository](./playback-info-repository/home.md)
+
 - [class SubtitleTrack](./subtitle-track/home.md)
 
 - [data class TimeRange](./time-range/home.md)

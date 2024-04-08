@@ -44,6 +44,8 @@
             - [상세](./android/class/media-player-activity-configuration/details.md)
         - [MediaPlayer.RepeatRange](./android/class/media-player-repeat-range/home.md)
             - [상세](./android/class/media-player-repeat-range/details.md)
+        - [PlaybackInfo](./android/class/playback-info/home.md)
+        - [PlaybackInfoRepository](./android/class/playback-info-repository/home.md)
         - [SubtitleTrack](./android/class/subtitle-track/home.md)
         - [TimeRange](./android/class/time-range/home.md)
             - [상세](./android/class/time-range/details.md)
