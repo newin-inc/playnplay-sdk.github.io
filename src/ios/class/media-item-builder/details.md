@@ -31,6 +31,17 @@ func mediaMetadata(_ mediaMetadata: MediaMetadata?) -> MediaItem.Builder
 메타데이터 설정을 넘겨줍니다.
 
 <br><br>
+## returnUrl(_)
+```swift
+func returnUrl(_ returnUrl: URL?) -> MediaItem.Builder
+```
+|파라미터|타입|설명|필수|
+|:--:|:--:|--|:--:|
+|returnUrl|URL?|리턴 Url|O|
+
+리턴 Url을 설정합니다.
+
+<br><br>
 ## seekable(_)
 ```swift
 func seekable(_ seekable: Bool) -> MediaItem.Builder

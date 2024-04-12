@@ -13,6 +13,8 @@ extension MediaItem {
 
         public func mediaMetadata(_ mediaMetadata: MediaMetadata?) -> MediaItem.Builder
 
+        public func returnUrl(_ returnUrl: URL?) -> MediaItem.Builder
+
         public func seekable(_ seekable: Bool) -> MediaItem.Builder
 
         public func subtitleConfigurations(_ subtitleConfigurations: [SubtitleConfiguration]) -> MediaItem.Builder
@@ -44,6 +46,8 @@ init(url: URL)
  - [drmConfiguration(_)](./details.md#drmconfiguration_)
 
  - [mediaMetadata(_)](./details.md#mediametadata_)
+
+ - [returnUrl(_)](./details.md#returnurl_)
 
  - [seekable(_)](./details.md#seekable_)
 

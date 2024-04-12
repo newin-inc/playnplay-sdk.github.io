@@ -9,6 +9,10 @@ struct MediaItem {
 
     public let subtitleConfigurations: [SubtitleConfiguration]
 
+    public let returnUrl: URL?
+
+    public let seekable: Bool
+
     public var title: String { get }
 
     public let url: URL
@@ -33,6 +37,10 @@ MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등�
 * [let mediaMetadata: MediaMetadata?](./details.md#mediametadata)
 
 * [let subtitleConfigurations: [SubtitleConfiguration]](./details.md#subtitleconfigurations)
+
+* [let returnUrl: URL?](./details.md#returnurl)
+
+* [let seekable: Bool](./details.md#seekable)
 
 * [var title: String](./details.md#title)
 

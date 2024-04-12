@@ -24,6 +24,22 @@ public let subtitleConfigurations: [SubtitleConfiguration]
 미디어의 자막 정보입니다. [여기](../subtitle-configuration/home.md)를 참고하세요.
 
 <br><br>
+## returnUrl
+
+```swift
+let returnUrl: URL?
+```
+미디어의 리턴 Url입니다.
+
+<br><br>
+## seekable
+
+```swift
+let seekable: Bool
+```
+미디어의 Seek 기능 허용 여부입니다.
+
+<br><br>
 ## title
 
 ```swift
@@ -104,6 +120,10 @@ extension MediaItem {
         public func mediaMetadata(_ mediaMetadata: MediaMetadata?) -> MediaItem.Builder
 
         public func drmConfiguration(_ drmConfiguration: DrmConfiguration?) -> MediaItem.Builder
+
+        public func returnUrl(_ returnUrl: URL?) -> MediaItem.Builder
+
+        public func seekable(_ seekable: Bool) -> MediaItem.Builder
 
         public func build() -> MediaItem
     }
