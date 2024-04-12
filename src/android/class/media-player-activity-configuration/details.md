@@ -1,5 +1,30 @@
 # 속성
 
+## allowsBackgroundPlayback
+```kotlin
+var allowsBackgroundPlayback: Boolean = false
+```
+
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Boolean|백그라운드 재생을 허용할 지 여부|가능|false|
+
+백그라운드 재생을 허용할 지 여부를 나타내는 속성입니다.
+
+사용 예제: 백그라운드 재생을 허용하게 설정하고, 미디어 아이템을 재생하는 예제
+```kotlin
+import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
+import com.newin.nplayer.sdk.extensions.presentMediaPlayer
+
+val configuration = MediaPlayerActivityConfiguration(
+    allowsBackgroundPlayback = true
+)
+presentMediaPlayer(mediaItem, configuration)
+```
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
+
 ## allowsPictureInPicturePlayback
 ```kotlin
 var allowsPictureInPicturePlayback: Boolean = true
