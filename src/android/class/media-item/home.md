@@ -7,6 +7,7 @@ import androidx.media3.common.MediaItem
 public final class MediaItem implements Bundleable
 ```
 ```kotlin
+val MediaItem.returnUrl: Uri?
 val MediaItem.seekable: Boolean
 val MediaItem.title: CharSequence?
 val MediaItem.uri: Uri?
@@ -21,6 +22,24 @@ fun MediaItem.withDrmConfiguration(appId: String, userId: String, userData: Map<
 
 ## 속성
 
+### returnUrl
+```kotlin
+val MediaItem.returnUrl: Uri?
+```
+| 타입 | 설명 | 설정 |
+|:----:|---|:---:|
+|[Uri](https://developer.android.com/reference/android/net/Uri)?|미디어 아이템의 리턴 Url| 불가능 |
+
+사용 예제: 현재 미디어의 리턴 Url을 가져오는 예제
+```kotlin
+import com.newin.nplayer.sdk.extensions.returnUrl
+
+mediaItems.forEach { mediaItem ->
+    println(mediaItem.returnUrl)
+}
+```
+
+<br><br>
 ### seekable
 ```kotlin
 val MediaItem.seekable: Boolean
