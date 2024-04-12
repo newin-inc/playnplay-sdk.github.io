@@ -1,5 +1,7 @@
 # 사용 방법
 
-* [Agent(플레이어 실행)](./launch-agent.md)
+* [Agent(플레이어) 실행](./launch-agent.md)
+
+* [디버깅](./debugging/home.md)
 
 * [샘플](./samples/home.md)

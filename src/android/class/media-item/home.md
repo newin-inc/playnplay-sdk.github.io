@@ -20,6 +20,8 @@ fun MediaItem.withDrmConfiguration(appId: String, userId: String, userData: Map<
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">MediaItem</a>
 </div>
 
+[Agent](../../../agent/home.md)에서 설정한 값을 불러올 수 있습니다.
+
 ## 속성
 
 ### returnUrl
@@ -30,14 +32,10 @@ val MediaItem.returnUrl: Uri?
 |:----:|---|:---:|
 |[Uri](https://developer.android.com/reference/android/net/Uri)?|미디어 아이템의 리턴 Url| 불가능 |
 
-사용 예제: 현재 미디어의 리턴 Url을 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.returnUrl
-
-mediaItems.forEach { mediaItem ->
-    println(mediaItem.returnUrl)
-}
-```
+Agent에서 설정한 미디어 아이템의 리턴 Url입니다.
+<div align="right">
+참고: <a href="../../../agent/home.md#mediaitem">MediaItem</a>내의 returnUrl
+</div>
 
 <br><br>
 ### seekable
@@ -50,13 +48,6 @@ val MediaItem.seekable: Boolean
 
 미디어의 Seek 기능 허용 여부를 나타내는 속성입니다.
 
-사용 예제: 현재 미디어의 Seek 기능 허용 여부를 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.seekable
-
-val seekable = mediaItem.seekable
-```
-
 <br><br>
 ### title
 ```kotlin
@@ -68,13 +59,6 @@ val MediaItem.title: CharSequence?
 
 [미디어 메타 데이터](../media-metadata/home.md)에 저장된 [제목](../media-metadata/home.md#title)을 가져오는 속성입니다. 만약 [미디어 메타 데이터](../media-metadata/home.md)에 제목이 없다면, 파일 이름을 가져옵니다.
 
-사용 예제: 현재 미디어의 제목을 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.title
-
-val title = mediaItem.title
-```
-
 <br><br>
 ### uri
 ```kotlin
@@ -84,14 +68,6 @@ val MediaItem.uri: Uri?
 |:----:|---|:---:|
 |[Uri](https://developer.android.com/reference/android/net/Uri)?| 미디어 아이템의 주소 | 불가능 |
 
-사용 예제: 현재 미디어의 주소를 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.uri
-
-mediaItems.forEach { mediaItem ->
-    println(mediaItem.uri)
-}
-```
 미디어 아이템에 따라 로컬 주소가 나올 수도 있고, 웹 주소도 나올 수 있습니다.
 ```log
 ...

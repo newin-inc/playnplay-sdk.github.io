@@ -3,6 +3,7 @@
 
 ---
 
+- [Agent](./agent/home.md)
 - [Desktop](./desktop/home.md)
     - [사용 방법](./desktop/how-to-use/home.md)
         - [Agent(플레이어) 실행](./desktop/how-to-use/launch-agent.md)

@@ -25,7 +25,7 @@ struct MediaItem {
 }
 ```
 
-MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등을 가지고 있는 구조체입니다. 
+MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등을 가지고 있는 구조체입니다. 해당 속성에 접근하면 [Agnet](../../../agent/home.md)에서 설정한 값을 가져올 수 있습니다.
 
 <details open>
 <summary>
