@@ -29,7 +29,10 @@ public let subtitleConfigurations: [SubtitleConfiguration]
 ```swift
 let returnUrl: URL?
 ```
-미디어의 리턴 Url입니다.
+[Agent](../../../agent/home.md)에서 설정한 미디어 아이템의 리턴 Url입니다.
+<div align="right">
+참고: <a href="../../../agent/home.md#mediaitem">MediaItem</a>내의 returnUrl
+</div>
 
 <br><br>
 ## seekable
@@ -37,7 +40,7 @@ let returnUrl: URL?
 ```swift
 let seekable: Bool
 ```
-미디어의 Seek 기능 허용 여부입니다.
+미디어의 Seek 기능 허용 여부를 나타내는 속성입니다.
 
 <br><br>
 ## title

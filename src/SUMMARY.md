@@ -6,9 +6,8 @@
 - [Agent](./agent/home.md)
 - [Desktop](./desktop/home.md)
     - [사용 방법](./desktop/how-to-use/home.md)
-        - [Agent(플레이어) 실행](./desktop/how-to-use/launch-agent.md)
-        - [디버깅](./desktop/how-to-use/debugging/home.md)
         - [샘플](./desktop/how-to-use/samples/home.md)
+        - [디버깅](./desktop/how-to-use/debugging/home.md)
     - [변경 이력](./desktop/revision-history/home.md)
 
 - [Android](./android/home.md)

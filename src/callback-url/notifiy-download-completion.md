@@ -24,7 +24,7 @@ Authorization: Bearer <Authorization>
 
 * appId:  앱 ID
 * userId: 사용자 ID
-* userData - [launchAgent](../desktop/how-to-use/launch-agent.html) 호출 시 [입력한 정보](../desktop/how-to-use/launch-agent.html#drm) (사용자 및 컨텐츠 식별 등의 용도)
+* userData - [launchAgent](../agent/home.md#launchagent) 호출 시 [입력한 정보](../agent/home.md#drm) (사용자 및 컨텐츠 식별 등의 용도)
 
 ### 반환
 
