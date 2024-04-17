@@ -1,5 +1,16 @@
 # 속성
 
+## allowsBackgroundPlayback
+```swift
+var allowsBackgroundPlayback: Bool { get set }
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Bool|백그라운드 재생을 허용할 지 여부|X|false|
+
+백그라운드 재생을 허용할 지 여부를 나타내는 속성입니다.
+
+<br><br>
 ## audioTracks
 
 ```swift

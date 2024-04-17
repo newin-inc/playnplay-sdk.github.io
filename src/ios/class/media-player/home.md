@@ -3,6 +3,7 @@
 ```swift
 final public class MediaPlayer {
 
+    final public var allowsBackgroundPlayback: Bool { get set }
     final public var audioTracks: [AudioTrack] { get }
     final public var autoplay: Bool { get set }
     final public var buffered: [TimeRange] { get }
@@ -79,6 +80,8 @@ final public class MediaPlayer {
 <summary>
     <a href="./details.md#속성">속성</a>
 </summary>
+
+- [var allowsBackgroundPlayback: Bool](./details.md#allowsBackgroundPlayback)
 
 - [var audioTracks: [AudioTrack]](./details.md#audiotracks)
 
