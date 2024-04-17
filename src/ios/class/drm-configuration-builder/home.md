@@ -7,9 +7,11 @@ extension DrmConfiguration {
 
         public init(appId: String, userId: String)
 
-        public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
-
         public func build() -> DrmConfiguration
+
+        public func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.Builder
+
+        public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
     }
 }
 ```
@@ -28,14 +30,6 @@ public init(appId: String, userId: String)
 <br><br>
 ## 메서드
 
-### userData(_)
-
-```swift
-public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
-```
-사용자 데이터(Callback URL에 전달할 데이터)를 추가합니다.
-
-<br><br>
 ### build()
 
 ```swift
@@ -44,11 +38,32 @@ public func build() -> DrmConfiguration
 추가로 입력 받은 정보로부터 DRM을 최종 구성합니다.
 
 <br><br>
+### offlineAccessPeriod(_)
+
+```swift
+public func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.Builder
+```
+<div align="right">
+참고: <a href="../../struct/duration/home.md">Duration</a>, 
+<a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
+</div>
+오프라인 재생 기한을 설정합니다.
+
+<br><br>
+### userData(_)
+
+```swift
+public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
+```
+사용자 데이터(Callback URL에 전달할 데이터)를 추가합니다.
+
+<br><br>
 ## 사용 예제
 ```swift
 let drmConfiguration = DrmConfiguration
     .Builder(appId: "App 아이디", userId: "사용자 아이디")
     .userData(userData)
+    .offlineAccessPeriod(.seconds(86400))
     .build()
 
 let mediaItem = MediaItem

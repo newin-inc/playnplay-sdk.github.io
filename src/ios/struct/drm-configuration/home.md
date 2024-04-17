@@ -9,13 +9,15 @@ public struct DrmConfiguration {
 
     public var userData: [String : Any]
 
-    public let env: String
+    public var offlineAccessPeriod: Duration? = nil
 
     public func buildUpon() -> DrmConfiguration.Builder
 
     public class Builder {
 
         public init(appId: String, userId: String)
+
+        public func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.Builder
 
         public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
 
@@ -33,6 +35,7 @@ public struct DrmConfiguration {
 let drmConfiguration = DrmConfiguration
     .Builder(appId: "App 아이디", userId: "사용자 아이디")
     .userData(userData)
+    .offlineAccessPeriod(.seconds(86400))
     .build()
 
 let mediaItem = MediaItem
