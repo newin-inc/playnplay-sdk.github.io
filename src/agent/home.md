@@ -64,9 +64,12 @@ const LaunchType = {
 * userId: 사용자 ID
 * userData: 고객사의 필요에 따라 Callback URL에 전달할 데이터 (옵션)
 * offlineAccessPeriod: 다운로드 컨텐츠의 오프라인 재생 기한 설정, (옵션, 단위: 초)
-    undefined: 제한없이 재생 가능
-    0: 오프라인 재생 권한 없음
-    n: n초까지 재생 가능
+
+|값|설명|
+|:--:|:--:|
+|undefined|제한없이 재생 가능|
+|0|오프라인 재생 권한 없음|
+|n| n초까지 재생 가능|
 
 ## Subtitle 
 

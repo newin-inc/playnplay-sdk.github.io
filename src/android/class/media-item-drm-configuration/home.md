@@ -12,6 +12,8 @@ public final class MediaItem implements Bundleable {
 ```kotlin
 val MediaItem.DrmConfiguration.appId: String?
 
+val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
+
 val MediaItem.DrmConfiguration.userId: String?
 ```
 <div align="right">
@@ -32,6 +34,24 @@ App 아이디를 가져오는 속성입니다.
 import com.newin.nplayer.sdk.extensions.appId
 
 val appId = mediaItem.localConfiguration?.drmConfiguration?.appId
+```
+
+<br><br>
+### offlineAccessPeriod
+```kotlin
+val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
+```
+<div align="right">
+참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">Duration</a>, 
+<a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
+</div>
+다운로드 컨텐츠의 오프라인 재생 기간을 가져오는 속성입니다.
+
+사용 예제: 오프라인 재생 허용 기간을 가져오는 예제
+```kotlin
+import com.newin.nplayer.sdk.extensions.offlineAccessPeriod
+
+val offlineAccessPeriod = mediaItem.localConfiguration?.drmConfiguration?.offlineAccessPeriod
 ```
 
 <br><br>
