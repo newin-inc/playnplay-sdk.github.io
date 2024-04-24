@@ -73,28 +73,5 @@ player.addEventHandler(
 <div align="right">
 참고: <a href="../../class/media-player/details.md#addeventhandler_">addEventHandler</a>, 
 <a href="../event-handlers/details.md#error">.error</a>, 
-<a href="#localizeddescription">localizedDescription</a>
+<a href="https://developer.apple.com/documentation/swift/error/localizeddescription">localizedDescription</a>
 </div>
-
-## 속성
-
-### localizedDescription
-```swift
-var localizedDescription: String { get }
-```
-에러를 텍스트 형태로 출력한 속성입니다. 해당 속성은 [Error](https://developer.apple.com/documentation/swift/error) 프로토콜에서 제공하는 [localizedDescription](https://developer.apple.com/documentation/swift/error/localizeddescription)입니다.
-
-사용 예제: 에러 메시지 포함한 알림창을 보여주는 예제
-```swift
-player.addEventHandler(
-    .error({ error in
-        let alert = UIAlertController(
-            title: nil,
-            message: error.localizedDescription,
-            preferredStyle: .alert
-        )
-        present(alert, animated: true)
-    })
-)
-```
-
