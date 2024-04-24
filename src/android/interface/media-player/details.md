@@ -1,5 +1,16 @@
 # 속성
 
+## allowsCellularAccess
+```kotlin
+var allowsCellularAccess: Boolean
+```
+| 타입 | 설명 | 설정 | 기본값 |
+|:----:|---|:---:|:---:|
+|Boolean|동영상 재생 시, 셀룰러 데이터 사용 여부| 가능 | true |
+
+동영상을 재생(스트리밍)할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
+
+<br><br>
 ## autoplay
 
 ```kotlin
@@ -10,12 +21,6 @@ var autoplay: Boolean
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
 |Boolean | 미디어가 로딩되었을 때, 즉 미디어가 준비가 된 즉시 재생할 것인지 결정하는 값 | 가능 | true |
-
-\
-사용 예제
-```kotlin
-mediaPlayer.autoplay = false	// 다음 미디어로 이동 시, 자동 재생 하지 않음
-```
 
 <br><br>
 ## buffered

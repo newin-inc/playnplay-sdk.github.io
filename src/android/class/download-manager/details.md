@@ -92,17 +92,18 @@ DownloadManager.shared.removeAll()
 
 ## add
 ```kotlin
-fun add(mediaItem: MediaItem): DownloadItemId
+fun add(mediaItem: MediaItem, allowsCellularAccess: Boolean = true): DownloadItemId
 ```
-|파라미터|타입|설명|
-|:--:|:--:|--|
-|mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)|추가하고자 하는 미디어 아이템|
+|파라미터|타입|설명|필수|기본값|
+|:--:|:--:|--|:--:|:--:|
+|mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)|추가하고자 하는 미디어 아이템|O|없음|
+|allowsCellularAccess|Boolean|다운로드 시 셀룰러 데이터 사용 여부|X|true|
 
 <div align="right">
 참고: <a href="../download-item/details.md#id">DownloadItemId</a>
 </div>
 
-다운로드를 할 미디어 아이템을 추가합니다. 현재 다운로드가 진행되고 있는 아이템의 수가 [maxParallelDownloads](#maxparalleldownloads) 보다 적으면 바로 다운로드를 시작합니다.
+다운로드를 할 미디어 아이템을 추가합니다. 현재 다운로드가 진행되고 있는 아이템의 수가 [maxParallelDownloads](#maxparalleldownloads) 보다 적으면 바로 다운로드를 시작합니다. 셀룰러 데이터 사용을 허용하지 않으려면, allowsCellularAccess를 false로 설정하여 호출하십시오.
 
 사용 예제: 미디어 아이템을 다운로드 목록에 추가하고, 아이디를 저장하는 예제
 ```kotlin

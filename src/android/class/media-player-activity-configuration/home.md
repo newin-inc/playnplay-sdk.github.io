@@ -7,6 +7,7 @@ import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 ```kotlin
 data class MediaPlayerActivityConfiguration(
     var allowsBackgroundPlayback: Boolean,
+    var allowsCellularAccess: Boolean,
     var allowsPictureInPicturePlayback: Boolean,
     var controllerShowTimeout: Duration,
     var defaultPlaybackRate: Float,
@@ -32,6 +33,7 @@ data class MediaPlayerActivityConfiguration(
 |이름|타입|설명|필수|기본값|
 |:--:|:--:|--|:--:|:--:|
 |allowsBackgroundPlayback|Boolean|백그라운드 재생을 허용할 지 여부|X|false|
+|allowsCellularAccess|Boolean|셀룰러 데이터 사용을 허용할 지 여부|X|true|
 |allowsPictureInPicturePlayback|Boolean|화면 속 화면 모드를 허용할 지 여부|X|true|
 |controllerShowTimeout|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|컨트롤러를 보여줄 최대 시간|X|5초|
 |defaultPlaybackRate|Float|미디어의 재생 속도|X|1.0|
@@ -78,6 +80,8 @@ presentMediaPlayer(mediaItem, configuration)
 </summary>
 
 * [var allowsBackgroundPlayback: Boolean](./details.md#allowsbackgroundplayback)
+
+* [var allowsCellularAccess: Boolean](./details.md#allowsbackgroundplayback)
 
 * [var allowsPictureInPicturePlayback: Boolean](./details.md#allowspictureinpictureplayback)
 

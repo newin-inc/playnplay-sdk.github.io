@@ -16,14 +16,42 @@ var allowsBackgroundPlayback: Boolean = false
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer
 
-val configuration = MediaPlayerActivityConfiguration(
-    allowsBackgroundPlayback = true
-)
+val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
+configuration.allowsBackgroundPlayback = true
+
 presentMediaPlayer(mediaItem, configuration)
 ```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
 </div>
+
+## allowsCellularAccess
+```kotlin
+var allowsCellularAccess: Boolean = true
+```
+
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Boolean|셀룰러 데이터 사용을 허용할 지 여부|가능|true|
+
+미디어를 재생할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
+
+사용 예제: 셀룰러 데이터 사용을 허용하지 않게 설정하고, 미디어 아이템을 재생하는 예제
+```kotlin
+import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
+import com.newin.nplayer.sdk.extensions.presentMediaPlayer
+
+val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
+configuration.allowsCellularAccess = false
+
+presentMediaPlayer(mediaItem, configuration)
+```
+<div align="right">
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+</div>
+
 
 ## allowsPictureInPicturePlayback
 ```kotlin
@@ -41,13 +69,14 @@ var allowsPictureInPicturePlayback: Boolean = true
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer
 
-val configuration = MediaPlayerActivityConfiguration(
-    allowsPictureInPicturePlayback = false
-)
+val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
+configuration.allowsPictureInPicturePlayback = false
+
 presentMediaPlayer(mediaItem, configuration)
 ```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
 </div>
 
 ## controllerShowTimeout
@@ -65,13 +94,14 @@ var controllerShowTimeout: Duration = 5.seconds
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer
 
-val configuration = MediaPlayerActivityConfiguration(
-    controllerShowTimeout = 0.seconds
-)
+val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
+configuration.controllerShowTimeout = 0.seconds
+
 presentMediaPlayer(mediaItem, configuration)
 ```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
 </div>
 
 ## defaultPlaybackRate
@@ -89,13 +119,14 @@ var defaultPlaybackRate: Float = 1f
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer
 
-val configuration = MediaPlayerActivityConfiguration(
-    defaultPlaybackRate = 2f
-)
+val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
+configuration.defaultPlaybackRate = 2f
+
 presentMediaPlayer(mediaItem, configuration)
 ```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
 </div>
 
 ## seekBackwardIncrement
@@ -113,13 +144,14 @@ var seekBackwardIncrement: Duration = 10.seconds
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer
 
-val configuration = MediaPlayerActivityConfiguration(
-    seekBackwardIncrement = 5.seconds
-)
+val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
+configuration.seekBackwardIncrement = 5.seconds
+
 presentMediaPlayer(mediaItem, configuration)
 ```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
 </div>
 
 ## seekForwardIncrement
@@ -137,13 +169,14 @@ var seekForwardIncrement: Duration = 10.seconds
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer
 
-val configuration = MediaPlayerActivityConfiguration(
-    seekForwardIncrement = 5.seconds
-)
+val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
+configuration.seekForwardIncrement = 5.seconds
+
 presentMediaPlayer(mediaItem, configuration)
 ```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
 </div>
 
 ## screenOrientationLock
@@ -155,7 +188,8 @@ var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off
 |:--:|--|:--:|:--:|
 |[ScreenOrientationLock](#screenorientationlock-1)|화면 방향 고정 상태|가능|Off|
 <div align="right">
-참고: <a href="#screenorientationlock-1">ScreenOrientationLock</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="#screenorientationlock-1">ScreenOrientationLock</a>
 </div>
 
 화면의 고정 상태를 나타내는 속성입니다.
@@ -165,13 +199,14 @@ var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer
 
-val configuration = MediaPlayerActivityConfiguration(
-    screenOrientationLock = MediaPlayerActivityConfiguration.ScreenOrientationLock.Landscape
-)
+val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
+configuration.screenOrientationLock = MediaPlayerActivityConfiguration.ScreenOrientationLock.Landscape
+
 presentMediaPlayer(mediaItem, configuration)
 ```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
 </div>
 
 ## defaultConfiguration
@@ -190,7 +225,8 @@ val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
 presentMediaPlayer(mediaItem, configuration)
 ```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
 </div>
 
 <br><br>

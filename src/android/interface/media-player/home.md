@@ -7,6 +7,7 @@ import com.newin.nplayer.sdk.MediaPlayer
 ```kotlin
 interface MediaPlayer : Player {
 
+    var allowsCellularAccess: Boolean
     var autoplay: Boolean
     val buffered: TimeRanges
     val currentSrc: Uri?
@@ -55,6 +56,8 @@ interface MediaPlayer : Player {
 <summary>
     <a href="./details.md#속성">속성</a>
 </summary>
+
+- [var allowsCellularAccess: Boolean](./details.md#allowscellularaccess)
 
 - [var autoplay: Boolean](./details.md#autoplay)
 

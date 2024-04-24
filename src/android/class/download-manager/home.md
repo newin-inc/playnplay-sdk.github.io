@@ -24,7 +24,7 @@ class DownloadManager private constructor(private val context: Context) {
     val items: List<DownloadItem>
     var maxParallelDownloads: Int
 
-    fun add(mediaItem: MediaItem): DownloadItemId
+    fun add(mediaItem: MediaItem, allowsCellularAccess: Boolean): DownloadItemId
     fun getItemsByStatus(status: DownloadItem.Status): List<DownloadItem>
     fun pause(id: DownloadItemId)
     fun pauseAll()
@@ -64,7 +64,7 @@ class DownloadManager private constructor(private val context: Context) {
     <a href="./details.md#메서드">메서드</a>
 </summary>
 
-- [fun add(mediaItem: MediaItem): DownloadItemId](./details.md#add)
+- [fun add(mediaItem: MediaItem, allowsCellularAccess: Boolean): DownloadItemId](./details.md#add)
     
 - [fun getItemsByStatus(status: DownloadItem.Status): List<DownloadItem>](./details.md#getitemsbystatus)
 
