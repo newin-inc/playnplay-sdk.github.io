@@ -118,6 +118,7 @@
         - [EventHandler](./ios/enum/event-handlers/home.md)
             - [상세](./ios/enum/event-handlers/details.md)
         - [DownloadItem.Status](./ios/enum/download-item-status/home.md)
+        - [MediaPlayerError](./ios/enum/media-player-error/home.md)
         - [MediaPlayerViewController.Configuration.ScreenOrientationLock](./ios/enum/media-player-view-controller-configuration-screen-orientation-lock/home.md)
         - [PlaybackState](./ios/enum/media-player-playback-state/home.md)
         - [RepeatMode](./ios/enum/media-player-repeat-mode/home.md)

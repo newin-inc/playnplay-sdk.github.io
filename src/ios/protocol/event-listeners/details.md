@@ -97,7 +97,8 @@ func onError(error: Error)
 에러가 발생할 때 실행합니다.
 <div align="right">
 이벤트 핸들러: <a href="../../enum/event-handlers/details.md#error">EventHandler.error</a><br>
-참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a>
+참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a>, 
+<a href="../../enum/media-player-error/home.md">MediaPlayerError</a>
 </div>
 
 사용 예제

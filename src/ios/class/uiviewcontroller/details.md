@@ -96,5 +96,6 @@ public func present(mediaItems: [MediaItem], startIndex: Int = 0, configuration:
 }
 ```
 <div align="right">
-참고: <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621380-present">present(_:animated:completion:)</a>
+참고: <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621380-present">present(_:animated:completion:)</a>, 
+<a href="../../enum/media-player-error/home.md#localizeddescription">localizedDescription</a>
 </div>

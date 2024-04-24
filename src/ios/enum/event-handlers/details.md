@@ -68,7 +68,8 @@ case error((_ error: Error) -> Void)
 에러가 발생할 때 사용하기 위한 핸들러입니다. 
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onerrorerror">onError(error:)</a><br>
-참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a>
+참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a>, 
+<a href="../../enum/media-player-error/home.md">MediaPlayerError</a>
 </div>
 
 사용 예제
