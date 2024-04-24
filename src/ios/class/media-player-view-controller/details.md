@@ -26,7 +26,7 @@ public var controllerShowTimeout: Duration = .seconds(5)
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|컨트롤러를 보여줄 최대 시간|가능|5초|
+|[Duration](../../struct/duration/home.md)|컨트롤러를 보여줄 최대 시간|가능|5초|
 
 사용 예제: 컨트롤러를 계속 항상 켜두게 하는 예제
 ```swift

@@ -75,7 +75,7 @@ public var controllerShowTimeout: Duration = .seconds(5)
 ```
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
-|[Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|컨트롤러를 자동으로 숨기는 시간| 가능 | 5초 |
+|[Duration](../../struct/duration/home.md)|컨트롤러를 자동으로 숨기는 시간| 가능 | 5초 |
 
 해당 시간만큼 아무 것도 입력하지 않으면 컨트롤러가 사라집니다. 0초로 설정할 경우에는 컨트롤러를 자동으로 숨기지 않습니다.
 
@@ -119,7 +119,7 @@ public var seekBackwardIncrement: Duration = .seconds(10)
 ```
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
-|[Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
+|[Duration](../../struct/duration/home.md)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
 
 현재 위치에서 전으로 탐색하는 시간을 나타내는 속성입니다.
 
@@ -141,7 +141,7 @@ public var seekForwardIncrement: Duration = .seconds(10)
 ```
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
-|[Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
+|[Duration](../../struct/duration/home.md)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
 
 현재 위치에서 후로 탐색하는 시간을 나타내는 속성입니다.
 
