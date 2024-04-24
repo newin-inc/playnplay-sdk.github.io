@@ -6,9 +6,20 @@ var allowsBackgroundPlayback: Bool { get set }
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|Bool|백그라운드 재생을 허용할 지 여부|O|false|
+|Bool|백그라운드 재생을 허용할 지 여부|가능|false|
 
 백그라운드 재생을 허용할 지 여부를 나타내는 속성입니다.
+
+<br><br>
+## allowsCellularAccess
+```swift
+var allowsCellularAccess: Bool { get set }
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Bool|동영상 재생 시, 셀룰러 데이터 사용 여부|가능|true|
+
+동영상을 재생(스트리밍)할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
 
 <br><br>
 ## audioTracks

@@ -4,6 +4,7 @@
 final public class MediaPlayer {
 
     final public var allowsBackgroundPlayback: Bool { get set }
+    final public var allowsCellularAccess: Bool { get set }
     final public var audioTracks: [AudioTrack] { get }
     final public var autoplay: Bool { get set }
     final public var buffered: [TimeRange] { get }
@@ -82,6 +83,8 @@ final public class MediaPlayer {
 </summary>
 
 - [var allowsBackgroundPlayback: Bool](./details.md#allowsBackgroundPlayback)
+
+- [var allowsCellularAccess: Bool](./details.md#allowscellularaccess)
 
 - [var audioTracks: [AudioTrack]](./details.md#audiotracks)
 

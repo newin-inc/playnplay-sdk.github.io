@@ -28,7 +28,7 @@ public class DownloadManager: NSObject, URLSessionDownloadDelegate {
     public var maxParallelDownloads: Int = 3
     public static let shared: DownloadManager
 
-    @discardableResult public func add(mediaItem: MediaItem) -> DownloadItem.Id
+    @discardableResult public func add(mediaItem: MediaItem, allowsCellularAccess: Bool = true) -> DownloadItem.Id
     public func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
     public func pause(id: DownloadItem.Id)
     public func pauseAll()
@@ -64,7 +64,7 @@ public class DownloadManager: NSObject, URLSessionDownloadDelegate {
     <a href="./details.md#메서드">메서드</a>
 </summary>
 
-- [func add(mediaItem: MediaItem) -> DownloadItem.Id](./details.md#addmediaitem)
+- [func add(mediaItem: MediaItem, allowsCellularAccess: Bool) -> DownloadItem.Id](./details.md#addmediaitemallowscellularaccess)
 
 - [func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]](./details.md#items)
 

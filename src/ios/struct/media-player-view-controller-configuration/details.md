@@ -1,5 +1,51 @@
 # 속성
 
+## allowsBackgroundPlayback
+```swift
+public var allowsBackgroundPlayback: Bool = false
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Bool|백그라운드 재생을 허용할 지 여부|가능|false|
+
+백그라운드 재생을 허용할 지 여부를 나타내는 속성입니다. 
+
+사용 예제: 백그라운드 재생을 허용하게 설정하고, 미디어 아이템을 재생하는 예제
+```swift
+var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
+configuration.allowsBackgroundPlayback = true
+
+present([mediaItem], configuration)
+```
+<div align="right">
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
+</div>
+
+<br><br>
+## allowsCellularAccess
+```swift
+public var allowsCellularAccess: Bool = true
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Bool|셀룰러 데이터 사용을 허용할 지 여부|가능|true|
+
+미디어를 재생할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
+
+사용 예제: 셀룰러 데이터 사용을 허용하지 않게 설정하고, 미디어 아이템을 재생하는 예제
+```swift
+var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
+configuration.allowsCellularAccess = false
+
+present([mediaItem], configuration)
+```
+<div align="right">
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
+</div>
+
+<br><br>
 ## allowsPictureInPicturePlayback
 ```swift
 public var allowsPictureInPicturePlayback: Bool = true
@@ -7,7 +53,7 @@ public var allowsPictureInPicturePlayback: Bool = true
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|Boolean|화면 속 화면 모드를 허용할 지 여부|가능|true|
+|Bool|화면 속 화면 모드를 허용할 지 여부|가능|true|
 
 화면 속 화면 모드를 허용할 지 여부를 나타내는 속성입니다.
 
@@ -19,7 +65,8 @@ configuration.allowsPictureInPicturePlayback = false
 present([mediaItem], configuration)
 ```
 <div align="right">
-참고: <a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
 </div>
 
 ## controllerShowTimeout
@@ -40,7 +87,8 @@ configuration.controllerShowTimeout = .seconds(0)
 present([mediaItem], configuration)
 ```
 <div align="right">
-참고: <a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
 </div>
 
 ## defaultPlaybackRate
@@ -61,7 +109,8 @@ configuration.controllerShowTimeout = 2.0
 present([mediaItem], configuration)
 ```
 <div align="right">
-참고: <a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
 </div>
 
 ## seekBackwardIncrement
@@ -82,7 +131,8 @@ configuration.seekBackwardIncrement = .seconds(20)
 present([mediaItem], configuration)
 ```
 <div align="right">
-참고: <a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
 </div>
 
 ## seekForwardIncrement
@@ -103,7 +153,8 @@ configuration.seekForwardIncrement = .seconds(20)
 present([mediaItem], configuration)
 ```
 <div align="right">
-참고: <a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
 </div>
 
 ## screenOrientationLock
@@ -125,7 +176,8 @@ configuration.screenOrientationLock = .landscape
 present([mediaItem], configuration)
 ```
 <div align="right">
-참고: <a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
 </div>
 
 <br><br>

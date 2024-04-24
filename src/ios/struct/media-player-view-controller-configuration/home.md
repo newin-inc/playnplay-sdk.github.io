@@ -5,6 +5,8 @@ public class MediaPlayerViewController {
 
     public struct Configuration {
 
+        public var allowsBackgroundPlayback: Bool = false
+        public var allowsCellularAccess: Bool = true
         public var allowsPictureInPicturePlayback: Bool = true
         public var controllerShowTimeout: Duration = .seconds(5)
         public var defaultPlaybackRate: Float = 1
@@ -33,7 +35,11 @@ public class MediaPlayerViewController {
     <a href="./details.md#속성">속성</a>
 </summary>
 
-* [var allowsPictureInPicturePlayback: Boolean](./details.md#allowspictureinpictureplayback)
+* [var allowsBackgroundPlayback: Bool](./details.md#allowsbackgroundplayback)
+
+* [var allowsCellularAccess: Bool](./details.md#allowscellularaccess)
+
+* [var allowsPictureInPicturePlayback: Bool](./details.md#allowspictureinpictureplayback)
 
 * [var controllerShowTimeout: Duration](./details.md#controllershowtimeout)
 
