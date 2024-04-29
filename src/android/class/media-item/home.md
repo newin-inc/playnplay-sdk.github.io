@@ -12,10 +12,7 @@ val MediaItem.seekable: Boolean
 val MediaItem.title: CharSequence?
 val MediaItem.uri: Uri?
 
-fun MediaItem.withDrmConfiguration(appId: String, userId: String): MediaItem
-fun MediaItem.withDrmConfiguration(appId: String, userId: String, userData: Map<String, Any>): MediaItem
-fun MediaItem.withDrmConfiguration(appId: String, userId: String, offlineAccessPeriod: Duration?): MediaItem
-fun MediaItem.withDrmConfiguration(appId: String, userId: String, userData: Map<String, Any>, offlineAccessPeriod: Duration?): MediaItem
+fun MediaItem.withDrmConfiguration(appId: String, userId: String, userData: Map<String, Any> = emptyMap(), offlineAccessPeriod: Duration? = null): MediaItem
 ```
 
 <div align="right">
@@ -86,80 +83,25 @@ import com.newin.nplayer.sdk.extensions.withDrmConfiguration
 
 fun MediaItem.withDrmConfiguration(
     appId: String,
-    userId: String
-): MediaItem
-```
-| 이름 | 타입 | 설명 | 필수|
-|:---:|:---:|:---:|:--:|
-| appId | String | App 아이디 | O |
-| userId | String | 사용자 아이디 | O |
-
-App 아이디와 사용자 아이디를 사용하여 DRM 설정을 하는 메서드입니다.
-
-<br><br>
-```kotlin
-import com.newin.nplayer.sdk.extensions.withDrmConfiguration
-
-fun MediaItem.withDrmConfiguration(
-    appId: String,
     userId: String,
-    userData: Map<String, Any>
+    userData: Map<String, Any> = emptyMap(),
+    offlineAccessPeriod: Duration? = null,
 ): MediaItem
 ```
-| 이름 | 타입 | 설명 | 필수|
-|:---:|:---:|:---:|:--:|
-| appId | String | App 아이디 | O |
-| userId | String | 사용자 아이디 | O |
-| userData | Map<String, Any> | 사용자 데이터 | O |
-<div align="right">
-참고: <a href="../../../agent/home.md#drm">DRM 내 userData</a>
-</div>
 
-Callback URL에 전달할 데이터(사용자 데이터)를 추가하여 DRM 설정하는 메서드입니다. 
+| 이름 | 타입 | 설명 | 필수| 기본값 |
+|:---:|:---:|:---:|:--:|:--:|
+| appId | String | App 아이디 | O | 없음 | 
+| userId | String | 사용자 아이디 | O | 없음 |
+| userData | Map<String, Any> | 사용자 데이터 | X | emptyMap() |
+| offlineAccessPeriod | [Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)? | 오프라인 재생 기한 | X | null |
 
-<br><br>
-```kotlin
-import com.newin.nplayer.sdk.extensions.withDrmConfiguration
-
-fun MediaItem.withDrmConfiguration(
-    appId: String,
-    userId: String,
-    offlineAccessPeriod: Duration?,
-): MediaItem
-```
-| 이름 | 타입 | 설명 | 필수|
-|:---:|:---:|:---:|:--:|
-| appId | String | App 아이디 | O |
-| userId | String | 사용자 아이디 | O |
-| offlineAccessPeriod | [Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/) | 오프라인 재생 기한 | O |
-<div align="right">
-참고: <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
-</div>
-
-오프라인 재생 기한 설정을 추가하여 DRM 설정하는 메서드입니다.
-
-<br><br>
-```kotlin
-import com.newin.nplayer.sdk.extensions.withDrmConfiguration
-
-fun MediaItem.withDrmConfiguration(
-    appId: String,
-    userId: String,
-    userData: Map<String, Any>
-    offlineAccessPeriod: Duration?,
-): MediaItem
-```
-| 이름 | 타입 | 설명 | 필수|
-|:---:|:---:|:---:|:--:|
-| appId | String | App 아이디 | O |
-| userId | String | 사용자 아이디 | O |
-| userData | Map<String, Any> | 사용자 데이터 | O |
-| offlineAccessPeriod | [Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/) | 오프라인 재생 기한 | O |
 <div align="right">
 참고: <a href="../../../agent/home.md#drm">DRM 내 userData, offlineAccessPeriod</a>
 </div>
 
-Callback URL에 전달할 데이터(사용자 데이터)와 오프라인 재생 기한 설정을 추가하여 DRM 설정하는 메서드입니다. 
+App 아이디와 사용자 아이디를 사용하여 DRM 설정을 하는 메서드입니다.
+Callback URL에 전달할 데이터(사용자 데이터)와 오프라인 재생 기한 설정을 추가하여 DRM 설정을 할 수 있습니다.
 
 <br><br>
 사용 예제: DRM 설정을 한 미디어 아이템을 화면에 재생하는 예제
