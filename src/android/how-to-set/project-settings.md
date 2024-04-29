@@ -27,9 +27,9 @@ dependencies {
 
 ```kotlin
 dependencies {
-    implementation("androidx.media3:media3-ui:1.3.0")
-    implementation("androidx.media3:media3-session:1.3.0")
-    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.3.0")
+    implementation("androidx.media3:media3-ui:1.3.1")
+    implementation("androidx.media3:media3-session:1.3.1")
+    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.3.1")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("androidx.room:room-runtime:2.6.1")
