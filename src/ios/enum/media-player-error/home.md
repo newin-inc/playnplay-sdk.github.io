@@ -29,8 +29,8 @@ public enum MediaPlayerError: LocalizedError {
 <br><br>
 
 |이름|설명|
-|:--:|--|
-|accessRightsExpired(message: String)|접근 권환이 만료된 경우|
+|:--:|:--:|
+|accessRightsExpired(message: String)|접근 권한이 만료된 경우|
 |appBundleNotRegistered|등록되지 않은 앱 번들 아이디를 사용한 경우|
 |deviceLimitExceeded(message: String)|기기 제한이 초과한 경우|
 |licenseCheckFailed(message: String)|라이선스 확인에 실패한 경우|
@@ -40,7 +40,7 @@ public enum MediaPlayerError: LocalizedError {
 |noAccessRights(message: String)|접근 권한이 없는 경우|
 |noCellularAccess|셀룰러 데이터 사용이 허용되지 않은 상황에서 와이파이 연결이 끊어졌는데 미디어를 재생하려는 경우|
 |noLicenseData(message: String)|라이선스 데이터가 없는 경우|
-|noOfflineAccessRights(message: String)|오프라인 접근 권환이 없는 경우|
+|noOfflineAccessRights(message: String)|오프라인 접근 권한이 없는 경우|
 |offlineAccessRightsExpired(message: String)|오프라인 접근 권한이 만료된 경우|
 |playbackLimitExceeded(message: String)|재생 제한이 초과된 경우|
 |screenCaptureDetected(message: String)|화면 캡처가 감지된 경우|

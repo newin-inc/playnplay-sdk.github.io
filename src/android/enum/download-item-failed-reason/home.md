@@ -27,20 +27,16 @@ data class DownloadItem {
 
         FileAlreadyExists(android.app.DownloadManager.ERROR_FILE_ALREADY_EXISTS),
 
-        DeviceLimitExceeded(SessionException.ERROR_CODE_DEVICE_LIMIT_EXCEEDED),
+        DeviceLimitExceeded(MediaPlayerException.ERROR_CODE_DEVICE_LIMIT_EXCEEDED),
 
-        AccessRightsExpired(SessionException.ERROR_CODE_ACCESS_RIGHTS_EXPIRED),
+        AccessRightsExpired(MediaPlayerException.ERROR_CODE_ACCESS_RIGHTS_EXPIRED),
 
-        NoAccessRights(SessionException.ERROR_CODE_NO_ACCESS_RIGHTS),
+        NoAccessRights(MediaPlayerException.ERROR_CODE_NO_ACCESS_RIGHTS),
 
-        Unauthorized(SessionException.ERROR_CODE_UNAUTHORIZED);
- 
+        Unauthorized(MediaPlayerException.ERROR_CODE_UNAUTHORIZED);
 
         override fun toString(): String
 
-        companion object {
-            fun fromRawValue(value: Int): FailedReason
-        }
     }
 }
 ```
