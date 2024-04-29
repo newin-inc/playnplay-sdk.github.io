@@ -51,6 +51,9 @@ mediaPlayer.currentSrc?.apply {
     val uri = info?.artworkUri
 }           
 ```
+<div align="right">
+참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>
+</div>
 
 ### duration
 ```kotlin
