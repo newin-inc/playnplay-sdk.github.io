@@ -25,6 +25,8 @@ interface EventListener {
 
     fun onPlay() {}
 
+    fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duration?) {}
+
     fun onPlaying() {}
 
     fun onPositionDiscontinuity(player: MediaPlayer, oldPosition: Duration, newPosition: Duration) {}
@@ -75,6 +77,8 @@ EventListener는 이벤트 처리를 위한 인터페이스로, 위와 같은 �
 - [fun onPause()](./details.md#onpause)
 
 - [fun onPlay()](./details.md#onplay)
+
+- [fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duration?)](./details.md#onplaybackfinish)
 
 - [fun onPlaying()](./details.md#onplaying)
 

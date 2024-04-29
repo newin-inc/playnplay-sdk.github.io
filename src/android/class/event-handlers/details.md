@@ -228,6 +228,25 @@ mediaPlayer.addEventHandler(EventHandler.Play {
 ```
 
 <br><br>
+## PlaybackFinish
+
+```kotlin
+data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?) -> Unit) : EventHandler()
+```
+| 파라미터 타입 | 설명 |
+|:--:|:--|
+|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|미디어 아이템|
+|Duration|마지막 재생 위치|
+|Duration?|미디어 길이|
+
+미디어 재생이 종료되는 시점에 사용하기 위한 핸들러입니다. 마지막 재생 위치(position) 및 미디어의 길이(duration) 값을 사용할 수 있습니다.
+
+<div align="right">
+이벤트 리스너: <a href="../../interface/event-listeners/details.md#onplaybackfinish">onPlaybackFinish()</a><br>
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">MediaItem</a>
+</div>
+
+<br><br>
 ## PlaybackStateChange
 
 ```kotlin

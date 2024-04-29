@@ -27,6 +27,8 @@ sealed class EventHandler {
 
     data class Play(val listener: () -> Unit) : EventHandler()
 
+    data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?) -> Unit) : EventHandler()
+
     data class PlaybackStateChange(val listener: (@Player.State Int) -> Unit) : EventHandler()
 
     data class Playing(val listener: () -> Unit) : EventHandler()
@@ -89,6 +91,8 @@ sealed class EventHandler {
 - [data class Pause(val listener: () -> Unit) : EventHandler()](./details.md#pause)
 
 - [data class Play(val listener: () -> Unit) : EventHandler()](./details.md#play)
+
+- [data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?) -> Unit) : EventHandler()](./details.md#playbackfinish)
 
 - [data class PlaybackStateChange(val listener: (@Player.State Int) -> Unit) : EventHandler()](./details.md#playbackstatechange)
 

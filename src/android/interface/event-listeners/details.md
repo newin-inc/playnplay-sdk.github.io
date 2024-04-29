@@ -236,6 +236,18 @@ mediaPlayer.addEventListener(componentListener)
 ```
 
 <br><br>
+## onPlaybackFinish
+
+```kotlin
+fun fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duration?)
+```
+미디어가 종료되는 시점에 실행합니다. 마지막 재생 위치(position) 및 미디어의 길이(duration) 값을 사용할 수 있습니다. 자세한 설명은 [EventHandler.PlaybackFinish](../../class/event-handlers/details.md#playbackfinish)를 참고하세요.
+
+<div align="right">
+이벤트 핸들러: <a href="../../class/event-handlers/details.md#playbackfinish">PlayabackFinish</a>
+</div>
+
+<br><br>
 ## onPlaying
 
 ```kotlin
