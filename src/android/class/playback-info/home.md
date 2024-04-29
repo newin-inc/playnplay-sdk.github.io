@@ -26,6 +26,10 @@ mediaPlayer.currentSrc?.apply {
     ...
 }
 ```
+<div align="right">
+참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>, 
+<a href="../../class/playback-info-repository/home.md">PlaybackInfoRepository</a>
+</div>
 
 ## 속성
 
@@ -52,9 +56,11 @@ mediaPlayer.currentSrc?.apply {
 }           
 ```
 <div align="right">
-참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>
+참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>, 
+<a href="../../class/playback-info-repository/home.md">PlaybackInfoRepository</a>
 </div>
 
+<br><br>
 ### duration
 ```kotlin
 val duration: Duration?
@@ -75,6 +81,12 @@ mediaPlayer.currentSrc?.apply {
 }    
 ```
 
+<div align="right">
+참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>, 
+<a href="../../class/playback-info-repository/home.md">PlaybackInfoRepository</a>
+</div>
+
+<br><br>
 ### expiresOn
 ```kotlin
 val expiresOn: Instant?
@@ -95,6 +107,12 @@ mediaPlayer.currentSrc?.apply {
 }                       
 ```
 
+<div align="right">
+참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>, 
+<a href="../../class/playback-info-repository/home.md">PlaybackInfoRepository</a>
+</div>
+
+<br><br>
 ### lastPlayedTime
 ```kotlin
 val lastPlayedTime: Duration?
@@ -115,6 +133,12 @@ mediaPlayer.currentSrc?.apply {
 }
 ```
 
+<div align="right">
+참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>, 
+<a href="../../class/playback-info-repository/home.md">PlaybackInfoRepository</a>
+</div>
+
+<br><br>
 ### uri
 ```kotlin
 val uri: Uri
@@ -136,3 +160,7 @@ mediaPlayer.currentSrc?.apply {
     val lastPlayedTime = info?.lastPlayedTime   // 3.394s
 }
 ```
+<div align="right">
+참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>, 
+<a href="../../class/playback-info-repository/home.md">PlaybackInfoRepository</a>
+</div>

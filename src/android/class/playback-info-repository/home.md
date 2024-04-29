@@ -16,6 +16,10 @@ class PlaybackInfoRepository(context: Context) {
 }
 ```
 
+<div align="right">
+참고: <a href="../playback-info/home.md">PlaybackInfo</a>
+</div>
+
 재생 정보 저장소를 나타내는 클래스입니다. 미디어의 uri를 알고 있으면, 아래처럼, 속성 [shared](#shared)와 메서드 [findBy](#findby)를 사용하여 해당 uri의 미디어 아이템 정보를 가져올 수 있습니다.
 
 사용 예제: 현재 미디어의 마지막 재생 위치를 가져오는 예제
@@ -28,7 +32,8 @@ mediaPlayer.currentSrc?.apply {
 }
 ```
 <div align="right">
-참고: <a href="../playback-info/home.md">PlaybackInfo</a>
+참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>, 
+<a href="#shared">shared</a>, <a href="#findby">findBy</a>
 </div>
 
 ## 속성
@@ -49,7 +54,8 @@ mediaPlayer.currentSrc?.apply {
 }                       
 ```
 <div align="right">
-참고: <a href="#findby">findBy</a>
+참고: <a href="../../interface/media-player/details.md#currentsrc">currentSrc</a>, 
+<a href="#findby">findBy</a>
 </div>
 
 ## 메서드
