@@ -19,6 +19,7 @@ protocol EventListener : AnyObject {
     func onPictureInPictureWillStart()
     func onPictureInPictureWillStop()
     func onPlay()
+    func onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duration?)
     func onPlaybackStateChange(state: MediaPlayer.PlaybackState)
     func onPlaying()
     func onPositionDiscontinuity(oldPosition: Duration, newPosition: Duration)
@@ -74,6 +75,8 @@ EventListener는 이벤트 처리를 위한 프로토콜로, 위와 같은 메�
 - [onPictureInPictureWillStop()](./details.md#onpictureinpicturewillstop)
 
 - [onPlay()](./details.md#onplay)
+
+- [onPlaybackFinish(mediaItem:position:duration:)](./details.md#onplaybackfinishmediaitempositionduration)
 
 - [onPlaybackStateChange(state:)](./details.md#onplaybackstatechangestate)
 

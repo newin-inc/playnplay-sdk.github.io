@@ -18,6 +18,7 @@ public enum EventHandler {
     case pictureInPictureWillStart(() -> Void)
     case pictureInPictureWillStop(() -> Void)
     case play(() -> Void)
+    case playbackFinish((_ mediaItem: MediaItem, _ position: Duration, _ duration: Duration?) -> Void)
     case playbackStateChange((_ state: MediaPlayer.PlaybackState) -> Void)
     case playing(() -> Void)
     case positionDiscontinuity((_ oldPosition: Duration, _ newPosition: Duration) -> Void)
@@ -73,6 +74,8 @@ public enum EventHandler {
 - [pictureInPictureWillStop](./details.md#pictureinpicturewillstop)
 
 - [play](./details.md#play)
+
+- [playbackFinish](./details.md#playbackfinish)
 
 - [playbackStateChange](./details.md#playbackstatechange)
 
