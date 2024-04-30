@@ -19,7 +19,7 @@ fun start(index: Int): Duration
 ```
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|--|
-|index|Int|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|index 번째 데이터의 구간 시작 위치를 반환|
+|index|Int|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|index 번째 데이터의 구간 시작 위치를 반환|
 
 <br><br>
 ## end
@@ -28,18 +28,21 @@ fun end(index: Int): Duration
 ```
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|--|
-|index|Int|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|index 번째 데이터의 구간 종료 위치를 반환|
+|index|Int|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|index 번째 데이터의 구간 종료 위치를 반환|
 
 <br><br>
 ## 사용 예제
 ```kotlin
-val timeRange1 = TimeRange(0.milliseconds, 3.seconds)
-val timeRange2 = TimeRange(3.seconds, 5.seconds)
+import com.newin.nplayer.sdk.utils.TimeRange
+import com.newin.nplayer.sdk.utils.TimeRanges
+
+val timeRange1 = TimeRange(Duration.ZERO, Duration.ofSeconds(3))
+val timeRange2 = TimeRange(Duration.ofSeconds(3), Duration.ofSeconds(5))
 
 val timeRanges = TimeRanges(
     arrayListOf(timeRange1, timeRange2)
 )
 
-val start = timeRanges.start(0) // 0s
-val end = timeRanges.end(timeRanges.length - 1)	// 8s
+val start = timeRanges.start(0).seconds // 0
+val end = timeRanges.end(timeRanges.length - 1).seconds	// 8
 ```

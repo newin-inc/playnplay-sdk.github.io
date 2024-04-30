@@ -22,8 +22,8 @@ data class WatermarkSettings {
 
 | 이름 | 타입 | 설명 | 비고 |
 |:--:|:--:|--|:--:|
-|duration|[Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|유지 시간||
-|interval|[Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|출력 주기||
+|duration|[Duration](https://developer.android.com/reference/java/time/Duration)|유지 시간||
+|interval|[Duration](https://developer.android.com/reference/java/time/Duration)|출력 주기||
 |position|[Position](#watermarksettingsposition)|워터마크의 위치||
 |text|String|워터마크 출력 내용||
 |textColor|String|글자 색상|예: #ff00ff|

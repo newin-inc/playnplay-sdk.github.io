@@ -9,7 +9,7 @@ fun onDurationChange(duration: Duration)
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#durationchange">DurationChange</a><br>
-참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
+참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 \
@@ -295,7 +295,7 @@ fun onPositionDiscontinuity(
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#positiondiscontinuity">PositionDiscontinuity</a><br>
 참고: <a href="../../interface/media-player/home.md">MediaPlayer</a><br>
-참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
+참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 \
@@ -307,7 +307,7 @@ class ComponentListener: EventListener {
         oldPosition: Duration,
         newPosition: Duration
     ) {
-        mediaPlayer.updateStatusText("$oldPosition -> $newPosition")   // 26.7s -> 3m 20s	
+        mediaPlayer.updateStatusText("${oldPosition.seconds} -> ${newPosition.seconds}")   // 26s -> 250s	
     }
 }
 
@@ -513,7 +513,7 @@ fun onTimeUpdate(position: Duration)
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#timeupdate">TimeUpdate</a><br>
-참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
+참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 \

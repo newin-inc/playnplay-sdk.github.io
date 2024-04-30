@@ -19,8 +19,8 @@ data class RepeatRange(
 
 |이름|타입|설명|필수|
 |:--:|:--:|--|:--:|
-|start|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 반복 시작 위치 값|O|
-|end|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|구간 반복 종료 위치 값|O|
+|start|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 시작 위치 값|O|
+|end|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 종료 위치 값|O|
 
 <details open>
 <summary>

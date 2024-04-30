@@ -42,7 +42,7 @@ val appId = mediaItem.localConfiguration?.drmConfiguration?.appId
 val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
 ```
 <div align="right">
-참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">Duration</a>, 
+참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>, 
 <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
 </div>
 다운로드 컨텐츠의 오프라인 재생 기간을 가져오는 속성입니다.

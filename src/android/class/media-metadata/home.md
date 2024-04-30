@@ -18,14 +18,15 @@ public final class MediaMetadata implements Bundleable {
 ```kotlin
 val MediaMetadata.expiresOn: java.time.Instant?
 
-val MediaMetadata.lastPlayedTime: kotlin.time.Duration?
+val MediaMetadata.lastPlayedTime: Duration?
 
 val MediaMetadata.duration: Duration?
 ```
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata">MediaMetadata</a>, 
 <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#buildUpon()">MediaMetadata.buildUpon()</a>, 
-<a href="https://developer.android.com/reference/kotlin/androidx/media3/common/MediaMetadata.Builder">MediaMetadata.Builder</a>
+<a href="https://developer.android.com/reference/kotlin/androidx/media3/common/MediaMetadata.Builder">MediaMetadata.Builder</a>, 
+<a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 ## 속성
@@ -82,11 +83,11 @@ val expiresOn = mediaItem.mediaMetadata.expiresOn
 <br><br>
 ### lastPlayedTime
 ```kotlin
-val androidx.media3.common.MediaMetadata.lastPlayedTime: kotlin.time.Duration?
+val androidx.media3.common.MediaMetadata.lastPlayedTime: Duration?
 ```
 | 타입 | 설명 |
 |:--:|--|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|마지막 재생 위치|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
 
 미디어 아이템이 마지막으로 재생한 위치를 나타내는 속성입니다.
 
@@ -110,11 +111,11 @@ println(expiresOn)
 <br><br>
 ### duration
 ```kotlin
-val androidx.media3.common.MediaMetadata.duration: kotlin.time.Duration?
+val androidx.media3.common.MediaMetadata.duration: Duration?
 ```
 | 타입 | 설명 |
 |:--:|--|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|미디어 아이템의 전체 길이|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|미디어 아이템의 전체 길이|
 
 미디어 아이템의 전체 길이를 나타내는 속성입니다.
 
@@ -127,12 +128,12 @@ import com.newin.nplayer.sdk.extensions.duration
 
 val duration = mediaItem.mediaMetadata.duration
 
-println(duration)
+println(duration.seconds)
 ```
 
 실행 후 다음과 같은 결과를 볼 수 있습니다.
 ```log
-14m 48.064s
+1808
 ```
 
 <br><br>

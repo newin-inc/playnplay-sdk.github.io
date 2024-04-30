@@ -67,7 +67,7 @@ val duration: Duration?
 ```
 |타입|설명|
 |:--:|--|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|미디어 아이템의 전체 길이|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|미디어 아이템의 전체 길이|
 
 미디어 아이템의 전체 길이를 나타내는 속성입니다.
 
@@ -77,7 +77,7 @@ mediaPlayer.currentSrc?.apply {
 
     val info = PlaybackInfoRepository.shared.findBy(this)
 
-    val duration = info?.duration     // 15.045s
+    val duration = info?.duration?.seconds     // 15
 }    
 ```
 
@@ -119,7 +119,7 @@ val lastPlayedTime: Duration?
 ```
 |타입|설명|
 |:--:|--|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|마지막 재생 위치|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
 
 미디어 아이템이 마지막으로 재생한 위치를 나타내는 속성입니다.
 
@@ -129,7 +129,7 @@ mediaPlayer.currentSrc?.apply {
 
     val info = PlaybackInfoRepository.shared.findBy(this)
 
-    val lastPlayedTime = info?.lastPlayedTime   // 3.394s
+    val lastPlayedTime = info?.lastPlayedTime?.seconds   // 3
 }
 ```
 

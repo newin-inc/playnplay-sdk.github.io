@@ -7,13 +7,13 @@ data class DurationChange(val listener: (Duration) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
 |:--:|:--|
-|Duration|미디어 길이|
+|[Duration](https://developer.android.com/reference/java/time/Duration)|미디어 길이|
 
 미디어의 길이(duration)가 변경되었을 때를 처리하기 위한 핸들러입니다.\
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#ondurationchange">onDurationChange()</a><br>
-참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
+참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 \
@@ -236,14 +236,15 @@ data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?) -> Unit
 | 파라미터 타입 | 설명 |
 |:--:|:--|
 |[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|미디어 아이템|
-|Duration|마지막 재생 위치|
-|Duration?|미디어 길이|
+|[Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
+|[Duration](https://developer.android.com/reference/java/time/Duration)?|미디어 길이|
 
 미디어 재생이 종료되는 시점에 사용하기 위한 핸들러입니다. 마지막 재생 위치(position) 및 미디어의 길이(duration) 값을 사용할 수 있습니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onplaybackfinish">onPlaybackFinish()</a><br>
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">MediaItem</a>
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">MediaItem</a>, 
+<a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 <br><br>
@@ -318,15 +319,15 @@ data class PositionDiscontinuity(
 | 파라미터 타입 | 설명 |
 |:--:|:--|
 |MediaPlayer|미디어 플레이어|
-|Duration|이전 재생 위치|
-|Duration|바뀐 재생 위치|
+|[Duration](https://developer.android.com/reference/java/time/Duration)|이전 재생 위치|
+|[Duration](https://developer.android.com/reference/java/time/Duration)|바뀐 재생 위치|
 
 재생 위치가 변경되는 시점에 사용하기 위한 핸들러입니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onpositiondiscontinuity">onPositionDiscontinuity()<a><br>
 참고: <a href="../../interface/media-player/home.md">MediaPlayer</a><br>
-참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
+참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 \
@@ -334,7 +335,7 @@ data class PositionDiscontinuity(
 ```kotlin
 mediaPlayer.addEventHandler(EventHandler.PositionDiscontinuity {
     _mediaPlayer, oldPosition, newPosition ->
-        _mediaPlayer.updateStatusText("$oldPosition -> $newPosition")   // 26.7s -> 3m 20s	
+        _mediaPlayer.updateStatusText("${oldPosition.seconds} -> ${newPosition.seconds}")   // 157 -> 432	
 })
 ```
 
@@ -534,13 +535,13 @@ data class TimeUpdate(val listener: (Duration) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
 |:--:|:--|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 재생 위치|
+|[Duration](https://developer.android.com/reference/java/time/Duration)|현재 재생 위치|
 
 [currentTime](../../interface/media-player/details.md#currenttime)이 변경되는 시점에 사용하기 위한 핸들러입니다. 즉, 미디어가 재생이 되는 동안 수행하려는 작업을 이곳에 구현하시면 됩니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#ontimeupdate">onTimeUpdate()</a><br>
-참고: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/">kotlin.time.Duration</a>
+참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 \

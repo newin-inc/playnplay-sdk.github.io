@@ -35,10 +35,10 @@ data class MediaPlayerActivityConfiguration(
 |allowsBackgroundPlayback|Boolean|백그라운드 재생을 허용할 지 여부|X|false|
 |allowsCellularAccess|Boolean|셀룰러 데이터 사용을 허용할 지 여부|X|true|
 |allowsPictureInPicturePlayback|Boolean|화면 속 화면 모드를 허용할 지 여부|X|true|
-|controllerShowTimeout|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|컨트롤러를 보여줄 최대 시간|X|5초|
+|controllerShowTimeout|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|컨트롤러를 보여줄 최대 시간|X|5초|
 |defaultPlaybackRate|Float|미디어의 재생 속도|X|1.0|
-|seekBackwardIncrement|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 전으로 이동하는 시간의 크기|X|10초|
-|seekForwardIncrement|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 후로 이동하는 시간의 크기|X|10초|
+|seekBackwardIncrement|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 전으로 이동하는 시간의 크기|X|10초|
+|seekForwardIncrement|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 후로 이동하는 시간의 크기|X|10초|
 |screenOrientationLock|ScreenOrientationLock|화면 고정 방향|X|Off|
 
 ### 사용 예제
@@ -63,8 +63,8 @@ import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 import com.newin.nplayer.sdk.extensions.presentMediaPlayer
 
 val configuration = MediaPlayerActivityConfiguration(
-    seekBackwardIncrement = 5.seconds, 
-    seekForwardIncrement = 5.seconds
+    seekBackwardIncrement = Duration.ofSeconds(5), 
+    seekForwardIncrement = Duration.ofSeconds(5)
 )
 presentMediaPlayer(mediaItem, configuration)
 ```

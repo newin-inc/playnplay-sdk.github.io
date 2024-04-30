@@ -94,7 +94,7 @@ fun MediaItem.withDrmConfiguration(
 | appId | String | App 아이디 | O | 없음 | 
 | userId | String | 사용자 아이디 | O | 없음 |
 | userData | Map<String, Any> | 사용자 데이터 | X | emptyMap() |
-| offlineAccessPeriod | [Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)? | 오프라인 재생 기한 | X | null |
+| offlineAccessPeriod | [Duration](https://developer.android.com/reference/java/time/Duration)? | 오프라인 재생 기한 | X | null |
 
 <div align="right">
 참고: <a href="../../../agent/home.md#drm">DRM 내 userData, offlineAccessPeriod</a>

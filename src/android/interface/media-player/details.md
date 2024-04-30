@@ -40,7 +40,7 @@ val buffered: TimeRanges
 val start = mediaPlayer.buffered.start(0)	// 첫 번째 timeRange의 시작 위치
 val end = mediaPlayer.buffered.end(0)		// 첫 번째 timeRange의 종료 위치
 ```
-이때, 사용되는 start(index)와 end(index)의 타입은 [kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)입니다.
+이때, 사용되는 start(index)와 end(index)의 타입은 [java.time.Duration](https://developer.android.com/reference/java/time/Duration)입니다.
 
 <br><br>
 ## currentMediaItem
@@ -96,14 +96,14 @@ var currentTime: Duration
 
 | 타입 | 설명 | 설정 |
 |:---:|----|:---:|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)| 설정 시, 재생하고 싶은 특정 위치<br>반환 시, 현재 재생 시점| 가능 |
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)| 설정 시, 재생하고 싶은 특정 위치<br>반환 시, 현재 재생 시점| 가능 |
 
 \
 사용 예제
 ```kotlin
-mediaPlayer.currentTime = 20.seconds // 20초로 가기
+mediaPlayer.currentTime = Duration.ofSeconds(20) // 20초로 가기
 
-val currentTime = mediaPlayer.currentTime // 20s
+val currentTime = mediaPlayer.currentTime.seconds // 20
 ```
 
 <br><br>
@@ -170,12 +170,12 @@ val duration: Duration
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 미디어의 전체 길이|불가능|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 미디어의 전체 길이|불가능|
 
 \
 사용 예제
 ```kotlin
-val duration = mediaPlayer.duration // 2m 12s
+val duration = mediaPlayer.duration.seconds // 212
 ```
 
 <br><br>
@@ -353,17 +353,17 @@ null이 아닌 값으로 설정을 했을 경우 해당 구간을 지속해서 �
 \
 사용 예제
 ```kotlin
-mediaPlayer.repeatRange = MediaPlayer.RepeatRange(10.seconds, 2.minutes)
-val start1 = mediaPlayer.repeatRange?.start     // 10s
-val end1 = mediaPlayer.repeateRange?.end        // 2m
+mediaPlayer.repeatRange = MediaPlayer.RepeatRange(Duration.ofSeconds(10), Duration.ofMinutes(2))
+val start1 = mediaPlayer.repeatRange?.start?.seconds     // 10
+val end1 = mediaPlayer.repeateRange?.end?.seconds        // 120
 
-mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withStart(20.seconds)
+mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withStart(Duration.ofSeconds(20))
 val repeatRange = mediaPlayer.repeatRange	
 // RepeatRange(start=20s, end=2m)
 
-mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withEnd(30.seconds)
-val start2 = mediaPlayer.repeatRange?.start     // 20s
-val end2 = mediaPlayer.repeateRange?.end        // 30s
+mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withEnd(Duration.ofSeconds(30))
+val start2 = mediaPlayer.repeatRange?.start?.seconds     // 20
+val end2 = mediaPlayer.repeateRange?.end?.seconds        // 30
 ```
 
 <br><br>
@@ -386,7 +386,7 @@ var seekBackIncrement: Duration
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
 
 [seekBack()](#seekback)을 호출하여 이동할 때, 현재 위치에서 전으로 이동하는 시간 정도를 나타내는 속성입니다.
 왼쪽 방향키를 입력 받거나 하단 인터페이스의 되감기 버튼을 클릭했을 때 이 속성을 사용합니다.
@@ -394,7 +394,7 @@ var seekBackIncrement: Duration
 \
 사용 예제
 ```kotlin
-mediaPlayer.seekBackIncrement = 20.seconds
+mediaPlayer.seekBackIncrement = Duration.ofSeconds(20)
 ```
 
 <br><br>
@@ -405,7 +405,7 @@ var seekForwardIncrement: Duration
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
 
 [seekForward()](#seekforward)을 호출하여 이동할 때, 현재 위치에서 후로 이동하는 시간 정도를 나타내는 속성입니다.
 오른쪽 방향키를 입력 받거나 하단 인터페이스의 빨리 감기 버튼을 클릭했을 때 이 속성을 사용합니다.
@@ -413,7 +413,7 @@ var seekForwardIncrement: Duration
 \
 사용 예제
 ```kotlin
-mediaPlayer.seekForwardIncrement = 30.seconds
+mediaPlayer.seekForwardIncrement = Duration.ofSeconds(30)
 ```
 
 <br><br>
@@ -455,14 +455,14 @@ fun fastSeek(to: Duration)
 
 |파라미터|타입|설명|
 |:---:|:--:|---|
-|to|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|재생하고자 하는 위치 값|
+|to|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|재생하고자 하는 위치 값|
 
 * 주의: 해당 메서드의 원래 목적은 정확한 위치보다는 새로운 위치에서 더 빠르게 재생을 하도록 하는 것이었습니다. 그러나 안드로이드에서는 현재 정확한 위치와 빠른 재생을 동시에 수행할 수 없기 때문에, 현재는 currentTime, seekTo()를 사용한 것과 유사한 결과를 얻게 됩니다. 즉, 이 메서드를 사용하면 정확한 위치로 이동하게 됩니다. 향후 안드로이드에서 이러한 기능을 제공할 경우, 원래 목적에 맞게  업데이트될 예정입니다.
 
 \
 사용 예제
 ```kotlin
-mediaPlayer.fastSeek(50.seconds)
+mediaPlayer.fastSeek(Duration.ofSeconds(50))
 ```
 
 <br><br>
@@ -600,11 +600,11 @@ fun seekBack()
 \
 사용 예제
 ```kotlin
-mediaPlayer.seekBack(20.seconds)
+mediaPlayer.seekBack(Duration.ofSeconds(20))
 // 미디어 재생 위치의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
 // seekBackIncrement 값은 변하지 않는 게 다른 점입니다.
 
-mediaPlayer.seekBackIncrement = 20.seconds
+mediaPlayer.seekBackIncrement = Duration.ofSeconds(20)
 mediaPlayer.seekBack()
 ```
 
@@ -618,15 +618,15 @@ fun seekBack(increment: Duration)
 
 |파라미터|타입|설명|
 |:---:|:--:|---|
-|increment|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|새로운 위치는 현재 위치에서 입력된 파라미터를 뺀 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 후로 이동합니다.|
+|increment|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|새로운 위치는 현재 위치에서 입력된 파라미터를 뺀 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 후로 이동합니다.|
 
 \
 사용 예제
 ```kotlin
-mediaPlayer.seekTo(30.seconds)
+mediaPlayer.seekTo(Duration.ofSeconds(30))
 	
-mediaPlayer.seekBack(10.seconds)
-val currentTime = mediaPlayer.currentTime   // 20s
+mediaPlayer.seekBack(Duration.ofSeconds(10))
+val currentTime = mediaPlayer.currentTime.seconds   // 20
 ```
 
 <br><br>
@@ -640,11 +640,11 @@ fun seekForward()
 \
 사용 예제
 ```kotlin
-mediaPlayer.seekForward(20.seconds)
+mediaPlayer.seekForward(Duration.ofSeconds(20))
 // 미디어 재생 위치의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
 // seekForwardIncrement 값은 변하지 않는 게 다른 점입니다.
 
-mediaPlayer.seekForwardIncrement = 20.seconds
+mediaPlayer.seekForwardIncrement = Duration.ofSeconds(20)
 mediaPlayer.seekForward()
 ```
 
@@ -658,15 +658,15 @@ fun seekForward(increment: Duration)
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|increment|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|새로운 위치 현재 위치에서 입력된 파라미터를 더한 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 되돌아갑니다.|
+|increment|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|새로운 위치 현재 위치에서 입력된 파라미터를 더한 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 되돌아갑니다.|
 
 \
 사용 예제
 ```kotlin
-mediaPlayer.seekTo(30.seconds)
+mediaPlayer.seekTo(Duration.ofSeconds(30))
 	
-mediaPlayer.seekForward(10.seconds)
-val currentTime = mediaPlayer.currentTime	// 40s
+mediaPlayer.seekForward(Duration.ofSeconds(10))
+val currentTime = mediaPlayer.currentTime.seconds	// 40
 ```
 
 <br><br>
@@ -679,14 +679,14 @@ fun seekTo(position: Duration, force: Boolean = false)
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|position|[kotlin.time.Duration](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.time/-duration/)|입력된 파라미터로 재생 위치를 이동합니다.|
+|position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|입력된 파라미터로 재생 위치를 이동합니다.|
 |force|Boolean|강제로 위치를 바꿔야할 때, true로 설정. 기본값은 false입니다.|
 
 \
 사용 예제
 ```kotlin
-mediaPlayer.seekTo(30.seconds)
-val currentTime = mediaPlayer.currentTime	// 30s
+mediaPlayer.seekTo(Duration.ofSeconds(30))
+val currentTime = mediaPlayer.currentTime.seconds	// 30
 ```
 
 <br><br>
