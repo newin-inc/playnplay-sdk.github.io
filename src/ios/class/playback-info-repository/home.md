@@ -54,7 +54,7 @@ public func find(by url: URL) -> PlaybackInfo?
 ```
 |파라미터|타입|반환 타입|설명|
 |:---:|:--:|:--:|---|
-|url|[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)|[PlaybackInfo](../../protocol/playback-info/home.md)?|미디어 uri를 입력하여 재생 정보를 반환|
+|url|[URL](https://developer.apple.com/documentation/foundation/url)|[PlaybackInfo](../../protocol/playback-info/home.md)?|미디어 uri를 입력하여 재생 정보를 반환|
 
 <div align="right">
 참고: <a href="../../protocol/playback-info/home.md">PlaybackInfo</a>

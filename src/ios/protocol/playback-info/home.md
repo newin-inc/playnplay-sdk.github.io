@@ -31,7 +31,7 @@ var artworkUrl: URL? { get }
 ```
 |타입|설명|
 |:--:|:--|
-|[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)|미디어 아이템의 아트워크 주소|
+|[URL](https://developer.apple.com/documentation/foundation/url)|미디어 아이템의 아트워크 주소|
 
 미디어 아이템의 아트워크 경로를 나타내는 속성입니다.
 
@@ -119,7 +119,7 @@ var url: URL { get }
 ```
 |타입|설명|
 |:--:|:--|
-|[URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)|재생 미디어의 주소|
+|[URL](https://developer.apple.com/documentation/foundation/url)|재생 미디어의 주소|
 
 미디어의 주소를 나타내는 속성입니다. 재생 정보 저장소로부터 정보를 가져올 때, 이 미디어 주소를 사용합니다.
 
