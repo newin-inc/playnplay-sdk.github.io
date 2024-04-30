@@ -20,25 +20,34 @@ val MediaItem.DrmConfiguration.userId: String?
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem.DrmConfiguration">MediaItem.DrmConfiguration</a>
 </div>
 
+미디어 아이템의 아래 해당하는 속성에 접근하기 위해서는 아래 자바 코드([MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem).java)를 참고하시면 됩니다.
+
+```java
+public final class MediaItem implements Bundleable {
+    @Nullable public final LocalConfiguration localConfiguration;
+}
+
+public static final class LocalConfiguration implements Bundleable {
+    @Nullable public final DrmConfiguration drmConfiguration;
+}
+```
+
 ## 속성
 
 ### appId
 
 ```kotlin
+import com.newin.nplayer.sdk.extensions.appId
+
 val MediaItem.DrmConfiguration.appId: String?
 ```
 App 아이디를 가져오는 속성입니다.
 
-사용 예제: App 아이디를 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.appId
-
-val appId = mediaItem.localConfiguration?.drmConfiguration?.appId
-```
-
 <br><br>
 ### offlineAccessPeriod
 ```kotlin
+import com.newin.nplayer.sdk.extensions.offlineAccessPeriod
+
 val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
 ```
 <div align="right">
@@ -47,23 +56,9 @@ val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
 </div>
 다운로드 컨텐츠의 오프라인 재생 기간을 가져오는 속성입니다.
 
-사용 예제: 오프라인 재생 허용 기간을 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.offlineAccessPeriod
-
-val offlineAccessPeriod = mediaItem.localConfiguration?.drmConfiguration?.offlineAccessPeriod
-```
-
 <br><br>
 ### userId
 ```kotlin
 val MediaItem.DrmConfiguration.userId: String?
 ```
 사용자 아이디를 가져오는 속성입니다.
-
-사용 예제: 사용자 아이디를 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.userId
-
-val userId = mediaItem.localConfiguration?.drmConfiguration?.userId
-```

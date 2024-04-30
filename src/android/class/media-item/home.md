@@ -68,12 +68,6 @@ val MediaItem.uri: Uri?
 |[Uri](https://developer.android.com/reference/android/net/Uri)?| 미디어 아이템의 주소 | 불가능 |
 
 미디어 아이템에 따라 로컬 주소가 나올 수도 있고, 웹 주소도 나올 수 있습니다.
-```log
-...
-file:///data/user/0/com.xxx.xxx/files/video/test.mp4
-https://example.com/test.mp4
-...
-```
 
 ## 메서드
 
@@ -103,20 +97,6 @@ fun MediaItem.withDrmConfiguration(
 App 아이디와 사용자 아이디를 사용하여 DRM 설정을 하는 메서드입니다.
 Callback URL에 전달할 데이터(사용자 데이터)와 오프라인 재생 기한 설정을 추가하여 DRM 설정을 할 수 있습니다.
 
-<br><br>
-사용 예제: DRM 설정을 한 미디어 아이템을 화면에 재생하는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.withDrmConfiguration
-
-fun openMedia(uri: String) {
-    val mediaItem = MediaItem.fromUri(uri)
-        .withDrmConfiguration(
-            appId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",  // App 아이디
-            userId = "사용자 아이디"
-        )
-    presentMediaPlayer(mediaItem)
-}
-```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="../../how-to-use/home.md#미디어-아이템-구성-예제">미디어 아이템 구성 예제</a>
 </div>

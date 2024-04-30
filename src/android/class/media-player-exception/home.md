@@ -7,7 +7,7 @@ class MediaPlayerException(
     errorCode: Int,
 ) : PlaybackException(message, cause, errorCode)
 ```
-예외 처리를 위한 클래스입니다. [PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)을 확장한 클래스로 아래와 같은 예외 처리 클래스로 사용됩니다.
+예외 처리를 위한 클래스입니다. [PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)을 확장한 클래스로 아래와 같은 예외 처리 클래스로 사용됩니다. 
 
 ```kotlin
 class AccessRightsExpiredException(override val message: String) : MediaPlayerException
@@ -64,24 +64,3 @@ class UnexpectedException(override val message: String, override val cause: Thro
 |SessionNotFoundException|세션을 찾을 수 없는 경우|
 |UnauthorizedException|권한이 없는 경우|
 |UnexpectedException|현재 정의 되지 않은 에러가 발생한 경우|
-
-사용 예제: 예외를 처리하는 예제
-```kotlin
-player.addEventHandler(
-    EventHandler.Error { error ->
-        when (error) {
-            is UnexpectedException -> Log.e(TAG, error.message, error.cause)
-            is NoCellularAccessException -> Log.e(TAG, error.message)
-            ...
-        }
-
-        if (error is AppBundleNotRegisteredException) {
-            Log.e(TAG, error.message)
-        }
-    },
-)
-```
-<div align="right">
-참고: <a href="../../interface/media-player/details.md#addeventhandler">addEventHandler</a>, 
-<a href="../event-handlers/details.md#error">EventHandler.Error</a>
-</div>

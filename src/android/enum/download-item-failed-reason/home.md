@@ -35,23 +35,8 @@ data class DownloadItem {
 
         Unauthorized(MediaPlayerException.ERROR_CODE_UNAUTHORIZED);
 
-        override fun toString(): String
-
     }
 }
 ```
 
 다운로드가 실패한 이유를 나타내는 데이터 클래스입니다. 
-
-## 사용 예제
-다운로드 아이템이 만약 실패했다면, 실패한 이유를 화면에 출력하는 예제.
-```kotlin
-if (item.status == DownloadItem.Status.Failed) {
-    println("Failed: ${item.failedReason}")
-}
-```
-toString() 메서드를 통해서 아래처럼 화면에 출력됩니다.
-```log
-Failed: Access rights expired
-```
-

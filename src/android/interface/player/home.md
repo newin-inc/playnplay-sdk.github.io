@@ -106,16 +106,7 @@ fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
 |activity|Activity|현재 액티비티|
 |sourceView|View?|현재 뷰|
 
-
 화면 속 화면 모드로 전환하는 메서드입니다.
-
-사용 예제: 현재 재생되는 미디어를 화면 속 화면 모드로 전환하는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.enterPictureInPicture
-
-val activity = context.activity() ?: return
-player.enterPictureInPicture(activity, this)
-```
 
 <br><br>
 ### selectTrack

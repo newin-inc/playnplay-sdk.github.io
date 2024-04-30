@@ -16,17 +16,3 @@ buffered 속성에서 사용되는 데이터 클래스입니다.
 |:--:|:--:|--|:--:|
 |start|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 시작 위치 값|O|
 |duration|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 길이 값|O|
-
-<details open>
-<summary>
-    <a href="./details.md#속성">속성</a>
-</summary>
-
-* [val start: Duration](./details.md#start)
-
-* [val end: Duration](./details.md#end)
-
-* [사용 예제](./details.md#사용-예제)
-
-</details>
-<br>

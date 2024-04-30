@@ -38,15 +38,6 @@ fun Context.getMediaPlayer(block: (MediaPlayer) -> Unit)
 
 현재 화면에 있는 플레이어를 제어하고 싶을 때 사용하는 메서드입니다. 미디어 플레이어를 비동기 방식으로 가지고 오기 때문에, 아래의 예를 참고하십시오.
 
-사용 예제: 미디어 플레이어를 잠시 멈추는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.getMediaPlayer
-
-getMediaPlayer { mediaPlayer -> 
-    mediaPlayer.pause()
-}
-```
-
 <br><br>
 ### startMediaPlayerService
 ```kotlin
@@ -58,19 +49,6 @@ fun Context.startMediaPlayerService(appId: String)
 <div align="right">
 참고: <a href="../../how-to-use/home.md#액티비티-구성">액티비티 구성</a>
 </div>
-
-사용 예제: 액티비티에서 서비스를 시작하는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.startMediaPlayerService
-
-class MainActivity : ComponentActivity() {
-	override fun onCreate(savedInstanceState: Bundle?) {
-		super.onCreate(savedInstanceState)
-
-        startMediaPlayerService("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx") // App 아이디
-	}
-}
-```
 
 <br><br>
 ### presentMediaPlayer
@@ -207,18 +185,3 @@ fun Context.presentMediaPlayer(
 |:----:|:---:|----|
 | uri | Uri | [Uri \| Android Developers](https://developer.android.com/reference/android/net/Uri) 참고 |
 |configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|
-
-<br><br>
-### 재생 목록을 사용한 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.presentMediaPlayer
-
-presentMediaPlayer(mediaItems)			// 0번째 아이템부터 시작
-presentMediaPlayer(mediaItems, mediaItems[0])	// 0번째 아이템부터 시작
-presentMediaPlayer(mediaItems, 0)		// 0번째 아이템부터 시작
-
-presentMediaPlayer(mediaItems, configuration)   // 설정한 값으로 0번째 아이템부터 시작
-```
-<div align="right">
-참고: <a href="../media-player-activity-configuration/home.md">MediaPlayerActivityConfiguration</a>
-</div>

@@ -49,11 +49,15 @@ App 아이디는 콘솔에서 설정 > 애플리케이션 > App ID > 보기를 �
 ![](./img/console-app-id-btn.png)
 ![](./img/console-app-id.png)
 
-\
-\
+### 미디어 아이템 구성 예제 
 
 아래처럼, 미디어 아이템을 구성하고 열 수 있습니다.
 ```kotlin
+import androidx.media3.common.MediaItem
+import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
+import com.newin.nplayer.sdk.extensions.presentMediaPlayer
+import com.newin.nplayer.sdk.extensions.withDrmConfiguration
+
 Button(
 	onClick = { 
 		// uri를 입력 받아서 아이템을 만듭니다. 이때, 반드시 DRM 설정을 합니다.
@@ -62,17 +66,24 @@ Button(
 				appId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx", // App 아이디
 				userId = "사용자 아이디"
 			)
-		// 미디어를 엽니다.
-		presentMediaPlayer(mediaItem)
+
+		// 백그라운드 재생을 허용하게 설정합니다.
+        val configuration = MediaPlayerActivityConfiguration.defaultConfiguration
+        configuration.allowsBackgroundPlayback = true
+
+        // 미디어를 엽니다.
+		presentMediaPlayer(mediaItem, configuration)
 	}
 ) {
 	Text("Open player")
 }
 ```
 <div align="right">
-참고: <a href="../class/context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="../class/media-player-activity-configuration/home.md#defaultconfiguration">defaultConfiguration</a>, 
+<a href="../class/media-player-activity-configuration/home.md#allowsbackgroundplayback">allowsBackgroundPlayback</a>, 
+<a href="../class/media-item/home.md#withdrmconfiguration">withDrmConfiguration</a>, 
+<a href="../class/context/home.md#presentmediaplayer">presentMediaPlayer()</a>
 </div>
-
 
 ## startMediaPlayerService
 

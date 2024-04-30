@@ -25,20 +25,3 @@ data class MediaPlayerActivityConfiguration(
 <div align="right">
 참고: <a href="../../class/media-player-activity-configuration/home.md">MediaPlayerActivityConfiguration</a>
 </div>
-
-## 사용 예제
-미디어 플레이어의 화면 방향을 가로 방향으로 고정하고, 미디어 아이템을 재생하는 예제
-
-```kotlin
-import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
-import com.newin.nplayer.sdk.extensions.presentMediaPlayer
-
-val configuration = MediaPlayerActivityConfiguration(
-    screenOrientationLock = ScreenOrientationLock.Landscape
-)
-
-presentMediaPlayer(mediaItem, configuration)
-```
-<div align="right">
-참고: <a href="../../class/context/home.md#presentmediaplayer">presentMediaPlayer()</a>
-</div>

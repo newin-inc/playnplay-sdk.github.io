@@ -5,7 +5,13 @@ import com.newin.nplayer.sdk.utils.TimeRanges
 ```
 
 ```kotlin
-data class TimeRanges(private val ranges: ArrayList<TimeRange>)
+data class TimeRanges(private val ranges: ArrayList<TimeRange>) {
+
+    val length: Int
+
+    fun start(index: Int)
+    fun end(index: Int): Duration
+}
 ```
 
 buffered 속성에서 사용되는 데이터 클래스다.
@@ -17,26 +23,34 @@ buffered 속성에서 사용되는 데이터 클래스다.
 |:--:|:--:|--|:--:|
 |ranges|ArrayList\<[TimeRange](#timerange)\>|구간 범위 값들의 array list|O|
 
-<details open>
-<summary>
-    <a href="./details.md#속성">속성</a>
-</summary>
+## 속성
 
-* [val length: Int](./details.md#length)
+### length
+```kotlin
+val length: Int
+```
+|타입|설명|
+|:--:|--|
+|Int|구간 범위 값들의 개수를 반환|
 
-</details>
-<br>
+<br><br><br>
+------
+------
+## 메서드
 
-<details open>
-<summary>
-    <a href="./details.md#메서드">메서드</a>
-</summary>
+### start
+```kotlin
+fun start(index: Int): Duration
+```
+|파라미터|타입|반환 타입|설명|
+|:--:|:--:|:--:|--|
+|index|Int|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|index 번째 데이터의 구간 시작 위치를 반환|
 
-* [fun start(index: Int): Duration](./details.md#start)
-
-* [fun end(index: Int): Duration](./details.md#end)
-
-* [사용 예제](./details.md#사용-예제)
-
-</details>
-<br>
+<br><br>
+### end
+```kotlin
+fun end(index: Int): Duration
+```
+|파라미터|타입|반환 타입|설명|
+|:--:|:--:|:--:|--|
+|index|Int|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|index 번째 데이터의 구간 종료 위치를 반환|

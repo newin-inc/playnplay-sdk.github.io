@@ -73,13 +73,6 @@ val androidx.media3.common.MediaMetadata.expiresOn: java.time.Instant?
 <text style="color:red;">Deprecated: </text><a href="../playback-info/home.md">PlaybackInfo</a>의 
 <a href="../playback-info/home.md#expireson">expiresOn</a>을 사용하세요.
 
-사용 예제: 미디어의 만료 일시를 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.expiresOn
-
-val expiresOn = mediaItem.mediaMetadata.expiresOn
-```
-
 <br><br>
 ### lastPlayedTime
 ```kotlin
@@ -93,20 +86,6 @@ val androidx.media3.common.MediaMetadata.lastPlayedTime: Duration?
 
 <text style="color:red;">Deprecated: </text><a href="../playback-info/home.md">PlaybackInfo</a>의 
 <a href="../playback-info/home.md#lastplayedtime">lastPlayedTime</a>을 사용하세요.
-
-사용 예제: 미디어의 마지막 재생 위치를 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.lastPlayedTime
-
-val expiresOn = mediaItem.mediaMetadata.lastPlayedTime
-
-println(expiresOn)
-```
-
-실행 후 다음과 같은 결과를 볼 수 있습니다.
-```log
-4m 13.445s
-```
 
 <br><br>
 ### duration
@@ -122,20 +101,6 @@ val androidx.media3.common.MediaMetadata.duration: Duration?
 <text style="color:red;">Deprecated: </text><a href="../playback-info/home.md">PlaybackInfo</a>의 
 <a href="../playback-info/home.md#duration">duration</a>을 사용하세요.
 
-사용 예제: 미디어의 전체 길이를 가져오는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.duration
-
-val duration = mediaItem.mediaMetadata.duration
-
-println(duration.seconds)
-```
-
-실행 후 다음과 같은 결과를 볼 수 있습니다.
-```log
-1808
-```
-
 <br><br>
 ## 메서드
 
@@ -149,18 +114,18 @@ public MediaMetadata.Builder buildUpon()
 </div>
 
 <br><br>
-### 사용 예제: 미디어 메타 데이터의 타이틀을 바꾸는 예제
-```kotlin
-fun renameMediaItem(mediaItem: MediaItem, name: String): MediaItem {
-    val builder = mediaItem.buildUpon()
-    builder.setMediaMetadata(
-        mediaItem.mediaMetadata.buildUpon().setTitle(name).build()
-    )
-    return builder.build()
-}
+## 클래스
 
-val mediaItem = renameMediaItem(oldMediaItem, "New Title")
+### Builder
+```java
+public static final class Builder
 ```
+
+미디어 메타데이터를 만드는 클래스입니다.
+
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem.Builder#setMediaMetadata(androidx.media3.common.MediaMetadata)">setMediaMetadata</a>
+참고: 
+<a href="https://developer.android.com/reference/kotlin/androidx/media3/common/MediaMetadata.Builder">MediaMetadata.Builder</a>
 </div>
+
+

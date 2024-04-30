@@ -6,8 +6,6 @@ sealed class Track(
 ) {
     val format: Format
     val isSelected: Boolean
-
-    override fun toString(): String
 }
 ```
 <div align="right">
@@ -47,11 +45,3 @@ val format: Format
 val isSelected: Boolean
 ```
 현재 트랙이 선택되었는지 여부를 나타내는 속성입니다.
-
-## 메서드
-
-### toString
-```kotlin
-override fun toString(): String
-```
-현재 트랙을 문자열로 표시해주는 메서드입니다.

@@ -6,6 +6,7 @@ import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 
 ```kotlin
 data class MediaPlayerActivityConfiguration(
+
     var allowsBackgroundPlayback: Boolean,
     var allowsCellularAccess: Boolean,
     var allowsPictureInPicturePlayback: Boolean,
@@ -16,18 +17,24 @@ data class MediaPlayerActivityConfiguration(
     var screenOrientationLock: ScreenOrientationLock,
 ) {
     enum class ScreenOrientationLock {
+
         Portrait,
         Landscape,
         Off
     }
 
     companion object {
+
         val defaultConfiguration = MediaPlayerActivityConfiguration()
     }
 }
 ```
 
-미디어 플레이어의 설정을 도와주는 데이터 클래스입니다. 아래와 같은 생성자 파라미터 및 속성, 열거형을 가지고 있습니다.
+미디어 플레이어의 설정을 도와주는 데이터 클래스입니다. 아래와 같은 생성자 파라미터 및 속성, 열거형을 가지고 있습니다. configuration은 [presentMediaPlayer()](../context/home.md#presentmediaplayer)를 호출할 때 사용하여 미디어 플레이어를 설정합니다.
+<div align="right">
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>, 
+<a href="../../how-to-use/home.md#미디어-아이템-구성-예제">미디어 아이템 구성 예제</a>
+</div>
 
 ## 생성자 파라미터
 |이름|타입|설명|필수|기본값|
@@ -41,71 +48,127 @@ data class MediaPlayerActivityConfiguration(
 |seekForwardIncrement|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 후로 이동하는 시간의 크기|X|10초|
 |screenOrientationLock|ScreenOrientationLock|화면 고정 방향|X|Off|
 
-### 사용 예제
-미디어 재생 속도를 1.5배로 지정하고(나머지는 기본값) 미디어 아이템을 재생하는 예제
+## defaultConfiguration
 ```kotlin
-import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
-import com.newin.nplayer.sdk.extensions.presentMediaPlayer
-
-val configuration = MediaPlayerActivityConfiguration(
-    defaultPlaybackRate = 1.5f
-)
-presentMediaPlayer(mediaItem, configuration)
+companion object {
+    val defaultConfiguration: MediaPlayerActivityConfiguration
+}
 ```
-<div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
-</div>
+기본 설정 값을 가져오는 속성입니다. MediaPlayerActivityConfiguration.defaultConfiguration 를 사용하여 기본 설정 값을 가져올 수 있습니다.
+
+# 속성
+
+## allowsBackgroundPlayback
+```kotlin
+var allowsBackgroundPlayback: Boolean = false
+```
+
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Boolean|백그라운드 재생을 허용할 지 여부|가능|false|
+
+백그라운드 재생을 허용할 지 여부를 나타내는 속성입니다.
 
 <br><br>
-탐색 시간을 5초로 설정하고(나머지는 기본값) 미디어 아이템을 재생하는 예제
+## allowsCellularAccess
 ```kotlin
-import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
-import com.newin.nplayer.sdk.extensions.presentMediaPlayer
-
-val configuration = MediaPlayerActivityConfiguration(
-    seekBackwardIncrement = Duration.ofSeconds(5), 
-    seekForwardIncrement = Duration.ofSeconds(5)
-)
-presentMediaPlayer(mediaItem, configuration)
+var allowsCellularAccess: Boolean = true
 ```
-<div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
-</div>
 
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Boolean|셀룰러 데이터 사용을 허용할 지 여부|가능|true|
+
+미디어를 재생할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
 
 <br><br>
-<details open>
-<summary>
-    <a href="./details.md#속성">속성</a>
-</summary>
+## allowsPictureInPicturePlayback
+```kotlin
+var allowsPictureInPicturePlayback: Boolean = true
+```
 
-* [var allowsBackgroundPlayback: Boolean](./details.md#allowsbackgroundplayback)
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Boolean|화면 속 화면 모드를 허용할 지 여부|가능|true|
 
-* [var allowsCellularAccess: Boolean](./details.md#allowsbackgroundplayback)
+화면 속 화면 모드를 허용할 지 여부를 나타내는 속성입니다.
 
-* [var allowsPictureInPicturePlayback: Boolean](./details.md#allowspictureinpictureplayback)
+<br><br>
+## controllerShowTimeout
+```kotlin
+var controllerShowTimeout: Duration = Duration.ofSeconds(5)
+```
+| 타입 | 설명 | 설정 | 기본값 |
+|:----:|---|:---:|:---:|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|컨트롤러를 자동으로 숨기는 시간| 가능 | 5초 |
 
-* [var controllerShowTimeout: Duration](./details.md#controllershowtimeout)
+해당 시간만큼 아무 것도 입력하지 않으면 컨트롤러가 사라집니다. 0초로 설정할 경우에는 컨트롤러를 자동으로 숨기지 않습니다.
 
-* [var defaultPlaybackRate: Float](./details.md#defaultplaybackrate)
+<br><br>
+## defaultPlaybackRate
+```kotlin
+var defaultPlaybackRate: Float = 1f
+```
+|타입|설명|설정|범위|기본값|
+|:--:|--|:--:|:--:|:--:|
+|Float|미디어의 기본 재생 속도|가능|0.1~4.0|1.0|
 
-* [var seekBackwardIncrement: Duration](./details.md#seekbackwardincrement)
+미디어 재생 속도를 나타내는 속성입니다.
 
-* [var seekForwardIncrement: Duration](./details.md#seekforwardincrement)
+<br><br>
+## seekBackwardIncrement
+```kotlin
+var seekBackwardIncrement: Duration = Duration.ofSeconds(10)
+```
+| 타입 | 설명 | 설정 | 기본값 |
+|:----:|---|:---:|:---:|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
 
-* [var screenOrientationLock: ScreenOrientationLock](./details.md#screenorientationlock)
+현재 위치에서 전으로 탐색하는 시간을 나타내는 속성입니다.
 
-* [val defaultConfiguration: MediaPlayerActivityConfiguration](./details.md#defaultconfiguration)
+<br><br>
+## seekForwardIncrement
+```kotlin
+var seekForwardIncrement: Duration = Duration.ofSeconds(10)
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
 
-</details>
-<br>
+현재 위치에서 후로 탐색하는 시간을 나타내는 속성입니다.
 
-<details open>
-<summary>
-    <a href="./details.md#열거형">열거형</a>
-</summary>
+<br><br>
+## screenOrientationLock
+```kotlin
+var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off
+```
 
-* [enum class ScreenOrientationLock](./details.md#screenorientationlock)
-    
-</details>
-<br>
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|[ScreenOrientationLock](#screenorientationlock-1)|화면 방향 고정 상태|가능|Off|
+
+<div align="right">
+참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+<a href="#screenorientationlock-1">ScreenOrientationLock</a>
+</div>
+
+화면의 고정 상태를 나타내는 속성입니다.
+
+<br><br>
+# 열거형
+
+## ScreenOrientationLock
+
+```kotlin
+enum class ScreenOrientationLock {
+    Portrait,
+    Landscape,
+    Off
+}
+```
+
+화면 방향 고정 상태를 나타내는 열거형입니다.
+<div align="right">
+참고: <a href="../../enum/media-player-activity-configuration-screen-orientation-lock/home.md">MediaPlayerActivityConfiguration.ScreenOrientationLock</a>
+</div>
+

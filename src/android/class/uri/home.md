@@ -20,14 +20,8 @@ fun Uri.toMediaItem(): MediaItem
 fun Uri.toMediaItem(): MediaItem
 ```
 
-사용 예제: Uri를 받아서 재생하는 예제
-```kotlin
-import com.newin.nplayer.sdk.extensions.toMediaItem
+미디어 아이템으로 만드는 메서드입니다.
 
-val mediaItem = uri.toMediaItem()
-
-presentMediaPlayer(mediaItem)
-```
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">MediaItem</a>
 </div>

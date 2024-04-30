@@ -16,14 +16,6 @@ data class DurationChange(val listener: (Duration) -> Unit) : EventHandler()
 참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.DurationChange {
-    updateTimeBar(it)
-})
-```
-
 <br><br>
 ## Emptied
 
@@ -35,14 +27,6 @@ data class Emptied(val listener: () -> Unit) : EventHandler()
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onemptied">onEmptied()</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Emptied {
-    hideMedia()
-})
-```
 
 <br><br>
 ## Ended
@@ -56,14 +40,6 @@ data class Ended(val listener: () -> Unit) : EventHandler()
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onended">onEnded()</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Ended {
-    finish()
-})
-```
-
 <br><br>
 ## Error
 
@@ -72,22 +48,15 @@ data class Error(val listener: (PlaybackException) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
 |:--:|:--|
-|PlaybackException|재생 오류가 발생했을 때 예외|
+|[PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)|재생 오류가 발생했을 때 예외|
 
 에러가 발생하여 리소스를 로드할 수 없을 때 사용하기 위한 핸들러입니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onerror">onError()</a><br>
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">PlaybackException</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">PlaybackException</a>,
+<a href="../media-player-exception/home.md">MediaPlayerException</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Error {
-    handleError(it.errorCode)
-})
-```
 
 <br><br>
 ## LoadedData
@@ -96,19 +65,11 @@ mediaPlayer.addEventHandler(EventHandler.Error {
 data class LoadedData(val listener: () -> Unit) : EventHandler()
 ```
 미디어 트랙이 로딩되었을 때 사용하기 위한 핸들러입니다.
-(참고. 해당 이벤트 처리 이전에 LoadedMetadata 이벤트를 처리함)
+(참고. 해당 이벤트 처리 이전에 [LoadedMetadata](#loadedmetadata) 이벤트를 처리함)
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onloadeddata">onLoadedData()</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.LoadedData {
-    val audioTracks = mediaPlayer.audioTracks	// 오디오 트랙들
-})
-```
 
 <br><br>
 ## LoadedMetadata
@@ -117,19 +78,11 @@ mediaPlayer.addEventHandler(EventHandler.LoadedData {
 data class LoadedMetadata(val listener: () -> Unit) : EventHandler()
 ```
 메타데이터가 로딩되었을 때 사용하기 위한 핸들러입니다.
-(참고. 해당 이벤트 처리 이후 LoadedData 이벤트를 처리함)
+(참고. 해당 이벤트 처리 이후 [LoadedData](#loadeddata) 이벤트를 처리함)
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onloadedmetadata">onLoadedMetadata() </a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.LoadedMetadata {
-    val title = mediaPlayer.mediaMetadata.title // 미디어 타이틀
-})
-```
 
 <br><br>
 ## LoadStart
@@ -142,14 +95,6 @@ data class LoadStart(val listener: () -> Unit) : EventHandler()
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onloadstart">onLoadStart()</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.LoadStart {
-    displayScreen()
-})
-```
-
 <br><br>
 ## MediaItemTransition
 
@@ -161,21 +106,13 @@ data class MediaItemTransition(val listener: (MediaItem?, @Player.MediaItemTrans
 |[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|미디어 아이템|
 |[@Player.MediaItemTransitionReason](https://developer.android.com/reference/androidx/media3/common/Player.MediaItemTransitionReason) Int|미디어 아이템 교체 이유|
 
-미디어 아이템이 교체 되는 시점에 사용하기 위한 핸들러입니다. 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onMediaItemTransition(androidx.media3.common.MediaItem,int))에서 제공하는 것을 사용하시면 됩니다.
+미디어 아이템이 교체 되는 시점에 사용하기 위한 핸들러입니다.<br> 
+참고: 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onMediaItemTransition(androidx.media3.common.MediaItem,int))에서 제공하는 것을 사용하시면 됩니다.
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">MediaItem</a><br>
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player.MediaItemTransitionReason">MediaItemTransitionReason</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.MediaItemTransition {
-    mediaItem, _ -> 
-        displayItem(mediaItem)
-})
-```
 
 <br><br>
 ## Pause
@@ -188,18 +125,6 @@ data class Pause(val listener: () -> Unit) : EventHandler()
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onpause">onPause()</a><br>
 비교: <a href="#play">Play</a>
 </div>
-
-```kotlin
-data class Pause(val listener: () -> Unit)
-```
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Pause {
-    displayPlayIcon()
-})
-```
 
 <br><br>
 ## Play
@@ -218,14 +143,6 @@ EventHandler.Playing과 다른 점은 seekTo() 등을 통해 재생 위치가 �
 비교: <a href="#pause">Pause</a><br>
 참고: <a href="#playing">Playing</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Play {
-    displayPauseIcon()
-})
-```
 
 <br><br>
 ## PlaybackFinish
@@ -258,26 +175,12 @@ data class PlaybackStateChange(val listener: (@Player.State Int) -> Unit) : Even
 |:--:|:--|
 |[@Player.State](https://developer.android.com/reference/androidx/media3/common/Player.State) Int|재생 상태|
 
-미디어 로딩 상태에 따른 처리, 즉, 버퍼링인지 준비가 된 상태인지, 끝이 났는지, 플레이어를 종료하였는지 등의 상황에 따라 처리하기 위한 핸들러입니다. 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onPlaybackStateChanged(int))에서 제공하는 것을 사용하시면 됩니다.
+미디어 로딩 상태에 따른 처리, 즉, 버퍼링인지 준비가 된 상태인지, 끝이 났는지, 플레이어를 종료하였는지 등의 상황에 따라 처리하기 위한 핸들러입니다.<br>
+참고: 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onPlaybackStateChanged(int))에서 제공하는 것을 사용하시면 됩니다.
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player.State">Player.State</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(
-    EventHandler.PlaybackStateChange { playbackState in
-        when (playbackState) {
-            Player.STATE_BUFFERING -> TODO()
-            Player.STATE_READY -> TODO()
-            Player.STATE_IDLE -> TODO()
-            Player.STATE_ENDED -> TODO() 
-        }
-    }
-)
-```
 
 <br><br>
 ## Playing
@@ -294,19 +197,6 @@ Playing과 관련된 이벤트 핸들러는 Play 이벤트 이후에 호출됩�
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onplaying">onPlaying()</a><br>
 참고: <a href="#play">Play</a>
 </div>
-
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Playing {
-    removeBufferingText()	// 버퍼링 텍스트 제거
-})
-
-mediaPlayer.addEventHandler(EventHandler.Play {
-    displayPauseIcon()		// 아이콘 변경
-})
-
-mediaPlayer.play() // 아이콘을 변경 한 후, 버퍼링 텍스트를 제거합니다.
-```
 
 <br><br>
 ## PositionDiscontinuity
@@ -330,15 +220,6 @@ data class PositionDiscontinuity(
 참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.PositionDiscontinuity {
-    _mediaPlayer, oldPosition, newPosition ->
-        _mediaPlayer.updateStatusText("${oldPosition.seconds} -> ${newPosition.seconds}")   // 157 -> 432	
-})
-```
-
 <br><br>
 ## Progress
 
@@ -351,14 +232,6 @@ data class Progress(val listener: () -> Unit) : EventHandler()
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onprogress">onProgress()</a><br>
 비교: <a href="#suspend">Suspend</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Progress {
-    removeWaitText()
-})
-```
 
 <br><br>
 ## RateChange
@@ -379,14 +252,6 @@ data class RateChange(val listener: (Float) -> Unit) : EventHandler()
 참고: <a href="../../interface/media-player/details.md#playbackrate">playbackRate</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.RateChange {
-    val currentPlaybackRate = it	// 예: 2.0f
-})
-```
-
 <br><br>
 ## RepeatModeChange
 
@@ -398,19 +263,12 @@ data class RepeatModeChange(val listener: (@Player.RepeatMode Int) -> Unit) : Ev
 |:--:|:--|
 |[@Player.RepeatMode](https://developer.android.com/reference/kotlin/androidx/media3/common/Player.RepeatMode) Int|반복 모드|
 
-반복 모드가 변경되는 시점에 사용하기 위한 핸들러입니다. 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onRepeatModeChanged(int))에서 제공하는 것을 사용하시면 됩니다.
+반복 모드가 변경되는 시점에 사용하기 위한 핸들러입니다. <br>
+참고: 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onRepeatModeChanged(int))에서 제공하는 것을 사용하시면 됩니다.
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player.RepeatMode">Player.RepeatMode</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.RepeatModeChange {
-    showRepeatIcon(it)
-})
-```
 
 <br><br>
 ## RepeatRangeChange
@@ -428,15 +286,6 @@ data class RepeatRangeChange(val listener: (MediaPlayer.RepeatRange?) -> Unit) :
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onrepeatrangechange">onRepeatRangeChange()</a><br>
 참고: <a href="../media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.RepeatRangeChange {
-    val repeatA = it?.start
-    val repeatB = it?.end
-})
-```
 
 <br><br>
 ## ResizeModeChange
@@ -456,14 +305,6 @@ data class ResizeModeChange(val listener: (@ResizeMode Int) -> Unit) : EventHand
 참고: <a href="https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode">AspectRatioFrameLayout.ResizeMode</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.ResizeModeChange {
-    val currentResizeMode = it
-})
-```
-
 <br><br>
 ## Seeked
 
@@ -476,14 +317,6 @@ seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, �
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onseeked">onSeeked()</a><br>
 비교: <a href="#seeking">Seeking</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Seeked {
-    assert(mediaPlayer.seeking, false)
-})
-```
 
 <br><br>
 ## Seeking
@@ -498,14 +331,6 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 비교: <a href="#seeked">Seeked</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Seeking {
-    assert(mediaPlayer.seeking, true)
-})
-```
-
 <br><br>
 ## Suspend
 
@@ -518,14 +343,6 @@ data class Suspend(val listener: () -> Unit) : EventHandler()
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onsuspend">onSuspend()</a><br>
 비교: <a href="#progress">Progress</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Suspend {
-    displayWaitText()
-})
-```
 
 <br><br>
 ## TimeUpdate
@@ -544,15 +361,6 @@ data class TimeUpdate(val listener: (Duration) -> Unit) : EventHandler()
 참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.TimeUpdate {
-    updateTimeBar(it)
-    updateTimeLeft(it)
-})
-```
-
 <br><br>
 ## VideoSizeChange
 
@@ -564,21 +372,14 @@ data class VideoSizeChange(val listener: (VideoSize) -> Unit) : EventHandler()
 |:--:|:--|
 |[VideoSize](https://developer.android.com/reference/androidx/media3/common/VideoSize)|영상 사이즈|
 
-영상 크기가 바뀌는 시점에 사용하기 위한 핸들러입니다. 다음 영상으로 이동할 때, 영상 크기가 0x0으로 바뀌었다가 다음 영상의 크기로 바뀌게 되는데, 0x0으로 바뀔 때도 해당 이벤트는 호출됩니다. 즉, 다음 영상으로 이동할 경우, 이 핸들러는 두 번 호출 됩니다. 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onVideoSizeChanged(androidx.media3.common.VideoSize))에서 제공하는 것을 사용하시면 됩니다.
+영상 크기가 바뀌는 시점에 사용하기 위한 핸들러입니다. 다음 영상으로 이동할 때, 영상 크기가 0x0으로 바뀌었다가 다음 영상의 크기로 바뀌게 되는데, 0x0으로 바뀔 때도 해당 이벤트는 호출됩니다. 즉, 다음 영상으로 이동할 경우, 이 핸들러는 두 번 호출 됩니다.<br>
+참고: 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onVideoSizeChanged(androidx.media3.common.VideoSize))에서 제공하는 것을 사용하시면 됩니다.
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/VideoSize">VideoSize</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.VideoSizeChange {
-    val sizeText = "${it.width}x${it.height}"	
-})
-```
-
---------
+<br><br>
 ## VolumeChange
 
 ```kotlin
@@ -596,15 +397,6 @@ data class VolumeChange(val listener: (Float, Boolean) -> Unit) : EventHandler()
 참고: <a href="../../interface/media-player/details.md#devicevolume">deviceVolume</a>
 </div>
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.VolumeChange {
-    volume, muted ->
-        updateVolumeView(volume, muted)
-})
-```
-
 <br><br>
 ## Waiting
 
@@ -616,12 +408,3 @@ data class Waiting(val listener: () -> Unit) : EventHandler()
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onwaiting">onWaiting()</a>
 </div>
-
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Waiting {
-    displayAlert("Try it again, later!")
-})
-```
-

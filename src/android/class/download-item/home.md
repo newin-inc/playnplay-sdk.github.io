@@ -16,45 +16,102 @@ data class DownloadItem(
     enum class Status(val value: String)
     data class Progress(val downloadedSize: Long, val fileSize: Long)
     enum class FailedReason(val value: Int)
-    override fun toString(): String
 }
 ```
 <div align="right">
 참고: <a href="./details.md#id">DownloadItemId</a>, 
 <a href="../../enum/download-item-status/home.md">Status</a>,
-<a href="../../class/download-item-progress/home.md">Progress</a>
+<a href="../../class/download-item-progress/home.md">Progress</a>, 
+<a href="../../enum/download-item-failed-reason/home.md">FailedReason</a>
 </div>
 
 다운로드 아이템을 나타내는 데이터 클래스입니다. 다운로드에 대한 정보, 진행 상태 등의 정보를 가지고 있습니다.
 
-<details open>
-<summary>
-    <a href="./details.md#속성">속성</a>
-</summary>
+## id
+```kotlin
+val id: DownloadItemId
+```
+|타입|설명|
+|:--:|:--|
+|Id|다운로드 아이템의 고유 아이디|
 
-* [val id: DownloadItemId](./details.md#id)
+다운로드 아이템의 고유의 아이디입니다. 다운로드를 일시정지하거나, 다시 시작할 때, 삭제할 때 등에 사용됩니다. 이때, Id는 value class로 아래와 같습니다.
 
-* [val displayPath: String](./details.md#displaypath)
+```kotlin
+typealias DownloadItemId = UUID
+```
+<div align="right">
+참고: <a href="https://developer.android.com/reference/kotlin/java/util/UUID">UUID</a>
+</div>
 
-* [val fromUri: Uri](./details.md#fromuri)
+## displayPath
+```kotlin
+val displayPath: String
+```
+|타입|설명|
+|:--:|:--|
+|String|다운로드된 아이템이 저장되는 상대 경로. 이때 상대 경로는 [downloadsUri](../download-manager/home.md#downloadsuri)를 기준으로 함|
+<div align="right">
+비교: <a href="#touri">toUrl</a><br>
+참고: <a href="../download-manager/home.md#downloadsuri">downloadsUri</a>
+</div>
 
-* [val toUri: Uri](./details.md#touri)
+## fromUri
+```kotlin
+val fromUri: Uri
+```
+|타입|설명|
+|:--:|:--|
+|[Uri](https://developer.android.com/reference/android/net/Uri)|아이템을 가져올 주소|
 
-* [val status: Status](./details.md#status)
+다운로드할 아이템의 주소입니다.
 
-* [val progress: Progress?](./details.md#progress)
+## toUri
+```kotlin
+val toUri: Uri
+```
+|타입|설명|
+|:--:|:--|
+|[Uri](https://developer.android.com/reference/android/net/Uri)|다운로드된 아이템이 저장되는 절대 경로|
+<div align="right">
+비교: <a href="#displaypath">displayPath</a>
+참고: <a href="../download-manager/home.md#downloadsuri">downloadsUri</a>
+</div>
 
-* [val failedReason: FailedReason?](./details.md#failedreason)
-    
-</details>
-<br>
+다운로드된 아이템이 저장되는 절대 경로입니다.<br>
 
-<details open>
-<summary>
-    <a href="./details.md#메서드">메서드</a>
-</summary>
+## status
+```kotlin
+val status: Status
+```
+|타입|설명|
+|:--:|:--|
+|[Status](../../enum/download-item-status/home.md)|다운로드 아이템의 현재 상태|
 
-* [fun toString(): String](./details.md#tostring)
+<div align="right">
+참고: <a href="../../enum/download-item-status/home.md">DownloadItem.Status</a>
+</div>
 
-</details>
-<br>
+## progress
+```kotlin
+val progress: Progress?
+```
+|타입|설명|
+|:--:|:--|
+|[Progress](../download-item-progress/home.md)?|다운로드 아이템의 다운로드 진행을 나타냅니다.|
+
+<div align="right">
+참고: <a href="../download-item-progress/home.md">Progress</a>
+</div>
+
+## failedReason
+```kotlin
+val failedReason: FailedReason?
+```
+|타입|설명|
+|:--:|:--|
+|[FailedReason](../../enum/download-item-failed-reason/home.md)?|다운로드가 실패한 이유|
+
+<div align="right">
+참고: <a href="../../enum/download-item-failed-reason/home.md">DownloadItem.FailedReaseon</a>
+</div>

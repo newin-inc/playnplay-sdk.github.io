@@ -34,14 +34,6 @@ val buffered: TimeRanges
 |:---:|---|:---:|
 |[com.newin.nplayer.<br>sdk.utils.TimeRanges](../../class/time-ranges/home.md)| 현재 버퍼에 담고 있는 미디어 리소스의 구간 데이터 | 불가능 |
 
-\
-사용 예제
-```kotlin
-val start = mediaPlayer.buffered.start(0)	// 첫 번째 timeRange의 시작 위치
-val end = mediaPlayer.buffered.end(0)		// 첫 번째 timeRange의 종료 위치
-```
-이때, 사용되는 start(index)와 end(index)의 타입은 [java.time.Duration](https://developer.android.com/reference/java/time/Duration)입니다.
-
 <br><br>
 ## currentMediaItem
 
@@ -78,14 +70,6 @@ val currentSrc: Uri?
 |:---:|----|:---:|:---:|
 |[android.net.Uri](https://developer.android.com/reference/android/net/Uri)? | 설정 시, 교체할 미디어 아이템의 Uri<br>반환 시, 현재 선택된 미디어 아이템의 Uri | 가능 | null |
 
-\
-사용 예제
-```kotlin
-mediaPlayer.currentSrc = "https://example.com/media.mp4"
-
-val currentUri = mediaPlayer.currentSrc // "https://example.com/media.mp4"
-```
-
 <br><br>
 ## currentTime
 
@@ -97,14 +81,6 @@ var currentTime: Duration
 | 타입 | 설명 | 설정 |
 |:---:|----|:---:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)| 설정 시, 재생하고 싶은 특정 위치<br>반환 시, 현재 재생 시점| 가능 |
-
-\
-사용 예제
-```kotlin
-mediaPlayer.currentTime = Duration.ofSeconds(20) // 20초로 가기
-
-val currentTime = mediaPlayer.currentTime.seconds // 20
-```
 
 <br><br>
 ## defaultMuted
@@ -118,12 +94,6 @@ var defaultMuted: Boolean
 |:---:|---|:---:|:---:|
 |Boolean |음소거 기본 설정 상태|가능|false|
 
-\
-사용 예제
-```kotlin
-mediaPlayer.defaultMuted = true
-```
-
 <br><br>
 ## defaultPlaybackRate
 
@@ -135,12 +105,6 @@ var defaultPlaybackRate: Float
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
 |Float|미디어의 기본 재생 속도|가능|0.1~4.0|1.0|
-
-\
-사용 예제
-```kotlin
-mediaPlayer.defaultPlaybackRate = 2.0f
-```
 
 <br><br>
 ## deviceVolume
@@ -154,12 +118,6 @@ var deviceVolume: Float
 |:--:|--|:--:|:--:|
 |Float|현재 미디어의 음량|0.0~1.0|가능|
 
-\
-사용 예제
-```kotlin
-mediaPlayer.deviceVolume = 1.0f // 100%의 음량
-```
-
 <br><br>
 ## duration
 
@@ -171,12 +129,6 @@ val duration: Duration
 |타입|설명|설정|
 |:--:|--|:--:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 미디어의 전체 길이|불가능|
-
-\
-사용 예제
-```kotlin
-val duration = mediaPlayer.duration.seconds // 212
-```
 
 <br><br>
 ## ended
@@ -190,14 +142,6 @@ val ended: Boolean
 |:--:|--|:--:|
 |Boolean|미디어 재생 완료 여부를 반환|불가능|
 
-\
-사용 예제
-```kotlin
-if (mediaPlayer.ended) {
-    finish()
-}
-```
-
 <br><br>
 ## error
 
@@ -210,13 +154,10 @@ val error: PlaybackException?
 |:--:|--|:--:|
 |[PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)?|최근에, 즉, 마지막으로 발생한 에러. 발생한 에러가 없을 경우 null을 반환|불가능|
 
-\
-사용 예제
-```kotlin
-when(mediaPlayer.error?.errorCode) {
-    ERROR_CODE_TIMEOUT -> /** handle the case */
-}
-```
+<div align="right">
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">PlaybackException</a>, 
+<a href="../../class/media-player-exception/home.md">MediaPlayerException</a>
+</div>
 
 <br><br>
 ## loop
@@ -230,12 +171,6 @@ var loop: Boolean
 |:--:|--|:--:|:--:|
 |Boolean|미디어 반복 재생 여부를 결정하는 값|가능|false|
 
-\
-사용 예제
-```kotlin
-mediaPlayer.loop = true
-```
-
 <br><br>
 ## mediaItems
 
@@ -248,15 +183,6 @@ val mediaItems: List<MediaItem>
 |:--:|--|:--:|:--:|
 |List\<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)\>|현재 재생 목록에 있는 미디어 아이템들|불가능|[]|
 
-\
-사용 예제
-```kotlin
-val mediaItems = mediaPlayer.mediaItems // 현재 미디어 아이템들을 나타냅니다
-
-val newMediaItems = mediaItems.slice(3..8)  // index 3이상 8이하 아이템만 잘라내고
-mediaPlayer.setMediaItems(newMediaItems)    // 잘라낸 아이템으로 목록 교체
-```
-
 <br><br>
 ## muted
 
@@ -268,14 +194,6 @@ var muted: Boolean
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Boolean|오디오 음소거 여부|가능|false|
-
-\
-사용 예제
-```kotlin
-button.setOnClickListener {
-    mediaPlayer.muted = !mediaPlayer.muted
-}
-```
 
 <br><br>
 ## paused
@@ -293,14 +211,6 @@ val paused: Boolean
 |:--:|--|:--:|
 |Boolean|미디어 일시 정지 여부|불가능|
 
-\
-사용 예제
-```kotlin
-if (mediaPlayer.paused) {
-    displayPlayButton()
-}
-```
-
 <br><br>
 ## playbackRate
 
@@ -312,12 +222,6 @@ var playbackRate: Float
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
 |Float|재생 속도|가능|0.1~4.0|1.0|
-
-\
-사용 예제
-```kotlin
-mediaPlayer.playbackRate = 2.0f
-```
 
 <br><br>
 ## preservesPitch
@@ -331,12 +235,6 @@ var preservesPitch: Boolean
 |:--:|--|:--:|:--:|
 |Boolean|오디오 피치 유지 여부|가능|true|
 
-\
-사용 예제
-```kotlin
-mediaPlayer.preservesPitch = false // 재생 속도에 따라 오디오 피치가 변하게 됨
-```
-
 <br><br>
 ## repeatRange
 
@@ -349,22 +247,6 @@ null이 아닌 값으로 설정을 했을 경우 해당 구간을 지속해서 �
 |타입|설명|설정|
 |:--:|--|:--:|
 |[MediaPlayer.RepeatRange](../../class/media-player-repeat-range/home.md)?|반복 구간 범위|가능|
-
-\
-사용 예제
-```kotlin
-mediaPlayer.repeatRange = MediaPlayer.RepeatRange(Duration.ofSeconds(10), Duration.ofMinutes(2))
-val start1 = mediaPlayer.repeatRange?.start?.seconds     // 10
-val end1 = mediaPlayer.repeateRange?.end?.seconds        // 120
-
-mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withStart(Duration.ofSeconds(20))
-val repeatRange = mediaPlayer.repeatRange	
-// RepeatRange(start=20s, end=2m)
-
-mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withEnd(Duration.ofSeconds(30))
-val start2 = mediaPlayer.repeatRange?.start?.seconds     // 20
-val end2 = mediaPlayer.repeateRange?.end?.seconds        // 30
-```
 
 <br><br>
 ## resizeMode
@@ -391,12 +273,6 @@ var seekBackIncrement: Duration
 [seekBack()](#seekback)을 호출하여 이동할 때, 현재 위치에서 전으로 이동하는 시간 정도를 나타내는 속성입니다.
 왼쪽 방향키를 입력 받거나 하단 인터페이스의 되감기 버튼을 클릭했을 때 이 속성을 사용합니다.
 
-\
-사용 예제
-```kotlin
-mediaPlayer.seekBackIncrement = Duration.ofSeconds(20)
-```
-
 <br><br>
 ## seekForwardIncrement
 
@@ -410,12 +286,6 @@ var seekForwardIncrement: Duration
 [seekForward()](#seekforward)을 호출하여 이동할 때, 현재 위치에서 후로 이동하는 시간 정도를 나타내는 속성입니다.
 오른쪽 방향키를 입력 받거나 하단 인터페이스의 빨리 감기 버튼을 클릭했을 때 이 속성을 사용합니다.
 
-\
-사용 예제
-```kotlin
-mediaPlayer.seekForwardIncrement = Duration.ofSeconds(30)
-```
-
 <br><br>
 ## seeking
 
@@ -428,18 +298,7 @@ val seeking: Boolean
 |:--:|--|:--:|
 |Boolean|현재 미디어가 새로운 위치로 이동하고 있는지(탐색 중인지) 여부|불가능|
 
-\
-사용 예제
-```kotlin
-if (mediaPlayer.seeking) {
-    mediaPlayer.pause()
-}
-```
-
-\
-\
-\
-\
+<br><br>
 
 ----
 ----
@@ -459,12 +318,6 @@ fun fastSeek(to: Duration)
 
 * 주의: 해당 메서드의 원래 목적은 정확한 위치보다는 새로운 위치에서 더 빠르게 재생을 하도록 하는 것이었습니다. 그러나 안드로이드에서는 현재 정확한 위치와 빠른 재생을 동시에 수행할 수 없기 때문에, 현재는 currentTime, seekTo()를 사용한 것과 유사한 결과를 얻게 됩니다. 즉, 이 메서드를 사용하면 정확한 위치로 이동하게 됩니다. 향후 안드로이드에서 이러한 기능을 제공할 경우, 원래 목적에 맞게  업데이트될 예정입니다.
 
-\
-사용 예제
-```kotlin
-mediaPlayer.fastSeek(Duration.ofSeconds(50))
-```
-
 <br><br>
 ## load
 
@@ -476,15 +329,6 @@ fun load(uri: String)
 |파라미터|타입|설명|
 |:--:|:--:|---|
 |uri|String|스트링 형태의 미디어 주소|
-
-\
-사용 예제
-```kotlin
-mediaPlayer.load("https://example.com/media.mp4")  // 타입: String
-mediaPlayer.load(uri)   // 타입: Uri
-mediaPlayer.load(mediaItem) // 타입: MediaItem
-mediaPlayer.load(listOf(mediaItem1, mediaItem2))    // 타입: List<MediaItem>
-```
 
 <br><br>
 ## load
@@ -498,12 +342,6 @@ fun load(uri: Uri)
 |:--:|:--:|---|
 |uri|Uri| [Uri](https://developer.android.com/reference/android/net/Uri)|
 
-\
-사용 예제
-```kotlin
-mediaPlayer.load(uri)   // 타입: Uri
-```
-
 <br><br>
 ## load
 
@@ -516,12 +354,6 @@ fun load(mediaItem: MediaItem)
 |:--:|:--:|---|
 |mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)|
 
-\
-사용 예제
-```kotlin
-mediaPlayer.load(mediaItem) // 타입: MediaItem
-```
-
 <br><br>
 ## load
 
@@ -533,12 +365,6 @@ fun load(mediaItems: List<MediaItem>)
 |파라미터|타입|설명|
 |:--:|:--:|---|
 |mediaItems|List\<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)\>|[미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)의 리스트|
-
-\
-사용 예제
-```kotlin
-mediaPlayer.load(listOf(mediaItem1, mediaItem2))    // 타입: List<MediaItem>
-```
 
 <br><br>
 ## pause
@@ -597,17 +423,6 @@ fun seekBack()
 ```
 현재 위치에서 속성 [seekBackIncrement](#seekbackincrement) 만큼 전으로 이동하기 위한 메서드입니다.
 
-\
-사용 예제
-```kotlin
-mediaPlayer.seekBack(Duration.ofSeconds(20))
-// 미디어 재생 위치의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
-// seekBackIncrement 값은 변하지 않는 게 다른 점입니다.
-
-mediaPlayer.seekBackIncrement = Duration.ofSeconds(20)
-mediaPlayer.seekBack()
-```
-
 <br><br>
 ## seekBack
 
@@ -620,15 +435,6 @@ fun seekBack(increment: Duration)
 |:---:|:--:|---|
 |increment|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|새로운 위치는 현재 위치에서 입력된 파라미터를 뺀 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 후로 이동합니다.|
 
-\
-사용 예제
-```kotlin
-mediaPlayer.seekTo(Duration.ofSeconds(30))
-	
-mediaPlayer.seekBack(Duration.ofSeconds(10))
-val currentTime = mediaPlayer.currentTime.seconds   // 20
-```
-
 <br><br>
 ## seekForward
 
@@ -636,17 +442,6 @@ val currentTime = mediaPlayer.currentTime.seconds   // 20
 fun seekForward()
 ```
 현재 위치에서 속성 [seekForwardIncrement](#seekforwardincrement) 만큼 후로 이동하기 위한 메서드입니다.
-
-\
-사용 예제
-```kotlin
-mediaPlayer.seekForward(Duration.ofSeconds(20))
-// 미디어 재생 위치의 이동에 관하여는 아래의 코드와 동일한 결과를 가지고 오지만, 
-// seekForwardIncrement 값은 변하지 않는 게 다른 점입니다.
-
-mediaPlayer.seekForwardIncrement = Duration.ofSeconds(20)
-mediaPlayer.seekForward()
-```
 
 <br><br>
 ## seekForward
@@ -660,15 +455,6 @@ fun seekForward(increment: Duration)
 |:--:|:--:|---|
 |increment|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|새로운 위치 현재 위치에서 입력된 파라미터를 더한 결과입니다.<br>즉, 음수 입력 시, 입력된 파라미터의 절대값만큼 되돌아갑니다.|
 
-\
-사용 예제
-```kotlin
-mediaPlayer.seekTo(Duration.ofSeconds(30))
-	
-mediaPlayer.seekForward(Duration.ofSeconds(10))
-val currentTime = mediaPlayer.currentTime.seconds	// 40
-```
-
 <br><br>
 ## seekTo
 
@@ -681,13 +467,6 @@ fun seekTo(position: Duration, force: Boolean = false)
 |:--:|:--:|---|
 |position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|입력된 파라미터로 재생 위치를 이동합니다.|
 |force|Boolean|강제로 위치를 바꿔야할 때, true로 설정. 기본값은 false입니다.|
-
-\
-사용 예제
-```kotlin
-mediaPlayer.seekTo(Duration.ofSeconds(30))
-val currentTime = mediaPlayer.currentTime.seconds	// 30
-```
 
 <br><br>
 ## addEventHandler
@@ -703,14 +482,6 @@ fun addEventHandler(handler: EventHandler): EventHandler
 |:--:|:--:|:--:|---|
 |handler|[EventHandler](../../class/event-handlers/home.md)|[EventHandler](../../class/event-handlers/home.md)|[이벤트 핸들러](../../class/event-handlers/home.md) 참고|
 
-\
-사용 예제
-```kotlin
-mediaPlayer.addEventHandler(EventHandler.Ended {
-    finish()	// 미디어 재생이 끝나면 액티비티를 종료합니다.
-})
-```
-
 <br><br>
 ## removeEventHandler
 
@@ -722,20 +493,6 @@ fun removeEventHandler(handler: EventHandler)
 |파라미터|타입|설명|
 |:---:|:--:|---|
 |handler|[EventHandler](../../class/event-handlers/home.md)|[이벤트 핸들러](../../class/event-handlers/home.md) 참고|
-
-\
-사용 예제
-```kotlin
-val endedHandler = mediaPlayer.addEventHandler(EventHandler.Ended {
-    finish()
-})
-
-/**
-	do something
-*/
-
-mediaPlayer.removeEventHandler(endedHandler)
-```
 
 <br><br>
 ## addEventListener
@@ -749,20 +506,6 @@ fun addEventListener(listener: EventListener)
 |:--:|:--:|---|
 |listener|[EventListener](../event-listeners/home.md)|[이벤트 리스너](../event-listeners/home.md) 참고|
 
-\
-사용 예제
-```kotlin
-class ComponentListener(view: View): EventListener {
-    override fun onPlay() {
-        showPauseIcon()
-    }
-}
-
-val componentListener = ComponentListener(this)
-
-mediaPlayer.addEventListener(componentListener)
-```
-
 <br><br>
 ## removeEventListener
 
@@ -774,19 +517,6 @@ fun removeEventListener(listener: EventListener)
 |파라미터|타입|설명|
 |:--:|:--:|---|
 |listener|[EventListener](../event-listeners/home.md)|[이벤트 리스너](../event-listeners/home.md) 참고|
-
-\
-사용 예제
-```kotlin
-// addEventListener()의 사용 예제에 이어서 구현한 내용입니다.
-
-mediaPlayer.removeEventListener(componentListener)
-```
-
-\
-\
-\
-\
 
 ----
 ----
