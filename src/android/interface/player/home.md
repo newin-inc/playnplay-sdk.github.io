@@ -18,12 +18,13 @@ fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
 fun Player.selectTrack(track: Track)
 ```
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player">Player</a>
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player">androidx.media3.common.Player</a>
 </div>
 
-## 속성
+<br><br>
+# 속성
 
-### audioTracks
+## audioTracks
 ```kotlin
 val Player.audioTracks: List<Track>
 ```
@@ -37,7 +38,7 @@ val Player.audioTracks: List<Track>
 현재 재생 중인 미디어의 오디오 트랙을 가져오는 속성입니다.
 
 <br><br>
-### currentWatermarkSettings
+## currentWatermarkSettings
 ```kotlin
 val Player.currentWatermarkSettings: WatermarkSettings?
 ```
@@ -51,7 +52,7 @@ val Player.currentWatermarkSettings: WatermarkSettings?
 </div>
 
 <br><br>
-### isSeekable
+## isSeekable
 ```kotlin
 val Player.isSeekable: Boolean
 ```
@@ -62,7 +63,7 @@ val Player.isSeekable: Boolean
 현재 플레이어에서 Seek 기능을 사용할 수 있는지 여부를 반환하는 속성입니다.
 
 <br><br>
-### subtitleTracks
+## subtitleTracks
 ```kotlin
 val Player.subtitleTracks: List<Track>
 ```
@@ -75,7 +76,7 @@ val Player.subtitleTracks: List<Track>
 현재 재생 중인 미디어의 자막 트랙을 가져오는 속성입니다.
 
 <br><br>
-### videoTracks
+## videoTracks
 ```kotlin
 val Player.videoTracks: List<Track>
 ```
@@ -87,9 +88,10 @@ val Player.videoTracks: List<Track>
 </div>
 현재 재생 중인 미디어의 비디오 트랙을 가져오는 속성입니다.
 
-## 메서드
+<br><br>
+# 메서드
 
-### enterPictureInPicture
+## enterPictureInPicture
 ```kotlin
 fun Player.enterPictureInPicture(activity: Activity, sourceRectHint: Rect? = null)
 ```
@@ -109,7 +111,7 @@ fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
 화면 속 화면 모드로 전환하는 메서드입니다.
 
 <br><br>
-### selectTrack
+## selectTrack
 ```kotlin
 fun Player.selectTrack(track: Track)
 ```

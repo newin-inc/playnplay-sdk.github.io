@@ -23,7 +23,7 @@ data class DownloadItem {
 ```
 
 |이름|설명|
-|:--:|--|
+|:--:|:--:|
 |Completed|다운로드를 완료한 상태|
 |Downloading|다운로드 중인 상태|
 |Failed|다운로드를 실패한 상태|

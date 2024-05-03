@@ -19,7 +19,7 @@ data class DownloadItem(
 }
 ```
 <div align="right">
-참고: <a href="./details.md#id">DownloadItemId</a>, 
+참고: <a href="#id">DownloadItemId</a>, 
 <a href="../../enum/download-item-status/home.md">Status</a>,
 <a href="../../class/download-item-progress/home.md">Progress</a>, 
 <a href="../../enum/download-item-failed-reason/home.md">FailedReason</a>
@@ -32,7 +32,7 @@ data class DownloadItem(
 val id: DownloadItemId
 ```
 |타입|설명|
-|:--:|:--|
+|:--:|:--:|
 |Id|다운로드 아이템의 고유 아이디|
 
 다운로드 아이템의 고유의 아이디입니다. 다운로드를 일시정지하거나, 다시 시작할 때, 삭제할 때 등에 사용됩니다. 이때, Id는 value class로 아래와 같습니다.
@@ -49,7 +49,7 @@ typealias DownloadItemId = UUID
 val displayPath: String
 ```
 |타입|설명|
-|:--:|:--|
+|:--:|:--:|
 |String|다운로드된 아이템이 저장되는 상대 경로. 이때 상대 경로는 [downloadsUri](../download-manager/home.md#downloadsuri)를 기준으로 함|
 <div align="right">
 비교: <a href="#touri">toUrl</a><br>
@@ -61,8 +61,8 @@ val displayPath: String
 val fromUri: Uri
 ```
 |타입|설명|
-|:--:|:--|
-|[Uri](https://developer.android.com/reference/android/net/Uri)|아이템을 가져올 주소|
+|:--:|:--:|
+|[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|아이템을 가져올 주소|
 
 다운로드할 아이템의 주소입니다.
 
@@ -71,10 +71,10 @@ val fromUri: Uri
 val toUri: Uri
 ```
 |타입|설명|
-|:--:|:--|
-|[Uri](https://developer.android.com/reference/android/net/Uri)|다운로드된 아이템이 저장되는 절대 경로|
+|:--:|:--:|
+|[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|다운로드된 아이템이 저장되는 절대 경로|
 <div align="right">
-비교: <a href="#displaypath">displayPath</a>
+비교: <a href="#displaypath">displayPath</a><br>
 참고: <a href="../download-manager/home.md#downloadsuri">downloadsUri</a>
 </div>
 
@@ -85,7 +85,7 @@ val toUri: Uri
 val status: Status
 ```
 |타입|설명|
-|:--:|:--|
+|:--:|:--:|
 |[Status](../../enum/download-item-status/home.md)|다운로드 아이템의 현재 상태|
 
 <div align="right">
@@ -97,7 +97,7 @@ val status: Status
 val progress: Progress?
 ```
 |타입|설명|
-|:--:|:--|
+|:--:|:--:|
 |[Progress](../download-item-progress/home.md)?|다운로드 아이템의 다운로드 진행을 나타냅니다.|
 
 <div align="right">
@@ -109,7 +109,7 @@ val progress: Progress?
 val failedReason: FailedReason?
 ```
 |타입|설명|
-|:--:|:--|
+|:--:|:--:|
 |[FailedReason](../../enum/download-item-failed-reason/home.md)?|다운로드가 실패한 이유|
 
 <div align="right">

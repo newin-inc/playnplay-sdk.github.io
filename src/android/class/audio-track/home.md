@@ -12,9 +12,9 @@ class VideoTrack: Track(C.TRACK_TYPE_AUDIO, tracksGroup, index) { // C.TRACK_TYP
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/C#TRACK_TYPE_AUDIO()">C.TRACK_TYPE_AUDIO</a>
 </div>
 
-## 속성
+# 속성
 
-### type
+## type
 ```kotlin
 val type: @TrackType Int
 ```
@@ -22,7 +22,7 @@ val type: @TrackType Int
 오디오 트랙을 가져오기 위해서 타입을 비교할 필요없이, [Player.audioTracks](../../interface/player/home.md#audiotracks)를 사용하면 됩니다.
 
 <br><br>
-### format
+## format
 ```kotlin
 val format: Format
 ```
@@ -32,7 +32,7 @@ val format: Format
 현재 트랙의 format을 나타내는 속성입니다.
 
 <br><br>
-### isSelected
+## isSelected
 ```kotlin
 val isSelected: Boolean
 ```

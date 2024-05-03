@@ -29,9 +29,10 @@ val MediaMetadata.duration: Duration?
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-## 속성
+<br><br>
+# 속성
 
-### artworkUrl
+## artworkUrl
 ```java
 @Nullable public final Uri artworkUri
 ```
@@ -41,7 +42,7 @@ val MediaMetadata.duration: Duration?
 </div>
 
 <br><br>
-### title
+## title
 ```java
 @Nullable public final CharSequence title
 ```
@@ -60,12 +61,12 @@ val androidx.media3.common.MediaMetadata.downloadPath: kotlin.String?
 디바이스에 저장된 경로를 나타내는 속성입니다.
 -->
 <br><br>
-### expiresOn
+## expiresOn
 ```kotlin
 val androidx.media3.common.MediaMetadata.expiresOn: java.time.Instant?
 ```
 | 타입 |설명|
-|:--:|--|
+|:--:|:--:|
 |[java.time.Instant](https://developer.android.com/reference/java/time/Instant)|만료 일시|
 
 미디어 아이템의 만료 일시를 나타내는 속성입니다.
@@ -74,12 +75,12 @@ val androidx.media3.common.MediaMetadata.expiresOn: java.time.Instant?
 <a href="../playback-info/home.md#expireson">expiresOn</a>을 사용하세요.
 
 <br><br>
-### lastPlayedTime
+## lastPlayedTime
 ```kotlin
 val androidx.media3.common.MediaMetadata.lastPlayedTime: Duration?
 ```
 | 타입 | 설명 |
-|:--:|--|
+|:--:|:--:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
 
 미디어 아이템이 마지막으로 재생한 위치를 나타내는 속성입니다.
@@ -88,12 +89,12 @@ val androidx.media3.common.MediaMetadata.lastPlayedTime: Duration?
 <a href="../playback-info/home.md#lastplayedtime">lastPlayedTime</a>을 사용하세요.
 
 <br><br>
-### duration
+## duration
 ```kotlin
 val androidx.media3.common.MediaMetadata.duration: Duration?
 ```
 | 타입 | 설명 |
-|:--:|--|
+|:--:|:--:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|미디어 아이템의 전체 길이|
 
 미디어 아이템의 전체 길이를 나타내는 속성입니다.
@@ -102,9 +103,9 @@ val androidx.media3.common.MediaMetadata.duration: Duration?
 <a href="../playback-info/home.md#duration">duration</a>을 사용하세요.
 
 <br><br>
-## 메서드
+# 메서드
 
-### buildUpon()
+## buildUpon()
 ```java
 public MediaMetadata.Builder buildUpon()
 ```
@@ -114,9 +115,9 @@ public MediaMetadata.Builder buildUpon()
 </div>
 
 <br><br>
-## 클래스
+# 정적 클래스
 
-### Builder
+## Builder
 ```java
 public static final class Builder
 ```

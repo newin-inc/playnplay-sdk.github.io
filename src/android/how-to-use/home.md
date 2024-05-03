@@ -99,7 +99,7 @@ Button(
 | 타입 | 설명 |
 |:----:|-----|
 | String | 스트링 형태의 미디어 주소 |
-| Uri | [Uri \| Android Developers](https://developer.android.com/reference/android/net/Uri) 참고 |
+| Uri | [android.net.Uri](https://developer.android.com/reference/android/net/Uri) 참고 |
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem#fromUri(java.lang.String)">MediaItem.fromUri(String)</a>,

@@ -16,7 +16,7 @@ data class MediaPlayerActivityConfiguration(
 ```
 
 |이름|설명|
-|:--:|--|
+|:--:|:--:|
 |Portrait|세로 방향으로 고정|
 |Landscape|가로 방향으로 고정|
 |Off|고정하지 않음|

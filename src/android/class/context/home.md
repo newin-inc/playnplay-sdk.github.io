@@ -26,32 +26,33 @@ fun Context.presentMediaPlayer(uri: String, configuration: MediaPlayerActivityCo
 참고: <a href="https://developer.android.com/reference/android/content/Context">Context</a>
 </div>
 
-## 메서드
+<br><br>
+# 메서드
 
-### getMediaPlayer
+## getMediaPlayer
 ```kotlin
 fun Context.getMediaPlayer(block: (MediaPlayer) -> Unit)
 ```
 |파라미터|타입|설명|
-|:--:|:--:|--|
+|:--:|:--:|:--:|
 |block|(MediaPlayer) -> Unit|미디어 플레이어 제어 내용|
 
 현재 화면에 있는 플레이어를 제어하고 싶을 때 사용하는 메서드입니다. 미디어 플레이어를 비동기 방식으로 가지고 오기 때문에, 아래의 예를 참고하십시오.
 
 <br><br>
-### startMediaPlayerService
+## startMediaPlayerService
 ```kotlin
 fun Context.startMediaPlayerService(appId: String)
 ```
 |파라미터|타입|설명|
-|:--:|:--:|--|
+|:--:|:--:|:--:|
 |appId|String|App 아이디|
 <div align="right">
 참고: <a href="../../how-to-use/home.md#액티비티-구성">액티비티 구성</a>
 </div>
 
 <br><br>
-### presentMediaPlayer
+## presentMediaPlayer
 
 미디어를 여는 메서드입니다. 여러 타입을 파라미터로 받을 수 있습니다.
 
@@ -172,7 +173,7 @@ fun Context.presentMediaPlayer(uri: Uri)
 ```
 | 파라미터 | 타입 | 설명 |
 |:----:|:---:|----|
-| uri | Uri | [Uri \| Android Developers](https://developer.android.com/reference/android/net/Uri) 참고 |
+| uri | Uri | [android.net.Uri](https://developer.android.com/reference/android/net/Uri) 참고 |
 
 <br><br>
 ```kotlin
@@ -183,5 +184,5 @@ fun Context.presentMediaPlayer(
 ```
 | 파라미터 | 타입 | 설명 |
 |:----:|:---:|----|
-| uri | Uri | [Uri \| Android Developers](https://developer.android.com/reference/android/net/Uri) 참고 |
+| uri | Uri | [android.net.Uri](https://developer.android.com/reference/android/net/Uri) 참고 |
 |configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|

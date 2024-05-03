@@ -14,9 +14,10 @@ sealed class Track(
 
 [AudioTrack](../audio-track/home.md), [SubtitleTrack](../subtitle-track/home.md), [VideoTrack](../video-track/home.md)에 사용하기 위한 클래스입니다.
 
-## 속성
+<br><br>
+# 속성
 
-### type
+## type
 ```kotlin
 val type: @TrackType Int
 ```
@@ -30,7 +31,7 @@ public static final int TRACK_TYPE_TEXT = 3;
 현재 트랙이 오디오 트랙(1) 인지, 비디오 트랙(2) 인지, 자막 트랙(3) 인지 알려주는 속성입니다. 
 
 <br><br>
-### format
+## format
 ```kotlin
 val format: Format
 ```
@@ -40,7 +41,7 @@ val format: Format
 현재 트랙의 format을 나타내는 속성입니다.
 
 <br><br>
-### isSelected
+## isSelected
 ```kotlin
 val isSelected: Boolean
 ```

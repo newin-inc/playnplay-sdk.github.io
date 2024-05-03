@@ -18,10 +18,11 @@ data class WatermarkSettings {
 }
 ```
 
-## 속성
+<br><br>
+# 속성
 
 | 이름 | 타입 | 설명 | 비고 |
-|:--:|:--:|--|:--:|
+|:--:|:--:|:--:|:--:|
 |duration|[Duration](https://developer.android.com/reference/java/time/Duration)|유지 시간||
 |interval|[Duration](https://developer.android.com/reference/java/time/Duration)|출력 주기||
 |position|[Position](#watermarksettingsposition)|워터마크의 위치||
@@ -30,10 +31,10 @@ data class WatermarkSettings {
 |textOpacity|Double|글자의 불투명도|범위: 0.0~1.0|
 |textSize|Double|글자 크기|범위: 0.0~1.0|
 
+<br><br>
+# 열거형
 
-## 열거형
-
-### WatermarkSettings.Position
+## WatermarkSettings.Position
 ```kotlin
 enum class Position {
     TopLeft,

@@ -5,6 +5,10 @@
 ```kotlin
 fun onDurationChange(duration: Duration)
 ```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|duration|[Duration](https://developer.android.com/reference/java/time/Duration)|미디어 길이|
+
 미디어의 길이(duration)가 변경될 때 실행합니다.
 
 <div align="right">
@@ -42,11 +46,15 @@ fun onEnded()
 ```kotlin
 fun onError(error: PlaybackException)
 ```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|error|[PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)|재생 오류가 발생했을 때 예외|
+
 에러가 발생하여 리소스를 로드할 수 없을 때 실행합니다.
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#error">Error</a><br>
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">PlaybackException</a>, 
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">androidx.media3.common.PlaybackException</a>, 
 <a href="../../class/media-player-exception/home.md">MediaPlayerException</a>
 </div>
 
@@ -116,10 +124,19 @@ fun onPlay()
 ```kotlin
 fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duration?)
 ```
-미디어가 종료되는 시점에 실행합니다. 마지막 재생 위치(position) 및 미디어의 길이(duration) 값을 사용할 수 있습니다. 자세한 설명은 [EventHandler.PlaybackFinish](../../class/event-handlers/details.md#playbackfinish)를 참고하세요.
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|미디어 아이템|
+|position|[Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
+|duration|[Duration](https://developer.android.com/reference/java/time/Duration)?|미디어 길이|
+
+
+미디어가 종료되는 시점에 실행합니다. 마지막 재생 위치(position) 및 미디어의 길이(duration) 값을 사용할 수 있습니다. 
 
 <div align="right">
-이벤트 핸들러: <a href="../../class/event-handlers/details.md#playbackfinish">PlayabackFinish</a>
+이벤트 핸들러: <a href="../../class/event-handlers/details.md#playbackfinish">PlayabackFinish</a><br>
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>, 
+<a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 <br><br>
@@ -144,6 +161,12 @@ fun onPositionDiscontinuity(
     newPosition: Duration
 )
 ```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|player|[MediaPlayer](../../interface/media-player/home.md)|미디어 플레이어|
+|oldPosition|[Duration](https://developer.android.com/reference/java/time/Duration)|이전 재생 위치|
+|newPosition|[Duration](https://developer.android.com/reference/java/time/Duration)|바뀐 재생 위치|
+
 재생 위치가 변경되는 시점에 실행합니다.
 
 주의: Player.Listener의 [onPositionDiscontinuity()](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onPositionDiscontinuity(androidx.media3.common.Player.PositionInfo,androidx.media3.common.Player.PositionInfo,int))는 이름만 같고, 사용 방법이 다릅니다.
@@ -172,6 +195,10 @@ fun onProgress()
 ```kotlin
 fun onRateChange(playbackRate: Float)
 ```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|playbackRate|Float|재생 속도|
+
 재생 속도가 변경되는 시점에 실행합니다.
 주의: 재생 속도는 그대로이지만, preservesPitch의 값이 변경될 때도 실행 됨
 
@@ -186,6 +213,10 @@ fun onRateChange(playbackRate: Float)
 ```kotlin
 fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?)
 ```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|repeatRange|[MediaPlayer.RepeatRange](../media-player-repeat-range/home.md)?|구간 반복에서의 구간|
+
 구간 반복 모드가 시작되거나 종료되었을 때, 그리고 구간 반복의 시작 위치 또는 종료 위치가 바뀌었을 때 실행합니다.
 
 <div align="right">
@@ -197,8 +228,12 @@ fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?)
 ## onResizeModeChange
 
 ```kotlin
-fun onResizeModeChange(mode: Int)
+fun onResizeModeChange(mode: @AspectRatioFrameLayout.ResizeMode Int)
 ```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|mode|[@ResizeMode](https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode) Int|화면의 크기 상태|
+
 화면 크기 조절을 하는 시점에 실행합니다.
 
 <div align="right">
@@ -248,6 +283,10 @@ fun onSuspend()
 ```kotlin
 fun onTimeUpdate(position: Duration)
 ```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|position|[Duration](https://developer.android.com/reference/java/time/Duration)|현재 재생 위치|
+
 [currentTime](../../interface/media-player/details.md#currenttime)이 변경되는 시점에 실행합니다. 즉, 미디어가 재생이 되는 동안 수행하려는 작업을 이곳에 구현하시면 됩니다.
 
 <div align="right">
@@ -261,6 +300,11 @@ fun onTimeUpdate(position: Duration)
 ```kotlin
 fun onVolumeChange(volume: Float, muted: Boolean)
 ```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|volume|Float|디바이스 음량|
+|muted|Boolean|음소거 여부|
+
 볼륨이 변경되는 시점에 실행합니다. 
 
 <div align="right">

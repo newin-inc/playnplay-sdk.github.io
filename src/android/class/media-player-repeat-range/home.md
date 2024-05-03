@@ -15,37 +15,38 @@ data class RepeatRange(
 ```
 구간 반복에 사용되는 데이터 클래스입니다.
 
-## 생성자 파라미터
+<br><br>
+# 생성자 파라미터
 
 |이름|타입|설명|필수|
-|:--:|:--:|--|:--:|
+|:--:|:--:|:--:|:--:|
 |start|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 시작 위치 값|O|
 |end|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 종료 위치 값|O|
 
-## 속성
+<br><br>
+# 속성
 
-### start
+## start
 ```kotlin
 val start: Duration
 ```
 |타입|설명|
-|:--:|--|
+|:--:|:--:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 시작 위치를 반환|
 
 <br><br>
-### end
+## end
 ```kotlin
 val end: Duration
 ```
 |타입|설명|
-|:--:|--|
+|:--:|:--:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 종료 위치를 반환|
 
-------
-------
-## 메서드
+<br><br>
+# 메서드
 
-### withStart
+## withStart
 ```kotlin
 fun withStart(start: Duration): RepeatRange
 ```
@@ -54,7 +55,7 @@ fun withStart(start: Duration): RepeatRange
 |start|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|RepeatRange|구간 반복 시작 위치를 업데이트한 오브젝트를 반환|
 
 <br><br>
-### withEnd
+## withEnd
 ```kotlin
 fun withEnd(end: Duration): RepeatRange
 ```

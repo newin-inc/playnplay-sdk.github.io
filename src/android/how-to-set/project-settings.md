@@ -109,7 +109,6 @@ android {
         android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden"
         android:exported="false"
         android:launchMode="singleTask"
-        android:screenOrientation="sensor"
         android:supportsPictureInPicture="true"
         android:theme="@style/Theme.AppCompat"/>
     <service

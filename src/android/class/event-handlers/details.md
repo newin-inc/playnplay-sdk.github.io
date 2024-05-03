@@ -6,7 +6,7 @@
 data class DurationChange(val listener: (Duration) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |[Duration](https://developer.android.com/reference/java/time/Duration)|미디어 길이|
 
 미디어의 길이(duration)가 변경되었을 때를 처리하기 위한 핸들러입니다.\
@@ -47,14 +47,14 @@ data class Ended(val listener: () -> Unit) : EventHandler()
 data class Error(val listener: (PlaybackException) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |[PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)|재생 오류가 발생했을 때 예외|
 
 에러가 발생하여 리소스를 로드할 수 없을 때 사용하기 위한 핸들러입니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onerror">onError()</a><br>
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">PlaybackException</a>,
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">androidx.media3.common.PlaybackException</a>,
 <a href="../media-player-exception/home.md">MediaPlayerException</a>
 </div>
 
@@ -102,7 +102,7 @@ data class LoadStart(val listener: () -> Unit) : EventHandler()
 data class MediaItemTransition(val listener: (MediaItem?, @Player.MediaItemTransitionReason Int) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|미디어 아이템|
 |[@Player.MediaItemTransitionReason](https://developer.android.com/reference/androidx/media3/common/Player.MediaItemTransitionReason) Int|미디어 아이템 교체 이유|
 
@@ -110,7 +110,7 @@ data class MediaItemTransition(val listener: (MediaItem?, @Player.MediaItemTrans
 참고: 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onMediaItemTransition(androidx.media3.common.MediaItem,int))에서 제공하는 것을 사용하시면 됩니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">MediaItem</a><br>
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a><br>
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player.MediaItemTransitionReason">MediaItemTransitionReason</a>
 </div>
 
@@ -151,7 +151,7 @@ EventHandler.Playing과 다른 점은 seekTo() 등을 통해 재생 위치가 �
 data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|미디어 아이템|
 |[Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
 |[Duration](https://developer.android.com/reference/java/time/Duration)?|미디어 길이|
@@ -160,7 +160,7 @@ data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?) -> Unit
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onplaybackfinish">onPlaybackFinish()</a><br>
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">MediaItem</a>, 
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>, 
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
@@ -172,7 +172,7 @@ data class PlaybackStateChange(val listener: (@Player.State Int) -> Unit) : Even
 ```
 
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |[@Player.State](https://developer.android.com/reference/androidx/media3/common/Player.State) Int|재생 상태|
 
 미디어 로딩 상태에 따른 처리, 즉, 버퍼링인지 준비가 된 상태인지, 끝이 났는지, 플레이어를 종료하였는지 등의 상황에 따라 처리하기 위한 핸들러입니다.<br>
@@ -207,8 +207,8 @@ data class PositionDiscontinuity(
 ) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
-|:--:|:--|
-|MediaPlayer|미디어 플레이어|
+|:--:|:--:|
+|[MediaPlayer](../../interface/media-player/home.md)|미디어 플레이어|
 |[Duration](https://developer.android.com/reference/java/time/Duration)|이전 재생 위치|
 |[Duration](https://developer.android.com/reference/java/time/Duration)|바뀐 재생 위치|
 
@@ -241,7 +241,7 @@ data class RateChange(val listener: (Float) -> Unit) : EventHandler()
 ```
 
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |Float|재생 속도|
 
 재생 속도가 변경되는 시점에 사용하기 위한 핸들러입니다.
@@ -260,8 +260,8 @@ data class RepeatModeChange(val listener: (@Player.RepeatMode Int) -> Unit) : Ev
 ```
 
 | 파라미터 타입 | 설명 |
-|:--:|:--|
-|[@Player.RepeatMode](https://developer.android.com/reference/kotlin/androidx/media3/common/Player.RepeatMode) Int|반복 모드|
+|:--:|:--:|
+|[@Player.RepeatMode](https://developer.android.com/reference/kotlin/androidx/media3/common/Player.RepeatMode) Int|반복 모드 종류|
 
 반복 모드가 변경되는 시점에 사용하기 위한 핸들러입니다. <br>
 참고: 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onRepeatModeChanged(int))에서 제공하는 것을 사용하시면 됩니다.
@@ -277,8 +277,8 @@ data class RepeatModeChange(val listener: (@Player.RepeatMode Int) -> Unit) : Ev
 data class RepeatRangeChange(val listener: (MediaPlayer.RepeatRange?) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
-|:--:|:--|
-|[MediaPlayer.RepeatRange](../media-player-repeat-range/home.md)?|구간 반복의 구간을 나타내는 데이터 클래스|
+|:--:|:--:|
+|[MediaPlayer.RepeatRange](../media-player-repeat-range/home.md)?|구간 반복에서의 구간|
 
 구간 반복 모드가 시작되거나 종료되었을 때, 그리고 구간 반복의 시작 위치 또는 종료 위치가 바뀌었을 때를 처리하기 위한 핸들러입니다.
 
@@ -291,11 +291,11 @@ data class RepeatRangeChange(val listener: (MediaPlayer.RepeatRange?) -> Unit) :
 ## ResizeModeChange
 
 ```kotlin
-data class ResizeModeChange(val listener: (@ResizeMode Int) -> Unit) : EventHandler()
+data class ResizeModeChange(val listener: (@AspectRatioFrameLayout.ResizeMode Int) -> Unit) : EventHandler()
 ```
 
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |[@ResizeMode](https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode) Int|화면의 크기 상태|
 
 화면 크기 조절을 하는 시점에 사용하기 위한 핸들러입니다.
@@ -351,7 +351,7 @@ data class Suspend(val listener: () -> Unit) : EventHandler()
 data class TimeUpdate(val listener: (Duration) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |[Duration](https://developer.android.com/reference/java/time/Duration)|현재 재생 위치|
 
 [currentTime](../../interface/media-player/details.md#currenttime)이 변경되는 시점에 사용하기 위한 핸들러입니다. 즉, 미디어가 재생이 되는 동안 수행하려는 작업을 이곳에 구현하시면 됩니다.
@@ -369,7 +369,7 @@ data class VideoSizeChange(val listener: (VideoSize) -> Unit) : EventHandler()
 ```
 
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |[VideoSize](https://developer.android.com/reference/androidx/media3/common/VideoSize)|영상 사이즈|
 
 영상 크기가 바뀌는 시점에 사용하기 위한 핸들러입니다. 다음 영상으로 이동할 때, 영상 크기가 0x0으로 바뀌었다가 다음 영상의 크기로 바뀌게 되는데, 0x0으로 바뀔 때도 해당 이벤트는 호출됩니다. 즉, 다음 영상으로 이동할 경우, 이 핸들러는 두 번 호출 됩니다.<br>
@@ -386,7 +386,7 @@ data class VideoSizeChange(val listener: (VideoSize) -> Unit) : EventHandler()
 data class VolumeChange(val listener: (Float, Boolean) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
-|:--:|:--|
+|:--:|:--:|
 |Float|디바이스 음량|
 |Boolean|음소거 여부|
 
