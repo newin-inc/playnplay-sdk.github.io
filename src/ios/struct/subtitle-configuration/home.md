@@ -30,27 +30,8 @@ public struct SubtitleConfiguration {
 
 <div align="right">
 참고: <a href="../../enum/subtitle-configuration-mode/home.md">SubtitleConfiguration.Mode</a>,<br>
-<a href="../../class/subtitle-configuration-builder/home.md">SubtitleConfiguration.Builder</a>
+<a href="../../class/subtitle-configuration-builder/home.md">SubtitleConfiguration.Builder</a>,<br>
+<a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a>
 </div>
 
-## 사용 예제
-```swift
-let subtitleConfigurations = [
-    SubtitleConfiguration
-        .Builder(url: URL(string: "https://example.com/subtitle.vtt")!)
-        .language("언어")
-        .label("라벨")
-        .mode(.autoSelect)
-        .build(),
-    ...
-]
-
-let mediaItem = MediaItem
-    .Builder(url: URL(string: "https://example.com/media.mp4")!)
-    .subtitleConfigurations(subtitleConfigurations)
-    .build()
-```
-
-<div align="right">
-참고: <a href="../../class/media-item-builder/home.md">MediaItem.Builder</a>
-</div>
+자막에 관련한 구조체입니다. 현재 자막 상태를 나타내는 열거체 [Mode](../../enum/subtitle-configuration-mode/home.md)와 자막을 만드는 클래스 [Builder](../../class/subtitle-configuration-builder/home.md)로 구성되어 있습니다. 자세한 설명은 해당 문서를 참고하세요.

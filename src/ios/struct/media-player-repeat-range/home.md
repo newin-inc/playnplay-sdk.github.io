@@ -18,39 +18,59 @@ extension MediaPlayer {
 
 반복 모드에서 사용되는 구조체입니다. 반복 구간의 시작 위치와 종료 위치를 설정하고 변경할 수 있습니다.
 
-## 생성자
+<br><br>
+# 생성자
 
 ```swift
 init(start: Duration, end: Duration)
 ```
 
 |이름|타입|설명|필수|
-|:--:|:--:|--|:--:|
+|:--:|:--:|:--:|:--:|
 |start|[Duration](../../struct/duration/home.md)|반복 구간의 시작 위치|O|
 |end|[Duration](../../struct/duration/home.md)|반복 구간의 종료 위치|O|
 
-<details open>
-<summary>
-    <a href="./details.md#속성">속성</a>
-</summary>
+<br><br>
+# 속성
 
-* [var start: Duration](./details.md#start)
+## start
+```swift
+var start: Duration
+```
 
-* [var end: Duration](./details.md#end)
+|타입|설명|
+|:--:|:--:|
+|[Duration](../../struct/duration/home.md)|반복 구간의 시작 위치|
 
-</details>
-<br>
+<br><br>
+## end
+```swift
+var end: Duration
+```
 
-<details open>
-<summary>
-    <a href="./details.md#메서드">메서드</a>
-</summary>
+|타입|설명|
+|:--:|:--:|
+|[Duration](../../struct/duration/home.md)|반복 구간의 종료 위치|
 
-* [func with(start: Duration) -> MediaPlayer.RepeatRange](./details.md#withstart---repeatrange)
+<br><br>
+# 메서드
 
-* [func with(end: Duration) -> MediaPlayer.RepeatRange](./details.md#withend---repeatrange)
+## with(start:) -> RepeatRange
+```swift
+func with(start: Duration) -> MediaPlayer.RepeatRange
+```
 
-* [사용 예제](./details.md#사용-예제)
+|파라미터|타입|반환 타입|설명|
+|:--:|:--:|:--:|:--:|
+|start|[Duration](../../struct/duration/home.md)|[MediaPlayer.RepeatRange](./home.md)|반복 구간 시작 위치를 변경한 뒤 구간 범위를 반환|
 
-</details>
-<br>
+<br><br>
+## with(end:) -> RepeatRange
+```swift
+func with(end: Duration) -> MediaPlayer.RepeatRange
+```
+
+|파라미터|타입|반환 타입|설명|
+|:--:|:--:|:--:|:--:|
+|end|[Duration](../../struct/duration/home.md)|[MediaPlayer.RepeatRange](./home.md)|반복 구간 종료 위치를 변경한 뒤 구간 범위를 반환|
+

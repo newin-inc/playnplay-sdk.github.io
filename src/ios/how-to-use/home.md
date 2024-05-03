@@ -72,10 +72,13 @@ func application(
 ```swift
 func openMedia() {
     // DRM 설정을 합니다.
-    let drmConfiguration = DrmConfiguration.Builder(
-        appId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
-        userId: "사용자 아이디"
-    ).build()
+    let drmConfiguration = DrmConfiguration
+        .Builder(
+            appId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
+            userId: "사용자 아이디"
+        )
+        .userData(userData) // 사용자 데이터(Callback URL에 전달한 데이터)
+        .build()
 
     // 미디어 파일을 구성하며, DRM 설정을 합니다.
     let mediaItem = MediaItem.from(url: URL(string: "https://example.com/media.mp4")!)
@@ -89,9 +92,11 @@ func openMedia() {
 ```
 
 <div align="right">
-관련 코드 설명: <a href="../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a>,<br>
-<a href="../struct/media-item/home.md">MediaItem</a>,<br>
-<a href="../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a>
+참고: <a href="../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a>, 
+<a href="../class/drm-configuration-builder/home.md#userdata_">userData</a>, 
+<a href="https://developer.apple.com/documentation/foundation/url">URL</a>, 
+<a href="../struct/media-item/home.md">MediaItem</a>, 
+<a href="../class/uiviewcontroller/home.md#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a>
 </div>
 
 ### 재생 목록으로 열기
@@ -104,23 +109,57 @@ present(mediaItems: mediaItems, startIndex: 0)
 ```
 
 <div align="right">
-관련 코드 설명: <a href="../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a>
+참고: <a href="../class/uiviewcontroller/home.md#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a>
 </div>
 
-### 제목 설정
-빌드하기 전에 제목을 설정할 수 있습니다.
+### 제목을 설정하는 예제
 
 ```swift
-let mediaItem = MediaItem.Builder(url: URL(string: "https://example.com/media.mp4")!)
-    .mediaMetadata(
-        MediaMetadata.Builder().title("제목").build()
-    )
+let mediaMetadata = MediaMetadata
+    .Builder()
+    .title("제목")
+    .artworkUrl(URL(string:"https://www.example.com/image.jpg")!)
+    .build()
+
+let mediaItem = MediaItem
+    .Builder(url: URL(string: "https://example.com/media.mp4")!)
+    .mediaMetadata(mediaMetadata)
     .build()
 ```
 
 <div align="right">
-참고: <a href="../class/media-item-builder/details.md#mediametadata_">mediaMetadata()</a>
+참고: <a href="../class/media-item-builder/home.md#mediametadata_">mediaMetadata()</a>, 
+<a href="../class/media-item-builder/home.md">MediaItem.Builder</a>,
+<a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
+
+### 자막을 추가하는 예제
+
+```swift
+let subtitleConfigurations = [
+    SubtitleConfiguration
+        .Builder(url: URL(string: "https://example.com/subtitle.vtt")!)
+        .language("언어")
+        .label("라벨")
+        .mode(.autoSelect)
+        .build(),
+    ...
+]
+
+let mediaItem = MediaItem
+    .Builder(url: URL(string: "https://example.com/media.mp4")!)
+    .subtitleConfigurations(subtitleConfigurations)
+    .build()
+```
+
+<div align="right">
+참고: <a href="../class/subtitle-configuration-builder/home.md">SubtitleConfiguration.Builder</a>, 
+<a href="../struct/subtitle-configuration/home.md">SubtitleConfiguration.Mode</a>, 
+<a href="../class/media-item-builder/home.md">MediaItem.Builder</a>, 
+<a href="https://developer.apple.com/documentation/foundation/url">URL</a>
+</div>
+
+
 
 ### Seek 기능 제한
 미디어 아이템을 구성할 때, seekable(false)을 사용하여 Seek 기능을 제한할 수 있습니다.
@@ -132,5 +171,5 @@ let mediaItem = MediaItem.Builder(url: URL(string: "https://example.com/media.mp
 ```
 
 <div align="right">
-참고: <a href="../class/media-item-builder/details.md#seekable_">seekable(_)</a>
+참고: <a href="../class/media-item-builder/home.md#seekable_">seekable(_)</a>
 </div>

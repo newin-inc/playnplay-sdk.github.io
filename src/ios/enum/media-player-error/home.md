@@ -49,29 +49,4 @@ public enum MediaPlayerError: LocalizedError {
 |unauthorized(message: String)|권한이 없는 경우|
 |unexpected(message: String)|현재 정의 되지 않은 에러가 발생한 경우|
 
-에러 상태를 나타내는 열거형입니다.
-
-사용 예제: 에러 형태를 처리하는 예제
-```swift
-player.addEventHandler(
-    .error({ error in
-
-        switch error {
-        case MediaPlayerError.noCellularAccess:
-            NSLog("\(error.localizedDescription)")
-        case let MediaPlayerError.unauthorized(message: message):
-            NSLog(message)
-        default: break
-        }
-
-        if case let MediaPlayerError.screenCaptureDetected(message: message) = error {
-            NSLog("\(message)")
-        }
-    })
-)
-```
-<div align="right">
-참고: <a href="../../class/media-player/details.md#addeventhandler_">addEventHandler</a>, 
-<a href="../event-handlers/details.md#error">.error</a>, 
-<a href="https://developer.apple.com/documentation/swift/error/localizeddescription">localizedDescription</a>
-</div>
+[Locallized Error](https://developer.apple.com/documentation/foundation/localizederror/)를 확장한 열거형으로, 에러 상태를 나타내는 열거형입니다. 에러 발생 시에, 이 열거형을 토대로 상황에 맞는 처리를 할 수 있습니다.

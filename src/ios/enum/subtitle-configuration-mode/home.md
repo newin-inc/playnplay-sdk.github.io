@@ -16,9 +16,9 @@ public struct SubtitleConfiguration {
 
 |이름|설명|
 |:--:|--|
-|autoSelect|화면에 자막을 하나만 출력할 때<br>[autoSelect](#autoselect) 참고|
-|showing|화면에 자막을 여러개 출력할 때<br>[showing](#showing) 참고|
-|hidden|화면에서 자막을 제외할 때<br>[hidden](#hidden) 참고|
+|autoSelect|화면에 자막을 하나만 출력할 때<br>([autoSelect](#autoselect) 참고)|
+|showing|화면에 자막을 여러개 출력할 때<br>([showing](#showing) 참고)|
+|hidden|화면에서 자막을 제외할 때<br>([hidden](#hidden) 참고)|
 
 현재 자막의 상태를 나타냅니다.
 
@@ -43,25 +43,6 @@ case hidden
 ```
 해당 설정 값을 가진 자막들을 제외합니다. 즉, 화면에 출력하지 않습니다.
 
-<br><br>
-## 사용 예제
-```swift
-let subtitleConfigurations = [
-    SubtitleConfiguration
-        .Builder(url: URL(string: "https://example.com/subtitle.vtt")!)
-        .language("언어")
-        .label("라벨")
-        .mode(.autoSelect)
-        .build(),
-    ...
-]
-
-let mediaItem = MediaItem
-    .Builder(url: URL(string: "https://example.com/media.mp4")!)
-    .subtitleConfigurations(subtitleConfigurations)
-    .build()
-```
-
 <div align="right">
-참고: <a href="../../class/media-item-builder/home.md">MediaItem.Builder</a>
+참고: <a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a>
 </div>

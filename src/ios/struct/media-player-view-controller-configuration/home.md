@@ -30,46 +30,133 @@ public class MediaPlayerViewController {
 미디어 플레이어의 설정을 도와주는 구조체입니다. 아래와 같은 속성, 메서드 및 열거형을 가지고 있습니다.
 
 <br><br>
-<details open>
-<summary>
-    <a href="./details.md#속성">속성</a>
-</summary>
+# 속성
 
-* [var allowsBackgroundPlayback: Bool](./details.md#allowsbackgroundplayback)
+## allowsBackgroundPlayback
+```swift
+public var allowsBackgroundPlayback: Bool = false
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Bool|백그라운드 재생을 허용할 지 여부|가능|false|
 
-* [var allowsCellularAccess: Bool](./details.md#allowscellularaccess)
+백그라운드 재생을 허용할 지 여부를 나타내는 속성입니다. 
 
-* [var allowsPictureInPicturePlayback: Bool](./details.md#allowspictureinpictureplayback)
+<br><br>
+## allowsCellularAccess
+```swift
+public var allowsCellularAccess: Bool = true
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Bool|셀룰러 데이터 사용을 허용할 지 여부|가능|true|
 
-* [var controllerShowTimeout: Duration](./details.md#controllershowtimeout)
+미디어를 재생할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
 
-* [var defaultPlaybackRate: Float](./details.md#defaultplaybackrate)
+<br><br>
+## allowsPictureInPicturePlayback
+```swift
+public var allowsPictureInPicturePlayback: Bool = true
+```
 
-* [var seekBackwardIncrement: Duration](./details.md#seekbackwardincrement)
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Bool|화면 속 화면 모드를 허용할 지 여부|가능|true|
 
-* [var seekForwardIncrement: Duration](./details.md#seekforwardincrement)
+화면 속 화면 모드를 허용할 지 여부를 나타내는 속성입니다.
 
-* [var screenOrientationLock: ScreenOrientationLock](./details.md#screenorientationlock)
+<br><br>
+## controllerShowTimeout
+```swift
+public var controllerShowTimeout: Duration = .seconds(5)
+```
+| 타입 | 설명 | 설정 | 기본값 |
+|:----:|---|:---:|:---:|
+|[Duration](../../struct/duration/home.md)|컨트롤러를 자동으로 숨기는 시간| 가능 | 5초 |
 
-</details>
-<br>
+해당 시간만큼 아무 것도 입력하지 않으면 컨트롤러가 사라집니다. 0초로 설정할 경우에는 컨트롤러를 자동으로 숨기지 않습니다.
 
-<details open>
-<summary>
-    <a href="./details.md#메서드">메서드</a>
-</summary>
+<br><br>
+## defaultPlaybackRate
+```swift
+public var defaultPlaybackRate: Float = 1
+```
+|타입|설명|설정|범위|기본값|
+|:--:|--|:--:|:--:|:--:|
+|Float|미디어의 기본 재생 속도|가능|0.1~4.0|1.0|
 
-* [func defaultConfiguration() -> Configuration](./details.md#defaultconfiguration)
+미디어 재생 속도를 나타내는 속성입니다.
 
-</details>
-<br>
+<br><br>
+## seekBackwardIncrement
+```swift
+public var seekBackwardIncrement: Duration = .seconds(10)
+```
+| 타입 | 설명 | 설정 | 기본값 |
+|:----:|---|:---:|:---:|
+|[Duration](../../struct/duration/home.md)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
 
-<details open>
-<summary>
-    <a href="./details.md#열거형">열거형</a>
-</summary>
+현재 위치에서 전으로 탐색하는 시간을 나타내는 속성입니다.
 
-* [enum class ScreenOrientationLock](./details.md#screenorientationlock-1)
-    
-</details>
-<br>
+<div align="right">
+참고: <a href="../../struct/duration/home.md">Duration</a>
+</div>
+
+<br><br>
+## seekForwardIncrement
+```swift
+public var seekForwardIncrement: Duration = .seconds(10)
+```
+| 타입 | 설명 | 설정 | 기본값 |
+|:----:|---|:---:|:---:|
+|[Duration](../../struct/duration/home.md)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
+
+현재 위치에서 후로 탐색하는 시간을 나타내는 속성입니다.
+
+<div align="right">
+참고: <a href="../../struct/duration/home.md">Duration</a>
+</div>
+
+<br><br>
+## screenOrientationLock
+```swift
+public var screenOrientationLock: ScreenOrientationLock = .off
+```
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|[ScreenOrientationLock](#screenorientationlock-1)|화면 방향 고정 상태|가능|Off|
+
+화면 방향 고정 상태를 나타내는 속성입니다.
+
+<div align="right">
+참고: <a href="#screenorientationlock-1">ScreenOrientationLock</a>
+</div>
+
+<br><br>
+# 정적 메서드
+
+## defaultConfiguration
+```swift
+static func defaultConfiguration() -> Configuration
+```
+
+기본 설정 값을 가져오는 정적 메서드입니다.
+
+<br><br>
+# 열거형
+
+## ScreenOrientationLock
+```swift
+public enum ScreenOrientationLock: String {
+    case portrait = "portrait"
+    case landscape = "landscape"
+    case off = "off"
+
+    func toInterfaceOrientaion() -> UIInterfaceOrientationMask
+}
+```
+
+화면 방향 고정 상태를 나타내는 열거형입니다. 자세한 설명은 [MediaPlayerViewController.Configuration.ScreenOrientationLock](../../enum/media-player-view-controller-configuration-screen-orientation-lock/home.md)에서 확인하세요.
+<div align="right">
+참고: <a href="../../enum/media-player-view-controller-configuration-screen-orientation-lock/home.md">MediaPlayerViewController.Configuration.ScreenOrientationLock</a>
+</diuv>

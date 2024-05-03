@@ -21,20 +21,3 @@ extension MediaPlayer {
 |fill|화면비를 무시하고, 화면에 빈 틈이 없이 가득 채울 수 있는 모드|
 
 현재 미디어 화면의 스케일링 상태를 나타냅니다.
-
-## 사용 예제
-```swift
-class ComponentListener: EventListener {
-    func onScalingModeChange(mode: MediaPlayer.ScalingMode) {
-        switch mode {
-        case .aspectFit: asepectFit()
-        case .aspectFill: aspectFill()
-        case .fill: fill()
-        }
-    }
-}
-
-let componentListener = ComponentListener()
-
-mediaPlayer.addEventListener(componentListener)
-```

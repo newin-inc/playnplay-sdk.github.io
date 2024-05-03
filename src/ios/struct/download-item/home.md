@@ -17,24 +17,96 @@ struct DownloadItem {
 
 다운로드 아이템을 나타내는 구조체입니다. 다운로드에 대한 정보, 진행 상태 등의 정보를 가지고 있습니다.
 
-<details open>
-<summary>
-    <a href="./details.md#속성">속성</a>
-</summary>
+# 속성
 
-* [let id: Id](./details.md#id)
+## id (DownloadItem.Id)
+```swift
+public let id: Id
+```
+|타입|설명|
+|:--:|:--:|
+|Id|다운로드 아이템의 고유 아이디|
 
-* [let displayPath: String](./details.md#displaypath)
+다운로드 아이템의 고유의 아이디입니다. 다운로드를 일시정지하거나, 다시 시작할 때, 삭제할 때 등에 사용됩니다. 이때, Id는 아래에서 보이는 것과 같이, NSObject의 typealias입니다. 
 
-* [let fromUrl: URL](./details.md#fromurl)
+```swift
+extension DownloadItem {
+    public typealias Id = NSObject
+}
+```
 
-* [let toUrl: URL](./details.md#tourl)
+<br><br>
+## displayPath
+```swift
+public let displayPath: String
+```
+|타입|설명|
+|:--:|:--:|
+|String|다운로드된 아이템이 저장되는 상대 경로. 이때 상대 경로는 [downloadsUrl](../../class/download-manager/home.md#downloadsurl)를 기준으로 함|
+<div align="right">
+비교: <a href="#tourl">toUrl</a><br>
+참고: <a href="../../class/download-manager/home.md#downloadsurl">downloadsUrl</a>
+</div>
 
-* [let status: Status](./details.md#status)
+<br><br>
+## fromUrl
+```swift
+public let fromUrl: URL
+```
+|타입|설명|
+|:--:|:--:|
+|[URL](https://developer.apple.com/documentation/foundation/url)|아이템을 가져올 주소|
 
-* [let progress: (Int64, Int64)?](./details.md#progress)
+다운로드할 아이템의 주소입니다.
+<div align="right">
+참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
+</div>
 
-* [let failedReason: String?](./details.md#failedreason)
+<br><br>
+## toUrl
+```swift
+public let toUrl: URL
+```
+|타입|설명|
+|:--:|:--:|
+|[URL](https://developer.apple.com/documentation/foundation/url)|다운로드된 아이템이 저장되는 절대 경로|
 
-</details>
-<br>
+다운로드된 아이템이 저장되는 절대 경로입니다.
+
+<div align="right">
+비교: <a href="#displaypath">displayPath</a>
+참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
+</div>
+
+<br><br>
+## status
+```swift
+public let status: Status
+```
+|타입|설명|
+|:--:|:--:|
+|[Status](../../enum/download-item-status/home.md)|다운로드 아이템의 현재 상태|
+
+다운로드 아이템의 현재 상태입니다.
+
+<div align="right">
+참고: <a href="../../enum/download-item-status/home.md">DownloadItem.Status</a>
+</div>
+
+<br><br>
+## progress
+```swift
+public let progress: (Int64, Int64)?
+```
+|타입|설명|
+|:--:|:--:|
+|(Int64, Int64)?|다운로드 아이템의 다운로드 진행 정도를 나타냅니다. 첫 번째는 현재까지 다운로드된 파일의 크기, 두 번째는 파일 전체 크기를 나타냅니다.|
+
+<br><br>
+## failedReason
+```swift
+public let failedReason: String?
+```
+|타입|설명|
+|:--:|:--:|
+|String?|다운로드가 실패한 이유|

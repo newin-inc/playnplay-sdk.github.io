@@ -37,91 +37,81 @@ public struct MediaMetadata {
 참고: <a href="../../class/media-metadata-builder/home.md">MediaMetadata.Builder</a>
 </div>
 
-## 속성
+<br><br>
+# 속성
 
-### title
+## title
 ```swift
 public let title: String?
 ```
 미디어 아이템의 제목을 나타내는 속성입니다.
 
 <br><br>
-### artworkUrl
+## artworkUrl
 ```swift
 public let artworkUrl: URL?
 ```
 미디어 아이템의 아트워크 경로를 나타내는 속성입니다.
+<div align="right">
+참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
+</div>
 
 <br><br>
-### downloadPath
+## downloadPath
 ```swift
 public let downloadPath: String?
 ```
 디바이스에 저장된 경로를 나타내는 속성입니다.
 
 <br><br>
-### duration
+## duration
 ```swift
 public var duration: Duration? 
 ```
 미디어 아이템의 전체 길이를 나타내는 속성입니다.
+<div align="right">
+참고: <a href="../../struct/duration/home.md">Duration</a>
+</div>
+
 
 <text style="color:red;">Deprecated: </text><a href="../../protocol/playback-info/home.md">PlaybackInfo</a>의 
 <a href="../../protocol/playback-info/home.md#duration">duration</a>을 사용하세요.
 
 <br><br>
-### expiresOn
+## expiresOn
 ```swift
 public let expiresOn: Date?
 ```
 미디어 아이템의 만료 일시를 나타내는 속성입니다.
+<div align="right">
+참고: <a href="https://developer.apple.com/documentation/foundation/date">Date</a>
+</div>
 
 <text style="color:red;">Deprecated: </text><a href="../../protocol/playback-info/home.md">PlaybackInfo</a>의 
 <a href="../../protocol/playback-info/home.md#expireson">expiresOn</a>을 사용하세요.
 
 <br><br>
-### lastPlayedTime
+## lastPlayedTime
 ```swift
 public var lastPlayedTime: Duration?
 ```
 미디어 아이템이 마지막으로 재생한 위치를 나타내는 속성입니다.
+<div align="right">
+참고: <a href="../../struct/duration/home.md">Duration</a>
+</div>
 
 <text style="color:red;">Deprecated: </text><a href="../../protocol/playback-info/home.md">PlaybackInfo</a>의 
 <a href="../../protocol/playback-info/home.md#lastplayedtime">lastPlayedTime</a>을 사용하세요.
 
 <br><br>
-## 메서드
+# 메서드
 
-### buildUpon()
+## buildUpon()
 ```swift
 public func buildUpon() -> MediaMetadata.Builder
 ```
 미디어 메타 데이터를 추가하거나 수정하고자 할 때 사용하는 메서드입니다. 변경 후, [.build()](../../class/media-metadata-builder/home.md#build)를 호출하여 구성을 완료합니다.
-<div align="right">
-참고: <a href="../../class/media-metadata-builder/home.md#build">MediaMetadata.Builder.build()</a>
-</div>
-
-<br><br>
-## 사용 예제
-```swift
-let mediaMetadata = MediaMetadata
-    .Builder()
-    .title("제목")
-    .artworkUrl(URL(string:"https://www.example.com/image.jpg")!)
-    .build()
-    
-
-let mediaItem = MediaItem
-    .Builder(url: URL(string: "https://example.com/media.mp4")!)
-    .mediaMetadata(mediaMetadata)
-    .build()
-
-...
-
-let expiresOn = mediaItem.mediaMetadata?.expiresOn
-...
-```
 
 <div align="right">
-참고: <a href="../../class/media-item-builder/home.md">MediaItem.Builder</a>
+참고: <a href="../../how-to-use/home.md#제목을-설정하는-예제">제목을 설정하는 예제</a>
 </div>

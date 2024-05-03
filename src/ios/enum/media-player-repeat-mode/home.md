@@ -24,20 +24,3 @@ extension MediaPlayer {
 <div align="right">
 참고: <a href="../../class/media-player/details.md#repeatmode">repeatMode</a>
 </div>
-
-## 사용 예제
-```swift
-class ComponentListener: EventListener {
-    func onRepeatModeChange(mode: MediaPlayer.RepeatMode) {
-        switch mode {
-        case .none: showNoRepeatIcon()
-        case .one: showRepeatOneIcon()
-        case .all: showRepeatAllIcon()
-        }
-    }
-}
-
-let componentListener = ComponentListener()
-
-mediaPlayer.addEventListener(componentListener)
-```

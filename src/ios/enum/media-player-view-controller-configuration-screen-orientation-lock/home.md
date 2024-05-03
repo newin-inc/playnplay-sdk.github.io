@@ -16,32 +16,20 @@ public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDel
 ```
 
 |이름|설명|
-|:--:|--|
+|:--:|:--:|
 |portrait|세로 방향으로 고정|
 |landscape|가로 방향으로 고정|
 |off|고정하지 않음|
 
-화면 방향 고정 상태를 나타내는 열거형입니다.
+화면 방향 고정 상태를 나타내는 열거형입니다. 
 <div align="right">
-참고: <a href="../../struct/media-player-view-controller-configuration/home.md">MediaPlayerViewController.Configuration</a>
+참고: <a href="../../struct/media-player-view-controller-configuration/home.md">MediaPlayerViewController.Configuration</a><br>
 </div>
 
-### 사용 예제
-미디어 플레이어의 화면 방향을 가로 방향으로 고정하고, 미디어 아이템을 재생하는 예제
+<br><br>
+# 메서드
 
-```swift
-var configuration = MediaPlayerViewController.Configuration.defaultConfiguration()
-configuration.screenOrientationLock = .landscape
-
-present([mediaItem], configuration)
-```
-<div align="right">
-참고: <a href="../../class/uiviewcontroller/details.md#presentmediaitemsstartindexconfiguration">present</a>
-</div>
-
-## 메서드
-
-### toInterfaceOrientaion()
+## toInterfaceOrientaion()
 
 ```swift
 func toInterfaceOrientaion() -> UIInterfaceOrientationMask
