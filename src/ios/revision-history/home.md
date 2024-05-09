@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.05.09.](https://app.playnplay.com/sdks/2024-05-09/NPlayerSDK-iOS.zip)|<ul><li>백그라운드 재생 중 통화 이후 자동 재생 문제 수정</li></ul>|
 |[2024.04.29.](https://app.playnplay.com/sdks/2024-04-29/NPlayerSDK-iOS.zip)|<ul><li>[onPlaybackFinish](../protocol/event-listeners/details.md#onplaybackfinishmediaitempositionduration), [playbackFinish](../enum/event-handlers/details.md#playbackfinish) 추가</li></ul>|
 |[2024.04.24.](https://app.playnplay.com/sdks/2024-04-24/NPlayerSDK-iOS.zip)|<ul><li> 재생 및 다운로드 시 [셀룰러 데이터 사용 옵션](?search=iOS%20allowsCellularAccess) 추가</li></ui>|
 |[2024.04.17.](https://app.playnplay.com/sdks/2024-04-17/NPlayerSDK-iOS.zip)|<ul><li> [오프라인 재생 기능](../class/drm-configuration-builder/home.md#offlineaccessperiod_) 추가</li></ui> |
