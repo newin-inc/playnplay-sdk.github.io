@@ -1,4 +1,4 @@
-# PlaynPlay documentation
+# [PlaynPlay documentation](http://newin-inc.github.io/playnplay-sdk.github.io/)
  
 ## Installation
 
