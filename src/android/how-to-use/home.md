@@ -183,3 +183,7 @@ mediaPlayer.load(mediaItem)
 ```
 
 주의: 현재 안드로이드 SDK는 MediaPlayer()으로 직접 미디어 플레이어를 구성할 경우, DRM 관련 기능을 지원하지 않습니다. DRM 영상을 사용하려면, presentMediaPlayer()를 하여 플레이어를 구성한 후, getMediaPlayer()를 사용해 주세요.
+
+<div align="right">
+참고: <a href="../class/context/home.md#getmediaplayer">getMediaPlayer()</a>
+</div>

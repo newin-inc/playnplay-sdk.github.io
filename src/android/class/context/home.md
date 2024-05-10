@@ -37,7 +37,10 @@ fun Context.getMediaPlayer(block: (MediaPlayer) -> Unit)
 |:--:|:--:|:--:|
 |block|(MediaPlayer) -> Unit|미디어 플레이어 제어 내용|
 
-현재 화면에 있는 플레이어를 제어하고 싶을 때 사용하는 메서드입니다. 미디어 플레이어를 비동기 방식으로 가지고 오기 때문에, 아래의 예를 참고하십시오.
+현재 화면에 있는 플레이어를 제어하고 싶을 때 사용하는 메서드입니다. 미디어 플레이어를 비동기 방식으로 가지고 오기 때문에, 주의해서 사용해 주세요. 미디어 플레이어 사용 후에는 반드시 [release()](../../interface/media-player/details.md#release)를 호출해주세요.
+<div align="right">
+참고: <a href="../../interface/media-player/details.md#release">release()</a>
+</div>
 
 <br><br>
 ## startMediaPlayerService
@@ -54,7 +57,10 @@ fun Context.startMediaPlayerService(appId: String)
 <br><br>
 ## presentMediaPlayer
 
-미디어를 여는 메서드입니다. 여러 타입을 파라미터로 받을 수 있습니다.
+미디어를 여는 메서드입니다. 여러 타입을 파라미터로 받을 수 있습니다. 미디어 플레이어를 사용한 후에는 반드시 release()를 호출해주세요.
+<div align="right">
+참고: <a href="../../interface/media-player/details.md#release">release()</a>
+</div>
 
 ```kotlin
 fun Context.presentMediaPlayer(mediaItem: MediaItem)

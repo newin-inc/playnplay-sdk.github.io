@@ -9,8 +9,7 @@ data class DurationChange(val listener: (Duration) -> Unit) : EventHandler()
 |:--:|:--:|
 |[Duration](https://developer.android.com/reference/java/time/Duration)|미디어 길이|
 
-미디어의 길이(duration)가 변경되었을 때를 처리하기 위한 핸들러입니다.\
-
+미디어의 길이(duration)가 변경되었을 때를 처리하기 위한 핸들러입니다.
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#ondurationchange">onDurationChange()</a><br>
 참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
@@ -23,7 +22,6 @@ data class DurationChange(val listener: (Duration) -> Unit) : EventHandler()
 data class Emptied(val listener: () -> Unit) : EventHandler()
 ```
 미디어가 제거된 시점, 즉, 미디어 주소가 변경되기 직전, 기존에 존재하던 미디어를 비울 때를 처리하기 위한 핸들러입니다.
-
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onemptied">onEmptied()</a>
 </div>
@@ -35,7 +33,6 @@ data class Emptied(val listener: () -> Unit) : EventHandler()
 data class Ended(val listener: () -> Unit) : EventHandler()
 ```
 재생 목록의 마지막 미디어의 재생이 완료 된 시점에 사용하기 위한 핸들러입니다.
-
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onended">onEnded()</a>
 </div>
@@ -50,7 +47,7 @@ data class Error(val listener: (PlaybackException) -> Unit) : EventHandler()
 |:--:|:--:|
 |[PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)|재생 오류가 발생했을 때 예외|
 
-에러가 발생하여 리소스를 로드할 수 없을 때 사용하기 위한 핸들러입니다.
+에러가 발생하여 리소스를 로딩할 수 없을 때 사용하기 위한 핸들러입니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onerror">onError()</a><br>
@@ -65,7 +62,6 @@ data class Error(val listener: (PlaybackException) -> Unit) : EventHandler()
 data class LoadedData(val listener: () -> Unit) : EventHandler()
 ```
 미디어 트랙이 로딩되었을 때 사용하기 위한 핸들러입니다.
-(참고. 해당 이벤트 처리 이전에 [LoadedMetadata](#loadedmetadata) 이벤트를 처리함)
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onloadeddata">onLoadedData()</a>
@@ -78,7 +74,6 @@ data class LoadedData(val listener: () -> Unit) : EventHandler()
 data class LoadedMetadata(val listener: () -> Unit) : EventHandler()
 ```
 메타데이터가 로딩되었을 때 사용하기 위한 핸들러입니다.
-(참고. 해당 이벤트 처리 이후 [LoadedData](#loadeddata) 이벤트를 처리함)
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onloadedmetadata">onLoadedMetadata() </a>
@@ -90,7 +85,7 @@ data class LoadedMetadata(val listener: () -> Unit) : EventHandler()
 ```kotlin
 data class LoadStart(val listener: () -> Unit) : EventHandler()
 ```
-미디어 리소스를 로드하기 시작할 때 사용하기 위한 핸들러입니다.
+미디어 리소스를 로딩하기 시작할 때 사용하기 위한 핸들러입니다.
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onloadstart">onLoadStart()</a>
 </div>
@@ -103,7 +98,7 @@ data class MediaItemTransition(val listener: (MediaItem?, @Player.MediaItemTrans
 ```
 | 파라미터 타입 | 설명 |
 |:--:|:--:|
-|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|미디어 아이템|
+|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|교체된 미디어 아이템|
 |[@Player.MediaItemTransitionReason](https://developer.android.com/reference/androidx/media3/common/Player.MediaItemTransitionReason) Int|미디어 아이템 교체 이유|
 
 미디어 아이템이 교체 되는 시점에 사용하기 위한 핸들러입니다.<br> 
@@ -152,7 +147,7 @@ data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?) -> Unit
 ```
 | 파라미터 타입 | 설명 |
 |:--:|:--:|
-|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|미디어 아이템|
+|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|종료된 미디어 아이템|
 |[Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
 |[Duration](https://developer.android.com/reference/java/time/Duration)?|미디어 길이|
 
@@ -212,7 +207,7 @@ data class PositionDiscontinuity(
 |[Duration](https://developer.android.com/reference/java/time/Duration)|이전 재생 위치|
 |[Duration](https://developer.android.com/reference/java/time/Duration)|바뀐 재생 위치|
 
-재생 위치가 변경되는 시점에 사용하기 위한 핸들러입니다.
+재생 위치가 변경되는 시점에 사용하기 위한 핸들러입니다. 이전 위치와 이동한 위치 모두 접근이 가능합니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onpositiondiscontinuity">onPositionDiscontinuity()<a><br>
@@ -337,7 +332,7 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 ```kotlin
 data class Suspend(val listener: () -> Unit) : EventHandler()
 ```
-미디어 로드가 중지된 시점에 사용하기 위한 핸들러입니다.
+미디어 로딩이 중지된 시점에 사용하기 위한 핸들러입니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onsuspend">onSuspend()</a><br>
@@ -390,7 +385,8 @@ data class VolumeChange(val listener: (Float, Boolean) -> Unit) : EventHandler()
 |Float|디바이스 음량|
 |Boolean|음소거 여부|
 
-볼륨이 변경되는 시점에 사용하기 위한 핸들러입니다. 무음(muted)의 속성을 바꾸었을 때도 호출됩니다. Player.Listener에서 제공하는 [onVolumeChanged()](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onVolumeChanged(float))와는 메서드 이름과 사용하는 파라미터가 다릅니다.
+볼륨이 변경되는 시점에 사용하기 위한 핸들러입니다. 무음([muted](../../interface/media-player/details.md#muted)) 상태가 변경될 때도 호출됩니다.<br><br>
+주의: Player.Listener의 [onVolumeChanged()](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onVolumeChanged(float)) 메서드는 이 핸들러와 전혀 다릅니다. 메서드 이름과 사용하는 파라미터도 다르니 주의하시기 바랍니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/details.md#onvolumechange">onVolumeChange()</a><br>

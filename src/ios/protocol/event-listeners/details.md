@@ -74,7 +74,7 @@ func onError(error: Error)
 ```swift
 func onLoadedData()
 ```
-미디어 아이템이 로드되었을 때 실행합니다.
+미디어 아이템이 로딩되었을 때 실행합니다.
 <div align="right">
 이벤트 핸들러: <a href="../../enum/event-handlers/details.md#loadeddata">EventHandler.loadedData</a>
 </div>
@@ -84,7 +84,7 @@ func onLoadedData()
 ```swift
 func onLoadStart()
 ```
-미디어 리소스를 로드하기 시작할 때 실행합니다.
+미디어 리소스를 로딩하기 시작할 때 실행합니다.
 
 <div align="right">
 이벤트 핸들러: <a href="../../enum/event-handlers/details.md#loadstart">EventHandler.loadStart</a>
@@ -229,7 +229,7 @@ func onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Durati
 
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|mediaItem|[MediaItem](../../struct/media-item/home.md)|미디어 아이템|
+|mediaItem|[MediaItem](../../struct/media-item/home.md)|종료된 미디어 아이템|
 |position|[Duration](../../struct/duration/home.md)|마지막 재생 위치|
 |duration|[Duration](../../struct/duration/home.md)|미디어 길이|
 
@@ -424,7 +424,7 @@ func onVolumeChange(volume: Float, muted: Bool)
 |volume|Float|디바이스 음량|
 |muted|Bool|음소거 여부|
 
-볼륨이 변경되는 시점에 실행합니다.
+볼륨이 변경되는 시점에 실행합니다. 무음([muted](../../class/media-player/details.md#muted)) 상태가 변경될 때도 실행합니다.
 
 <div align="right">
 이벤트 핸들러: <a href="../../enum/event-handlers/details.md#volumechange">EventHandler.volumeChange</a>

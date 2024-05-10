@@ -320,7 +320,7 @@ fun fastSeek(to: Duration)
 ```kotlin
 fun load(uri: String)
 ```
-미디어 주소를 문자열로 입력 받아서 미디어를 로드하기 위한 메서드입니다.
+미디어 주소를 문자열로 입력 받아서 미디어를 로딩하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
@@ -332,7 +332,7 @@ fun load(uri: String)
 ```kotlin
 fun load(uri: Uri)
 ```
-미디어 주소를 Uri 타입으로 입력 받아서 미디어를 로드하기 위한 메서드입니다.
+미디어 주소를 Uri 타입으로 입력 받아서 미디어를 로딩하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
@@ -344,7 +344,7 @@ fun load(uri: Uri)
 ```kotlin
 fun load(mediaItem: MediaItem)
 ```
-미디어 아이템을 로드하기 위한 메서드입니다.
+미디어 아이템을 로딩하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
@@ -356,7 +356,7 @@ fun load(mediaItem: MediaItem)
 ```kotlin
 fun load(mediaItems: List<MediaItem>)
 ```
-미디어 아이템 목록을 로드하기 위한 메서드입니다.
+미디어 아이템 목록을 로딩하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
@@ -405,7 +405,7 @@ fun prepare()
 fun release()
 ```
 
-미디어 목록, 이벤트 핸들러, 리스너 등 미디어에 관련하여 설정했던 것들을 모두 해제한 후, 미디어 플레이어를 릴리스 시키기 위한 메서드입니다.\
+미디어 목록, 이벤트 핸들러, 리스너 등 미디어에 관련하여 설정했던 것들을 모두 해제한 후, 미디어 플레이어를 릴리스 시키기 위한 메서드입니다. 미디어 플레이어를 더이상 사용하지 않을 시에는 반드시 사용해야 합니다.\
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#release()">Player.release()</a>
@@ -472,7 +472,8 @@ fun addEventHandler(handler: EventHandler): EventHandler
 ```
 
 [이벤트 핸들러](../../class/event-handlers/home.md)를 추가하기 위한 메서드입니다.
-반환된 핸들러는 이벤트 핸들러를 제거할 목적으로 [removeEventHandler()](#removeeventhandler)에서 사용할 수 있습니다.
+반환된 이벤트 핸들러는 이벤트 핸들러를 제거할 목적으로 [removeEventHandler()](#removeeventhandler)에서 사용할 수 있습니다.
+이벤트 핸들러를 추가한 후, 해당 이벤트 핸들러가 더 이상 필요 없을 때는 반드시 [removeEventHandler()](#removeeventhandler) 메서드를 사용해서 해제하세요.
 
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|---|
@@ -496,7 +497,7 @@ fun removeEventHandler(handler: EventHandler)
 ```kotlin
 fun addEventListener(listener: EventListener)
 ```
-[이벤트 리스너](../event-listeners/home.md)를 추가하기 위한 메서드입니다.
+[이벤트 리스너](../event-listeners/home.md)를 추가하기 위한 메서드입니다. 이벤트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener()](#removeeventlistener) 메서드를 사용해서 해제하세요.
 
 |파라미터|타입|설명|
 |:--:|:--:|---|

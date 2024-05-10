@@ -55,7 +55,7 @@ case error((_ error: Error) -> Void)
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onerrorerror">onError(error:)</a><br>
 참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a>, 
-<a href="../../enum/media-player-error/home.md">MediaPlayerError</a>
+<a href="../media-player-error/home.md">MediaPlayerError</a>
 </div>
 
 <br><br>
@@ -64,7 +64,7 @@ case error((_ error: Error) -> Void)
 ```swift
 case loadedData(() -> Void)
 ```
-미디어 아이템이 로드되었을 때 사용하기 위한 핸들러입니다.
+미디어 아이템이 로딩되었을 때 사용하기 위한 핸들러입니다.
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onloadeddata">onLoadedData()</a>
 </div>
@@ -75,7 +75,7 @@ case loadedData(() -> Void)
 ```swift
 case loadStart(() -> Void)
 ```
-미디어 리소스를 로드하기 시작할 때 사용하기 위한 핸들러입니다.
+미디어 리소스를 로딩하기 시작할 때 사용하기 위한 핸들러입니다.
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onloadstart">onLoadStart()</a>
 </div>
@@ -224,7 +224,7 @@ case playbackFinish(
 
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|mediaItem|[MediaItem](../../struct/media-item/home.md)|미디어 아이템|
+|mediaItem|[MediaItem](../../struct/media-item/home.md)|종료된 미디어 아이템|
 |position|[Duration](../../struct/duration/home.md)|마지막 재생 위치|
 |duration|[Duration](../../struct/duration/home.md)|미디어 길이|
 
@@ -245,12 +245,12 @@ case playbackStateChange((_ state: MediaPlayer.PlaybackState) -> Void)
 
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|state|[MediaPlayer.PlaybackState](../../enum/media-player-playback-state/home.md)|재생 상태|
+|state|[MediaPlayer.PlaybackState](../media-player-playback-state/home.md)|재생 상태|
 
-미디어 로딩 상태에 따른 처리, 즉, 버퍼링인지 준비가 된 상태인지, 끝이 났는지, 플레이어를 종료하였는지 등의 상황에 따라 처리하기 위한 핸들러입니다.
+미디어 로딩 상태에 따른 처리, 즉, 버퍼링인지 준비가 된 상태인지, 끝이 났는지, 플레이어를 종료하였는지 등의 상황에 따라 처리하기 위한 핸들러입니다. 상황에 따른 설명은 [playbackState](../media-player-playback-state/home.md)를 참고하세요.
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onplaybackstatechangestate">onPlaybackStateChange(state:)</a><br>
-참고: <a href="../../enum/media-player-playback-state/home.md">MediaPlayer.PlaybackState</a>
+참고: <a href="../media-player-playback-state/home.md">MediaPlayer.PlaybackState</a>
 </div>
 
 <br><br>
@@ -319,13 +319,12 @@ case repeatModeChange((_ mode: MediaPlayer.RepeatMode) -> Void)
 ```
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|mode|[MediaPlayer.RepeatMode](../../enum/media-player-repeat-mode/home.md)|반복 모드 종류|
-
+|mode|[MediaPlayer.RepeatMode](../media-player-repeat-mode/home.md)|반복 모드 종류|
 
 반복 모드가 설정되었을 때 처리하기 위한 핸들러입니다.
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onrepeatmodechangemode">onRepeatModeChange(mode:)</a><br>
-참고: <a href="../../enum/media-player-repeat-mode/home.md">MediaPlayer.RepeatMode</a>
+참고: <a href="../media-player-repeat-mode/home.md">MediaPlayer.RepeatMode</a>
 </div>
 
 <br><br>
@@ -352,12 +351,12 @@ case scalingModeChange((_ mode: MediaPlayer.ScalingMode) -> Void)
 ```
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|mode|[MediaPlayer.ScalingMode](../../enum/media-player-scaling-mode/home.md)|화면 스케일링 상태|
+|mode|[MediaPlayer.ScalingMode](../media-player-scaling-mode/home.md)|화면 스케일링 상태|
 
 미디어 화면의 스케일링 상태가 변하는 시점에 사용하기 위한 핸들러입니다.
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onscalingmodechangemode">onScalingModeChange(mode:)</a><br>
-참고: <a href="../../enum/media-player-scaling-mode/home.md">MediaPlayer.ScalingMode</a>
+참고: <a href="../media-player-scaling-mode/home.md">MediaPlayer.ScalingMode</a>
 </div>
 
 <br><br>
@@ -444,7 +443,7 @@ case volumeChange((_ volume: Float, _ muted: Bool) -> Void)
 |volume|Float|디바이스 음량|
 |muted|Bool|음소거 여부|
 
-볼륨이 변경되는 시점에 사용하기 위한 핸들러입니다.
+볼륨이 변경되는 시점에 사용하기 위한 핸들러입니다. 무음([muted](../../class/media-player/details.md#muted)) 상태가 변경될 때도 호출됩니다.
 
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onvolumechangevolumemuted">onVolumeChange(volume:muted:)</a>
@@ -456,7 +455,7 @@ case volumeChange((_ volume: Float, _ muted: Bool) -> Void)
 ```swift
 case waiting(() -> Void)
 ```
-일시적인 버퍼 부족, 즉 데이터가 충분히 로딩되지 못하거나 데이터가 없어서 재생이 정지된 시점에 사용하기 위한 핸들러입니다. [playbackState](../../enum/media-player-playback-state/home.md)가 .buffering이 될 때 호출됩니다.
+일시적인 버퍼 부족, 즉 데이터가 충분히 로딩되지 못하거나 데이터가 없어서 재생이 정지된 시점에 사용하기 위한 핸들러입니다. [playbackState](../media-player-playback-state/home.md)가 .buffering이 될 때 호출됩니다.
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onwaiting">onWaiting()</a>
 </div>
