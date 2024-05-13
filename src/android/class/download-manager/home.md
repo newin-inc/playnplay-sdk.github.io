@@ -20,6 +20,13 @@ import com.newin.nplayer.sdk.DownloadManager
 ```kotlin
 class DownloadManager private constructor(private val context: Context) {
 
+    interface Listener {
+        fun onItemAdded(item: DownloadItem) {}
+        fun onItemRemoved(item: DownloadItem) {}
+        fun onStatusChanged(item: DownloadItem) {}
+        fun onProgressUpdated(item: DownloadItem) {}
+    }
+
     var downloadsUri: Uri
     val items: List<DownloadItem>
     var maxParallelDownloads: Int
@@ -54,9 +61,28 @@ companion object {
 ```
 |타입|설명|설정|
 |:--:|:--:|:--:|
-|DownloadManager|현재 활성화된 다운로드 매니저에 접근하기 위한 속성|불가능|
+|[DownloadManager](#downloadmanager)|현재 활성화된 다운로드 매니저에 접근하기 위한 속성|불가능|
 
 다운로드 매니저에 접근하기 위한 정적 속성입니다. 아래에 언급되는 속성 및 메서드를 호출할 때, DownloadManager.shared를 사용하여 접근할 수 있습니다.
+
+<br><br>
+# 인터페이스
+
+## DownloadManager.Listener
+```kotlin
+interface Listener {
+    fun onItemAdded(item: DownloadItem) {}
+    fun onItemRemoved(item: DownloadItem) {}
+    fun onStatusChanged(item: DownloadItem) {}
+    fun onProgressUpdated(item: DownloadItem) {}
+}
+```
+
+다운로드와 관련된 이벤트 처리를 위한 인터페이스입니다. 자세한 내용은 [DownloadManager.Listener](../../interface/download-manager-listener/home.md)를 참고하세요.
+
+<div align="right">
+참고: <a href="../../interface/download-manager-listener/home.md">DownloadManager.Listener</a>
+</div>
 
 <br><br>
 # 속성
@@ -68,12 +94,13 @@ var downloadsUri: Uri
 |타입|설명|설정|
 |:--:|:--:|:--:|
 |[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|다운로드된 아이템이 저장되는 최상위 디렉토리|불가능|
+
+다운로드된 아이템이 저장되는 디렉토리 중 최상위 디렉토리를 나타내는 속성입니다.<br>
+
 <div align="right">
 참고: <a href="../download-item/home.md#displaypath">displayPath</a>, 
 <a href="../download-item/home.md#touri">toUri</a>
 </div>
-
-다운로드된 아이템이 저장되는 디렉토리 중 최상위 디렉토리를 나타내는 속성입니다.<br>
 
 <br><br>
 ## items
@@ -109,11 +136,11 @@ fun add(mediaItem: MediaItem, allowsCellularAccess: Boolean = true): DownloadIte
 |mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)|추가하고자 하는 미디어 아이템|O|없음|
 |allowsCellularAccess|Boolean|다운로드 시 셀룰러 데이터 사용 여부|X|true|
 
+다운로드를 할 미디어 아이템을 추가합니다. 현재 다운로드가 진행되고 있는 아이템의 수가 [maxParallelDownloads](#maxparalleldownloads) 보다 적으면 바로 다운로드를 시작합니다. 셀룰러 데이터 사용을 허용하지 않으려면, allowsCellularAccess를 false로 설정하여 호출하십시오.
+
 <div align="right">
 참고: <a href="../download-item/home.md#id">DownloadItemId</a>
 </div>
-
-다운로드를 할 미디어 아이템을 추가합니다. 현재 다운로드가 진행되고 있는 아이템의 수가 [maxParallelDownloads](#maxparalleldownloads) 보다 적으면 바로 다운로드를 시작합니다. 셀룰러 데이터 사용을 허용하지 않으려면, allowsCellularAccess를 false로 설정하여 호출하십시오.
 
 <br><br>
 ## getItemsByStatus
@@ -196,7 +223,7 @@ fun addListener(listener: Listener)
 |:--:|:--:|:--:|
 |listener|[DownloadManager.Listener](../../interface/download-manager-listener/home.md)|추가할 다운로드 매니저 리스너|
 
-[다운로드 매니저 리스너](../../interface/download-manager-listener/home.md)를 추가하기 위한 메서드입니다.
+[다운로드 매니저 리스너](../../interface/download-manager-listener/home.md)를 추가하기 위한 메서드입니다. 리스너를 추가한 후, 해당 리스너가 더 이상 필요 없을 때는 반드시 [removeListener()](#removelistener) 메서드를 사용해서 제거하세요.
 
 <br><br>
 ## removeListener

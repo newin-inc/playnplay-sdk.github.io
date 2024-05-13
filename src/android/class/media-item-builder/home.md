@@ -12,11 +12,12 @@ public final class MediaItem implements Bundleable {
 ```kotlin
 fun MediaItem.Builder.setSeekable(seekable: Boolean): MediaItem.Builder
 ```
+
+[MediaItem.Builder](https://developer.android.com/reference/androidx/media3/common/MediaItem.Builder) 클래스를 확장하여, Seek 기능에 대한 메서드를 제공합니다.
+
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem.Builder">MediaItem.Builder</a>
 </div>
-
-Seek 기능에 대한 메서드를 사용하기 위해서, [MediaItem.Builder](https://developer.android.com/reference/androidx/media3/common/MediaItem.Builder)를 확장하여 아래 메서드를 제공합니다.
 
 <br><br>
 # 메서드

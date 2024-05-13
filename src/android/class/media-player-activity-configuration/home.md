@@ -47,7 +47,7 @@ data class MediaPlayerActivityConfiguration(
 |defaultPlaybackRate|Float|미디어의 재생 속도|X|1.0|
 |seekBackwardIncrement|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 전으로 이동하는 시간의 크기|X|10초|
 |seekForwardIncrement|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 후로 이동하는 시간의 크기|X|10초|
-|screenOrientationLock|ScreenOrientationLock|화면 고정 방향|X|Off|
+|screenOrientationLock|[ScreenOrientationLock](../../enum/media-player-activity-configuration-screen-orientation-lock/home.md)|화면 고정 방향|X|Off|
 
 <br><br>
 # 정적 속성
@@ -58,6 +58,10 @@ companion object {
     val defaultConfiguration: MediaPlayerActivityConfiguration
 }
 ```
+|타입|설명|설정|
+|:--:|:--:|:--:|
+|[MediaPlayerActivityConfiguration](#mediaplayeractivityconfiguration)|기본 설정 값에 접근하기 위한 속성|불가능|
+
 기본 설정 값을 가져오는 정적 속성입니다. MediaPlayerActivityConfiguration.defaultConfiguration 를 사용하여 기본 설정 값을 가져올 수 있습니다.
 
 <br><br>
@@ -152,12 +156,12 @@ var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off
 |:--:|:--:|:--:|:--:|
 |[ScreenOrientationLock](#screenorientationlock-1)|화면 방향 고정 상태|가능|Off|
 
+화면의 고정 상태를 나타내는 속성입니다.
+
 <div align="right">
 참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
 <a href="#screenorientationlock-1">ScreenOrientationLock</a>
 </div>
-
-화면의 고정 상태를 나타내는 속성입니다.
 
 <br><br>
 # 열거형

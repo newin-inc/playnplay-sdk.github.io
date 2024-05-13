@@ -7,7 +7,7 @@ fun onDurationChange(duration: Duration)
 ```
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|duration|[Duration](https://developer.android.com/reference/java/time/Duration)|미디어 길이|
+|duration|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|미디어 길이|
 
 미디어의 길이(duration)가 변경될 때 실행합니다.
 
@@ -50,7 +50,7 @@ fun onError(error: PlaybackException)
 |:--:|:--:|:--:|
 |error|[PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)|재생 오류가 발생했을 때 예외|
 
-에러가 발생하여 리소스를 로딩할 수 없을 때 실행합니다.
+에러가 발생하여 리소스를 로드할 수 없을 때 실행합니다.
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#error">Error</a><br>
@@ -64,7 +64,7 @@ fun onError(error: PlaybackException)
 ```kotlin
 fun onLoadedData()
 ```
-미디어 트랙이 로딩되었을 때 실행합니다.
+미디어 트랙이 로드되었을 때 실행합니다.
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#loadeddata">LoadedData</a>
@@ -76,7 +76,7 @@ fun onLoadedData()
 ```kotlin
 fun onLoadedMetadata()
 ```
-메타데이터가 로딩되었을 때 실행합니다.
+메타데이터가 로드되었을 때 실행합니다.
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#loadedmetadata">LoadedMetadata</a>
@@ -127,8 +127,8 @@ fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duratio
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|종료된 미디어 아이템|
-|position|[Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
-|duration|[Duration](https://developer.android.com/reference/java/time/Duration)?|미디어 길이|
+|position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
+|duration|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)?|미디어 길이|
 
 미디어가 종료되는 시점에 실행합니다. 마지막 재생 위치(position) 및 미디어의 길이(duration) 값을 사용할 수 있습니다. 
 
@@ -163,8 +163,8 @@ fun onPositionDiscontinuity(
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |player|[MediaPlayer](../../interface/media-player/home.md)|미디어 플레이어|
-|oldPosition|[Duration](https://developer.android.com/reference/java/time/Duration)|이전 재생 위치|
-|newPosition|[Duration](https://developer.android.com/reference/java/time/Duration)|바뀐 재생 위치|
+|oldPosition|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|이전 재생 위치|
+|newPosition|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|바뀐 재생 위치|
 
 재생 위치가 변경되는 시점에 실행합니다. 이전 위치와 이동한 위치 모두 접근이 가능합니다.
 
@@ -172,8 +172,8 @@ fun onPositionDiscontinuity(
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/details.md#positiondiscontinuity">PositionDiscontinuity</a><br>
-참고: <a href="../../interface/media-player/home.md">MediaPlayer</a><br>
-참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
+참고: <a href="../../interface/media-player/home.md">MediaPlayer</a><br>, 
+<a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
 <br><br>
@@ -231,7 +231,7 @@ fun onResizeModeChange(mode: @AspectRatioFrameLayout.ResizeMode Int)
 ```
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|mode|[@ResizeMode](https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode) Int|화면의 크기 상태|
+|mode|@[ResizeMode](https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode) Int|화면의 크기 상태|
 
 화면 크기 조절을 하는 시점에 실행합니다.
 
@@ -284,7 +284,7 @@ fun onTimeUpdate(position: Duration)
 ```
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|position|[Duration](https://developer.android.com/reference/java/time/Duration)|현재 재생 위치|
+|position|java.time.[Duration](https://developer.android.com/reference/java/time/Duration)|현재 재생 위치|
 
 [currentTime](../../interface/media-player/details.md#currenttime)이 변경되는 시점에 실행합니다. 즉, 미디어가 재생이 되는 동안 수행하려는 작업을 이곳에 구현하시면 됩니다.
 

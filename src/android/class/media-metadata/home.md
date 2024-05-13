@@ -22,6 +22,9 @@ val MediaMetadata.lastPlayedTime: Duration?
 
 val MediaMetadata.duration: Duration?
 ```
+
+미디어 메타 데이터 클래스입니다. 현재 일부 속성이 deprecated 상태입니다. 확인 후 변경해주세요.
+
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata">MediaMetadata</a>, 
 <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#buildUpon()">MediaMetadata.buildUpon()</a>, 
@@ -36,6 +39,11 @@ val MediaMetadata.duration: Duration?
 ```java
 @Nullable public final Uri artworkUri
 ```
+
+|타입|설명|
+|:--:|:--:|
+|[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|미디어 아이템의 아트워크 경로|
+
 미디어 아이템의 아트워크 경로를 나타내는 속성입니다.
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#artworkUri()">artworkUri</a>
@@ -46,6 +54,10 @@ val MediaMetadata.duration: Duration?
 ```java
 @Nullable public final CharSequence title
 ```
+|타입|설명|
+|:--:|:--:|
+|CharSequence|미디어 아이템의 제목|
+
 미디어 아이템의 제목을 나타내는 속성입니다.
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#title()">title</a>
@@ -125,8 +137,7 @@ public static final class Builder
 미디어 메타데이터를 만드는 클래스입니다.
 
 <div align="right">
-참고: 
-<a href="https://developer.android.com/reference/kotlin/androidx/media3/common/MediaMetadata.Builder">MediaMetadata.Builder</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/MediaMetadata.Builder">MediaMetadata.Builder</a>
 </div>
 
 

@@ -14,7 +14,7 @@ data class TimeRanges(private val ranges: ArrayList<TimeRange>) {
 }
 ```
 
-buffered 속성에서 사용되는 데이터 클래스다.
+buffered 속성에서 사용되는 데이터 클래스입니다.
 
 <br><br>
 # 생성자 파라미터

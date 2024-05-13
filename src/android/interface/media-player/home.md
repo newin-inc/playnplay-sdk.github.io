@@ -14,6 +14,7 @@ interface MediaPlayer : Player {
     var currentTime: Duration
     var defaultMuted: Boolean
     var defaultPlaybackRate: Float
+    var deviceVolume: Float
     val duration: Duration
     val ended: Boolean
     val error: PlaybackException?
@@ -28,16 +29,13 @@ interface MediaPlayer : Player {
     var seekBackIncrement: Duration
     var seekForwardIncrement: Duration
     val seeking: Boolean
-    var deviceVolume: Float
 
     fun fastSeek(to: Duration)
     fun load(uri: String) 
     fun load(uri: Uri)
     fun load(mediaItem: MediaItem)
-    fun load(mediaItems: List<MediaItem>
-    fun seekBack()
+    fun load(mediaItems: List<MediaItem>)
     fun seekBack(increment: Duration)
-    fun seekForward()
     fun seekForward(increment: Duration)
     fun seekTo(position: Duration, force: Boolean)
     fun addEventHandler(handler: EventHandler): EventHandler
@@ -49,9 +47,11 @@ interface MediaPlayer : Player {
         fun withStart(start: Duration) = RepeatRange(start, end)
         fun withEnd(end: Duration) = RepeatRange(start, end)
     }
-
 }
 ```
+
+미디어 플레이어 클래스입니다. 활성화된 미디어 플레이어에 접근하는 방법은 [getMediaPlayer()](../../class/context/home.md#getmediaplayer)를 참고하세요.
+
 <details>
 <summary>
     <a href="./details.md#속성">속성</a>
@@ -63,9 +63,9 @@ interface MediaPlayer : Player {
 
 - [val buffered: TimeRanges](./details.md#buffered)
 
-- [val currentMediaItem: MediaItem](./details.md#currentmediaitem)
+- [val Player.currentMediaItem: MediaItem](./details.md#currentmediaitem)
 
-- [val currentMediaItemIndex: Int](./details.md#currentmediaitemindex)
+- [val Player.currentMediaItemIndex: Int](./details.md#currentmediaitemindex)
 
 - [val currentSrc: Uri?](./details.md#currentsrc)
 
@@ -123,19 +123,19 @@ interface MediaPlayer : Player {
 
 - [fun load(mediaItems: List<MediaItem>)](./details.md#load-3)
 
-- [fun pause()](./details.md#pause)
+- [fun Player.pause()](./details.md#pause)
 
-- [fun play()](./details.md#play)
+- [fun Player.play()](./details.md#play)
 
-- [fun prepare()](./details.md#prepare)
+- [fun Player.prepare()](./details.md#prepare)
 
-- [fun release()](./details.md#release)
+- [fun Player.release()](./details.md#release)
 
-- [fun seekBack()](./details.md#seekback)
+- [fun Player.seekBack()](./details.md#seekback)
 
 - [fun seekBack(increment: Duration)](./details.md#seekback-1)
 
-- [fun seekForward()](./details.md#seekforward)
+- [fun Player.seekForward()](./details.md#seekforward)
 
 - [fun seekForward(increment: Duration)](./details.md#seekforward-1)
 

@@ -16,11 +16,11 @@ class PlaybackInfoRepository(context: Context) {
 }
 ```
 
+재생 정보 저장소를 나타내는 클래스입니다. 미디어의 uri를 알고 있으면, 아래처럼, 속성 [shared](#shared)와 메서드 [findBy()](#findby)를 사용하여 해당 uri의 미디어 아이템 정보를 가져올 수 있습니다.
+
 <div align="right">
 참고: <a href="../playback-info/home.md">PlaybackInfo</a>
 </div>
-
-재생 정보 저장소를 나타내는 클래스입니다. 미디어의 uri를 알고 있으면, 아래처럼, 속성 [shared](#shared)와 메서드 [findBy](#findby)를 사용하여 해당 uri의 미디어 아이템 정보를 가져올 수 있습니다.
 
 <br><br>
 # 정적 속성
@@ -33,7 +33,7 @@ companion object {
 ```
 |타입|설명|설정|
 |:--:|:--:|:--:|
-|PlaybackInfoRepository|현재 재생 정보 저장소에 접근하기 위한 속성|불가능|
+|[PlaybackInfoRepository](#playbackinforepository)|현재 재생 정보 저장소에 접근하기 위한 속성|불가능|
 
 재생 정보 저장소에 접근하기 위한 정적 속성입니다. 아래에 언급되는 메서드를 호출할 때, PlaybackInfoRepository.shared를 사용하여 접근할 수 있습니다.
 

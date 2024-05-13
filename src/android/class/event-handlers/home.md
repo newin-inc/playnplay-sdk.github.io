@@ -63,7 +63,7 @@ sealed class EventHandler {
 
 ```
 
-이벤트 핸들러의 종류와 사용 방법에 대한 설명입니다. 각각 데이터 클래스에 대한 설명은 [클래스](./details.md)를, 사용 방법은 [addEventHandler()](../../interface/media-player/details.md#addeventhandler)를 참고하시면 됩니다. 이벤트 핸들러를 추가한 후, 해당 이벤트 핸들러가 더 이상 필요 없을 때는 반드시 [removeEventHandler()](../../interface/media-player/details.md#removeeventhandler) 메서드를 사용해서 해제하세요.<br>
+이벤트 핸들러의 종류와 사용 방법에 대한 설명입니다. 각각 데이터 클래스에 대한 설명은 [클래스](./details.md)를, 사용 방법은 [addEventHandler()](../../interface/media-player/details.md#addeventhandler)를 참고하시면 됩니다. 이벤트 핸들러를 추가한 후, 해당 이벤트 핸들러가 더 이상 필요 없을 때는 반드시 [removeEventHandler()](../../interface/media-player/details.md#removeeventhandler) 메서드를 사용해서 제거하세요.<br>
 이벤트 핸들러를 대신하여 사용 방법에 따라서 [이벤트 리스너](../../interface/event-listeners/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 리스너에서 사용되는 파라미터는 이벤트 핸들러의 파라미터와 동일합니다. 이벤트 리스너의 사용 방법은 [addEventListener()](../../interface/media-player/details.md#addeventlistener)와 [메서드](../../interface/event-listeners/details.md) 를 참고하시면 됩니다. 
 
 <details>

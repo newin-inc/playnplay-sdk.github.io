@@ -16,6 +16,9 @@ val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
 
 val MediaItem.DrmConfiguration.userId: String?
 ```
+
+DRM 설정에 포함된 App 아이디, 사용자 아이디, 오프라인 재생 기간을 가져올 수 있는 속성을 제공합니다.
+
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem.DrmConfiguration">MediaItem.DrmConfiguration</a>
 </div>
@@ -42,6 +45,11 @@ import com.newin.nplayer.sdk.extensions.appId
 
 val MediaItem.DrmConfiguration.appId: String?
 ```
+
+|타입|설명|설정|
+|:--:|:--:|:--:|
+|String?|App 아이디|불가능|
+
 App 아이디를 가져오는 속성입니다.
 
 <br><br>
@@ -51,16 +59,24 @@ import com.newin.nplayer.sdk.extensions.offlineAccessPeriod
 
 val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
 ```
+|타입|설명|설정|
+|:--:|:--:|:--:|
+|Duration?|오프라인 재생 기간|불가능|
+
+다운로드 컨텐츠의 오프라인 재생 기간을 가져오는 속성입니다.
+
 <div align="right">
 참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>, 
 <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
 </div>
-
-다운로드 컨텐츠의 오프라인 재생 기간을 가져오는 속성입니다.
 
 <br><br>
 ## userId
 ```kotlin
 val MediaItem.DrmConfiguration.userId: String?
 ```
+|타입|설명|설정|
+|:--:|:--:|:--:|
+|String?|사용자 아이디|불가능|
+
 사용자 아이디를 가져오는 속성입니다.

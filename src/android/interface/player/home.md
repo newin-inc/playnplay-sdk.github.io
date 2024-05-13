@@ -32,10 +32,11 @@ val Player.audioTracks: List<Track>
 |:----:|---|:---:|
 |List\<Track\>|오디오 트랙 목록|불가능|
 
+현재 재생 중인 미디어의 오디오 트랙을 가져오는 속성입니다.
+
 <div align="right">
 참고: <a href="../../class/audio-track/home.md">AudioTrack</a>
 </div>
-현재 재생 중인 미디어의 오디오 트랙을 가져오는 속성입니다.
 
 <br><br>
 ## currentWatermarkSettings
@@ -70,10 +71,11 @@ val Player.subtitleTracks: List<Track>
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |List\<Track\>|자막 트랙 목록|불가능|
+현재 재생 중인 미디어의 자막 트랙을 가져오는 속성입니다.
+
 <div align="right">
 참고: <a href="../../class/subtitle-track/home.md">SubtitleTrack</a>
 </div>
-현재 재생 중인 미디어의 자막 트랙을 가져오는 속성입니다.
 
 <br><br>
 ## videoTracks
@@ -83,10 +85,12 @@ val Player.videoTracks: List<Track>
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |List\<Track\>|비디오 트랙 목록|불가능|
+
+현재 재생 중인 미디어의 비디오 트랙을 가져오는 속성입니다.
+
 <div align="right">
 참고: <a href="../../class/video-track/home.md">VideoTrack</a>
 </div>
-현재 재생 중인 미디어의 비디오 트랙을 가져오는 속성입니다.
 
 <br><br>
 # 메서드
@@ -119,7 +123,8 @@ fun Player.selectTrack(track: Track)
 |:--:|:--:|---|
 |track|Track|활성화 할 (오디오,비디오,자막)트랙|
 
+트랙을 선택하여 활성화하는 메서드입니다.
+
 <div align="right">
 참고: <a href="../../class/track/home.md">Track</a>, <a href="../../class/audio-track/home.md">AudioTrack</a>, <a href="../../class/subtitle-track/home.md">SubtitleTrack</a>, <a href="../../class/video-track/home.md">VideoTrack</a>
 </div>
-트랙을 선택하여 활성화하는 메서드입니다.

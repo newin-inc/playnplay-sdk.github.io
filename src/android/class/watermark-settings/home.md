@@ -18,14 +18,16 @@ data class WatermarkSettings {
 }
 ```
 
+워터마크 설정을 나타내는 데이터 클래스입니다.
+
 <br><br>
 # 속성
 
 | 이름 | 타입 | 설명 | 비고 |
 |:--:|:--:|:--:|:--:|
-|duration|[Duration](https://developer.android.com/reference/java/time/Duration)|유지 시간||
-|interval|[Duration](https://developer.android.com/reference/java/time/Duration)|출력 주기||
-|position|[Position](#watermarksettingsposition)|워터마크의 위치||
+|duration|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|유지 시간||
+|interval|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|출력 주기||
+|position|[WatermarkSettings.Position](#watermarksettingsposition)|워터마크의 위치||
 |text|String|워터마크 출력 내용||
 |textColor|String|글자 색상|예: #ff00ff|
 |textOpacity|Double|글자의 불투명도|범위: 0.0~1.0|
