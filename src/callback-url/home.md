@@ -7,4 +7,6 @@
 
 - [재생 진행 상태 보고](./notifiy-playback-progress.md)
 
-- [다운로드 완료 보고](./notifiy-download-completion.md)
+- [재생 상태 보고](./notifiy-playback-status.md)
+
+- [다운로드 상태 보고](./notifiy-download-status.md)

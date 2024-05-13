@@ -116,4 +116,6 @@
 - [Callback URL](./callback-url/home.md)
     - [접근 권한 검사](./callback-url/check-access-right.md)
     - [재생 진행 상태 보고](./callback-url/notifiy-playback-progress.md)
-    - [다운로드 완료 보고](./callback-url/notifiy-download-completion.md)
+    - [재생 상태 보고](./callback-url/notifiy-playback-status.md)
+    - [다운로드 상태 보고](./callback-url/notifiy-download-status.md)
+    
