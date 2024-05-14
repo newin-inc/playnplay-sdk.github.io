@@ -7,5 +7,5 @@ class AudioTrack: Track
 
 <div align="right">
 참고: <a href="../track/home.md">Track</a>, 
-<a href="../../interface/player/home.md#audiotracks">Player.audioTracks</a>
+<a href="../../interface/player/home.md#audiotracks">audioTracks</a>
 </div>

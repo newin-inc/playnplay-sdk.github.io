@@ -47,7 +47,7 @@ val currentMediaItem: MediaItem
 현재 재생 중인 미디어 아이템을 의미하는 속성입니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#getCurrentMediaItem()">Player.getCurrentMediaItem</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#getCurrentMediaItem()">getCurrentMediaItem</a>
 </div>
 
 <br><br>
@@ -63,7 +63,7 @@ val currentMediaItemIndex: Int
 현재 재생 중인 미디어 아이템의 index를 의미하는 속성입니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#getCurrentMediaItemIndex()">Player.getCurrentMediaItemIndex</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#getCurrentMediaItemIndex()">getCurrentMediaItemIndex</a>
 </div>
 
 <br><br>
@@ -189,7 +189,7 @@ val mediaItems: List<MediaItem>
 |:--:|:--:|:--:|:--:|
 |List\<[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)\>|현재 재생 목록에 있는 미디어 아이템들|불가능|[]|
 
-미디어 아이템들의 목록을 나타내는 속성입니다. 해당 속성은 설정이 불가능합니다. 목록 전체를 바꾸고 싶을 때는 Player.setMediaItems()를 사용하시면 됩니다.
+미디어 아이템들의 목록을 나타내는 속성입니다. 해당 속성은 설정이 불가능합니다. 목록 전체를 바꾸고 싶을 때는 [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)의 [setMediaItems()](https://developer.android.com/reference/kotlin/androidx/media3/common/Player#setMediaItems(java.util.List%3Candroidx.media3.common.MediaItem%3E))를 사용하시면 됩니다.
 
 <br><br>
 ## muted
@@ -385,7 +385,7 @@ fun pause()
 미디어를 일시 정지하기 위한 메서드입니다.\
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#pause()">Player.pause()</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#pause()">pause()</a>
 </div>
 
 <br><br>
@@ -397,7 +397,7 @@ fun play()
 미디어를 재생하기 위한 메서드입니다.\
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#play()">Player.play()</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#play()">play()</a>
 </div>
 
 <br><br>
@@ -409,7 +409,7 @@ fun prepare()
 미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [defaultPlaybackRate](#defaultplaybackrate), [defaultMuted](#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하기 시작하고 재생에 필요한 리소스를 확보합니다.\
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#prepare()">Player.prepare()</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#prepare()">prepare()</a>
 </div>
 
 <br><br>
@@ -422,7 +422,7 @@ fun release()
 미디어 목록, 이벤트 핸들러, 리스너 등 미디어에 관련하여 설정했던 것들을 모두 해제한 후, 미디어 플레이어를 릴리스 시키기 위한 메서드입니다. 미디어 플레이어를 더이상 사용하지 않을 시에는 반드시 사용해야 합니다.\
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#release()">Player.release()</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#release()">release()</a>
 </div>
 
 <br><br>
@@ -434,7 +434,7 @@ fun seekBack()
 현재 위치에서 속성 [seekBackIncrement](#seekbackincrement) 만큼 전으로 이동하기 위한 메서드입니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#seekBack()">Player.seekBack()</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#seekBack()">seekBack()</a>
 </div>
 
 <br><br>
@@ -458,7 +458,7 @@ fun seekForward()
 현재 위치에서 속성 [seekForwardIncrement](#seekforwardincrement) 만큼 후로 이동하기 위한 메서드입니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#seekForward()">Player.seekForward()</a>
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#seekForward()">seekForward()</a>
 </div>
 
 <br><br>

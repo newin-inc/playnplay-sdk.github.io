@@ -63,9 +63,9 @@ interface MediaPlayer : Player {
 
 - [val buffered: TimeRanges](./details.md#buffered)
 
-- [val Player.currentMediaItem: MediaItem](./details.md#currentmediaitem)
+- [val currentMediaItem: MediaItem](./details.md#currentmediaitem) / [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)
 
-- [val Player.currentMediaItemIndex: Int](./details.md#currentmediaitemindex)
+- [val currentMediaItemIndex: Int](./details.md#currentmediaitemindex) / [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)
 
 - [val currentSrc: Uri?](./details.md#currentsrc)
 
@@ -123,19 +123,19 @@ interface MediaPlayer : Player {
 
 - [fun load(mediaItems: List<MediaItem>)](./details.md#load-3)
 
-- [fun Player.pause()](./details.md#pause)
+- [fun pause()](./details.md#pause) / [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)
 
-- [fun Player.play()](./details.md#play)
+- [fun play()](./details.md#play) / [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)
 
-- [fun Player.prepare()](./details.md#prepare)
+- [fun prepare()](./details.md#prepare) / [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)
 
-- [fun Player.release()](./details.md#release)
+- [fun release()](./details.md#release) / [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)
 
-- [fun Player.seekBack()](./details.md#seekback)
+- [fun seekBack()](./details.md#seekback) / [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)
 
 - [fun seekBack(increment: Duration)](./details.md#seekback-1)
 
-- [fun Player.seekForward()](./details.md#seekforward)
+- [fun seekForward()](./details.md#seekforward) / [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)
 
 - [fun seekForward(increment: Duration)](./details.md#seekforward-1)
 

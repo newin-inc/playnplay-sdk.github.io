@@ -7,5 +7,5 @@ class VideoTrack: Track
 
 <div align="right">
 참고: <a href="../track/home.md">Track</a>, 
-<a href="../../interface/player/home.md#videotracks">Player.videoTracks</a>
+<a href="../../interface/player/home.md#videotracks">videoTracks</a>
 </div>

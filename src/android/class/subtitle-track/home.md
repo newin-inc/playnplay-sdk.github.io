@@ -7,5 +7,5 @@ class SubtitleTrack: Track
 
 <div align="right">
 참고: <a href="../track/home.md">Track</a>, 
-<a href="../../interface/player/home.md#subtitletracks">Player.subtitleTracks</a>
+<a href="../../interface/player/home.md#subtitletracks">subtitleTracks</a>
 </div>
