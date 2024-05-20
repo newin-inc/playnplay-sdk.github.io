@@ -118,4 +118,5 @@
     - [재생 진행 상태 보고](./callback-url/notifiy-playback-progress.md)
     - [재생 상태 보고](./callback-url/notifiy-playback-status.md)
     - [다운로드 상태 보고](./callback-url/notifiy-download-status.md)
+    - [변경 이력](./callback-url/revision-history/home.md)
     
