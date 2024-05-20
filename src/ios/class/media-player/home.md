@@ -74,7 +74,7 @@ final public class MediaPlayer {
 }
 ```
 
-활성화된 미디어 플레이어에 접근하는 방법은 [player](../media-player-view-controller/home.md#player)를 참고하세요.
+미디어 플레이어 클래스입니다. 활성화된 미디어 플레이어에 접근하는 방법은 [player](../media-player-view-controller/home.md#player)를 참고하세요.
 
 
 <details>

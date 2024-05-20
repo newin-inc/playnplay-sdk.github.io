@@ -64,7 +64,7 @@ case error((_ error: Error) -> Void)
 ```swift
 case loadedData(() -> Void)
 ```
-미디어 아이템이 로딩되었을 때 사용하기 위한 핸들러입니다.
+미디어 아이템이 로드되었을 때 사용하기 위한 핸들러입니다.
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onloadeddata">onLoadedData()</a>
 </div>

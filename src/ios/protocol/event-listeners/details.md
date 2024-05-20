@@ -74,7 +74,7 @@ func onError(error: Error)
 ```swift
 func onLoadedData()
 ```
-미디어 아이템이 로딩되었을 때 실행합니다.
+미디어 아이템이 로드되었을 때 실행합니다.
 <div align="right">
 이벤트 핸들러: <a href="../../enum/event-handlers/details.md#loadeddata">EventHandler.loadedData</a>
 </div>

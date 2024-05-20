@@ -65,7 +65,7 @@ func drmConfiguration(_ drmConfiguration: DrmConfiguration?) -> MediaItem.Builde
 
 |파라미터|타입|설명|필수|
 |:--:|:--:|:--:|:--:|
-|drmConfiguration|[DrmConfiguration](../../struct/drm-configuration/home.md)?|앱 ID와 사용자 ID로 만든 설정|O|
+|drmConfiguration|[DrmConfiguration](../../struct/drm-configuration/home.md)?|App 아이디와 사용자 아이디로 만든 DRM 설정|O|
 
 DRM 설정을 넘겨줍니다.
 

@@ -54,7 +54,7 @@ public static let shared: DownloadManager { get }
 ```
 |타입|설명|설정|
 |:--:|:--:|:--:|
-|DownloadManager|현재 활성화된 다운로드 매니저에 접근하기 위한 속성|불가능|
+|[DownloadManager](#downloadmanager)|현재 활성화된 다운로드 매니저에 접근하기 위한 속성|불가능|
 
 다운로드 매니저에 접근하기 위한 정적 속성입니다. 아래에 언급되는 속성 및 메서드를 호출할 때, DownloadManager.shared를 사용하여 접근할 수 있습니다.
 
@@ -238,7 +238,7 @@ func addListener(_ listener: DownloadManager.Listener)
 |:--:|:--:|--|
 |listener|[DownloadManager.Listener](../../protocol/download-manager-listeners/home.md)|추가할 다운로드 매니저 리스너|
 
-[다운로드 매니저 리스너](../../protocol/download-manager-listeners/home.md)를 추가하기 위한 메서드입니다.
+[다운로드 매니저 리스너](../../protocol/download-manager-listeners/home.md)를 추가하기 위한 메서드입니다. 리스너를 추가한 후, 해당 리스너가 더 이상 필요 없을 떄는 반드시 [removeListener(_)](#removelistener_) 메서드를 사용해서 제거하세요.
 
 <div align="right">
 참고: <a href="../../protocol/download-manager-listeners/home.md">DownloadManager.Listener</a>

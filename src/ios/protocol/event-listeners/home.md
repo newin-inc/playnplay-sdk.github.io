@@ -37,7 +37,7 @@ protocol EventListener : AnyObject {
 }
 ```
 
-EventListener는 이벤트 처리를 위한 프로토콜로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 [메서드](./details.md)를, 사용 방법은 [addEventListener(_)](../../class/media-player/details.md#addeventlistener_)를 참고하시면 됩니다. 이밴트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener(_)](../../class/media-player/details.md#removeeventlistener_) 메서드를 사용해서 해제하세요.<br>
+EventListener는 이벤트 처리를 위한 프로토콜로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 [메서드](./details.md)를, 사용 방법은 [addEventListener(_)](../../class/media-player/details.md#addeventlistener_)를 참고하시면 됩니다. 이밴트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener(_)](../../class/media-player/details.md#removeeventlistener_) 메서드를 사용해서 제거하세요.<br>
 이벤트 리스너를 대신하여 사용 방법에 따라서 [이벤트 핸들러](../../enum/event-handlers/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 핸들러에서 사용되는 파라미터는 이벤트 리스너의 파라미터와 동일합니다. 이벤트 핸들러의 사용 방법은 [addEventHandler(_)](../../class/media-player/details.md#addeventhandler_)와 [케이스](../../enum/event-handlers/details.md)를 참고하시면 됩니다.
 
 <details>

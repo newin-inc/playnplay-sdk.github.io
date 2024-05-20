@@ -11,7 +11,7 @@ protocol DownloadManagerListener: AnyObject {
 extension DownloadManager { typealias Listener = DownloadManagerListener }
 ```
 
-DownloadManager.Listener(DownloadManagerListener)는 다운로드와 관련된 이벤트 처리를 위한 프로토콜로, 위와 같은 메서드를 제공합니다. 사용 방법은 [addListener(_)](../../class/download-manager/home.md#addlistener_)를 참고하시면 됩니다.
+DownloadManager.Listener(DownloadManagerListener)는 다운로드와 관련된 이벤트 처리를 위한 프로토콜로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 아래 [메서드](#메서드)를, 리스너를 추가하는 방법은 [addListener(_)](../../class/download-manager/home.md#addlistener_)를 참고하시면 됩니다.
 
 <br><br>
 

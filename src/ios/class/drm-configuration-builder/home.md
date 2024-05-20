@@ -15,7 +15,7 @@ extension DrmConfiguration {
     }
 }
 ```
-DRM 구성을 위해 초기 설정을 합니다. 제공받은 앱 ID와 사용자 아이디(User ID)를 입력하면 됩니다. .build()를 호출하여 구성을 완료합니다.
+DRM 구성을 위해 초기 설정을 합니다. 제공받은 App 아이디와 사용자 아이디(User ID)를 입력하면 됩니다. .build()를 호출하여 구성을 완료합니다.
 
 <br><br>
 # 생성자
@@ -25,8 +25,8 @@ public init(appId: String, userId: String)
 ```
 |파라미터|타입|설명|필수|
 |:--:|:--:|:--:|:--:|
-|appId|String|앱 ID|O|
-|userId|String|사용자 ID|O|
+|appId|String|App 아이디|O|
+|userId|String|사용자 아이디|O|
 
 <br><br>
 # 메서드

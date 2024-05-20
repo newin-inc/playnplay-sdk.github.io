@@ -45,9 +45,9 @@ var autoplay: Bool { get set }
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|Bool|미디어가 로딩되었을 때, 즉 미디어가 준비가 된 즉시 재생할 것인지 결정하는 값|가능|true|
+|Bool|미디어가 로드되었을 때, 즉 미디어가 준비가 된 즉시 재생할 것인지 결정하는 값|가능|true|
 
-미디어가 로딩되었을 때, 즉시 재생이 시작되어야 하는지를 나타내는 속성입니다. true면 자동 재생합니다.
+미디어가 로드되었을 때, 즉시 재생이 시작되어야 하는지를 나타내는 속성입니다. true면 자동 재생합니다.
 
 <br><br>
 ## buffered
@@ -321,7 +321,7 @@ var playbackRate: Float { get set }
 |:--:|--|:--:|:--:|:--:|
 |Float|재생 속도|가능|0.1~4.0|1.0|
 
-미디어의 재생 속도를 나타내는 속성입니다. 정상 속도는 1.0이고, 1보다 작을 때는 느리게, 1보다 클 때는 빠르게 재생합니다. 이 때, 오디오 피치 유지 여부는 MediaPlayer.preservesPitch의 값으로 제어할 수 있습니다.
+미디어의 재생 속도를 나타내는 속성입니다. 정상 속도는 1.0이고, 1보다 작을 때는 느리게, 1보다 클 때는 빠르게 재생합니다. 이 때, 오디오 피치 유지 여부는 [preservesPitch](#preservespitch)의 값으로 제어할 수 있습니다.
 
 <br><br>
 ## playbackState
@@ -571,11 +571,11 @@ func hasNextMediaItem() -> Bool
 ```swift
 func load(mediaItem: MediaItem)
 ```
-하나의 미디어를 로딩하기 위한 메서드입니다.
+하나의 미디어를 로드하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
-|mediaItem|[MediaItem](../../struct/media-item/home.md)|입력된 미디어 아이템을 로딩합니다.|[미디어 아이템](../../struct/media-item/home.md) 참고|
+|mediaItem|[MediaItem](../../struct/media-item/home.md)|로드하려는 [미디어 아이템](../../struct/media-item/home.md)|
 
 <div align="right">
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
@@ -590,11 +590,11 @@ func load(
     startMediaItemIndex: Int = 0
 )
 ```
-여러 개의 미디어를 로딩하기 위한 메서드입니다. 처음으로 재생할 미디어를 정할 수 있습니다.
+여러 개의 미디어를 로드하기 위한 메서드입니다. 처음으로 재생할 미디어를 정할 수 있습니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
-|mediaItems|\[[MediaItem](../../struct/media-item/home.md)\]|[미디어 아이템](../../struct/media-item/home.md) 참고|
+|mediaItems|\[[MediaItem](../../struct/media-item/home.md)\]|로드하려는 [미디어 아이템](../../struct/media-item/home.md) 목록|
 |startMediaItemIndex|Int|목록 중에서 처음 재생할 미디어 아이템의 index|
 
 <div align="right">
@@ -607,11 +607,11 @@ func load(
 ```swift
 func load(src: URL)
 ```
-URL을 사용하여 미디어를 로딩하기 위한 메서드입니다.
+URL을 사용하여 미디어를 로드하기 위한 메서드입니다.
 
 |파라미터|타입|설명|
 |:--:|:--:|--|
-|src|[URL](https://developer.apple.com/documentation/foundation/url)|로딩할 미디어의 주소|
+|src|[URL](https://developer.apple.com/documentation/foundation/url)|로드하려는 미디어의 주소|
 
 <br><br>
 ## pause()
@@ -778,7 +778,7 @@ func stopPictureInPicture()
 func addEventHandler(_ handler: EventHandler) -> EventTarget
 ```
 [이벤트 핸들러](../../enum/event-handlers/home.md)를 추가하기 위한 메서드입니다.
-반환된 [이벤트 타겟](../../class/event-target/home.md)은 이벤트 핸들러를 제거할 목적으로 [removeEventHandler(_)](#removeeventhandler_)에서 사용할 수 있습니다. 이벤트 핸들러를 추가한 후, 해당 이벤트 핸들러가 더 이상 필요 없을 때는 반드시 [removeEventHandler(_)](#removeeventhandler_) 메서드를 사용해서 해제하세요.
+반환된 [이벤트 타겟](../../class/event-target/home.md)은 이벤트 핸들러를 제거할 목적으로 [removeEventHandler(_)](#removeeventhandler_)에서 사용할 수 있습니다. 이벤트 핸들러를 추가한 후, 해당 이벤트 핸들러가 더 이상 필요 없을 때는 반드시 [removeEventHandler(_)](#removeeventhandler_) 메서드를 사용해서 제거하세요.
 
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|--|
@@ -802,7 +802,7 @@ func removeEventHandler(target: EventTarget)
 ```swift
 func addEventListener(_ listener: EventListener)
 ```
-[이벤트 리스너](../../protocol/event-listeners/home.md)를 추가하기 위한 메서드입니다. 이밴트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener(_)](#removeeventlistener_) 메서드를 사용해서 해제하세요.<br>
+[이벤트 리스너](../../protocol/event-listeners/home.md)를 추가하기 위한 메서드입니다. 이밴트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener(_)](#removeeventlistener_) 메서드를 사용해서 제거하세요.<br>
 
 |파라미터|타입|설명|
 |:--:|:--:|--|

@@ -22,8 +22,8 @@ Authorization: Bearer <Authorization>
 * Callback URL - 콜백 URL (콘솔에서 설정)
 * Authorization - API 접근 권한 목적으로 사용 (콘솔에서 설정)
 
-* appId:  앱 ID
-* userId: 사용자 ID
+* appId: App 아이디
+* userId: 사용자 아이디
 * userData - [launchAgent](../agent/home.md#launchagent) 호출 시 [입력한 정보](../agent/home.md#drm) (사용자 및 컨텐츠 식별 등의 용도)
 
 ### 반환

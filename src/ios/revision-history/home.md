@@ -13,5 +13,5 @@
 |[2024.04.01.](https://app.playnplay.com/sdks/2024-04-01/NPlayerSDK-iOS.zip)|<ul><li>[미디어 플레이어 설정 기능](../struct/media-player-view-controller-configuration/home.md#mediaplayerviewcontrollerconfiguration) 추가 - UI 옵션 컨트롤 등</li></ui>|
 |[2024.03.13.](https://app.playnplay.com/sdks/2024-03-13/NPlayerSDK-iOS.zip)|<ul><li>[Seek 기능 제한](../how-to-use/home.md#seek-기능-제한) 추가</li><li>[다운로드 매니저](../class/download-manager/home.md) 추가<br>참고: [DownloadItem](../struct/download-item/home.md), [DownloadManager.Listener](../protocol/download-manager-listeners/home.md), [DownloadItem.Status](../enum/download-item-status/home.md) </li></ul>|
 |[2024.02.21.](https://app.playnplay.com/sdks/2024-02-21/NPlayerSDK-iOS.zip)|<ul><li>안정화</li></ul> |
-|2024.02.15.|<ul><li>SDK 보안 기능 추가<br>앱의 Bundle ID를 콘솔에 등록한 후 콘솔의 App ID를 설정<br>참고 : [사용 방법](../how-to-use/home.md)</li></ul>|
+|2024.02.15.|<ul><li>SDK 보안 기능 추가<br>앱의 Bundle ID를 콘솔에 등록한 후 콘솔의 App ID를 설정<br>참고: [사용 방법](../how-to-use/home.md)</li></ul>|
 |[2024.01.17.](https://drive.google.com/file/d/1CDtIQncirpUmbIhwfE-vrcr15aBQY4Eg/view?usp=sharing)|<ul><li>첫 번째 버전</li></ul>|
