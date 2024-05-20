@@ -5,24 +5,6 @@ import android.content.Context
 ```java
 public abstract class Context
 ```
-```kotlin
-fun Context.getMediaPlayer(block: (MediaPlayer) -> Unit)
-
-fun Context.presentMediaPlayer(mediaItem: MediaItem)
-fun Context.presentMediaPlayer(mediaItem: MediaItem, configuration: MediaPlayerActivityConfiguration)
-fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>)
-fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, configuration: MediaPlayerActivityConfiguration)
-fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, startMediaItem: MediaItem)
-fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, startMediaItem: MediaItem, configuration: MediaPlayerActivityConfiguration)
-fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, startIndex: Int)
-fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>, startIndex: Int, configuration: MediaPlayerActivityConfiguration)
-fun Context.presentMediaPlayer(uri: String)
-fun Context.presentMediaPlayer(uri: String, configuration: MediaPlayerActivityConfiguration)
-fun Context.presentMediaPlayer(uri: Uri)
-fun Context.presentMediaPlayer(uri: String, configuration: MediaPlayerActivityConfiguration)
-
-fun Context.startMediaPlayerService(appId: String)
-```
 
 [Context](https://developer.android.com/reference/android/content/Context) 클랙스를 확장하여, 미디어 플레이어를 설정하고 사용하는 메서드를 제공합니다.
 
@@ -41,17 +23,17 @@ fun Context.getMediaPlayer(block: (MediaPlayer) -> Unit)
 |:--:|:--:|:--:|
 |block|([MediaPlayer](../../interface/media-player/home.md)) -> Unit|미디어 플레이어 제어 내용|
 
-현재 화면에 있는 플레이어를 제어하고 싶을 때 사용하는 메서드입니다. 미디어 플레이어를 비동기 방식으로 가지고 오기 때문에, 주의해서 사용해 주세요. 미디어 플레이어 사용 후에는 반드시 [release()](../../interface/media-player/details.md#release)를 호출해주세요.
+현재 화면에 있는 플레이어를 제어하고 싶을 때 사용하는 메서드입니다. 미디어 플레이어를 비동기 방식으로 가지고 오기 때문에, 주의해서 사용해 주세요. 미디어 플레이어 사용 후에는 반드시 [release()](../../interface/media-player/home.md#release)를 호출해주세요.
 <div align="right">
-참고: <a href="../../interface/media-player/details.md#release">release()</a>
+참고: <a href="../../interface/media-player/home.md#release">release()</a>
 </div>
 
 <br><br>
 ## presentMediaPlayer
 
-미디어를 여는 메서드입니다. 여러 타입을 파라미터로 받을 수 있습니다. 미디어 플레이어를 사용한 후에는 반드시 [release()](../../interface/media-player/details.md#release)를 호출해주세요.
+미디어를 여는 메서드입니다. 여러 타입을 파라미터로 받을 수 있습니다. 미디어 플레이어를 사용한 후에는 반드시 [release()](../../interface/media-player/home.md#release)를 호출해주세요.
 <div align="right">
-참고: <a href="../../interface/media-player/details.md#release">release()</a>
+참고: <a href="../../interface/media-player/home.md#release">release()</a>
 </div>
 
 ```kotlin

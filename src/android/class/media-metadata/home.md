@@ -5,22 +5,7 @@ import androidx.media3.common.MediaMetadata
 ```
 
 ```java
-public final class MediaMetadata implements Bundleable {
-    ...
-    @Nullable public final Uri artworkUri
-    @Nullable public final CharSequence title
-
-    public Builder buildUpon()
-
-    public static final class Builder
-}
-```
-```kotlin
-val MediaMetadata.expiresOn: java.time.Instant?
-
-val MediaMetadata.lastPlayedTime: Duration?
-
-val MediaMetadata.duration: Duration?
+public final class MediaMetadata implements Bundleable
 ```
 
 미디어 메타 데이터 클래스입니다. 현재 일부 속성이 deprecated 상태입니다. 확인 후 변경해주세요.

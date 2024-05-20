@@ -5,13 +5,7 @@ import com.newin.nplayer.sdk.utils.TimeRanges
 ```
 
 ```kotlin
-data class TimeRanges(private val ranges: ArrayList<TimeRange>) {
-
-    val length: Int
-
-    fun start(index: Int)
-    fun end(index: Int): Duration
-}
+data class TimeRanges(private val ranges: ArrayList<TimeRange>)
 ```
 
 buffered 속성에서 사용되는 데이터 클래스입니다.

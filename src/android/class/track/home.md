@@ -3,10 +3,7 @@
 ```kotlin
 sealed class Track(
     val type: @TrackType Int
-) {
-    val format: Format
-    val isSelected: Boolean
-}
+)
 ```
 [AudioTrack](../audio-track/home.md), [SubtitleTrack](../subtitle-track/home.md), [VideoTrack](../video-track/home.md)에 사용하기 위한 클래스입니다.
 

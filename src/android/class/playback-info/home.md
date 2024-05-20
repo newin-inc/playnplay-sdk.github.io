@@ -5,14 +5,7 @@ import com.newin.nplayer.sdk.PlaybackInfo
 ```
 
 ```kotlin
-data class PlaybackInfo(
-
-    val artworkUri: Uri?,
-    val duration: Duration?,
-    val expiresOn: Instant?,
-    val lastPlayedTime: Duration?,
-    val uri: Uri
-)
+data class PlaybackInfo
 ```
 
 [재생 정보 저장소](../playback-info-repository/home.md)에 저장된 정보를 나타내는 데이터 글래스입니다. [재생 정보 저장소](../playback-info-repository/home.md)의 [shared](../playback-info-repository/home.md#shared) 속성과 [findBy](../playback-info-repository/home.md#findby) 메서드를 사용하여 미디어의 정보를 가져올 수 있습니다.

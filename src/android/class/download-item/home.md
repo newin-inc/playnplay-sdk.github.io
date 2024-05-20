@@ -12,11 +12,7 @@ data class DownloadItem(
     val displayPath: String,
     val progress: Progress?,
     val failedReason: FailedReason?
-) {
-    enum class Status(val value: String)
-    data class Progress(val downloadedSize: Long, val fileSize: Long)
-    enum class FailedReason(val value: Int)
-}
+)
 ```
 다운로드 아이템을 나타내는 데이터 클래스입니다. 다운로드에 대한 정보, 진행 상태 등의 정보를 가지고 있습니다.
 
@@ -26,6 +22,8 @@ data class DownloadItem(
 <a href="../../class/download-item-progress/home.md">Progress</a>, 
 <a href="../../enum/download-item-failed-reason/home.md">FailedReason</a>
 </div>
+
+# 생성자 파라미터
 
 ## id
 ```kotlin
@@ -115,4 +113,39 @@ val failedReason: FailedReason?
 
 <div align="right">
 참고: <a href="../../enum/download-item-failed-reason/home.md">DownloadItem.FailedReaseon</a>
+</div>
+
+# 클래스
+
+## Status
+
+```kotlin
+enum class Status(val value: String)
+```
+다운로드 아이템의 상태를 나타내는 열거형 클래스입니다.
+<div align="right">
+참고: <a href="../../enum/download-item-status/home.md">Status</a>
+</div>
+
+## Progerss
+
+```kotlin
+data class Progress(val downloadedSize: Long, val fileSize: Long)
+```
+다운로드 진행 정도를 나타내는 데이터 클래스입니다.
+
+<div align="right">
+참고: <a href="../../class/download-item-progress/home.md">Progress</a>
+</div>
+
+## FailedReason
+
+```kotlin
+enum class FailedReason(val value: Int)
+```
+
+다운로드가 실패한 이유를 나타내는 열거형 클래스입니다.
+
+<div align="right">
+참고: <a href="../../enum/download-item-failed-reason/home.md">FailedReason</a>
 </div>

@@ -4,9 +4,9 @@
 
 |키 또는 제스처|동작|
 |---|---|
-|Directional pad의 왼쪽 키|10초([seekBackIncrement](../../interface/media-player/details.md#seekbackincrement)) 전으로 이동|
+|Directional pad의 왼쪽 키|10초([seekBackIncrement](../../interface/media-player/home.md#seekbackincrement)) 전으로 이동|
 |Directional pad의 왼쪽 키를 길게 꾹 누르기|1초 전으로 계속 이동|
-|Directional pad의 오른쪽 키|10초([seekForwardIncrement](../../interface/media-player/details.md#seekforwardincrement)) 후로 이동|
+|Directional pad의 오른쪽 키|10초([seekForwardIncrement](../../interface/media-player/home.md#seekforwardincrement)) 후로 이동|
 |Directional pad의 오른쪽 키를 길게 꾹 누르기|1초 후로 계속 이동|
 |스페이스 키|재생 / 일시 정지 토글|
 |ESC 키|다이얼로그 닫기|

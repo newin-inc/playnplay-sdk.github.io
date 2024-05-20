@@ -5,15 +5,7 @@ import com.newin.nplayer.sdk.PlaybackInfoRepository
 ```
 
 ```kotlin
-class PlaybackInfoRepository(context: Context) {
-
-    fun findBy(uri: Uri): PlaybackInfo?
-
-    companion object {
-    
-        val shared: PlaybackInfoRepository
-    }
-}
+class PlaybackInfoRepository(context: Context)
 ```
 
 재생 정보 저장소를 나타내는 클래스입니다. 미디어의 uri를 알고 있으면, 아래처럼, 속성 [shared](#shared)와 메서드 [findBy()](#findby)를 사용하여 해당 uri의 미디어 아이템 정보를 가져올 수 있습니다.

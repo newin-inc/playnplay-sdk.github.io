@@ -16,6 +16,9 @@ data class DownloadItem {
 
 다운로드 진행 정도를 나타내는 데이터 클래스입니다. 현재 다운로드된 파일 크기와 전체 파일 크기를 가지고 있습니다.
 
+<br><br>
+# 생성자 파라미터
+
 ## downloadedSize
 ```kotlin
 val downloadedSize: Long

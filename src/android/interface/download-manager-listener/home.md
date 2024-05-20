@@ -7,16 +7,7 @@ import com.newin.nplayer.sdk.DownloadManager
 ```kotlin
 class DownloadManager {
 
-    interface Listener {
-
-        fun onItemAdded(item: DownloadItem) {}
-
-        fun onItemRemoved(item: DownloadItem) {}
-
-        fun onProgressUpdated(item: DownloadItem) {}
-
-        fun onStatusChanged(item: DownloadItem) {}
-    }
+    interface Listener 
 }
 ```
 

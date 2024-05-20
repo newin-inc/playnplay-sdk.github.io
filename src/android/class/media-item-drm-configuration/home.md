@@ -9,13 +9,6 @@ public final class MediaItem implements Bundleable {
     public static final class DrmConfiguration implements Bundleable
 }
 ```
-```kotlin
-val MediaItem.DrmConfiguration.appId: String?
-
-val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
-
-val MediaItem.DrmConfiguration.userId: String?
-```
 
 DRM 설정에 포함된 App 아이디, 사용자 아이디, 오프라인 재생 기간을 가져올 수 있는 속성을 제공합니다.
 

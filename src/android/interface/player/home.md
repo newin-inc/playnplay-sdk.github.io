@@ -6,17 +6,8 @@ import androidx.media3.common.Player
 ```java
 public interface Player 
 ```
-```kotlin
-val Player.audioTracks: List<Track>
-val Player.currentWatermarkSettings: WatermarkSettings?
-val Player.isSeekable: Boolean
-val Player.subtitleTracks: List<Track>
-val Player.videoTracks: List<Track>
+플레이어 인터페이스를 확장하여, 아래와 같은 속성과 메서드를 제공합니다.
 
-fun Player.enterPictureInPicture(activity: Activity, sourceRectHint: Rect? = null)
-fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
-fun Player.selectTrack(track: Track)
-```
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player">androidx.media3.common.Player</a>
 </div>

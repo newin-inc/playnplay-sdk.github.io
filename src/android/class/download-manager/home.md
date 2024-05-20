@@ -1,5 +1,6 @@
 # DownloadManager
 
+---
 다운로드 매니저를 사용하기 전에 AndroidManifest.xml에 브로드캐스트 수신기를 선언합니다.
 ```xml
 <receiver
@@ -10,47 +11,19 @@
     </intent-filter>
 </receiver>
 ```
-
-다운로드 매니저 클래스는 아래와 같은 속성과 메서드를 가지고 있습니다.
+---
 
 ```kotlin
 import com.newin.nplayer.sdk.DownloadManager
 ```
 
 ```kotlin
-class DownloadManager private constructor(private val context: Context) {
-
-    interface Listener {
-        fun onItemAdded(item: DownloadItem) {}
-        fun onItemRemoved(item: DownloadItem) {}
-        fun onStatusChanged(item: DownloadItem) {}
-        fun onProgressUpdated(item: DownloadItem) {}
-    }
-
-    var downloadsUri: Uri
-    val items: List<DownloadItem>
-    var maxParallelDownloads: Int
-
-    fun add(mediaItem: MediaItem, allowsCellularAccess: Boolean): DownloadItemId
-    fun getItemsByStatus(status: DownloadItem.Status): List<DownloadItem>
-    fun pause(id: DownloadItemId)
-    fun pauseAll()
-    fun remove(id: DownloadItemId)
-    fun removeAll()
-    fun removeCompleted()
-    fun resume(id: DownloadItemId)
-    fun resumeAll()
-
-    fun addListener(listener: Listener)
-    fun removeListener(listener: Listener)
-
-    companion object {
-
-        val shared: DownloadManager
-    }
-}
+class DownloadManager private constructor(private val context: Context)
 ```
 
+다운로드 매니저 클래스는 아래와 같은 속성과 메서드를 가지고 있습니다.
+
+<br><br>
 # 정적 속성
 
 ## shared
