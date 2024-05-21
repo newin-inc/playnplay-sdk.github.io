@@ -5,19 +5,19 @@ import com.newin.nplayer.sdk.DownloadItem
 
 ```kotlin
 data class DownloadItem {
-    ...
 
-    data class Progress(
-        val downloadedSize: Long,
-        val fileSize: Long
-    )
+    data class Progress
 }
 ```
 
 다운로드 진행 정도를 나타내는 데이터 클래스입니다. 현재 다운로드된 파일 크기와 전체 파일 크기를 가지고 있습니다.
 
+<div align="right">
+참고: <a href="../download-item/home.md">DownloadItem</a>
+</div>
+
 <br><br>
-# 생성자 파라미터
+# 속성
 
 ## downloadedSize
 ```kotlin

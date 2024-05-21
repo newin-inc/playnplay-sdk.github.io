@@ -1,7 +1,7 @@
 # 열거형
 
-* [enum class DownloadItem.FailedReason](./download-item-failed-reason/home.md)
+* [DownloadItem.FailedReason](./download-item-failed-reason/home.md)
 
-* [enum class DownloadItem.Status](./download-item-status/home.md)
+* [DownloadItem.Status](./download-item-status/home.md)
 
-* [enum class MediaPlayerActivityConfiguration.ScreenOrientationLock](./media-player-activity-configuration-screen-orientation-lock/home.md)
+* [MediaPlayerActivityConfiguration.ScreenOrientationLock](./media-player-activity-configuration-screen-orientation-lock/home.md)

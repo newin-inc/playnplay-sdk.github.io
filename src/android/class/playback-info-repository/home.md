@@ -29,6 +29,7 @@ companion object {
 
 재생 정보 저장소에 접근하기 위한 정적 속성입니다. 아래에 언급되는 메서드를 호출할 때, PlaybackInfoRepository.shared를 사용하여 접근할 수 있습니다.
 
+<br><br>
 # 메서드
 
 ## findBy

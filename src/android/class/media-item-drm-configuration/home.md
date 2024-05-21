@@ -5,7 +5,7 @@ import androidx.media3.common.MediaItem
 ```
 ```java
 public final class MediaItem implements Bundleable { 
-    ...
+
     public static final class DrmConfiguration implements Bundleable
 }
 ```

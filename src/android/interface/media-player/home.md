@@ -231,9 +231,14 @@ val paused: Boolean
 
 미디어가 일시 정지 상태인지 나타내는 속성입니다.
 다음과 같은 조건 중 하나라도 해당할 때, true를 반환합니다.
-1. playWhenReady의 값이 false일 때,
-2. playbackState가 STATE_IDLE일 때 (제한된 리소스를 가지고 있을 때),
-3. playbackState가 STATE_ENDED일 때 (미디어 재생이 끝났을 때).
+1. [playWhenReady](https://developer.android.com/reference/kotlin/androidx/media3/common/Player#getPlayWhenReady())의 값이 false일 때,
+2. [playbackState](https://developer.android.com/reference/kotlin/androidx/media3/common/Player#getPlaybackState())가 STATE_IDLE일 때 (제한된 리소스를 가지고 있을 때),
+3. [playbackState](https://developer.android.com/reference/kotlin/androidx/media3/common/Player#getPlaybackState())가 STATE_ENDED일 때 (미디어 재생이 끝났을 때).
+
+<div align="right">
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player.State">Player.State</a>
+</div>
+
 
 <br><br>
 ## playbackRate
@@ -324,7 +329,7 @@ val seeking: Boolean
 |:--:|:--:|:--:|
 |Boolean|현재 미디어가 새로운 위치로 이동하고 있는지(탐색 중인지) 여부|불가능|
 
-미디어가 탐색 중이지를 나타내는 속성입니다. 현재 미디어가 새로운 위치로 이동하고 있거나 탐색중이면 true를 반홥합니다.
+미디어가 탐색 중이지를 나타내는 속성입니다. 현재 미디어가 새로운 위치로 이동하고 있거나 탐색중이면 true를 반환합니다.
 
 <br><br>
 # 메서드
@@ -345,8 +350,6 @@ fun fastSeek(to: Duration)
 <br><br>
 ## load
 
-주어진 문자열 형식의 미디어 주소를 로드하는 함수입니다. 
-
 ```kotlin
 fun load(uri: String)
 ```
@@ -364,9 +367,9 @@ fun load(uri: Uri)
 ```
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|uri|Uri|로드하려는 [android.net.Uri](https://developer.android.com/reference/android/net/Uri) 형식의 미디어 주소|
+|uri|[Uri](https://developer.android.com/reference/android/net/Uri)|로드하려는 [android.net.Uri](https://developer.android.com/reference/android/net/Uri) 형식의 미디어 주소|
 
-미디어 주소를 Uri 타입으로 입력 받아서 미디어를 로드하기 위한 메서드입니다.
+미디어 주소를 [Uri](https://developer.android.com/reference/android/net/Uri) 타입으로 입력 받아서 미디어를 로드하기 위한 메서드입니다.
 
 <br><br>
 ## load
@@ -395,7 +398,7 @@ fun load(mediaItems: List<MediaItem>)
 <br><br>
 ## pause
 
-```kotlin
+```java
 fun pause()
 ```
 미디어를 일시 정지하기 위한 메서드입니다.\

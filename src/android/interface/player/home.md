@@ -21,7 +21,7 @@ val Player.audioTracks: List<Track>
 ```
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
-|List\<Track\>|오디오 트랙 목록|불가능|
+|List\<[Track](../../class/track/home.md)\>|오디오 트랙 목록|불가능|
 
 현재 재생 중인 미디어의 오디오 트랙을 가져오는 속성입니다.
 
@@ -61,7 +61,8 @@ val Player.subtitleTracks: List<Track>
 ```
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
-|List\<Track\>|자막 트랙 목록|불가능|
+|List\<[Track](../../class/track/home.md)\>|자막 트랙 목록|불가능|
+
 현재 재생 중인 미디어의 자막 트랙을 가져오는 속성입니다.
 
 <div align="right">
@@ -75,7 +76,7 @@ val Player.videoTracks: List<Track>
 ```
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
-|List\<Track\>|비디오 트랙 목록|불가능|
+|List\<[Track](../../class/track/home.md)\>|비디오 트랙 목록|불가능|
 
 현재 재생 중인 미디어의 비디오 트랙을 가져오는 속성입니다.
 
@@ -112,7 +113,7 @@ fun Player.selectTrack(track: Track)
 ```
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|track|Track|활성화 할 (오디오,비디오,자막)트랙|
+|track|[Track](../../class/track/home.md)|활성화 할 (오디오,비디오,자막)트랙|
 
 트랙을 선택하여 활성화하는 메서드입니다.
 

@@ -5,17 +5,7 @@ import com.newin.nplayer.sdk.WatermarkSettings
 ```
 
 ```kotlin
-data class WatermarkSettings {
-    val duration: Duration
-    val interval: Duration
-    val position: Position
-    val text: String
-    val textColor: String
-    val textOpacity: Double
-    val textSize: Double
-
-    enum class Position
-}
+data class WatermarkSettings
 ```
 
 워터마크 설정을 나타내는 데이터 클래스입니다.
@@ -38,19 +28,9 @@ data class WatermarkSettings {
 
 ## WatermarkSettings.Position
 ```kotlin
-enum class Position {
-    TopLeft,
-    TopRight,
-    BottomLeft,
-    BottomRight,
-    Center,
-    RandomInRegion1,
-    RandomInRegion2,
-    RandomInRegion3,
-    RandomInRegion4,
-    RandomInRegion5,
-    RandomInRegion6,
-    RandomInRegionAll;
+data class WatermarkSettings {
+
+    enum class Position
 }
 ```
 워터마크의 위치를 나타내는 열거형입니다.

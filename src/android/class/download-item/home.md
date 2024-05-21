@@ -4,15 +4,7 @@ import com.newin.nplayer.sdk.DownloadItem
 ```
 
 ```kotlin
-data class DownloadItem(
-    val id: DownloadItemId,
-    val fromUri: Uri,
-    val toUri: Uri,
-    val status: Status,
-    val displayPath: String,
-    val progress: Progress?,
-    val failedReason: FailedReason?
-)
+data class DownloadItem
 ```
 다운로드 아이템을 나타내는 데이터 클래스입니다. 다운로드에 대한 정보, 진행 상태 등의 정보를 가지고 있습니다.
 
@@ -23,7 +15,7 @@ data class DownloadItem(
 <a href="../../enum/download-item-failed-reason/home.md">FailedReason</a>
 </div>
 
-# 생성자 파라미터
+# 속성
 
 ## id
 ```kotlin

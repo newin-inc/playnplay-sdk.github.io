@@ -1,45 +1,45 @@
 # 클래스
 
-- [class AudioTrack](./audio-track/home.md)
+- [AudioTrack](./audio-track/home.md)
 
-- [class Context](./context/home.md)
+- [Context](./context/home.md)
 
-- [data class DownloadItem](./download-item/home.md)
+- [DownloadItem](./download-item/home.md)
 
-- [data class DownloadItem.Progress](./download-item-progress/home.md)
+- [DownloadItem.Progress](./download-item-progress/home.md)
 
-- [class DownloadManager](./download-manager/home.md)
+- [DownloadManager](./download-manager/home.md)
 
-- [class EventHandler](./event-handlers/home.md)
+- [EventHandler](./event-handlers/home.md)
 
-- [class File](./file/home.md)
+- [File](./file/home.md)
 
-- [class MediaItem](./media-item/home.md)
+- [MediaItem](./media-item/home.md)
 
-- [class MediaItem.Builder](./media-item-builder/home.md)
+- [MediaItem.Builder](./media-item-builder/home.md)
 
-- [class MediaItem.DrmConfiguration](./media-item-drm-configuration/home.md)
+- [MediaItem.DrmConfiguration](./media-item-drm-configuration/home.md)
 
-- [class MediaMetadata](./media-metadata/home.md)
+- [MediaMetadata](./media-metadata/home.md)
 
-- [data class MediaPlayerActivityConfiguration](./media-player-activity-configuration/home.md)
+- [MediaPlayerActivityConfiguration](./media-player-activity-configuration/home.md)
 
-- [data class MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)<br>
+- [MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)<br>
 
-- [data class PlaybackInfo](./playback-info/home.md)
+- [PlaybackInfo](./playback-info/home.md)
 
-- [class PlaybackInfoRepository](./playback-info-repository/home.md)
+- [PlaybackInfoRepository](./playback-info-repository/home.md)
 
-- [class SubtitleTrack](./subtitle-track/home.md)
+- [SubtitleTrack](./subtitle-track/home.md)
 
-- [data class TimeRange](./time-range/home.md)
+- [TimeRange](./time-range/home.md)
 
-- [data class TimeRanges](./time-ranges/home.md)
+- [TimeRanges](./time-ranges/home.md)
 
-- [sealed class Track](./track/home.md)
+- [Track](./track/home.md)
 
-- [class Uri](./uri/home.md)
+- [Uri](./uri/home.md)
 
-- [class VideoTrack](./video-track/home.md)
+- [VideoTrack](./video-track/home.md)
 
-- [data class WatermarkSettings](./watermark-settings/home.md)
+- [WatermarkSettings](./watermark-settings/home.md)

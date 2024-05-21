@@ -213,6 +213,7 @@ fun onRateChange(playbackRate: Float)
 |playbackRate|Float|재생 속도|
 
 재생 속도가 변경되는 시점에 실행합니다.
+
 주의: 재생 속도는 그대로이지만, preservesPitch의 값이 변경될 때도 실행 됨
 
 <div align="right">
@@ -298,7 +299,7 @@ fun onTimeUpdate(position: Duration)
 ```
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|position|java.time.[Duration](https://developer.android.com/reference/java/time/Duration)|현재 재생 위치|
+|position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 재생 위치|
 
 [currentTime](../../interface/media-player/home.md#currenttime)이 변경되는 시점에 실행합니다. 즉, 미디어가 재생이 되는 동안 수행하려는 작업을 이곳에 구현하시면 됩니다.
 
@@ -319,6 +320,7 @@ fun onVolumeChange(volume: Float, muted: Boolean)
 |muted|Boolean|음소거 여부|
 
 볼륨이 변경되는 시점에 실행합니다. 무음([muted](../media-player/home.md#muted)) 상태가 변경될 때도 실행합니다.
+
 주의: Player.Listener의 [onVolumeChanged()](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onVolumeChanged(float)) 메서드는 이 이벤트 리스너와 완전히 다른 동작을 합니다. 메서드 이름과 사용하는 파라미터도 다르니 주의하시기 바랍니다.
 
 <div align="right">

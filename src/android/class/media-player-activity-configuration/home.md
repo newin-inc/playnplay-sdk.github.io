@@ -6,7 +6,6 @@ import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
 
 ```kotlin
 data class MediaPlayerActivityConfiguration(
-
     var allowsBackgroundPlayback: Boolean,
     var allowsCellularAccess: Boolean,
     var allowsPictureInPicturePlayback: Boolean,

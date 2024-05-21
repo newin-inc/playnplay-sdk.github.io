@@ -1,9 +1,9 @@
 # 인터페이스
 
-* [interface MediaPlayer](./media-player/home.md)
+* [MediaPlayer](./media-player/home.md)
 
-* [interface Player](./player/home.md)
+* [Player](./player/home.md)
 
-* [interface DownloadManager.Listener](./download-manager-listener/home.md)
+* [DownloadManager.Listener](./download-manager-listener/home.md)
 
-* [interface EventListener](./event-listeners/home.md)
+* [EventListener](./event-listeners/home.md)
