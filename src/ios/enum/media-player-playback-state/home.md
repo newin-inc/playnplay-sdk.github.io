@@ -25,5 +25,5 @@ extension MediaPlayer {
 
 현재 미디어 상태를 나타냅니다.
 <div align="right">
-참고: <a href="../../class/media-player/details.md#playbackstate">playbackState</a>
+참고: <a href="../../class/media-player/home.md#playbackstate">playbackState</a>
 </div>
