@@ -77,23 +77,6 @@ public var downloadsUrl: URL { get }
 </div>
 
 <br><br>
-<br><br>
-## downloadRootUrl
-```swift
-public var downloadRootUrl: URL { get }
-```
-|타입|설명|설정|
-|:--:|--|:--:|
-|[URL](https://developer.apple.com/documentation/foundation/url)|다운로드된 아이템이 저장되는 최상위 디렉토리|불가능|
-
-다운로드된 아이템이 저장되는 디렉토리 중 최상위 디렉토리를 나타내는 속성입니다.
-<div align="right">
-참고: <a href="https://developer.apple.com/documentation/foundation/url)">URL</a>
-</div>
-
-<text style="color:red;">Deprecated: </text><a href="#downloadsurl">downloadsUrl</a>을 사용하세요.
-
-<br><br>
 ## items
 ```swift
 public var items: [DownloadItem] { get }

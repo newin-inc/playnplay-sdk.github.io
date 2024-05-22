@@ -5,7 +5,6 @@ protocol EventListener : AnyObject {
 
     func onCueChange(textCues: [TextTrack.Cue])
     func onDurationChange(duration: Duration)
-    func onEmptied()
     func onEnded()
     func onError(error: Error)
     func onLoadedData()
@@ -49,8 +48,6 @@ EventListener는 이벤트 처리를 위한 프로토콜로, 위와 같은 메�
 - [onCueChange(textCues:)](./details.md#oncuechangetextcues)
 
 - [onDurationChange(duration:)](./details.md#ondurationchangeduration)
-
-- [onEmptied()](./details.md#onemptied)
 
 - [onEnded()](./details.md#onended)
 

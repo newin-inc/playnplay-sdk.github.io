@@ -31,18 +31,6 @@ fun onDurationChange(duration: Duration)
 </div>
 
 <br><br>
-## onEmptied
-
-```kotlin
-fun onEmptied()
-```
-미디어가 제거된 시점, 즉, 미디어 주소가 변경되기 직전, 기존에 존재하던 미디어를 비울 때 실행합니다.
-
-<div align="right">
-이벤트 핸들러: <a href="../../class/event-handlers/home.md#emptied">Emptied</a>
-</div>
-
-<br><br>
 ## onEnded
 
 ```kotlin

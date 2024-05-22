@@ -8,7 +8,7 @@ import androidx.media3.common.MediaMetadata
 public final class MediaMetadata implements Bundleable
 ```
 
-미디어 메타 데이터 클래스입니다. 현재 일부 속성이 deprecated 상태입니다. 확인 후 변경해주세요.
+미디어 메타 데이터 클래스입니다.
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata">MediaMetadata</a>, 
@@ -47,57 +47,6 @@ public final class MediaMetadata implements Bundleable
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#title()">title</a>
 </div>
-
-<!-- <br><br>
-### downloadPath
-```kotlin
-import com.newin.nplayer.sdk.extensions.downloadPath
-
-val androidx.media3.common.MediaMetadata.downloadPath: kotlin.String?
-```
-디바이스에 저장된 경로를 나타내는 속성입니다.
--->
-<br><br>
-## expiresOn
-```kotlin
-val androidx.media3.common.MediaMetadata.expiresOn: java.time.Instant?
-```
-| 타입 |설명|
-|:--:|:--:|
-|[java.time.Instant](https://developer.android.com/reference/java/time/Instant)|만료 일시|
-
-미디어 아이템의 만료 일시를 나타내는 속성입니다.
-
-<text style="color:red;">Deprecated: </text><a href="../playback-info/home.md">PlaybackInfo</a>의 
-<a href="../playback-info/home.md#expireson">expiresOn</a>을 사용하세요.
-
-<br><br>
-## lastPlayedTime
-```kotlin
-val androidx.media3.common.MediaMetadata.lastPlayedTime: Duration?
-```
-| 타입 | 설명 |
-|:--:|:--:|
-|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
-
-미디어 아이템이 마지막으로 재생한 위치를 나타내는 속성입니다.
-
-<text style="color:red;">Deprecated: </text><a href="../playback-info/home.md">PlaybackInfo</a>의 
-<a href="../playback-info/home.md#lastplayedtime">lastPlayedTime</a>을 사용하세요.
-
-<br><br>
-## duration
-```kotlin
-val androidx.media3.common.MediaMetadata.duration: Duration?
-```
-| 타입 | 설명 |
-|:--:|:--:|
-|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|미디어 아이템의 전체 길이|
-
-미디어 아이템의 전체 길이를 나타내는 속성입니다.
-
-<text style="color:red;">Deprecated: </text><a href="../playback-info/home.md">PlaybackInfo</a>의 
-<a href="../playback-info/home.md#duration">duration</a>을 사용하세요.
 
 <br><br>
 # 메서드

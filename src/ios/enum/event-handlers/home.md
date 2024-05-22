@@ -4,7 +4,6 @@
 public enum EventHandler {
 
     case durationChange((_ duration: Duration) -> Void)
-    case emptied(() -> Void)
     case ended(() -> Void)
     case error((_ error: Error) -> Void)
     case loadedData(() -> Void)
@@ -47,8 +46,6 @@ public enum EventHandler {
 </summary>
 
 - [durationChange](./details.md#durationchange)
-
-- [emptied](./details.md#emptied)
 
 - [ended](./details.md#ended)
 

@@ -31,18 +31,6 @@ func onDurationChange(duration: Duration)
 </div>
 
 <br><br>
-## onEmptied()
-```swift
-func onEmptied()
-```
-미디어가 제거된 시점, 즉, 미디어 주소가 변경되기 직전, 기존에 존재하던 미디어를 비울 때를 실행합니다.
-<div align="right">
-이벤트 핸들러: <a href="../../enum/event-handlers/details.md#emptied">EventHandler.emptied</a>
-</div>
-
-<text style="color:red;">Deprecated: </text><a href="#onplaybackfinishmediaitempositionduration">onPlaybackFinish(mediaItem:position:duration:)</a>을 사용하세요.
-
-<br><br>
 ## onEnded()
 ```swift
 func onEnded()
