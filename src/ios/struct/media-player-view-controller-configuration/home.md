@@ -3,27 +3,7 @@
 ```swift
 public class MediaPlayerViewController {
 
-    public struct Configuration {
-
-        public var allowsBackgroundPlayback: Bool = false
-        public var allowsCellularAccess: Bool = true
-        public var allowsPictureInPicturePlayback: Bool = true
-        public var controllerShowTimeout: Duration = .seconds(5)
-        public var defaultPlaybackRate: Float = 1
-        public var seekBackwardIncrement: Duration = .seconds(10)
-        public var seekForwardIncrement: Duration = .seconds(10)
-        public var screenOrientationLock: ScreenOrientationLock = .off
-
-        public static func defaultConfiguration() -> Self { Self() }
-
-        public enum ScreenOrientationLock: String {
-            case portrait = "portrait"
-            case landscape = "landscape"
-            case off = "off"
-
-            func toInterfaceOrientaion() -> UIInterfaceOrientationMask
-        }
-    }
+    public struct Configuration
 }
 ```
 
@@ -147,13 +127,7 @@ static func defaultConfiguration() -> Configuration
 
 ## ScreenOrientationLock
 ```swift
-public enum ScreenOrientationLock: String {
-    case portrait = "portrait"
-    case landscape = "landscape"
-    case off = "off"
-
-    func toInterfaceOrientaion() -> UIInterfaceOrientationMask
-}
+enum ScreenOrientationLock: String
 ```
 
 화면 방향 고정 상태를 나타내는 열거형입니다. 자세한 설명은 [MediaPlayerViewController.Configuration.ScreenOrientationLock](../../enum/media-player-view-controller-configuration-screen-orientation-lock/home.md)에서 확인하세요.

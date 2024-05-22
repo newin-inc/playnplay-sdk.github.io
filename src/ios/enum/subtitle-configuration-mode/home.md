@@ -3,14 +3,7 @@
 ```swift
 public struct SubtitleConfiguration {
 
-    public enum Mode : String {
-
-        case autoSelect
-
-        case showing
-
-        case hidden
-    }
+    public enum Mode : String
 }
 ```
 

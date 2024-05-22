@@ -1,26 +1,7 @@
 # TextTrack
 
 ```swift
-public class TextTrack : MediaTrack {
-
-    func getCues(at: Duration) -> [Cue]
-}
-
-extension TextTrack {
-
-    class func load(url: URL) async throws -> [TextTrack] 
-
-    public class Cue : Equatable {
-
-        final public let id: String?
-
-        final public let startTime: Duration
-
-        final public let endTime: Duration
-
-        final public let text: String?
-    }
-}
+class TextTrack : MediaTrack
 ```
 <div align="right">
 부모 클래스: <a href="../media-track/home.md">MediaTrack</a>
@@ -67,16 +48,7 @@ url을 통해서, 자막을 가져오는 메서드입니다.
 
 ```swift
 extension TextTrack {
-    public class Cue : Equatable {
-
-        final public let id: String?
-
-        final public let startTime: Duration
-
-        final public let endTime: Duration
-
-        final public let text: String?
-    }
+    public class Cue : Equatable
 }
 ```
 

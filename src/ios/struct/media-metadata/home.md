@@ -1,36 +1,7 @@
 # MediaMetadata
 
 ```swift
-public struct MediaMetadata {
-
-    public let title: String?
-
-    public let artworkUrl: URL?
-
-    public let downloadPath: String?
-
-    public var duration: Duration? 
-
-    public let expiresOn: Date?
-
-    public var lastPlayedTime: Duration?
-
-    public func buildUpon() -> MediaMetadata.Builder
-
-    public class Builder {
-
-        public init()
-
-        public func title(_ title: String?) -> MediaMetadata.Builder
-
-        public func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
-
-        public func downloadPath(_ downloadPath: String?) -> MediaMetadata.Builder
-        
-        public func build() -> MediaMetadata
-    }
-
-}
+struct MediaMetadata
 ```
 
 <div align="right">

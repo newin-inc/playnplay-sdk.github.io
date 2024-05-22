@@ -1,28 +1,7 @@
 # MediaItem
 
 ```swift
-struct MediaItem {
-
-    public let drmConfiguration: DrmConfiguration?
-
-    public let mediaMetadata: MediaMetadata?
-
-    public let subtitleConfigurations: [SubtitleConfiguration]
-
-    public let returnUrl: URL?
-
-    public let seekable: Bool
-
-    public var title: String { get }
-
-    public let url: URL
-
-    public func buildUpon() -> MediaItem.Builder
-
-    public static func from(url: URL) -> MediaItem
-
-    public class Builder { }
-}
+struct MediaItem
 ```
 
 MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등을 가지고 있는 구조체입니다. 해당 속성에 접근하면 [Agnet](../../../agent/home.md)에서 설정한 값을 가져올 수 있습니다.
@@ -125,28 +104,7 @@ static func from(url: URL) -> MediaItem
 ## Builder
 
 ```swift
-extension MediaItem {
-
-    public class Builder {
-
-        public init(url: URL)
-
-        public func url(_ url: URL) -> MediaItem.Builder
-
-        public func subtitleConfigurations(_ subtitleConfigurations: [SubtitleConfiguration]) -> MediaItem.Builder
-
-        public func mediaMetadata(_ mediaMetadata: MediaMetadata?) -> MediaItem.Builder
-
-        public func drmConfiguration(_ drmConfiguration: DrmConfiguration?) -> MediaItem.Builder
-
-        public func returnUrl(_ returnUrl: URL?) -> MediaItem.Builder
-
-        public func seekable(_ seekable: Bool) -> MediaItem.Builder
-
-        public func build() -> MediaItem
-    }
-
-}
+class Builder
 ```
 
 [MediaItem.Builder](../../class/media-item-builder/home.md)에 자세한 설명이 있습니다.

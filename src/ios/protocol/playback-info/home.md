@@ -1,14 +1,7 @@
 # PlaybackInfo
 
 ```swift
-public protocol PlaybackInfo {
-
-    var artworkUrl: URL? { get }
-    var duration: Duration? { get }
-    var expiresOn: Date? { get }
-    var lastPlayedTime: Duration? { get }
-    var url: URL { get }
-}
+protocol PlaybackInfo
 ```
 
 [재생 정보 저장소](../../class/playback-info-repository/home.md)에 저장된 정보를 나타내는 프로토콜입니다. [재생 정보 저장소](../../class/playback-info-repository/home.md)의 [shared](../../class/playback-info-repository/home.md#shared) 속성과 [find(by:)](../../class/playback-info-repository/home.md#findby) 메서드를 사용하여 미디어의 정보를 가져올 수 있습니다.

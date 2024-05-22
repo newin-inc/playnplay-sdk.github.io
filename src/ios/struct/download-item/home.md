@@ -1,15 +1,7 @@
 # DownloadItem
 
 ```swift
-struct DownloadItem {
-    public let id: Id
-    public let displayPath: String
-    public let fromUrl: URL
-    public let toUrl: URL
-    public let status: Status
-    public let progress: (Int64, Int64)?
-    public let failedReason: String?
-}
+struct DownloadItem
 ```
 <div align="right">
 참고: <a href="../../enum/download-item-status/home.md">DownloadItem.Status</a>

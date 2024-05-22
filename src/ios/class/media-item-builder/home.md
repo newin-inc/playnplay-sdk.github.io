@@ -3,24 +3,7 @@
 ```swift
 extension MediaItem {
 
-    public class Builder {
-
-        public init(url: URL)
-
-        public func build() -> MediaItem
-
-        public func drmConfiguration(_ drmConfiguration: DrmConfiguration?) -> MediaItem.Builder
-
-        public func mediaMetadata(_ mediaMetadata: MediaMetadata?) -> MediaItem.Builder
-
-        public func returnUrl(_ returnUrl: URL?) -> MediaItem.Builder
-
-        public func seekable(_ seekable: Bool) -> MediaItem.Builder
-
-        public func subtitleConfigurations(_ subtitleConfigurations: [SubtitleConfiguration]) -> MediaItem.Builder
-
-        public func url(_ url: URL) -> MediaItem.Builder
-    }
+    public class Builder
 }
 ```
 

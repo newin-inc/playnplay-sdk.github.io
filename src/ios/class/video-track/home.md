@@ -1,12 +1,7 @@
 # VideoTrack
 
 ```swift
-public class VideoTrack : MediaTrack {
-
-    public var width: Int! { get }
-
-    public var height: Int! { get }
-}
+class VideoTrack : MediaTrack
 ```
 <div align="right">
 부모 클래스: <a href="../media-track/home.md">MediaTrack</a>

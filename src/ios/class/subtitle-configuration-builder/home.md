@@ -3,18 +3,7 @@
 ```swift
 extension SubtitleConfiguration {
 
-    public class Builder {
-
-        public init(url: URL)
-
-        public func language(_ language: String?) -> SubtitleConfiguration.Builder
-
-        public func label(_ language: String?) -> SubtitleConfiguration.Builder
-
-        public func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Builder
-
-        public func build() -> SubtitleConfiguration
-    }
+    public class Builder
 }
 ```
 자막을 추가할 때 사용합니다. URL을 파라미터로 넣어서 설정을 시작하고 필요한 요소를 추가합니다. .build()를 호출하여 구성을 완료합니다.

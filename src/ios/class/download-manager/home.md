@@ -21,28 +21,7 @@ func application(
 다운로드 매니저 클래스는 아래와 같은 속성과 메서드를 가지고 있습니다.
 
 ```swift
-public class DownloadManager: NSObject, URLSessionDownloadDelegate {
-
-    public static let shared: DownloadManager
-
-    public var downloadsUrl: URL
-    public var downloadRootUrl: URL
-    public var items: [DownloadItem]
-    public var maxParallelDownloads: Int = 3
-
-    @discardableResult public func add(mediaItem: MediaItem, allowsCellularAccess: Bool = true) -> DownloadItem.Id
-    public func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
-    public func pause(id: DownloadItem.Id)
-    public func pauseAll()
-    public func remove(id: DownloadItem.Id)
-    public func removeAll()
-    public func removeCompleted()
-    public func resume(id: DownloadItem.Id)
-    public func resumeAll()
-
-    public func addListener(_ listener: DownloadManagerListener)
-    public func removeListener(_ listener: DownloadManagerListener)
-}
+class DownloadManager: NSObject, URLSessionDownloadDelegate
 ```
 
 <br><br>

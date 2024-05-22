@@ -1,12 +1,7 @@
 # DownloadManager.Listener (DownloadManagerListener)
 
 ```swift
-protocol DownloadManagerListener: AnyObject {
-    func onItemAdded(_ item: DownloadItem)
-    func onItemRemoved(_ item: DownloadItem)
-    func onProgressUpdated(_ item: DownloadItem)
-    func onStatusChanged(_ item: DownloadItem)
-}
+protocol DownloadManagerListener: AnyObject
 
 extension DownloadManager { typealias Listener = DownloadManagerListener }
 ```

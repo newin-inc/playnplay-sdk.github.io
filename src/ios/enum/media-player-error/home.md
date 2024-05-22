@@ -1,27 +1,7 @@
 # MediaPlayerError
 
 ```swift
-public enum MediaPlayerError: LocalizedError {
-
-    case accessRightsExpired(message: String)
-    case appBundleNotRegistered
-    case deviceLimitExceeded(message: String)
-    case licenseNotFound(message: String)
-    case licenseCheckFailed(message: String)
-    case multipleConnections(message: String)
-    case network(message: String)
-    case noAccessRights(message: String)
-    case noCellularAccess
-    case noLicenseData(message: String)
-    case noOfflineAccessRights(message: String)
-    case offlineAccessRightsExpired(message: String)
-    case playbackLimitExceeded(message: String)
-    case screenCaptureDetected(message: String)
-    case sessionClosed(message: String)
-    case sessionNotFound(message: String)
-    case unexpected(message: String)
-    case unauthorized(message: String)
-}
+enum MediaPlayerError: LocalizedError
 ```
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/foundation/localizederror">LocalizedError</a>

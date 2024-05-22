@@ -1,31 +1,7 @@
 # SubtitleConfiguration
 
 ```swift
-struct SubtitleConfiguration {
-
-    public enum Mode : String {
-
-        case autoSelect
-
-        case showing
-
-        case hidden
-    }
-
-    public class Builder {
-
-        public init(url: URL)
-
-        public func language(_ language: String?) -> SubtitleConfiguration.Builder
-
-        public func label(_ language: String?) -> SubtitleConfiguration.Builder
-
-        public func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Builder
-
-        public func build() -> SubtitleConfiguration
-    }
-
-}
+struct SubtitleConfiguration
 ```
 
 <div align="right">

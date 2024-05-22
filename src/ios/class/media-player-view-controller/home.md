@@ -1,14 +1,7 @@
 # MediaPlayerViewController
 
 ```swift
-public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDelegate {
-
-    public private(set) var configuration: Configuration
-    public var controllerShowTimeout: Duration = .seconds(5)
-    public private(set) var player: MediaPlayer
-
-    public struct Configuration
-}
+class MediaPlayerViewController: UIViewController, UIGestureRecognizerDelegate
 ```
 
 미디어 플레이어 뷰 컨트롤러입니다. 아래와 같은 속성과 구조체를 제공합니다. <br>
@@ -57,28 +50,7 @@ private(set) var player: MediaPlayer
 ```swift
 public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDelegate {
 
-    public struct Configuration {
-
-        public var allowsBackgroundPlayback: Bool = false
-        public var allowsCellularAccess: Bool = true
-        public var allowsPictureInPicturePlayback: Bool = true
-        public var controllerShowTimeout: Duration = .seconds(5)
-        public var defaultPlaybackRate: Float = 1
-        public var seekForwardIncrement: Duration = .seconds(10)
-        public var seekBackwardIncrement: Duration = .seconds(10)
-        public var screenOrientationLock: ScreenOrientationLock = .off
-
-        public static func defaultConfiguration() -> Self { Self() }
-
-        public enum ScreenOrientationLock: String {
-            case portrait = "portrait"
-            case landscape = "landscape"
-            case off = "off"
-
-            func toInterfaceOrientaion() -> UIInterfaceOrientationMask
-        }
-
-    }
+    public struct Configuration
 }
 ```
 미디어 플레이어의 설정을 도와주는 구조체입니다. 보다 더 자세한 설명은 [MediaPlayerViewController.Configuration](../../struct/media-player-view-controller-configuration/home.md)를 참고하세요.

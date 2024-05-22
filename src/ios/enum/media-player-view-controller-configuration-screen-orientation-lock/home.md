@@ -4,13 +4,7 @@
 public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDelegate {
     public struct Configuration {
 
-        public enum ScreenOrientationLock: String {
-            case portrait = "portrait"
-            case landscape = "landscape"
-            case off = "off"
-
-            func toInterfaceOrientaion() -> UIInterfaceOrientationMask
-        }
+        public enum ScreenOrientationLock: String
     }
 }
 ```

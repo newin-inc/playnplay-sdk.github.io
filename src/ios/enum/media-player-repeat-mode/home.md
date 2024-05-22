@@ -3,14 +3,7 @@
 ```swift
 extension MediaPlayer {
 
-    public enum RepeatMode {
-
-        case none
-
-        case one
-
-        case all
-    }
+    public enum RepeatMode
 }
 ```
 

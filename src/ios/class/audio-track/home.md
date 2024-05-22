@@ -1,12 +1,7 @@
 # AudioTrack
 
 ```swift
-public class AudioTrack : MediaTrack {
-
-    public var channels: Int! { get }
-
-    public var sampleRate: Double! { get }
-}
+class AudioTrack : MediaTrack  
 ```
 <div align="right">
 부모 클래스: <a href="../media-track/home.md">MediaTrack</a>

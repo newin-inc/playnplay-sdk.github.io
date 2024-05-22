@@ -1,29 +1,7 @@
 # DrmConfiguration
 
 ```swift
-public struct DrmConfiguration {
-
-    public let appId: String
-
-    public var offlineAccessPeriod: Duration? = nil
-
-    public var userData: [String : Any]
-
-    public let userId: String
-
-    public func buildUpon() -> DrmConfiguration.Builder
-
-    public class Builder {
-
-        public init(appId: String, userId: String)
-
-        public func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.Builder
-
-        public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
-
-        public func build() -> DrmConfiguration
-    }
-}
+struct DrmConfiguration
 ```
 
 <div align="right">
@@ -91,16 +69,7 @@ Builder를 사용하여 DRM에 대한 초기 설정을 합니다.
 ## DrmConfiguration.Builder
 
 ```swift
-public class Builder {
-
-    public init(appId: String, userId: String)
-
-    public func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.Builder
-
-    public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
-
-    public func build() -> DrmConfiguration
-}
+class Builder
 ```
 <div align="right">
 참고: <a href="../../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a>

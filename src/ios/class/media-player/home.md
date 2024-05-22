@@ -1,77 +1,7 @@
 # MediaPlayer
 
 ```swift
-final public class MediaPlayer {
-
-    final public var allowsBackgroundPlayback: Bool { get set }
-    final public var allowsCellularAccess: Bool { get set }
-    final public var audioTracks: [AudioTrack] { get }
-    final public var autoplay: Bool { get set }
-    final public var buffered: [TimeRange] { get }
-    final public var canStartPictureInPictureAutomatically: Bool { get set }
-    final public var currentMediaItem: MediaItem? { get }
-    final public var currentMediaItemIndex: Int { get }
-    final public var currentSrc: URL? { get }
-    final public var currentTime: Duration { get set }
-    final public var defaultMuted: Bool { get set }
-    final public var defaultPlaybackRate: Float { get set }
-    final public var duration: Duration { get }
-    final public var ended: Bool { get }
-    final public var error: (Error)? { get }
-    final public var isPictureInPictureActive: Bool { get }
-    final public var isPictureInPicturePossible: Bool { get }
-    final public var isSeekable: Bool { get }
-    final public var isSubtitlesVisible: Bool { get set }
-    final public var loop: Bool { get set }
-    final public var maxSeekToPreviousPosition: Duration { get set }
-    final public var mediaItems: [MediaItem] { get set }
-    final public var muted: Bool { get set }
-    final public var paused: Bool { get }
-    final public var playbackRate: Float { get set }
-    final public var playbackState: MediaPlayer.PlaybackState { get }
-    final public var preservesPitch: Bool { get set }
-    final public var repeatMode: MediaPlayer.RepeatMode { get set }
-    final public var repeatRange: MediaPlayer.RepeatRange? { get set }
-    final public var scalingMode: ScalingMode { get set }
-    final public var seekable: [TimeRange] { get }
-    final public var seekBackIncrement: Duration { get set }
-    final public var seekForwardIncrement: Duration { get set }
-    final public var seeking: Bool { get }
-    final public var textTracks: [TextTrack] { get }
-    final public var videoSize: CGSize { get }
-    final public var videoTracks: [VideoTrack] { get }
-    final public var view: UIView { get }
-    final public var volume: Float { get set }
-
-    final public func fastSeekTo(position: Duration)
-    final public func hasNextMediaItem() -> Bool
-    final public func hasPreviousMediaItem() -> Bool
-    final public func load(mediaItem: MediaItem)
-    final public func load(mediaItems: [MediaItem], startMediaItemIndex: Int = 0)
-    final public func load(src: URL)
-    final public func pause()
-    final public func play()
-    final public func prepare()
-    final public func seekBack()
-    final public func seekBack(increment: Duration)
-    final public func seekForward()
-    final public func seekForward(increment: Duration)
-    final public func seekTo(position: Duration)
-    final public func seekTo(mediaItemIndex: Int, position: Duration = .indefinite)
-    final public func seekToNext()
-    final public func seekToNextMediaItem()
-    final public func seekToPrevious()
-    final public func seekToPreviousMediaItem()
-    final public func startPictureInPicture()
-    final public func stop()
-    final public func stopPictureInPicture()
-
-    @discardableResult
-    final public func addEventHandler(_ handler: EventHandler) -> EventTarget
-    final public func removeEventHandler(_ target: EventTarget)
-    final public func addEventListener(_ listener: EventListener)
-    final public func removeEventListener(_ listener: EventListener)
-}
+final class MediaPlayer
 ```
 
 미디어 플레이어 클래스입니다. 활성화된 미디어 플레이어에 접근하는 방법은 [player](../media-player-view-controller/home.md#player)를 참고하세요.

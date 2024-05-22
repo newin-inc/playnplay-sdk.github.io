@@ -3,16 +3,7 @@
 ```swift
 extension MediaPlayer {
 
-    struct RepeatRange: Equatable {
-
-        public var start: Duration
-
-        public var end: Duration
-
-        public func with(start: Duration) -> MediaPlayer.RepeatRange
-
-        public func with(end: Duration) -> MediaPlayer.RepeatRange
-    }
+    struct RepeatRange: Equatable
 }
 ```
 
