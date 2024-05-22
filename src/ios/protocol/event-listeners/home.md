@@ -31,6 +31,7 @@ protocol EventListener : AnyObject {
     func onSeeked()
     func onSeeking()
     func onTimeUpdate(position: Duration)
+    func onUnload(mediaItem: MediaItem)
     func onVideoSizeChange(size: CGSize)
     func onVolumeChange(volume: Float, muted: Bool)
     func onWaiting()
@@ -100,6 +101,8 @@ EventListener는 이벤트 처리를 위한 프로토콜로, 위와 같은 메�
 - [onSeeking()](./details.md#onseeking)
 
 - [onTimeUpdate(position:)](./details.md#ontimeupdateposition)
+
+- [onUnload(mediaItem: MediaItem)](./details.md#onunloadmediaitem)
 
 - [onVideoSizeChange(size:)](./details.md#onvideosizechangesize)
 

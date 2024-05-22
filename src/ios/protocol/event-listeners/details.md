@@ -399,6 +399,23 @@ func onTimeUpdate(position: Duration)
 </div>
 
 <br><br>
+## onUnload(mediaItem:)
+```swift
+func onUnload(mediaItem: MediaItem)
+```
+
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|mediaItem|[MediaItem](../../struct/media-item/home.md)|종료된 미디어 아이템|
+
+미디어가 제거된 시점, 즉, 미디어 주소가 변경되기 직전, 기존에 존재하던 미디어를 비울 때를 실행합니다.
+
+<div align="right">
+이벤트 핸들러: <a href="../../enum/event-handlers/details.md#unload">EventHandler.unload</a><br>
+참고: <a href="../../struct/media-item/home.md">MediaItem</a>
+</div>
+
+<br><br>
 ## onVideoSizeChange(size:)
 ```swift
 func onVideoSizeChange(size: CGSize)

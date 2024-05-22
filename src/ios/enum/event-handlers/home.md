@@ -31,6 +31,7 @@ public enum EventHandler {
     case seeking(() -> Void)
     case textCueChange((_ textCues: [TextTrack.Cue]) -> Void)
     case timeUpdate((_ position: Duration) -> Void)
+    case unload((_ mediaItem: MediaItem) -> Void)
     case videoSizeChange((_ size: CGSize) -> Void)
     case volumeChange((_ volume: Float, _ muted: Bool) -> Void)
     case waiting(() -> Void)
@@ -100,6 +101,8 @@ public enum EventHandler {
 - [textCueChange](./details.md#textcuechange)
 
 - [timeUpdate](./details.md#timeupdate)
+
+- [unload](./details.md#unload)
 
 - [videoSizeChange](./details.md#videosizechange)
 
