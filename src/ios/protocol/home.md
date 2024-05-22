@@ -1,7 +1,7 @@
 # 프로토콜
 
-* [protocol EventListener](./event-listeners/home.md)
+* [EventListener](./event-listeners/home.md)
 
-* [protocol DownloadManager.Listener](./download-manager-listeners/home.md)
+* [DownloadManager.Listener](./download-manager-listeners/home.md)
 
-* [protocol PlaybackInfo](./playback-info/home.md)
+* [PlaybackInfo](./playback-info/home.md)

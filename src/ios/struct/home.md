@@ -1,19 +1,20 @@
 # 구조체
 
-* [struct MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)
+* [MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)
 
-* [struct MediaPlayerViewController.Configuration](./media-player-view-controller-configuration/home.md)
+* [MediaPlayerViewController.Configuration](./media-player-view-controller-configuration/home.md)
 
-* [struct DownloadItem](./download-item/home.md)
+* [DownloadItem](./download-item/home.md)
 
-* [struct Duration](./duration/home.md)
+* [Duration](./duration/home.md)
 
-* [struct MediaItem](./media-item/home.md)
+* [MediaItem](./media-item/home.md)
 
-* [struct TimeRange](./time-range/home.md)
+* [TimeRange](./time-range/home.md)
 
-* [struct MediaMetadata](./media-metadata/home.md)
+* [MediaMetadata](./media-metadata/home.md)
 
-* [struct DrmConfiguration](./drm-configuration/home.md)
+* [DrmConfiguration](./drm-configuration/home.md)
 
-* [struct SubtitleConfiguration](./subtitle-configuration/home.md)
+* [SubtitleConfiguration](./subtitle-configuration/home.md)
+
