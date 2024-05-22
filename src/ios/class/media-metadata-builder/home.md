@@ -22,7 +22,7 @@ extension MediaMetadata {
 <br><br>
 # 생성자
 ```swift
-public init()
+init()
 ```
 파라미터 없이 미디어 메타데이터를 초기화합니다.
 
@@ -31,14 +31,14 @@ public init()
 
 ## title(_)
 ```swift
-public func title(_ title: String?) -> MediaMetadata.Builder
+func title(_ title: String?) -> MediaMetadata.Builder
 ``` 
 제목을 추가합니다.
 
 <br><br>
 ## artworkUrl(_)
 ```swift
-public func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
+func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
 ``` 
 아트워크를 추가합니다.
 <div align="right">
@@ -55,7 +55,7 @@ public func downloadPath(_ downloadPath: String?) -> MediaMetadata.Builder
 <br><br>
 ## build()
 ```swift
-public func build() -> MediaMetadata
+func build() -> MediaMetadata
 ``` 
 추가로 입력 받은 정보로부터 메타데이터를 최종 구성합니다.
 

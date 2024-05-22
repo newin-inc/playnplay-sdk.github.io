@@ -1,7 +1,7 @@
 # MediaTrack
 
 ```swift
-public class MediaTrack : CustomStringConvertible {
+class MediaTrack : CustomStringConvertible {
 
     public var isSelected: Bool
 

@@ -32,7 +32,7 @@ MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등�
 ## drmConfiguration
 
 ```swift
-public let drmConfiguration: DrmConfiguration?
+let drmConfiguration: DrmConfiguration?
 ```
 drm 설정 정보입니다. [DrmConfiguration](../drm-configuration/home.md)를 참고하세요.
 
@@ -40,7 +40,7 @@ drm 설정 정보입니다. [DrmConfiguration](../drm-configuration/home.md)를 
 ## mediaMetadata
 
 ```swift
-public let mediaMetadata: MediaMetadata?
+let mediaMetadata: MediaMetadata?
 ```
 메타데이터 설정 정보입니다. [MediaMetadata](../media-metadata/home.md)를 참고하세요.
 
@@ -76,7 +76,7 @@ let seekable: Bool
 ## title
 
 ```swift
-public var title: String { get }
+var title: String { get }
 ```
 미디어의 제목입니다.
 
@@ -84,7 +84,7 @@ public var title: String { get }
 ## url
 
 ```swift
-public let url: URL
+let url: URL
 ```
 미디어 주소입니다.
 <div align="right">

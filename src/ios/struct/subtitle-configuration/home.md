@@ -1,7 +1,7 @@
 # SubtitleConfiguration
 
 ```swift
-public struct SubtitleConfiguration {
+struct SubtitleConfiguration {
 
     public enum Mode : String {
 

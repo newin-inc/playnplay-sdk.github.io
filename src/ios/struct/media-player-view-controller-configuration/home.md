@@ -34,7 +34,7 @@ public class MediaPlayerViewController {
 
 ## allowsBackgroundPlayback
 ```swift
-public var allowsBackgroundPlayback: Bool = false
+var allowsBackgroundPlayback: Bool = false
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
@@ -45,7 +45,7 @@ public var allowsBackgroundPlayback: Bool = false
 <br><br>
 ## allowsCellularAccess
 ```swift
-public var allowsCellularAccess: Bool = true
+var allowsCellularAccess: Bool = true
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
@@ -56,7 +56,7 @@ public var allowsCellularAccess: Bool = true
 <br><br>
 ## allowsPictureInPicturePlayback
 ```swift
-public var allowsPictureInPicturePlayback: Bool = true
+var allowsPictureInPicturePlayback: Bool = true
 ```
 
 |타입|설명|설정|기본값|
@@ -68,7 +68,7 @@ public var allowsPictureInPicturePlayback: Bool = true
 <br><br>
 ## controllerShowTimeout
 ```swift
-public var controllerShowTimeout: Duration = .seconds(5)
+var controllerShowTimeout: Duration = .seconds(5)
 ```
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
@@ -79,7 +79,7 @@ public var controllerShowTimeout: Duration = .seconds(5)
 <br><br>
 ## defaultPlaybackRate
 ```swift
-public var defaultPlaybackRate: Float = 1
+var defaultPlaybackRate: Float = 1
 ```
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
@@ -90,7 +90,7 @@ public var defaultPlaybackRate: Float = 1
 <br><br>
 ## seekBackwardIncrement
 ```swift
-public var seekBackwardIncrement: Duration = .seconds(10)
+var seekBackwardIncrement: Duration = .seconds(10)
 ```
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
@@ -105,7 +105,7 @@ public var seekBackwardIncrement: Duration = .seconds(10)
 <br><br>
 ## seekForwardIncrement
 ```swift
-public var seekForwardIncrement: Duration = .seconds(10)
+var seekForwardIncrement: Duration = .seconds(10)
 ```
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
@@ -120,7 +120,7 @@ public var seekForwardIncrement: Duration = .seconds(10)
 <br><br>
 ## screenOrientationLock
 ```swift
-public var screenOrientationLock: ScreenOrientationLock = .off
+var screenOrientationLock: ScreenOrientationLock = .off
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|

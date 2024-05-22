@@ -50,7 +50,7 @@ public class DownloadManager: NSObject, URLSessionDownloadDelegate {
 
 ## shared
 ```swift
-public static let shared: DownloadManager { get }
+static let shared: DownloadManager { get }
 ```
 |타입|설명|설정|
 |:--:|:--:|:--:|
@@ -63,7 +63,7 @@ public static let shared: DownloadManager { get }
 
 ## downloadsUrl
 ```swift
-public var downloadsUrl: URL { get }
+var downloadsUrl: URL { get }
 ```
 |타입|설명|설정|
 |:--:|--|:--:|
@@ -79,7 +79,7 @@ public var downloadsUrl: URL { get }
 <br><br>
 ## items
 ```swift
-public var items: [DownloadItem] { get }
+var items: [DownloadItem] { get }
 ```
 |타입|설명|설정|
 |:--:|--|:--:|
@@ -93,7 +93,7 @@ public var items: [DownloadItem] { get }
 <br><br>
 ## maxParallelDownloads
 ```swift
-public var maxParallelDownloads: Int { get set }
+var maxParallelDownloads: Int { get set }
 ```
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
@@ -106,7 +106,7 @@ public var maxParallelDownloads: Int { get set }
 
 ## add(mediaItem:allowsCellularAccess:)
 ```swift
-@discardableResult public func add(
+@discardableResult func add(
     mediaItem: MediaItem,
     allowsCellularAccess: Bool = true
 ) -> DownloadItem.Id
@@ -126,7 +126,7 @@ public var maxParallelDownloads: Int { get set }
 <br><br>
 ## itemsByStatus(_)
 ```swift
-public func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
+func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -142,7 +142,7 @@ public func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
 <br><br>
 ## pause(id:)
 ```swift
-public func pause(id: DownloadItem.Id)
+func pause(id: DownloadItem.Id)
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -157,14 +157,14 @@ public func pause(id: DownloadItem.Id)
 <br><br>
 ## pauseAll()
 ```swift
-public func pauseAll()
+func pauseAll()
 ```
 다운로드 목록에 있는 모든 아이템의 다운로드를 일시 정지하게 하는 메서드입니다.
 
 <br><br>
 ## remove(id:)
 ```swift
-public func remove(id: DownloadItem.Id)
+func remove(id: DownloadItem.Id)
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -179,21 +179,21 @@ public func remove(id: DownloadItem.Id)
 <br><br>
 ## removeAll()
 ```swift
-public func removeAll()
+func removeAll()
 ```
 다운로드 아이템 목록을 모두 지우는 메서드입니다.
 
 <br><br>
 ## removeCompleted()
 ```swift
-public func removeCompleted()
+func removeCompleted()
 ```
 다운로드가 완료된 아이템을 목록에서 모두 지우는 메서드입니다.
 
 <br><br>
 ## resume(id:)
 ```swift
-public func resume(id: DownloadItem.Id)
+func resume(id: DownloadItem.Id)
 ```
 |파라미터|타입|설명|
 |:--:|:--:|--|
@@ -208,7 +208,7 @@ public func resume(id: DownloadItem.Id)
 <br><br>
 ## resumeAll()
 ```swift
-public func resumeAll()
+func resumeAll()
 ```
 일시 정지한 모든 아이템의 다운로드를 재개하는 메서드입니다.
 

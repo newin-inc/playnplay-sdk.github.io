@@ -1,7 +1,7 @@
 # PlaybackInfoRepository
 
 ```swift
-public class PlaybackInfoRepository {
+class PlaybackInfoRepository {
 
     static public var shared: PlaybackInfoRepository
 
@@ -16,7 +16,7 @@ public class PlaybackInfoRepository {
 
 ## shared
 ```swift
-static public var shared: PlaybackInfoRepository
+static var shared: PlaybackInfoRepository
 ```
 |타입|설명|설정|
 |:--:|--|:--:|
@@ -29,7 +29,7 @@ static public var shared: PlaybackInfoRepository
 
 ## find(by:)
 ```swift
-public func find(by url: URL) -> PlaybackInfo?
+func find(by url: URL) -> PlaybackInfo?
 ```
 |파라미터|타입|반환 타입|설명|
 |:---:|:--:|:--:|---|

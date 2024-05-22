@@ -42,14 +42,14 @@ public struct MediaMetadata {
 
 ## title
 ```swift
-public let title: String?
+let title: String?
 ```
 미디어 아이템의 제목을 나타내는 속성입니다.
 
 <br><br>
 ## artworkUrl
 ```swift
-public let artworkUrl: URL?
+let artworkUrl: URL?
 ```
 미디어 아이템의 아트워크 경로를 나타내는 속성입니다.
 <div align="right">
@@ -57,16 +57,9 @@ public let artworkUrl: URL?
 </div>
 
 <br><br>
-## downloadPath
-```swift
-public let downloadPath: String?
-```
-디바이스에 저장된 경로를 나타내는 속성입니다.
-
-<br><br>
 ## expiresOn
 ```swift
-public let expiresOn: Date?
+let expiresOn: Date?
 ```
 미디어 아이템의 만료 일시를 나타내는 속성입니다.
 <div align="right">
@@ -78,7 +71,7 @@ public let expiresOn: Date?
 
 ## buildUpon()
 ```swift
-public func buildUpon() -> MediaMetadata.Builder
+func buildUpon() -> MediaMetadata.Builder
 ```
 미디어 메타 데이터를 추가하거나 수정하고자 할 때 사용하는 메서드입니다. 변경 후, [.build()](../../class/media-metadata-builder/home.md#build)를 호출하여 구성을 완료합니다.
 

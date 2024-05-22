@@ -19,7 +19,7 @@ public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDel
 
 ## configuration
 ```swift
-public private(set) var configuration: MediaPlayerViewController.Configuration
+private(set) var configuration: MediaPlayerViewController.Configuration
 ```
 |타입|설명|설정|
 |:--:|:--:|:--:|
@@ -33,7 +33,7 @@ public private(set) var configuration: MediaPlayerViewController.Configuration
 
 ## controllerShowTimeout
 ```swift
-public var controllerShowTimeout: Duration = .seconds(5)
+var controllerShowTimeout: Duration = .seconds(5)
 ```
 |타입|설명|설정|기본값|
 |:--:|:--:|:--:|:--:|
@@ -41,7 +41,7 @@ public var controllerShowTimeout: Duration = .seconds(5)
 
 ## player
 ```swift
-public private(set) var player: MediaPlayer
+private(set) var player: MediaPlayer
 ```
 |타입|설명|설정|
 |:--:|:--:|:--:|

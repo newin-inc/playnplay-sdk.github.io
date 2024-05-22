@@ -21,7 +21,7 @@ struct DownloadItem {
 
 ## id (DownloadItem.Id)
 ```swift
-public let id: Id
+let id: Id
 ```
 |타입|설명|
 |:--:|:--:|
@@ -38,7 +38,7 @@ extension DownloadItem {
 <br><br>
 ## displayPath
 ```swift
-public let displayPath: String
+let displayPath: String
 ```
 |타입|설명|
 |:--:|:--:|
@@ -51,7 +51,7 @@ public let displayPath: String
 <br><br>
 ## fromUrl
 ```swift
-public let fromUrl: URL
+let fromUrl: URL
 ```
 |타입|설명|
 |:--:|:--:|
@@ -65,7 +65,7 @@ public let fromUrl: URL
 <br><br>
 ## toUrl
 ```swift
-public let toUrl: URL
+let toUrl: URL
 ```
 |타입|설명|
 |:--:|:--:|
@@ -81,7 +81,7 @@ public let toUrl: URL
 <br><br>
 ## status
 ```swift
-public let status: Status
+let status: Status
 ```
 |타입|설명|
 |:--:|:--:|
@@ -96,7 +96,7 @@ public let status: Status
 <br><br>
 ## progress
 ```swift
-public let progress: (Int64, Int64)?
+let progress: (Int64, Int64)?
 ```
 |타입|설명|
 |:--:|:--:|
@@ -105,7 +105,7 @@ public let progress: (Int64, Int64)?
 <br><br>
 ## failedReason
 ```swift
-public let failedReason: String?
+let failedReason: String?
 ```
 |타입|설명|
 |:--:|:--:|

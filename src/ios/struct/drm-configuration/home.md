@@ -38,7 +38,7 @@ DRM 설정을 위한 구조체입니다.
 
 ## appId
 ```swift
-public let appId: String
+let appId: String
 ```
 
 App 아이디를 가져오는 속성입니다.
@@ -46,7 +46,7 @@ App 아이디를 가져오는 속성입니다.
 <br><br>
 ## offlineAccessPeriod
 ```swift
-public var offlineAccessPeriod: Duration? = nil
+var offlineAccessPeriod: Duration? = nil
 ```
 
 <div align="right">
@@ -58,7 +58,7 @@ public var offlineAccessPeriod: Duration? = nil
 <br><br>
 ## userData
 ```swift
-public var userData: [String : Any]
+var userData: [String : Any]
 ```
 사용자 데이터를 나타내는 속성입니다. 
 <div align="right">
@@ -68,7 +68,7 @@ public var userData: [String : Any]
 <br><br>
 ## userId
 ```swift
-public let userId: String
+let userId: String
 ```
 사용자 아이디를 나타내는 속성입니다.
 
@@ -77,7 +77,7 @@ public let userId: String
 
 ## buildUpon
 ```swift
-public func buildUpon() -> DrmConfiguration.Builder
+func buildUpon() -> DrmConfiguration.Builder
 ```
 Builder를 사용하여 DRM에 대한 초기 설정을 합니다.
 

@@ -23,7 +23,7 @@ extension SubtitleConfiguration {
 # 생성자
 
 ```swift
-public init(url: URL)
+init(url: URL)
 ```
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
@@ -40,21 +40,21 @@ URL을 입력받아서 초기 설정을 합니다.
 
 ## language(_)
 ```swift
-public func language(_ language: String?) -> SubtitleConfiguration.Builder
+func language(_ language: String?) -> SubtitleConfiguration.Builder
 ```
 언어를 설정합니다.
 
 <br><br>
 ## label(_)
 ```swift
-public func label(_ language: String?) -> SubtitleConfiguration.Builder
+func label(_ label: String?) -> SubtitleConfiguration.Builder
 ```
 라벨을 설정합니다.
 
 <br><br>
 ## func mode(_)
 ```swift
-public func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Builder
+func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Builder
 ```
 모드를 설정합니다.
 <div align="right">
@@ -64,7 +64,7 @@ public func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Bu
 <br><br>
 ## build()
 ```swift
-public func build() -> SubtitleConfiguration
+func build() -> SubtitleConfiguration
 ```
 입력된 구성 요소를 바탕으로 자막을 구성합니다.
 

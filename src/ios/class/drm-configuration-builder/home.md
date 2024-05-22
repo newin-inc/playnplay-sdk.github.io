@@ -21,7 +21,7 @@ DRM 구성을 위해 초기 설정을 합니다. 제공받은 App 아이디와 �
 # 생성자
 
 ```swift
-public init(appId: String, userId: String)
+init(appId: String, userId: String)
 ```
 |파라미터|타입|설명|필수|
 |:--:|:--:|:--:|:--:|
@@ -34,7 +34,7 @@ public init(appId: String, userId: String)
 ## build()
 
 ```swift
-public func build() -> DrmConfiguration
+func build() -> DrmConfiguration
 ```
 추가로 입력 받은 정보로부터 DRM을 최종 구성합니다.
 
@@ -46,7 +46,7 @@ public func build() -> DrmConfiguration
 ## offlineAccessPeriod(_)
 
 ```swift
-public func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.Builder
+func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.Builder
 ```
 <div align="right">
 참고: <a href="../../struct/duration/home.md">Duration</a>, 
@@ -58,7 +58,7 @@ public func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfigur
 ## userData(_)
 
 ```swift
-public func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
+func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
 ```
 사용자 데이터(Callback URL에 전달할 데이터)를 추가합니다.
 
