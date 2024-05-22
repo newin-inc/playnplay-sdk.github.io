@@ -215,11 +215,12 @@ case playbackFinish(
 |position|[Duration](../../struct/duration/home.md)|마지막 재생 위치|
 |duration|[Duration](../../struct/duration/home.md)|미디어 길이|
 
-미디어가 종료되는 시점에 사용하기 위한 핸들러입니다. 마지막 재생 위치(position) 및 미디어의 길이(duration) 값을 사용할 수 있습니다.
+미디어가 종료될 때 사용하기 위한 핸들러입니다. 이 때 마지막 재생 위치(position)와 미디어의 길이(duration) 값을 사용할 수 있습니다. 주의할 점은, 미디어가 로드된 후에 종료될 때만 사용할 수 있다는 것입니다. 만약 미디어가 로드되기 전에 종료되는 상황에도 사용하려면, [Unload](#unload)를 참고하세요.
 
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/details.md#onplaybackfinishmediaitempositionduration">onPlaybackFinish(mediaItem:position:duration:)</a><br>
-참고: <a href="../../struct/media-item/home.md">MediaItem</a>, 
+참고: <a href="#unload">Unload</a>, 
+<a href="../../struct/media-item/home.md">MediaItem</a>, 
 <a href="../../struct/duration/home.md">Duration</a>
 </div>
 

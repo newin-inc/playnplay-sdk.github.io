@@ -132,11 +132,12 @@ fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duratio
 |position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
 |duration|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)?|미디어 길이|
 
-미디어가 종료되는 시점에 실행합니다. 마지막 재생 위치(position) 및 미디어의 길이(duration) 값을 사용할 수 있습니다. 
+미디어가 종료될 때 실행합니다. 이 때 마지막 재생 위치(position)와 미디어의 길이(duration) 값을 사용할 수 있습니다. 주의할 점은, 미디어가 로드된 후에 종료할 때만 실행된다는 것입니다. 만약 미디어가 로드되기 전에 종료되는 상황에도 사용하려면, [onUnload()](#onunload)를 참고하세요.
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#playbackfinish">PlayabackFinish</a><br>
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>, 
+참고: <a href="#onunload">onUnload()</a>, 
+<a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>, 
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
