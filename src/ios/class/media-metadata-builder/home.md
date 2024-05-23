@@ -6,7 +6,7 @@ extension MediaMetadata {
     public class Builder
 }
 ```
-제목, 아트워크, 다운로드 경로를 추가할 때 사용합니다. .build()를 호출하여 구성을 완료합니다.
+제목, 아트워크, 다운로드 경로를 추가할 때 사용합니다. [.build()](#build)를 호출하여 구성을 완료합니다.
 
 <br><br>
 # 생성자

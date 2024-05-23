@@ -115,7 +115,7 @@ var screenOrientationLock: ScreenOrientationLock = .off
 <br><br>
 # 정적 메서드
 
-## defaultConfiguration
+## defaultConfiguration()
 ```swift
 static func defaultConfiguration() -> Configuration
 ```

@@ -4,9 +4,7 @@
 struct MediaMetadata
 ```
 
-<div align="right">
-참고: <a href="../../class/media-metadata-builder/home.md">MediaMetadata.Builder</a>
-</div>
+미디어 메타데이터를 나타내는 구조체입니다. 아래와 같은 속성 및 메서드를 제공합니다.
 
 <br><br>
 # 속성
@@ -15,14 +13,19 @@ struct MediaMetadata
 ```swift
 let title: String?
 ```
-미디어 아이템의 제목을 나타내는 속성입니다.
+|타입|설명|
+|:--:|:--:|
+|String?|미디어 아이템 제목|
 
 <br><br>
 ## artworkUrl
 ```swift
 let artworkUrl: URL?
 ```
-미디어 아이템의 아트워크 경로를 나타내는 속성입니다.
+|타입|설명|
+|:--:|:--:|
+|[URL](https://developer.apple.com/documentation/foundation/url)?|미디어 아이템의 아트워크 경로|
+
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
@@ -32,7 +35,10 @@ let artworkUrl: URL?
 ```swift
 let expiresOn: Date?
 ```
-미디어 아이템의 만료 일시를 나타내는 속성입니다.
+|타입|설명|
+|:--:|:--:|
+|[Date](https://developer.apple.com/documentation/foundation/date)?|미디어 아이템의 만료 일시|
+
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/foundation/date">Date</a>
 </div>

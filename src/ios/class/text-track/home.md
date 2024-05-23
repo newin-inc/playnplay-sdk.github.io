@@ -29,6 +29,8 @@ func getCues(at: Duration) -> [Cue]
 </div>
 
 <br><br>
+# 클래스 메서드
+
 ## load(url:)
 
 ```swift
@@ -52,7 +54,7 @@ extension TextTrack {
 }
 ```
 
-텍스트 큐를 나타내는 클래스입니다. 
+텍스트 큐를 나타내는 클래스입니다. 아래의 속성을 가지고 있습니다.
 
 |이름|파라미터|설명|
 |:--:|:--:|:--:|

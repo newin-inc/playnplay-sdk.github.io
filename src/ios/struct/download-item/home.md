@@ -3,12 +3,9 @@
 ```swift
 struct DownloadItem
 ```
-<div align="right">
-참고: <a href="../../enum/download-item-status/home.md">DownloadItem.Status</a>
-</div>
-
 다운로드 아이템을 나타내는 구조체입니다. 다운로드에 대한 정보, 진행 상태 등의 정보를 가지고 있습니다.
 
+<br><br>
 # 속성
 
 ## id (DownloadItem.Id)
@@ -102,3 +99,19 @@ let failedReason: String?
 |타입|설명|
 |:--:|:--:|
 |String?|다운로드가 실패한 이유|
+
+<br><br>
+# 열거형
+
+## Status
+
+```swift
+enum Status: String
+```
+아이템의 현재 다운로드 상태를 나타냅니다.
+
+<div align="right">
+참고: <a href="../../enum/download-item-status/home.md">DownloadItem.Status</a>
+</div>
+
+

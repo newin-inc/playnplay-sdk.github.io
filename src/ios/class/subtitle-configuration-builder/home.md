@@ -6,7 +6,7 @@ extension SubtitleConfiguration {
     public class Builder
 }
 ```
-자막을 추가할 때 사용합니다. URL을 파라미터로 넣어서 설정을 시작하고 필요한 요소를 추가합니다. .build()를 호출하여 구성을 완료합니다.
+자막을 추가할 때 사용합니다. URL을 파라미터로 넣어서 설정을 시작하고 필요한 요소를 추가합니다. [.build()](#build)를 호출하여 구성을 완료합니다.
 
 <br><br>
 # 생성자
@@ -31,6 +31,10 @@ URL을 입력받아서 초기 설정을 합니다.
 ```swift
 func language(_ language: String?) -> SubtitleConfiguration.Builder
 ```
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|language|String?|설정하고자 하는 언어|
+
 언어를 설정합니다.
 
 <br><br>
@@ -38,6 +42,10 @@ func language(_ language: String?) -> SubtitleConfiguration.Builder
 ```swift
 func label(_ label: String?) -> SubtitleConfiguration.Builder
 ```
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|label|String?|설정하고자 하는 라벨|
+
 라벨을 설정합니다.
 
 <br><br>
@@ -45,9 +53,13 @@ func label(_ label: String?) -> SubtitleConfiguration.Builder
 ```swift
 func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Builder
 ```
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|mode|[SubtitleConfiguration.Mode](../../enum/subtitle-configuration-mode/home.md)|설정하고자 하는 자막 모드|
+
 모드를 설정합니다.
 <div align="right">
-참고: <a href="../../struct/subtitle-configuration/home.md">SubtitleConfiguration.Mode</a>
+참고: <a href="../../enum/subtitle-configuration-mode/home.md">SubtitleConfiguration.Mode</a>
 </div>
 
 <br><br>

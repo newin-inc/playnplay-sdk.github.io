@@ -6,6 +6,7 @@ struct MediaItem
 
 MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등을 가지고 있는 구조체입니다. 해당 속성에 접근하면 [Agnet](../../../agent/home.md)에서 설정한 값을 가져올 수 있습니다.
 
+<br><br>
 # 속성
 
 ## drmConfiguration
@@ -13,7 +14,13 @@ MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등�
 ```swift
 let drmConfiguration: DrmConfiguration?
 ```
-drm 설정 정보입니다. [DrmConfiguration](../drm-configuration/home.md)를 참고하세요.
+|타입|설명|
+|:--:|--|
+|[DrmConfiguration](../drm-configuration/home.md)?| drm 설정 정보 |
+
+<div align="right">
+참고: <a href="../drm-configuration/home.md">DrmConfiguration</a>
+</div>
 
 <br><br>
 ## mediaMetadata
@@ -21,15 +28,13 @@ drm 설정 정보입니다. [DrmConfiguration](../drm-configuration/home.md)를 
 ```swift
 let mediaMetadata: MediaMetadata?
 ```
-메타데이터 설정 정보입니다. [MediaMetadata](../media-metadata/home.md)를 참고하세요.
+|타입|설명|
+|:--:|--|
+|[MediaMetadata](../media-metadata/home.md)?|메타데이터 설정 정보|
 
-<br><br>
-## subtitleConfigurations
-
-```swift
-public let subtitleConfigurations: [SubtitleConfiguration]
-```
-미디어의 자막 정보입니다. [SubtitleConfiguration](../subtitle-configuration/home.md)를 참고하세요.
+<div align="right">
+참고: <a href="../media-metadata/home.md">MediaMetadata</a>
+</div>
 
 <br><br>
 ## returnUrl
@@ -37,7 +42,10 @@ public let subtitleConfigurations: [SubtitleConfiguration]
 ```swift
 let returnUrl: URL?
 ```
-[Agent](../../../agent/home.md)에서 설정한 미디어 아이템의 리턴 Url입니다.
+|타입|설명|
+|:--:|--|
+|[URL](https://developer.apple.com/documentation/foundation/url)?|[Agent](../../../agent/home.md)에서 설정한 미디어 아이템의 리턴 Url|
+
 <div align="right">
 참고: <a href="../../../agent/home.md#mediaitem">MediaItem</a>내의 returnUrl, 
 <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
@@ -63,7 +71,9 @@ let subtitleConfigurations: [SubtitleConfiguration]
 ```swift
 let seekable: Bool
 ```
-미디어의 Seek 기능 허용 여부를 나타내는 속성입니다.
+|타입|설명|
+|:--:|--|
+|Bool|미디어 Seek 기능 허용 여부|
 
 <br><br>
 ## title
@@ -71,7 +81,9 @@ let seekable: Bool
 ```swift
 var title: String { get }
 ```
-미디어의 제목입니다.
+|타입|설명|
+|:--:|--|
+|String|미디어 제목|
 
 <br><br>
 ## url
@@ -79,7 +91,10 @@ var title: String { get }
 ```swift
 let url: URL
 ```
-미디어 주소입니다.
+|타입|설명|
+|:--:|--|
+|[URL](https://developer.apple.com/documentation/foundation/url)|미디어 주소|
+
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
@@ -105,20 +120,24 @@ Builder를 사용하여 미디어 아이템에 대한 초기 설정을 합니다
 ```swift
 static func from(url: URL) -> MediaItem
 ```
-미디어 주소를 파라미터로 입력하여 미디어 아이템을 구성하는 정적 함수입니다.
 
 |타입|설명|
 |:--:|:--:|
 |URL|[URL](https://developer.apple.com/documentation/foundation/url) 참고|
 
+미디어 주소를 파라미터로 입력하여 미디어 아이템을 구성하는 정적 함수입니다.
 
 <br><br>
 # 클래스
 
-## Builder
+## MediaItem.Builder
 
 ```swift
 class Builder
 ```
 
-[MediaItem.Builder](../../class/media-item-builder/home.md)에 자세한 설명이 있습니다.
+미디어 아이템을 구성하기 위한 클래스입니다. 자세한 내용은 [MediaItem.Builder](../../class/media-item-builder/home.md)를 참고하세요.
+
+<div align="right">
+참고: <a href="../../class/media-item-builder/home.md">MediaItem.Builder</a>
+</div>

@@ -7,7 +7,7 @@ extension MediaItem {
 }
 ```
 
-미디어 아이템에 정보를 추가하고 싶을 때는 MediaItem.Builder()를 사용하면 됩니다. 정보 추가 후에는 .build()를 호출하여야 미디어 아이템으로 사용할 수 있습니다.
+미디어 아이템에 정보를 추가하고 싶을 때는 MediaItem.Builder()를 사용하면 됩니다. 정보 추가 후에는 [.build()](#build)를 호출하여야 미디어 아이템으로 사용할 수 있습니다.
 
 <br><br>
 # 생성자

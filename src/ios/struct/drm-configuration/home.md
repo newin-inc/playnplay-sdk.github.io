@@ -3,13 +3,25 @@
 ```swift
 struct DrmConfiguration
 ```
+DRM 설정을 위한 구조체입니다.
 
 <div align="right">
-참고: <a href="../../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a><br>
-<a href="../../how-to-use/home.md#하나의-미디어-열기">하나의 미디어 열기</a>
+참고: <a href="../../how-to-use/home.md#하나의-미디어-열기">하나의 미디어 열기</a>
 </div>
 
-DRM 설정을 위한 구조체입니다.
+<br><br>
+# 생성자
+```swift
+init(appId: String, userId: String, userData: [String: Any])
+```
+
+|이름|타입|설명|필수|
+|:--:|:--:|:--:|:--:|
+|appId|String|App 아이디|O|
+|userId|String|사용자 아이디|O|
+|userData|\[String : Any\]|사용자 데이터|O|
+
+App 아이디, 사용자 아이디, 사용자 데이터를 입력하여 Drm 설정을 할 수 있습니다.
 
 <br><br>
 # 속성
@@ -18,29 +30,35 @@ DRM 설정을 위한 구조체입니다.
 ```swift
 let appId: String
 ```
-
-App 아이디를 가져오는 속성입니다.
+|타입|설명|
+|:--:|:--:|
+|String|App 아이디|
 
 <br><br>
 ## offlineAccessPeriod
 ```swift
 var offlineAccessPeriod: Duration? = nil
 ```
+|타입|설명|
+|:--:|:--:|
+|[Duration](../../struct/duration/home.md)?|다운로드 컨텐츠의 오프라인 재생 기간|
 
 <div align="right">
 참고: <a href="../../struct/duration/home.md">Duration</a>, 
 <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
 </div>
-다운로드 컨텐츠의 오프라인 재생 기간을 가져오는 속성입니다.
 
 <br><br>
 ## userData
 ```swift
 var userData: [String : Any]
 ```
-사용자 데이터를 나타내는 속성입니다. 
+|타입|설명|
+|:--:|:--:|
+|\[String : Any\]|사용자 데이터|
+
 <div align="right">
-<a href="../../../agent/home.md#drm">DRM 내 userData</a>
+참고: <a href="../../../agent/home.md#drm">DRM 내 userData</a>
 </div
 
 <br><br>
@@ -48,12 +66,14 @@ var userData: [String : Any]
 ```swift
 let userId: String
 ```
-사용자 아이디를 나타내는 속성입니다.
+|타입|설명|
+|:--:|:--:|
+|String|사용자 아이디|
 
 <br><br>
 # 메서드
 
-## buildUpon
+## buildUpon()
 ```swift
 func buildUpon() -> DrmConfiguration.Builder
 ```

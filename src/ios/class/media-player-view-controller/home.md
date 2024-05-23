@@ -16,7 +16,7 @@ private(set) var configuration: MediaPlayerViewController.Configuration
 ```
 |타입|설명|설정|
 |:--:|:--:|:--:|
-|[Configuration](#mediaplayerviewcontrollerconfiguration)|설정 값|불가능|
+|[MediaPlayerViewController.Configuration](#mediaplayerviewcontrollerconfiguration)|설정 값|불가능|
 
 현재 설정을 나타내는 속성입니다.
 <div align="right">
