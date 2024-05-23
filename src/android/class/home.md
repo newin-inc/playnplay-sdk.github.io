@@ -22,9 +22,11 @@
 
 - [MediaMetadata](./media-metadata/home.md)
 
+- [MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)<br>
+
 - [MediaPlayerActivityConfiguration](./media-player-activity-configuration/home.md)
 
-- [MediaPlayer.RepeatRange](./media-player-repeat-range/home.md)<br>
+- [MediaPlayerException](./media-player-exception/home.md)
 
 - [PlaybackInfo](./playback-info/home.md)
 
