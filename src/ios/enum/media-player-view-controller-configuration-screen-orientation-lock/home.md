@@ -9,16 +9,30 @@ public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDel
 }
 ```
 
-|이름|설명|
-|:--:|:--:|
-|portrait|세로 방향으로 고정|
-|landscape|가로 방향으로 고정|
-|off|고정하지 않음|
-
 화면 방향 고정 상태를 나타내는 열거형입니다. 
 <div align="right">
 참고: <a href="../../struct/media-player-view-controller-configuration/home.md">MediaPlayerViewController.Configuration</a><br>
 </div>
+
+# 케이스
+
+## landscape
+```swift
+case landscape = "landscape"
+```
+가로 방향으로 고정
+
+## off
+```swift
+case off = "off"
+```
+고정하지 않음
+
+## portrait
+```swift
+case portrait = "portrait"
+```
+세로 방향으로 고정
 
 <br><br>
 # 메서드
