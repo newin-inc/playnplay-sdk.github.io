@@ -145,13 +145,14 @@ EventHandler.Playing과 다른 점은 seekTo() 등을 통해 재생 위치가 �
 ## PlaybackFinish
 
 ```kotlin
-data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?) -> Unit) : EventHandler()
+data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?, PlaybackFinishReason) -> Unit) : EventHandler()
 ```
 | 파라미터 타입 | 설명 |
 |:--:|:--:|
 |[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|종료된 미디어 아이템|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)?|미디어 길이|
+|[PlaybackFinishReason](../../enum/playback-finish-reason/home.md)|미디어 종료 원인|
 
 미디어가 종료될 때 사용하기 위한 핸들러입니다. 이 때 마지막 재생 위치(position)와 미디어의 길이(duration) 값을 사용할 수 있습니다. 주의할 점은, 미디어가 로드된 후에 종료될 때만 사용할 수 있다는 것입니다. 만약 미디어가 로드되기 전에 종료되는 상황에도 사용하려면, [Unload](#unload)를 참고하세요.
 

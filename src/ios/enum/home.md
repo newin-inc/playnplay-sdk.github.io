@@ -14,4 +14,6 @@
 
 * [MediaPlayerViewController.Configuration.ScreenOrientationLock](./media-player-view-controller-configuration-screen-orientation-lock/home.md)
 
+* [PlaybackFinishReason](./playback-finish-reason/home.md)
+
 * [SubtitleConfiguration.Mode](./subtitle-configuration-mode/home.md)

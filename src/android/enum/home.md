@@ -5,3 +5,5 @@
 * [DownloadItem.Status](./download-item-status/home.md)
 
 * [MediaPlayerActivityConfiguration.ScreenOrientationLock](./media-player-activity-configuration-screen-orientation-lock/home.md)
+
+* [PlaybackFinishReason](./playback-finish-reason/home.md)

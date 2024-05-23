@@ -4,7 +4,7 @@
 |:--:|--|
 |[2024.05.20.](https://app.playnplay.com/sdks/2024-05-20/NPlayerSDK-iOS.zip)|<ul><li>Callback URL 추가<ul><li>[재생 상태 보고](../../callback-url/notifiy-playback-status.md)</li><li>[다운로드 상태 보고](../../callback-url/notifiy-download-status.md)</li></ul></li></ul>|
 |[2024.05.09.](https://app.playnplay.com/sdks/2024-05-09/NPlayerSDK-iOS.zip)|<ul><li>백그라운드 재생 중 통화 이후 자동 재생 문제 수정</li></ul>|
-|[2024.04.29.](https://app.playnplay.com/sdks/2024-04-29/NPlayerSDK-iOS.zip)|<ul><li>[onPlaybackFinish](../protocol/event-listeners/home.md#onplaybackfinishmediaitempositionduration), [playbackFinish](../enum/event-handlers/home.md#playbackfinish) 추가</li></ul>|
+|[2024.04.29.](https://app.playnplay.com/sdks/2024-04-29/NPlayerSDK-iOS.zip)|<ul><li>[onPlaybackFinish](../protocol/event-listeners/home.md#onplaybackfinishmediaitempositiondurationreason), [playbackFinish](../enum/event-handlers/home.md#playbackfinish) 추가</li></ul>|
 |[2024.04.24.](https://app.playnplay.com/sdks/2024-04-24/NPlayerSDK-iOS.zip)|<ul><li> 재생 및 다운로드 시 [셀룰러 데이터 사용 옵션](?search=iOS%20allowsCellularAccess) 추가</li></ui>|
 |[2024.04.17.](https://app.playnplay.com/sdks/2024-04-17/NPlayerSDK-iOS.zip)|<ul><li> [오프라인 재생 기능](../class/drm-configuration-builder/home.md#offlineaccessperiod_) 추가</li></ui> |
 |[2024.04.12.](https://app.playnplay.com/sdks/2024-04-12/NPlayerSDK-iOS.zip)|<ul><li> [백그라운드 재생 속성](../class/media-player/home.md#allowsbackgroundplayback) 추가</li></ui> |
