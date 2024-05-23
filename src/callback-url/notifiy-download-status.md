@@ -16,8 +16,8 @@ Authorization: Bearer <Authorization>
 
 {
     "type": "NotifyDownloadStatus",
-    "sessionId": string,
     "appId": string,
+    "sessionId": string,
     "userId": string,
     "userData": object
     "mediaUrl": string,
@@ -28,8 +28,8 @@ Authorization: Bearer <Authorization>
 
 |이름|타입|설명|
 |:--:|:--:|:--:|
-|sessionId|string|세션 아이디|
 |appId|string|App 아이디|
+|sessionId|string|세션 아이디|
 |userId|string|사용자 아이디|
 |userData|object|[launchAgent](../agent/home.md#launchagent) 호출 시 [입력한 정보](../agent/home.md#drm)<br>(사용자 및 컨텐츠 식별 등의 용도)|
 |mediaUrl|string|미디어 URL|
