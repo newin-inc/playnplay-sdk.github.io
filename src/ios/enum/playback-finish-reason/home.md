@@ -13,9 +13,9 @@ enum PlaybackFinishReason
 
 # 케이스
 
-## complete
+## completed
 ```swift
-case complete
+case completed
 ```
 미디어가 끝까지 재생되어 종료된 경우
 
