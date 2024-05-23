@@ -18,6 +18,18 @@ init()
 <br><br>
 # 메서드
 
+## build()
+```swift
+func build() -> MediaMetadata
+``` 
+추가로 입력 받은 정보로부터 메타데이터를 최종 구성합니다.
+
+<div align="right">
+참고: <a href="../../how-to-use/home.md#제목을-설정하는-예제">제목을 설정하는 예제</a>, 
+<a href="../../struct/media-metadata/home.md">MediaMetadata</a>
+</div>
+
+<br><br>
 ## title(_)
 ```swift
 func title(_ title: String?) -> MediaMetadata.Builder
@@ -32,23 +44,4 @@ func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
 아트워크를 추가합니다.
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
-</div>
-
-<br><br>
-## downloadPath(_)
-```swift
-public func downloadPath(_ downloadPath: String?) -> MediaMetadata.Builder
-``` 
-다운로드 경로를 추가합니다.
-
-<br><br>
-## build()
-```swift
-func build() -> MediaMetadata
-``` 
-추가로 입력 받은 정보로부터 메타데이터를 최종 구성합니다.
-
-<div align="right">
-참고: <a href="../../how-to-use/home.md#제목을-설정하는-예제">제목을 설정하는 예제</a>, 
-<a href="../../struct/media-metadata/home.md">MediaMetadata</a>
 </div>

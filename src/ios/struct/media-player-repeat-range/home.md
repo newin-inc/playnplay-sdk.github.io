@@ -24,16 +24,6 @@ init(start: Duration, end: Duration)
 <br><br>
 # 속성
 
-## start
-```swift
-var start: Duration
-```
-
-|타입|설명|
-|:--:|:--:|
-|[Duration](../../struct/duration/home.md)|반복 구간의 시작 위치|
-
-<br><br>
 ## end
 ```swift
 var end: Duration
@@ -44,18 +34,18 @@ var end: Duration
 |[Duration](../../struct/duration/home.md)|반복 구간의 종료 위치|
 
 <br><br>
-# 메서드
-
-## with(start:) -> RepeatRange
+## start
 ```swift
-func with(start: Duration) -> MediaPlayer.RepeatRange
+var start: Duration
 ```
 
-|파라미터|타입|반환 타입|설명|
-|:--:|:--:|:--:|:--:|
-|start|[Duration](../../struct/duration/home.md)|[MediaPlayer.RepeatRange](./home.md)|반복 구간 시작 위치를 변경한 뒤 구간 범위를 반환|
+|타입|설명|
+|:--:|:--:|
+|[Duration](../../struct/duration/home.md)|반복 구간의 시작 위치|
 
 <br><br>
+# 메서드
+
 ## with(end:) -> RepeatRange
 ```swift
 func with(end: Duration) -> MediaPlayer.RepeatRange
@@ -64,4 +54,14 @@ func with(end: Duration) -> MediaPlayer.RepeatRange
 |파라미터|타입|반환 타입|설명|
 |:--:|:--:|:--:|:--:|
 |end|[Duration](../../struct/duration/home.md)|[MediaPlayer.RepeatRange](./home.md)|반복 구간 종료 위치를 변경한 뒤 구간 범위를 반환|
+
+<br><br>
+## with(start:) -> RepeatRange
+```swift
+func with(start: Duration) -> MediaPlayer.RepeatRange
+```
+
+|파라미터|타입|반환 타입|설명|
+|:--:|:--:|:--:|:--:|
+|start|[Duration](../../struct/duration/home.md)|[MediaPlayer.RepeatRange](./home.md)|반복 구간 시작 위치를 변경한 뒤 구간 범위를 반환|
 

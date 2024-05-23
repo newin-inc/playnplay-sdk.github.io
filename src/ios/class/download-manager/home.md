@@ -1,5 +1,6 @@
 # DownloadManager
 
+---
 다운로드 매니저를 사용하기 전에 반드시 AppDelegate 설정을 해야합니다. 
 ```swift
 func application(
@@ -18,11 +19,13 @@ func application(
 참고: <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622941-application">application(_:handleEventsForBackgroundURLSession:completionHandler:)</a>
 </div>
 
-다운로드 매니저 클래스는 아래와 같은 속성과 메서드를 가지고 있습니다.
+---
 
 ```swift
 class DownloadManager: NSObject, URLSessionDownloadDelegate
 ```
+
+다운로드 매니저 클래스는 아래와 같은 속성과 메서드를 가지고 있습니다.
 
 <br><br>
 # 정적 속성
@@ -95,12 +98,12 @@ var maxParallelDownloads: Int { get set }
 |mediaItem|[MediaItem](../../struct/media-item/home.md)|추가하고자 하는 미디어 아이템|O|없음|
 |allowsCellularAccess|Bool|다운로드 시 셀룰러 데이터 사용 여부|X|true|
 
+다운로드를 할 미디어 아이템을 추가합니다. 현재 다운로드가 진행되고 있는 아이템의 수가 [maxParallelDownloads](#maxparalleldownloads) 보다 적으면 바로 다운로드를 시작합니다. 셀룰러 데이터 사용을 허용하지 않으려면, allowsCellularAccess를 false로 설정하여 호출하십시오.
+
 <div align="right">
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>, 
 <a href="../../struct/download-item/home.md#id-downloaditemid">DownloadItem.id</a>
 </div>
-
-다운로드를 할 미디어 아이템을 추가합니다. 현재 다운로드가 진행되고 있는 아이템의 수가 [maxParallelDownloads](#maxparalleldownloads) 보다 적으면 바로 다운로드를 시작합니다. 셀룰러 데이터 사용을 허용하지 않으려면, allowsCellularAccess를 false로 설정하여 호출하십시오.
 
 <br><br>
 ## itemsByStatus(_)

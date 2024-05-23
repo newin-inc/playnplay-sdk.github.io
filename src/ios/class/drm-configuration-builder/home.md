@@ -39,11 +39,12 @@ func build() -> DrmConfiguration
 ```swift
 func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.Builder
 ```
+오프라인 재생 기한을 설정합니다.
+
 <div align="right">
 참고: <a href="../../struct/duration/home.md">Duration</a>, 
 <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
 </div>
-오프라인 재생 기한을 설정합니다.
 
 <br><br>
 ## userData(_)

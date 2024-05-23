@@ -28,11 +28,10 @@ public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDel
 ```swift
 func toInterfaceOrientaion() -> UIInterfaceOrientationMask
 ```
-<div align="right">
-참고: <a href="https://developer.apple.com/documentation/uikit/uiinterfaceorientationmask">UIInterfaceOrientationMask</a>
-</div>
 
 현재 화면 방향 고정 상태를 [UIInterfaceOrientationMask](https://developer.apple.com/documentation/uikit/uiinterfaceorientationmask) 타입으로 나타내는 메서드입니다.<br>
 portrait 일 때는, [UIInterfaceOrientationMask.portrait](https://developer.apple.com/documentation/uikit/uiinterfaceorientationmask/1623065-portrait)를, landscape일 때는 [UIInterfaceOrientationMask.landscape](https://developer.apple.com/documentation/uikit/uiinterfaceorientationmask/1623106-landscape)를, 화면 고정을 끄면 [UIInterfaceOrientationMask.all](https://developer.apple.com/documentation/uikit/uiinterfaceorientationmask/1623035-all)을 반환합니다.
 
-
+<div align="right">
+참고: <a href="https://developer.apple.com/documentation/uikit/uiinterfaceorientationmask">UIInterfaceOrientationMask</a>
+</div>

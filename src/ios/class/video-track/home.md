@@ -3,11 +3,11 @@
 ```swift
 class VideoTrack : MediaTrack
 ```
+[MediaTrack](../media-track/home.md)를 확장한 클래스로, 비디오 트랙에 사용되는 클래스입니다.
+
 <div align="right">
 부모 클래스: <a href="../media-track/home.md">MediaTrack</a>
 </div>
-
-[MediaTrack](../media-track/home.md)를 확장한 클래스로, 비디오 트랙에 사용되는 클래스입니다.
 
 <br><br>
 # 속성

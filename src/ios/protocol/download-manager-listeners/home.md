@@ -1,9 +1,12 @@
 # DownloadManager.Listener (DownloadManagerListener)
 
 ```swift
+extension DownloadManager { 
+    public typealias Listener = DownloadManagerListener
+}
+```
+```swift
 protocol DownloadManagerListener: AnyObject
-
-extension DownloadManager { typealias Listener = DownloadManagerListener }
 ```
 
 DownloadManager.Listener(DownloadManagerListener)는 다운로드와 관련된 이벤트 처리를 위한 프로토콜로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 아래 [메서드](#메서드)를, 리스너를 추가하는 방법은 [addListener(_)](../../class/download-manager/home.md#addlistener_)를 참고하시면 됩니다.
@@ -65,9 +68,9 @@ func onStatusChanged(_ item: DownloadItem)
 |:--:|:--:|:--:|
 |item|[DownloadItem](../../struct/download-item/home.md)|처리하고자 하는 다운로드 아이템|
 
+다운로드 아이템의 상태가 변경될 때 처리를 위한 메서드입니다. 즉, 다운로드를 완료하였거나, 실패하였을 때 등의 상황에 추가적인 처리가 필요할 경우에 이 메서드를 사용할 수 있습니다.
+
 <div align="right">
 참고: <a href="../../struct/download-item/home.md">DownloadItem</a>, 
 <a href="../../enum/download-item-status//home.md">DownloadItem.Status</a>
 </div>
-
-다운로드 아이템의 상태가 변경될 때 처리를 위한 메서드입니다. 즉, 다운로드를 완료하였거나, 실패하였을 때 등의 상황에 추가적인 처리가 필요할 경우에 이 메서드를 사용할 수 있습니다.

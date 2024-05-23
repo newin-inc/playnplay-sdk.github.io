@@ -9,15 +9,6 @@ struct MediaMetadata
 <br><br>
 # 속성
 
-## title
-```swift
-let title: String?
-```
-|타입|설명|
-|:--:|:--:|
-|String?|미디어 아이템 제목|
-
-<br><br>
 ## artworkUrl
 ```swift
 let artworkUrl: URL?
@@ -42,6 +33,15 @@ let expiresOn: Date?
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/foundation/date">Date</a>
 </div>
+
+<br><br>
+## title
+```swift
+let title: String?
+```
+|타입|설명|
+|:--:|:--:|
+|String?|미디어 아이템 제목|
 
 <br><br>
 # 메서드
