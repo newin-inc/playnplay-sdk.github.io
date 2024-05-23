@@ -18,6 +18,16 @@ init()
 <br><br>
 # 메서드
 
+## artworkUrl(_)
+```swift
+func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
+``` 
+아트워크를 추가합니다.
+<div align="right">
+참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
+</div>
+
+<br><br>
 ## build()
 ```swift
 func build() -> MediaMetadata
@@ -35,13 +45,3 @@ func build() -> MediaMetadata
 func title(_ title: String?) -> MediaMetadata.Builder
 ``` 
 제목을 추가합니다.
-
-<br><br>
-## artworkUrl(_)
-```swift
-func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
-``` 
-아트워크를 추가합니다.
-<div align="right">
-참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
-</div>

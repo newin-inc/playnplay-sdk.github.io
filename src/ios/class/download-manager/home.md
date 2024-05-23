@@ -106,6 +106,21 @@ var maxParallelDownloads: Int { get set }
 </div>
 
 <br><br>
+## addListener(_)
+```swift
+func addListener(_ listener: DownloadManager.Listener)
+```
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|listener|[DownloadManager.Listener](../../protocol/download-manager-listeners/home.md)|추가할 다운로드 매니저 리스너|
+
+[다운로드 매니저 리스너](../../protocol/download-manager-listeners/home.md)를 추가하기 위한 메서드입니다. 리스너를 추가한 후, 해당 리스너가 더 이상 필요 없을 떄는 반드시 [removeListener(_)](#removelistener_) 메서드를 사용해서 제거하세요.
+
+<div align="right">
+참고: <a href="../../protocol/download-manager-listeners/home.md">DownloadManager.Listener</a>
+</div>
+
+<br><br>
 ## itemsByStatus(_)
 ```swift
 func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
@@ -173,6 +188,20 @@ func removeCompleted()
 다운로드가 완료된 아이템을 목록에서 모두 지우는 메서드입니다.
 
 <br><br>
+## removeListener(_)
+```swift
+func removeListener(_ listener: DownloadManager.Listener)
+```
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|listener|[DownloadManager.Listener](../../protocol/download-manager-listeners/home.md)|제거할 다운로드 매니저 리스너|
+
+[다운로드 매니저 리스너](../../protocol/download-manager-listeners/home.md)를 제거하기 위한 메서드입니다.
+
+<div align="right">
+참고: <a href="../../protocol/download-manager-listeners/home.md">DownloadManager.Listener</a>
+</div>
+<br><br>
 ## resume(id:)
 ```swift
 func resume(id: DownloadItem.Id)
@@ -193,33 +222,3 @@ func resume(id: DownloadItem.Id)
 func resumeAll()
 ```
 일시 정지한 모든 아이템의 다운로드를 재개하는 메서드입니다.
-
-<br><br>
-## addListener(_)
-```swift
-func addListener(_ listener: DownloadManager.Listener)
-```
-|파라미터|타입|설명|
-|:--:|:--:|--|
-|listener|[DownloadManager.Listener](../../protocol/download-manager-listeners/home.md)|추가할 다운로드 매니저 리스너|
-
-[다운로드 매니저 리스너](../../protocol/download-manager-listeners/home.md)를 추가하기 위한 메서드입니다. 리스너를 추가한 후, 해당 리스너가 더 이상 필요 없을 떄는 반드시 [removeListener(_)](#removelistener_) 메서드를 사용해서 제거하세요.
-
-<div align="right">
-참고: <a href="../../protocol/download-manager-listeners/home.md">DownloadManager.Listener</a>
-</div>
-
-<br><br>
-## removeListener(_)
-```swift
-func removeListener(_ listener: DownloadManager.Listener)
-```
-|파라미터|타입|설명|
-|:--:|:--:|--|
-|listener|[DownloadManager.Listener](../../protocol/download-manager-listeners/home.md)|제거할 다운로드 매니저 리스너|
-
-[다운로드 매니저 리스너](../../protocol/download-manager-listeners/home.md)를 제거하기 위한 메서드입니다.
-
-<div align="right">
-참고: <a href="../../protocol/download-manager-listeners/home.md">DownloadManager.Listener</a>
-</div>

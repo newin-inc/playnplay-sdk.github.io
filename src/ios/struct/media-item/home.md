@@ -52,6 +52,16 @@ let returnUrl: URL?
 </div>
 
 <br><br>
+## seekable
+
+```swift
+let seekable: Bool
+```
+|타입|설명|
+|:--:|--|
+|Bool|미디어 Seek 기능 허용 여부|
+
+<br><br>
 ## subtitleConfigurations
 
 ```swift
@@ -64,16 +74,6 @@ let subtitleConfigurations: [SubtitleConfiguration]
 <div align="right">
 참고: <a href="../subtitle-configuration/home.md">SubtitleConfiguration</a>
 </div>
-
-<br><br>
-## seekable
-
-```swift
-let seekable: Bool
-```
-|타입|설명|
-|:--:|--|
-|Bool|미디어 Seek 기능 허용 여부|
 
 <br><br>
 ## title

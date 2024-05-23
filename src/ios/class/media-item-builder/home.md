@@ -95,11 +95,11 @@ func seekable(_ seekable: Bool) -> MediaItem.Builder
 |:--:|:--:|:--:|:--:|
 |seekable|Bool|Seek 기능을 허용할 지에 대한 여부|O|
 
+Seek 기능 허용 여부를 설정합니다. seekable(false)일 경우, Seek 기능이 제한됩니다.
+
 <div align="right">
 참고: <a href="../../how-to-use/home.md#seek-기능-제한">Seek 기능 제한</a>
 </div>
-
-Seek 기능 허용 여부를 설정합니다. seekable(false)일 경우, Seek 기능이 제한됩니다.
 
 <br><br>
 ## subtitleConfigurations(_)

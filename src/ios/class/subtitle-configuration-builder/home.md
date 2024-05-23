@@ -27,15 +27,16 @@ URL을 입력받아서 초기 설정을 합니다.
 <br><br>
 # 메서드
 
-## language(_)
+## build()
 ```swift
-func language(_ language: String?) -> SubtitleConfiguration.Builder
+func build() -> SubtitleConfiguration
 ```
-|파라미터|타입|설명|
-|:--:|:--:|--|
-|language|String?|설정하고자 하는 언어|
+입력된 구성 요소를 바탕으로 자막을 구성합니다.
 
-언어를 설정합니다.
+<div align="right">
+참고: <a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a>, 
+<a href="../../struct/subtitle-configuration/home.md">SubtitleConfiguration</a>
+</div>
 
 <br><br>
 ## label(_)
@@ -49,7 +50,18 @@ func label(_ label: String?) -> SubtitleConfiguration.Builder
 라벨을 설정합니다.
 
 <br><br>
-## func mode(_)
+## language(_)
+```swift
+func language(_ language: String?) -> SubtitleConfiguration.Builder
+```
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|language|String?|설정하고자 하는 언어|
+
+언어를 설정합니다.
+
+<br><br>
+## mode(_)
 ```swift
 func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Builder
 ```
@@ -60,16 +72,4 @@ func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Builder
 모드를 설정합니다.
 <div align="right">
 참고: <a href="../../enum/subtitle-configuration-mode/home.md">SubtitleConfiguration.Mode</a>
-</div>
-
-<br><br>
-## build()
-```swift
-func build() -> SubtitleConfiguration
-```
-입력된 구성 요소를 바탕으로 자막을 구성합니다.
-
-<div align="right">
-참고: <a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a>, 
-<a href="../../struct/subtitle-configuration/home.md">SubtitleConfiguration</a>
 </div>
