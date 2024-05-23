@@ -53,7 +53,8 @@ func buildUpon() -> MediaMetadata.Builder
 미디어 메타 데이터를 추가하거나 수정하고자 할 때 사용하는 메서드입니다. 변경 후, [.build()](../../class/media-metadata-builder/home.md#build)를 호출하여 구성을 완료합니다.
 
 <div align="right">
-참고: <a href="../../how-to-use/home.md#제목을-설정하는-예제">제목을 설정하는 예제</a>
+참고: <a href="#mediametadatabuilder">MediaMetadata.Builder</a><br>
+<a href="../../how-to-use/home.md#제목을-설정하는-예제">제목을 설정하는 예제</a>
 </div>
 
 <br><br>

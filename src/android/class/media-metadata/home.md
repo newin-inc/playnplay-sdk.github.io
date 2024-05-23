@@ -57,7 +57,8 @@ public MediaMetadata.Builder buildUpon()
 ```
 미디어 메타 데이터를 추가하거나 수정하고자 할 때 사용하는 메서드입니다. 변경 후, [.build()](https://developer.android.com/reference/androidx/media3/common/MediaMetadata.Builder#build())를 호출하여 구성을 완료합니다.
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata.Builder#build()">build()</a>
+참고: <a href="#builder">MediaMetadata.Builder</a><br>
+<a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata.Builder#build()">build()</a>
 </div>
 
 <br><br>

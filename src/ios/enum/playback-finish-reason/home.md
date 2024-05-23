@@ -23,11 +23,11 @@ case complete
 ```swift
 case error
 ```
-미디어에 오류가 있어서 재생이 종료된 경우
+오류로 인해 재생이 종료된 경우
 
 ## userRequest
 ```swift
 case userRequest
 ```
-사용자가 미디어를 종료했을 경우
+다른 미디어로 이동하거나 미디어를 종료하는 등 사용자가 미디어 재생을 제어한 경우
 

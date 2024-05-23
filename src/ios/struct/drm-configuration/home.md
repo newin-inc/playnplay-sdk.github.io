@@ -80,7 +80,8 @@ func buildUpon() -> DrmConfiguration.Builder
 Builder를 사용하여 DRM에 대한 초기 설정을 합니다.
 
 <div align="right">
-참고: <a href="../../how-to-use/home.md#하나의-미디어-열기">하나의 미디어 열기</a>
+참고: <a href="#drmconfigurationbuilder">DrmConfiguration.Builder</a><br>
+<a href="../../how-to-use/home.md#하나의-미디어-열기">하나의 미디어 열기</a>
 </div>
 
 <br><br>
