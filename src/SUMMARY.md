@@ -113,6 +113,7 @@
     - [접근 권한 검사](./callback-url/check-access-right.md)
     - [재생 진행 상태 보고](./callback-url/notifiy-playback-progress.md)
     - [재생 상태 보고](./callback-url/notifiy-playback-status.md)
+    - [재생 종료 보고](./callback-url/notify-playback-finish.md)
     - [다운로드 상태 보고](./callback-url/notifiy-download-status.md)
     - [변경 이력](./callback-url/revision-history/home.md)
     
