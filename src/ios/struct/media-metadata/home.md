@@ -49,3 +49,17 @@ func buildUpon() -> MediaMetadata.Builder
 <div align="right">
 참고: <a href="../../how-to-use/home.md#제목을-설정하는-예제">제목을 설정하는 예제</a>
 </div>
+
+<br><br>
+# 클래스
+
+## MediaMetadata.Builder 
+```swift
+class Builder
+```
+
+미디어 메타데이터를 구성하기 위한 클래스입니다. 자세한 내용은 [MediaMetadata.Builder](../../class/media-metadata-builder/home.md)를 참고하세요.
+
+<div align="right">
+참고: <a href="../../class/media-metadata-builder/home.md">MediaMetadata.Builder</a>
+</div>

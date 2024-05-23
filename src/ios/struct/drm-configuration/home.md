@@ -71,6 +71,9 @@ Builder를 사용하여 DRM에 대한 초기 설정을 합니다.
 ```swift
 class Builder
 ```
+
+DRM 구성을 하기 위한 클래스입니다. 자세한 내용은 [DrmConfiguration.Builder 문서](../../class/drm-configuration-builder/home.md)를 참고하세요.
+
 <div align="right">
 참고: <a href="../../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a>
 </div>

@@ -44,6 +44,20 @@ let returnUrl: URL?
 </div>
 
 <br><br>
+## subtitleConfigurations
+
+```swift
+let subtitleConfigurations: [SubtitleConfiguration]
+```
+|타입|설명|
+|:--:|--|
+|\[[SubtitleConfiguration](../subtitle-configuration/home.md)\]| 미디어 자막 정보|
+
+<div align="right">
+참고: <a href="../subtitle-configuration/home.md">SubtitleConfiguration</a>
+</div>
+
+<br><br>
 ## seekable
 
 ```swift
