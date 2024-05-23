@@ -20,6 +20,7 @@ Authorization: Bearer <Authorization>
     "sessionId": string,
     "userId": string,
     "userData": object,
+    "mediaUrl": string,
     "position": number,
     "duration": number,
     "progress": { 
@@ -36,6 +37,7 @@ Authorization: Bearer <Authorization>
 |sessionId|string|세션 아이디|
 |userId|string|사용자 아이디|
 |userData|object|[launchAgent](../agent/home.md#launchagent) 호출 시 [입력한 정보](../agent/home.md#drm)<br>(사용자 및 컨텐츠 식별 등의 용도)|
+|mediaUrl|string|미디어 URL|
 |position|number|현재 재생 위치 (단위: 밀리초)|
 |duration|number|전체 재생 길이 (단위: 밀리초)|
 |progress|object|현재 세션의 진행 상태<p></p><table><thead><tr><th>이름</th><th>타입</th><th>설명</th></thead><tbody><tr><th>playTime</th><th>number</th><th>재생 시간 (배속 X)</th></tr><tr><th>watchTime</th><th>number</th><th>시청 시간 (배속 O)</th></tr></tbody></table>|
