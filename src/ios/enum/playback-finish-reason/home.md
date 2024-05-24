@@ -13,9 +13,9 @@ enum PlaybackFinishReason
 
 # 케이스
 
-## completed
+## ended
 ```swift
-case completed
+case ended
 ```
 미디어가 끝까지 재생되어 종료된 경우
 
@@ -25,9 +25,9 @@ case error
 ```
 오류로 인해 재생이 종료된 경우
 
-## userRequest
+## userExited
 ```swift
-case userRequest
+case userExited
 ```
 다른 미디어로 이동하거나 미디어를 종료하는 등 사용자가 미디어 재생을 제어한 경우
 

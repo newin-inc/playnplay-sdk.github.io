@@ -27,7 +27,7 @@ Authorization: Bearer <Authorization>
         "playTime": number,
         "watchTime": number,
     },
-    "reason": "Completed" | "Error" | "UserRequest"
+    "reason": "Ended" | "Error" | "UserExited"
 }
 ```
 
@@ -41,7 +41,7 @@ Authorization: Bearer <Authorization>
 |position|number|현재 재생 위치 (단위: 밀리초)|
 |duration|number|전체 재생 길이 (단위: 밀리초)|
 |progress|object|현재 세션의 진행 상태<p></p><table><thead><tr><th>이름</th><th>타입</th><th>설명</th></thead><tbody><tr><th>playTime</th><th>number</th><th>재생 시간 (배속 X)</th></tr><tr><th>watchTime</th><th>number</th><th>시청 시간 (배속 O)</th></tr></tbody></table>|
-|reason|string|미디어 종료 원인<p></p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><th>Completed</th><th>미디어가 끝까지 재생된 후 종료</th></tr><tr><th>Error</th><th>오류로 인하여 재생 종료</th></tr><tr><th>UserRequest</th><th>사용자가 미디어를 제어하여 종료</th></tr></tbody></table>|
+|reason|string|미디어 종료 원인<p></p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><th>Ended</th><th>미디어가 끝까지 재생된 후 종료</th></tr><tr><th>Error</th><th>오류로 인하여 재생 종료</th></tr><tr><th>UserExited</th><th>사용자가 미디어를 제어하여 종료</th></tr></tbody></table>|
 
 ## 반환
 
