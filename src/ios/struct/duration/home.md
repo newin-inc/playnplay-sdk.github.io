@@ -10,12 +10,11 @@ Duration은 시간을 표현하는 [CMTime](https://developer.apple.com/document
 
 # 속성
 ```swift
-var seconds: Double { get }
 var milliseconds: Float64 { get }
 var microseconds: Float64 { get }
 var nanoseconds: Float64 { get }
 ```
-초, 밀리초, 마이크로초, 나노초를 나타내는 속성입니다.
+밀리초, 마이크로초, 나노초를 나타내는 속성입니다. 초에 해당하는 [seconds](https://developer.apple.com/documentation/coremedia/cmtime/1489443-seconds)는 [CMTime](https://developer.apple.com/documentation/coremedia/cmtime)에 포함되어 있습니다.
 
 <br><br>
 # 정적 메서드

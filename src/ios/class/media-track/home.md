@@ -19,7 +19,7 @@ var codecName: String { get }
 
 ## isSelected
 ```swift
-var isSelected: Bool
+var isSelected: Bool { get set }
 ```
 |타입|설명|설정|
 |:--:|:--:|:--:|

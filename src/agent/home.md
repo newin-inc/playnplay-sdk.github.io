@@ -60,6 +60,8 @@ const LaunchType = {
 |metadata|[Metadata](#metadata) \| undefined| 메타데이터 설정 (옵션)|
 
 DRM 설정, returnUrl 등을 포함한 미디어 아이템을 구성할 수 있습니다. [사용 예제](#사용-예제-동영상-재생)를 참고하세요.
+<br>
+returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상적으로 작동합니다.
 
 ## DRM 
 
