@@ -58,4 +58,9 @@ private(set) var player: MediaPlayer
 ```swift
 struct Configuration
 ```
-미디어 플레이어의 설정을 도와주는 구조체입니다. 보다 더 자세한 설명은 [MediaPlayerViewController.Configuration](../../struct/media-player-view-controller-configuration/home.md)를 참고하세요.
+
+미디어 플레이어의 설정을 도와주는 구조체입니다.<br>
+
+<div align="right">
+참고: <a href="../../struct/media-player-view-controller-configuration/home.md">MediaPlayerViewController.Configuration</a>
+</div>

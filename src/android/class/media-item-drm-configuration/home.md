@@ -50,7 +50,7 @@ val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
 
 |타입|설명|설정|
 |:--:|:--:|:--:|
-|Duration?|오프라인 재생 기간|불가능|
+|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)?|오프라인 재생 기간|불가능|
 
 다운로드 컨텐츠의 오프라인 재생 기간을 가져오는 속성입니다.
 
