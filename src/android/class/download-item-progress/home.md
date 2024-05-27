@@ -1,14 +1,11 @@
 # Progress
 
 ```kotlin
-import com.newin.nplayer.sdk.DownloadItem
+import com.newin.nplayer.sdk.DownloadItem.Progress
 ```
 
 ```kotlin
-data class DownloadItem {
-
-    data class Progress
-}
+data class Progress
 ```
 
 다운로드 진행 정도를 나타내는 데이터 클래스입니다. 현재 다운로드된 파일 크기와 전체 파일 크기를 가지고 있습니다.

@@ -1,11 +1,9 @@
 # SubtitleConfiguration.Builder
 
 ```swift
-extension SubtitleConfiguration {
-
-    public class Builder
-}
+class Builder
 ```
+
 자막을 추가할 때 사용합니다. URL을 파라미터로 넣어서 설정을 시작하고 필요한 요소를 추가합니다. [.build()](#build)를 호출하여 구성을 완료합니다.
 
 <br>

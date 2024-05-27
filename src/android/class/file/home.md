@@ -3,9 +3,6 @@
 ```kotlin
 import java.io.File
 ```
-```java
-public class File implements Serializable, Comparable<File>
-```
 
 [java.io.File](https://developer.android.com/reference/java/io/File) 클래스를 확장하여, 파일을 [미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)으로 바꾸는 메서드를 제공합니다.
 

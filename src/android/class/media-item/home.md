@@ -3,9 +3,6 @@
 ```kotlin
 import androidx.media3.common.MediaItem
 ```
-```java
-public final class MediaItem implements Bundleable
-```
 
 [미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)의 정보를 가져올 수 있는 위의 속성 및 메서드를 제공합니다. [Agent](../../../agent/home.md)에서 설정한 값을 불러올 수 있습니다.
 

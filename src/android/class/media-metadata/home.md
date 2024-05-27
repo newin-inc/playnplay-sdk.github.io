@@ -4,10 +4,6 @@
 import androidx.media3.common.MediaMetadata
 ```
 
-```java
-public final class MediaMetadata implements Bundleable
-```
-
 미디어 메타 데이터 클래스입니다.
 
 <div align="right">
@@ -24,7 +20,7 @@ public final class MediaMetadata implements Bundleable
 ## artworkUrl
 
 ```java
-@Nullable public final Uri artworkUri
+@Nullable Uri artworkUri
 ```
 
 |타입|설명|
@@ -40,7 +36,7 @@ public final class MediaMetadata implements Bundleable
 ## title
 
 ```java
-@Nullable public final CharSequence title
+@Nullable CharSequence title
 ```
 
 |타입|설명|
@@ -60,7 +56,7 @@ public final class MediaMetadata implements Bundleable
 ## buildUpon()
 
 ```java
-public MediaMetadata.Builder buildUpon()
+MediaMetadata.Builder buildUpon()
 ```
 
 미디어 메타 데이터를 추가하거나 수정하고자 할 때 사용하는 메서드입니다. 변경 후, [.build()](https://developer.android.com/reference/androidx/media3/common/MediaMetadata.Builder#build())를 호출하여 구성을 완료합니다.
@@ -77,7 +73,7 @@ public MediaMetadata.Builder buildUpon()
 ## Builder
 
 ```java
-public static final class Builder
+static class Builder
 ```
 
 미디어 메타데이터를 만드는 클래스입니다.

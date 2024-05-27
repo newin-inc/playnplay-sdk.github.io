@@ -1,7 +1,7 @@
 # MediaPlayerError
 
 ```swift
-enum MediaPlayerError: LocalizedError
+enum MediaPlayerError : LocalizedError
 ```
 
 [Locallized Error](https://developer.apple.com/documentation/foundation/localizederror/)를 확장한 열거형으로, 에러 상태를 나타내는 열거형입니다. 에러 발생 시에, 이 열거형을 토대로 상황에 맞는 처리를 할 수 있습니다.

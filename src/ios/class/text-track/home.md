@@ -33,9 +33,7 @@ url을 통해서, 자막을 가져오는 메서드입니다.
 ## TextTrack.Cue
 
 ```swift
-extension TextTrack {
-    public class Cue : Equatable
-}
+class Cue : Equatable
 ```
 
 텍스트 큐를 나타내는 클래스입니다. 아래의 속성을 가지고 있습니다.

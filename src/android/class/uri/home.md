@@ -3,9 +3,6 @@
 ```kotlin
 import android.net.Uri
 ```
-```java
-public abstract class Uri implements Parcelable, Comparable<Uri>
-```
 
 [android.net.Uri](https://developer.android.com/reference/android/net/Uri) 클래스를 확장하여, Uri를 미디어 아이템으로 만드는 메서드를 제공합니다. 
 

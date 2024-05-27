@@ -1,11 +1,9 @@
 # MediaMetadata.Builder
 
 ```swift
-extension MediaMetadata {
-
-    public class Builder
-}
+class Builder
 ```
+
 제목, 아트워크, 다운로드 경로를 추가할 때 사용합니다. [.build()](#build)를 호출하여 구성을 완료합니다.
 
 <br>

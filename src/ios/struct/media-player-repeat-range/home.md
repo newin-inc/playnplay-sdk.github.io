@@ -1,10 +1,7 @@
 # MediaPlayer.RepeatRange
 
 ```swift
-extension MediaPlayer {
-
-    struct RepeatRange: Equatable
-}
+struct RepeatRange: Equatable
 ```
 
 반복 모드에서 사용되는 구조체입니다. 반복 구간의 시작 위치와 종료 위치를 설정하고 변경할 수 있습니다.

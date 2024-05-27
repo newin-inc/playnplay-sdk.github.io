@@ -5,11 +5,7 @@ import com.newin.nplayer.sdk.MediaPlayerException
 ```
 
 ```kotlin
-class MediaPlayerException(
-    override val message: String,
-    override val cause: Throwable?,
-    errorCode: Int,
-) : PlaybackException(message, cause, errorCode)
+class MediaPlayerException : PlaybackException
 ```
 
 예외 처리를 위한 클래스입니다. [androidx.media3.common.PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)을 확장한 클래스로 아래와 같은 예외 처리 클래스로 사용됩니다. 

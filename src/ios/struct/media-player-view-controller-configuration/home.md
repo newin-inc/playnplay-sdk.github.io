@@ -1,10 +1,7 @@
 # MediaPlayerViewController.Configuration
 
 ```swift
-public class MediaPlayerViewController {
-
-    public struct Configuration
-}
+struct Configuration
 ```
 
 미디어 플레이어의 설정을 도와주는 구조체입니다. 아래와 같은 속성, 메서드 및 열거형을 가지고 있습니다.

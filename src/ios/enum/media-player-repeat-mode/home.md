@@ -1,10 +1,7 @@
 # MediaPlayer.RepeatMode
 
 ```swift
-extension MediaPlayer {
-
-    public enum RepeatMode
-}
+enum RepeatMode
 ```
 
 현재 미디어의 반복 모드 상태를 나타냅니다.

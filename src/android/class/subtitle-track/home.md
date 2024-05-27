@@ -5,7 +5,7 @@ import com.newin.nplayer.sdk.extensions.SubtitleTrack
 ```
 
 ```kotlin
-class SubtitleTrack: Track
+class SubtitleTrack : Track
 ```
 
 [Track](../track/home.md) 클래스를 확장한 클래스로, 자막 트랙에 사용되는 클래스입니다. 

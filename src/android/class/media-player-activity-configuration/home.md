@@ -169,11 +169,7 @@ var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off
 ## ScreenOrientationLock
 
 ```kotlin
-enum class ScreenOrientationLock {
-    Portrait,
-    Landscape,
-    Off
-}
+enum class ScreenOrientationLock
 ```
 
 화면 방향 고정 상태를 나타내는 열거형입니다.

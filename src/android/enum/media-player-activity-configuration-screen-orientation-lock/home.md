@@ -1,14 +1,11 @@
 # MediaPlayerActivityConfiguration.ScreenOrientationLock
 
 ```kotlin
-import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
+import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration.ScreenOrientationLock
 ```
 
 ```kotlin
-data class MediaPlayerActivityConfiguration(
-
-    enum class ScreenOrientationLock
-}
+enum class ScreenOrientationLock
 ```
 
 화면 방향 고정 상태를 나타내는 열거형입니다.

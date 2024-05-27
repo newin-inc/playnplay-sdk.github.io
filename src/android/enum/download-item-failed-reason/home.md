@@ -1,14 +1,11 @@
 # DownloadItem.FailedReason
 
 ```kotlin
-import com.newin.nplayer.sdk.DownloadItem
+import com.newin.nplayer.sdk.DownloadItem.FailedReason
 ```
 
 ```kotlin
-data class DownloadItem {
-
-    enum class FailedReason
-}
+enum class FailedReason
 ```
 
 다운로드가 실패한 이유를 나타내는 열거형입니다. 

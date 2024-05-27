@@ -1,10 +1,7 @@
 # MediaPlayer.PlaybackState
 
 ```swift
-extension MediaPlayer {
-
-    public enum PlaybackState {
-}
+enum PlaybackState
 ```
 
 현재 미디어 상태를 나타냅니다.

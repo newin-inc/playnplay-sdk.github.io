@@ -18,7 +18,7 @@ import com.newin.nplayer.sdk.DownloadManager
 ```
 
 ```kotlin
-class DownloadManager private constructor(private val context: Context)
+class DownloadManager
 ```
 
 다운로드 매니저 클래스는 아래와 같은 속성과 메서드를 가지고 있습니다.

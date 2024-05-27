@@ -119,7 +119,7 @@ let toUrl: URL
 ## Status
 
 ```swift
-enum Status: String
+enum Status : String
 ```
 
 아이템의 현재 다운로드 상태를 나타냅니다.

@@ -1,13 +1,7 @@
 # MediaItem.Builder
 
 ```kotlin
-import androidx.media3.common.MediaItem
-```
-```java
-public final class MediaItem implements Bundleable {
-
-    public static final class Builder
-}
+import androidx.media3.common.MediaItem.Builder
 ```
 
 [MediaItem.Builder](https://developer.android.com/reference/androidx/media3/common/MediaItem.Builder) 클래스를 확장하여, Seek 기능에 대한 메서드를 제공합니다.

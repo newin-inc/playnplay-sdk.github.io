@@ -5,13 +5,7 @@ import com.newin.nplayer.sdk.MediaPlayer.RepeatRange
 ```
 
 ```kotlin
-interface MediaPlayer : Player {
-
-    data class RepeatRange(
-        val start: Duration,
-        val end: Duration
-    )
-}
+data class RepeatRange(val start: Duration, val end: Duration)
 ```
 
 구간 반복에 사용되는 데이터 클래스입니다.

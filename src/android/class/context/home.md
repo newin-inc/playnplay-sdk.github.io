@@ -5,7 +5,7 @@ import android.content.Context
 ```
 
 ```java
-public abstract class Context
+abstract class Context
 ```
 
 [Context](https://developer.android.com/reference/android/content/Context) 클랙스를 확장하여, 미디어 플레이어를 설정하고 사용하는 메서드를 제공합니다.

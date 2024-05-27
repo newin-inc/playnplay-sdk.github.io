@@ -1,14 +1,11 @@
 # DownloadItem.Status
 
 ```kotlin
-import com.newin.nplayer.sdk.DownloadItem
+import com.newin.nplayer.sdk.DownloadItem.Status
 ```
 
 ```kotlin
-data class DownloadItem {
-
-    enum class Status
-}
+enum class Status
 ```
 
 아이템의 현재 다운로드 상태를 나타냅니다.

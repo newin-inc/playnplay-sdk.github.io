@@ -1,10 +1,7 @@
 # DrmConfiguration.Builder
 
 ```swift
-extension DrmConfiguration {
-
-    public class Builder
-}
+class Builder
 ```
 
 DRM 구성을 위해 초기 설정을 합니다. 제공받은 App 아이디와 사용자 아이디(User ID)를 입력하면 됩니다. [.build()](#build)를 호출하여 구성을 완료합니다.

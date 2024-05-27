@@ -1,12 +1,9 @@
-# interface EventListener
+# EventListener
 
 ```kotlin
 import com.newin.nplayer.sdk.EventListener
 ```
 
-```kotlin
-interface EventListener
-```
 EventListener는 이벤트 처리를 위한 인터페이스로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 [메서드](#메서드)를, 사용 방법은 [addEventListener()](../media-player/home.md#addeventlistener)를 참고하시면 됩니다. 이벤트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener()](../media-player/home.md#removeeventlistener) 메서드를 사용해서 제거하세요.<br>
 Player에 이미 존재하는 이벤트 리스너일 경우에는, 안드로이드 SDK는 이벤트 핸들러만 제공합니다.<br>
 이벤트 리스너를 대신하여 사용 방법에 따라서 [이벤트 핸들러](../../class/event-handlers/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 핸들러에서 사용되는 파라미터는 이벤트 리스너의 파라미터와 동일합니다. 이벤트 핸들러의 사용 방법은 [addEventHandler()](../media-player/home.md#addeventhandler)와 [클래스](../../class/event-handlers/home.md#클래스)를 참고하시면 됩니다.

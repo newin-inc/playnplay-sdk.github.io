@@ -29,11 +29,9 @@ data class WatermarkSettings
 # 열거형
 
 ## WatermarkSettings.Position
-```kotlin
-data class WatermarkSettings {
 
-    enum class Position
-}
+```kotlin
+import com.newin.nplayer.sdk.WatermarkSettings.Position
 ```
 
 워터마크의 위치를 나타내는 열거형입니다.

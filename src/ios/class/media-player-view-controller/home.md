@@ -1,7 +1,7 @@
 # MediaPlayerViewController
 
 ```swift
-class MediaPlayerViewController: UIViewController, UIGestureRecognizerDelegate
+class MediaPlayerViewController : UIViewController, UIGestureRecognizerDelegate
 ```
 
 미디어 플레이어 뷰 컨트롤러입니다. 아래와 같은 속성과 구조체를 제공합니다. <br>
@@ -56,9 +56,6 @@ private(set) var player: MediaPlayer
 ## MediaPlayerViewController.Configuration
 
 ```swift
-public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDelegate {
-
-    public struct Configuration
-}
+struct Configuration
 ```
 미디어 플레이어의 설정을 도와주는 구조체입니다. 보다 더 자세한 설명은 [MediaPlayerViewController.Configuration](../../struct/media-player-view-controller-configuration/home.md)를 참고하세요.

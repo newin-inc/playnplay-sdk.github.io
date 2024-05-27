@@ -25,7 +25,7 @@ func application(
 ---
 
 ```swift
-class DownloadManager: NSObject, URLSessionDownloadDelegate
+class DownloadManager : NSObject, URLSessionDownloadDelegate
 ```
 
 다운로드 매니저 클래스는 아래와 같은 속성과 메서드를 가지고 있습니다.

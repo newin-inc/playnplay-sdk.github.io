@@ -1,10 +1,7 @@
 # MediaPlayer.ScalingMode
 
 ```swift
-extension MediaPlayer {
-
-    public enum ScalingMode
-}
+enum ScalingMode
 ```
 
 현재 미디어 화면의 스케일링 상태를 나타냅니다.

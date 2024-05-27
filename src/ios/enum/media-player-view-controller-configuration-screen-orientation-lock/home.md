@@ -1,12 +1,7 @@
 # MediaPlayerViewController.Configuration.ScreenOrientationLock
 
 ```swift
-public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDelegate {
-    public struct Configuration {
-
-        public enum ScreenOrientationLock: String
-    }
-}
+enum ScreenOrientationLock : String
 ```
 
 화면 방향 고정 상태를 나타내는 열거형입니다. 

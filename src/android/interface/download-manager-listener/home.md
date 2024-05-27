@@ -1,14 +1,7 @@
-# interface DownloadManager.Listener
+# DownloadManager.Listener
 
 ```kotlin
-import com.newin.nplayer.sdk.DownloadManager
-```
-
-```kotlin
-class DownloadManager {
-
-    interface Listener 
-}
+import com.newin.nplayer.sdk.DownloadManager.Listener
 ```
 
 DownloadManager.Listener는 다운로드와 관련된 이벤트 처리를 위한 인터페이스로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 아래 [메서드](#메서드)를, 리스너를 추가 하는 방법은 [addListener](../../class/download-manager/home.md#addlistener)를 참고하시면 됩니다.

@@ -24,11 +24,11 @@ val type: @TrackType Int
 ```
 
 ```java
-public @interface TrackType {}
+@interface TrackType {}
 
-public static final int TRACK_TYPE_AUDIO = 1;
-public static final int TRACK_TYPE_VIDEO = 2;
-public static final int TRACK_TYPE_TEXT = 3;
+static int TRACK_TYPE_AUDIO = 1;
+static int TRACK_TYPE_VIDEO = 2;
+static int TRACK_TYPE_TEXT = 3;
 ```
 
 |타입|설명|

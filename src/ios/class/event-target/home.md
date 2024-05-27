@@ -7,7 +7,7 @@ extension MediaPlayer {
 ```
 
 ```swift
-class MediaPlayerEventTarget: Equatable
+class MediaPlayerEventTarget : Equatable
 ```
 
 [addEventHandler(_)](../media-player/home.md#addeventhandler_)로 추가된 [이벤트 핸들러](../../enum/event-handlers/home.md)를 [removeEventHandler(_)](../media-player/home.md#removeeventhandler_)를 통해 삭제하기 위해서 사용되는 클래스입니다.

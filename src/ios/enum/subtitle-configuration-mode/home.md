@@ -1,10 +1,7 @@
 # SubtitleConfiguration.Mode
 
 ```swift
-public struct SubtitleConfiguration {
-
-    public enum Mode : String
-}
+enum Mode : String
 ```
 
 현재 자막의 모드를 나타냅니다.

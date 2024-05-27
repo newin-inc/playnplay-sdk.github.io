@@ -3,9 +3,6 @@
 ```kotlin
 import androidx.media3.common.Player
 ```
-```java
-public interface Player 
-```
 플레이어 인터페이스를 확장하여, 아래와 같은 속성과 메서드를 제공합니다.
 
 <div align="right">

@@ -13,9 +13,7 @@ extension UIViewController
 ## mediaPlayerViewController
 
 ```swift
-extension UIViewController { 
-    public var mediaPlayerViewController: MediaPlayerViewController? { get }
-}
+var mediaPlayerViewController: MediaPlayerViewController? { get }
 ```
 
 |타입|설명|설정|
@@ -31,13 +29,11 @@ extension UIViewController {
 ## present(mediaItems:startIndex:configuration:)
 
 ```swift
-extension UIViewController {
-    public func present(
-        mediaItems: [MediaItem],
-        startIndex: Int = 0,
-        configuration: configuration: MediaPlayerViewController.Configuration = .defaultConfiguration()
-    )
-}
+func present(
+    mediaItems: [MediaItem],
+    startIndex: Int = 0,
+    configuration: configuration: MediaPlayerViewController.Configuration = .defaultConfiguration()
+)
 ```
 
 |파라미터|타입|설명|기본값|
