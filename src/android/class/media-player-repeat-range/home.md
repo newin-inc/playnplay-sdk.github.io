@@ -16,7 +16,8 @@ interface MediaPlayer : Player {
 
 구간 반복에 사용되는 데이터 클래스입니다.
 
-<br><br>
+<br>
+
 # 생성자 파라미터
 
 |이름|타입|설명|필수|
@@ -24,7 +25,8 @@ interface MediaPlayer : Player {
 |start|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 시작 위치 값|O|
 |end|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 종료 위치 값|O|
 
-<br><br>
+<br>
+
 # 속성
 
 ## start
@@ -37,7 +39,6 @@ val start: Duration
 |:--:|:--:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 시작 위치를 반환|
 
-<br><br>
 ## end
 
 ```kotlin
@@ -48,7 +49,8 @@ val end: Duration
 |:--:|:--:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|구간 반복 종료 위치를 반환|
 
-<br><br>
+<br>
+
 # 메서드
 
 ## withStart
@@ -61,7 +63,6 @@ fun withStart(start: Duration): RepeatRange
 |:--:|:--:|:--:|--|
 |start|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|RepeatRange|구간 반복 시작 위치를 업데이트한 오브젝트를 반환|
 
-<br><br>
 ## withEnd
 
 ```kotlin

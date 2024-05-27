@@ -16,7 +16,8 @@ public final class MediaItem implements Bundleable {
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem.Builder">MediaItem.Builder</a>
 </div>
 
-<br><br>
+<br>
+
 # 메서드
 
 ## setSeekable

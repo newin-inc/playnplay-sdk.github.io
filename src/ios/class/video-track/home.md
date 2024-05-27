@@ -10,7 +10,8 @@ class VideoTrack : MediaTrack
 부모 클래스: <a href="../media-track/home.md">MediaTrack</a>
 </div>
 
-<br><br>
+<br>
+
 # 속성
 
 ## height

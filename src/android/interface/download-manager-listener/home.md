@@ -13,7 +13,8 @@ class DownloadManager {
 
 DownloadManager.Listener는 다운로드와 관련된 이벤트 처리를 위한 인터페이스로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 아래 [메서드](#메서드)를, 리스너를 추가 하는 방법은 [addListener](../../class/download-manager/home.md#addlistener)를 참고하시면 됩니다.
 
-<br><br>
+<br>
+
 # 메서드
 
 ## onItemAdded
@@ -28,7 +29,6 @@ fun onItemAdded(item: DownloadItem)
 
 다운로드할 아이템이 목록에 추가될 때 처리를 위한 메서드입니다. 아이템을 추가할 때 추가적인 처리가 필요할 경우에 이 메서드를 사용합니다.
 
-<br><br>
 ## onItemRemoved
 
 ```kotlin
@@ -41,7 +41,6 @@ fun onItemRemoved(item: DownloadItem)
 
 다운로드 목록에서 아이템을 제거할 때 처리를 위한 메서드입니다. 아이템이 제거될 때 추가적인 처리가 필요할 경우에 이 메서드를 사용합니다.
 
-<br><br>
 ## onProgressUpdated
 
 ```kotlin
@@ -54,7 +53,6 @@ fun onProgressUpdated(item: DownloadItem)
 
 다운로드가 진행되는 매순간을 처리하기 위한 메서드입니다. 아이템 다운로드가 진행됨에 따라 추가적인 처리가 필요할 경우에 이 메서드를 사용합니다.
 
-<br><br>
 ## onStatusChanged
 
 ```kotlin

@@ -6,7 +6,8 @@ struct DownloadItem
 
 다운로드 아이템을 나타내는 구조체입니다. 다운로드에 대한 정보, 진행 상태 등의 정보를 가지고 있습니다.
 
-<br><br>
+<br>
+
 # 속성
 
 ## displayPath
@@ -24,7 +25,6 @@ let displayPath: String
 참고: <a href="../../class/download-manager/home.md#downloadsurl">downloadsUrl</a>
 </div>
 
-<br><br>
 ## failedReason
 
 ```swift
@@ -35,7 +35,6 @@ let failedReason: String?
 |:--:|:--:|
 |String?|다운로드가 실패한 이유|
 
-<br><br>
 ## fromUrl
 
 ```swift
@@ -52,7 +51,6 @@ let fromUrl: URL
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 
-<br><br>
 ## id (DownloadItem.Id)
 
 ```swift
@@ -71,7 +69,6 @@ extension DownloadItem {
 }
 ```
 
-<br><br>
 ## progress
 
 ```swift
@@ -82,7 +79,6 @@ let progress: (Int64, Int64)?
 |:--:|:--:|
 |(Int64, Int64)?|다운로드 아이템의 다운로드 진행 정도를 나타냅니다. 첫 번째는 현재까지 다운로드된 파일의 크기, 두 번째는 파일 전체 크기를 나타냅니다.|
 
-<br><br>
 ## status
 
 ```swift
@@ -99,7 +95,6 @@ let status: Status
 참고: <a href="../../enum/download-item-status/home.md">DownloadItem.Status</a>
 </div>
 
-<br><br>
 ## toUrl
 
 ```swift
@@ -117,7 +112,8 @@ let toUrl: URL
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 
-<br><br>
+<br>
+
 # 열거형
 
 ## Status

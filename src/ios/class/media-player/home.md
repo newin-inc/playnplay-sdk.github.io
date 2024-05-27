@@ -6,7 +6,8 @@ final class MediaPlayer
 
 미디어 플레이어 클래스입니다. 활성화된 미디어 플레이어에 접근하는 방법은 [player](../media-player-view-controller/home.md#player)를 참고하세요.
 
-<br><br>
+<br>
+
 # 속성
 
 ## allowsBackgroundPlayback
@@ -21,7 +22,6 @@ var allowsBackgroundPlayback: Bool { get set }
 
 백그라운드 재생을 허용할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## allowsCellularAccess
 
 ```swift
@@ -34,7 +34,6 @@ var allowsCellularAccess: Bool { get set }
 
 동영상을 재생(스트리밍)할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## allowsPictureInPicturePlayback
 
 ```swift
@@ -47,7 +46,6 @@ var allowsPictureInPicturePlayback: Bool { get set }
 
 화면 속 화면 모드를 허용할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## audioTracks
 
 ```swift
@@ -64,7 +62,6 @@ var audioTracks: [AudioTrack] { get }
 참고: <a href="../audio-track/home.md">AudioTrack</a>
 </div>
 
-<br><br>
 ## autoplay
 
 ```swift
@@ -77,7 +74,6 @@ var autoplay: Bool { get set }
 
 미디어가 로드되었을 때, 즉시 재생이 시작되어야 하는지를 나타내는 속성입니다. true면 자동 재생합니다.
 
-<br><br>
 ## buffered
 
 ```swift
@@ -94,7 +90,6 @@ var buffered: [TimeRange] { get }
 참고: <a href="../../struct/time-range/home.md">TimeRange</a>
 </div>
 
-<br><br>
 ## canStartPictureInPictureAutomatically
 
 ```swift
@@ -107,7 +102,6 @@ var canStartPictureInPictureAutomatically: Bool { get set }
 
 앱이 백그라운드에 있을 때, 화면 속 화면 모드를 자동으로 시작할 수 있는지 여부를 의미하는 속성입니다.
 
-<br><br>
 ## currentMediaItem
 
 ```swift
@@ -124,7 +118,6 @@ var currentMediaItem: MediaItem? { get }
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
-<br><br>
 ## currentMediaItemIndex
 
 ```swift
@@ -137,7 +130,6 @@ var currentMediaItemIndex: Int { get }
 
 현재 재생 중인 미디어 아이템의 index를 반환하는 속성입니다.
 
-<br><br>
 ## currentSrc
 
 ```swift
@@ -150,7 +142,6 @@ var currentSrc: URL? { get }
 
 미디어 리소스의 uri를 반환하는 속성입니다.
 
-<br><br>
 ## currentTime
 
 ```swift
@@ -163,7 +154,6 @@ var currentTime: Duration { get set }
 
 현재 재생 위치를 [Duration](../../struct/duration/home.md) 단위로 나타내는 속성입니다.
 
-<br><br>
 ## defaultMuted
 
 ```swift
@@ -176,7 +166,6 @@ var defaultMuted: Bool { get set }
 
 오디오의 음소거 기본 설정을 나타내는 속성입니다.
 
-<br><br>
 ## defaultPlaybackRate
 
 ```swift
@@ -189,7 +178,6 @@ var defaultPlaybackRate: Float { get set }
 
 미디어의 기본 재생 속도를 나타내는 속성입니다.
 
-<br><br>
 ## duration
 
 ```swift
@@ -202,7 +190,6 @@ var duration: Duration { get }
 
 현재 미디어 길이를 반환하는 속성입니다. 재생 가능한 미디어가 없을 경우 0에 해당하는 [Duration](../../struct/duration/home.md)을 반환합니다.
 
-<br><br>
 ## ended
 
 ```swift
@@ -215,7 +202,6 @@ var ended: Bool { get }
 
 미디어 재생 완료 여부를 반환하는 속성입니다.
 
-<br><br>
 ## error
 
 ```swift
@@ -233,7 +219,6 @@ var error: Error? { get }
 <a href="../../enum/media-player-error/home.md">MediaPlayerError</a>
 </div>
 
-<br><br>
 ## isPictureInPictureActive
 
 ```swift
@@ -246,7 +231,6 @@ var isPictureInPictureActive: Bool { get }
 
 현재 재생되는 미디어가 화면 속 화면 모드인지를 반환하는 속성입니다.
 
-<br><br>
 ## isPictureInPicturePossible
 
 ```swift
@@ -259,7 +243,6 @@ var isPictureInPicturePossible: Bool { get }
 
 미디어가 화면 속 모드로 전환할 수 있는지 여부를 반환하는 속성입니다.
  
-<br><br>
 ## isSeekable
 
 ```swift
@@ -272,7 +255,6 @@ var isSeekable: Bool { get }
 
 미디어에서 seek을 사용할 수 있는지 여부를 반환하는 속성입니다. 미디어의 길이가 파악이 될 경우 true를 반환합니다.
 
-<br><br>
 ## isSubtitlesVisible
 
 ```swift
@@ -285,7 +267,6 @@ var isSubtitlesVisible: Bool { get set }
 
 화면에 자막 표시 여부. true나 false값을 넣어서 자막을 켜고 끌 수 있습니다.
 
-<br><br>
 ## loop
 
 ```swift
@@ -298,7 +279,6 @@ var loop: Bool { get set }
 
 미디어 재생이 끝났을 때 다시 처음부터 재생할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## maxSeekToPreviousPosition
 
 ```swift
@@ -315,7 +295,6 @@ var maxSeekToPreviousPosition: Duration { get set }
 참고: <a href="#seektoprevious">seekToPrevious()</a>
 </div>
 
-<br><br>
 ## mediaItems
 
 ```swift
@@ -332,7 +311,6 @@ var mediaItems: [MediaItem] { get set }
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
-<br><br>
 ## muted
 
 ```swift
@@ -345,7 +323,6 @@ var muted: Bool { get set }
 
 음소거 여부를 나타내는 속성입니다. 음소거면 true, 아니면 false입니다.
 
-<br><br>
 ## paused
 
 ```swift
@@ -358,7 +335,6 @@ var paused: Bool { get }
 
 미디어가 일시 정지 상태인지 반환하는 속성입니다.
 
-<br><br>
 ## playbackRate
 
 ```swift
@@ -371,7 +347,6 @@ var playbackRate: Float { get set }
 
 미디어의 재생 속도를 나타내는 속성입니다. 정상 속도는 1.0이고, 1보다 작을 때는 느리게, 1보다 클 때는 빠르게 재생합니다. 이 때, 오디오 피치 유지 여부는 [preservesPitch](#preservespitch)의 값으로 제어할 수 있습니다.
 
-<br><br>
 ## playbackState
 ```swift
 var playbackState: MediaPlayer.PlaybackState { get }
@@ -387,7 +362,6 @@ var playbackState: MediaPlayer.PlaybackState { get }
 참고: <a href="../../enum/media-player-playback-state/home.md">MediaPlayer.PlaybackState</a>
 </div>
 
-<br><br>
 ## preservesPitch
 
 ```swift
@@ -400,7 +374,6 @@ var preservesPitch: Bool { get set }
 
 재생 속도에 따른 오디오 피치 유지 여부를 나타내는 속성입니다. 값이 true면 재생 속도가 변해도 오디오 피치는 변함 없으며, false일 경우 재생 속도에 따라 오디오 피치가 변합니다.
 
-<br><br>
 ## repeatMode
 
 ```swift
@@ -417,7 +390,6 @@ var repeatMode: MediaPlayer.RepeatMode { get set }
 참고: <a href="../../enum/media-player-repeat-mode/home.md">MediaPlayer.RepeatMode</a>
 </div>
 
-<br><br>
 ## repeatRange
 
 ```swift
@@ -434,7 +406,6 @@ var repeatRange: MediaPlayer.RepeatRange? { get set }
 참고: <a href="../../struct/media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
 
-<br><br>
 ## scalingMode
 
 ```swift
@@ -451,7 +422,6 @@ var scalingMode: ScalingMode { get set }
 참고: <a href="../../enum/media-player-scaling-mode/home.md">ScalingMode</a>
 </div>
 
-<br><br>
 ## seekable
 
 ```swift
@@ -468,7 +438,6 @@ var seekable: [TimeRange] { get }
 참고: <a href="../../struct/time-range/home.md">TimeRange</a>
 </div>
 
-<br><br>
 ## seekBackIncrement
 
 ```swift
@@ -486,7 +455,6 @@ var seekBackIncrement: Duration { get set }
 참고: <a href="#seekback">seekBack()</a>
 </div>
 
-<br><br>
 ## seekForwardIncrement
 
 ```swift
@@ -504,7 +472,6 @@ var seekForwardIncrement: Duration { get set }
 참고: <a href="#seekforward">seekForward()</a>
 </div>
 
-<br><br>
 ## seeking
 
 ```swift
@@ -517,7 +484,6 @@ var seeking: Bool { get }
 
 미디어가 탐색 중인지를 반환하는 속성입니다. 현재 미디어가 새로운 위치로 이동하고 있거나 탐색중이면 true를 반환합니다.
 
-<br><br>
 ## textTracks
 
 ```swift
@@ -534,7 +500,6 @@ var textTracks: [TextTrack] { get }
 참고: <a href="../text-track/home.md">TextTrack</a>
 </div>
 
-<br><br>
 ## videoSize
 
 ```swift
@@ -551,7 +516,6 @@ var videoSize: CGSize { get }
 참고: <a href="https://developer.apple.com/documentation/corefoundation/cgsize">CGSize</a>
 </div>
 
-<br><br>
 ## videoTracks
 
 ```swift
@@ -568,7 +532,6 @@ var videoTracks: [VideoTrack] { get }
 참고: <a href="../video-track/home.md">VideoTrack</a>
 </div>
 
-<br><br>
 ## view
 
 ```swift
@@ -581,7 +544,6 @@ var view: UIView { get }
 
 미디어 플레이어 뷰를 반환하는 속성입니다.
 
-<br><br>
 ## volume
 
 ```swift
@@ -594,7 +556,8 @@ var volume: Float { get set }
 
 미디어 플레이어의 음량을 나타내는 속성입니다.
 
-<br><br>
+<br>
+
 # 메서드
 
 ## addEventHandler(_)
@@ -610,7 +573,6 @@ func addEventHandler(_ handler: MediaPlayer.EventHandler) -> MediaPlayer.EventTa
 [이벤트 핸들러](../../enum/event-handlers/home.md)를 추가하기 위한 메서드입니다.
 반환된 [이벤트 타겟](../../class/event-target/home.md)은 이벤트 핸들러를 제거할 목적으로 [removeEventHandler(_)](#removeeventhandler_)에서 사용할 수 있습니다. 이벤트 핸들러를 추가한 후, 해당 이벤트 핸들러가 더 이상 필요 없을 때는 반드시 [removeEventHandler(_)](#removeeventhandler_) 메서드를 사용해서 제거하세요.
 
-<br><br>
 ## addEventListener(_)
 
 ```swift
@@ -623,7 +585,6 @@ func addEventListener(_ listener: MediaPlayer.EventListener)
 
 [이벤트 리스너](../../protocol/event-listeners/home.md)를 추가하기 위한 메서드입니다. 이밴트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener(_)](#removeeventlistener_) 메서드를 사용해서 제거하세요.<br>
 
-<br><br>
 ## fastSeekTo(position:)
 
 ```swift
@@ -639,7 +600,6 @@ func fastSeekTo(position: Duration)
 비교: <a href="#seektoposition">seekTo(position:)</a>
 </div>
 
-<br><br>
 ## hasNextMediaItem()
 
 ```swift
@@ -648,7 +608,6 @@ func hasNextMediaItem() -> Bool
 다음에 재생할 미디어가 있는지를 반환하는 메서드입니다. 목록의 마지막이 아니거나, 전체 반복 모드일 경우 true를 반환합니다.
 
 
-<br><br>
 ## hasPreviousMediaItem()
 
 ```swift
@@ -657,7 +616,6 @@ func hasNextMediaItem() -> Bool
 
 바로 앞에 재생할 미디어가 있는지를 반환하는 메서드입니다. 목록의 처음이 아니거나, 전체 반복 모드일 경우 true를 반환합니다.
 
-<br><br>
 ## load(mediaItem:)
 
 ```swift
@@ -674,7 +632,6 @@ func load(mediaItem: MediaItem)
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
-<br><br>
 ## load(mediaItems:startMediaItemIndex:)
 
 ```swift
@@ -695,7 +652,6 @@ func load(
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
-<br><br>
 ## load(src:)
 
 ```swift
@@ -708,7 +664,6 @@ func load(src: URL)
 
 URL을 사용하여 미디어를 로드하기 위한 메서드입니다.
 
-<br><br>
 ## pause()
 
 ```swift
@@ -717,7 +672,6 @@ func pause()
 
 미디어를 일시 정지하기 위한 메서드입니다.
 
-<br><br>
 ## play()
 
 ```swift
@@ -726,7 +680,6 @@ func play()
 
 미디어를 재생하기 위한 메서드입니다.
 
-<br><br>
 ## prepare()
 
 ```swift
@@ -735,7 +688,6 @@ func prepare()
 
 미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [autoplay](#autoplay), [defaultPlaybackRate](#defaultplaybackrate), [defaultMuted](#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하는 과정까지 진행합니다.
 
-<br><br>
 ## removeEventHandler(_)
 
 ```swift
@@ -748,7 +700,6 @@ func removeEventHandler(target: MediaPlayer.EventTarget)
 
 [addEventHandler(_)](#addeventhandler_)로 추가된 [이벤트 핸들러](../../enum/event-handlers/home.md)를 제거하기 위한 메서드입니다.
 
-<br><br>
 ## removeEventListener(_)
 
 ```swift
@@ -761,7 +712,6 @@ func removeEventListener(_ listener: MediaPlayer.EventListener)
 
 [addEventListener(_)](#addeventlistener_)로 추가된 [이벤트 리스너](../../protocol/event-listeners/home.md)를 제거하기 위한 메서드입니다.
 
-<br><br>
 ## seekBack()
 
 ```swift
@@ -770,7 +720,6 @@ func seekBack()
 
 현재 위치에서 속성 [seekBackIncrement](#seekbackincrement) 만큼 전으로 이동하기 위한 메서드입니다.
 
-<br><br>
 ## seekBack(increment:)
 
 ```swift
@@ -783,7 +732,6 @@ func seekBack(increment: Duration)
 
 현재 위치에서 입력된 시간 전으로 이동하기 위한 메서드입니다.
 
-<br><br>
 ## seekForward()
 
 ```swift
@@ -791,7 +739,6 @@ func seekForward()
 ```
 현재 위치에서 속성 [seekForwardIncrement](#seekforwardincrement) 만큼 후로 이동하기 위한 메서드입니다.
 
-<br><br>
 ## seekForward(increment:)
 
 ```swift
@@ -804,7 +751,6 @@ func seekForward(increment: Duration)
 
 현재 위치에서 입력된 시간 후로 이동하기 위한 메서드입니다.
 
-<br><br>
 ## seekTo(position:)
 
 ```swift
@@ -821,7 +767,6 @@ func seekTo(position: Duration)
 비교: <a href="#fastseektoposition">fastSeekTo(position:)</a>
 </div>
 
-<br><br>
 ## seekTo(mediaItemIndex:position:)
 
 ```swift
@@ -835,7 +780,6 @@ func seekTo(mediaItemIndex: Int, position: Duration = .indefinite)
 
 현재 재생 중인 미디어를 정지하고 다른 미디어를 재생하기 위한 메서드입니다. 재생 목록의 index만 파라미터로 넘겨줄 경우에는, 해당 미디어의 마지막에 재생했던 위치에서 시작합니다.
 
-<br><br>
 ## seekToNext()
 
 ```swift
@@ -843,7 +787,6 @@ func seekToNext()
 ```
 [seekToNexMediaItemt()](#seektonextmediaitem)와 동일합니다.
 
-<br><br>
 ## seekToNextMediaItem()
 
 ```swift
@@ -865,7 +808,6 @@ func seekToPrevious()
 참고: <a href="#maxseektopreviousposition">maxSeekToPreviousPosition</a>
 </div>
 
-<br><br>
 ## seekToPreviousMediaItem()
 
 ```swift
@@ -874,7 +816,6 @@ func seekToPreviousMediaItem()
 
 앞에 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 이전 미디어로 이동하는 메서드입니다. 목록의 맨 앞에 위치한 미디어일 경우, 목록의 마지막 미디어로 이동합니다.
 
-<br><br>
 ## startPictureInPicture()
 
 ```swift
@@ -883,7 +824,6 @@ func startPictureInPicture()
 
 화면 속 화면 모드를 시작하는 메서드입니다.
 
-<br><br>
 ## stop()
 
 ```swift
@@ -892,7 +832,6 @@ func stop()
 
 미디어를 완전 종료할 때 부르는 메서드입니다. MediaPlayer가 종료되면 자동으로 호출됩니다.
 
-<br><br>
 ## stopPictureInPicture()
 
 ```swift
@@ -901,7 +840,8 @@ func stopPictureInPicture()
 
 화면 속 화면 모드를 종료하는 메서드입니다.
 
-<br><br>
+<br>
+
 # 열거형
 
 ## PlaybackState
@@ -937,7 +877,8 @@ enum ScalingMode
 참고: <a href="../../enum/media-player-scaling-mode/home.md">MediaPlayer.ScalingMode</a>
 </div>
 
-<br><br>
+<br>
+
 # 구조체
 
 ## RepeatRange

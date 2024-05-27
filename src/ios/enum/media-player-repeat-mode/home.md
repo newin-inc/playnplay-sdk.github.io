@@ -12,7 +12,8 @@ extension MediaPlayer {
 참고: <a href="../../class/media-player/home.md#repeatmode">repeatMode</a>
 </div>
 
-<br><br>
+<br>
+
 # 케이스
 
 ## all

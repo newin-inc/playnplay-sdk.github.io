@@ -10,7 +10,8 @@ data class PlaybackInfo
 
 [재생 정보 저장소](../playback-info-repository/home.md)에 저장된 정보를 나타내는 데이터 글래스입니다. [재생 정보 저장소](../playback-info-repository/home.md)의 [shared](../playback-info-repository/home.md#shared) 속성과 [findBy](../playback-info-repository/home.md#findby) 메서드를 사용하여 미디어의 정보를 가져올 수 있습니다.
 
-<br><br>
+<br>
+
 # 속성
 
 ## artworkUri
@@ -29,7 +30,6 @@ val artworkUri: Uri?
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#artworkUri()">media3의 artworkUri</a>
 </div>
 
-<br><br>
 ## duration
 
 ```kotlin
@@ -42,7 +42,6 @@ val duration: Duration?
 
 미디어 아이템의 전체 길이를 나타내는 속성입니다.
 
-<br><br>
 ## expiresOn
 
 ```kotlin
@@ -55,7 +54,6 @@ val expiresOn: Instant?
 
 미디어 아이템의 만료 일시를 나타내는 속성입니다.
 
-<br><br>
 ## lastPlayedTime
 
 ```kotlin
@@ -68,7 +66,6 @@ val lastPlayedTime: Duration?
 
 미디어 아이템이 마지막으로 재생한 위치를 나타내는 속성입니다.
 
-<br><br>
 ## uri
 
 ```kotlin

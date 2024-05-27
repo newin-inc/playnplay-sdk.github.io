@@ -125,6 +125,8 @@ val failedReason: FailedReason?
 참고: <a href="../../enum/download-item-failed-reason/home.md">DownloadItem.FailedReaseon</a>
 </div>
 
+<br>
+
 # 클래스
 
 ## Status

@@ -9,7 +9,8 @@ extension DownloadItem {
 
 아이템의 현재 다운로드 상태를 나타냅니다.
 
-<br><br>
+<br>
+
 # 케이스
 
 ## completed

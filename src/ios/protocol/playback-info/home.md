@@ -6,7 +6,8 @@ protocol PlaybackInfo
 
 [재생 정보 저장소](../../class/playback-info-repository/home.md)에 저장된 정보를 나타내는 프로토콜입니다. [재생 정보 저장소](../../class/playback-info-repository/home.md)의 [shared](../../class/playback-info-repository/home.md#shared) 속성과 [find(by:)](../../class/playback-info-repository/home.md#findby) 메서드를 사용하여 미디어의 정보를 가져올 수 있습니다.
 
-<br><br>
+<br>
+
 # 속성
 
 ## artworkUrl
@@ -21,7 +22,6 @@ var artworkUrl: URL? { get }
 
 미디어 아이템의 아트워크 경로를 나타내는 속성입니다.
 
-<br><br>
 ## duration
 
 ```swift
@@ -34,7 +34,6 @@ var duration: Duration? { get }
 
 미디어 아이템의 전체 길이를 나타내는 속성입니다.
 
-<br><br>
 ## expiresOn
 
 ```swift
@@ -47,7 +46,6 @@ var expiresOn: Date? { get }
 
 미디어 아이템의 만료 일시를 나타내는 속성입니다.
 
-<br><br>
 ## lastPlayedTime
 
 ```swift
@@ -60,7 +58,6 @@ var lastPlayedTime: Duration? { get }
 
 미디어 아이템이 마지막으로 재생한 위치를 나타내는 속성입니다.
 
-<br><br>
 ## url
 
 ```swift

@@ -15,6 +15,8 @@ public class MediaPlayerViewController: UIViewController, UIGestureRecognizerDel
 참고: <a href="../../struct/media-player-view-controller-configuration/home.md">MediaPlayerViewController.Configuration</a><br>
 </div>
 
+<br> 
+
 # 케이스
 
 ## landscape
@@ -41,7 +43,8 @@ case portrait = "portrait"
 
 세로 방향으로 고정
 
-<br><br>
+<br>
+
 # 메서드
 
 ## toInterfaceOrientaion()

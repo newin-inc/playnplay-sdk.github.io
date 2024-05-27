@@ -13,7 +13,8 @@ public abstract class Uri implements Parcelable, Comparable<Uri>
 참고: <a href="https://developer.android.com/reference/android/net/Uri">android.net.Uri</a>
 </div>
 
-<br><br>
+<br>
+
 # 메서드
 
 ## toMediaItem

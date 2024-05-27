@@ -9,7 +9,8 @@ extension MediaItem {
 
 미디어 아이템에 정보를 추가하고 싶을 때는 MediaItem.Builder()를 사용하면 됩니다. 정보 추가 후에는 [.build()](#build)를 호출하여야 미디어 아이템으로 사용할 수 있습니다.
 
-<br><br>
+<br>
+
 # 생성자
 
 ```swift
@@ -26,7 +27,8 @@ init(url: URL)
 참고: <a href="https://developer.apple.com/documentation/foundation/url)">URL</a>
 </div>
 
-<br><br>
+<br>
+
 # 메서드
 
 ## build()
@@ -41,7 +43,6 @@ Builder를 이용하여 설정한 정보에 기반하여 미디어 아이템을 
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
-<br><br>
 ## drmConfiguration(_)
 
 ```swift
@@ -58,7 +59,6 @@ DRM 설정을 넘겨줍니다.
 참고: <a href="../../struct/drm-configuration/home.md">DrmConfiguration</a>
 </div>
 
-<br><br>
 ## mediaMetadata(_)
 
 ```swift
@@ -75,7 +75,6 @@ func mediaMetadata(_ mediaMetadata: MediaMetadata?) -> MediaItem.Builder
 참고: <a href="../../struct/media-metadata/home.md">MediaMetadata</a>
 </div>
 
-<br><br>
 ## returnUrl(_)
 
 ```swift
@@ -92,7 +91,6 @@ func returnUrl(_ returnUrl: URL?) -> MediaItem.Builder
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 
-<br><br>
 ## seekable(_)
 
 ```swift
@@ -109,7 +107,6 @@ Seek 기능 허용 여부를 설정합니다. seekable(false)일 경우, Seek �
 참고: <a href="../../how-to-use/home.md#seek-기능-제한">Seek 기능 제한</a>
 </div>
 
-<br><br>
 ## subtitleConfigurations(_)
 
 ```swift
@@ -126,7 +123,6 @@ func subtitleConfigurations(_ subtitleConfigurations: [SubtitleConfiguration]) -
 참고: <a href="../../struct/subtitle-configuration/home.md">SubtitleConfiguration</a>
 </div>
 
-<br><br>
 ## url(_)
 
 ```swift

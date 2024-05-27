@@ -13,7 +13,8 @@ enum MediaPlayerEventHandler
 이벤트 핸들러의 종류와 사용 방법에 대한 설명입니다. 각각 케이스에 대한 설명은 [케이스](#케이스)를, 사용 방법은 [addEventHandler(_)](../../class/media-player/home.md#addeventhandler_)를 참고하시면 됩니다. 이벤트 핸들러를 추가한 후, 해당 이벤트 핸들러가 더 이상 필요 없을 때는 반드시 [removeEventHandler(_)](../../class/media-player/home.md#removeeventhandler_) 메서드를 사용해서 제거하세요.<br>
 이벤트 핸들러를 대신하여 사용 방법에 따라서 [이벤트 리스너](../../protocol/event-listeners/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 리스너에서 사용되는 파라미터는 이벤트 핸들러의 파라미터와 동일합니다. 이벤트 리스너의 사용 방법은 [addEventListener(_)](../../class/media-player/home.md#addeventlistener_)와 [메서드](../../protocol/event-listeners/home.md#메서드)를 참고하시면 됩니다.
 
-<br><br>
+<br>
+
 # 케이스
 
 ## durationChange
@@ -32,7 +33,6 @@ case durationChange((_ duration: Duration) -> Void)
 참고: <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## ended
 
 ```swift
@@ -45,7 +45,6 @@ case ended(() -> Void)
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onended">onEnded()</a>
 </div>
 
-<br><br>
 ## error
 
 ```swift
@@ -64,7 +63,6 @@ case error((_ error: Error) -> Void)
 <a href="../media-player-error/home.md">MediaPlayerError</a>
 </div>
 
-<br><br>
 ## loadedData
 
 ```swift
@@ -77,7 +75,6 @@ case loadedData(() -> Void)
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onloadeddata">onLoadedData()</a>
 </div>
 
-<br><br>
 ## loadStart
 
 ```swift
@@ -90,7 +87,6 @@ case loadStart(() -> Void)
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onloadstart">onLoadStart()</a>
 </div>
 
-<br><br>
 ## mediaItemTransition
 
 ```swift
@@ -108,7 +104,6 @@ case mediaItemTransition((_ item: MediaItem?) -> Void)
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
-<br><br>
 ## pause
 
 ```swift
@@ -122,7 +117,6 @@ case pause(() -> Void)
 비교: <a href="#play">play</a>
 </div>
 
-<br><br>
 ## pictureInPictureActiveChange
 
 ```swift
@@ -143,7 +137,6 @@ case pictureInPictureActiveChange((_ active: Bool) -> Void)
 <a href="#pictureinpicturewillstop">pictureInPictureWillStop</a><br>
 </div>
 
-<br><br>
 ## pictureInPicturePossibleChange
 
 ```swift
@@ -160,7 +153,6 @@ case pictureInPicturePossibleChange((_ possible: Bool) -> Void)
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onpictureinpicturepossiblechangepossible">onPictureInPicturePossibleChange(possible:)</a>
 </div>
 
-<br><br>
 ## pictureInPictureDidStart
 
 ```swift
@@ -175,7 +167,6 @@ case pictureInPictureDidStart(() -> Void)
 </div>
 
 
-<br><br>
 ## pictureInPictureDidStop
 
 ```swift
@@ -190,7 +181,6 @@ case pictureInPictureDidStop(() -> Void)
 </div>
 
 
-<br><br>
 ## pictureInPictureWillStart
 
 ```swift
@@ -204,7 +194,6 @@ case pictureInPictureWillStart(() -> Void)
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onpictureinpicturewillstart">onPictureInPictureWillStart()</a>
 </div>
 
-<br><br>
 ## pictureInPictureWillStop
 
 ```swift
@@ -218,7 +207,6 @@ case pictureInPictureWillStop(() -> Void)
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onpictureinpicturewillstop">onPictureInPictureWillStop()</a>
 </div>
 
-<br><br>
 ## play
 
 ```swift
@@ -236,7 +224,6 @@ case play(() -> Void)
 참고: <a href="#playing">playing</a>
 </div>
 
-<br><br>
 ## playbackFinish
 
 ```swift
@@ -261,7 +248,6 @@ case playbackFinish(
 <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## playbackStateChange
 
 ```swift
@@ -279,7 +265,6 @@ case playbackStateChange((_ state: MediaPlayer.PlaybackState) -> Void)
 참고: <a href="../media-player-playback-state/home.md">MediaPlayer.PlaybackState</a>
 </div>
 
-<br><br>
 ## playing
 
 ```swift
@@ -294,7 +279,6 @@ playing과 관련된 이벤트 핸들러는 play 이벤트 이후에 항상 호�
 참고: <a href="#play">play</a>
 </div>
 
-<br><br>
 ## positionDiscontinuity
 
 ```swift
@@ -315,7 +299,6 @@ case positionDiscontinuity(
 참고: <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## progress
 
 ```swift
@@ -328,7 +311,6 @@ case progress(() -> Void)
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onprogress">onProgress()</a>
 </div>
 
-<br><br>
 ## rateChange
 
 ```swift
@@ -345,7 +327,6 @@ case rateChange((_ rate: Float) -> Void)
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onratechangerate">onRateChange(rate:)</a>
 </div>
 
-<br><br>
 ## repeatModeChange
 
 ```swift
@@ -363,7 +344,6 @@ case repeatModeChange((_ mode: MediaPlayer.RepeatMode) -> Void)
 참고: <a href="../media-player-repeat-mode/home.md">MediaPlayer.RepeatMode</a>
 </div>
 
-<br><br>
 ## repeatRangeChange
 
 ```swift
@@ -381,7 +361,6 @@ case repeatRangeChange((_ range: MediaPlayer.RepeatRange?) -> Void)
 참고: <a href="../../struct/media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
 
-<br><br>
 ## scalingModeChange
 
 ```swift
@@ -399,7 +378,6 @@ case scalingModeChange((_ mode: MediaPlayer.ScalingMode) -> Void)
 참고: <a href="../media-player-scaling-mode/home.md">MediaPlayer.ScalingMode</a>
 </div>
 
-<br><br>
 ## seeked
 
 ```swift
@@ -413,7 +391,6 @@ seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, �
 비교: <a href="#seeking">seeking</a>
 </div>
 
-<br><br>
 ## seeking
 
 ```swift
@@ -427,7 +404,6 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 비교: <a href="#seeked">seeked</a>
 </div>
 
-<br><br>
 ## textCueChange
 
 ```swift
@@ -445,7 +421,6 @@ case textCueChange((_ textCues: [TextTrack.Cue]) -> Void)
 참고: <a href="../../class/text-track/home.md#texttrackcue">TextTrack.Cue</a>
 </div>
 
-<br><br>
 ## timeUpdate
 
 ```swift
@@ -463,7 +438,6 @@ case timeUpdate((_ position: Duration) -> Void)
 참고: <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## unload
 
 ```swift
@@ -482,7 +456,6 @@ case unload((_ mediaItem: MediaItem) -> Void)
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
-<br><br>
 ## videoSizeChange
 
 ```swift
@@ -500,7 +473,6 @@ case videoSizeChange((_ size: CGSize) -> Void)
 참고: <a href="https://developer.apple.com/documentation/corefoundation/cgsize">CGSize</a>
 </div>
 
-<br><br>
 ## volumeChange
 
 ```swift
@@ -518,7 +490,6 @@ case volumeChange((_ volume: Float, _ muted: Bool) -> Void)
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onvolumechangevolumemuted">onVolumeChange(volume:muted:)</a>
 </div>
 
-<br><br>
 ## waiting
 
 ```swift

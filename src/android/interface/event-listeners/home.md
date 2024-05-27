@@ -11,7 +11,8 @@ EventListener는 이벤트 처리를 위한 인터페이스로, 위와 같은 �
 Player에 이미 존재하는 이벤트 리스너일 경우에는, 안드로이드 SDK는 이벤트 핸들러만 제공합니다.<br>
 이벤트 리스너를 대신하여 사용 방법에 따라서 [이벤트 핸들러](../../class/event-handlers/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 핸들러에서 사용되는 파라미터는 이벤트 리스너의 파라미터와 동일합니다. 이벤트 핸들러의 사용 방법은 [addEventHandler()](../media-player/home.md#addeventhandler)와 [클래스](../../class/event-handlers/home.md#클래스)를 참고하시면 됩니다.
 
-<br><br>
+<br>
+
 # 메서드
 
 ## onDurationChange
@@ -31,7 +32,6 @@ fun onDurationChange(duration: Duration)
 참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-<br><br>
 ## onEnded
 
 ```kotlin
@@ -44,7 +44,6 @@ fun onEnded()
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#ended">Ended</a>
 </div>
 
-<br><br>
 ## onError
 
 ```kotlin
@@ -63,7 +62,6 @@ fun onError(error: PlaybackException)
 <a href="../../class/media-player-exception/home.md">MediaPlayerException</a>
 </div>
 
-<br><br>
 ## onLoadedData
 
 ```kotlin
@@ -76,7 +74,6 @@ fun onLoadedData()
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#loadeddata">LoadedData</a>
 </div>
 
-<br><br>
 ## onLoadedMetadata
 
 ```kotlin
@@ -89,7 +86,6 @@ fun onLoadedMetadata()
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#loadedmetadata">LoadedMetadata</a>
 </div>
 
-<br><br>
 ## onLoadStart
 
 ```kotlin
@@ -102,7 +98,6 @@ fun onLoadStart()
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#loadstart">LoadStart</a>
 </div>
 
-<br><br>
 ## onPause
 
 ```kotlin
@@ -114,7 +109,6 @@ fun onPause()
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#pause">Pause</a>
 </div>
 
-<br><br>
 ## onPlay
 
 ```kotlin
@@ -127,7 +121,6 @@ fun onPlay()
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#play">Play</a>
 </div>
 
-<br><br>
 ## onPlaybackFinish
 
 ```kotlin
@@ -150,7 +143,6 @@ fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duratio
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-<br><br>
 ## onPlaying
 
 ```kotlin
@@ -163,7 +155,6 @@ fun onPlaying()
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#playing">Playing</a>
 </div>
 
-<br><br>
 ## onPositionDiscontinuity
 
 ```kotlin
@@ -190,7 +181,6 @@ fun onPositionDiscontinuity(
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-<br><br>
 ## onProgress
 
 ```kotlin
@@ -203,7 +193,6 @@ fun onProgress()
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#progress">Progress</a>
 </div>
 
-<br><br>
 ## onRateChange
 
 ```kotlin
@@ -223,7 +212,6 @@ fun onRateChange(playbackRate: Float)
 참고: <a href="../../interface/media-player/home.md#playbackrate">playbackRate</a>
 </div>
 
-<br><br>
 ## onRepeatRangeChange
 
 ```kotlin
@@ -241,7 +229,6 @@ fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?)
 참고: <a href="../../class/media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
 
-<br><br>
 ## onResizeModeChange
 
 ```kotlin
@@ -259,7 +246,6 @@ fun onResizeModeChange(mode: @AspectRatioFrameLayout.ResizeMode Int)
 참고: <a href="https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode">AspectRatioFrameLayout.ResizeMode</a>
 </div>
 
-<br><br>
 ## onSeeked
 
 ```kotlin
@@ -272,7 +258,6 @@ seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, �
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#seeked">Seeked</a>
 </div>
 
-<br><br>
 ## onSeeking
 
 ```kotlin
@@ -285,7 +270,6 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#seeking">Seeking</a>
 </div>
 
-<br><br>
 ## onSuspend
 
 ```kotlin
@@ -298,7 +282,6 @@ fun onSuspend()
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#suspend">Suspend</a>
 </div>
 
-<br><br>
 ## onTimeUpdate
 
 ```kotlin
@@ -316,7 +299,6 @@ fun onTimeUpdate(position: Duration)
 참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-<br><br>
 ## onUnload
 
 ```kotlin
@@ -334,7 +316,6 @@ fun onUnload(mediaItem: MediaItem)
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>
 </div>
 
-<br><br>
 ## onVolumeChange
 
 ```kotlin
@@ -355,7 +336,6 @@ fun onVolumeChange(volume: Float, muted: Boolean)
 참고: <a href="../../interface/media-player/home.md#devicevolume">deviceVolume</a>
 </div>
 
-<br><br>
 ## onWaiting
 
 ```kotlin

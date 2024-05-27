@@ -11,7 +11,8 @@ sealed class EventHandler
 이벤트 핸들러의 종류와 사용 방법에 대한 설명입니다. 각각 데이터 클래스에 대한 설명은 [클래스](#클래스)를, 사용 방법은 [addEventHandler()](../../interface/media-player/home.md#addeventhandler)를 참고하시면 됩니다. 이벤트 핸들러를 추가한 후, 해당 이벤트 핸들러가 더 이상 필요 없을 때는 반드시 [removeEventHandler()](../../interface/media-player/home.md#removeeventhandler) 메서드를 사용해서 제거하세요.<br>
 이벤트 핸들러를 대신하여 사용 방법에 따라서 [이벤트 리스너](../../interface/event-listeners/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 리스너에서 사용되는 파라미터는 이벤트 핸들러의 파라미터와 동일합니다. 이벤트 리스너의 사용 방법은 [addEventListener()](../../interface/media-player/home.md#addeventlistener)와 [메서드](../../interface/event-listeners/home.md#메서드)를 참고하시면 됩니다. 
 
-<br><br>
+<br>
+
 # 클래스
 
 ## DurationChange
@@ -31,7 +32,6 @@ data class DurationChange(val listener: (Duration) -> Unit) : EventHandler()
 참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-<br><br>
 ## Ended
 
 ```kotlin
@@ -44,7 +44,6 @@ data class Ended(val listener: () -> Unit) : EventHandler()
 이벤트 리스너: <a href="../../interface/event-listeners/home.md#onended">onEnded()</a>
 </div>
 
-<br><br>
 ## Error
 
 ```kotlin
@@ -63,7 +62,6 @@ data class Error(val listener: (PlaybackException) -> Unit) : EventHandler()
 <a href="../media-player-exception/home.md">MediaPlayerException</a>
 </div>
 
-<br><br>
 ## LoadedData
 
 ```kotlin
@@ -76,7 +74,6 @@ data class LoadedData(val listener: () -> Unit) : EventHandler()
 이벤트 리스너: <a href="../../interface/event-listeners/home.md#onloadeddata">onLoadedData()</a>
 </div>
 
-<br><br>
 ## LoadedMetadata
 
 ```kotlin
@@ -88,7 +85,6 @@ data class LoadedMetadata(val listener: () -> Unit) : EventHandler()
 이벤트 리스너: <a href="../../interface/event-listeners/home.md#onloadedmetadata">onLoadedMetadata() </a>
 </div>
 
-<br><br>
 ## LoadStart
 
 ```kotlin
@@ -101,7 +97,6 @@ data class LoadStart(val listener: () -> Unit) : EventHandler()
 이벤트 리스너: <a href="../../interface/event-listeners/home.md#onloadstart">onLoadStart()</a>
 </div>
 
-<br><br>
 ## MediaItemTransition
 
 ```kotlin
@@ -121,7 +116,6 @@ data class MediaItemTransition(val listener: (MediaItem?, @Player.MediaItemTrans
 <a href="https://developer.android.com/reference/androidx/media3/common/Player.MediaItemTransitionReason">MediaItemTransitionReason</a>
 </div>
 
-<br><br>
 ## Pause
 
 ```kotlin
@@ -135,7 +129,6 @@ data class Pause(val listener: () -> Unit) : EventHandler()
 비교: <a href="#play">Play</a>
 </div>
 
-<br><br>
 ## Play
 
 ```kotlin
@@ -154,7 +147,6 @@ EventHandler.Playing과 다른 점은 seekTo() 등을 통해 재생 위치가 �
 참고: <a href="#playing">Playing</a>
 </div>
 
-<br><br>
 ## PlaybackFinish
 
 ```kotlin
@@ -177,7 +169,6 @@ data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?, Playbac
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-<br><br>
 ## PlaybackStateChange
 
 ```kotlin
@@ -195,7 +186,6 @@ data class PlaybackStateChange(val listener: (@Player.State Int) -> Unit) : Even
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player.State">Player.State</a>
 </div>
 
-<br><br>
 ## Playing
 
 ```kotlin
@@ -212,7 +202,6 @@ Playing과 관련된 이벤트 핸들러는 Play 이벤트 이후에 호출됩�
 참고: <a href="#play">Play</a>
 </div>
 
-<br><br>
 ## PositionDiscontinuity
 
 ```kotlin
@@ -235,7 +224,6 @@ data class PositionDiscontinuity(
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-<br><br>
 ## Progress
 
 ```kotlin
@@ -248,7 +236,6 @@ data class Progress(val listener: () -> Unit) : EventHandler()
 비교: <a href="#suspend">Suspend</a>
 </div>
 
-<br><br>
 ## RateChange
 
 ```kotlin
@@ -267,7 +254,6 @@ data class RateChange(val listener: (Float) -> Unit) : EventHandler()
 참고: <a href="../../interface/media-player/home.md#playbackrate">playbackRate</a>
 </div>
 
-<br><br>
 ## RepeatModeChange
 
 ```kotlin
@@ -285,7 +271,6 @@ data class RepeatModeChange(val listener: (@Player.RepeatMode Int) -> Unit) : Ev
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player.RepeatMode">Player.RepeatMode</a>
 </div>
 
-<br><br>
 ## RepeatRangeChange
 
 ```kotlin
@@ -303,7 +288,6 @@ data class RepeatRangeChange(val listener: (MediaPlayer.RepeatRange?) -> Unit) :
 참고: <a href="../media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
 
-<br><br>
 ## ResizeModeChange
 
 ```kotlin
@@ -321,7 +305,6 @@ data class ResizeModeChange(val listener: (@AspectRatioFrameLayout.ResizeMode In
 참고: <a href="https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode">AspectRatioFrameLayout.ResizeMode</a>
 </div>
 
-<br><br>
 ## Seeked
 
 ```kotlin
@@ -334,7 +317,6 @@ seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, �
 비교: <a href="#seeking">Seeking</a>
 </div>
 
-<br><br>
 ## Seeking
 
 ```kotlin
@@ -347,7 +329,6 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 비교: <a href="#seeked">Seeked</a>
 </div>
 
-<br><br>
 ## Suspend
 
 ```kotlin
@@ -360,7 +341,6 @@ data class Suspend(val listener: () -> Unit) : EventHandler()
 비교: <a href="#progress">Progress</a>
 </div>
 
-<br><br>
 ## TimeUpdate
 
 ```kotlin
@@ -378,7 +358,6 @@ data class TimeUpdate(val listener: (Duration) -> Unit) : EventHandler()
 참고: <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-<br><br>
 ## Unload
 
 ```kotlin
@@ -396,7 +375,6 @@ data class Unload(val listener: (MediaItem) -> Unit) : EventHandler()
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>
 </div>
 
-<br><br>
 ## VideoSizeChange
 
 ```kotlin
@@ -414,7 +392,6 @@ data class VideoSizeChange(val listener: (VideoSize) -> Unit) : EventHandler()
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/VideoSize">VideoSize</a>
 </div>
 
-<br><br>
 ## VolumeChange
 
 ```kotlin
@@ -434,7 +411,6 @@ data class VolumeChange(val listener: (Float, Boolean) -> Unit) : EventHandler()
 참고: <a href="../../interface/media-player/home.md#devicevolume">deviceVolume</a>
 </div>
 
-<br><br>
 ## Waiting
 
 ```kotlin

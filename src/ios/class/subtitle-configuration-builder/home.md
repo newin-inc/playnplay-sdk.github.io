@@ -8,7 +8,8 @@ extension SubtitleConfiguration {
 ```
 자막을 추가할 때 사용합니다. URL을 파라미터로 넣어서 설정을 시작하고 필요한 요소를 추가합니다. [.build()](#build)를 호출하여 구성을 완료합니다.
 
-<br><br>
+<br>
+
 # 생성자
 
 ```swift
@@ -25,7 +26,8 @@ URL을 입력받아서 초기 설정을 합니다.
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 
-<br><br>
+<br>
+
 # 메서드
 
 ## build()
@@ -41,7 +43,6 @@ func build() -> SubtitleConfiguration
 <a href="../../struct/subtitle-configuration/home.md">SubtitleConfiguration</a>
 </div>
 
-<br><br>
 ## label(_)
 
 ```swift
@@ -54,7 +55,6 @@ func label(_ label: String?) -> SubtitleConfiguration.Builder
 
 라벨을 설정합니다.
 
-<br><br>
 ## language(_)
 
 ```swift
@@ -67,7 +67,6 @@ func language(_ language: String?) -> SubtitleConfiguration.Builder
 
 언어를 설정합니다.
 
-<br><br>
 ## mode(_)
 
 ```swift

@@ -9,7 +9,8 @@ enum MediaPlayerError: LocalizedError
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/foundation/localizederror">LocalizedError</a>
 </div>
-<br><br>
+
+<br>
 
 # 케이스
 

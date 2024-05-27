@@ -9,7 +9,8 @@ extension DrmConfiguration {
 
 DRM 구성을 위해 초기 설정을 합니다. 제공받은 App 아이디와 사용자 아이디(User ID)를 입력하면 됩니다. [.build()](#build)를 호출하여 구성을 완료합니다.
 
-<br><br>
+<br>
+
 # 생성자
 
 ```swift
@@ -20,7 +21,8 @@ init(appId: String, userId: String)
 |appId|String|App 아이디|O|
 |userId|String|사용자 아이디|O|
 
-<br><br>
+<br>
+
 # 메서드
 
 ## build()
@@ -35,7 +37,6 @@ func build() -> DrmConfiguration
 참고: <a href="../../struct/drm-configuration/home.md">DrmConfiguration</a>
 </div>
 
-<br><br>
 ## offlineAccessPeriod(_)
 
 ```swift
@@ -49,7 +50,6 @@ func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.B
 <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
 </div>
 
-<br><br>
 ## userData(_)
 
 ```swift

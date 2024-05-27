@@ -9,7 +9,8 @@ public class MediaPlayerViewController {
 
 미디어 플레이어의 설정을 도와주는 구조체입니다. 아래와 같은 속성, 메서드 및 열거형을 가지고 있습니다.
 
-<br><br>
+<br>
+
 # 속성
 
 ## allowsBackgroundPlayback
@@ -24,7 +25,6 @@ var allowsBackgroundPlayback: Bool = false
 
 백그라운드 재생을 허용할 지 여부를 나타내는 속성입니다. 
 
-<br><br>
 ## allowsCellularAccess
 
 ```swift
@@ -37,7 +37,6 @@ var allowsCellularAccess: Bool = true
 
 미디어를 재생할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## allowsPictureInPicturePlayback
 
 ```swift
@@ -50,7 +49,6 @@ var allowsPictureInPicturePlayback: Bool = true
 
 화면 속 화면 모드를 허용할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## controllerShowTimeout
 
 ```swift
@@ -63,7 +61,6 @@ var controllerShowTimeout: Duration = .seconds(5)
 
 해당 시간만큼 아무 것도 입력하지 않으면 컨트롤러가 사라집니다. 0초로 설정할 경우에는 컨트롤러를 자동으로 숨기지 않습니다.
 
-<br><br>
 ## defaultPlaybackRate
 
 ```swift
@@ -76,7 +73,6 @@ var defaultPlaybackRate: Float = 1
 
 미디어 재생 속도를 나타내는 속성입니다.
 
-<br><br>
 ## seekBackwardIncrement
 
 ```swift
@@ -93,7 +89,6 @@ var seekBackwardIncrement: Duration = .seconds(10)
 참고: <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## seekForwardIncrement
 
 ```swift
@@ -110,7 +105,6 @@ var seekForwardIncrement: Duration = .seconds(10)
 참고: <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## screenOrientationLock
 
 ```swift
@@ -127,7 +121,8 @@ var screenOrientationLock: ScreenOrientationLock = .off
 참고: <a href="#screenorientationlock-1">ScreenOrientationLock</a>
 </div>
 
-<br><br>
+<br>
+
 # 정적 메서드
 
 ## defaultConfiguration()
@@ -138,7 +133,8 @@ static func defaultConfiguration() -> Configuration
 
 기본 설정 값을 가져오는 정적 메서드입니다.
 
-<br><br>
+<br>
+
 # 열거형
 
 ## ScreenOrientationLock

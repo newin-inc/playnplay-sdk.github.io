@@ -7,7 +7,8 @@ class MediaPlayerViewController: UIViewController, UIGestureRecognizerDelegate
 미디어 플레이어 뷰 컨트롤러입니다. 아래와 같은 속성과 구조체를 제공합니다. <br>
 활성화된 미디어 플레이어 뷰 컨트롤러에 접근하는 방법은 [mediaPlayerViewController](../uiviewcontroller/home.md#mediaplayerviewcontroller)를 참고하세요.
 
-<br><br>
+<br>
+
 # 속성
 
 ## configuration
@@ -48,7 +49,8 @@ private(set) var player: MediaPlayer
 
 미디어 플레이어에 접근할 수 있는 속성입니다.
 
-<br><br>
+<br>
+
 # 구조체
 
 ## MediaPlayerViewController.Configuration

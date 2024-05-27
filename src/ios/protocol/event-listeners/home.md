@@ -13,7 +13,8 @@ protocol MediaPlayerListener : AnyObject
 EventListener는 이벤트 처리를 위한 프로토콜로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 [메서드](#메서드)를, 사용 방법은 [addEventListener(_)](../../class/media-player/home.md#addeventlistener_)를 참고하시면 됩니다. 이밴트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener(_)](../../class/media-player/home.md#removeeventlistener_) 메서드를 사용해서 제거하세요.<br>
 이벤트 리스너를 대신하여 사용 방법에 따라서 [이벤트 핸들러](../../enum/event-handlers/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 핸들러에서 사용되는 파라미터는 이벤트 리스너의 파라미터와 동일합니다. 이벤트 핸들러의 사용 방법은 [addEventHandler(_)](../../class/media-player/home.md#addeventhandler_)와 [케이스](../../enum/event-handlers/home.md#케이스)를 참고하시면 됩니다.
 
-<br><br>
+<br>
+
 # 메서드
 
 ## onCueChange(textCues:)
@@ -33,7 +34,6 @@ func onCueChange(textCues: [TextTrack.Cue])
 참고: <a href="../../class/text-track/home.md#texttrackcue">TextTrack.Cue</a>
 </div>
 
-<br><br>
 ## onDurationChange(duration:)
 
 ```swift
@@ -51,7 +51,6 @@ func onDurationChange(duration: Duration)
 참고: <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## onEnded()
 
 ```swift
@@ -64,7 +63,6 @@ func onEnded()
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#ended">MediaPlayer.EventHandler.ended</a>
 </div>
 
-<br><br>
 ## onError(error:)
 
 ```swift
@@ -83,7 +81,6 @@ func onError(error: Error)
 <a href="../../enum/media-player-error/home.md">MediaPlayerError</a>
 </div>
 
-<br><br>
 ## onLoadedData()
 
 ```swift
@@ -96,7 +93,6 @@ func onLoadedData()
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#loadeddata">MediaPlayer.EventHandler.loadedData</a>
 </div>
 
-<br><br>
 ## onLoadStart()
 
 ```swift
@@ -109,7 +105,6 @@ func onLoadStart()
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#loadstart">MediaPlayer.EventHandler.loadStart</a>
 </div>
 
-<br><br>
 ## onMediaItemTransition(item:)
 
 ```swift
@@ -127,7 +122,6 @@ func onMediaItemTransition(item: MediaItem?)
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
-<br><br>
 ## onPause()
 
 ```swift
@@ -141,7 +135,6 @@ func onPause()
 비교: <a href="#onplay">onPlay</a>
 </div>
 
-<br><br>
 ## onPictureInPictureActiveChange(active:)
 
 ```swift
@@ -178,7 +171,6 @@ func onPictureInPicturePossibleChange(possible: Bool)
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#pictureinpicturepossiblechange">MediaPlayer.EventHandler.pictureInPicturePossibleChange</a>
 </div>
 
-<br><br>
 ## onPictureInPictureDidStart()
 
 ```swift
@@ -192,7 +184,6 @@ func onPictureInPictureDidStart()
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#pictureinpicturedidstart">MediaPlayer.EventHandler.pictureInPictureDidStart</a>
 </div>
 
-<br><br>
 ## onPictureInPictureDidStop()
 
 ```swift
@@ -206,7 +197,6 @@ func onPictureInPictureDidStart()
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#pictureinpicturedidstop">MediaPlayer.EventHandler.pictureInPictureDidStop</a>
 </div>
 
-<br><br>
 ## onPictureInPictureWillStart()
 
 ```swift
@@ -220,7 +210,6 @@ func onPictureInPictureWillStart()
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#pictureinpicturewillstart">MediaPlayer.EventHandler.pictureInPictureWillStart</a>
 </div>
 
-<br><br>
 ## onPictureInPictureWillStop()
 
 ```swift
@@ -234,7 +223,6 @@ func onPictureInPictureWillStop()
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#pictureinpicturewillstop">MediaPlayer.EventHandler.pictureInPictureWillStop</a>
 </div>
 
-<br><br>
 ## onPlay()
 
 ```swift
@@ -252,7 +240,6 @@ func onPlay()
 참고: <a href="#onplaying">onPlaying</a>
 </div>
 
-<br><br>
 ## onPlaybackFinish(mediaItem:position:duration:reason:)
 
 ```swift
@@ -280,7 +267,6 @@ public func onPlaybackFinish(
 <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## onPlaybackStateChange(state:)
 
 ```swift
@@ -298,7 +284,6 @@ func onPlaybackStateChange(state: MediaPlayer.PlaybackState)
 참고: <a href="../../enum/media-player-playback-state/home.md">MediaPlayer.PlaybackState</a>
 </div>
 
-<br><br>
 ## onPlaying()
 
 ```swift
@@ -313,7 +298,6 @@ playing과 관련된 이벤트 핸들러는 play 이벤트 이후에 항상 호�
 참고: <a href="#onplay">onPlay</a>
 </div>
 
-<br><br>
 ## onPositionDiscontinuity(oldPosition:newPosition:)
 
 ```swift
@@ -332,7 +316,6 @@ func onPositionDiscontinuity(oldPosition: Duration, newPosition: Duration)
 참고: <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## onProgress()
 
 ```swift
@@ -345,7 +328,6 @@ func onProgress()
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#progress">MediaPlayer.EventHandler.progress</a>
 </div>
 
-<br><br>
 ## onRateChange(rate:)
 
 ```swift
@@ -362,7 +344,6 @@ func onRateChange(rate: Float)
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#ratechange">MediaPlayer.EventHandler.rateChange</a>
 </div>
 
-<br><br>
 ## onRepeatModeChange(mode:)
 
 ```swift
@@ -380,7 +361,6 @@ func onRepeatModeChange(mode: MediaPlayer.RepeatMode)
 참고: <a href="../../enum/media-player-repeat-mode/home.md">MediaPlayer.RepeatMode</a>
 </div>
 
-<br><br>
 ## onRepeatRangeChange(range:)
 
 ```swift
@@ -398,7 +378,6 @@ func onRepeatRangeChange(range: MediaPlayer.RepeatRange?)
 참고: <a href="../../struct/media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
 
-<br><br>
 ## onScalingModeChange(mode:)
 
 ```swift
@@ -415,7 +394,6 @@ func onScalingModeChange(mode: MediaPlayer.ScalingMode)
 참고: <a href="../../enum/media-player-scaling-mode/home.md">MediaPlayer.ScalingMode</a>
 </div>
 
-<br><br>
 ## onSeeked()
 
 ```swift
@@ -428,7 +406,6 @@ seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, �
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#seeked">MediaPlayer.EventHandler.seeked</a>
 </div>
 
-<br><br>
 ## onSeeking()
 
 ```swift
@@ -441,7 +418,6 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#seeking">MediaPlayer.EventHandler.seeking</a>
 </div>
 
-<br><br>
 ## onTimeUpdate(position:)
 
 ```swift
@@ -459,7 +435,6 @@ func onTimeUpdate(position: Duration)
 참고: <a href="../../struct/duration/home.md">Duration</a>
 </div>
 
-<br><br>
 ## onUnload(mediaItem:)
 
 ```swift
@@ -477,7 +452,6 @@ func onUnload(mediaItem: MediaItem)
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
-<br><br>
 ## onVideoSizeChange(size:)
 
 ```swift
@@ -495,7 +469,6 @@ func onVideoSizeChange(size: CGSize)
 참고: <a href="https://developer.apple.com/documentation/corefoundation/cgsize">CGSize</a>
 </div>
 
-<br><br>
 ## onVolumeChange(volume:muted:)
 
 ```swift
@@ -513,7 +486,6 @@ func onVolumeChange(volume: Float, muted: Bool)
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#volumechange">MediaPlayer.EventHandler.volumeChange</a>
 </div>
 
-<br><br>
 ## onWaiting()
 
 ```swift

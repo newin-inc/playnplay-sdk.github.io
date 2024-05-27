@@ -17,7 +17,8 @@ public final class MediaMetadata implements Bundleable
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
-<br><br>
+<br>
+
 # 속성
 
 ## artworkUrl
@@ -36,7 +37,6 @@ public final class MediaMetadata implements Bundleable
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#artworkUri()">artworkUri</a>
 </div>
 
-<br><br>
 ## title
 
 ```java
@@ -53,7 +53,8 @@ public final class MediaMetadata implements Bundleable
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#title()">title</a>
 </div>
 
-<br><br>
+<br>
+
 # 메서드
 
 ## buildUpon()
@@ -69,7 +70,8 @@ public MediaMetadata.Builder buildUpon()
 <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata.Builder#build()">build()</a>
 </div>
 
-<br><br>
+<br>
+
 # 정적 클래스
 
 ## Builder

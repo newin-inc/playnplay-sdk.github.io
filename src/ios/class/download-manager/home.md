@@ -30,7 +30,8 @@ class DownloadManager: NSObject, URLSessionDownloadDelegate
 
 다운로드 매니저 클래스는 아래와 같은 속성과 메서드를 가지고 있습니다.
 
-<br><br>
+<br>
+
 # 정적 속성
 
 ## shared
@@ -45,7 +46,8 @@ static let shared: DownloadManager { get }
 
 다운로드 매니저에 접근하기 위한 정적 속성입니다. 아래에 언급되는 속성 및 메서드를 호출할 때, DownloadManager.shared를 사용하여 접근할 수 있습니다.
 
-<br><br>
+<br>
+
 # 속성
 
 ## downloadsUrl
@@ -66,7 +68,6 @@ var downloadsUrl: URL { get }
 <a href="https://developer.apple.com/documentation/foundation/url)">URL</a>
 </div>
 
-<br><br>
 ## items
 
 ```swift
@@ -83,7 +84,6 @@ var items: [DownloadItem] { get }
 참고: <a href="../../struct/download-item/home.md">DownloadItem</a>
 </div>
 
-<br><br>
 ## maxParallelDownloads
 
 ```swift
@@ -96,7 +96,8 @@ var maxParallelDownloads: Int { get set }
 
 동시에 받을 수 있는 아이템의 최대 개수를 반환하거나 설정합니다.
 
-<br><br>
+<br>
+
 # 메서드
 
 ## add(mediaItem:allowsCellularAccess:)
@@ -120,7 +121,6 @@ var maxParallelDownloads: Int { get set }
 <a href="../../struct/download-item/home.md#id-downloaditemid">DownloadItem.id</a>
 </div>
 
-<br><br>
 ## addListener(_)
 
 ```swift
@@ -137,7 +137,6 @@ func addListener(_ listener: DownloadManager.Listener)
 참고: <a href="../../protocol/download-manager-listeners/home.md">DownloadManager.Listener</a>
 </div>
 
-<br><br>
 ## itemsByStatus(_)
 
 ```swift
@@ -155,7 +154,6 @@ func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
 <a href="../../struct/download-item/home.md">DownloadItem</a>
 </div>
 
-<br><br>
 ## pause(id:)
 
 ```swift
@@ -172,7 +170,6 @@ func pause(id: DownloadItem.Id)
 참고: <a href="../../struct/download-item/home.md#id-downloaditemid">DownloadItem.id</a>
 </div>
 
-<br><br>
 ## pauseAll()
 
 ```swift
@@ -181,7 +178,6 @@ func pauseAll()
 
 다운로드 목록에 있는 모든 아이템의 다운로드를 일시 정지하게 하는 메서드입니다.
 
-<br><br>
 ## remove(id:)
 
 ```swift
@@ -198,7 +194,6 @@ func remove(id: DownloadItem.Id)
 참고: <a href="../../struct/download-item/home.md#id-downloaditemid">DownloadItem.id</a>
 </div>
 
-<br><br>
 ## removeAll()
 
 ```swift
@@ -207,7 +202,6 @@ func removeAll()
 
 다운로드 아이템 목록을 모두 지우는 메서드입니다.
 
-<br><br>
 ## removeCompleted()
 
 ```swift
@@ -216,7 +210,6 @@ func removeCompleted()
 
 다운로드가 완료된 아이템을 목록에서 모두 지우는 메서드입니다.
 
-<br><br>
 ## removeListener(_)
 
 ```swift
@@ -232,7 +225,6 @@ func removeListener(_ listener: DownloadManager.Listener)
 <div align="right">
 참고: <a href="../../protocol/download-manager-listeners/home.md">DownloadManager.Listener</a>
 </div>
-<br><br>
 
 ## resume(id:)
 
@@ -250,7 +242,6 @@ func resume(id: DownloadItem.Id)
 참고: <a href="../../struct/download-item/home.md#id-downloaditemid">DownloadItem.id</a>
 </div>
 
-<br><br>
 ## resumeAll()
 
 ```swift

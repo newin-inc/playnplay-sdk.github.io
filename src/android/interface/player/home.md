@@ -12,7 +12,8 @@ public interface Player
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player">androidx.media3.common.Player</a>
 </div>
 
-<br><br>
+<br>
+
 # 속성
 
 ## audioTracks
@@ -31,7 +32,6 @@ val Player.audioTracks: List<Track>
 참고: <a href="../../class/audio-track/home.md">AudioTrack</a>
 </div>
 
-<br><br>
 ## currentWatermarkSettings
 
 ```kotlin
@@ -48,7 +48,6 @@ val Player.currentWatermarkSettings: WatermarkSettings?
 참고: <a href="../../class/watermark-settings/home.md">WatermarkSettings</a>
 </div>
 
-<br><br>
 ## isSeekable
 
 ```kotlin
@@ -61,7 +60,6 @@ val Player.isSeekable: Boolean
 
 현재 플레이어에서 Seek 기능을 사용할 수 있는지 여부를 반환하는 속성입니다.
 
-<br><br>
 ## subtitleTracks
 
 ```kotlin
@@ -78,7 +76,6 @@ val Player.subtitleTracks: List<Track>
 참고: <a href="../../class/subtitle-track/home.md">SubtitleTrack</a>
 </div>
 
-<br><br>
 ## videoTracks
 
 ```kotlin
@@ -95,7 +92,8 @@ val Player.videoTracks: List<Track>
 참고: <a href="../../class/video-track/home.md">VideoTrack</a>
 </div>
 
-<br><br>
+<br>
+
 # 메서드
 
 ## enterPictureInPicture
@@ -120,7 +118,6 @@ fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
 
 화면 속 화면 모드로 전환하는 메서드입니다.
 
-<br><br>
 ## selectTrack
 
 ```kotlin

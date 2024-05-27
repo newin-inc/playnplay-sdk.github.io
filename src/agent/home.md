@@ -4,7 +4,7 @@
 
 플레이어 실행 절차는 Windows, macOS, iOS, Android 동일합니다.
 
-<br><br>
+<br>
 
 # launchAgent
 

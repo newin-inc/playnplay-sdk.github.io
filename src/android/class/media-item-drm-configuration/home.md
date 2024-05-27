@@ -28,7 +28,8 @@ public static final class LocalConfiguration implements Bundleable {
 }
 ```
 
-<br><br>
+<br>
+
 # 속성
 
 ## appId
@@ -45,7 +46,6 @@ val MediaItem.DrmConfiguration.appId: String?
 
 App 아이디를 가져오는 속성입니다.
 
-<br><br>
 ## offlineAccessPeriod
 
 ```kotlin
@@ -65,7 +65,6 @@ val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
 <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
 </div>
 
-<br><br>
 ## userId
 
 ```kotlin

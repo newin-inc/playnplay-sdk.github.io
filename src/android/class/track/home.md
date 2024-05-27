@@ -13,7 +13,8 @@ sealed class Track
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/C.TrackType">C.TrackType</a>
 </div>
 
-<br><br>
+<br>
+
 # 속성
 
 ## type
@@ -40,7 +41,6 @@ public static final int TRACK_TYPE_TEXT = 3;
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/C.TrackType">C.TrackType</a>
 </div>
 
-<br><br>
 ## format
 
 ```kotlin
@@ -57,7 +57,6 @@ val format: Format
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/Format">Format</a>
 </div>
 
-<br><br>
 ## isSelected
 
 ```kotlin

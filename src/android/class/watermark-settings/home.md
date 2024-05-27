@@ -10,7 +10,8 @@ data class WatermarkSettings
 
 워터마크 설정을 나타내는 데이터 클래스입니다.
 
-<br><br>
+<br>
+
 # 속성
 
 | 이름 | 타입 | 설명 | 비고 |
@@ -23,7 +24,8 @@ data class WatermarkSettings
 |textOpacity|Double|글자의 불투명도|범위: 0.0~1.0|
 |textSize|Double|글자 크기|범위: 0.0~1.0|
 
-<br><br>
+<br>
+
 # 열거형
 
 ## WatermarkSettings.Position

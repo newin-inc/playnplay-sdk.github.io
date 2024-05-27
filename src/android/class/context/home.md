@@ -14,7 +14,8 @@ public abstract class Context
 참고: <a href="https://developer.android.com/reference/android/content/Context">Context</a>
 </div>
 
-<br><br>
+<br>
+
 # 메서드
 
 ## getMediaPlayer
@@ -33,7 +34,6 @@ fun Context.getMediaPlayer(block: (MediaPlayer) -> Unit)
 참고: <a href="../../interface/media-player/home.md#release">release()</a>
 </div>
 
-<br><br>
 ## presentMediaPlayer
 
 미디어를 여는 메서드입니다. 여러 타입을 파라미터로 받을 수 있습니다. 미디어 플레이어를 사용한 후에는 반드시 [release()](../../interface/media-player/home.md#release)를 호출해주세요.
@@ -55,7 +55,6 @@ fun Context.presentMediaPlayer(mediaItem: MediaItem)
 <a href="https://developer.android.com/media/media3/exoplayer/media-items">Media items</a>
 </div>
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(
     mediaItem: MediaItem,
@@ -73,7 +72,6 @@ fun Context.presentMediaPlayer(
 <a href="https://developer.android.com/media/media3/exoplayer/media-items">Media items</a>
 </div>
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>)
 ```
@@ -87,8 +85,7 @@ fun Context.presentMediaPlayer(mediaItems: Collection<MediaItem>)
 <a href="https://developer.android.com/media/media3/exoplayer/media-items">Media items</a>
 </div>
 
-<br><br>
-```kotln
+```kotlin
 fun Context.presentMediaPlayer(
     mediaItems: Collection<MediaItem>,
     configuration: MediaPlayerActivityConfiguration
@@ -105,7 +102,6 @@ fun Context.presentMediaPlayer(
 <a href="https://developer.android.com/media/media3/exoplayer/media-items">Media items</a>
 </div>
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(
 	mediaItems: Collection<MediaItem>,
@@ -123,7 +119,6 @@ fun Context.presentMediaPlayer(
 <a href="https://developer.android.com/media/media3/exoplayer/media-items">Media items</a>
 </div>
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(
     mediaItems: Collection<MediaItem>,
@@ -143,7 +138,6 @@ fun Context.presentMediaPlayer(
 <a href="https://developer.android.com/media/media3/exoplayer/media-items">Media items</a>
 </div>
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(
 	mediaItems: Collection<MediaItem>,
@@ -161,7 +155,6 @@ fun Context.presentMediaPlayer(
 <a href="https://developer.android.com/media/media3/exoplayer/media-items">Media items</a>
 </div>
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(
     mediaItems: Collection<MediaItem>,
@@ -181,7 +174,6 @@ fun Context.presentMediaPlayer(
 <a href="https://developer.android.com/media/media3/exoplayer/media-items">Media items</a>
 </div>
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(uri: String)
 ```
@@ -190,7 +182,6 @@ fun Context.presentMediaPlayer(uri: String)
 |:-----:|:---:|:----:|
 | uri | String | 재생하려는 문자열 형태의 미디어 주소 |
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(
     uri: String,
@@ -203,7 +194,6 @@ fun Context.presentMediaPlayer(
 | uri | String | 재생하려는 문자열 형태의 미디어 주소 |
 |configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(uri: Uri)
 ```
@@ -212,7 +202,6 @@ fun Context.presentMediaPlayer(uri: Uri)
 |:----:|:---:|:----:|
 | uri | [android.net.Uri](https://developer.android.com/reference/android/net/Uri) | 재생하려는 미디어 주소 |
 
-<br><br>
 ```kotlin
 fun Context.presentMediaPlayer(
     uri: Uri,
@@ -225,7 +214,6 @@ fun Context.presentMediaPlayer(
 | uri | [android.net.Uri](https://developer.android.com/reference/android/net/Uri) | 재생하려는 미디어 주소 |
 |configuration|[MediaPlayerActivityConfiguration](../media-player-activity-configuration/home.md)|설정 값|
 
-<br><br>
 ## startMediaPlayerService
 
 ```kotlin

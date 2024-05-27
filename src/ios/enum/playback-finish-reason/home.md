@@ -11,6 +11,8 @@ enum PlaybackFinishReason
 <a href="../event-handlers/home.md#playbackfinish">MediaPlayer.EventHandler.PlaybackFinish</a>
 </div>
 
+<br>
+
 # 케이스
 
 ## ended

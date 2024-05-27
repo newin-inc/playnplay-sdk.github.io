@@ -6,7 +6,8 @@ class MediaTrack : CustomStringConvertible
 
 [AudioTrack](../audio-track/home.md), [TextTrack](../text-track/home.md), [VideoTrack](../video-track/home.md)의 부모 클래스입니다.
 
-<br><br>
+<br>
+
 # 속성
 
 ## codecName

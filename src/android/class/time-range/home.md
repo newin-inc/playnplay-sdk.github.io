@@ -10,7 +10,8 @@ data class TimeRange(val start: Duration, val duration: Duration)
 
 buffered 속성에서 사용되는 데이터 클래스입니다.
 
-<br><br>
+<br>
+
 # 생성자 파라미터
 
 |이름|타입|설명|필수|

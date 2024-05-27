@@ -15,7 +15,8 @@ interface MediaPlayer : Player
 <a href="../player/home.md">Player 확장 문서</a>
 </div>
 
-<br><br>
+<br>
+
 # 속성
 
 ## allowsCellularAccess
@@ -30,7 +31,6 @@ var allowsCellularAccess: Boolean
 
 동영상을 재생(스트리밍)할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## autoplay
 
 ```kotlin
@@ -43,7 +43,6 @@ var autoplay: Boolean
 
 미디어가 중단되지 않고 충분한 양의 미디어 사용이 가능할 때 즉시 재생이 시작되어야 하는지를 나타내는 속성입니다. true면 자동 재생합니다.
 
-<br><br>
 ## buffered
 
 ```kotlin
@@ -56,7 +55,6 @@ val buffered: TimeRanges
 
 버퍼에 있는 미디어 리소스의 구간을 반환합니다.
 
-<br><br>
 ## currentMediaItem
 
 ```kotlin
@@ -73,7 +71,6 @@ val currentMediaItem: MediaItem
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#getCurrentMediaItem()">getCurrentMediaItem()</a>
 </div>
 
-<br><br>
 ## currentMediaItemIndex
 
 ```kotlin
@@ -90,7 +87,6 @@ val currentMediaItemIndex: Int
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#getCurrentMediaItemIndex()">getCurrentMediaItemIndex()</a>
 </div>
 
-<br><br>
 ## currentSrc
 
 ```kotlin
@@ -103,7 +99,6 @@ val currentSrc: Uri?
 
 미디어 리소스의 uri를 의미하는 속성입니다.
 
-<br><br>
 ## currentTime
 
 ```kotlin
@@ -116,7 +111,6 @@ var currentTime: Duration
 
 현재 재생 위치를 Duration 단위로 지정합니다.
 
-<br><br>
 ## defaultMuted
 
 ```kotlin
@@ -129,7 +123,6 @@ var defaultMuted: Boolean
 
 오디오의 음소거 기본 설정을 나타내는 속성입니다.
 
-<br><br>
 ## defaultPlaybackRate
 
 ```kotlin
@@ -142,7 +135,6 @@ var defaultPlaybackRate: Float
 
 미디어의 기본 재생 속도를 나타내는 속성입니다.
 
-<br><br>
 ## deviceVolume
 
 ```kotlin
@@ -155,7 +147,6 @@ var deviceVolume: Float
 
 현재 미디어 플레이어의 음량을 나타내는 속성입니다.
 
-<br><br>
 ## duration
 
 ```kotlin
@@ -168,7 +159,6 @@ val duration: Duration
 
 현재 미디어 길이를 나타냅니다.
 
-<br><br>
 ## ended
 
 ```kotlin
@@ -181,7 +171,6 @@ val ended: Boolean
 
 미디어 재생 완료 여부를 나타내는 속성입니다.
 
-<br><br>
 ## error
 
 ```kotlin
@@ -199,7 +188,6 @@ val error: PlaybackException?
 <a href="../../class/media-player-exception/home.md">MediaPlayerException</a>
 </div>
 
-<br><br>
 ## loop
 
 ```kotlin
@@ -212,7 +200,6 @@ var loop: Boolean
 
 미디어 재생이 끝났을 때 다시 처음부터 재생할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## mediaItems
 
 ```kotlin
@@ -225,7 +212,6 @@ val mediaItems: List<MediaItem>
 
 미디어 아이템들의 목록을 나타내는 속성입니다. 해당 속성은 설정이 불가능합니다. 목록 전체를 바꾸고 싶을 때는 [Player](https://developer.android.com/reference/kotlin/androidx/media3/common/Player)의 [setMediaItems()](https://developer.android.com/reference/kotlin/androidx/media3/common/Player#setMediaItems(java.util.List%3Candroidx.media3.common.MediaItem%3E))를 사용하시면 됩니다.
 
-<br><br>
 ## muted
 
 ```kotlin
@@ -238,7 +224,6 @@ var muted: Boolean
 
 음소거 여부를 나타내는 속성입니다. 음소거면 true, 아니면 false입니다.
 
-<br><br>
 ## paused
 
 ```kotlin
@@ -259,7 +244,6 @@ val paused: Boolean
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player.State">Player.State</a>
 </div>
 
-<br><br>
 ## playbackRate
 
 ```kotlin
@@ -271,7 +255,6 @@ var playbackRate: Float
 
 미디어가 재생 속도를 나타내는 속성입니다. 정상 속도는 1.0이고, 1보다 작을 때는 느리게, 1보다 클 때는 빠르게 재생합니다. 이 때, 오디오 피치 유지 여부는 [preservesPitch](#preservespitch)의 값으로 제어할 수 있습니다.
 
-<br><br>
 ## preservesPitch
 
 ```kotlin
@@ -284,7 +267,6 @@ var preservesPitch: Boolean
 
 재생 속도에 따른 오디오 피치 유지 여부를 나타내는 속성입니다. 값이 true면 재생 속도가 변해도 오디오 피치는 변함 없으며, false일 경우 재생 속도에 따라 오디오 피치가 변합니다.
 
-<br><br>
 ## repeatRange
 
 ```kotlin
@@ -298,7 +280,6 @@ var repeatRange: RepeatRange?
 반복 구간 범위를 나타내는 속성입니다.
 null이 아닌 값으로 설정을 했을 경우 해당 구간을 지속해서 반복 재생합니다. start가 설정되어 있지 않을 경우에는 반복 구간의 시작은 미디어의 맨 앞부분이며, end가 설정되어 있지 않을 경우에는 반복 구간의 끝은 미디어의 맨 마지막 부분으로 간주합니다.
 
-<br><br>
 ## resizeMode
 
 ```kotlin
@@ -315,7 +296,6 @@ var resizeMode: @ResizeMode Int
 참고: <a href="https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode">AspectRatioFrameLayout.ResizeMode</a>
 </div>
 
-<br><br>
 ## seekBackIncrement
 
 ```kotlin
@@ -329,7 +309,6 @@ var seekBackIncrement: Duration
 [seekBack()](#seekback)을 호출하여 이동할 때, 현재 위치에서 전으로 이동하는 시간 정도를 나타내는 속성입니다.
 왼쪽 방향키를 입력 받거나 하단 인터페이스의 되감기 버튼을 클릭했을 때 이 속성을 사용합니다.
 
-<br><br>
 ## seekForwardIncrement
 
 ```kotlin
@@ -343,7 +322,6 @@ var seekForwardIncrement: Duration
 [seekForward()](#seekforward)을 호출하여 이동할 때, 현재 위치에서 후로 이동하는 시간 정도를 나타내는 속성입니다.
 오른쪽 방향키를 입력 받거나 하단 인터페이스의 빨리 감기 버튼을 클릭했을 때 이 속성을 사용합니다.
 
-<br><br>
 ## seeking
 
 ```kotlin
@@ -355,7 +333,8 @@ val seeking: Boolean
 
 미디어가 탐색 중이지를 나타내는 속성입니다. 현재 미디어가 새로운 위치로 이동하고 있거나 탐색중이면 true를 반환합니다.
 
-<br><br>
+<br>
+
 # 메서드
 
 ## fastSeek
@@ -371,7 +350,6 @@ fun fastSeek(to: Duration)
 
 * 주의: 해당 메서드의 원래 목적은 정확한 위치보다는 새로운 위치에서 더 빠르게 재생을 하도록 하는 것이었습니다. 그러나 안드로이드에서는 현재 정확한 위치와 빠른 재생을 동시에 수행할 수 없기 때문에, 현재는 currentTime, seekTo()를 사용한 것과 유사한 결과를 얻게 됩니다. 즉, 이 메서드를 사용하면 정확한 위치로 이동하게 됩니다. 향후 안드로이드에서 이러한 기능을 제공할 경우, 원래 목적에 맞게  업데이트될 예정입니다.
 
-<br><br>
 ## load
 
 ```kotlin
@@ -384,7 +362,6 @@ fun load(uri: String)
 
 미디어 주소를 문자열로 입력 받아서 미디어를 로드하기 위한 메서드입니다.
 
-<br><br>
 ## load
 
 ```kotlin
@@ -397,7 +374,6 @@ fun load(uri: Uri)
 
 미디어 주소를 [Uri](https://developer.android.com/reference/android/net/Uri) 타입으로 입력 받아서 미디어를 로드하기 위한 메서드입니다.
 
-<br><br>
 ## load
 
 ```kotlin
@@ -410,7 +386,6 @@ fun load(mediaItem: MediaItem)
 
 미디어 아이템을 로드하기 위한 메서드입니다.
 
-<br><br>
 ## load
 
 ```kotlin
@@ -423,7 +398,6 @@ fun load(mediaItems: List<MediaItem>)
 
 미디어 아이템 목록을 로드하기 위한 메서드입니다.
 
-<br><br>
 ## pause
 
 ```java
@@ -436,7 +410,6 @@ fun pause()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#pause()">pause()</a>
 </div>
 
-<br><br>
 ## play
 
 ```kotlin
@@ -449,7 +422,6 @@ fun play()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#play()">play()</a>
 </div>
 
-<br><br>
 ## prepare
 
 ```kotlin
@@ -462,7 +434,6 @@ fun prepare()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#prepare()">prepare()</a>
 </div>
 
-<br><br>
 ## release
 
 ```kotlin
@@ -475,7 +446,6 @@ fun release()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#release()">release()</a>
 </div>
 
-<br><br>
 ## seekBack
 
 ```kotlin
@@ -488,7 +458,6 @@ fun seekBack()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#seekBack()">seekBack()</a>
 </div>
 
-<br><br>
 ## seekBack
 
 ```kotlin
@@ -501,7 +470,6 @@ fun seekBack(increment: Duration)
 
 현재 위치에서 입력된 시간 전으로 이동하기 위한 메서드입니다.
 
-<br><br>
 ## seekForward
 
 ```kotlin
@@ -513,7 +481,6 @@ fun seekForward()
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player">Player</a>의 <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/Player#seekForward()">seekForward()</a>
 </div>
 
-<br><br>
 ## seekForward
 
 ```kotlin
@@ -526,7 +493,6 @@ fun seekForward(increment: Duration)
 
 현재 위치에서 입력된 시간 후로 이동하기 위한 메서드입니다.
 
-<br><br>
 ## seekTo
 
 ```kotlin
@@ -540,7 +506,6 @@ fun seekTo(position: Duration, force: Boolean = false)
 
 입력된 시간 위치로 이동하기 위한 메서드입니다.
 
-<br><br>
 ## addEventHandler
 
 ```kotlin
@@ -555,7 +520,6 @@ fun addEventHandler(handler: EventHandler): EventHandler
 반환된 이벤트 핸들러는 이벤트 핸들러를 제거할 목적으로 [removeEventHandler()](#removeeventhandler)에서 사용할 수 있습니다.
 이벤트 핸들러를 추가한 후, 해당 이벤트 핸들러가 더 이상 필요 없을 때는 반드시 [removeEventHandler()](#removeeventhandler) 메서드를 사용해서 제거하세요.
 
-<br><br>
 ## removeEventHandler
 
 ```kotlin
@@ -568,7 +532,6 @@ fun removeEventHandler(handler: EventHandler)
 
 [addEventHandler()](#addeventhandler)로 추가된 [이벤트 핸들러](../../class/event-handlers/home.md)를 제거하기 위한 메서드입니다.
 
-<br><br>
 ## addEventListener
 
 ```kotlin
@@ -581,7 +544,6 @@ fun addEventListener(listener: EventListener)
 
 [이벤트 리스너](../event-listeners/home.md)를 추가하기 위한 메서드입니다. 이벤트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener()](#removeeventlistener) 메서드를 사용해서 제거하세요.
 
-<br><br>
 ## removeEventListener
 
 ```kotlin
@@ -594,7 +556,8 @@ fun removeEventListener(listener: EventListener)
 
 [addEventListener()](#addeventlistener)로 추가된 [이벤트 리스너](../event-listeners/home.md)를 제거하기 위한 메서드입니다.
 
-<br><br>
+<br>
+
 # 클래스
 
 ## RepeatRange

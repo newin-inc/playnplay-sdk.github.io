@@ -8,7 +8,8 @@ extension MediaMetadata {
 ```
 제목, 아트워크, 다운로드 경로를 추가할 때 사용합니다. [.build()](#build)를 호출하여 구성을 완료합니다.
 
-<br><br>
+<br>
+
 # 생성자
 
 ```swift
@@ -17,7 +18,8 @@ init()
 
 파라미터 없이 미디어 메타데이터를 초기화합니다.
 
-<br><br>
+<br>
+
 # 메서드
 
 ## artworkUrl(_)
@@ -32,7 +34,6 @@ func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 
-<br><br>
 ## build()
 
 ```swift
@@ -46,7 +47,6 @@ func build() -> MediaMetadata
 <a href="../../struct/media-metadata/home.md">MediaMetadata</a>
 </div>
 
-<br><br>
 ## title(_)
 
 ```swift

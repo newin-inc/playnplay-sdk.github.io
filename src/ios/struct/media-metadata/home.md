@@ -6,7 +6,8 @@ struct MediaMetadata
 
 미디어 메타데이터를 나타내는 구조체입니다. 아래와 같은 속성 및 메서드를 제공합니다.
 
-<br><br>
+<br>
+
 # 속성
 
 ## artworkUrl
@@ -23,7 +24,6 @@ let artworkUrl: URL?
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 
-<br><br>
 ## expiresOn
 
 ```swift
@@ -38,7 +38,6 @@ let expiresOn: Date?
 참고: <a href="https://developer.apple.com/documentation/foundation/date">Date</a>
 </div>
 
-<br><br>
 ## title
 
 ```swift
@@ -49,7 +48,8 @@ let title: String?
 |:--:|:--:|
 |String?|미디어 아이템 제목|
 
-<br><br>
+<br>
+
 # 메서드
 
 ## buildUpon()
@@ -65,7 +65,8 @@ func buildUpon() -> MediaMetadata.Builder
 <a href="../../how-to-use/home.md#제목을-설정하는-예제">제목을 설정하는 예제</a>
 </div>
 
-<br><br>
+<br>
+
 # 클래스
 
 ## MediaMetadata.Builder 

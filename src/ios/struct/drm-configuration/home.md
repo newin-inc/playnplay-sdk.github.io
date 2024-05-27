@@ -10,7 +10,8 @@ DRM 설정을 위한 구조체입니다.
 참고: <a href="../../how-to-use/home.md#하나의-미디어-열기">하나의 미디어 열기</a>
 </div>
 
-<br><br>
+<br>
+
 # 생성자
 
 ```swift
@@ -25,7 +26,8 @@ init(appId: String, userId: String, userData: [String: Any])
 
 App 아이디, 사용자 아이디, 사용자 데이터를 입력하여 Drm 설정을 할 수 있습니다.
 
-<br><br>
+<br>
+
 # 속성
 
 ## appId
@@ -38,7 +40,6 @@ let appId: String
 |:--:|:--:|
 |String|App 아이디|
 
-<br><br>
 ## offlineAccessPeriod
 
 ```swift
@@ -54,7 +55,6 @@ var offlineAccessPeriod: Duration? = nil
 <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
 </div>
 
-<br><br>
 ## userData
 
 ```swift
@@ -69,7 +69,6 @@ var userData: [String : Any]
 참고: <a href="../../../agent/home.md#drm">DRM 내 userData</a>
 </div
 
-<br><br>
 ## userId
 
 ```swift
@@ -80,7 +79,8 @@ let userId: String
 |:--:|:--:|
 |String|사용자 아이디|
 
-<br><br>
+<br>
+
 # 메서드
 
 ## buildUpon()
@@ -96,7 +96,8 @@ Builder를 사용하여 DRM에 대한 초기 설정을 합니다.
 <a href="../../how-to-use/home.md#하나의-미디어-열기">하나의 미디어 열기</a>
 </div>
 
-<br><br>
+<br>
+
 # 클래스
 
 ## DrmConfiguration.Builder

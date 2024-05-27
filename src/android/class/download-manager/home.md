@@ -23,7 +23,8 @@ class DownloadManager private constructor(private val context: Context)
 
 다운로드 매니저 클래스는 아래와 같은 속성과 메서드를 가지고 있습니다.
 
-<br><br>
+<br>
+
 # 정적 속성
 
 ## shared
@@ -40,7 +41,8 @@ companion object {
 
 다운로드 매니저에 접근하기 위한 정적 속성입니다. 아래에 언급되는 속성 및 메서드를 호출할 때, DownloadManager.shared를 사용하여 접근할 수 있습니다.
 
-<br><br>
+<br>
+
 # 인터페이스
 
 ## DownloadManager.Listener
@@ -60,7 +62,8 @@ interface Listener {
 참고: <a href="../../interface/download-manager-listener/home.md">DownloadManager.Listener</a>
 </div>
 
-<br><br>
+<br>
+
 # 속성
 
 ## downloadsUri
@@ -80,7 +83,6 @@ var downloadsUri: Uri
 <a href="../download-item/home.md#touri">toUri</a>
 </div>
 
-<br><br>
 ## items
 
 ```kotlin
@@ -93,7 +95,6 @@ val items: List<DownloadItem>
 
 현재 다운로드 목록에 있는 아이템들을 반환하는 속성입니다.
 
-<br><br>
 ## maxParallelDownloads
 
 ```kotlin
@@ -106,7 +107,8 @@ var maxParallelDownloads: Int
 
 동시에 받을 수 있는 아이템의 최대 개수를 반환하거나 설정합니다.
 
-<br><br>
+<br>
+
 # 메서드
 
 ## add
@@ -126,7 +128,6 @@ fun add(mediaItem: MediaItem, allowsCellularAccess: Boolean = true): DownloadIte
 참고: <a href="../download-item/home.md#id">DownloadItemId</a>
 </div>
 
-<br><br>
 ## getItemsByStatus
 
 ```kotlin
@@ -139,7 +140,6 @@ fun getItemsByStatus(status: DownloadItem.Status): List<DownloadItem>
 
 특정 다운로드 상태의 아이템 목록을 가져오기 위해서 사용하는 메서드입니다.<br>
 
-<br><br>
 ## pause
 
 ```kotlin
@@ -152,7 +152,6 @@ fun pause(id: DownloadItemId)
 
 다운로드를 일시 정지할 때 사용하는 메서드입니다.
 
-<br><br>
 ## pauseAll
 
 ```kotlin
@@ -161,7 +160,6 @@ fun pauseAll()
 
 다운로드 목록에 있는 모든 아이템의 다운로드를 일시 정지하게 하는 메서드입니다.
 
-<br><br>
 ## remove
 
 ```kotlin
@@ -174,7 +172,6 @@ fun remove(id: DownloadItemId)
 
 다운로드 목록에서 아이템을 지울 때 사용하는 메서드입니다.
 
-<br><br>
 ## removeAll
 
 ```kotlin
@@ -183,7 +180,6 @@ fun removeAll()
 
 다운로드 아이템 목록을 모두 지우는 메서드입니다.
 
-<br><br>
 ## removeCompleted
 
 ```kotlin
@@ -192,7 +188,6 @@ fun removeCompleted()
 
 다운로드가 완료된 아이템을 목록에서 모두 지우는 메서드입니다.
 
-<br><br>
 ## resume
 
 ```kotlin
@@ -205,7 +200,6 @@ fun resume(id: DownloadItemId)
 
 다운로드를 일시 정지한 아이템의 다운로드를 재개하는 메서드입니다.
 
-<br><br>
 ## resumeAll
 
 ```kotlin
@@ -214,7 +208,6 @@ fun resumeAll()
 
 일시 정지한 모든 아이템의 다운로드를 재개하는 메서드입니다.
 
-<br><br>
 ## addListener
 
 ```kotlin
@@ -227,7 +220,6 @@ fun addListener(listener: Listener)
 
 [다운로드 매니저 리스너](../../interface/download-manager-listener/home.md)를 추가하기 위한 메서드입니다. 리스너를 추가한 후, 해당 리스너가 더 이상 필요 없을 때는 반드시 [removeListener()](#removelistener) 메서드를 사용해서 제거하세요.
 
-<br><br>
 ## removeListener
 
 ```kotlin

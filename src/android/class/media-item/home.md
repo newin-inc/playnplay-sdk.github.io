@@ -13,7 +13,8 @@ public final class MediaItem implements Bundleable
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>
 </div>
 
-<br><br>
+<br>
+
 # 속성
 
 ## returnUrl
@@ -31,7 +32,6 @@ val MediaItem.returnUrl: Uri?
 참고: <a href="../../../agent/home.md#mediaitem">MediaItem</a>내의 returnUrl
 </div>
 
-<br><br>
 ## seekable
 
 ```kotlin
@@ -44,7 +44,6 @@ val MediaItem.seekable: Boolean
 
 미디어의 Seek 기능 허용 여부를 나타내는 속성입니다.
 
-<br><br>
 ## title
 
 ```kotlin
@@ -57,7 +56,6 @@ val MediaItem.title: CharSequence?
 
 [미디어 메타 데이터](../media-metadata/home.md)에 저장된 [제목](../media-metadata/home.md#title)을 가져오는 속성입니다. 만약 [미디어 메타 데이터](../media-metadata/home.md)에 제목이 없다면, 파일 이름을 가져옵니다.
 
-<br><br>
 ## uri
 
 ```kotlin
@@ -70,7 +68,8 @@ val MediaItem.uri: Uri?
 
 미디어 아이템에 따라 로컬 주소가 나올 수도 있고, 웹 주소도 나올 수 있습니다.
 
-<br><br>
+<br>
+
 # 메서드
 
 ## withDrmConfiguration

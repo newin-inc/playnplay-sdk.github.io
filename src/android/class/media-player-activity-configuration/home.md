@@ -24,7 +24,8 @@ data class MediaPlayerActivityConfiguration(
 <a href="../../how-to-use/home.md#미디어-아이템-구성-예제">미디어 아이템 구성 예제</a>
 </div>
 
-<br><br>
+<br>
+
 # 생성자 파라미터
 
 |이름|타입|설명|필수|기본값|
@@ -38,7 +39,8 @@ data class MediaPlayerActivityConfiguration(
 |seekForwardIncrement|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 후로 이동하는 시간의 크기|X|10초|
 |screenOrientationLock|[ScreenOrientationLock](../../enum/media-player-activity-configuration-screen-orientation-lock/home.md)|화면 고정 방향|X|Off|
 
-<br><br>
+<br>
+
 # 정적 속성
 
 ## defaultConfiguration
@@ -55,7 +57,8 @@ companion object {
 
 기본 설정 값을 가져오는 정적 속성입니다. MediaPlayerActivityConfiguration.defaultConfiguration 를 사용하여 기본 설정 값을 가져올 수 있습니다.
 
-<br><br>
+<br>
+
 # 속성
 
 ## allowsBackgroundPlayback
@@ -70,7 +73,6 @@ var allowsBackgroundPlayback: Boolean = false
 
 백그라운드 재생을 허용할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## allowsCellularAccess
 
 ```kotlin
@@ -83,7 +85,6 @@ var allowsCellularAccess: Boolean = true
 
 미디어를 재생할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## allowsPictureInPicturePlayback
 
 ```kotlin
@@ -96,7 +97,6 @@ var allowsPictureInPicturePlayback: Boolean = true
 
 화면 속 화면 모드를 허용할 지 여부를 나타내는 속성입니다.
 
-<br><br>
 ## controllerShowTimeout
 
 ```kotlin
@@ -109,7 +109,6 @@ var controllerShowTimeout: Duration = Duration.ofSeconds(5)
 
 해당 시간만큼 아무 것도 입력하지 않으면 컨트롤러가 사라집니다. 0초로 설정할 경우에는 컨트롤러를 자동으로 숨기지 않습니다.
 
-<br><br>
 ## defaultPlaybackRate
 
 ```kotlin
@@ -122,7 +121,6 @@ var defaultPlaybackRate: Float = 1f
 
 미디어 재생 속도를 나타내는 속성입니다.
 
-<br><br>
 ## seekBackwardIncrement
 
 ```kotlin
@@ -135,7 +133,6 @@ var seekBackwardIncrement: Duration = Duration.ofSeconds(10)
 
 현재 위치에서 전으로 탐색하는 시간을 나타내는 속성입니다.
 
-<br><br>
 ## seekForwardIncrement
 
 ```kotlin
@@ -148,7 +145,6 @@ var seekForwardIncrement: Duration = Duration.ofSeconds(10)
 
 현재 위치에서 후로 탐색하는 시간을 나타내는 속성입니다.
 
-<br><br>
 ## screenOrientationLock
 
 ```kotlin
@@ -166,7 +162,8 @@ var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off
 <a href="#screenorientationlock-1">ScreenOrientationLock</a>
 </div>
 
-<br><br>
+<br>
+
 # 열거형
 
 ## ScreenOrientationLock

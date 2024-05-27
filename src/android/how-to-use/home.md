@@ -95,7 +95,6 @@ Button(
 참고: <a href="../class/context/home.md#startmediaplayerservice">startMediaPlayerService</a>
 </div>
 
-<br><br>
 ## MediaItem.fromUri
 
 미디어 주소를 파라미터로 입력하여 미디어 아이템을 구성합니다. 파라미터로 받을 수 있는 타입은 아래와 같습니다.
@@ -110,7 +109,6 @@ Button(
 <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem#fromUri(android.net.Uri)">MediaItem.fromUri(Uri)</a>
 </div>
 
-<br><br>
 ## withDrmConfiguration
 
 uri를 입력받아서 미디어 아이템을 만들 때, 반드시 DRM 설정을 합니다. 제공받은 App 아이디와 사용자 아이디(User ID)를 입력하면 됩니다.
@@ -118,7 +116,6 @@ uri를 입력받아서 미디어 아이템을 만들 때, 반드시 DRM 설정�
 참고: <a href="../class/media-item/home.md#withdrmconfiguration">MediaItem.withDrmConfiguration</a>
 </div>
 
-<br><br>
 ## presentMediaPlayer
 
 구성을 마친 미디어 아이템을 화면에 재생합니다.
@@ -127,7 +124,6 @@ uri를 입력받아서 미디어 아이템을 만들 때, 반드시 DRM 설정�
 참고: <a href="../class/context/home.md#presentmediaplayer">Context.presentMediaPlayer</a>
 </div>
 
-<br><br>
 ## 자막을 추가한 예제
 
 Media3에서 제공하는 setSubtitleConfigurations() 사용하여 자막을 추가할 수 있습니다.
@@ -152,7 +148,6 @@ val mediaItem = MediaItem.Builder()
 	.build()
 ```
 
-<br><br>
 ## Seek 기능을 제한한 예제
 
 미디어 아이템을 구성할 때, setSeekable(false)을 사용하여 Seek 기능을 제한할 수 있습니다.
@@ -168,7 +163,6 @@ val mediaItem = MediaItem.Builder()
     .build()
 ```
 
-<br><br>
 ## MediaPlayer
 
 ```kotlin

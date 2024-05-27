@@ -10,7 +10,8 @@ class TextTrack : MediaTrack
 부모 클래스: <a href="../media-track/home.md">MediaTrack</a>
 </div>
 
-<br><br>
+<br>
+
 # 클래스 메서드
 
 ## load(url:)
@@ -25,7 +26,8 @@ class func load(url: URL) async throws -> [TextTrack]
 
 url을 통해서, 자막을 가져오는 메서드입니다.
 
-<br><br>
+<br>
+
 # 클래스 
 
 ## TextTrack.Cue

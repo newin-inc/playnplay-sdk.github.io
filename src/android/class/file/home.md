@@ -13,7 +13,8 @@ public class File implements Serializable, Comparable<File>
 참고: <a href="https://developer.android.com/reference/java/io/File">java.io.File</a>
 </div>
 
-<br><br>
+<br>
+
 # 메서드
 
 ## toMediaItem

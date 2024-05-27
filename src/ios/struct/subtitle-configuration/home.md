@@ -10,7 +10,8 @@ struct SubtitleConfiguration
 참고: <a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a>
 </div>
 
-<br><br>
+<br>
+
 # 생성자
 
 ```swift
@@ -24,7 +25,8 @@ init(url: URL, language: String? = nil, label: String? = nil, mode: Mode = .auto
 |label|String?|자막 라벨|X|nil|
 |mode|[SubtitleConfiguration.Mode](#subtitleconfigurationmode)|자막 모드|X|[.autoSelect](../../enum/subtitle-configuration-mode/home.md#autoselect)|
 
-<br><br>
+<br>
+
 # 속성
 
 ## label
@@ -71,7 +73,8 @@ let url: URL
 |:--:|--|
 |[URL](https://developer.apple.com/documentation/foundation/url)|자막 주소|
 
-<br><br>
+<br>
+
 # 클래스
 
 ## SubtitleConfiguration.Builder
@@ -86,6 +89,8 @@ class Builder
 참고: <a href="../../class/subtitle-configuration-builder/home.md">SubtitleConfiguration.Builder</a>,<br>
 <a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a>
 </div>
+
+<br>
 
 # 열거형
 

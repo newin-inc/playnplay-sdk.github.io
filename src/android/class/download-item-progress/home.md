@@ -17,7 +17,8 @@ data class DownloadItem {
 참고: <a href="../download-item/home.md">DownloadItem</a>
 </div>
 
-<br><br>
+<br>
+
 # 속성
 
 ## downloadedSize
