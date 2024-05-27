@@ -63,8 +63,8 @@ var downloadsUrl: URL { get }
 다운로드된 아이템이 저장되는 디렉토리 중 최상위 디렉토리를 나타내는 속성입니다.
 
 <div align="right">
-참고: <a href="../../struct/download-item/home.md#displaypath">displayPath</a>, 
-<a href="../../struct/download-item/home.md#tourl">toUrl</a>, 
+참고: <a href="../../struct/download-item/home.md#displaypath">displayPath</a><br>
+<a href="../../struct/download-item/home.md#tourl">toUrl</a><br>
 <a href="https://developer.apple.com/documentation/foundation/url)">URL</a>
 </div>
 
@@ -117,7 +117,7 @@ var maxParallelDownloads: Int { get set }
 다운로드를 할 미디어 아이템을 추가합니다. 현재 다운로드가 진행되고 있는 아이템의 수가 [maxParallelDownloads](#maxparalleldownloads) 보다 적으면 바로 다운로드를 시작합니다. 셀룰러 데이터 사용을 허용하지 않으려면, allowsCellularAccess를 false로 설정하여 호출하십시오.
 
 <div align="right">
-참고: <a href="../../struct/media-item/home.md">MediaItem</a>, 
+참고: <a href="../../struct/media-item/home.md">MediaItem</a><br>
 <a href="../../struct/download-item/home.md#id-downloaditemid">DownloadItem.id</a>
 </div>
 
@@ -150,7 +150,7 @@ func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
 특정 다운로드 상태의 아이템 목록을 가져오기 위해서 사용하는 메서드입니다.
 
 <div align="right">
-참고: <a href="../../enum/download-item-status/home.md">DownloadItem.Status</a>, 
+참고: <a href="../../enum/download-item-status/home.md">DownloadItem.Status</a><br>
 <a href="../../struct/download-item/home.md">DownloadItem</a>
 </div>
 

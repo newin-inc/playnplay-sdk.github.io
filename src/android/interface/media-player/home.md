@@ -11,7 +11,7 @@ interface MediaPlayer : Player
 미디어 플레이어 인터페이스입니다. 활성화된 미디어 플레이어에 접근하는 방법은 [getMediaPlayer()](../../class/context/home.md#getmediaplayer)를 참고하세요.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player">androidx.media3.common.Player</a>, 
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player">androidx.media3.common.Player</a><br>
 <a href="../player/home.md">Player 확장 문서</a>
 </div>
 
@@ -184,7 +184,7 @@ val error: PlaybackException?
 최근 발생한 에러를 나타내는 속성입니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">androidx.media3.common.PlaybackException</a>, 
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">androidx.media3.common.PlaybackException</a><br>
 <a href="../../class/media-player-exception/home.md">MediaPlayerException</a>
 </div>
 

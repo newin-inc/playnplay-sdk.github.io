@@ -47,6 +47,6 @@ fun findBy(uri: Uri): PlaybackInfo?
 |uri|[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|[PlaybackInfo](../playback-info/home.md)?|미디어 uri를 입력하여 재생 정보를 반환|
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/android/net/Uri">android.net.Uri</a>, 
+참고: <a href="https://developer.android.com/reference/android/net/Uri">android.net.Uri</a><br>
 <a href="../playback-info/home.md">PlaybackInfo</a>
 </div>

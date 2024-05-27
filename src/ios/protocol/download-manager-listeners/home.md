@@ -77,6 +77,6 @@ func onStatusChanged(_ item: DownloadItem)
 다운로드 아이템의 상태가 변경될 때 처리를 위한 메서드입니다. 즉, 다운로드를 완료하였거나, 실패하였을 때 등의 상황에 추가적인 처리가 필요할 경우에 이 메서드를 사용할 수 있습니다.
 
 <div align="right">
-참고: <a href="../../struct/download-item/home.md">DownloadItem</a>, 
+참고: <a href="../../struct/download-item/home.md">DownloadItem</a><br>
 <a href="../../enum/download-item-status//home.md">DownloadItem.Status</a>
 </div>

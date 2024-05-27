@@ -37,7 +37,7 @@ func build() -> SubtitleConfiguration
 입력된 구성 요소를 바탕으로 자막을 구성합니다.
 
 <div align="right">
-참고: <a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a>, 
+참고: <a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a><br>
 <a href="../../struct/subtitle-configuration/home.md">SubtitleConfiguration</a>
 </div>
 

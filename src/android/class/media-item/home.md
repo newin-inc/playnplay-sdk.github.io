@@ -93,6 +93,6 @@ App 아이디와 사용자 아이디를 사용하여 DRM 설정을 하는 메서
 Callback URL에 전달할 데이터(사용자 데이터)와 오프라인 재생 기한 설정을 추가하여 DRM 설정을 할 수 있습니다.
 
 <div align="right">
-참고: <a href="../../../agent/home.md#drm">DRM 내 userData, offlineAccessPeriod</a>, 
+참고: <a href="../../../agent/home.md#drm">DRM 내 userData, offlineAccessPeriod</a><br>
 <a href="../../how-to-use/home.md#미디어-아이템-구성-예제">미디어 아이템 구성 예제</a>
 </div>

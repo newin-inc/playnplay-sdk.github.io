@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
 ```
 
 <div align="right">
-참고: <a href="../../class/context/home.md#startmediaplayerservice">Context.startMediaPlayerService</a>, 
-<a href="../../class/media-item/home.md#withdrmconfiguration">MediaItem.withDrmConfiguration</a>,
+참고: <a href="../../class/context/home.md#startmediaplayerservice">Context.startMediaPlayerService</a><br>
+<a href="../../class/media-item/home.md#withdrmconfiguration">MediaItem.withDrmConfiguration</a><br>
 <a href="../../class/context/home.md#presentmediaplayer">presentMediaPlayer</a>
 </div>

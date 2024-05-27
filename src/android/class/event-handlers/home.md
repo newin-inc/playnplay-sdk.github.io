@@ -58,7 +58,7 @@ data class Error(val listener: (PlaybackException) -> Unit) : EventHandler()
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/home.md#onerror">onError()</a><br>
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">androidx.media3.common.PlaybackException</a>,
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">androidx.media3.common.PlaybackException</a><br>
 <a href="../media-player-exception/home.md">MediaPlayerException</a>
 </div>
 
@@ -112,7 +112,7 @@ data class MediaItemTransition(val listener: (MediaItem?, @Player.MediaItemTrans
 참고: 이벤트 리스너는 [Player.Listener](https://developer.android.com/reference/androidx/media3/common/Player.Listener#onMediaItemTransition(androidx.media3.common.MediaItem,int))에서 제공하는 것을 사용하시면 됩니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>, 
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a><br>
 <a href="https://developer.android.com/reference/androidx/media3/common/Player.MediaItemTransitionReason">MediaItemTransitionReason</a>
 </div>
 
@@ -164,8 +164,8 @@ data class PlaybackFinish(val listener: (MediaItem, Duration, Duration?, Playbac
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/home.md#onplaybackfinish">onPlaybackFinish()</a><br>
-참고: <a href="#unload">Unload</a>, 
-<a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>, 
+참고: <a href="#unload">Unload</a><br>
+<a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a><br>
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
@@ -220,7 +220,7 @@ data class PositionDiscontinuity(
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/home.md#onpositiondiscontinuity">onPositionDiscontinuity()<a><br>
-참고: <a href="../../interface/media-player/home.md">MediaPlayer</a><br>, 
+참고: <a href="../../interface/media-player/home.md">MediaPlayer</a><br>
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 

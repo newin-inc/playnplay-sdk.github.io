@@ -20,7 +20,7 @@ data class MediaPlayerActivityConfiguration(
 미디어 플레이어의 설정을 도와주는 데이터 클래스입니다. 아래와 같은 생성자 파라미터 및 속성, 열거형을 가지고 있습니다. configuration은 [presentMediaPlayer()](../context/home.md#presentmediaplayer)를 호출할 때 사용하여 미디어 플레이어를 설정합니다.
 
 <div align="right">
-참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a>, 
+참고: <a href="../context/home.md#presentmediaplayer">presentMediaPlayer()</a><br>
 <a href="../../how-to-use/home.md#미디어-아이템-구성-예제">미디어 아이템 구성 예제</a>
 </div>
 
@@ -158,7 +158,7 @@ var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off
 화면의 고정 상태를 나타내는 속성입니다.
 
 <div align="right">
-참고: <a href="#defaultconfiguration">defaultConfiguration</a>, 
+참고: <a href="#defaultconfiguration">defaultConfiguration</a><br>
 <a href="#screenorientationlock-1">ScreenOrientationLock</a>
 </div>
 

@@ -51,7 +51,7 @@ var offlineAccessPeriod: Duration? = nil
 |[Duration](../../struct/duration/home.md)?|다운로드 컨텐츠의 오프라인 재생 기간|
 
 <div align="right">
-참고: <a href="../../struct/duration/home.md">Duration</a>, 
+참고: <a href="../../struct/duration/home.md">Duration</a><br>
 <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
 </div>
 

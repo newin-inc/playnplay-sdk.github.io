@@ -41,7 +41,7 @@ func build() -> MediaMetadata
 추가로 입력 받은 정보로부터 메타데이터를 최종 구성합니다.
 
 <div align="right">
-참고: <a href="../../how-to-use/home.md#제목을-설정하는-예제">제목을 설정하는 예제</a>, 
+참고: <a href="../../how-to-use/home.md#제목을-설정하는-예제">제목을 설정하는 예제</a><br>
 <a href="../../struct/media-metadata/home.md">MediaMetadata</a>
 </div>
 

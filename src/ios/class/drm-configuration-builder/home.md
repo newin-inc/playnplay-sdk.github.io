@@ -43,7 +43,7 @@ func offlineAccessPeriod(_ offlineAccessPeriod: Duration?) -> DrmConfiguration.B
 오프라인 재생 기한을 설정합니다.
 
 <div align="right">
-참고: <a href="../../struct/duration/home.md">Duration</a>, 
+참고: <a href="../../struct/duration/home.md">Duration</a><br>
 <a href="../../../agent/home.md#drm">DRM 내 offlineAccessPeriod</a>
 </div>
 
@@ -56,6 +56,6 @@ func userData(_ userData: [String : Any]) -> DrmConfiguration.Builder
 사용자 데이터(Callback URL에 전달할 데이터)를 추가합니다.
 
 <div align="right">
-참고: <a href="../../../agent/home.md#drm">DRM 내 userData</a>, 
+참고: <a href="../../../agent/home.md#drm">DRM 내 userData</a><br>
 <a href="../../how-to-use/home.md#하나의-미디어-열기">하나의 미디어 열기</a>
 </div>

@@ -79,7 +79,7 @@ var downloadsUri: Uri
 다운로드된 아이템이 저장되는 디렉토리 중 최상위 디렉토리를 나타내는 속성입니다.<br>
 
 <div align="right">
-참고: <a href="../download-item/home.md#displaypath">displayPath</a>, 
+참고: <a href="../download-item/home.md#displaypath">displayPath</a><br>
 <a href="../download-item/home.md#touri">toUri</a>
 </div>
 

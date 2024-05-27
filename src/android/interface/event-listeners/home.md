@@ -55,7 +55,7 @@ fun onError(error: PlaybackException)
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#error">Error</a><br>
-참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">androidx.media3.common.PlaybackException</a>, 
+참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">androidx.media3.common.PlaybackException</a><br>
 <a href="../../class/media-player-exception/home.md">MediaPlayerException</a>
 </div>
 
@@ -135,8 +135,8 @@ fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duratio
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#playbackfinish">PlayabackFinish</a><br>
-참고: <a href="#onunload">onUnload()</a>, 
-<a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a>, 
+참고: <a href="#onunload">onUnload()</a><br>
+<a href="https://developer.android.com/reference/androidx/media3/common/MediaItem">androidx.media3.common.MediaItem</a><br>
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 
@@ -174,7 +174,7 @@ fun onPositionDiscontinuity(
 
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#positiondiscontinuity">PositionDiscontinuity</a><br>
-참고: <a href="../../interface/media-player/home.md">MediaPlayer</a><br>, 
+참고: <a href="../../interface/media-player/home.md">MediaPlayer</a><br>
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 

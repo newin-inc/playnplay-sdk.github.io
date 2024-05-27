@@ -128,5 +128,8 @@ fun Player.selectTrack(track: Track)
 트랙을 선택하여 활성화하는 메서드입니다.
 
 <div align="right">
-참고: <a href="../../class/track/home.md">Track</a>, <a href="../../class/audio-track/home.md">AudioTrack</a>, <a href="../../class/subtitle-track/home.md">SubtitleTrack</a>, <a href="../../class/video-track/home.md">VideoTrack</a>
+참고: <a href="../../class/track/home.md">Track</a><br>
+<a href="../../class/audio-track/home.md">AudioTrack</a><br>
+<a href="../../class/subtitle-track/home.md">SubtitleTrack</a><br>
+<a href="../../class/video-track/home.md">VideoTrack</a>
 </div>

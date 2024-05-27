@@ -92,11 +92,11 @@ func openMedia() {
 ```
 
 <div align="right">
-참고: <a href="../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a>, 
-<a href="../class/drm-configuration-builder/home.md#userdata_">userData</a>, 
-<a href="https://developer.apple.com/documentation/foundation/url">URL</a>, 
-<a href="../struct/media-item/home.md">MediaItem</a>, 
-<a href="../class/uiviewcontroller/home.md#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a>
+참고: <a href="../class/drm-configuration-builder/home.md">DrmConfiguration.Builder</a><br>
+<a href="../struct/media-item/home.md">MediaItem</a><br>
+<a href="../class/uiviewcontroller/home.md#presentmediaitemsstartindexconfiguration">present(mediaItems:startIndex:configuration:)</a><br>
+<a href="https://developer.apple.com/documentation/foundation/url">URL</a><br>
+<a href="../class/drm-configuration-builder/home.md#userdata_">userData</a>
 </div>
 
 ### 재생 목록으로 열기
@@ -128,8 +128,8 @@ let mediaItem = MediaItem
 ```
 
 <div align="right">
-참고: <a href="../class/media-item-builder/home.md#mediametadata_">mediaMetadata()</a>, 
-<a href="../class/media-item-builder/home.md">MediaItem.Builder</a>,
+참고: <a href="../class/media-item-builder/home.md">MediaItem.Builder</a><br>
+<a href="../class/media-item-builder/home.md#mediametadata_">mediaMetadata()</a><br>
 <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 
@@ -153,9 +153,9 @@ let mediaItem = MediaItem
 ```
 
 <div align="right">
-참고: <a href="../class/subtitle-configuration-builder/home.md">SubtitleConfiguration.Builder</a>, 
-<a href="../struct/subtitle-configuration/home.md">SubtitleConfiguration.Mode</a>, 
-<a href="../class/media-item-builder/home.md">MediaItem.Builder</a>, 
+참고: <a href="../class/media-item-builder/home.md">MediaItem.Builder</a><br>
+<a href="../class/subtitle-configuration-builder/home.md">SubtitleConfiguration.Builder</a><br>
+<a href="../struct/subtitle-configuration/home.md">SubtitleConfiguration.Mode</a><br>
 <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 

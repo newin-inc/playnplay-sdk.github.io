@@ -86,7 +86,7 @@ class Builder
 자막을 만드는 클래스입니다. 자세한 내용은 [SubtitleConfiguration.Builder](../../class/subtitle-configuration-builder/home.md)를 참고하세요.
 
 <div align="right">
-참고: <a href="../../class/subtitle-configuration-builder/home.md">SubtitleConfiguration.Builder</a>,<br>
+참고: <a href="../../class/subtitle-configuration-builder/home.md">SubtitleConfiguration.Builder</a><br>
 <a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a>
 </div>
 

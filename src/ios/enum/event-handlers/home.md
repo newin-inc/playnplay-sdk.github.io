@@ -59,7 +59,7 @@ case error((_ error: Error) -> Void)
 
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onerrorerror">onError(error:)</a><br>
-참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a>, 
+참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a><br>
 <a href="../media-player-error/home.md">MediaPlayerError</a>
 </div>
 
@@ -100,7 +100,7 @@ case mediaItemTransition((_ item: MediaItem?) -> Void)
 미디어 아이템이 교체 되는 시점에 사용하기 위한 핸들러입니다.
 
 <div align="right">
-이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onmediaitemtransitionitem">onMediaItemTransition(item:)</a>,
+이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onmediaitemtransitionitem">onMediaItemTransition(item:)</a>
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
@@ -131,9 +131,9 @@ case pictureInPictureActiveChange((_ active: Bool) -> Void)
 
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onpictureinpictureactivechangeactive">onPictureInPictureActiveChange(active:)</a><br>
-참고: <a href="#pictureinpicturedidstart">pictureInPictureDidStart</a>,
-<a href="#pictureinpicturedidstop">pictureInPictureDidStop</a>,
-<a href="#pictureinpicturewillstart">pictureInPictureWillStart</a>,   
+참고: <a href="#pictureinpicturedidstart">pictureInPictureDidStart</a><br>
+<a href="#pictureinpicturedidstop">pictureInPictureDidStop</a><br>
+<a href="#pictureinpicturewillstart">pictureInPictureWillStart</a><br>   
 <a href="#pictureinpicturewillstop">pictureInPictureWillStop</a><br>
 </div>
 
@@ -243,8 +243,8 @@ case playbackFinish(
 
 <div align="right">
 이벤트 리스너: <a href="../../protocol/event-listeners/home.md#onplaybackfinishmediaitempositiondurationreason">onPlaybackFinish(mediaItem:position:duration:reason:)</a><br>
-참고: <a href="#unload">Unload</a>, 
-<a href="../../struct/media-item/home.md">MediaItem</a>, 
+참고: <a href="#unload">Unload</a><br>
+<a href="../../struct/media-item/home.md">MediaItem</a><br>
 <a href="../../struct/duration/home.md">Duration</a>
 </div>
 

@@ -215,7 +215,7 @@ var error: Error? { get }
 최근 발생한 에러를 반환하는 속성입니다.
 
 <div align="right">
-참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a>, 
+참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a><br>
 <a href="../../enum/media-player-error/home.md">MediaPlayerError</a>
 </div>
 

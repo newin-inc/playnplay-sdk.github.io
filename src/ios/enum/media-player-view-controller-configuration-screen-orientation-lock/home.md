@@ -7,7 +7,7 @@ enum ScreenOrientationLock : String
 화면 방향 고정 상태를 나타내는 열거형입니다. 
 
 <div align="right">
-참고: <a href="../../struct/media-player-view-controller-configuration/home.md">MediaPlayerViewController.Configuration</a><br>
+참고: <a href="../../struct/media-player-view-controller-configuration/home.md">MediaPlayerViewController.Configuration</a>
 </div>
 
 <br> 

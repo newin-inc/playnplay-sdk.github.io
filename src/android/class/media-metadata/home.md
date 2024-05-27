@@ -7,9 +7,9 @@ import androidx.media3.common.MediaMetadata
 미디어 메타 데이터 클래스입니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata">MediaMetadata</a>, 
-<a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#buildUpon()">MediaMetadata.buildUpon()</a>, 
-<a href="https://developer.android.com/reference/kotlin/androidx/media3/common/MediaMetadata.Builder">MediaMetadata.Builder</a>, 
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata">MediaMetadata</a><br>
+<a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#buildUpon()">MediaMetadata.buildUpon()</a><br>
+<a href="https://developer.android.com/reference/kotlin/androidx/media3/common/MediaMetadata.Builder">MediaMetadata.Builder</a><br>
 <a href="https://developer.android.com/reference/java/time/Duration">java.time.Duration</a>
 </div>
 

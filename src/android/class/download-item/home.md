@@ -11,10 +11,10 @@ data class DownloadItem
 다운로드 아이템을 나타내는 데이터 클래스입니다. 다운로드에 대한 정보, 진행 상태 등의 정보를 가지고 있습니다.
 
 <div align="right">
-참고: <a href="#id">DownloadItemId</a>, 
-<a href="../../enum/download-item-status/home.md">Status</a>,
-<a href="../../class/download-item-progress/home.md">Progress</a>, 
-<a href="../../enum/download-item-failed-reason/home.md">FailedReason</a>
+참고: <a href="#id">DownloadItemId</a><br>
+<a href="../../enum/download-item-failed-reason/home.md">FailedReason</a><br>
+<a href="../../class/download-item-progress/home.md">Progress</a><br>
+<a href="../../enum/download-item-status/home.md">Status</a>
 </div>
 
 # 속성

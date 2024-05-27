@@ -82,10 +82,10 @@ Button(
 ```
 
 <div align="right">
-참고: <a href="../class/media-player-activity-configuration/home.md#defaultconfiguration">defaultConfiguration</a>, 
-<a href="../class/media-player-activity-configuration/home.md#allowsbackgroundplayback">allowsBackgroundPlayback</a>, 
-<a href="../class/media-item/home.md#withdrmconfiguration">withDrmConfiguration</a>, 
-<a href="../class/context/home.md#presentmediaplayer">presentMediaPlayer()</a>
+참고: <a href="../class/media-player-activity-configuration/home.md#allowsbackgroundplayback">allowsBackgroundPlayback</a><br>
+<a href="../class/media-player-activity-configuration/home.md#defaultconfiguration">defaultConfiguration</a><br>
+<a href="../class/context/home.md#presentmediaplayer">presentMediaPlayer()</a><br>
+<a href="../class/media-item/home.md#withdrmconfiguration">withDrmConfiguration</a>
 </div>
 
 ## startMediaPlayerService
@@ -105,7 +105,7 @@ Button(
 | Uri | [android.net.Uri](https://developer.android.com/reference/android/net/Uri) 참고 |
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem#fromUri(java.lang.String)">MediaItem.fromUri(String)</a>,
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem#fromUri(java.lang.String)">MediaItem.fromUri(String)</a><br>
 <a href="https://developer.android.com/reference/androidx/media3/common/MediaItem#fromUri(android.net.Uri)">MediaItem.fromUri(Uri)</a>
 </div>
 

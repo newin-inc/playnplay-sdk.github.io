@@ -49,7 +49,7 @@ let returnUrl: URL?
 |[URL](https://developer.apple.com/documentation/foundation/url)?|[Agent](../../../agent/home.md)에서 설정한 미디어 아이템의 리턴 Url|
 
 <div align="right">
-참고: <a href="../../../agent/home.md#mediaitem">MediaItem</a>내의 returnUrl, 
+참고: <a href="../../../agent/home.md#mediaitem">MediaItem</a>내의 returnUrl<br>
 <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 
