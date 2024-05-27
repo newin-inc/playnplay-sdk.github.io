@@ -2,6 +2,7 @@
 
 ---
 다운로드 매니저를 사용하기 전에 반드시 AppDelegate 설정을 해야합니다. 
+
 ```swift
 func application(
     _ application: UIApplication,
@@ -14,7 +15,9 @@ func application(
     )
 }
 ```
+
 위와 같은 부분을 추가하여야, 앱이 백그라운드인 상태가 되어도 다운로드 관련 작업을 원활하게 진행할 수 있습니다.
+
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622941-application">application(_:handleEventsForBackgroundURLSession:completionHandler:)</a>
 </div>
@@ -31,9 +34,11 @@ class DownloadManager: NSObject, URLSessionDownloadDelegate
 # 정적 속성
 
 ## shared
+
 ```swift
 static let shared: DownloadManager { get }
 ```
+
 |타입|설명|설정|
 |:--:|:--:|:--:|
 |[DownloadManager](#downloadmanager)|현재 활성화된 다운로드 매니저에 접근하기 위한 속성|불가능|
@@ -44,14 +49,17 @@ static let shared: DownloadManager { get }
 # 속성
 
 ## downloadsUrl
+
 ```swift
 var downloadsUrl: URL { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[URL](https://developer.apple.com/documentation/foundation/url)|다운로드된 아이템이 저장되는 최상위 디렉토리|불가능|
 
 다운로드된 아이템이 저장되는 디렉토리 중 최상위 디렉토리를 나타내는 속성입니다.
+
 <div align="right">
 참고: <a href="../../struct/download-item/home.md#displaypath">displayPath</a>, 
 <a href="../../struct/download-item/home.md#tourl">toUrl</a>, 
@@ -60,23 +68,28 @@ var downloadsUrl: URL { get }
 
 <br><br>
 ## items
+
 ```swift
 var items: [DownloadItem] { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |\[[DownloadItem](../../struct/download-item/home.md)\]|현재 다운로드 목록에 있는 아이템들|불가능|
 
 현재 다운로드 목록에 있는 아이템들을 반환하는 속성입니다.
+
 <div align="right">
 참고: <a href="../../struct/download-item/home.md">DownloadItem</a>
 </div>
 
 <br><br>
 ## maxParallelDownloads
+
 ```swift
 var maxParallelDownloads: Int { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Int|동시에 다운받을 수 있는 아이템 최대 개수|가능|3|
@@ -87,12 +100,14 @@ var maxParallelDownloads: Int { get set }
 # 메서드
 
 ## add(mediaItem:allowsCellularAccess:)
+
 ```swift
 @discardableResult func add(
     mediaItem: MediaItem,
     allowsCellularAccess: Bool = true
 ) -> DownloadItem.Id
 ```
+
 |파라미터|타입|설명|필수|기본값|
 |:--:|:--:|--|:--:|:--:|
 |mediaItem|[MediaItem](../../struct/media-item/home.md)|추가하고자 하는 미디어 아이템|O|없음|
@@ -107,9 +122,11 @@ var maxParallelDownloads: Int { get set }
 
 <br><br>
 ## addListener(_)
+
 ```swift
 func addListener(_ listener: DownloadManager.Listener)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |listener|[DownloadManager.Listener](../../protocol/download-manager-listeners/home.md)|추가할 다운로드 매니저 리스너|
@@ -122,9 +139,11 @@ func addListener(_ listener: DownloadManager.Listener)
 
 <br><br>
 ## itemsByStatus(_)
+
 ```swift
 func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |status|[DownloadItem.Status](../../enum/download-item-status/home.md)|가져오고자 하는 아이템의 다운로드 상태|
@@ -138,9 +157,11 @@ func itemsByStatus(_ status: DownloadItem.Status) -> [DownloadItem]
 
 <br><br>
 ## pause(id:)
+
 ```swift
 func pause(id: DownloadItem.Id)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |id|[DownloadItem.Id](../../struct/download-item/home.md#id-downloaditemid)|일서 정지할 다운로드 아이템의 아이디|
@@ -153,16 +174,20 @@ func pause(id: DownloadItem.Id)
 
 <br><br>
 ## pauseAll()
+
 ```swift
 func pauseAll()
 ```
+
 다운로드 목록에 있는 모든 아이템의 다운로드를 일시 정지하게 하는 메서드입니다.
 
 <br><br>
 ## remove(id:)
+
 ```swift
 func remove(id: DownloadItem.Id)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |id|[DownloadItem.Id](../../struct/download-item/home.md#id-downloaditemid)|제거할 다운로드 아이템의 아이디|
@@ -175,23 +200,29 @@ func remove(id: DownloadItem.Id)
 
 <br><br>
 ## removeAll()
+
 ```swift
 func removeAll()
 ```
+
 다운로드 아이템 목록을 모두 지우는 메서드입니다.
 
 <br><br>
 ## removeCompleted()
+
 ```swift
 func removeCompleted()
 ```
+
 다운로드가 완료된 아이템을 목록에서 모두 지우는 메서드입니다.
 
 <br><br>
 ## removeListener(_)
+
 ```swift
 func removeListener(_ listener: DownloadManager.Listener)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |listener|[DownloadManager.Listener](../../protocol/download-manager-listeners/home.md)|제거할 다운로드 매니저 리스너|
@@ -202,10 +233,13 @@ func removeListener(_ listener: DownloadManager.Listener)
 참고: <a href="../../protocol/download-manager-listeners/home.md">DownloadManager.Listener</a>
 </div>
 <br><br>
+
 ## resume(id:)
+
 ```swift
 func resume(id: DownloadItem.Id)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |id|[DownloadItem.Id](../../struct/download-item/home.md#id-downloaditemid)|계속 진행할 다운로드 아이템의 아이디|
@@ -218,7 +252,9 @@ func resume(id: DownloadItem.Id)
 
 <br><br>
 ## resumeAll()
+
 ```swift
 func resumeAll()
 ```
+
 일시 정지한 모든 아이템의 다운로드를 재개하는 메서드입니다.

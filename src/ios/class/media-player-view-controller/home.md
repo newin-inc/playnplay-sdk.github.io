@@ -11,31 +11,37 @@ class MediaPlayerViewController: UIViewController, UIGestureRecognizerDelegate
 # 속성
 
 ## configuration
+
 ```swift
 private(set) var configuration: MediaPlayerViewController.Configuration
 ```
+
 |타입|설명|설정|
 |:--:|:--:|:--:|
 |[MediaPlayerViewController.Configuration](#mediaplayerviewcontrollerconfiguration)|설정 값|불가능|
 
 현재 설정을 나타내는 속성입니다.
+
 <div align="right">
 참고: <a href="#mediaplayerviewcontrollerconfiguration">MediaPlayerViewController.Configuration</a>
 </div>
 
-
 ## controllerShowTimeout
+
 ```swift
 var controllerShowTimeout: Duration = .seconds(5)
 ```
+
 |타입|설명|설정|기본값|
 |:--:|:--:|:--:|:--:|
 |[Duration](../../struct/duration/home.md)|컨트롤러를 보여줄 최대 시간|가능|5초|
 
 ## player
+
 ```swift
 private(set) var player: MediaPlayer
 ```
+
 |타입|설명|설정|
 |:--:|:--:|:--:|
 |[MediaPlayer](../media-player/home.md)|현재 활성화 된 미디어 플레이어|불가능|

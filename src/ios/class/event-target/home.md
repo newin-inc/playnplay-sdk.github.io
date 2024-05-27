@@ -5,6 +5,7 @@ extension MediaPlayer {
     public typealias EventTarget = MediaPlayerEventTarget
 }
 ```
+
 ```swift
 class MediaPlayerEventTarget: Equatable
 ```

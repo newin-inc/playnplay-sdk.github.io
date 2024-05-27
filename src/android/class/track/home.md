@@ -17,9 +17,11 @@ sealed class Track
 # 속성
 
 ## type
+
 ```kotlin
 val type: @TrackType Int
 ```
+
 ```java
 public @interface TrackType {}
 
@@ -27,6 +29,7 @@ public static final int TRACK_TYPE_AUDIO = 1;
 public static final int TRACK_TYPE_VIDEO = 2;
 public static final int TRACK_TYPE_TEXT = 3;
 ```
+
 |타입|설명|
 |:--:|:--:|
 |@[TrackType](https://developer.android.com/reference/androidx/media3/common/C.TrackType) Int|현재 트랙의 종류를 나타냄|
@@ -39,9 +42,11 @@ public static final int TRACK_TYPE_TEXT = 3;
 
 <br><br>
 ## format
+
 ```kotlin
 val format: Format
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[Format](https://developer.android.com/reference/androidx/media3/common/Format)|트랙의 [포맷](https://developer.android.com/reference/androidx/media3/common/Format)|
@@ -54,9 +59,11 @@ val format: Format
 
 <br><br>
 ## isSelected
+
 ```kotlin
 val isSelected: Boolean
 ```
+
 |타입|설명|
 |:--:|:--:|
 |Boolean|트랙의 선택 여부|

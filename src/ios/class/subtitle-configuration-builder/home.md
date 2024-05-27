@@ -14,6 +14,7 @@ extension SubtitleConfiguration {
 ```swift
 init(url: URL)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
 |url|[URL](https://developer.apple.com/documentation/foundation/url)|자막 주소|
@@ -28,9 +29,11 @@ URL을 입력받아서 초기 설정을 합니다.
 # 메서드
 
 ## build()
+
 ```swift
 func build() -> SubtitleConfiguration
 ```
+
 입력된 구성 요소를 바탕으로 자막을 구성합니다.
 
 <div align="right">
@@ -40,9 +43,11 @@ func build() -> SubtitleConfiguration
 
 <br><br>
 ## label(_)
+
 ```swift
 func label(_ label: String?) -> SubtitleConfiguration.Builder
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |label|String?|설정하고자 하는 라벨|
@@ -51,9 +56,11 @@ func label(_ label: String?) -> SubtitleConfiguration.Builder
 
 <br><br>
 ## language(_)
+
 ```swift
 func language(_ language: String?) -> SubtitleConfiguration.Builder
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |language|String?|설정하고자 하는 언어|
@@ -62,14 +69,17 @@ func language(_ language: String?) -> SubtitleConfiguration.Builder
 
 <br><br>
 ## mode(_)
+
 ```swift
 func mode(_ mode: SubtitleConfiguration.Mode) -> SubtitleConfiguration.Builder
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |mode|[SubtitleConfiguration.Mode](../../enum/subtitle-configuration-mode/home.md)|설정하고자 하는 자막 모드|
 
 모드를 설정합니다.
+
 <div align="right">
 참고: <a href="../../enum/subtitle-configuration-mode/home.md">SubtitleConfiguration.Mode</a>
 </div>

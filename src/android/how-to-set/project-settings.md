@@ -10,7 +10,6 @@
 
 [안드로이드 SDK 샘플 다운로드](https://app.playnplay.com/sdks/latest/NPlayerSDKSample-android.zip)
 
-
 ## 안드로이드 SDK 추가
 
 안드로이드 SDK가 포함된 디렉토리는 프로젝트 내 어디든 상관없습니다.
@@ -98,7 +97,6 @@ android {
 | 이름   | 설명 |
 |-------|-----|
 | android.intent.action.<br>DOWNLOAD_COMPLETE | 다운로드가 완료될 때 다운로드 매니저가 보내는 브로드캐스트 인텐트 액션 |
-
 
 ### 미디어 및 플레이어 관련 설정 추가
 

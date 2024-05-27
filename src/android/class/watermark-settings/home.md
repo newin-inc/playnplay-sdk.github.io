@@ -33,6 +33,7 @@ data class WatermarkSettings {
     enum class Position
 }
 ```
+
 워터마크의 위치를 나타내는 열거형입니다.
 
 | 이름 | 위치 |

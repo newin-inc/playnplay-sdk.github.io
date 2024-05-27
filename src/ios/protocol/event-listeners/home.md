@@ -5,6 +5,7 @@ extension MediaPlayer {
     public typealias Listener = MediaPlayerListener
 }
 ```
+
 ```swift
 protocol MediaPlayerListener : AnyObject
 ```
@@ -16,14 +17,17 @@ EventListener는 이벤트 처리를 위한 프로토콜로, 위와 같은 메�
 # 메서드
 
 ## onCueChange(textCues:)
+
 ```swift
 func onCueChange(textCues: [TextTrack.Cue])
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |textCues|\[[TextTrack.Cue](../../class/text-track/home.md#cue)\]|자막 큐들|
 
 자막 큐가 변경되는 시점에 실행합니다.
+
 <div align="right">
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#textcuechange">MediaPlayer.EventHandler.textCueChange</a><br>
 참고: <a href="../../class/text-track/home.md#texttrackcue">TextTrack.Cue</a>
@@ -31,9 +35,11 @@ func onCueChange(textCues: [TextTrack.Cue])
 
 <br><br>
 ## onDurationChange(duration:)
+
 ```swift
 func onDurationChange(duration: Duration)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |duration|[Duration](../../struct/duration/home.md)|미디어 길이|
@@ -47,9 +53,11 @@ func onDurationChange(duration: Duration)
 
 <br><br>
 ## onEnded()
+
 ```swift
 func onEnded()
 ```
+
 재생 목록의 마지막 미디어의 재생이 완료된 시점에 실행합니다.
 
 <div align="right">
@@ -58,14 +66,17 @@ func onEnded()
 
 <br><br>
 ## onError(error:)
+
 ```swift
 func onError(error: Error)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |error|[Error](https://developer.apple.com/documentation/swift/error)|에러|
 
 에러가 발생할 때 실행합니다.
+
 <div align="right">
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#error">MediaPlayer.EventHandler.error</a><br>
 참고: <a href="https://developer.apple.com/documentation/swift/error">Error</a>, 
@@ -74,19 +85,24 @@ func onError(error: Error)
 
 <br><br>
 ## onLoadedData()
+
 ```swift
 func onLoadedData()
 ```
+
 미디어 아이템이 로드되었을 때 실행합니다.
+
 <div align="right">
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#loadeddata">MediaPlayer.EventHandler.loadedData</a>
 </div>
 
 <br><br>
 ## onLoadStart()
+
 ```swift
 func onLoadStart()
 ```
+
 미디어 리소스를 로딩하기 시작할 때 실행합니다.
 
 <div align="right">
@@ -95,9 +111,11 @@ func onLoadStart()
 
 <br><br>
 ## onMediaItemTransition(item:)
+
 ```swift
 func onMediaItemTransition(item: MediaItem?)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |item|[MediaItem](../../struct/media-item/home.md)|교체된 미디어 아이템|
@@ -111,9 +129,11 @@ func onMediaItemTransition(item: MediaItem?)
 
 <br><br>
 ## onPause()
+
 ```swift
 func onPause()
 ```
+
 미디어가 일시 정지 상태로 진입하는 시점에 실행합니다.
 
 <div align="right">
@@ -123,6 +143,7 @@ func onPause()
 
 <br><br>
 ## onPictureInPictureActiveChange(active:)
+
 ```swift
 func onPictureInPictureActiveChange(active: Bool)
 ```
@@ -142,6 +163,7 @@ func onPictureInPictureActiveChange(active: Bool)
 </div>
 
 ## onPictureInPicturePossibleChange(possible:)
+
 ```swift
 func onPictureInPicturePossibleChange(possible: Bool)
 ```
@@ -158,9 +180,11 @@ func onPictureInPicturePossibleChange(possible: Bool)
 
 <br><br>
 ## onPictureInPictureDidStart()
+
 ```swift
 func onPictureInPictureDidStart()
 ```
+
 화면 속 화면 모드가 시작한 후 실행합니다.<br>
 화면 속 화면 모드로 들어가면, [onPictureInPictureWillStart()](#onpictureinpicturewillstart) → [onPictureInPictureActiveChange](#onpictureinpictureactivechangeactive)(true) → [onPictureInPictureDidStart()](#onpictureinpicturedidstart)의 순서대로 실행합니다.
 
@@ -170,9 +194,11 @@ func onPictureInPictureDidStart()
 
 <br><br>
 ## onPictureInPictureDidStop()
+
 ```swift
 func onPictureInPictureDidStart()
 ```
+
 화면 속 화면 모드가 끝나면 실행합니다.<br>
 화면 속 화면 모드가 종료되면, [onPictureInPictureWillStop()](#onpictureinpicturewillstop) → [onPictureInPictureActiveChange](#onpictureinpictureactivechangeactive)(false) → [onPictureInPictureDidStop()](#onpictureinpicturedidstop)의 순서대로 호출됩니다.
 
@@ -182,9 +208,11 @@ func onPictureInPictureDidStart()
 
 <br><br>
 ## onPictureInPictureWillStart()
+
 ```swift
 func onPictureInPictureWillStart()
 ```
+
 화면 속 화면 모드가 시작하기 직전에 실행합니다.<br>
 화면 속 화면 모드로 들어가면, [onPictureInPictureWillStart()](#onpictureinpicturewillstart) → [onPictureInPictureActiveChange](#onpictureinpictureactivechangeactive)(true) → [onPictureInPictureDidStart()](#onpictureinpicturedidstart)의 순서대로 실행합니다.
 
@@ -194,9 +222,11 @@ func onPictureInPictureWillStart()
 
 <br><br>
 ## onPictureInPictureWillStop()
+
 ```swift
 func onPictureInPictureWillStop()
 ```
+
 화면 속 화면 모드가 끝나기 직전애 실행합니다.<br>
 화면 속 화면 모드가 종료되면, [onPictureInPictureWillStop()](#onpictureinpicturewillstop) → [onPictureInPictureActiveChange](#onpictureinpictureactivechangeactive)(false) → [onPictureInPictureDidStop()](#onpictureinpicturedidstop)의 순서대로 호출됩니다.
 
@@ -206,9 +236,11 @@ func onPictureInPictureWillStop()
 
 <br><br>
 ## onPlay()
+
 ```swift
 func onPlay()
 ```
+
 미디어가 일시 정지 상태에서 재생 상태로 변경되는 시점에 실행합니다.
 사용자가 재생 버튼을 클릭하거나 mediaPlayer.[play()](../../class/media-player/home.md#play)를 호출하는 등 플레이어에 재생 명령을 내렸을 때 등과 같이 명령을 했을 때 상황에서 이벤트 처리를 여기서 할 수 있습니다.
 [onPlay](#onplay)가 실행된 이후에 [onPlaying](#onplaying)는 언제나 호출됩니다.
@@ -222,6 +254,7 @@ func onPlay()
 
 <br><br>
 ## onPlaybackFinish(mediaItem:position:duration:reason:)
+
 ```swift
 public func onPlaybackFinish(
     mediaItem: MediaItem,
@@ -249,9 +282,11 @@ public func onPlaybackFinish(
 
 <br><br>
 ## onPlaybackStateChange(state:)
+
 ```swift
 func onPlaybackStateChange(state: MediaPlayer.PlaybackState)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |state|[MediaPlayer.PlaybackState](../../enum/media-player-playback-state/home.md)|재생 상태|
@@ -265,9 +300,11 @@ func onPlaybackStateChange(state: MediaPlayer.PlaybackState)
 
 <br><br>
 ## onPlaying()
+
 ```swift
 func onPlaying()
 ```
+
 미디어가 재생 상태로 변한 직후에 실행합니다.
 playing과 관련된 이벤트 핸들러는 play 이벤트 이후에 항상 호출됩니다.
 
@@ -278,9 +315,11 @@ playing과 관련된 이벤트 핸들러는 play 이벤트 이후에 항상 호�
 
 <br><br>
 ## onPositionDiscontinuity(oldPosition:newPosition:)
+
 ```swift
 func onPositionDiscontinuity(oldPosition: Duration, newPosition: Duration)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |oldPosition|[Duration](../../struct/duration/home.md)|이전 재생 위치|
@@ -295,9 +334,11 @@ func onPositionDiscontinuity(oldPosition: Duration, newPosition: Duration)
 
 <br><br>
 ## onProgress()
+
 ```swift
 func onProgress()
 ```
+
 플레이어가 리소스를 읽을 때 실행합니다.
 
 <div align="right">
@@ -306,9 +347,11 @@ func onProgress()
 
 <br><br>
 ## onRateChange(rate:)
+
 ```swift
 func onRateChange(rate: Float)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |rate|Float|재생 속도|
@@ -321,14 +364,17 @@ func onRateChange(rate: Float)
 
 <br><br>
 ## onRepeatModeChange(mode:)
+
 ```swift
 func onRepeatModeChange(mode: MediaPlayer.RepeatMode)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |mode|[MediaPlayer.RepeatMode](../../enum/media-player-repeat-mode/home.md)|반복 모드 종류|
 
 반복 모드가 설정되었을 때 실행합니다.
+
 <div align="right">
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#repeatmodechange">MediaPlayer.EventHandler.repeatModeChange</a><br>
 참고: <a href="../../enum/media-player-repeat-mode/home.md">MediaPlayer.RepeatMode</a>
@@ -336,9 +382,11 @@ func onRepeatModeChange(mode: MediaPlayer.RepeatMode)
 
 <br><br>
 ## onRepeatRangeChange(range:)
+
 ```swift
 func onRepeatRangeChange(range: MediaPlayer.RepeatRange?)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |range|[MediaPlayer.RepeatRange](../../struct/media-player-repeat-range/home.md)?|구간 반복에서의 구간|
@@ -352,6 +400,7 @@ func onRepeatRangeChange(range: MediaPlayer.RepeatRange?)
 
 <br><br>
 ## onScalingModeChange(mode:)
+
 ```swift
 func onScalingModeChange(mode: MediaPlayer.ScalingMode)
 ```
@@ -368,9 +417,11 @@ func onScalingModeChange(mode: MediaPlayer.ScalingMode)
 
 <br><br>
 ## onSeeked()
+
 ```swift
 func onSeeked()
 ```
+
 seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, 또는 seeking 값이 false로 변경되는 시점에 실행합니다.
 
 <div align="right">
@@ -379,9 +430,11 @@ seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, �
 
 <br><br>
 ## onSeeking()
+
 ```swift
 func onSeeking()
 ```
+
 seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 변경되는 시점에 실행합니다.
 
 <div align="right">
@@ -390,9 +443,11 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 
 <br><br>
 ## onTimeUpdate(position:)
+
 ```swift
 func onTimeUpdate(position: Duration)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |position|[Duration](../../struct/duration/home.md)|현재 재생 위치|
@@ -406,6 +461,7 @@ func onTimeUpdate(position: Duration)
 
 <br><br>
 ## onUnload(mediaItem:)
+
 ```swift
 func onUnload(mediaItem: MediaItem)
 ```
@@ -423,9 +479,11 @@ func onUnload(mediaItem: MediaItem)
 
 <br><br>
 ## onVideoSizeChange(size:)
+
 ```swift
 func onVideoSizeChange(size: CGSize)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |size|[CGSize](https://developer.apple.com/documentation/corefoundation/cgsize)|영상 사이즈|
@@ -439,9 +497,11 @@ func onVideoSizeChange(size: CGSize)
 
 <br><br>
 ## onVolumeChange(volume:muted:)
+
 ```swift
 func onVolumeChange(volume: Float, muted: Bool)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |volume|Float|디바이스 음량|
@@ -455,9 +515,11 @@ func onVolumeChange(volume: Float, muted: Bool)
 
 <br><br>
 ## onWaiting()
+
 ```swift
 func onWaiting()
 ```
+
 일시적인 버퍼 부족, 즉 데이터가 충분히 로딩되지 못하거나 데이터가 없어서 재생이 정지된 시점에 실행됩니다. [playbackState](../../enum/media-player-playback-state/home.md)가 .buffering이 될 때 호출됩니다.
 
 <div align="right">

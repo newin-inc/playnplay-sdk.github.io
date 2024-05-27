@@ -16,9 +16,11 @@ public interface Player
 # 속성
 
 ## audioTracks
+
 ```kotlin
 val Player.audioTracks: List<Track>
 ```
+
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |List\<[Track](../../class/track/home.md)\>|오디오 트랙 목록|불가능|
@@ -31,23 +33,28 @@ val Player.audioTracks: List<Track>
 
 <br><br>
 ## currentWatermarkSettings
+
 ```kotlin
 val Player.currentWatermarkSettings: WatermarkSettings?
 ```
+
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |[WatermarkSettings](../../class/watermark-settings/home.md)|오디오 트랙 목록|불가능|
 
 현재 워터마크 설정 상태를 반환하는 속성입니다.
+
 <div align="right">
 참고: <a href="../../class/watermark-settings/home.md">WatermarkSettings</a>
 </div>
 
 <br><br>
 ## isSeekable
+
 ```kotlin
 val Player.isSeekable: Boolean
 ```
+
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |Boolean|Seek 기능 사용 가능 여부|불가능|
@@ -56,9 +63,11 @@ val Player.isSeekable: Boolean
 
 <br><br>
 ## subtitleTracks
+
 ```kotlin
 val Player.subtitleTracks: List<Track>
 ```
+
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |List\<[Track](../../class/track/home.md)\>|자막 트랙 목록|불가능|
@@ -71,9 +80,11 @@ val Player.subtitleTracks: List<Track>
 
 <br><br>
 ## videoTracks
+
 ```kotlin
 val Player.videoTracks: List<Track>
 ```
+
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |List\<[Track](../../class/track/home.md)\>|비디오 트랙 목록|불가능|
@@ -88,9 +99,11 @@ val Player.videoTracks: List<Track>
 # 메서드
 
 ## enterPictureInPicture
+
 ```kotlin
 fun Player.enterPictureInPicture(activity: Activity, sourceRectHint: Rect? = null)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|---|
 |activity|Activity|현재 액티비티|
@@ -99,6 +112,7 @@ fun Player.enterPictureInPicture(activity: Activity, sourceRectHint: Rect? = nul
 ```kotlin
 fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|---|
 |activity|Activity|현재 액티비티|
@@ -108,9 +122,11 @@ fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
 
 <br><br>
 ## selectTrack
+
 ```kotlin
 fun Player.selectTrack(track: Track)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|---|
 |track|[Track](../../class/track/home.md)|활성화 할 (오디오,비디오,자막)트랙|

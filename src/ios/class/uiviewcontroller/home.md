@@ -10,11 +10,13 @@ extension UIViewController
 # 속성
 
 ## mediaPlayerViewController
+
 ```swift
 extension UIViewController { 
     public var mediaPlayerViewController: MediaPlayerViewController? { get }
 }
 ```
+
 |타입|설명|설정|
 |:--:|:--:|:--:|
 |[MediaPlayerViewController](../../class/media-player-view-controller/home.md)?|현재 뷰 컨트롤러가 제공하는 [미디어 플레이어 뷰 컨트롤러](../../class/media-player-view-controller/home.md)|불가능|
@@ -25,6 +27,7 @@ extension UIViewController {
 # 메서드
 
 ## present(mediaItems:startIndex:configuration:)
+
 ```swift
 extension UIViewController {
     public func present(
@@ -92,6 +95,7 @@ public func present(
     }
 }
 ```
+
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621380-present">present(_:animated:completion:)</a>
 </div>

@@ -47,11 +47,13 @@ App 아이디를 가져오는 속성입니다.
 
 <br><br>
 ## offlineAccessPeriod
+
 ```kotlin
 import com.newin.nplayer.sdk.extensions.offlineAccessPeriod
 
 val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
 ```
+
 |타입|설명|설정|
 |:--:|:--:|:--:|
 |Duration?|오프라인 재생 기간|불가능|
@@ -65,9 +67,11 @@ val MediaItem.DrmConfiguration.offlineAccessPeriod: Duration?
 
 <br><br>
 ## userId
+
 ```kotlin
 val MediaItem.DrmConfiguration.userId: String?
 ```
+
 |타입|설명|설정|
 |:--:|:--:|:--:|
 |String?|사용자 아이디|불가능|

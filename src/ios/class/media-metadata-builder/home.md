@@ -10,28 +10,35 @@ extension MediaMetadata {
 
 <br><br>
 # 생성자
+
 ```swift
 init()
 ```
+
 파라미터 없이 미디어 메타데이터를 초기화합니다.
 
 <br><br>
 # 메서드
 
 ## artworkUrl(_)
+
 ```swift
 func artworkUrl(_ artworkUrl: URL?) -> MediaMetadata.Builder
 ``` 
+
 아트워크를 추가합니다.
+
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
 
 <br><br>
 ## build()
+
 ```swift
 func build() -> MediaMetadata
 ``` 
+
 추가로 입력 받은 정보로부터 메타데이터를 최종 구성합니다.
 
 <div align="right">
@@ -41,7 +48,9 @@ func build() -> MediaMetadata
 
 <br><br>
 ## title(_)
+
 ```swift
 func title(_ title: String?) -> MediaMetadata.Builder
 ``` 
+
 제목을 추가합니다.

@@ -14,23 +14,28 @@ data class PlaybackInfo
 # 속성
 
 ## artworkUri
+
 ```kotlin
 val artworkUri: Uri?
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|미디어 아이템의 아트워크 주소|
 
 미디어 아이템의 아트워크 경로를 나타내는 속성입니다.
+
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/MediaMetadata#artworkUri()">media3의 artworkUri</a>
 </div>
 
 <br><br>
 ## duration
+
 ```kotlin
 val duration: Duration?
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|미디어 아이템의 전체 길이|
@@ -39,9 +44,11 @@ val duration: Duration?
 
 <br><br>
 ## expiresOn
+
 ```kotlin
 val expiresOn: Instant?
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[java.time.Instant](https://developer.android.com/reference/java/time/Instant)|만료 일시|
@@ -50,9 +57,11 @@ val expiresOn: Instant?
 
 <br><br>
 ## lastPlayedTime
+
 ```kotlin
 val lastPlayedTime: Duration?
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|마지막 재생 위치|
@@ -61,9 +70,11 @@ val lastPlayedTime: Duration?
 
 <br><br>
 ## uri
+
 ```kotlin
 val uri: Uri
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|재생 미디어의 주소|

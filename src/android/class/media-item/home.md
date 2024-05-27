@@ -6,6 +6,7 @@ import androidx.media3.common.MediaItem
 ```java
 public final class MediaItem implements Bundleable
 ```
+
 [미디어 아이템](https://developer.android.com/reference/androidx/media3/common/MediaItem)의 정보를 가져올 수 있는 위의 속성 및 메서드를 제공합니다. [Agent](../../../agent/home.md)에서 설정한 값을 불러올 수 있습니다.
 
 <div align="right">
@@ -16,9 +17,11 @@ public final class MediaItem implements Bundleable
 # 속성
 
 ## returnUrl
+
 ```kotlin
 val MediaItem.returnUrl: Uri?
 ```
+
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |[android.net.Uri](https://developer.android.com/reference/android/net/Uri)?|미디어 아이템의 리턴 Url| 불가능 |
@@ -30,9 +33,11 @@ val MediaItem.returnUrl: Uri?
 
 <br><br>
 ## seekable
+
 ```kotlin
 val MediaItem.seekable: Boolean
 ```
+
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
 |Boolean|탐색(Seek) 기능 허용 여부 | 불가능 | true |
@@ -41,9 +46,11 @@ val MediaItem.seekable: Boolean
 
 <br><br>
 ## title
+
 ```kotlin
 val MediaItem.title: CharSequence?
 ```
+
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |CharSequence?|미디어의 제목| 불가능 |
@@ -52,9 +59,11 @@ val MediaItem.title: CharSequence?
 
 <br><br>
 ## uri
+
 ```kotlin
 val MediaItem.uri: Uri?
 ```
+
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
 |[android.net.Uri](https://developer.android.com/reference/android/net/Uri)?| 미디어 아이템의 주소 | 불가능 |
@@ -65,6 +74,7 @@ val MediaItem.uri: Uri?
 # 메서드
 
 ## withDrmConfiguration
+
 ```kotlin
 import com.newin.nplayer.sdk.extensions.withDrmConfiguration
 

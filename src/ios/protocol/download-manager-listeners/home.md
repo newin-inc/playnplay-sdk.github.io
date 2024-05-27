@@ -5,6 +5,7 @@ extension DownloadManager {
     public typealias Listener = DownloadManagerListener
 }
 ```
+
 ```swift
 protocol DownloadManagerListener: AnyObject
 ```
@@ -16,9 +17,11 @@ DownloadManager.Listener(DownloadManagerListener)는 다운로드와 관련된 �
 # 메서드
 
 ## onItemAdded(_)
+
 ```swift
 func onItemAdded(_ item: DownloadItem)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
 |item|[DownloadItem](../../struct/download-item/home.md)|처리하고자 하는 다운로드 아이템|
@@ -31,9 +34,11 @@ func onItemAdded(_ item: DownloadItem)
 
 <br><br>
 ## onItemRemoved(_)
+
 ```swift
 func onItemRemoved(_ item: DownloadItem)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
 |item|[DownloadItem](../../struct/download-item/home.md)|처리하고자 하는 다운로드 아이템|
@@ -46,9 +51,11 @@ func onItemRemoved(_ item: DownloadItem)
 
 <br><br>
 ## onProgressUpdated(_)
+
 ```swift
 func onProgressUpdated(_ item: DownloadItem)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
 |item|[DownloadItem](../../struct/download-item/home.md)|처리하고자 하는 다운로드 아이템|
@@ -61,9 +68,11 @@ func onProgressUpdated(_ item: DownloadItem)
 
 <br><br>
 ## onStatusChanged(_)
+
 ```swift
 func onStatusChanged(_ item: DownloadItem)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
 |item|[DownloadItem](../../struct/download-item/home.md)|처리하고자 하는 다운로드 아이템|

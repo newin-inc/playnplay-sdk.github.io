@@ -17,9 +17,11 @@ DownloadManager.Listener는 다운로드와 관련된 이벤트 처리를 위한
 # 메서드
 
 ## onItemAdded
+
 ```kotlin
 fun onItemAdded(item: DownloadItem)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
 |item|[DownloadItem](../../class/download-item/home.md)|목록에 추가된 다운로드 아이템|
@@ -28,9 +30,11 @@ fun onItemAdded(item: DownloadItem)
 
 <br><br>
 ## onItemRemoved
+
 ```kotlin
 fun onItemRemoved(item: DownloadItem)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
 |item|[DownloadItem](../../class/download-item/home.md)|목록에서 제거된 다운로드 아이템|
@@ -39,9 +43,11 @@ fun onItemRemoved(item: DownloadItem)
 
 <br><br>
 ## onProgressUpdated
+
 ```kotlin
 fun onProgressUpdated(item: DownloadItem)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
 |item|[DownloadItem](../../class/download-item/home.md)|다운로드가 진행 중인 다운로드 아이템|
@@ -50,9 +56,11 @@ fun onProgressUpdated(item: DownloadItem)
 
 <br><br>
 ## onStatusChanged
+
 ```kotlin
 fun onStatusChanged(item: DownloadItem)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|:--:|
 |item|[DownloadItem](../../class/download-item/home.md)|[다운로드 상태](../../enum/download-item-status/home.md)가 바뀐 다운로드 아이템|

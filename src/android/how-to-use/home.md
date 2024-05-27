@@ -27,6 +27,7 @@ android {
 ## 액티비티 구성
 
 먼저 startMediaPlayerService를 호출하여 서비스를 시작합니다. 여기서 플레이어와 미디어세션을 만들고 DRM 기본 설정을 합니다.
+
 ```kotlin
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -52,6 +53,7 @@ App 아이디는 콘솔에서 설정 > 애플리케이션 > App ID > 보기를 �
 ### 미디어 아이템 구성 예제 
 
 아래처럼, 미디어 아이템을 구성하고 열 수 있습니다.
+
 ```kotlin
 import androidx.media3.common.MediaItem
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration
@@ -78,6 +80,7 @@ Button(
 	Text("Open player")
 }
 ```
+
 <div align="right">
 참고: <a href="../class/media-player-activity-configuration/home.md#defaultconfiguration">defaultConfiguration</a>, 
 <a href="../class/media-player-activity-configuration/home.md#allowsbackgroundplayback">allowsBackgroundPlayback</a>, 
@@ -94,6 +97,7 @@ Button(
 
 <br><br>
 ## MediaItem.fromUri
+
 미디어 주소를 파라미터로 입력하여 미디어 아이템을 구성합니다. 파라미터로 받을 수 있는 타입은 아래와 같습니다.
 
 | 타입 | 설명 |
@@ -108,6 +112,7 @@ Button(
 
 <br><br>
 ## withDrmConfiguration
+
 uri를 입력받아서 미디어 아이템을 만들 때, 반드시 DRM 설정을 합니다. 제공받은 App 아이디와 사용자 아이디(User ID)를 입력하면 됩니다.
 <div align="right">
 참고: <a href="../class/media-item/home.md#withdrmconfiguration">MediaItem.withDrmConfiguration</a>
@@ -115,14 +120,18 @@ uri를 입력받아서 미디어 아이템을 만들 때, 반드시 DRM 설정�
 
 <br><br>
 ## presentMediaPlayer
+
 구성을 마친 미디어 아이템을 화면에 재생합니다.
+
 <div align="right">
 참고: <a href="../class/context/home.md#presentmediaplayer">Context.presentMediaPlayer</a>
 </div>
 
 <br><br>
 ## 자막을 추가한 예제
-Media3에서 제공하는 setSubtitleConfigurations() 사용하여 자막을 추가할 수 있습니다. \
+
+Media3에서 제공하는 setSubtitleConfigurations() 사용하여 자막을 추가할 수 있습니다.
+
 <div align="right">
 참고: <a href="https://developer.android.com/media/media3/exoplayer/media-items#sideloading-subtitle">Media item 자막</a>
 </div>
@@ -145,7 +154,9 @@ val mediaItem = MediaItem.Builder()
 
 <br><br>
 ## Seek 기능을 제한한 예제
+
 미디어 아이템을 구성할 때, setSeekable(false)을 사용하여 Seek 기능을 제한할 수 있습니다.
+
 <div align="right">
 참고: <a href="../class/media-item-builder/home.md#setseekable">setSeekable</a>
 </div>
@@ -159,24 +170,28 @@ val mediaItem = MediaItem.Builder()
 
 <br><br>
 ## MediaPlayer
+
 ```kotlin
 fun MediaPlayer(context: Context): MediaPlayer
 ```
 
 안드로이드 SDK에서 제공하는 MediaPlayer가 아니라, [Jetpack Media3](https://developer.android.com/jetpack/androidx/releases/media3)에서 제공하는 [ExoPlayer](https://developer.android.com/media/media3/exoplayer)를 사용하려면 아래와 같이 사용하면 됩니다. [ExoPlayer](https://developer.android.com/media/media3/exoplayer)는 [Player](https://developer.android.com/reference/androidx/media3/common/Player)를 확장한 클래스로 [Jetpack Media3](https://developer.android.com/jetpack/androidx/releases/media3)에서 제공합니다.
 
-사용 예제
+### 사용 예제
+
 ```kotlin
 val mediaPlayer = MediaPlayer(context)
 mediaPlayer.load(mediaItem)
 ```
 
 커스터마이징하여 만든 플레이어를 바로 등록하여 미디어 플레이어를 사용할 수도 있습니다.
+
 ```kotlin
 fun MediaPlayer(innerPlayer: Player): MediaPlayer
 ```
 
-사용 예제
+### 사용 예제
+
 ```kotlin
 val mediaPlayer = MediaPlayer(player)
 mediaPlayer.load(mediaItem)

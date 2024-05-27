@@ -10,9 +10,11 @@ protocol PlaybackInfo
 # 속성
 
 ## artworkUrl
+
 ```swift
 var artworkUrl: URL? { get }
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[URL](https://developer.apple.com/documentation/foundation/url)|미디어 아이템의 아트워크 주소|
@@ -21,9 +23,11 @@ var artworkUrl: URL? { get }
 
 <br><br>
 ## duration
+
 ```swift
 var duration: Duration? { get }
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[Duration](../../struct/duration/home.md)|미디어 아이템의 전체 길이|
@@ -32,9 +36,11 @@ var duration: Duration? { get }
 
 <br><br>
 ## expiresOn
+
 ```swift
 var expiresOn: Date? { get }
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[Date](https://developer.apple.com/documentation/foundation/date)|만료 일시|
@@ -43,9 +49,11 @@ var expiresOn: Date? { get }
 
 <br><br>
 ## lastPlayedTime
+
 ```swift
 var lastPlayedTime: Duration? { get }
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[Duration](../../struct/duration/home.md)|마지막 재생 위치|
@@ -54,9 +62,11 @@ var lastPlayedTime: Duration? { get }
 
 <br><br>
 ## url
+
 ```swift
 var url: URL { get }
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[URL](https://developer.apple.com/documentation/foundation/url)|재생 미디어의 주소|

@@ -14,6 +14,7 @@ MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등�
 ```swift
 let drmConfiguration: DrmConfiguration?
 ```
+
 |타입|설명|
 |:--:|--|
 |[DrmConfiguration](../drm-configuration/home.md)?| drm 설정 정보 |
@@ -28,6 +29,7 @@ let drmConfiguration: DrmConfiguration?
 ```swift
 let mediaMetadata: MediaMetadata?
 ```
+
 |타입|설명|
 |:--:|--|
 |[MediaMetadata](../media-metadata/home.md)?|메타데이터 설정 정보|
@@ -42,6 +44,7 @@ let mediaMetadata: MediaMetadata?
 ```swift
 let returnUrl: URL?
 ```
+
 |타입|설명|
 |:--:|--|
 |[URL](https://developer.apple.com/documentation/foundation/url)?|[Agent](../../../agent/home.md)에서 설정한 미디어 아이템의 리턴 Url|
@@ -57,6 +60,7 @@ let returnUrl: URL?
 ```swift
 let seekable: Bool
 ```
+
 |타입|설명|
 |:--:|--|
 |Bool|미디어 Seek 기능 허용 여부|
@@ -67,6 +71,7 @@ let seekable: Bool
 ```swift
 let subtitleConfigurations: [SubtitleConfiguration]
 ```
+
 |타입|설명|
 |:--:|--|
 |\[[SubtitleConfiguration](../subtitle-configuration/home.md)\]| 미디어 자막 정보|
@@ -81,6 +86,7 @@ let subtitleConfigurations: [SubtitleConfiguration]
 ```swift
 var title: String { get }
 ```
+
 |타입|설명|
 |:--:|--|
 |String|미디어 제목|
@@ -91,6 +97,7 @@ var title: String { get }
 ```swift
 let url: URL
 ```
+
 |타입|설명|
 |:--:|--|
 |[URL](https://developer.apple.com/documentation/foundation/url)|미디어 주소|
@@ -107,7 +114,9 @@ let url: URL
 ```swift
 func buildUpon() -> MediaItem.Builder
 ```
+
 Builder를 사용하여 미디어 아이템에 대한 초기 설정을 합니다. 미디어 아이템의 기존 메타데이터나 DRM 구성을 바꿀 때 사용시면 됩니다. 미디어 아이템으로 사용하기 위해서는 반드시 [.build()](../../class/media-item-builder/home.md#build)를 해야합니다.
+
 <div align="right">
 참고: <a href="#mediaitembuilder">MediaItem.Builder</a>
 </div>

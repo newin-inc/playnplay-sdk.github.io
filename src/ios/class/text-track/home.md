@@ -3,6 +3,7 @@
 ```swift
 class TextTrack : MediaTrack
 ```
+
 [MediaTrack](../media-track/home.md)을 확장한 클래스로, 자막에 사용되는 클래스입니다.
 
 <div align="right">

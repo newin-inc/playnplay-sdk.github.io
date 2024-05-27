@@ -14,18 +14,23 @@ enum PlaybackFinishReason
 # 케이스
 
 ## ended
+
 ```swift
 case ended
 ```
+
 미디어가 끝까지 재생되어 종료된 경우
 
 ## error
+
 ```swift
 case error
 ```
+
 오류로 인해 재생이 종료된 경우
 
 ## userExited
+
 ```swift
 case userExited
 ```

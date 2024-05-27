@@ -18,11 +18,13 @@ class PlaybackInfoRepository(context: Context)
 # 정적 속성
 
 ## shared
+
 ```kotlin
 companion object {
     val shared: PlaybackInfoRepository
 }
 ```
+
 |타입|설명|설정|
 |:--:|:--:|:--:|
 |[PlaybackInfoRepository](#playbackinforepository)|현재 재생 정보 저장소에 접근하기 위한 속성|불가능|
@@ -37,6 +39,7 @@ companion object {
 ```kotlin
 fun findBy(uri: Uri): PlaybackInfo?
 ```
+
 |파라미터|타입|반환 타입|설명|
 |:---:|:--:|:--:|---|
 |uri|[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|[PlaybackInfo](../playback-info/home.md)?|미디어 uri를 입력하여 재생 정보를 반환|

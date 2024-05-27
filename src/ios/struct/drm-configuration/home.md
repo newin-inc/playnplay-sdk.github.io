@@ -3,6 +3,7 @@
 ```swift
 struct DrmConfiguration
 ```
+
 DRM 설정을 위한 구조체입니다.
 
 <div align="right">
@@ -11,6 +12,7 @@ DRM 설정을 위한 구조체입니다.
 
 <br><br>
 # 생성자
+
 ```swift
 init(appId: String, userId: String, userData: [String: Any])
 ```
@@ -27,18 +29,22 @@ App 아이디, 사용자 아이디, 사용자 데이터를 입력하여 Drm 설�
 # 속성
 
 ## appId
+
 ```swift
 let appId: String
 ```
+
 |타입|설명|
 |:--:|:--:|
 |String|App 아이디|
 
 <br><br>
 ## offlineAccessPeriod
+
 ```swift
 var offlineAccessPeriod: Duration? = nil
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[Duration](../../struct/duration/home.md)?|다운로드 컨텐츠의 오프라인 재생 기간|
@@ -50,9 +56,11 @@ var offlineAccessPeriod: Duration? = nil
 
 <br><br>
 ## userData
+
 ```swift
 var userData: [String : Any]
 ```
+
 |타입|설명|
 |:--:|:--:|
 |\[String : Any\]|사용자 데이터|
@@ -63,9 +71,11 @@ var userData: [String : Any]
 
 <br><br>
 ## userId
+
 ```swift
 let userId: String
 ```
+
 |타입|설명|
 |:--:|:--:|
 |String|사용자 아이디|
@@ -74,9 +84,11 @@ let userId: String
 # 메서드
 
 ## buildUpon()
+
 ```swift
 func buildUpon() -> DrmConfiguration.Builder
 ```
+
 Builder를 사용하여 DRM에 대한 초기 설정을 합니다.
 
 <div align="right">

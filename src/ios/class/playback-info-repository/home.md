@@ -10,9 +10,11 @@ class PlaybackInfoRepository
 # 정적 속성
 
 ## shared
+
 ```swift
 static var shared: PlaybackInfoRepository
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[PlaybackInfoRepository](#playbackinforepository)|현재 재생 정보 저장소에 접근하기 위한 속성|불가능|
@@ -23,9 +25,11 @@ static var shared: PlaybackInfoRepository
 # 메서드
 
 ## find(by:)
+
 ```swift
 func find(by url: URL) -> PlaybackInfo?
 ```
+
 |파라미터|타입|반환 타입|설명|
 |:---:|:--:|:--:|---|
 |url|[URL](https://developer.apple.com/documentation/foundation/url)|[PlaybackInfo](../../protocol/playback-info/home.md)?|미디어 uri를 입력하여 재생 정보를 반환|

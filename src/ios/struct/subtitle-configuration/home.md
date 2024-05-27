@@ -32,14 +32,17 @@ init(url: URL, language: String? = nil, label: String? = nil, mode: Mode = .auto
 ```swift
 let label: String?
 ```
+
 |타입|설명|
 |:--:|--|
 |String?|자막 라벨|
 
 ## language
+
 ```swift
 let language: String?
 ```
+
 |타입|설명|
 |:--:|--|
 |String?|자막 언어|
@@ -49,6 +52,7 @@ let language: String?
 ```swift
 let mode: Mode
 ```
+
 |타입|설명|
 |:--:|--|
 |[SubtitleConfiguration.Mode](#subtitleconfigurationmode)|현재 자막 모드|
@@ -62,6 +66,7 @@ let mode: Mode
 ```swift
 let url: URL
 ```
+
 |타입|설명|
 |:--:|--|
 |[URL](https://developer.apple.com/documentation/foundation/url)|자막 주소|
@@ -70,10 +75,13 @@ let url: URL
 # 클래스
 
 ## SubtitleConfiguration.Builder
+
 ```swift
 class Builder
 ```
+
 자막을 만드는 클래스입니다. 자세한 내용은 [SubtitleConfiguration.Builder](../../class/subtitle-configuration-builder/home.md)를 참고하세요.
+
 <div align="right">
 참고: <a href="../../class/subtitle-configuration-builder/home.md">SubtitleConfiguration.Builder</a>,<br>
 <a href="../../how-to-use/home.md#자막을-추가하는-예제">자막을 추가하는 예제</a>
@@ -82,9 +90,11 @@ class Builder
 # 열거형
 
 ## SubtitleConfiguration.Mode
+
 ```swift
 enum Mode
 ```
+
 현재 자막 모드를 나타내는 열거형입니다. 자세한 내용은 [SubtitleConfiguration.Mode](../../enum/subtitle-configuration-mode/home.md)를 참고하세요.
 
 <div align="right">

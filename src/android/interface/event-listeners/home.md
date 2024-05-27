@@ -19,6 +19,7 @@ Player에 이미 존재하는 이벤트 리스너일 경우에는, 안드로이�
 ```kotlin
 fun onDurationChange(duration: Duration)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |duration|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|미디어 길이|
@@ -36,6 +37,7 @@ fun onDurationChange(duration: Duration)
 ```kotlin
 fun onEnded()
 ```
+
 재생 목록의 마지막 미디어의 재생이 완료 된 시점에 실행합니다.
 
 <div align="right">
@@ -48,6 +50,7 @@ fun onEnded()
 ```kotlin
 fun onError(error: PlaybackException)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |error|[PlaybackException](https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException)|재생 오류가 발생했을 때 예외|
@@ -66,6 +69,7 @@ fun onError(error: PlaybackException)
 ```kotlin
 fun onLoadedData()
 ```
+
 미디어 트랙이 로드되었을 때 실행합니다.
 
 <div align="right">
@@ -78,6 +82,7 @@ fun onLoadedData()
 ```kotlin
 fun onLoadedMetadata()
 ```
+
 메타데이터가 로드되었을 때 실행합니다.
 
 <div align="right">
@@ -90,6 +95,7 @@ fun onLoadedMetadata()
 ```kotlin
 fun onLoadStart()
 ```
+
 미디어 리소스를 로딩하기 시작할 때 실행합니다.
 
 <div align="right">
@@ -114,6 +120,7 @@ fun onPause()
 ```kotlin
 fun onPlay()
 ```
+
 미디어가 일시 정지 상태에서 재생 상태로 변경되는 시점에 실행합니다. 단, 재생 위치가 변경될 때는 포함하지 않습니다. 자세한 설명은 [EventHandler.Play](../../class/event-handlers/home.md#play)를 참고하세요.
 
 <div align="right">
@@ -126,6 +133,7 @@ fun onPlay()
 ```kotlin
 fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duration?, reason: PlaybackFinishReason)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |mediaItem|[MediaItem](https://developer.android.com/reference/androidx/media3/common/MediaItem)?|종료된 미디어 아이템|
@@ -148,6 +156,7 @@ fun onPlaybackFinish(mediaItem: MediaItem, position: Duration, duration: Duratio
 ```kotlin
 fun onPlaying()
 ```
+
 재생 위치가 변경되어 재생 되는 것을 포함하여, 미디어가 일시 정지 상태에서 재생 상태로 변경되는 시점에 실행합니다. 자세한 설명은 [EventHandler.Playing](../../class/event-handlers/home.md#playing)를 참고하세요.
 
 <div align="right">
@@ -164,6 +173,7 @@ fun onPositionDiscontinuity(
     newPosition: Duration
 )
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |player|[MediaPlayer](../../interface/media-player/home.md)|미디어 플레이어|
@@ -186,6 +196,7 @@ fun onPositionDiscontinuity(
 ```kotlin
 fun onProgress()
 ```
+
 플레이어가 소스를 읽어오기 시작할 때에 실행합니다.
 
 <div align="right">
@@ -198,6 +209,7 @@ fun onProgress()
 ```kotlin
 fun onRateChange(playbackRate: Float)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |playbackRate|Float|재생 속도|
@@ -217,6 +229,7 @@ fun onRateChange(playbackRate: Float)
 ```kotlin
 fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |repeatRange|[MediaPlayer.RepeatRange](../media-player-repeat-range/home.md)?|구간 반복에서의 구간|
@@ -234,6 +247,7 @@ fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?)
 ```kotlin
 fun onResizeModeChange(mode: @AspectRatioFrameLayout.ResizeMode Int)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |mode|@[ResizeMode](https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode) Int|화면의 크기 상태|
@@ -251,6 +265,7 @@ fun onResizeModeChange(mode: @AspectRatioFrameLayout.ResizeMode Int)
 ```kotlin
 fun onSeeked()
 ```
+
 seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, 또는 seeking 값이 false로 변경되는 시점에 실행합니다.
 
 <div align="right">
@@ -263,6 +278,7 @@ seek 작업이 완료된 시점, 또는 재생 위치가 변경되는 시점, �
 ```kotlin
 fun onSeeking()
 ```
+
 seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 변경되는 시점에 실행합니다.
 
 <div align="right">
@@ -275,6 +291,7 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 ```kotlin
 fun onSuspend()
 ```
+
 미디어 로딩이 중지된 시점에 실행합니다.
 
 <div align="right">
@@ -287,6 +304,7 @@ fun onSuspend()
 ```kotlin
 fun onTimeUpdate(position: Duration)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 재생 위치|
@@ -322,6 +340,7 @@ fun onUnload(mediaItem: MediaItem)
 ```kotlin
 fun onVolumeChange(volume: Float, muted: Boolean)
 ```
+
 | 파라미터 이름 | 타입 | 설명 |
 |:--:|:--:|:--:|
 |volume|Float|디바이스 음량|
@@ -342,6 +361,7 @@ fun onVolumeChange(volume: Float, muted: Boolean)
 ```kotlin
 fun onWaiting()
 ```
+
 일시적인 버퍼 부족, 즉 데이터가 충분히 로딩되지 못하거나 데이터가 없어서 재생이 정지된 시점에 실행합니다.
 
 <div align="right">

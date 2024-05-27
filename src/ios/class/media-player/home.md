@@ -10,9 +10,11 @@ final class MediaPlayer
 # 속성
 
 ## allowsBackgroundPlayback
+
 ```swift
 var allowsBackgroundPlayback: Bool { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|백그라운드 재생을 허용할 지 여부|가능|false|
@@ -21,9 +23,11 @@ var allowsBackgroundPlayback: Bool { get set }
 
 <br><br>
 ## allowsCellularAccess
+
 ```swift
 var allowsCellularAccess: Bool { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|동영상 재생 시, 셀룰러 데이터 사용 여부|가능|true|
@@ -32,9 +36,11 @@ var allowsCellularAccess: Bool { get set }
 
 <br><br>
 ## allowsPictureInPicturePlayback
+
 ```swift
 var allowsPictureInPicturePlayback: Bool { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|화면 속 화면 모드를 허용할 지 여부|가능|true|
@@ -47,6 +53,7 @@ var allowsPictureInPicturePlayback: Bool { get set }
 ```swift
 var audioTracks: [AudioTrack] { get }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |\[[AudioTrack](../audio-track/home.md)\]|오디오 트랙 리스트|불가능|[]|
@@ -63,6 +70,7 @@ var audioTracks: [AudioTrack] { get }
 ```swift
 var autoplay: Bool { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|미디어가 로드되었을 때, 즉 미디어가 준비가 된 즉시 재생할 것인지 결정하는 값|가능|true|
@@ -75,6 +83,7 @@ var autoplay: Bool { get set }
 ```swift
 var buffered: [TimeRange] { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |\[[TimeRange](../../struct/time-range/home.md)\]|현재 버퍼에 담고 있는 미디어 리소스의 범위 데이터|불가능|
@@ -91,6 +100,7 @@ var buffered: [TimeRange] { get }
 ```swift
 var canStartPictureInPictureAutomatically: Bool { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|백그라운드에서 화면 속 화면 모드를 자동으로 시작할 지 여부|가능|true|
@@ -103,6 +113,7 @@ var canStartPictureInPictureAutomatically: Bool { get set }
 ```swift
 var currentMediaItem: MediaItem? { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[MediaItem](../../struct/media-item/home.md)?|현재 재생 중인 미디어 아이템|불가능|
@@ -119,6 +130,7 @@ var currentMediaItem: MediaItem? { get }
 ```swift
 var currentMediaItemIndex: Int { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |Int|현재 재생 중인 미디어 아이템의 index|불가능|
@@ -131,6 +143,7 @@ var currentMediaItemIndex: Int { get }
 ```swift
 var currentSrc: URL? { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[URL](https://developer.apple.com/documentation/foundation/url)?|현재 선택된 미디어 아이템의 [URL](https://developer.apple.com/documentation/foundation/url)|불가능|
@@ -143,6 +156,7 @@ var currentSrc: URL? { get }
 ```swift
 var currentTime: Duration { get set }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[Duration](../../struct/duration/home.md)|설정 시, 재생하고 싶은 특정 위치 ([seekTo](#seektoposition)와 같은 동작)<br>반환 시, 현재 재생 시점|가능|
@@ -155,6 +169,7 @@ var currentTime: Duration { get set }
 ```swift
 var defaultMuted: Bool { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|음소거 기본 설정 상태|가능|false|
@@ -167,6 +182,7 @@ var defaultMuted: Bool { get set }
 ```swift
 var defaultPlaybackRate: Float { get set }
 ```
+
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
 |Float|미디어의 기본 재생 속도|가능|0.1~4.0|1.0|
@@ -179,6 +195,7 @@ var defaultPlaybackRate: Float { get set }
 ```swift
 var duration: Duration { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[Duration](../../struct/duration/home.md)|현재 미디어의 전체 길이|불가능|
@@ -191,6 +208,7 @@ var duration: Duration { get }
 ```swift
 var ended: Bool { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |Bool|재생 목록에서 마지막 미디어의 재생 완료 여부를 반환|불가능|
@@ -203,6 +221,7 @@ var ended: Bool { get }
 ```swift
 var error: Error? { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[Error](https://developer.apple.com/documentation/swift/error)?|에러를 반환|불가능|
@@ -220,6 +239,7 @@ var error: Error? { get }
 ```swift
 var isPictureInPictureActive: Bool { get }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|화면 속 화면 모드인지 여부|불가능|false|
@@ -232,6 +252,7 @@ var isPictureInPictureActive: Bool { get }
 ```swift
 var isPictureInPicturePossible: Bool { get }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|현재 화면 속 화면 모드로 전환할 수 있는지 여부|불가능|false|
@@ -244,6 +265,7 @@ var isPictureInPicturePossible: Bool { get }
 ```swift
 var isSeekable: Bool { get }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|미디어 아이템에서 위치를 이동할 수 있는지 여부|불가능|false|
@@ -269,6 +291,7 @@ var isSubtitlesVisible: Bool { get set }
 ```swift
 var loop: Bool { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|미디어 반복 재생 여부를 결정하는 값|가능|false|
@@ -281,6 +304,7 @@ var loop: Bool { get set }
 ```swift
 var maxSeekToPreviousPosition: Duration { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |[Duration](../../struct/duration/home.md)|하단 인터페이스의 이전 버튼을 클릭하였을 때, 이전 미디어로 갈 것인지 현재 미디어의 맨 앞으로 갈 것인지에 대한 기준 값. 이 값보다 작으면 이전 미디어로 이동하고, 그렇지 않으면 현재 미디어의 맨 앞으로 이동합니다.|가능|3초|
@@ -297,6 +321,7 @@ var maxSeekToPreviousPosition: Duration { get set }
 ```swift
 var mediaItems: [MediaItem] { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |\[[MediaItem](../../struct/media-item/home.md)\]|현재 재생 목록에 있는 미디어 아이템들|가능|[]|
@@ -313,6 +338,7 @@ var mediaItems: [MediaItem] { get set }
 ```swift
 var muted: Bool { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|오디오 음소거 여부|가능|false|
@@ -325,6 +351,7 @@ var muted: Bool { get set }
 ```swift
 var paused: Bool { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |Bool|미디어 일시 정지 여부|불가능|
@@ -337,6 +364,7 @@ var paused: Bool { get }
 ```swift
 var playbackRate: Float { get set }
 ```
+
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
 |Float|재생 속도|가능|0.1~4.0|1.0|
@@ -348,6 +376,7 @@ var playbackRate: Float { get set }
 ```swift
 var playbackState: MediaPlayer.PlaybackState { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[MediaPlayer.PlaybackState](../../enum/media-player-playback-state/home.md)|미디어의 현재 상태를 나타냅니다.|불가능|
@@ -364,6 +393,7 @@ var playbackState: MediaPlayer.PlaybackState { get }
 ```swift
 var preservesPitch: Bool { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|오디오 피치 유지 여부|가능|true|
@@ -376,6 +406,7 @@ var preservesPitch: Bool { get set }
 ```swift
 var repeatMode: MediaPlayer.RepeatMode { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |[MediaPlayer.RepeatMode](../../enum/media-player-repeat-mode/home.md)|오디오 반복 모드 상태|가능|none|
@@ -392,6 +423,7 @@ var repeatMode: MediaPlayer.RepeatMode { get set }
 ```swift
 var repeatRange: MediaPlayer.RepeatRange? { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |[MediaPlayer.RepeatRange](../../struct/media-player-repeat-range/home.md)?|반복 구간 범위|가능|nil|
@@ -408,6 +440,7 @@ var repeatRange: MediaPlayer.RepeatRange? { get set }
 ```swift
 var scalingMode: ScalingMode { get set }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[ScalingMode](../../enum/media-player-scaling-mode/home.md)|화면 스케일링 상태|가능|
@@ -424,6 +457,7 @@ var scalingMode: ScalingMode { get set }
 ```swift
 var seekable: [TimeRange] { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |\[[TimeRange](../../struct/time-range/home.md)\]|미디어 내 탐색 가능한 구간 범위|불가능|
@@ -434,13 +468,13 @@ var seekable: [TimeRange] { get }
 참고: <a href="../../struct/time-range/home.md">TimeRange</a>
 </div>
 
-
 <br><br>
 ## seekBackIncrement
 
 ```swift
 var seekBackIncrement: Duration { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |[Duration](../../struct/duration/home.md)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
@@ -458,6 +492,7 @@ var seekBackIncrement: Duration { get set }
 ```swift
 var seekForwardIncrement: Duration { get set }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |[Duration](../../struct/duration/home.md)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
@@ -475,6 +510,7 @@ var seekForwardIncrement: Duration { get set }
 ```swift
 var seeking: Bool { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |Bool|현재 미디어가 새로운 위치로 이동하고 있는지(탐색 중인지) 여부|불가능|
@@ -487,6 +523,7 @@ var seeking: Bool { get }
 ```swift
 var textTracks: [TextTrack] { get }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |\[[TextTrack](../text-track/home.md)\]|자막 리스트|불가능|[]|
@@ -503,6 +540,7 @@ var textTracks: [TextTrack] { get }
 ```swift
 var videoSize: CGSize { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[CGSize](https://developer.apple.com/documentation/corefoundation/cgsize)|width와 height를 속성으로 가지는 구조체|불가능|
@@ -519,6 +557,7 @@ var videoSize: CGSize { get }
 ```swift
 var videoTracks: [VideoTrack] { get }
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |\[[VideoTrack](../video-track/home.md)\]|비디오 트랙 리스트|불가능|[]|
@@ -531,9 +570,11 @@ var videoTracks: [VideoTrack] { get }
 
 <br><br>
 ## view
+
 ```swift
 var view: UIView { get }
 ```
+
 |타입|설명|설정|
 |:--:|--|:--:|
 |[UIView](https://developer.apple.com/documentation/uikit/uiview)|[미디어 플레이어 화면](../../medi-player-view/home.md) 참고|불가능|
@@ -542,9 +583,11 @@ var view: UIView { get }
 
 <br><br>
 ## volume
+
 ```swift
 var volume: Float { get set }
 ```
+
 |타입|설명|범위|설정|
 |:--:|--|:--:|:--:|
 |Float|현재 미디어의 음량|0.0~1.0|가능|
@@ -586,10 +629,10 @@ func addEventListener(_ listener: MediaPlayer.EventListener)
 ```swift
 func fastSeekTo(position: Duration)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |position|[Duration](../../struct/duration/home.md)|재생하고자 하는 위치 값|
-
 
 입력된 시간으로 빠르게 이동하기 위한 메서드입니다. 언제나 딱 정확한 위치로 가지는 않습니다.
 <div align="right">
@@ -611,6 +654,7 @@ func hasNextMediaItem() -> Bool
 ```swift
 func hasNextMediaItem() -> Bool
 ```
+
 바로 앞에 재생할 미디어가 있는지를 반환하는 메서드입니다. 목록의 처음이 아니거나, 전체 반복 모드일 경우 true를 반환합니다.
 
 <br><br>
@@ -619,6 +663,7 @@ func hasNextMediaItem() -> Bool
 ```swift
 func load(mediaItem: MediaItem)
 ```
+
 |파라미터|타입|설명|
 |:--:|:--:|--|
 |mediaItem|[MediaItem](../../struct/media-item/home.md)|로드하려는 [미디어 아이템](../../struct/media-item/home.md)|
@@ -669,6 +714,7 @@ URL을 사용하여 미디어를 로드하기 위한 메서드입니다.
 ```swift
 func pause()
 ```
+
 미디어를 일시 정지하기 위한 메서드입니다.
 
 <br><br>
@@ -677,6 +723,7 @@ func pause()
 ```swift
 func play()
 ```
+
 미디어를 재생하기 위한 메서드입니다.
 
 <br><br>
@@ -685,6 +732,7 @@ func play()
 ```swift
 func prepare()
 ```
+
 미디어 관련 기본 설정을 하기 위한 메서드입니다. 이 메서드를 실행하면, [autoplay](#autoplay), [defaultPlaybackRate](#defaultplaybackrate), [defaultMuted](#defaultmuted) 설정을 미디어 플레이어에 적용하고, 미디어를 로딩하는 과정까지 진행합니다.
 
 <br><br>
@@ -719,6 +767,7 @@ func removeEventListener(_ listener: MediaPlayer.EventListener)
 ```swift
 func seekBack()
 ```
+
 현재 위치에서 속성 [seekBackIncrement](#seekbackincrement) 만큼 전으로 이동하기 위한 메서드입니다.
 
 <br><br>
@@ -800,16 +849,18 @@ func seekToNext()
 ```swift
 func seekToNextMediaItem()
 ```
+
 다음으로 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 다음 미디어로 이동하는 메서드입니다. 목록의 맨 뒤에 위치한 미디어이지만 전체 반복 모드일 경우, 목록의 맨 앞으로 이동합니다.
 
-<br><br>
 ## seekToPrevious()
 
 ```swift
 func seekToPrevious()
 ```
+
 현재 재생 위치가 속성 maxSeekToPreviousPosition보다 앞이면 이전 미디어로 이동합니다.(참고: [seekToPreviousMediaItem()](#seektopreviousmediaitem)) 
 그렇지 않으면 현재 미디어의 맨 앞으로 이동합니다.
+
 <div align="right">
 참고: <a href="#maxseektopreviousposition">maxSeekToPreviousPosition</a>
 </div>
@@ -820,6 +871,7 @@ func seekToPrevious()
 ```swift
 func seekToPreviousMediaItem()
 ```
+
 앞에 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 이전 미디어로 이동하는 메서드입니다. 목록의 맨 앞에 위치한 미디어일 경우, 목록의 마지막 미디어로 이동합니다.
 
 <br><br>
@@ -828,6 +880,7 @@ func seekToPreviousMediaItem()
 ```swift
 func startPictureInPicture()
 ```
+
 화면 속 화면 모드를 시작하는 메서드입니다.
 
 <br><br>
@@ -836,6 +889,7 @@ func startPictureInPicture()
 ```swift
 func stop()
 ```
+
 미디어를 완전 종료할 때 부르는 메서드입니다. MediaPlayer가 종료되면 자동으로 호출됩니다.
 
 <br><br>
@@ -844,6 +898,7 @@ func stop()
 ```swift
 func stopPictureInPicture()
 ```
+
 화면 속 화면 모드를 종료하는 메서드입니다.
 
 <br><br>
@@ -853,6 +908,7 @@ func stopPictureInPicture()
 ```swift
 enum PlaybackState
 ```
+
 현재 미디어 상태를 나타내는 열거형입니다.
 
 <div align="right">
@@ -863,6 +919,7 @@ enum PlaybackState
 ```swift
 enum RepeatMode
 ```
+
 현재 미디어의 반복 모드 상태를 나타내는 열거형입니다.
 
 <div align="right">
@@ -873,6 +930,7 @@ enum RepeatMode
 ```swift
 enum ScalingMode
 ```
+
 현재 미디어 화면의 스케일링 상태를 나타냅니다.
 
 <div align="right">
@@ -886,6 +944,7 @@ enum ScalingMode
 ```swift
 struct RepeatRange: Equatable
 ```
+
 반복 모드에서 사용되는 구조체입니다.
 
 <div align="right">

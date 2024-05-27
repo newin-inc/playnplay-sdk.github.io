@@ -3,7 +3,9 @@
 ```swift
 class AudioTrack : MediaTrack  
 ```
+
 [MediaTrack](../media-track/home.md)를 확장한 클래스로, 오디오 트랙에 사용되는 클래스입니다.
+
 <div align="right">
 부모 클래스: <a href="../media-track/home.md">MediaTrack</a>
 </div>
@@ -12,6 +14,7 @@ class AudioTrack : MediaTrack
 # 속성
 
 ## channels
+
 ```swift
 var channels: Int! { get }
 ```
@@ -23,6 +26,7 @@ var channels: Int! { get }
 오디오 채널 수를 나타내는 속성입니다.
 
 ## sampleRate
+
 ```swift
 var sampleRate: Double! { get }
 ```

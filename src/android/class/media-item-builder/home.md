@@ -20,9 +20,11 @@ public final class MediaItem implements Bundleable {
 # 메서드
 
 ## setSeekable
+
 ```kotlin
 fun MediaItem.Builder.setSeekable(seekable: Boolean): MediaItem.Builder
 ```
+
 |파라미터|타입|설명|필수|
 |:--:|:--:|:--:|:--:|
 |seekable|Boolean|Seek 기능을 허용할 지에 대한 여부|O|

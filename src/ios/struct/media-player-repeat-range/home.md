@@ -25,6 +25,7 @@ init(start: Duration, end: Duration)
 # 속성
 
 ## end
+
 ```swift
 var end: Duration
 ```
@@ -35,6 +36,7 @@ var end: Duration
 
 <br><br>
 ## start
+
 ```swift
 var start: Duration
 ```
@@ -47,6 +49,7 @@ var start: Duration
 # 메서드
 
 ## with(end:) -> RepeatRange
+
 ```swift
 func with(end: Duration) -> MediaPlayer.RepeatRange
 ```
@@ -57,6 +60,7 @@ func with(end: Duration) -> MediaPlayer.RepeatRange
 
 <br><br>
 ## with(start:) -> RepeatRange
+
 ```swift
 func with(start: Duration) -> MediaPlayer.RepeatRange
 ```

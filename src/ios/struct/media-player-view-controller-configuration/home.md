@@ -13,9 +13,11 @@ public class MediaPlayerViewController {
 # 속성
 
 ## allowsBackgroundPlayback
+
 ```swift
 var allowsBackgroundPlayback: Bool = false
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|백그라운드 재생을 허용할 지 여부|가능|false|
@@ -24,9 +26,11 @@ var allowsBackgroundPlayback: Bool = false
 
 <br><br>
 ## allowsCellularAccess
+
 ```swift
 var allowsCellularAccess: Bool = true
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |Bool|셀룰러 데이터 사용을 허용할 지 여부|가능|true|
@@ -35,6 +39,7 @@ var allowsCellularAccess: Bool = true
 
 <br><br>
 ## allowsPictureInPicturePlayback
+
 ```swift
 var allowsPictureInPicturePlayback: Bool = true
 ```
@@ -47,9 +52,11 @@ var allowsPictureInPicturePlayback: Bool = true
 
 <br><br>
 ## controllerShowTimeout
+
 ```swift
 var controllerShowTimeout: Duration = .seconds(5)
 ```
+
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
 |[Duration](../../struct/duration/home.md)|컨트롤러를 자동으로 숨기는 시간| 가능 | 5초 |
@@ -58,9 +65,11 @@ var controllerShowTimeout: Duration = .seconds(5)
 
 <br><br>
 ## defaultPlaybackRate
+
 ```swift
 var defaultPlaybackRate: Float = 1
 ```
+
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
 |Float|미디어의 기본 재생 속도|가능|0.1~4.0|1.0|
@@ -69,9 +78,11 @@ var defaultPlaybackRate: Float = 1
 
 <br><br>
 ## seekBackwardIncrement
+
 ```swift
 var seekBackwardIncrement: Duration = .seconds(10)
 ```
+
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
 |[Duration](../../struct/duration/home.md)|현재 위치에서 전으로 이동하는 시간의 크기|가능|10초|
@@ -84,9 +95,11 @@ var seekBackwardIncrement: Duration = .seconds(10)
 
 <br><br>
 ## seekForwardIncrement
+
 ```swift
 var seekForwardIncrement: Duration = .seconds(10)
 ```
+
 | 타입 | 설명 | 설정 | 기본값 |
 |:----:|---|:---:|:---:|
 |[Duration](../../struct/duration/home.md)|현재 위치에서 후로 이동하는 시간의 크기|가능|10초|
@@ -99,9 +112,11 @@ var seekForwardIncrement: Duration = .seconds(10)
 
 <br><br>
 ## screenOrientationLock
+
 ```swift
 var screenOrientationLock: ScreenOrientationLock = .off
 ```
+
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
 |[ScreenOrientationLock](#screenorientationlock-1)|화면 방향 고정 상태|가능|Off|
@@ -116,6 +131,7 @@ var screenOrientationLock: ScreenOrientationLock = .off
 # 정적 메서드
 
 ## defaultConfiguration()
+
 ```swift
 static func defaultConfiguration() -> Configuration
 ```
@@ -126,11 +142,13 @@ static func defaultConfiguration() -> Configuration
 # 열거형
 
 ## ScreenOrientationLock
+
 ```swift
 enum ScreenOrientationLock: String
 ```
 
 화면 방향 고정 상태를 나타내는 열거형입니다. 자세한 설명은 [MediaPlayerViewController.Configuration.ScreenOrientationLock](../../enum/media-player-view-controller-configuration-screen-orientation-lock/home.md)에서 확인하세요.
+
 <div align="right">
 참고: <a href="../../enum/media-player-view-controller-configuration-screen-orientation-lock/home.md">MediaPlayerViewController.Configuration.ScreenOrientationLock</a>
 </diuv>

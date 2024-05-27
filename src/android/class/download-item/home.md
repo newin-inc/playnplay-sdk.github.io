@@ -1,4 +1,5 @@
 # DownloadItem
+
 ```kotlin
 import com.newin.nplayer.sdk.DownloadItem
 ```
@@ -6,6 +7,7 @@ import com.newin.nplayer.sdk.DownloadItem
 ```kotlin
 data class DownloadItem
 ```
+
 다운로드 아이템을 나타내는 데이터 클래스입니다. 다운로드에 대한 정보, 진행 상태 등의 정보를 가지고 있습니다.
 
 <div align="right">
@@ -18,9 +20,11 @@ data class DownloadItem
 # 속성
 
 ## id
+
 ```kotlin
 val id: DownloadItemId
 ```
+
 |타입|설명|
 |:--:|:--:|
 |Id|다운로드 아이템의 고유 아이디|
@@ -30,26 +34,32 @@ val id: DownloadItemId
 ```kotlin
 typealias DownloadItemId = UUID
 ```
+
 <div align="right">
 참고: <a href="https://developer.android.com/reference/kotlin/java/util/UUID">UUID</a>
 </div>
 
 ## displayPath
+
 ```kotlin
 val displayPath: String
 ```
+
 |타입|설명|
 |:--:|:--:|
 |String|다운로드된 아이템이 저장되는 상대 경로. 이때 상대 경로는 [downloadsUri](../download-manager/home.md#downloadsuri)를 기준으로 함|
+
 <div align="right">
 비교: <a href="#touri">toUrl</a><br>
 참고: <a href="../download-manager/home.md#downloadsuri">downloadsUri</a>
 </div>
 
 ## fromUri
+
 ```kotlin
 val fromUri: Uri
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|아이템을 가져올 주소|
@@ -57,9 +67,11 @@ val fromUri: Uri
 다운로드할 아이템의 주소입니다.
 
 ## toUri
+
 ```kotlin
 val toUri: Uri
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[android.net.Uri](https://developer.android.com/reference/android/net/Uri)|다운로드된 아이템이 저장되는 절대 경로|
@@ -72,9 +84,11 @@ val toUri: Uri
 </div>
 
 ## status
+
 ```kotlin
 val status: Status
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[Status](../../enum/download-item-status/home.md)|다운로드 아이템의 현재 상태|
@@ -84,9 +98,11 @@ val status: Status
 </div>
 
 ## progress
+
 ```kotlin
 val progress: Progress?
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[Progress](../download-item-progress/home.md)?|다운로드 아이템의 다운로드 진행을 나타냅니다.|
@@ -96,9 +112,11 @@ val progress: Progress?
 </div>
 
 ## failedReason
+
 ```kotlin
 val failedReason: FailedReason?
 ```
+
 |타입|설명|
 |:--:|:--:|
 |[FailedReason](../../enum/download-item-failed-reason/home.md)?|다운로드가 실패한 이유|
@@ -114,7 +132,9 @@ val failedReason: FailedReason?
 ```kotlin
 enum class Status(val value: String)
 ```
+
 다운로드 아이템의 상태를 나타내는 열거형 클래스입니다.
+
 <div align="right">
 참고: <a href="../../enum/download-item-status/home.md">Status</a>
 </div>
@@ -124,6 +144,7 @@ enum class Status(val value: String)
 ```kotlin
 data class Progress(val downloadedSize: Long, val fileSize: Long)
 ```
+
 다운로드 진행 정도를 나타내는 데이터 클래스입니다.
 
 <div align="right">
