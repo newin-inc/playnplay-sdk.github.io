@@ -189,28 +189,28 @@ fun openSettings()
 참고: <a href="../../media-player-view/screen-layout/details.md#3-트랙-설정-버튼">트랙 설정</a>
 </div>
 
-### resetHideCallbacks
+### resetAutoHideControl
 
 ```kotlin
-fun resetHideCallbacks()
+fun resetAutoHideControl()
 ```
 
-[removehidecallbacks()](#removehidecallbacks)를 사용한 이후, 기존의 [컨트롤러 자동 숨김 설정](../media-player-activity-configuration/home.md#controllershowtimeout)으로 되돌아가기 위해서는 이 메서드를 사용하면 됩니다.
+[removeAutoHideControl()](#removeautohidecontrol)를 사용한 이후, 기존의 [컨트롤러 자동 숨김 설정](../media-player-activity-configuration/home.md#controllershowtimeout)으로 되돌아가기 위해서는 이 메서드를 사용하면 됩니다.
 
 <div align="right">
-참고: <a href="#removehidecallbacks">removeHideCallbacks</a>
+참고: <a href="#removeautohidecontrol">removeAutoHideControl</a>
 </div>
 
-### removeHideCallbacks
+### removeAutoHideControl
 
 ```kotlin
-fun removeHideCallbacks()
+fun removeAutoHideControl()
 ```
 
-[미디어 플레이어 설정](../media-player-activity-configuration/home.md)의 [controllerShowTimeout](../media-player-activity-configuration/home.md#controllershowtimeout) 설정에 따라 일정 시간 후 컨트롤러는 자동으로 사라집니다. 이 메서드를 사용하면 컨트롤러를 일시적으로 계속 켜놓을 수 있습니다. 원래 설정으로 되돌아가려면 [resetHideCallbacks()](#resethidecallbacks)를 사용하면 됩니다.
+[미디어 플레이어 설정](../media-player-activity-configuration/home.md)의 [controllerShowTimeout](../media-player-activity-configuration/home.md#controllershowtimeout) 설정에 따라 일정 시간 후 컨트롤러는 자동으로 사라집니다. 이 메서드를 사용하면 컨트롤러를 일시적으로 계속 켜놓을 수 있습니다. 원래 설정으로 되돌아가려면 [resetAutoHideControl()](#resetautohidecontrol)를 사용하면 됩니다.
 
 <div align="right">
-참고: <a href="#resetHideCallbacks">resetHideCallbacks</a>
+참고: <a href="#resetautohidecontrol">resetAutoHideControl</a>
 </div>
 
 ### setResizeMode
