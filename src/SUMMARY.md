@@ -34,6 +34,7 @@
         - [MediaMetadata](./android/class/media-metadata/home.md)
         - [MediaPlayer.RepeatRange](./android/class/media-player-repeat-range/home.md)
         - [MediaPlayerActivityConfiguration](./android/class/media-player-activity-configuration/home.md)
+        - [MediaPlayerControlView](./android/class/media-player-control-view/home.md)
         - [MediaPlayerException](./android/class/media-player-exception/home.md)
         - [PlaybackInfo](./android/class/playback-info/home.md)
         - [PlaybackInfoRepository](./android/class/playback-info-repository/home.md)

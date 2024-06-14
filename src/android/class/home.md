@@ -26,6 +26,8 @@
 
 - [MediaPlayerActivityConfiguration](./media-player-activity-configuration/home.md)
 
+- [MediaPlayerControlView](./media-player-control-view/home.md)
+
 - [MediaPlayerException](./media-player-exception/home.md)
 
 - [PlaybackInfo](./playback-info/home.md)
