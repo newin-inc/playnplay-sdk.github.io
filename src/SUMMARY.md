@@ -72,6 +72,7 @@
         - [MediaMetadata.Builder](./ios/class/media-metadata-builder/home.md)
         - [MediaPlayer](./ios/class/media-player/home.md)
         - [MediaPlayer.EventTarget](./ios/class/event-target/home.md)
+        - [MediaPlayerControlViewController](./ios/class/media-player-control-view-controller/home.md)
         - [MediaPlayerViewController](./ios/class/media-player-view-controller/home.md)
         - [MediaTrack](./ios/class/media-track/home.md)
         - [PlaybackInfoRepository](./ios/class/playback-info-repository/home.md)
