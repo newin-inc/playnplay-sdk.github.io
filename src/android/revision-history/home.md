@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.06.18.](https://app.playnplay.com/sdks/2024-06-18/NPlayerSDK-android.zip)|<ul><li>구간 반복 시 세션 중복 생성 문제 수정</li></ul>|
 |[2024.06.14.](https://app.playnplay.com/sdks/2024-06-14/NPlayerSDK-android.zip)|<ul><li>제어 화면의 커스커마이징을 위한 [오픈 클래스 MediaPlayerControlView](../class/media-player-control-view/home.md) 추가</li></ul>|
 |[2024.05.29.](https://app.playnplay.com/sdks/2024-05-29/NPlayerSDK-android.zip)|<ul><li>프로가드 적용</li></ul>|
 |[2024.05.24.](https://app.playnplay.com/sdks/2024-05-24/NPlayerSDK-android.zip)|<ul><li>Unload 이벤트 추가<ul><li>[이벤트 리스너 onUnload](../interface/event-listeners/home.md#onunload)</li><li>[이벤트 핸들러 unload](../class/event-handlers/home.md#unload)</li></ul><li>PlaybackFinish 이벤트에 종료 원인 추가<ul><li>[이벤트 리스너 onPlaybackFinish](../interface/event-listeners/home.md#onplaybackfinish)</li><li>[이벤트 핸들러 playbackFinish](../class/event-handlers/home.md#playbackfinish)</li><li>[열거형 PlaybackFinishReason](../enum/playback-finish-reason/home.md)</ul></li><li>Callback URL 추가<ul><li>[재생 종료 보고](../../callback-url/notify-playback-finish.md)</li></ul>|
