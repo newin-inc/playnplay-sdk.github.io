@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.06.21.](https://app.playnplay.com/sdks/2024-06-21/NPlayerSDK-android.zip)|<ul><li>[오픈 클래스 MediaPlayerControlView](../class/media-player-control-view/home.md)에 메서드 추가</li></ul>|
 |[2024.06.20.](https://app.playnplay.com/sdks/2024-06-20/NPlayerSDK-android.zip)|<ul><li>구간 반복 시 세션 중복 생성 문제 수정</li></ul>|
 |[2024.06.14.](https://app.playnplay.com/sdks/2024-06-14/NPlayerSDK-android.zip)|<ul><li>제어 화면의 커스커마이징을 위한 [오픈 클래스 MediaPlayerControlView](../class/media-player-control-view/home.md) 추가</li></ul>|
 |[2024.05.29.](https://app.playnplay.com/sdks/2024-05-29/NPlayerSDK-android.zip)|<ul><li>프로가드 적용</li></ul>|

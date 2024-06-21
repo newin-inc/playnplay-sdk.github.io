@@ -54,17 +54,21 @@ open fun onChangeConfiguration(configuration: MediaPlayerActivityConfiguration)
 
 미디어 플레이어 설정 값을 미디어 플레이어에 적용할 때, 추가로 처리할 작업이 있을 경우에 이 메서드를 오버라이드하면 됩니다.
 
-## onSetPlayer
+## onCreate
 
 ```kotlin
-open fun onSetPlayer(player: MediaPlayer?)
+open fun onCreate()
 ```
 
-| 파라미터 | 타입 | 설명 |
-|:--:|:--:|:--:|
-|player|[MediaPlayer](../../interface/media-player/home.md)?|미디어 플레이어|
-
 미디어 플레이어가 생성될 때, 추가로 처리해야할 작업이 있을 경우에 이 메서드를 오버라이드하면 됩니다.
+
+## onDestroy
+
+```kotlin
+open fun onDestroy()
+```
+
+미디어 플레이어가 제거될 때, 추가로 처리해야할 작업이 있을 경우에 이 메서드를 오버라이드하면 됩니다.
 
 <br>
 
