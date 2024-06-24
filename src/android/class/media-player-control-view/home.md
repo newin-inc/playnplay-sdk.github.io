@@ -25,12 +25,12 @@ MediaPlayerActivity.setDefaultControlViewClass(<클래스 이름>::class.java)
 ## mediaPlayer
 
 ```kotlin
-val mediaPlayer: MediaPlayer?
+val mediaPlayer: MediaPlayer
 ```
 
 | 타입 | 설명 | 설정 |
 |:--:|:--:|:--:|
-|[MediaPlayer](../../interface/media-player/home.md)?|현재 컨트롤러 화면의 미디어 플레이어|불가능|
+|[MediaPlayer](../../interface/media-player/home.md)|현재 컨트롤러 화면의 미디어 플레이어|불가능|
 
 현재 컨트롤러 화면의 미디어 플레이어에 접근하는 속성입니다. 
 
