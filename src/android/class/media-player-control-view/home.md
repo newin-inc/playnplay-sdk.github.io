@@ -8,7 +8,7 @@ import com.newin.nplayer.sdk.MediaPlayerControlView
 open class MediaPlayerControlView(context: Context) : FrameLayout(context)
 ```
 
-미디어 플레이어 제어 화면을 커스터마이징 하여 사용하려면, 이 오픈 클래스의 확장을 통해 가능합니다. 
+미디어 플레이어 제어 화면을 커스터마이징 하여 사용하려면, [이 오픈 클래스](#mediaplayercontrolview)의 확장을 통해 가능합니다. 사용자의 제어로 인해 변경된 값을 사용하고 싶을 경우에는 [MediaPlayerInfoView](../media-player-info-view/home.md) 클래스를 확장하여 사용하면 됩니다.
 
 직접 구현한 미디어 플레이어 제어 화면을 미디어 플레이어에 적용하기 위해서는 [액티비티](../../how-to-use/home.md#액티비티-구성)를 구성하는 부분, 즉 onCreate 메서드에 아래 코드를 추가하면 됩니다.
 
@@ -17,7 +17,8 @@ MediaPlayerActivity.setDefaultControlViewClass(<클래스 이름>::class.java)
 ```
 
 <div align="right">
-참고: <a href="../../how-to-use/home.md#액티비티-구성">액티비티 구성</a>
+참고: <a href="../../how-to-use/home.md#액티비티-구성">액티비티 구성</a><br>
+<a href="../media-player-info-view/home.md">MediaPlayerInfoView</a><br>
 </div>
 
 # 속성
@@ -30,9 +31,9 @@ val mediaPlayer: MediaPlayer
 
 | 타입 | 설명 | 설정 |
 |:--:|:--:|:--:|
-|[MediaPlayer](../../interface/media-player/home.md)|현재 컨트롤러 화면의 미디어 플레이어|불가능|
+|[MediaPlayer](../../interface/media-player/home.md)|현재 재생 중인 미디어 플레이어|불가능|
 
-현재 컨트롤러 화면의 미디어 플레이어에 접근하는 속성입니다. 
+현재 재생 중인 미디어 플레이어에 접근하는 속성입니다. 
 
 <div align="right">
 참고: <a href="../../interface/media-player/home.md">MediaPlayer</a>
@@ -60,7 +61,7 @@ open fun onChangeConfiguration(configuration: MediaPlayerActivityConfiguration)
 open fun onCreate()
 ```
 
-미디어 플레이어가 생성될 때, 추가로 처리해야할 작업이 있을 경우에 이 메서드를 오버라이드하면 됩니다.
+미디어 플레이어 제어 화면이 생성될 때, 추가로 처리해야할 작업이 있을 경우에 이 메서드를 오버라이드하면 됩니다. 미디어 플레이어 제어 화면은 미디어 플레이어가 생성될 때 생성됩니다.
 
 ## onDestroy
 
@@ -68,14 +69,27 @@ open fun onCreate()
 open fun onDestroy()
 ```
 
-미디어 플레이어가 제거될 때, 추가로 처리해야할 작업이 있을 경우에 이 메서드를 오버라이드하면 됩니다.
+미디어 플레이어 제어 화면이 제거될 때, 추가로 처리해야할 작업이 있을 경우에 이 메서드를 오버라이드하면 됩니다.
 
 <br>
 
 # 탐색 관련 오픈 메서드
 
-사용자의 드래그 방향에 따라 미디어 재생 위치를 변경하는 기능이 있습니다. 사용자가 드래그를 하면, 아래 순서대로 메서드를 호출합니다.<br>
-사용자가 드래그 하기 위해 화면에 손을 갖다 대면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다. 화면에서 손을 떼지 않고 드래그를 하는 동안에는 [onContinueSeekGesture()](#oncontinueseekgesture)가 호출되고, 드래그의 방향과 정도에 따라 이동하려는 위치 및 위치 차이가 화면에 표시됩니다. 화면에서 손을 때면, [onEndSeekGesture()](#onendseekgesture)가 호출되고 해당 위치로 이동합니다.<br>
+사용자 드래그, 좌/우 방향키, 그리고 이 클래스에서 제공하는 메서드를 호출하여 미디어를 탐색하여 재생 위치를 변경할 수 있습니다. 이때, [탐색을 시작](#onbeginseekgesture)하는 시점부터 [탐색 과정](#oncontinueseekgesture), 그리고 [종료](#onendseekgesture)하기 전까지의 모든 단계에 추가적인 작업을 수행할 수 있는 오픈 메서드를 제공합니다.
+
+### 1. 사용자 드래그
+
+사용자가 드래그 하기 위해 화면에 손을 갖다 대면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다. 화면에서 손을 떼지 않고 드래그를 하는 동안에는 [onContinueSeekGesture()](#oncontinueseekgesture)가 계속 호출되고, 드래그의 방향과 정도에 따라 탐색하려는 위치 값은 변경됩니다. 화면에서 손을 떼면, [onEndSeekGesture()](#onendseekgesture)가 호출되고 해당 위치로 이동합니다.
+
+### 2. 좌/우 방향키
+
+사용자가 방향키에 손을 갖다 대면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다. 키에서 손을 떼지 않고 꾹 누르는 동안에는 [onContinueSeekGesture()](#oncontinueseekgesture)가 계속 호출되고, 꾹 누른 시간에 비례하여 탐색하려는 위치 값은 변경됩니다. 키에서 손을 떼면 [onEndSeekGesture()](#onendseekgesture)가 호출되고 해당 위치로 이동합니다.
+
+### 3. 메서드 호출
+
+[beginSeekBack()](#beginseekback)과 [endSeekBack()](#endseekback)을 순서대로 호출하거나, [beginSeekForward()](#beginseekforward)와 [endSeekForward()](#endseekforward)를 순서대로 호출하여, 앞/뒤로 탐색하는 기능이 있습니다.<br>
+탐색하려는 방향에 따라 [beginSeekBack()](#beginseekback)(또는 [beginSeekForward()](#beginseekforward))를 사용하면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다. [endSeekBack()](#endseekback)(또는 [endSeekForward()](#endseekforward))를 사용하기 전까지 [onContinueSeekGesture()](#oncontinueseekgesture)가 계속 호출되며, 탐색하려는 위치 값은 시간에 비례하여 변경됩니다. [endSeekBack()](#endseekback)(또는 [endSeekForward()](#endseekforward))를 사용하면, [onEndSeekGesture()](#onendseekgesture)가 호출되고 해당 위치로 이동합니다.
+
 
 ## onBeginSeekGesture
 
@@ -83,7 +97,7 @@ open fun onDestroy()
 open fun onBeginSeekGesture()
 ```
 
-사용자가 드래그를 시작할 때 추가로 처리해야 할 작업이 있을 경우에 이 메서드를 오버라이드하여 구현하면 됩니다.
+사용자가 탐색을 시작할 때 추가로 처리해야 할 작업이 있을 경우에 이 메서드를 오버라이드하여 구현하면 됩니다.
 
 <div align="right">
 참고: <a href="#oncontinueseekgesture">onContinueSeekGesture</a><br>
@@ -98,9 +112,9 @@ open fun onContinueSeekGesture(position: Duration)
 
 | 파라미터 | 타입 | 설명 |
 |:--:|:--:|:--:|
-|position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|이동하려는 미디어 위치|
+|position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|탐색하려는 미디어 위치|
 
-사용자가 드래그를 하는 중 추가로 처리해야 할 작업이 있을 경우에 이 메서드를 오버라이드하여 구현하면 됩니다. 여기서 position 값은 드래그 방향과 정도에 따라 계산된 이동하려는 미디어의 위치입니다.
+사용자가 탐색을 하는 중 추가로 처리해야 할 작업이 있을 경우에 이 메서드를 오버라이드하여 구현하면 됩니다. 여기서 position 값은 탐색 방향과 정도(드래그 거리, 시간 등)에 따라 계산된 탐색하려는 미디어의 위치입니다.
 
 <div align="right">
 참고: <a href="#onbeginseekgesture">onBeginSeekGesture</a><br>
@@ -113,7 +127,7 @@ open fun onContinueSeekGesture(position: Duration)
 open fun onEndSeekGesture()
 ```
 
-사용자가 드래그를 종료할 때 추가로 처리해야 할 작업이 있을 경우에 이 메서드를 오버라이드하여 구현하면 됩니다.
+사용자가 탐색을 종료할 때 추가로 처리해야 할 작업이 있을 경우에 이 메서드를 오버라이드하여 구현하면 됩니다.
 
 <div align="right">
 참고: <a href="#onbeginseekgesture">onBeginSeekGesture</a><br>
@@ -130,10 +144,13 @@ open fun onEndSeekGesture()
 fun beginSeekBack()
 ```
 
-빠르게 되감기 할 때 사용하는 메서드입니다. 이 메서드가 호출되면 목표 재생 위치가 화면에 표시되며, 시간이 지남에 따라 화면에 표시된 재생 위치는 지속적으로 감소합니다. [endSeekBack()](#endseekback)이 호출되기 전까지 미디어 재생에는 아무런 영향을 미치지 않으며, [endSeekBack()](#endseekback)이 호출되는 순간, 표시된 위치로 이동합니다.
+빠르게 되감기를 시작할 때 사용하는 메서드입니다. 이 메서드를 호출하면, [onBeginSeekGesture()](#onbeginseekgesture)를 호출합니다. 시간이 지남에 따라 탐색할 재생 위치는 지속적으로 감소합니다. [endSeekBack()](#endseekback)이 호출되기 전까지 미디어 재생에는 아무런 영향을 미치지 않으며, [onContinueSeekGesture()](#oncontinueseekgesture)를 반복해서 호출합니다. [endSeekBack()](#endseekback)이 호출되는 순간, 해당 위치로 이동하고, [onEndSeekGesture()](#onendseekgesture)를 호출합니다.
 
 <div align="right">
-참고: <a href="#endseekback">endSeekBack</a>
+참고: <a href="#endseekback">endSeekBack</a><br>
+<a href="#onbeginseekgesture">onBeginSeekGesture()</a><br>
+<a href="#oncontinueseekgesture">onContinueSeekGesture()</a><br>
+<a href="#onendseekgesture">onEndSeekGesture</a>
 </div>
 
 ### beginSeekForward
@@ -142,10 +159,13 @@ fun beginSeekBack()
 fun beginSeekForward()
 ```
 
-빠르게 감기 할 때 사용하는 메서드입니다. 이 메서드가 호출되면 목표 재생 위치가 화면에 표시되며, 시간이 지남에 따라 화면에 표시된 재생 위치는 지속적으로 증가합니다. [endSeekForward()](#endseekforward)가 호출되기 전까지 미디어 재생에는 아무런 영향을 미치지 않으며, [endSeekForward()](#endseekforward)가 호출되는 순간, 미디어는 표시된 위치로 이동합니다.
+빠르게 감기를 시작할 때 사용하는 메서드입니다. 이 메서드를 호출하면, [onBeginSeekGesture()](#onbeginseekgesture)를 호출합니다. 시간이 지남에 따라 탐색할 재생 위치는 지속적으로 증가합니다. [endSeekForward()](#endseekforward)가 호출되기 전까지 미디어 재생에는 아무런 영향을 미치지 않으며, [onContinueSeekGesture()](#oncontinueseekgesture)를 반복해서 호출합니다. [endSeekForward()](#endseekforward)가 호출되는 순간, 해당 위치로 이동하고, [onEndSeekGesture()](#onendseekgesture)를 호출합니다.
 
 <div align="right">
-참고: <a href="#endseekforward">endSeekForward</a>
+참고: <a href="#endseekforward">endSeekForward</a><br>
+<a href="#onbeginseekgesture">onBeginSeekGesture()</a><br>
+<a href="#oncontinueseekgesture">onContinueSeekGesture()</a><br>
+<a href="#onendseekgesture">onEndSeekGesture</a>
 </div>
 
 ### endSeekBack
@@ -154,10 +174,11 @@ fun beginSeekForward()
 fun endSeekBack()
 ```
 
-빠르게 되감기 할 때 사용하는 메서드입니다. [beginSeekBack()](#beginseekback)을 호출한 이후에 이 메서드를 사용하여, 미디어를 원하는 위치로 이동시킬 수 있습니다.
+빠르게 되감기를 종료할 때 사용하는 메서드입니다. [beginSeekBack()](#beginseekback)을 호출한 이후에 이 메서드를 사용하여, 미디어를 원하는 위치로 이동시킬 수 있습니다. 이 메서드가 호출되면, [onEndSeekGesture()](#onendseekgesture)가 호출됩니다.
 
 <div align="right">
-참고: <a href="#beginseekback">beginSeekBack</a>
+참고: <a href="#beginseekback">beginSeekBack</a><br>
+<a href="#onendseekgesture">onEndSeekGesture</a>
 </div>
 
 ### endSeekForward
@@ -166,11 +187,11 @@ fun endSeekBack()
 fun endSeekForward()
 ```
 
-빠르게 감기 할 때 사용하는 메서드입니다. [beginSeekForward()](#beginseekforward)를 호출한 이후에 이 메서드를 사용하여, 미디어를 원하는 위치로 이동시킬 수 있습니다.
-
+빠르게 감기를 종료할 때 사용하는 메서드입니다. [beginSeekForward()](#beginseekforward)를 호출한 이후에 이 메서드를 사용하여, 미디어를 원하는 위치로 이동시킬 수 있습니다. 이 메서드가 호출되면, [onEndSeekGesture()](#onendseekgesture)가 호출됩니다.
 
 <div align="right">
-참고: <a href="#beginseekforward">beginSeekForward</a>
+참고: <a href="#beginseekforward">beginSeekForward</a><br>
+<a href="#onendseekgesture">onEndSeekGesture</a>
 </div>
 
 ### lockScreen
