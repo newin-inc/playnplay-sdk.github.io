@@ -4,7 +4,7 @@
 open class MediaPlayerControlViewController: UIViewController
 ```
 
-미디어 플레이어 제어 화면을 커스터마이징 하여 사용하려면, [이 오픈 클래스](#mediaplayercontrolviewcontroller)의 확장을 통해 가능합니다. 사용자의 제어로 인해 변경된 값을 사용하고 싶을 경우에는 [MediaPlayerInfoViewController](../media-player-info-view-controller/home.md) 클래스를 확장하여 사용하면 됩니다.
+미디어 플레이어 제어 화면을 커스터마이징 하여 사용하려면, [이 클래스](#mediaplayercontrolviewcontroller)의 확장을 통해 가능합니다. 사용자의 제어로 인해 변경된 값을 사용하고 싶을 경우에는 [MediaPlayerInfoViewController](../media-player-info-view-controller/home.md) 클래스를 확장하여 사용하면 됩니다.
 
 직접 구현한 미디어 플레이어 제어 화면을 미디어 플레이어에 적용하기 위해서는 [AppDelegate](../../how-to-use/home.md#appdelegate-설정)를 설정하는 부분, 즉 application 메서드에 아래 코드를 추가하면 됩니다.
 
@@ -37,7 +37,7 @@ var player: MediaPlayer! { get }
 
 <br>
 
-# 오픈 클래스 메서드
+# 오버라이드 가능한 클래스 메서드
 
 ## newInstance()
 
@@ -54,9 +54,9 @@ open class func newInstance() -> MediaPlayerControlViewController
 
 <br>
 
-# 탐색 관련 오픈 메서드
+# 오버라이드 가능한 탐색 관련 메서드
 
-사용자 드래그, 좌/우 방향키, 그리고 이 클래스에서 제공하는 메서드를 호출하여 미디어를 탐색하여 재생 위치를 변경할 수 있습니다. 이때, [탐색을 시작](#onbeginseekgesture)하는 시점부터 [탐색 과정](#oncontinueseekgestureposition), 그리고 [종료](#onendseekgesture)하기 전까지의 모든 단계에 추가적인 작업을 수행할 수 있는 오픈 메서드를 제공합니다.
+사용자 드래그, 좌/우 방향키, 그리고 이 클래스에서 제공하는 메서드를 호출하여 미디어를 탐색하여 재생 위치를 변경할 수 있습니다. 이때, [탐색을 시작](#onbeginseekgesture)하는 시점부터 [탐색 과정](#oncontinueseekgestureposition), 그리고 [종료](#onendseekgesture)하기 전까지의 모든 단계에 추가적인 작업을 수행할 수 있는 오버라이드 가능한 메서드를 제공합니다.
 
 ### 1. 사용자 드래그
 

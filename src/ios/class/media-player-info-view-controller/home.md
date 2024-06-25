@@ -4,7 +4,7 @@
 open class MediaPlayerInfoViewController: UIViewController
 ```
 
-미디어 플레이어 [제어 화면을 커스터마이징](../media-player-control-view-controller/home.md)할 때, 탐색 위치나 볼륨 등 사용자 제어 값을 기반으로 하는 기능을 추기하고 싶을 때가 있습니다. 이때 [이 오픈 클래스](#mediaplayerinfoviewcontroller)를 확장하여 구현하면 됩니다.
+미디어 플레이어 [제어 화면을 커스터마이징](../media-player-control-view-controller/home.md)할 때, 탐색 위치나 볼륨 등 사용자 제어 값을 기반으로 하는 기능을 추기하고 싶을 때가 있습니다. 이때 [이 클래스](#mediaplayerinfoviewcontroller)를 확장하여 구현하면 됩니다.
 
 직접 구현한 미디어 플레이어 정보 화면을 미디어 플레이어에 적용하기 위해서는 [AppDelegate](../../how-to-use/home.md#appdelegate-설정)를 설정하는 부분, 즉 application 메서드에 아래 코드를 추가하면 됩니다.
 
@@ -37,7 +37,7 @@ var player: MediaPlayer! { get }
 
 <br>
 
-# 오픈 클래스 메서드
+# 오버라이드 가능한 클래스 메서드
 
 ## newInstance()
 
@@ -54,7 +54,7 @@ open class func newInstance() -> MediaPlayerInfoViewController
 
 <br>
 
-# 오픈 메서드
+# 오버라이드 가능한 메서드
 
 ## onBrightnessChange(_)
 
@@ -94,9 +94,9 @@ open func onVolumeChange(_ volume: Float)
 
 <br>
 
-# 탐색 관련 오픈 메서드
+# 오버라이드 가능한 탐색 관련 메서드
 
-[탐색을 시작](#onbeginseekgesture)하는 시점부터 [탐색 과정](#oncontinueseekgestureposition), 그리고 [종료](#onendseekgesture)하기 전까지의 모든 단계에 추가적인 작업을 수행할 수 있는 오픈 메서드를 제공합니다. 탐색과 관련하여 보다 더 자세한 설명은 [MediaPlayerControlViewController](../media-player-control-view-controller/home.md)의 [탐색 관련 오픈 메서드](../media-player-control-view-controller/home.md#탐색-관련-오픈-메서드)를 참고하세요.
+[탐색을 시작](#onbeginseekgesture)하는 시점부터 [탐색 과정](#oncontinueseekgestureposition), 그리고 [종료](#onendseekgesture)하기 전까지의 모든 단계에 추가적인 작업을 수행할 수 있는 오버라이드 가능한 메서드를 제공합니다. 탐색과 관련하여 보다 더 자세한 설명은 [MediaPlayerControlViewController](../media-player-control-view-controller/home.md)의 [오버라이드 가능한 탐색 관련 메서드](../media-player-control-view-controller/home.md#오버라이드-가능한-탐색-관련-메서드)를 참고하세요.
 
 ## onBeginSeekGesture()
 
