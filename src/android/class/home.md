@@ -30,6 +30,8 @@
 
 - [MediaPlayerException](./media-player-exception/home.md)
 
+- [MediaPlayerInfoView](./media-player-info-view/home.md)
+
 - [PlaybackInfo](./playback-info/home.md)
 
 - [PlaybackInfoRepository](./playback-info-repository/home.md)
