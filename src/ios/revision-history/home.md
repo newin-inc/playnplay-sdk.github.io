@@ -2,7 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
-|[2024.06.24.](https://app.playnplay.com/sdks/2024-06-24/NPlayerSDK-iOS.zip)|<ul><li>제어 화면의 커스터마이징을 위한 오픈 클래스 MediaPlayerInfoViewController 추가</li></ul>|
+|[2024.06.24.](https://app.playnplay.com/sdks/2024-06-24/NPlayerSDK-iOS.zip)|<ul><li>제어 화면의 커스터마이징을 위한 [오픈 클래스 MediaPlayerInfoViewController](../class/media-player-info-view-controller/home.md) 추가</li></ul>|
 |[2024.06.21.](https://app.playnplay.com/sdks/2024-06-21/NPlayerSDK-iOS.zip)|<ul><li>안정성 개선</li></ul>|
 |[2024.06.20.](https://app.playnplay.com/sdks/2024-06-20/NPlayerSDK-iOS.zip)|<ul><li>안정성 개선</li></ul>|
 |[2024.05.24.](https://app.playnplay.com/sdks/2024-05-24/NPlayerSDK-iOS.zip)|<ul><li>Unload 이벤트 추가<ul><li>[이벤트 리스너 onUnload](../protocol/event-listeners/home.md#onunloadmediaitem)</li><li>[이벤트 핸들러 unload](../enum/event-handlers/home.md#unload)</li></ul><li>PlaybackFinish 이벤트에 종료 원인 추가<ul><li>[이벤트 리스너 onPlaybackFinish](../protocol/event-listeners/home.md#onplaybackfinishmediaitempositiondurationreason)</li><li>[이벤트 핸들러 playbackFinish](../enum/event-handlers/home.md#playbackfinish)</li><li>[열거형 PlaybackFinishReason](../enum/playback-finish-reason/home.md)</li></ul></li><li>Callback URL 추가<ul><li>[재생 종료 보고](../../callback-url/notify-playback-finish.md)</li></ul>|
