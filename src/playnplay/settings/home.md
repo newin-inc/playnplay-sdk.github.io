@@ -16,9 +16,11 @@
 
 * 콘솔 사이트에서 DRM 패키징 툴을 다운로드합니다.
 
-    ![](./img/drm-packaging-tool.png)
+    <img src="../../drm-packaging/img/drm-packaging-tool.png" width="70%">
 
 * 서비스할 미디어 파일들을 DRM 패키징하여 준비합니다. (Non DRM도 서비스 가능)
+
+* 자세한 사용 방법은 [여기](../../drm-packaging/home.md#사용-방법)를 참고하세요.
 
 * 다운로드
     * macOS

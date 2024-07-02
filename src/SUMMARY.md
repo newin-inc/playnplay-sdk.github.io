@@ -120,4 +120,6 @@
     - [재생 종료 보고](./callback-url/notify-playback-finish.md)
     - [다운로드 상태 보고](./callback-url/notifiy-download-status.md)
     - [변경 이력](./callback-url/revision-history/home.md)
+
+- [DRM Packaging](./drm-packaging/home.md)
     
