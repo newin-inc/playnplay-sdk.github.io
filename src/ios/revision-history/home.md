@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.07.05.](https://app.playnplay.com/sdks/2024-07-05/NPlayerSDK-iOS.zip)|<ul><li>사소한 버그 수정</li></ul>|
 |[2024.06.24.](https://app.playnplay.com/sdks/2024-06-24/NPlayerSDK-iOS.zip)|<ul><li>제어 화면의 커스터마이징을 위한 [클래스 MediaPlayerInfoViewController](../class/media-player-info-view-controller/home.md) 추가</li></ul>|
 |[2024.06.21.](https://app.playnplay.com/sdks/2024-06-21/NPlayerSDK-iOS.zip)|<ul><li>안정성 개선</li></ul>|
 |[2024.06.20.](https://app.playnplay.com/sdks/2024-06-20/NPlayerSDK-iOS.zip)|<ul><li>안정성 개선</li></ul>|
