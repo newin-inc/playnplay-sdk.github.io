@@ -93,6 +93,24 @@ val Player.videoTracks: List<Track>
 
 # 메서드
 
+
+## deselectTrack
+
+```kotlin
+fun Player.deselectTrack(track: Track)
+```
+
+|파라미터|타입|설명|
+|:--:|:--:|---|
+|track|[Track](../../class/track/home.md)|선택을 해제할 (자막) 트랙|
+
+트랙 선택을 해제하여 비활성화하는 메서드입니다. 자막 트랙만 해제 가능합니다.
+
+<div align="right">
+참고: <a href="../../class/track/home.md">Track</a><br>
+<a href="../../class/subtitle-track/home.md">SubtitleTrack</a><br>
+<a href="#selecttrack">selectTrack</a>
+
 ## enterPictureInPicture
 
 ```kotlin
@@ -131,5 +149,6 @@ fun Player.selectTrack(track: Track)
 참고: <a href="../../class/track/home.md">Track</a><br>
 <a href="../../class/audio-track/home.md">AudioTrack</a><br>
 <a href="../../class/subtitle-track/home.md">SubtitleTrack</a><br>
-<a href="../../class/video-track/home.md">VideoTrack</a>
+<a href="../../class/video-track/home.md">VideoTrack</a><br>
+<a href="#deselecttrack"></a>
 </div>

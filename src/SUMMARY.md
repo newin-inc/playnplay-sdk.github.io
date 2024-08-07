@@ -40,6 +40,7 @@
         - [PlaybackInfo](./android/class/playback-info/home.md)
         - [PlaybackInfoRepository](./android/class/playback-info-repository/home.md)
         - [SubtitleTrack](./android/class/subtitle-track/home.md)
+        - [SubtitleView](./android/class/subtitle-view/home.md)
         - [TimeRange](./android/class/time-range/home.md)
         - [TimeRanges](./android/class/time-ranges/home.md)
         - [Track](./android/class/track/home.md)

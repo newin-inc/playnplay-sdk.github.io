@@ -129,7 +129,9 @@ uri를 입력받아서 미디어 아이템을 만들 때, 반드시 DRM 설정�
 Media3에서 제공하는 setSubtitleConfigurations() 사용하여 자막을 추가할 수 있습니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/media/media3/exoplayer/media-items#sideloading-subtitle">Media item 자막</a>
+참고: <a href="https://developer.android.com/media/media3/exoplayer/media-items#sideloading-subtitle">Media item 자막</a><br>
+<a href="https://developer.android.com/reference/androidx/media3/common/MimeTypes">androidx.media3.common.MimeTypes</a><br>
+<a href="https://developer.android.com/reference/androidx/media3/common/C?_gl=1*1wu9eo9*_up*MQ..*_ga*MTg3NTE4NTA1Ny4xNzIzMDA5Nzg0*_ga_6HH9YJMN9M*MTcyMzAwOTc4My4xLjAuMTcyMzAwOTc4My4wLjAuMA..#SELECTION_FLAG_DEFAULT()">C.SELECTION_FLAG_DEFAULT</a>
 </div>
 
 ```kotlin
@@ -142,10 +144,17 @@ val mediaItem = MediaItem.Builder()
 			)
 			.setMimeType(MimeTypes.TEXT_VTT)
 			.setLanguage("en")
+            .setSelectionFlags(C.SELECTION_FLAG_DEFAULT)
 			.build()
 		)
 	)
 	.build()
+```
+
+참고: SAMI 자막을 추가할 경우에는 MIME type을 `application/smil+xml`로 설정하세요.
+
+```kotlin
+.setMimeType("application/smil+xml")
 ```
 
 ## Seek 기능을 제한한 예제
