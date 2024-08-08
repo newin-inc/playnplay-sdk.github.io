@@ -38,8 +38,6 @@
 
 - [SubtitleTrack](./subtitle-track/home.md)
 
-- [SubtitleView](./subtitle-view/home.md)
-
 - [TimeRange](./time-range/home.md)
 
 - [TimeRanges](./time-ranges/home.md)

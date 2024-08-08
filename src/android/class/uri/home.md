@@ -12,30 +12,6 @@ import android.net.Uri
 
 <br>
 
-# 속성
-
-## mimeType
-
-```kotlin
-val Uri.mimeType: String?
-```
-
-| 타입 | 설명 | 설정 |
-|:----:|---|:---:|
-|String?|uri의 MIME type| 불가능 |
-
-## pathExtension
-
-```kotlin
-val Uri.pathExtension: String?
-```
-
-| 타입 | 설명 | 설정 |
-|:----:|---|:---:|
-|String?|uri의 확장자| 불가능 |
-
-<br>
-
 # 메서드
 
 ## toMediaItem

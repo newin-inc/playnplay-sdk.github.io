@@ -151,12 +151,6 @@ val mediaItem = MediaItem.Builder()
 	.build()
 ```
 
-참고: SAMI 자막을 추가할 경우에는 MIME type을 `application/smil+xml`로 설정하세요.
-
-```kotlin
-.setMimeType("application/smil+xml")
-```
-
 ## Seek 기능을 제한한 예제
 
 미디어 아이템을 구성할 때, setSeekable(false)을 사용하여 Seek 기능을 제한할 수 있습니다.
