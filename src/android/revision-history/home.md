@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.08.08.](https://app.playnplay.com/sdks/2024-08-08/NPlayerSDK-android.zip)|<ul><li>안정성 개선<ul><li>재생 속도 변경 관련</li><li>화면 속 화면 관련</li></ul></li></ul><ul><li>자막 기능 개선<ul><li>파일 이름 기반 자막 자동 추가</li><li>다중 자막 선택 기능 지원</li></ul></li></ul>|
 |[2024.07.05.](https://app.playnplay.com/sdks/2024-07-05/NPlayerSDK-android.zip)|<ul><li>사소한 버그 수정</li></ul>|
 |[2024.06.24.](https://app.playnplay.com/sdks/2024-06-24/NPlayerSDK-android.zip)|<ul><li>제어 화면의 커스터마이징을 위한 [클래스 MediaPlayerInfoView](../class/media-player-info-view/home.md) 추가</li></ul>|
 |[2024.06.21.](https://app.playnplay.com/sdks/2024-06-21/NPlayerSDK-android.zip)|<ul><li>[클래스 MediaPlayerControlView](../class/media-player-control-view/home.md)에 메서드 추가</li></ul>|
