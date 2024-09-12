@@ -2,7 +2,8 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
-|[2024.08.30.](https://app.playnplay.com/sdks/2024-08-30/NPlayerSDK-android.zip)|<ul><li>오디오 포커스 관련 문제 수정<ul><li>통화 시 영상 일시 정지, 통화 종료 시 영상 재개 기능 추가</li></ul></li><li>화면 확대/축소, 비디오 팬 기능 추가</li></ul>|
+|[2024.09.12.](https://app.playnplay.com/sdks/2024-09-12/NPlayerSDK-android.zip)|<ul><li>안정성 개선</li></ul>|
+|[2024.08.30.](https://app.playnplay.com/sdks/2024-08-30/NPlayerSDK-android.zip)|<ul><li>오디오 포커스 관련 문제 수정<ul><li>통화 시 영상 일시 정지, 통화 종료 시 영상 재개 기능 추가</li></ul></li><li>비디오 확대/축소, 비디오 팬 기능 추가</li></ul>|
 |[2024.08.20.](https://app.playnplay.com/sdks/2024-08-20/NPlayerSDK-android.zip)|<ul><li>홈 버튼 입력 시, 화면 속 화면 모드 대신 백그라운드 재생으로 변경</li></ul>|
 |[2024.08.08.](https://app.playnplay.com/sdks/2024-08-08/NPlayerSDK-android.zip)|<ul><li>안정성 개선<ul><li>재생 속도 변경 관련</li><li>화면 속 화면 관련</li></ul></li></ul><ul><li>자막 기능 개선<ul><li>파일 이름 기반 자막 자동 추가</li><li>다중 자막 선택 기능 지원</li></ul></li></ul>|
 |[2024.07.05.](https://app.playnplay.com/sdks/2024-07-05/NPlayerSDK-android.zip)|<ul><li>사소한 버그 수정</li></ul>|
