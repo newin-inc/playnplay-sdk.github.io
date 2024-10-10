@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.10.10.](https://app.playnplay.com/sdks/2024-10-10/NPlayerSDK-android.zip)|<ul><li>[외부 라이브러리 의존성](../how-to-set/project-settings.md#외부-라이브러리-의존성-추가) 업데이트</li><li>안정성 개선</li></ul>|
 |[2024.09.24.](https://app.playnplay.com/sdks/2024-09-24/NPlayerSDK-android.zip)|<ul><li>화면 속 화면에 진행바 및 10초 이동 버튼 추가</li></ul>|
 |[2024.09.12.](https://app.playnplay.com/sdks/2024-09-12/NPlayerSDK-android.zip)|<ul><li>안정성 개선</li></ul>|
 |[2024.08.30.](https://app.playnplay.com/sdks/2024-08-30/NPlayerSDK-android.zip)|<ul><li>오디오 포커스 관련 문제 수정<ul><li>통화 시 영상 일시 정지, 통화 종료 시 영상 재개 기능 추가</li></ul></li><li>비디오 확대/축소, 비디오 팬 기능 추가</li></ul>|
