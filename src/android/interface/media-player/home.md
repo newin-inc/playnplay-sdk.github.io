@@ -17,6 +17,53 @@ interface MediaPlayer : Player
 
 <br>
 
+# 정적 속성
+
+## ACTION_PLAYBACK_FINISHED
+
+```kotlin
+companion object {
+    const val ACTION_PLAYBACK_FINISHED
+}
+```
+
+미디어 재생이 끝났을 때 브로드캐스터 수신기에서 사용하기 위한 정적 속성입니다. 브로드캐스터 수신기를 아래처럼 등록하고 해제하시면 됩니다.
+
+```kotlin
+private val playbackFinishedReceiver = object : BroadcastReceiver() {
+    override fun onReceive(context: Context?, intent: Intent) {
+        // 미디어 재생 종료 시 처리할 내용
+    }
+}
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+
+    ContextCompat.registerReceiver(
+        this,
+        playbackFinishedReceiver,
+        IntentFilter(MediaPlayer.ACTION_PLAYBACK_FINISHED),
+        ContextCompat.RECEIVER_EXPORTED,
+    )
+}
+
+override fun onDestroy() {
+    super.onDestroy()
+    unregisterReceiver(playbackFinishedReceiver)
+}
+```
+
+`onReceive`의 `intent`에서 제공하는 정보는 다음과 같습니다.
+
+|이름|타입|내용|
+|:--:|:--:|:--:|
+|"uri"|string|미디어의 uri|
+|"currentTime"|long|미디어 재생 위치|
+|"duration"|long|미디어 전체 길이|
+|"reason"|string|[미디어 종료 이유](../../enum/playback-finish-reason/home.md)|
+
+<br>
+
 # 속성
 
 ## allowsCellularAccess
