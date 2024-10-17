@@ -110,6 +110,7 @@ fun Player.deselectTrack(track: Track)
 참고: <a href="../../class/track/home.md">Track</a><br>
 <a href="../../class/subtitle-track/home.md">SubtitleTrack</a><br>
 <a href="#selecttrack">selectTrack</a>
+</div>
 
 ## enterPictureInPicture
 
