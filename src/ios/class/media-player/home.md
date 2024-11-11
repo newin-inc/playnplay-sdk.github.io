@@ -219,6 +219,36 @@ var error: Error? { get }
 <a href="../../enum/media-player-error/home.md">MediaPlayerError</a>
 </div>
 
+## isFlippedHorizontally
+
+```swift
+var isFlippedHorizontally: Bool { get } 
+```
+
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Bool|화면이 좌우 반전 상태인지 여부|불가능|false|
+
+현재 재생 중인 미디어 화면이 좌우 반전 상태인지 여부를 반환하는 속성입니다
+<div align="right">
+참고: <a href="#fliphorizontal">flipHorizontal()</a>
+</div>
+
+## isFlippedVerticaly
+
+```swift
+var isFlippedVerticaly: Bool { get }
+```
+
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Bool|화면이 상하 반전 상태인지 여부|불가능|false|
+
+현재 재생 중인 미디어 화면이 상하 반전 상태인지 여부를 반환하는 속성입니다.
+<div align="right">
+참고: <a href="#flipvertical">flipVertical()</a>
+</div>
+
 ## isPictureInPictureActive
 
 ```swift
@@ -484,6 +514,34 @@ var seeking: Bool { get }
 
 미디어가 탐색 중인지를 반환하는 속성입니다. 현재 미디어가 새로운 위치로 이동하고 있거나 탐색중이면 true를 반환합니다.
 
+## subtitleDisplayPosition
+
+```swift
+var subtitleDisplayPosition: SubtitleDisplayPosition { get set }
+```
+
+|타입|설명|설정|
+|:--:|--|:--:|
+|[SubtitleDisplayPosition](../../enum/media-player-subtitle-display-position/home.md)|현재 미디어의 자막 출력 위치|가능|
+
+현재 미디어의 자막 출력 위치를 나타내는 속성입니다.
+
+<div align="right">
+참고: <a href="../../enum/media-player-subtitle-display-position/home.md">SubtitleDisplayPosition</a>
+</div>
+
+## subtitleTextSize
+
+```swift
+ var subtitleTextSize: Double { get set }
+```
+
+|타입|설명|설정|
+|:--:|--|:--:|
+|Double|자막 텍스트 크기|가능|
+
+현재 미디어의 자막 텍스트 크기를 나타내는 속성입니다.
+
 ## textTracks
 
 ```swift
@@ -499,6 +557,18 @@ var textTracks: [TextTrack] { get }
 <div align="right">
 참고: <a href="../text-track/home.md">TextTrack</a>
 </div>
+
+## videoPan
+
+```swift
+var videoPan: CGPoint { get }
+```
+
+|타입|설명|설정|
+|:--:|--|:--:|
+|[CGPoint](https://developer.apple.com/documentation/corefoundation/cgpoint)|미디어 화면의 이동 정도|불가능|
+
+현재 미디어 화면이 이동된 정도를 나타내는 속성입니다.
 
 ## videoSize
 
@@ -531,6 +601,18 @@ var videoTracks: [VideoTrack] { get }
 <div align="right">
 참고: <a href="../video-track/home.md">VideoTrack</a>
 </div>
+
+## videoZoom
+
+```swift
+var videoZoom: Double { get }
+```
+
+|타입|설명|설정|
+|:--:|--|:--:|
+|Double|비디오 확대/축소 비율|가능|
+
+현재 비디오의 확대/축소 비율을 나타내는 속성입니다.
 
 ## view
 
@@ -585,6 +667,18 @@ func addEventListener(_ listener: MediaPlayer.EventListener)
 
 [이벤트 리스너](../../protocol/event-listeners/home.md)를 추가하기 위한 메서드입니다. 이밴트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener(_)](#removeeventlistener_) 메서드를 사용해서 제거하세요.<br>
 
+## containsPointInSubtitleTextBounds(_) 
+
+```swift
+func containsPointInSubtitleTextBounds(_ point: CGPoint) -> Bool
+```
+
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|point|[CGPoint](https://developer.apple.com/documentation/corefoundation/cgpoint)|미디어 화면 내 확인할 위치|
+
+현재 미디어 화면에서 지정된 위치가 자막 영역에 포함되는지 여부를 반환하는 메서드입니다. 
+
 ## fastSeekTo(position:)
 
 ```swift
@@ -598,6 +692,50 @@ func fastSeekTo(position: Duration)
 입력된 시간으로 빠르게 이동하기 위한 메서드입니다. 언제나 딱 정확한 위치로 가지는 않습니다.
 <div align="right">
 비교: <a href="#seektoposition">seekTo(position:)</a>
+</div>
+
+## flipHorizontal()
+
+```swift
+func flipHorizontal()
+```
+
+현재 미디어 화면을 좌우 반전시키는 메서드입니다.
+<div align="right">
+참고: <a href="#isflippedhorizontally">isFlippedHorizontally</a>
+</div>
+
+## flipVertical()
+
+```swift
+func flipVertical()
+```
+
+현재 미디어 화면을 상하 반전시키는 메서드입니다.
+<div align="right">
+참고: <a href="#isflippedverticaly">isFlippedVerticaly</a>
+</div>
+
+## getSubtitleTextPosition(unit:alignment:)
+
+```swift
+func getSubtitleTextPosition(
+    unit: SubtitleTextPositionUnit,
+    alignment: SubtitleTextAlignment
+) -> CGFloat 
+```
+
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|unit|[SubtitleTextPositionUnit](../../enum/subtitle-text-position-unit/home.md)|자막 위치 단위|
+|alignment|[SubtitleTextAlignment](../../enum/subtitle-text-alignment/home.md)|자막 정렬 방식|
+
+자막 텍스트의 위치를 반환하는 메서드입니다. 이때 반환하는 값은 미디어 화면의 하단에서부터의 거리입니다.
+
+<div align="right">
+참고: <a href="../../enum/subtitle-text-position-unit/home.md">SubtitleTextPositionUnit</a>, 
+<a href="../../enum/subtitle-text-alignment/home.md">SubtitleTextAlignment</a><br>
+비교: <a href="#setsubtitletextpositionyunitalignment">setSubtitleTextPosition(y:unit:alignment:)</a>
 </div>
 
 ## hasNextMediaItem()
@@ -816,6 +954,30 @@ func seekToPreviousMediaItem()
 
 앞에 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 이전 미디어로 이동하는 메서드입니다. 목록의 맨 앞에 위치한 미디어일 경우, 목록의 마지막 미디어로 이동합니다.
 
+## setSubtitleTextPosition(y:unit:alignment:)
+
+```swift
+public func setSubtitleTextPosition(
+    y: CGFloat,
+    unit: SubtitleTextPositionUnit,
+    alignment: SubtitleTextAlignment
+)
+```
+
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|y|CGFloat|미디어 화면의 하단에서부터의 거리|
+|unit|[SubtitleTextPositionUnit](../../enum/subtitle-text-position-unit/home.md)|자막 위치 단위|
+|alignment|[SubtitleTextAlignment](../../enum/subtitle-text-alignment/home.md)|자막 정렬 방식|
+
+자막의 위치를 설정하는 메서드입니다. 이때 y 값은 미디어 화면의 하단에서부터의 거리입니다.
+
+<div align="right">
+참고: <a href="../../enum/subtitle-text-position-unit/home.md">SubtitleTextPositionUnit</a>, 
+<a href="../../enum/subtitle-text-alignment/home.md">SubtitleTextAlignment</a><br>
+비교: <a href="#getsubtitletextpositionunitalignment">getSubtitleTextPosition(unit:alignment:)</a>
+</div>
+
 ## startPictureInPicture()
 
 ```swift
@@ -839,6 +1001,39 @@ func stopPictureInPicture()
 ```
 
 화면 속 화면 모드를 종료하는 메서드입니다.
+
+## zoomVideo(_)
+
+```swift
+func zoomVideo(_ zoom: Double)
+```
+
+|파라미터|타입|설명|
+|:--:|:--:|--|
+|zoom|Double|비디오 확대/축소 비율|
+
+비디오 확대/축소할 때 사용하는 메서드입니다.
+
+<div align="right">
+참고: <a href="#zoomvideo_pivot">zoomVideo(_:pivot:)</a>
+</div>
+
+## zoomVideo(_:pivot:)
+
+```swift
+func zoomVideo(_ zoom: Double, pivot: CGPoint)
+```
+
+|파라미터|타입|설명|필수|
+|:--:|:--:|--|:--:|
+|zoom|Double|비디오 확대/축소 비율|O|
+|pivot|[CGPoint](https://developer.apple.com/documentation/corefoundation/cgpoint)|중심 좌표|O|
+
+비디오 확대/축소가 적용될 중심이 되는 좌표를 지정하여 확대/축소할 때 사용하는 메서드입니다. 
+
+<div align="right">
+참고: <a href="#zoomvideo_">zoomVideo(_)</a>
+</div>
 
 <br>
 
@@ -875,6 +1070,17 @@ enum ScalingMode
 
 <div align="right">
 참고: <a href="../../enum/media-player-scaling-mode/home.md">MediaPlayer.ScalingMode</a>
+</div>
+
+## SubtitleDisplayPosition
+```swift
+enum SubtitleDisplayPosition
+```
+
+현재 미디어의 자막 출력 위치를 나타냅니다.
+
+<div align="right">
+참고: <a href="../../enum/media-player-subtitle-display-position/home.md">MediaPlayer.SubtitleDisplayPosition</a>
 </div>
 
 <br>
