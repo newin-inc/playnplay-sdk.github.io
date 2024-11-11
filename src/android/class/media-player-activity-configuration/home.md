@@ -14,6 +14,7 @@ data class MediaPlayerActivityConfiguration(
     var seekBackwardIncrement: Duration,
     var seekForwardIncrement: Duration,
     var screenOrientationLock: ScreenOrientationLock,
+    var subtitleDisplayPosition: SubtitleDisplayPosition,
 )
 ```
 
@@ -37,7 +38,8 @@ data class MediaPlayerActivityConfiguration(
 |defaultPlaybackRate|Float|미디어의 재생 속도|X|1.0|
 |seekBackwardIncrement|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 전으로 이동하는 시간의 크기|X|10초|
 |seekForwardIncrement|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 후로 이동하는 시간의 크기|X|10초|
-|screenOrientationLock|[ScreenOrientationLock](../../enum/media-player-activity-configuration-screen-orientation-lock/home.md)|화면 고정 방향|X|Off|
+|screenOrientationLock|[ScreenOrientationLock](../../enum/media-player-activity-configuration-screen-orientation-lock/home.md)|화면 고정 방향|X|[Off](../../enum/media-player-activity-configuration-screen-orientation-lock/home.md#off)|
+|subtitleDisplayPosition|[SubtitleDisplayPosition](../../enum/media-player-activity-configuration-subtitle-display-position/home.md)|자막 출력 위치|X|[OnVideo](../../enum/media-player-activity-configuration-subtitle-display-position/home.md#onvideo)|
 
 <br>
 
@@ -153,14 +155,30 @@ var screenOrientationLock: ScreenOrientationLock = ScreenOrientationLock.Off
 
 |타입|설명|설정|기본값|
 |:--:|:--:|:--:|:--:|
-|[ScreenOrientationLock](#screenorientationlock-1)|화면 방향 고정 상태|가능|Off|
+|[ScreenOrientationLock](#screenorientationlock-1)|화면 방향 고정 상태|가능|[Off](../../enum/media-player-activity-configuration-screen-orientation-lock/home.md#off)|
 
 화면의 고정 상태를 나타내는 속성입니다.
 
 <div align="right">
-참고: <a href="#defaultconfiguration">defaultConfiguration</a><br>
-<a href="#screenorientationlock-1">ScreenOrientationLock</a>
+참고: <a href="#screenorientationlock-1">ScreenOrientationLock</a>
 </div>
+
+## subtitleDisplayPosition
+
+```kotlin
+var subtitleDisplayPosition: SubtitleDisplayPosition = SubtitleDisplayPosition.OnVideo
+```
+
+|타입|설명|설정|기본값|
+|:--:|:--:|:--:|:--:|
+|[SubtitleDisplayPosition](#subtitledisplayposition-1)|자막 출력 위치|가능|[OnVideo](../../enum/media-player-activity-configuration-subtitle-display-position/home.md#onvideo)|
+
+자막 추력 위치를 나타내는 속성입니다.
+
+<div align="right">
+참고: <a href="#subtitledisplayposition-1">subtitleDisplayPosition</a>
+</div>
+
 
 <br>
 
@@ -176,5 +194,17 @@ enum class ScreenOrientationLock
 
 <div align="right">
 참고: <a href="../../enum/media-player-activity-configuration-screen-orientation-lock/home.md">MediaPlayerActivityConfiguration.ScreenOrientationLock</a>
+</div>
+
+## SubtitleDisplayPosition
+
+```kotlin
+enum class SubtitleDisplayPosition
+```
+
+자막 출력 위치를 나타내는 열거형입니다.
+
+<div align="right">
+참고: <a href="../../enum/media-player-activity-configuration-subtitle-display-position/home.md">MediaPlayerActivityConfiguration.SubtitleDisplayPosition</a>
 </div>
 

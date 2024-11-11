@@ -6,4 +6,6 @@
 
 * [MediaPlayerActivityConfiguration.ScreenOrientationLock](./media-player-activity-configuration-screen-orientation-lock/home.md)
 
+* [MediaPlayerActivityConfiguration.SubtitleDisplayPosition](./media-player-activity-configuration-subtitle-display-position/home.md)
+
 * [PlaybackFinishReason](./playback-finish-reason/home.md)

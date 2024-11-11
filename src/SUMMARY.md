@@ -50,6 +50,7 @@
         - [DownloadItem.FailedReason](./android/enum/download-item-failed-reason/home.md)
         - [DownloadItem.Status](./android/enum/download-item-status/home.md)
         - [MediaPlayerActivityConfiguration.ScreenOrientationLock](./android/enum/media-player-activity-configuration-screen-orientation-lock/home.md)
+        - [MediaPlayerActivityConfiguration.SubtitleDisplayPosition](./android/enum/media-player-activity-configuration-subtitle-display-position/home.md)
         - [PlaybackFinishReason](./android/enum/playback-finish-reason/home.md)
     - [미디어 플레이어 화면](./android/media-player-view/home.md)
         - [설정](./android/media-player-view/settings/home.md)
