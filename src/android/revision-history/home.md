@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.11.11.](https://app.playnplay.com/sdks/2024-11-11/NPlayerSDK-android.zip)|<ul><li>자막 확대/축소 기능 추가</li></ul>|
 |[2024.10.30.](https://app.playnplay.com/sdks/2024-10-30/NPlayerSDK-android.zip)|<ul><li>자막 이동 기능 추가</li><li>안정성 개선</li></ul>|
 |[2024.10.10.](https://app.playnplay.com/sdks/2024-10-10/NPlayerSDK-android.zip)|<ul><li>[외부 라이브러리 의존성](../how-to-set/project-settings.md#외부-라이브러리-의존성-추가) 업데이트</li><li>안정성 개선</li></ul>|
 |[2024.09.24.](https://app.playnplay.com/sdks/2024-09-24/NPlayerSDK-android.zip)|<ul><li>화면 속 화면에 진행바 및 10초 이동 버튼 추가</li></ul>|
