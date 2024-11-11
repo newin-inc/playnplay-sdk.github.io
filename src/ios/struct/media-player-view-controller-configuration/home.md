@@ -110,12 +110,28 @@ var screenOrientationLock: ScreenOrientationLock = .off
 
 |타입|설명|설정|기본값|
 |:--:|--|:--:|:--:|
-|[ScreenOrientationLock](#screenorientationlock-1)|화면 방향 고정 상태|가능|Off|
+|[ScreenOrientationLock](#screenorientationlock-1)|화면 방향 고정 상태|가능|[.off](../../enum/media-player-view-controller-configuration-screen-orientation-lock/home.md#off)|
 
 화면 방향 고정 상태를 나타내는 속성입니다.
 
 <div align="right">
 참고: <a href="#screenorientationlock-1">ScreenOrientationLock</a>
+</div>
+
+## subtitleDisplayPosition
+
+```swift
+var subtitleDisplayPosition: SubtitleDisplayPosition = .onVideo
+```
+
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|[SubtitleDisplayPosition](#subtitledisplayposition-1)|자막 출력 위치|가능|[.onVideo](../../enum/media-player-subtitle-display-position/home.md#onvideo)|
+
+자막 출력 위치를 나타내는 속성입니다.
+
+<div align="right">
+참고: <a href="#subtitledisplayposition-1">subtitleDisplayPosition</a>
 </div>
 
 <br>
@@ -144,4 +160,16 @@ enum ScreenOrientationLock: String
 
 <div align="right">
 참고: <a href="../../enum/media-player-view-controller-configuration-screen-orientation-lock/home.md">MediaPlayerViewController.Configuration.ScreenOrientationLock</a>
-</diuv>
+</div>
+
+## SubtitleDisplayPosition
+
+```swift
+typealias SubtitleDisplayPosition = MediaPlayer.SubtitleDisplayPosition
+```
+
+자막 출력 위치를 나타내는 열거형입니다. 자세한 설명은 [MediaPlayer.SubtitleDisplayPosition](../../enum/media-player-subtitle-display-position/home.md)에서 확인하세요.
+
+<div align="right">
+참고: <a href="../../enum/media-player-subtitle-display-position/home.md">MediaPlayer.SubtitleDisplayPosition</a>
+</div>
