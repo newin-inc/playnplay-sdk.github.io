@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.11.11.](https://app.playnplay.com/sdks/2024-11-11/NPlayerSDK-iOS.zip)|<ul><li>자막 확대/축소 기능 추가</li></ul>|
 |[2024.10.30.](https://app.playnplay.com/sdks/2024-10-30/NPlayerSDK-iOS.zip)|<ul><li>비디오 좌우/상하 반전 추가</li><li>자막 이동 기능 추가</li></ul>|
 |[2024.08.30.](https://app.playnplay.com/sdks/2024-08-30/NPlayerSDK-iOS.zip)|<ul><li>비디오 확대/축소, 비디오 팬 기능 추가</li></ul>|
 |[2024.08.08.](https://app.playnplay.com/sdks/2024-08-08/NPlayerSDK-iOS.zip)|<ul><li>사소한 버그 수정<ul><li>재생 속도 변경 관련</li></ul></li></ul>|
