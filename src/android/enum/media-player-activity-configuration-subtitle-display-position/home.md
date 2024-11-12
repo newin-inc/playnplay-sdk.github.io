@@ -1,4 +1,4 @@
-# MediaPlayerActivityConfiguration.ScreenOrientationLock
+# MediaPlayerActivityConfiguration.SubtitleDisplayPosition
 
 ```kotlin
 import com.newin.nplayer.sdk.MediaPlayerActivityConfiguration.SubtitleDisplayPosition
