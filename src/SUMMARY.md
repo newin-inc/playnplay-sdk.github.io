@@ -108,8 +108,6 @@
         - [MediaPlayerViewController.Configuration.ScreenOrientationLock](./ios/enum/media-player-view-controller-configuration-screen-orientation-lock/home.md)
         - [PlaybackFinishReason](./ios/enum/playback-finish-reason/home.md)
         - [SubtitleConfiguration.Mode](./ios/enum/subtitle-configuration-mode/home.md)
-        - [SubtitleTextAlignment](./ios/enum/subtitle-text-alignment/home.md)
-        - [SubtitleTextPositionUnit](./ios/enum/subtitle-text-position-unit/home.md)
     - [미디어 플레이어 화면](./ios/media-player-view/home.md)
         - [컨트롤러 화면 구성](./ios/media-player-view/screen-layout/home.md)
             - [상세](./ios/media-player-view/screen-layout/details.md)

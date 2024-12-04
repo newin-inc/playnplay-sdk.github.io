@@ -716,28 +716,6 @@ func flipVertical()
 참고: <a href="#isflippedverticaly">isFlippedVerticaly</a>
 </div>
 
-## getSubtitleTextPosition(unit:alignment:)
-
-```swift
-func getSubtitleTextPosition(
-    unit: SubtitleTextPositionUnit,
-    alignment: SubtitleTextAlignment
-) -> CGFloat 
-```
-
-|파라미터|타입|설명|
-|:--:|:--:|--|
-|unit|[SubtitleTextPositionUnit](../../enum/subtitle-text-position-unit/home.md)|자막 위치 단위|
-|alignment|[SubtitleTextAlignment](../../enum/subtitle-text-alignment/home.md)|자막 정렬 방식|
-
-자막 텍스트의 위치를 반환하는 메서드입니다. 이때 반환하는 값은 미디어 화면의 하단에서부터의 거리입니다.
-
-<div align="right">
-참고: <a href="../../enum/subtitle-text-position-unit/home.md">SubtitleTextPositionUnit</a>, 
-<a href="../../enum/subtitle-text-alignment/home.md">SubtitleTextAlignment</a><br>
-비교: <a href="#setsubtitletextpositionyunitalignment">setSubtitleTextPosition(y:unit:alignment:)</a>
-</div>
-
 ## hasNextMediaItem()
 
 ```swift
@@ -953,30 +931,6 @@ func seekToPreviousMediaItem()
 ```
 
 앞에 재생할 미디어가 있을 경우 현재 재생중인 미디어를 정지하고 이전 미디어로 이동하는 메서드입니다. 목록의 맨 앞에 위치한 미디어일 경우, 목록의 마지막 미디어로 이동합니다.
-
-## setSubtitleTextPosition(y:unit:alignment:)
-
-```swift
-public func setSubtitleTextPosition(
-    y: CGFloat,
-    unit: SubtitleTextPositionUnit,
-    alignment: SubtitleTextAlignment
-)
-```
-
-|파라미터|타입|설명|
-|:--:|:--:|--|
-|y|CGFloat|미디어 화면의 하단에서부터의 거리|
-|unit|[SubtitleTextPositionUnit](../../enum/subtitle-text-position-unit/home.md)|자막 위치 단위|
-|alignment|[SubtitleTextAlignment](../../enum/subtitle-text-alignment/home.md)|자막 정렬 방식|
-
-자막의 위치를 설정하는 메서드입니다. 이때 y 값은 미디어 화면의 하단에서부터의 거리입니다.
-
-<div align="right">
-참고: <a href="../../enum/subtitle-text-position-unit/home.md">SubtitleTextPositionUnit</a>, 
-<a href="../../enum/subtitle-text-alignment/home.md">SubtitleTextAlignment</a><br>
-비교: <a href="#getsubtitletextpositionunitalignment">getSubtitleTextPosition(unit:alignment:)</a>
-</div>
 
 ## startPictureInPicture()
 

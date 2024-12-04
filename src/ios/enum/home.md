@@ -19,7 +19,3 @@
 * [PlaybackFinishReason](./playback-finish-reason/home.md)
 
 * [SubtitleConfiguration.Mode](./subtitle-configuration-mode/home.md)
-
-* [SubtitleTextAlignment](./subtitle-text-alignment/home.md)
-
-* [SubtitleTextPositionUnit](./subtitle-text-position-unit/home.md)
