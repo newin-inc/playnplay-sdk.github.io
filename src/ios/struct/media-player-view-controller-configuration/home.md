@@ -134,6 +134,34 @@ var subtitleDisplayPosition: SubtitleDisplayPosition = .onVideo
 참고: <a href="#subtitledisplayposition-1">subtitleDisplayPosition</a>
 </div>
 
+## subtitleTextPosition
+
+```swift
+var subtitleTextPosition: Float = 1
+```
+
+|타입|설명|설정|범위|기본값|
+|:--:|--|:--:|:--:|:--:|
+|Float|자막 위치|가능|0.0~1.0|1.0|
+
+자막 위치를 나타내는 속성입니다. 이 속성은 화면에서 자막이 배치될 위치를 비율로 표현하며, 값의 범위는 0.0에서 1.0 사이입니다. 기본값은 1.0으로, 자막이 화면의 맨 아래에 위치함을 의미합니다.
+
+## subtitleTextSize
+
+```swift
+var subtitleTextSize: SubtitleTextSize = .pixel(32)
+```
+
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|[SubtitleTextSize](../../enum/media-player-subtitle-text-size/home.md)|자막 크기|가능|.pixel(32)|
+
+자막 크기를 나타내는 속성입니다. 자막 크기를 [픽셀](../../enum/media-player-subtitle-text-size/home.md#pixel) 단위 또는 [비율](../../enum/media-player-subtitle-text-size/home.md#scale)로 나타낼 수 있습니다.
+
+<div align="right">
+참고: <a href="../../enum/media-player-subtitle-text-size/home.md">MediaPlayer.SubtitleTextSize</a>
+</div>
+
 <br>
 
 # 정적 메서드

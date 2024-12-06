@@ -12,6 +12,8 @@
 
 * [MediaPlayer.SubtitleDisplayPosition](./media-player-subtitle-display-position/home.md)
 
+* [MediaPlayer.SubtitleTextSize](./media-player-subtitle-text-size/home.md)
+
 * [MediaPlayerError](./media-player-error/home.md)
 
 * [MediaPlayerViewController.Configuration.ScreenOrientationLock](./media-player-view-controller-configuration-screen-orientation-lock/home.md)

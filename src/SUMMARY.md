@@ -105,6 +105,7 @@
         - [MediaPlayer.RepeatMode](./ios/enum/media-player-repeat-mode/home.md)
         - [MediaPlayer.ScalingMode](./ios/enum/media-player-scaling-mode/home.md)
         - [MediaPlayer.SubtitleDisplayPosition](./ios/enum/media-player-subtitle-display-position/home.md)
+        - [MediaPlayer.SubtitleTextSize](./ios/enum/media-player-subtitle-text-size/home.md)
         - [MediaPlayerError](./ios/enum/media-player-error/home.md)
         - [MediaPlayerViewController.Configuration.ScreenOrientationLock](./ios/enum/media-player-view-controller-configuration-screen-orientation-lock/home.md)
         - [PlaybackFinishReason](./ios/enum/playback-finish-reason/home.md)
