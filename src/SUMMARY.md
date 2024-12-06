@@ -34,6 +34,7 @@
         - [MediaMetadata](./android/class/media-metadata/home.md)
         - [MediaPlayer.RepeatRange](./android/class/media-player-repeat-range/home.md)
         - [MediaPlayerActivityConfiguration](./android/class/media-player-activity-configuration/home.md)
+        - [MediaPlayerActivityConfiguration.SubtitleTextSize](./android/class/media-player-activity-configuration-subtitle-text-size/home.md)
         - [MediaPlayerControlView](./android/class/media-player-control-view/home.md)
         - [MediaPlayerException](./android/class/media-player-exception/home.md)
         - [MediaPlayerInfoView](./android/class/media-player-info-view/home.md)

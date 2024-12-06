@@ -15,6 +15,8 @@ data class MediaPlayerActivityConfiguration(
     var seekForwardIncrement: Duration,
     var screenOrientationLock: ScreenOrientationLock,
     var subtitleDisplayPosition: SubtitleDisplayPosition,
+    var subtitleTextPosition: Float,
+    var subtitleTextSize: SubtitleTextSize,
 )
 ```
 
@@ -40,6 +42,9 @@ data class MediaPlayerActivityConfiguration(
 |seekForwardIncrement|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|현재 위치에서 후로 이동하는 시간의 크기|X|10초|
 |screenOrientationLock|[ScreenOrientationLock](../../enum/media-player-activity-configuration-screen-orientation-lock/home.md)|화면 고정 방향|X|[Off](../../enum/media-player-activity-configuration-screen-orientation-lock/home.md#off)|
 |subtitleDisplayPosition|[SubtitleDisplayPosition](../../enum/media-player-activity-configuration-subtitle-display-position/home.md)|자막 출력 위치|X|[OnVideo](../../enum/media-player-activity-configuration-subtitle-display-position/home.md#onvideo)|
+|subtitleTextPosition|Float|자막 위치|X|1.0|
+|subtitleTextSize|[SubtitleTextSize](../../class/media-player-activity-configuration-subtitle-text-size/home.md)|자막 크기|X|[Pixel](../../class/media-player-activity-configuration-subtitle-text-size/home.md#pixel)(32)|
+
 
 <br>
 
@@ -179,6 +184,49 @@ var subtitleDisplayPosition: SubtitleDisplayPosition = SubtitleDisplayPosition.O
 참고: <a href="#subtitledisplayposition-1">subtitleDisplayPosition</a>
 </div>
 
+## subtitleTextPosition
+
+```kotlin
+var subtitleTextPosition: Float = 1f
+```
+
+|타입|설명|설정|범위|기본값|
+|:--:|:--:|:--:|:--:|:--:|
+|Float|자막 위치|가능|0f~1f|1f|
+
+자막 위치를 나타내는 속성입니다. 이 속성은 화면에서 자막이 배치될 위치를 비율로 표현하며, 값의 범위는 0f에서 1f 사이입니다. 기본값은 1f으로, 자막이 화면의 맨 아래에 위치함을 의미합니다.
+
+## subtitleTextSize
+
+```kotlin
+var subtitleTextSize: SubtitleTextSize = SubtitleTextSize.Pixel(32)
+```
+
+|타입|설명|설정|기본값|
+|:--:|:--:|:--:|:--:|
+|[SubtitleTextSize]()|자막 크기|가능|SubtitleTextSize.Pixel(32)|
+
+자막 크기를 나타내는 속성입니다. 자막 크기를 [픽셀](../media-player-activity-configuration-subtitle-text-size/home.md#pixel) 단위 또는 [비율](../media-player-activity-configuration-subtitle-text-size/home.md#scale)로 나타낼 수 있습니다.
+
+<div align="right">
+참고: <a href="../media-player-activity-configuration-subtitle-text-size/home.md">MediaPlayerActivityConfiguration.SubtitleTextSize</a>
+</div>
+
+<br>
+
+# 클래스
+
+## SubtitleTextSize
+
+```kotlin
+sealed class SubtitleTextSize
+```
+
+자막 크기를 나타내는 클래스입니다.
+
+<div align="right">
+참고: <a href="../media-player-activity-configuration-subtitle-text-size/home.md">MediaPlayerActivityConfiguration.SubtitleTextSize</a>
+</div>
 
 <br>
 
