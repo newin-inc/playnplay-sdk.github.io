@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.12.06.](https://app.playnplay.com/sdks/2024-12-06/NPlayerSDK-android.zip)|<ul><li>[미디어 플레이어 설정 기능](../class/media-player-activity-configuration/home.md#mediaplayeractivityconfiguration) 추가<ul><li>[자막 위치](../class/media-player-activity-configuration/home.md#mediaplayeractivityconfiguration#subtitletextposition)</li><li>[자막 크기](../class/media-player-activity-configuration/home.md#mediaplayeractivityconfiguration#subtitletextsize)</li></ul></li></ul>|
 |[2024.11.11.](https://app.playnplay.com/sdks/2024-11-11/NPlayerSDK-android.zip)|<ul><li>자막 확대/축소 기능 추가</li></ul>|
 |[2024.10.30.](https://app.playnplay.com/sdks/2024-10-30/NPlayerSDK-android.zip)|<ul><li>자막 이동 기능 추가</li><li>안정성 개선</li></ul>|
 |[2024.10.10.](https://app.playnplay.com/sdks/2024-10-10/NPlayerSDK-android.zip)|<ul><li>[외부 라이브러리 의존성](../how-to-set/project-settings.md#외부-라이브러리-의존성-추가) 업데이트</li><li>안정성 개선</li></ul>|
