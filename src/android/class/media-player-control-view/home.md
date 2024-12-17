@@ -262,3 +262,288 @@ fun unlockScreen()
 ```
 
 잠금 화면을 종료할 때 이 메서드를 사용하면 됩니다.
+
+<br>
+
+# 사용 예제
+
+## 미디어 플레이어 종료
+
+```kotlin
+(context as? Activity)?.finish()
+```
+
+현재 재생 중인 미디어 플레이어를 종료하려면 위와 같이 구현하면 됩니다.
+
+## 화면 회전 잠금
+
+### 화면 회전 잠금 설정
+
+```kotlin
+(context as? Activity)?.requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LOCKED
+```
+
+현재 보이는 모드로 화면 회전 상태를 고정할 때 사용합니다.
+
+### 화면 회전 잠금 해제 
+
+```kotlin
+(context as? Activity)?.requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_SENSOR
+```
+
+디바이스 회전 상태에 따라 화면을 자동으로 전환할 때 사용합니다.
+
+
+## 구간 반복 모드
+
+### 구간 반복 모드 해제
+
+```kotlin
+mediaPlayer.repeatRange = null
+```
+
+구간 반복 모드를 해제할 때는 위와 같이 사용하면 됩니다.
+
+### 구간 반복 모드 설정
+
+```kotlin
+mediaPlayer.repeatRange = MediaPlayer.RepeatRange(Duration.ofSeconds(10), Duration.ofSeconds(20))
+```
+
+구간 반복 모드를 설정할 때는 위와 같이 사용하면 됩니다. 이 예제는 10초부터 20초 사이를 반복하도록 설정한 것입니다.
+
+### 구간 반복 범위 수정
+
+#### 구간 반복 시작 위치 수정
+
+```kotlin
+val startPosition = mediaPlayer.currentTime
+mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withStart(startPosition)
+```
+
+구간 반복 모드를 설정한 후, 시작 위치를 수정하려면 위와 같이 사용하면 됩니다. 이 예제는 현재 재생 위치를 구간 반복 시작 위치로 설정한 것입니다.
+구간 반복 모드가 아닐 경우에는 동작하지 않습니다.
+
+#### 구간 반복 종료 위치 수정
+
+```kotlin
+val endPosition = mediaPlayer.currentTime
+mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withEnd(endPosition)
+```
+
+구간 반복 모드를 설정한 후, 종료 위치를 수정하려면 위와 같이 사용하면 됩니다. 이 예제는 현재 재생 위치를 구간 반복 종료 위치로 설정한 것입니다.
+구간 반복 모드가 아닐 경우에는 동작하지 않습니다.
+
+
+## 미디어 재생 관련
+
+### 미디어 재생 / 일시정지 토글
+
+```kotlin
+Util.handlePlayPauseButtonAction(mediaPlayer)
+```
+
+미디어를 재생하거나 일시 정지할 수 있습니다. [play()](../../interface/media-player/home.md#play)와 [pause()](../../interface/media-player/home.md#pause)를 직접 호출해도 되지만, 간단하게 재생과 일시정지를 토글하려면 위와 같이 구현하면 됩니다.
+
+<div align="right">
+참고: <a href="https://developer.android.com/media/media3/ui/customization#play-pause-button">Play/Pause Button</a><br/>
+<a href="../../interface/media-player/home.md#play">play(),</a> 
+<a href="../../interface/media-player/home.md#pause">pause()</a> 
+</div>
+
+### 이전 미디어
+
+```kotlin
+mediaPlayer.seekToPrevious()
+```
+
+현재 재생 위치가 미디어의 시작 부분과 매우 가까울 경우, 재생 목록에서 이전 미디어를 재생합니다. 그렇지 않거나 이전 미디어가 없는 경우에는 현재 재생 중인 미디어의 맨 앞으로 이동할 때 사용합니다.
+
+<div align="right">
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player#seekToPrevious()">seekToPrevious()</a>
+</div>
+
+### 되감기 1
+
+```kotlin
+mediaPlayer.seekBack()
+```
+
+재생 위치를 [seekBackIncrement](../../interface/media-player/home.md#seekbackincrement)(기본값: 10초) 전으로 이동할 때 사용합니다. 길게 꾹 눌러서 되감는 기능을 원하면 [되감기 2](#되감기-2)를 참고하세요.
+
+<div align="right">
+참고: <a href="../../interface/media-player/home.md#seekback">seekBack()</a><br>
+비교: <a href="#되감기-2">되감기 2</a>
+</div>
+
+### 되감기 2
+
+```kotlin
+rewindButton.setOnTouchListener { _, event ->
+    when (event?.action) {
+        MotionEvent.ACTION_DOWN -> {
+            beginSeekBack()
+        }
+        MotionEvent.ACTION_UP -> {
+            endSeekBack()
+        }
+        else -> {}
+    }
+    true
+}
+```
+
+버튼을 길게 꾹 눌러 재생 위치를 이전으로 이동할 때는 위의 예제처럼 구현하면 됩니다.
+
+<div align="right">
+참고: <a href="#beginseekback">beginSeekBack()</a>,
+<a href="#endseekback">endSeekBack()</a><br>
+비교: <a href="#되감기-1">되감기 1</a>
+</div>
+
+### 빨리 감기 1
+
+```kotlin
+mediaPlayer.seekForward()
+```
+
+재생 위치를 [seekForwardIncrement](../../interface/media-player/home.md#seekforwardincrement)(기본값: 10초) 후로 이동할 때 사용합니다. 길게 꾹 눌러서 감는 기능을 원하면 [빨리 감기 2](#빨리-감기-2)를 참고하세요.
+
+<div align="right">
+참고: <a href="../../interface/media-player/home.md#seekforward">seekForward()</a><br>
+비교: <a href="#빨리-감기-2">빨리 감기 2</a>
+</div>
+
+### 빨리 감기 2
+
+```kotlin
+fastForwardButton.setOnTouchListener { _, event ->
+    when (event?.action) {
+        MotionEvent.ACTION_DOWN -> {
+            beginSeekForward()
+        }
+        MotionEvent.ACTION_UP -> {
+            endSeekForward()
+        }
+        else -> {}
+    }
+    true
+}
+```
+
+버튼을 길게 꾹 눌러 재생 위치를 이후로 이동할 때는 위의 예제처럼 구현하면 됩니다.
+
+<div align="right">
+참고: <a href="#beginseekforward">beginSeekForward()</a>, 
+<a href="#endseekforward">endSeekForward()</a><br>
+비교: <a href="#빨리-감기-1">빨리 감기 1</a>
+</div>
+
+
+### 다음 미디어
+
+```kotlin
+mediaPlayer.seekToNext()
+```
+
+재생 목록에서 다음 미디어를 재생할 때 사용합니다.
+
+<div align="right">
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player#seekToNext()">seekToNext()</a>
+</div>
+
+### 화면 속 화면 모드
+
+```kotlin
+val activity = context as? Activity ?: return
+mediaPlayer.enterPictureInPicture(activity, this)
+```
+
+화면 속 화면 모드로 전환하려면 위의 예제처럼 구현하면 됩니다.
+
+
+## 재생 속도 관련
+
+### 재생 속도 증가
+
+```kotlin
+mediaPlayer.playbackRate += 0.1f
+```
+
+재생 속도를 0.1배 만큼 증가 시키려면 위의 예제처럼 구현하면 됩니다.
+
+### 재생 속도 변경
+
+```kotlin
+mediaPlayer.playbackRate = 1.0f
+```
+
+재생 속도를 정상 속도로 복구할 때 위의 예제처럼 구현하면 됩니다.
+
+### 재생 속도 감소
+
+```kotlin
+mediaPlayer.playbackRate -= 0.1f
+```
+
+재생 속도를 0.1배 만큼 감소 시키려면 위의 예제처럼 구현하면 됩니다.
+
+## 타임바
+
+이 예제에서는 [SeekBar](https://developer.android.com/reference/android/widget/SeekBar)를 사용하여 타임바를 업데이트하고, 타임바 입력을 처리하는 방법을 간단하게 설명합니다.
+
+### 타임바 리스너
+
+```kotlin
+seekBar.setOnSeekBarChangeListener(
+    object : SeekBar.OnSeekBarChangeListener {
+        override fun onStartTrackingTouch(seekBar: SeekBar?) {
+            removeAutoHideControl()
+        }
+
+        override fun onProgressChanged(
+            seekBar: SeekBar?,
+            progress: Int,
+            fromUser: Boolean
+        ) {
+            if (fromUser) {
+                val position = Duration.ofSeconds(progress.toLong())
+                // updateTimePosition(position) 
+            }
+        }
+
+        override fun onStopTrackingTouch(seekBar: SeekBar?) {
+            resetAutoHideControl()
+            val progress = seekBar?.progress?.toLong() ?: return
+            mediaPlayer.currentTime = Duration.ofSeconds(progress)
+        }
+    }
+)
+```
+
+이 예제는 사용자가 타임바를 터치한 순간부터 종료까지의 동작을 구현한 것입니다. 타임바를 사용하는 동안에는 [컨트롤러가 일시적으로 계속 켠 상태로 유지](#removeautohidecontrol)하며, 터치가 종료되면 해당 위치로 이동하도록 구현되어 있습니다. 여기서, seekBar의 타입은 [SeekBar](https://developer.android.com/reference/android/widget/SeekBar) 입니다. 
+
+<div align="right">
+참고: <a href="https://developer.android.com/reference/android/widget/SeekBar">SeekBar</a>, 
+<a href="https://developer.android.com/reference/android/widget/SeekBar.OnSeekBarChangeListener">SeekBar.OnSeekBarChangeListener</a><br>
+<a href="#removeautohidecontrol">removeAutoHideControl()</a>, 
+<a href="#resetautohidecontrol">resetAutoHideControl()</a>
+</div>
+
+### 타임바 업데이트
+
+```kotlin
+mediaPlayer.addEventHandler(
+    EventHandler.TimeUpdate { position ->
+        seekBar.progress = position.seconds.toInt()
+    }
+)
+```
+
+미디어가 재생됨에 따라 타임바를 업데이트 하려면 [이벤트 리스너](../../interface/event-listeners/home.md)나 [이벤트 핸들러](../event-handlers/home.md)를 사용해야 합니다. 위 예제는 [이벤트 핸들러](../event-handlers/home.md)를 이용해 타임바를 업데이트하는 방법을 보여줍니다. 여기서, seekBar의 타입은 [SeekBar](https://developer.android.com/reference/android/widget/SeekBar)입니다. 
+또한, [seekBar.max](https://developer.android.com/reference/android/widget/AbsSeekBar#setMax(int)) 를 설정하지 않으면, 제대로 동작하지 않으므로 주의하세요.
+
+```kotlin
+seekBar.max = mediaPlayer.duration.seconds.toInt()
+```
+
