@@ -8,7 +8,7 @@ import com.newin.nplayer.sdk.MediaPlayerControlView
 open class MediaPlayerControlView(context: Context) : FrameLayout(context)
 ```
 
-미디어 플레이어 제어 화면을 커스터마이징 하여 사용하려면, [이 클래스](#mediaplayercontrolview)의 확장을 통해 가능합니다. 사용자의 제어로 인해 변경된 값을 사용하고 싶을 경우에는 [MediaPlayerInfoView](../media-player-info-view/home.md) 클래스를 확장하여 사용하면 됩니다.
+미디어 플레이어 제어 화면을 커스터마이징 하여 사용하려면, [이 클래스](#mediaplayercontrolview)의 확장을 통해 가능합니다. 또한, 사용자 입력에 따라 변경된 값을 화면에 표시하려면 [MediaPlayerInfoView](../media-player-info-view/home.md) 클래스를 확장하여 사용하면 됩니다.
 
 직접 구현한 미디어 플레이어 제어 화면을 미디어 플레이어에 적용하기 위해서는 [액티비티](../../how-to-use/home.md#액티비티-구성)를 구성하는 부분, 즉 onCreate 메서드에 아래 코드를 추가하면 됩니다.
 
@@ -55,6 +55,25 @@ open fun onChangeConfiguration(configuration: MediaPlayerActivityConfiguration)
 
 미디어 플레이어 설정 값을 미디어 플레이어에 적용할 때, 추가로 처리할 작업이 있을 경우에 이 메서드를 오버라이드하면 됩니다.
 
+<div align="right">
+참고: <a href="../media-player-activity-configuration/home.md">MediaPlayerActivityConfiguration</a>
+</div>
+
+### 사용 예제
+
+미디어 플레이어 설정의 재생 속도를 현재 미디어 플레이어에 적용하는 예제
+
+```kotln
+override fun onChangeConfiguration(configuration: MediaPlayerActivityConfiguration) {
+    mediaPlayer.playbackRate = configuration.defaultPlaybackRate
+}
+```
+
+<div align="right">
+참고: <a href="../media-player-activity-configuration/home.md">MediaPlayerActivityConfiguration</a>, 
+<a href="../../interface/media-player/home.md#playbackrate">playbackRate</a>
+</div>
+
 ## onCreate
 
 ```kotlin
@@ -75,21 +94,29 @@ open fun onDestroy()
 
 # 오버라이드 가능한 탐색 관련 메서드
 
-사용자 드래그, 좌/우 방향키, 그리고 이 클래스에서 제공하는 메서드를 호출하여 미디어를 탐색하여 재생 위치를 변경할 수 있습니다. 이때, [탐색을 시작](#onbeginseekgesture)하는 시점부터 [탐색 과정](#oncontinueseekgesture), 그리고 [종료](#onendseekgesture)하기 전까지의 모든 단계에 추가적인 작업을 수행할 수 있는 오버라이드 가능한 메서드를 제공합니다.
+사용자 드래그, 좌/우 방향키, 또는 이 클래스에서 제공하는 메서드를 호출하여 미디어 탐색을 통해 재생 위치를 변경할 수 있습니다. 탐색 과정에서  [시작](#onbeginseekgesture), [진행](#oncontinueseekgesture), [종료](#onendseekgesture) 단계별로 추가 작업을 수행할 수 있도록 오버라이드 가능한 메서드를 제공합니다.
 
 ### 1. 사용자 드래그
 
-사용자가 드래그 하기 위해 화면에 손을 갖다 대면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다. 화면에서 손을 떼지 않고 드래그를 하는 동안에는 [onContinueSeekGesture()](#oncontinueseekgesture)가 계속 호출되고, 드래그의 방향과 정도에 따라 탐색하려는 위치 값은 변경됩니다. 화면에서 손을 떼면, [onEndSeekGesture()](#onendseekgesture)가 호출되고 해당 위치로 이동합니다.
+- 사용자가 화면에 손을 대면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다. 
+- 손을 땔 때까지 드래그하는 동안 [onContinueSeekGesture()](#oncontinueseekgesture)가 지속적으로 호출되며, 드래그의 방향과 정도에 따라 탐색 위치가 변경됩니다.
+- 드래그를 마치고 손을 떼면 [onEndSeekGesture()](#onendseekgesture)가 호출되고 해당 위치로 이동합니다.
 
 ### 2. 좌/우 방향키
 
-사용자가 방향키에 손을 갖다 대면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다. 키에서 손을 떼지 않고 꾹 누르는 동안에는 [onContinueSeekGesture()](#oncontinueseekgesture)가 계속 호출되고, 꾹 누른 시간에 비례하여 탐색하려는 위치 값은 변경됩니다. 키에서 손을 떼면 [onEndSeekGesture()](#onendseekgesture)가 호출되고 해당 위치로 이동합니다.
+- 사용자가 방향키를 누르면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다.
+- 키를 계속 누르는 동안 [onContinueSeekGesture()](#oncontinueseekgesture)가 호출되며, 누르는 시간에 비례하여 탐색 위치가 변경됩니다.
+- 키에서 손을 떼면 [onEndSeekGesture()](#onendseekgesture)가 호출되고 해당 위치로 이동합니다.
 
 ### 3. 메서드 호출
 
-[beginSeekBack()](#beginseekback)과 [endSeekBack()](#endseekback)을 순서대로 호출하거나, [beginSeekForward()](#beginseekforward)와 [endSeekForward()](#endseekforward)를 순서대로 호출하여, 앞/뒤로 탐색하는 기능이 있습니다.<br>
-탐색하려는 방향에 따라 [beginSeekBack()](#beginseekback)(또는 [beginSeekForward()](#beginseekforward))를 사용하면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다. [endSeekBack()](#endseekback)(또는 [endSeekForward()](#endseekforward))를 사용하기 전까지 [onContinueSeekGesture()](#oncontinueseekgesture)가 계속 호출되며, 탐색하려는 위치 값은 시간에 비례하여 변경됩니다. [endSeekBack()](#endseekback)(또는 [endSeekForward()](#endseekforward))를 사용하면, [onEndSeekGesture()](#onendseekgesture)가 호출되고 해당 위치로 이동합니다.
+- 빠르게 되감기: [beginSeekBack()](#beginseekback) -> [endSeekBack()](#endseekback)
+- 빠르게 감기: [beginSeekForward()](#beginseekforward) -> [endSeekForward()](#endseekforward)
+- [beginSeekBack()](#beginseekback) 또는 [beginSeekForward()](#beginseekforward)를 호출하면, [onBeginSeekGesture()](#onbeginseekgesture)가 호출됩니다. 
+- 탐색 중에는 [onContinueSeekGesture()](#oncontinueseekgesture)가 반복적으로 호출되며, 시간이 지남에 따라 탐색 위치가 변경됩니다.
+- [endSeekBack()](#endseekback) 또는 [endSeekForward()](#endseekforward)를 호출 시 [onEndSeekGesture()](#onendseekgesture)가 호출되고 최종 위치로 이동합니다.
 
+위의 방식들을 통해 다양한 탐색 통작을 구현하고 제어할 수 있습니다.
 
 ## onBeginSeekGesture
 
@@ -144,13 +171,14 @@ open fun onEndSeekGesture()
 fun beginSeekBack()
 ```
 
-빠르게 되감기를 시작할 때 사용하는 메서드입니다. 이 메서드를 호출하면, [onBeginSeekGesture()](#onbeginseekgesture)를 호출합니다. 시간이 지남에 따라 탐색할 재생 위치는 지속적으로 감소합니다. [endSeekBack()](#endseekback)이 호출되기 전까지 미디어 재생에는 아무런 영향을 미치지 않으며, [onContinueSeekGesture()](#oncontinueseekgesture)를 반복해서 호출합니다. [endSeekBack()](#endseekback)이 호출되는 순간, 해당 위치로 이동하고, [onEndSeekGesture()](#onendseekgesture)를 호출합니다.
+빠르게 되감기를 시작할 때 사용하는 메서드입니다. 호출 시, [onBeginSeekGesture()](#onbeginseekgesture)가 실행되며. 시간이 지남에 따라 탐색할 재생 위치가 지속적으로 감소합니다. [endSeekBack()](#endseekback)이 호출되기 전까지 미디어 재생에는 아무런 영향을 미치지 않으며, [onContinueSeekGesture()](#oncontinueseekgesture)를 반복해서 호출합니다. [endSeekBack()](#endseekback)이 호출되는 순간, 해당 위치로 이동한 후 [onEndSeekGesture()](#onendseekgesture)가 실행됩니다.
 
 <div align="right">
 참고: <a href="#endseekback">endSeekBack</a><br>
 <a href="#onbeginseekgesture">onBeginSeekGesture()</a><br>
 <a href="#oncontinueseekgesture">onContinueSeekGesture()</a><br>
-<a href="#onendseekgesture">onEndSeekGesture</a>
+<a href="#onendseekgesture">onEndSeekGesture</a><br>
+사용 예제: <a href="#되감기-2">되감기 2</a>
 </div>
 
 ### beginSeekForward
@@ -159,13 +187,14 @@ fun beginSeekBack()
 fun beginSeekForward()
 ```
 
-빠르게 감기를 시작할 때 사용하는 메서드입니다. 이 메서드를 호출하면, [onBeginSeekGesture()](#onbeginseekgesture)를 호출합니다. 시간이 지남에 따라 탐색할 재생 위치는 지속적으로 증가합니다. [endSeekForward()](#endseekforward)가 호출되기 전까지 미디어 재생에는 아무런 영향을 미치지 않으며, [onContinueSeekGesture()](#oncontinueseekgesture)를 반복해서 호출합니다. [endSeekForward()](#endseekforward)가 호출되는 순간, 해당 위치로 이동하고, [onEndSeekGesture()](#onendseekgesture)를 호출합니다.
+빠르게 감기를 시작할 때 사용하는 메서드입니다. 호출 시, [onBeginSeekGesture()](#onbeginseekgesture)가 실행되며, 시간이 지남에 따라 탐색할 재생 위치가 지속적으로 증가합니다. [endSeekForward()](#endseekforward)가 호출되기 전까지 미디어 재생에는 아무런 영향을 미치지 않으며, [onContinueSeekGesture()](#oncontinueseekgesture)를 반복해서 호출합니다. [endSeekForward()](#endseekforward)가 호출되는 순간, 해당 위치로 이동한 후 [onEndSeekGesture()](#onendseekgesture)가 실행됩니다.
 
 <div align="right">
 참고: <a href="#endseekforward">endSeekForward</a><br>
 <a href="#onbeginseekgesture">onBeginSeekGesture()</a><br>
 <a href="#oncontinueseekgesture">onContinueSeekGesture()</a><br>
-<a href="#onendseekgesture">onEndSeekGesture</a>
+<a href="#onendseekgesture">onEndSeekGesture</a><br>
+사용 예제: <a href="#빨리-감기-2">빨리 감기 2</a>
 </div>
 
 ### endSeekBack
@@ -178,7 +207,8 @@ fun endSeekBack()
 
 <div align="right">
 참고: <a href="#beginseekback">beginSeekBack</a><br>
-<a href="#onendseekgesture">onEndSeekGesture</a>
+<a href="#onendseekgesture">onEndSeekGesture</a><br>
+사용 예제: <a href="#되감기-2">되감기 2</a>
 </div>
 
 ### endSeekForward
@@ -191,7 +221,8 @@ fun endSeekForward()
 
 <div align="right">
 참고: <a href="#beginseekforward">beginSeekForward</a><br>
-<a href="#onendseekgesture">onEndSeekGesture</a>
+<a href="#onendseekgesture">onEndSeekGesture</a><br>
+사용 예제: <a href="#빨리-감기-2">빨리 감기 2</a>
 </div>
 
 ### lockScreen
@@ -223,7 +254,8 @@ fun resetAutoHideControl()
 [removeAutoHideControl()](#removeautohidecontrol)를 사용한 이후, 기존의 [컨트롤러 자동 숨김 설정](../media-player-activity-configuration/home.md#controllershowtimeout)으로 되돌아가기 위해서는 이 메서드를 사용하면 됩니다.
 
 <div align="right">
-참고: <a href="#removeautohidecontrol">removeAutoHideControl</a>
+참고: <a href="#removeautohidecontrol">removeAutoHideControl</a><br>
+사용 예제: <a href="#타임바-리스너">타임바 리스너</a>
 </div>
 
 ### removeAutoHideControl
@@ -235,7 +267,8 @@ fun removeAutoHideControl()
 [미디어 플레이어 설정](../media-player-activity-configuration/home.md)의 [controllerShowTimeout](../media-player-activity-configuration/home.md#controllershowtimeout) 설정에 따라 일정 시간 후 컨트롤러는 자동으로 사라집니다. 이 메서드를 사용하면 컨트롤러를 일시적으로 계속 켜놓을 수 있습니다. 원래 설정으로 되돌아가려면 [resetAutoHideControl()](#resetautohidecontrol)를 사용하면 됩니다.
 
 <div align="right">
-참고: <a href="#resetautohidecontrol">resetAutoHideControl</a>
+참고: <a href="#resetautohidecontrol">resetAutoHideControl</a><br>
+사용 예제: <a href="#타임바-리스너">타임바 리스너</a>
 </div>
 
 ### setResizeMode
@@ -293,6 +326,9 @@ fun unlockScreen()
 
 디바이스 회전 상태에 따라 화면을 자동으로 전환할 때 사용합니다.
 
+<div align="right">
+참고: <a href="https://developer.android.com/reference/android/app/Activity#setRequestedOrientation(int)">setRequestedOrientation()</a>
+</div>
 
 ## 구간 반복 모드
 
@@ -304,6 +340,10 @@ mediaPlayer.repeatRange = null
 
 구간 반복 모드를 해제할 때는 위와 같이 사용하면 됩니다.
 
+<div align="right">
+참고: <a href="../../interface/media-player/home.md#repeatrange">repeatRange</a>
+</div>
+
 ### 구간 반복 모드 설정
 
 ```kotlin
@@ -311,6 +351,12 @@ mediaPlayer.repeatRange = MediaPlayer.RepeatRange(Duration.ofSeconds(10), Durati
 ```
 
 구간 반복 모드를 설정할 때는 위와 같이 사용하면 됩니다. 이 예제는 10초부터 20초 사이를 반복하도록 설정한 것입니다.
+
+<div align="right">
+참고: <a href="../../interface/media-player/home.md#repeatrange">repeatRange</a>, 
+<a href="../media-player-repeat-range/home.md">RepeatRange</a>
+</div>
+
 
 ### 구간 반복 범위 수정
 
@@ -324,6 +370,12 @@ mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withStart(startPosition)
 구간 반복 모드를 설정한 후, 시작 위치를 수정하려면 위와 같이 사용하면 됩니다. 이 예제는 현재 재생 위치를 구간 반복 시작 위치로 설정한 것입니다.
 구간 반복 모드가 아닐 경우에는 동작하지 않습니다.
 
+<div align="right">
+참고: <a href="../../interface/media-player/home.md#repeatrange">repeatRange</a>, 
+<a href="../media-player-repeat-range/home.md#withstart">withStart()</a>
+</div>
+
+
 #### 구간 반복 종료 위치 수정
 
 ```kotlin
@@ -334,6 +386,10 @@ mediaPlayer.repeatRange = mediaPlayer.repeatRange?.withEnd(endPosition)
 구간 반복 모드를 설정한 후, 종료 위치를 수정하려면 위와 같이 사용하면 됩니다. 이 예제는 현재 재생 위치를 구간 반복 종료 위치로 설정한 것입니다.
 구간 반복 모드가 아닐 경우에는 동작하지 않습니다.
 
+<div align="right">
+참고: <a href="../../interface/media-player/home.md#repeatrange">repeatRange</a>, 
+<a href="../media-player-repeat-range/home.md#withend">withEnd()</a>
+</div>
 
 ## 미디어 재생 관련
 
@@ -346,7 +402,7 @@ Util.handlePlayPauseButtonAction(mediaPlayer)
 미디어를 재생하거나 일시 정지할 수 있습니다. [play()](../../interface/media-player/home.md#play)와 [pause()](../../interface/media-player/home.md#pause)를 직접 호출해도 되지만, 간단하게 재생과 일시정지를 토글하려면 위와 같이 구현하면 됩니다.
 
 <div align="right">
-참고: <a href="https://developer.android.com/media/media3/ui/customization#play-pause-button">Play/Pause Button</a><br/>
+참고: <a href="https://developer.android.com/media/media3/ui/customization#play-pause-button">Play/Pause Button</a><br>
 <a href="../../interface/media-player/home.md#play">play(),</a> 
 <a href="../../interface/media-player/home.md#pause">pause()</a> 
 </div>
@@ -361,6 +417,18 @@ mediaPlayer.seekToPrevious()
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player#seekToPrevious()">seekToPrevious()</a>
+</div>
+
+### 다음 미디어
+
+```kotlin
+mediaPlayer.seekToNext()
+```
+
+재생 목록에서 다음 미디어를 재생할 때 사용합니다.
+
+<div align="right">
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player#seekToNext()">seekToNext()</a>
 </div>
 
 ### 되감기 1
@@ -439,19 +507,6 @@ fastForwardButton.setOnTouchListener { _, event ->
 비교: <a href="#빨리-감기-1">빨리 감기 1</a>
 </div>
 
-
-### 다음 미디어
-
-```kotlin
-mediaPlayer.seekToNext()
-```
-
-재생 목록에서 다음 미디어를 재생할 때 사용합니다.
-
-<div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player#seekToNext()">seekToNext()</a>
-</div>
-
 ### 화면 속 화면 모드
 
 ```kotlin
@@ -460,6 +515,10 @@ mediaPlayer.enterPictureInPicture(activity, this)
 ```
 
 화면 속 화면 모드로 전환하려면 위의 예제처럼 구현하면 됩니다.
+
+<div align="right">
+참고: <a href="../../interface/player/home.md#enterpictureinpicture">enterPictureInPicture()</a>
+</div>
 
 
 ## 재생 속도 관련
@@ -508,7 +567,7 @@ seekBar.setOnSeekBarChangeListener(
         ) {
             if (fromUser) {
                 val position = Duration.ofSeconds(progress.toLong())
-                // updateTimePosition(position) 
+                // updateTimePosition(position) // 재생 위치 관련 UI 업데이트
             }
         }
 
