@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2024.12.31.](https://app.playnplay.com/sdks/2024-12-31/NPlayerSDK-android.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li></ul>|
 |[2024.12.06.](https://app.playnplay.com/sdks/2024-12-06/NPlayerSDK-android.zip)|<ul><li>[미디어 플레이어 설정 기능](../class/media-player-activity-configuration/home.md#mediaplayeractivityconfiguration) 추가<ul><li>[자막 위치](../class/media-player-activity-configuration/home.md#mediaplayeractivityconfiguration#subtitletextposition)</li><li>[자막 크기](../class/media-player-activity-configuration/home.md#mediaplayeractivityconfiguration#subtitletextsize)</li></ul></li></ul>|
 |[2024.11.11.](https://app.playnplay.com/sdks/2024-11-11/NPlayerSDK-android.zip)|<ul><li>자막 확대/축소 기능 추가</li></ul>|
 |[2024.10.30.](https://app.playnplay.com/sdks/2024-10-30/NPlayerSDK-android.zip)|<ul><li>자막 이동 기능 추가</li><li>안정성 개선</li></ul>|
