@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2025.01.07.](https://app.playnplay.com/sdks/2025-01-07/NPlayerSDK-iOS.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li></ul>|
 |[2024.12.31.](https://app.playnplay.com/sdks/2024-12-31/NPlayerSDK-iOS.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li></ul>|
 |[2024.12.06.](https://app.playnplay.com/sdks/2024-12-06/NPlayerSDK-iOS.zip)|<ul><li>[미디어 플레이어 설정 기능](../struct/media-player-view-controller-configuration/home.md#mediaplayerviewcontrollerconfiguration) 추가<ul><li>[자막 위치](../struct/media-player-view-controller-configuration/home.md#subtitletextposition)</li><li>[자막 크기](../struct/media-player-view-controller-configuration/home.md#subtitletextsize)</li></ul></li></ul>|
 |[2024.11.11.](https://app.playnplay.com/sdks/2024-11-11/NPlayerSDK-iOS.zip)|<ul><li>자막 확대/축소 기능 추가</li></ul>|
