@@ -118,7 +118,7 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
 
 |이름|타입|설명|
 |:--:|:--:|:--:|
-|title | string \| undefined | 모바일 플레이어 재생 화면에 표시되는 타이틀|
+|title | string \| undefined | 모바일 플레이어 타임바에 표시되는 타이틀|
 |artworkUrl| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| undefined | artwork URL (옵션)|
 |downloadPath | string \| undefined | 다운로드 파일의 경로 표시 값 <br>[타입](#launchtype)이 LaunchType.DOWNLOAD의 경우 설정|
 
