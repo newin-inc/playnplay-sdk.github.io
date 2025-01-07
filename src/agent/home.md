@@ -57,6 +57,7 @@ const LaunchType = {
 |url| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) |  미디어 URL|
 |seekable| boolean \| undefined | 탐색(Seek) 기능을 허용 여부  (옵션, 기본값: true)|
 |returnUrl| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| undefined | 리턴 URL  (옵션)|
+|startTime| number \| undefined | 재생 시작 시간 설정  (옵션)|
 |drm| [DRM](#drm) \| undefined | [DRM](#drm) 설정 (옵션)|
 |subtitles|\[[Subtitle](#subtitle)\] \| undefined| 자막 설정 (옵션)|
 |metadata|[Metadata](#metadata) \| undefined| 메타데이터 설정 (옵션)|
