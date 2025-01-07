@@ -152,6 +152,9 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
             userId: "test-user",
             userData: {
             }
+        },
+        metadata: {
+            title: "제목입니다."
         }
     };
     launchAgent(LaunchType.Streaming, mediaItem, { width: 900, height: 600 });
