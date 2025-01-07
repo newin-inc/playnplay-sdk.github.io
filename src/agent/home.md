@@ -45,6 +45,7 @@ const LaunchType = {
     "url": string | URL, 
     "seekable": boolean | undefined, 
     "returnUrl": string | URL | undefined, 
+    "startTime": number | undefined,
     "drm": DRM | undefined, 
     "subtitles": [Subtitle] | undefined, 
     "metadata": Metadata | undefined 
