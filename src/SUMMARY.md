@@ -85,6 +85,7 @@
         - [UIViewController](./ios/class/uiviewcontroller/home.md)
         - [VideoTrack](./ios/class/video-track/home.md)
     - [구조체](./ios/struct/home.md)
+        - [ClippingConfiguration](./ios/struct/clipping-configuration/home.md)
         - [DownloadItem](./ios/struct/download-item/home.md)
         - [DrmConfiguration](./ios/struct/drm-configuration/home.md)
         - [Duration](./ios/struct/duration/home.md)

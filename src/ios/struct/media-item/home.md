@@ -10,6 +10,20 @@ MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등�
 
 # 속성
 
+## clippingConfiguration
+
+```swift
+let clippingConfiguration: ClippingConfiguration?
+```
+
+|타입|설명|
+|:--:|--|
+|[ClippingConfiguration](../clipping-configuration/home.md)?| 클리핑 설정 정보 |
+
+<div align="right">
+참고: <a href="../clipping-configuration/home.md">ClippingConfiguration</a>
+</div>
+
 ## drmConfiguration
 
 ```swift

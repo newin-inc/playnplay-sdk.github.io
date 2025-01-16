@@ -40,6 +40,22 @@ Builder를 이용하여 설정한 정보에 기반하여 미디어 아이템을 
 참고: <a href="../../struct/media-item/home.md">MediaItem</a>
 </div>
 
+## clippingConfiguration(_)
+
+```swift
+func clippingConfiguration(_ clippingConfiguration: ClippingConfiguration?) -> MediaItem.Builder
+```
+
+|파라미터|타입|설명|필수|
+|:--:|:--:|:--:|:--:|
+|clippingConfiguration|[ClippingConfiguration](../../struct/clipping-configuration/home.md)?|클리핑 설정|O|
+
+클리핑 설정을 넘겨줍니다.
+
+<div align="right">
+참고: <a href="../../struct/clipping-configuration/home.md">ClippingConfiguration</a>
+</div>
+
 ## drmConfiguration(_)
 
 ```swift
