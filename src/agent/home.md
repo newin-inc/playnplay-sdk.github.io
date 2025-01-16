@@ -26,7 +26,7 @@ async function launchAgent(type, mediaItemOrUrl, options);
 const LaunchType = {
     Streaming: 'streaming',
     Downloading: 'downloading',
-    OpeningPage: 'opening-page',
+    OpeningPage: 'opening-page'
 };
 ```
 
@@ -48,7 +48,8 @@ const LaunchType = {
     "startTime": number | undefined,
     "drm": DRM | undefined, 
     "subtitles": [Subtitle] | undefined, 
-    "metadata": Metadata | undefined 
+    "metadata": Metadata | undefined,
+    "clipping": Clipping | undefined 
 }
 ```
 
@@ -61,6 +62,7 @@ const LaunchType = {
 |drm| [DRM](#drm) \| undefined | [DRM](#drm) 설정 (옵션)|
 |subtitles|\[[Subtitle](#subtitle)\] \| undefined| 자막 설정 (옵션)|
 |metadata|[Metadata](#metadata) \| undefined| 메타데이터 설정 (옵션)|
+|clipping|[Clipping](#clipping) \| undefined| 미디어 클리핑 설정 (옵션)|
 
 DRM 설정, returnUrl 등을 포함한 미디어 아이템을 구성할 수 있습니다. [사용 예제](#사용-예제-동영상-재생)를 참고하세요.
 <br>
@@ -73,7 +75,7 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
     "appId": string,
     "userId": string,
     "userData": object | undefined,
-    "offlineAccessPeriod": number | undefined,
+    "offlineAccessPeriod": number | undefined
 }
 ```
 
@@ -93,7 +95,7 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
     "url": string | URL,
     "language": string | undefined,
     "label": string | undefined,
-    "mode": "autoSelect" | "show" | "hidden" | undefined,
+    "mode": "autoSelect" | "show" | "hidden" | undefined
 }
 ```
 
@@ -112,7 +114,7 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
 {
     "title": string | undefined,
     "artworkUrl": string | URL | undefined,
-    "downloadPath": string | undefined,
+    "downloadPath": string | undefined
 }
 ```
 
@@ -124,12 +126,29 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
 
 [미디어 아이템](#mediaitem)을 구성할 때, 메타데이터를 추가할 수 있습니다.
 
+## Clipping 
+
+```javascript
+{
+    "startTime": number,
+    "endTime": number | undefined
+}
+```
+
+|이름|타입|설명|
+|:--:|:--:|:--:|
+|startTime | number | 시작 시간 (초) (필수)|
+|endTime | number \| undefined | 끝 시간 (초) (옵션: 지정하지 않으면 미디어의 끝 시간으로 설정)|
+
+미디어 항목을 사용자 지정 시작 및 끝 위치로 잘라냅니다. 
+[미디어 아이템](#mediaitem)을 구성할 때, 클리핑을 추가할 수 있습니다.
+
 ## Options
 
 ```javascript
 {
     "height": number | undefined,
-    "width": number | undefined,
+    "width": number | undefined
 }
 ```
 
