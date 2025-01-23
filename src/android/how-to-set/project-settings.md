@@ -26,17 +26,17 @@ dependencies {
 
 ```kotlin
 dependencies {
-    implementation("androidx.media3:media3-ui:1.4.1")
-    implementation("androidx.media3:media3-session:1.4.1")
-    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.4.1")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.2")
-    implementation("androidx.navigation:navigation-compose:2.8.2")
+    implementation("androidx.media3:media3-ui:1.5.1")
+    implementation("androidx.media3:media3-session:1.5.1")
+    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.5.1")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.5")
+    implementation("androidx.navigation:navigation-compose:2.8.5")
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("com.google.android.material:material:1.12.0")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 	implementation("net.java.dev.jna:jna:5.14.0@aar")
 
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.2")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }
 ```
 

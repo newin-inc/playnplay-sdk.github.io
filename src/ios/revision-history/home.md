@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2025.01.23.](https://app.playnplay.com/sdks/2025-01-23/NPlayerSDK-iOS.zip)|<ul><li>[미디어 클리핑 설정 추가](../struct/clipping-configuration/home.html)</li></ul>|
 |[2025.01.09.](https://app.playnplay.com/sdks/2025-01-09/NPlayerSDK-iOS.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li></ul>|
 |[2025.01.07.](https://app.playnplay.com/sdks/2025-01-07/NPlayerSDK-iOS.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li></ul>|
 |[2024.12.31.](https://app.playnplay.com/sdks/2024-12-31/NPlayerSDK-iOS.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li></ul>|
