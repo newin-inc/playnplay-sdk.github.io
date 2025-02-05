@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2025.01.23.](https://app.playnplay.com/sdks/2025-02-05/NPlayerSDK-iOS.zip)|<ul><li>다운로드된 파일 이름에 일부 특수 문자가 포함되어있을 경우 재생되지 않는 문제 수정</li></ul>|
 |[2025.01.23.](https://app.playnplay.com/sdks/2025-01-23/NPlayerSDK-iOS.zip)|<ul><li>[미디어 클리핑 설정 추가](../struct/clipping-configuration/home.html)</li></ul>|
 |[2025.01.09.](https://app.playnplay.com/sdks/2025-01-09/NPlayerSDK-iOS.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li></ul>|
 |[2025.01.07.](https://app.playnplay.com/sdks/2025-01-07/NPlayerSDK-iOS.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li></ul>|
