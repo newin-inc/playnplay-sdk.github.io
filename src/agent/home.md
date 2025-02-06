@@ -179,3 +179,24 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
     launchAgent(LaunchType.Streaming, mediaItem, { width: 900, height: 600 });
 </script>
 ```
+
+# getDeviceInfo
+
+```javascript
+async function getDeviceInfo();
+```
+
+브라우저가 실행되고 있는 장치의 정보를 얻어옵니다.
+
+## 출력 
+(platform을 제외한 필드는 브라우저에 따라 값이 다르거나 없을 수 있습니다.)
+
+```javascript
+{
+    "platform": string,
+    "platformVersion": string | undefined,
+    "architecture": string | undefined,
+    "model": string | undefined
+}
+```
+
