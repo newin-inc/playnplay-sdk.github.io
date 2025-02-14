@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2025.02.14.](https://app.playnplay.com/sdks/2025-02-14/NPlayerSDK-android.zip)|<ul><li>플레이어 종료 이벤트 발생 지연 문제 수정</li></ul>|
 |[2025.01.23.](https://app.playnplay.com/sdks/2025-01-23/NPlayerSDK-android.zip)|<ul><li>App Player 차단 로직 개선</li></ul>|
 |[2025.01.09.](https://app.playnplay.com/sdks/2025-01-09/NPlayerSDK-android.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li></ul>|
 |[2025.01.07.](https://app.playnplay.com/sdks/2025-01-07/NPlayerSDK-android.zip)|<ul><li>CDNetworks DRM 재생 문제 수정</li><li>MediaPlayer#release 문제 수정</li></ul>|
