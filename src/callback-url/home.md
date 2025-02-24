@@ -29,3 +29,5 @@ API 접근 권한을 위해 문자열 형태로 등록가능합니다. 선택사
 - [재생 종료 보고](./notify-playback-finish.md)
 
 - [다운로드 상태 보고](./notifiy-download-status.md)
+
+- [북마크 데이터 업데이트](./update-bookmarks.md)
