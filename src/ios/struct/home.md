@@ -1,5 +1,7 @@
 # 구조체
 
+* [BookmarkItem](./bookmark-item/home.md)
+
 * [DownloadItem](./download-item/home.md)
 
 * [DrmConfiguration](./drm-configuration/home.md)

@@ -6,9 +6,13 @@
 
 <br>
 
-# launchAgent
+# playnplay: launch()
 
 ```javascript
+playnplay.launch = async (type, mediaItemOrUrl, options)
+```
+```javascript
+// Deprecated
 async function launchAgent(type, mediaItemOrUrl, options);
 ```
 
@@ -19,6 +23,30 @@ async function launchAgent(type, mediaItemOrUrl, options);
 |options|[Options](#options) \| undefined|플레이어 높이, 너비 등 옵션|
 
 [미디어 아이템](#mediaitem)이나 미디어 주소를 사용하여 플레이어를 실행시킬 수 있습니다. 이때 사용 목적에 따라 [타입](#launchtype)을 설정할 수 있습니다.
+
+# playnplay: download()
+
+```javascript
+playnplay.download = async (mediaItems)
+```
+
+|파라미터|타입|설명|
+||||
+|mediaItems|[\[MediaItem\]](#mediaitem)\|[MediaItem](#mediaitem)|다운로드 항목|
+
+# playnplay: getDeviceInfo()
+
+```javascript
+playnplay.getDeviceInfo = async ()
+```
+```javascript
+// Deprecated
+async function getDeviceInfo();
+```
+출력: [DeviceInfo](#deviceinfo)
+
+브라우저가 실행되고 있는 장치의 정보를 얻어옵니다.
+
 
 ## LaunchType
 
@@ -45,7 +73,7 @@ const LaunchType = {
     "url": string | URL, 
     "seekable": boolean | undefined, 
     "returnUrl": string | URL | undefined, 
-    "startTime": number | undefined,
+    "startTime": number | StartTime | undefined,
     "drm": DRM | undefined, 
     "subtitles": [Subtitle] | undefined, 
     "metadata": Metadata | undefined,
@@ -59,7 +87,7 @@ const LaunchType = {
 |url| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) |  미디어 URL|
 |seekable| boolean \| undefined| 탐색(Seek) 기능을 허용 여부  (옵션, 기본값: true)|
 |returnUrl| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| undefined | 리턴 URL  (옵션)|
-|startTime| number \| undefined| 재생 시작 시간 설정  (옵션)|
+|startTime| number \| [StartTime](#starttime) \| undefined| 재생 시작 시간 설정  (옵션)|
 |drm| [DRM](#drm) \| undefined| [DRM](#drm) 설정 (옵션)|
 |subtitles|\[[Subtitle](#subtitle)\] \| undefined| 자막 설정 (옵션)|
 |metadata|[Metadata](#metadata) \| undefined| 메타데이터 설정 (옵션)|
@@ -109,6 +137,20 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
 |mode| string \| undefined | 자막 선택 모드<br>(옵션, 기본값: "autoSelect")<p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><th>autoSelect</th><th>자동 선택</th></tr><tr><th>show</th><th>자막 보이기</th></tr><tr><th>hidden</th><th>자막 숨기기</th></tr></tbody></table>|
 
 [미디어 아이템](#mediaitem)을 구성할 때, 위와 같은 요소를 포함하는 자막을 추가할 수 있습니다.
+
+## StartTime 
+
+```javascript
+{
+    "value": number,
+    "syncedAt": Date | undefined
+}
+```
+
+|이름|타입|설명|
+||||
+| value | number | 시작 시간 값 (초) |
+| syncedAt | Date \| undefined |  시작 시간이 업데이트된 시간 (옵션)<br /> 설정한 시작 시간과 오프라인에 저장된 최근 저장된 재생 시간 중 가장 최근의 값을 선택하기 위한 목적 |
 
 ## Metadata 
 
@@ -170,6 +212,17 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
 
 미디어 플레이어의 크기를 설정할 수 있습니다. [사용 예제](#사용-예제-동영상-재생)를 참고하세요.
 
+## DeviceInfo
+
+```javascript
+{
+    "platform": string,
+    "platformVersion": string | undefined,
+    "architecture": string | undefined,
+    "model": string | undefined
+}
+```
+
 ## 사용 예제: 동영상 재생
 
 ```html
@@ -187,27 +240,7 @@ returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상�
             title: "제목입니다."
         }
     };
-    launchAgent(LaunchType.Streaming, mediaItem, { width: 900, height: 600 });
+    playnplay.launch(LaunchType.Streaming, mediaItem, { width: 900, height: 600 });
 </script>
-```
-
-# getDeviceInfo
-
-```javascript
-async function getDeviceInfo();
-```
-
-브라우저가 실행되고 있는 장치의 정보를 얻어옵니다.
-
-## 출력 
-(platform을 제외한 필드는 브라우저에 따라 값이 다르거나 없을 수 있습니다.)
-
-```javascript
-{
-    "platform": string,
-    "platformVersion": string | undefined,
-    "architecture": string | undefined,
-    "model": string | undefined
-}
 ```
 

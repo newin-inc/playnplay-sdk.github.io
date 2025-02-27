@@ -14,6 +14,16 @@ import androidx.media3.common.MediaItem
 
 # 속성
 
+## bookmarks
+
+```kotlin
+val MediaItem.bookmarks: List<BookmarkItem>
+```
+
+| 타입 | 설명 | 설정 |
+|:----:|---|:---:|
+|List\<[BookmarkItem](../bookmark-item/home.md)\>|북마크 정보| 불가능 |
+
 ## returnUrl
 
 ```kotlin

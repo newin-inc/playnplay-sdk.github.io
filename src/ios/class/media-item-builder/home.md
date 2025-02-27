@@ -28,6 +28,15 @@ init(url: URL)
 
 # 메서드
 
+## bookmarks(_)
+
+```swift
+func bookmarks(_ bookmarks: [BookmarkItem])
+```
+|파라미터|타입|설명|필수|
+|:--:|:--:|:--:|:--:|
+|bookmarks|[BookmarkItem](../../struct/bookmark-item/home.md)?|북마크 설정|O|
+
 ## build()
 
 ```swift

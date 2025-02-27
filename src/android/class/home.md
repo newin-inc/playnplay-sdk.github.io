@@ -2,6 +2,8 @@
 
 - [AudioTrack](./audio-track/home.md)
 
+- [BookmarkItem](./bookmark-item/home.md)
+
 - [Context](./context/home.md)
 
 - [DownloadItem](./download-item/home.md)
