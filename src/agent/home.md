@@ -92,7 +92,7 @@ const LaunchType = {
 |subtitles|\[[Subtitle](#subtitle)\] \| undefined| 자막 설정 (옵션)|
 |metadata|[Metadata](#metadata) \| undefined| 메타데이터 설정 (옵션)|
 |clipping|[Clipping](#clipping) \| undefined| 미디어 클리핑 설정 (옵션)|
-|bookmarks|[Bookmark](#bookmark) \| undefined| 북마크 데이터 (옵션)<br />참고: 이 필드를 설정하면 PlaynPlay의 북마크 연동 기능이 비활성화됩니다. 북마크 데이터 저장하려면 [Callback URL](../callback-url/update-bookmarks.html) 구현해야 합니다.|
+|bookmarks|\[[Bookmark](#bookmark)\] \| undefined| 북마크 데이터 (옵션)<br />참고: 이 필드를 설정하면 PlaynPlay의 북마크 연동 기능이 비활성화됩니다. 북마크 데이터 저장하려면 [Callback URL](../callback-url/update-bookmarks.html) 구현해야 합니다.|
 
 DRM 설정, returnUrl 등을 포함한 미디어 아이템을 구성할 수 있습니다. [사용 예제](#사용-예제-동영상-재생)를 참고하세요.
 <br>
