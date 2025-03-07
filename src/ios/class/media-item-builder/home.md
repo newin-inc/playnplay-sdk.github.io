@@ -31,11 +31,11 @@ init(url: URL)
 ## bookmarks(_)
 
 ```swift
-func bookmarks(_ bookmarks: [BookmarkItem])
+func useBookmarkCallback(_ useBookmarkCallback: Bool)
 ```
 |파라미터|타입|설명|필수|
 |:--:|:--:|:--:|:--:|
-|bookmarks|[BookmarkItem](../../struct/bookmark-item/home.md)?|북마크 설정|O|
+|useBookmarkCallback|Bool|북마크 콜백 사용 여부|O|
 
 ## build()
 

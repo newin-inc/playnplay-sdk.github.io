@@ -10,15 +10,15 @@ MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등�
 
 # 속성
 
-## bookmarks
+## useBookmarkCallback
 
 ```swift
-var bookmarks: [BookmarkItem]
+var useBookmarkCallback: Bool
 ```
 
 |타입|설명|
 |:--:|--|
-|[BookmarkItem](../bookmark-item/home.md)?| 북마크 정보 |
+|Bool| 북마크 콜백 사용 여부 |
 
 ## clippingConfiguration
 

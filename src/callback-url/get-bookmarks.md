@@ -1,8 +1,8 @@
-# 북마크 데이터 업데이트 (UpdateBookmarks)
+# 북마크 데이터 제공 (GetBookmarks)
 
-북마크 데이터 변경 시 호출됩니다. 
+플레이어에서 북마크 데이터가 필요할 때 호출됩니다.
 
-참고: [launchAgent](../agent/home.html#launchagent)호출 시 [MediaItem](../agent/home.html#mediaitem)의 bookmarks에 북마크 데이터를 전달했을 경우에만 호출됩니다.
+참고: [launchAgent](../agent/home.html#launchagent)호출 시 [MediaItem](../agent/home.html#mediaitem)의 *useBookmarkCallback*을 true로 설정했을 때 호출됩니다.
 
 ## 호출
 
@@ -22,8 +22,7 @@ Authorization: Bearer <Authorization>
     "sessionId": string,
     "userId": string,
     "userData": object,
-    "mediaUrl": string,
-    "bookmarks": [Bookmark]
+    "mediaUrl": string
 }
 ```
 
@@ -35,13 +34,13 @@ Authorization: Bearer <Authorization>
 |userId|string|사용자 아이디|
 |userData|object|[launchAgent](../agent/home.md#launchagent) 호출 시 [입력한 정보](../agent/home.md#drm)<br>(사용자 및 컨텐츠 식별 등의 용도)|
 |mediaUrl|string|미디어 URL|
-|bookmarks|\[[Bookmark](../agent/home.html#bookmark)\]|업데이트된 북마크 데이터|
 
 ## 반환
 
 ```json
 {
-    "result": "Ok"
+    "result": "Ok",
+    "bookmarks": [{"title": "제목", "pos": 60}]
 }
 ```
 
@@ -50,4 +49,10 @@ Authorization: Bearer <Authorization>
 |값|설명|
 |:--:|:--:|
 |Ok|성공|
+
+### bookmarks
+
+|값|설명|
+|:--:|:--:|
+|[\[Bookmark\]](../agent/home.html#bookmark)|북마크 값 (배열)|
 

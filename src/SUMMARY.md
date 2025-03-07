@@ -126,6 +126,7 @@
     - [재생 상태 보고](./callback-url/notifiy-playback-status.md)
     - [재생 종료 보고](./callback-url/notify-playback-finish.md)
     - [다운로드 상태 보고](./callback-url/notifiy-download-status.md)
+    - [북마크 데이터 제공](./callback-url/get-bookmarks.md)
     - [북마크 데이터 업데이트](./callback-url/update-bookmarks.md)
     - [변경 이력](./callback-url/revision-history/home.md)
 

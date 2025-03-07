@@ -14,15 +14,15 @@ import androidx.media3.common.MediaItem
 
 # 속성
 
-## bookmarks
+## useBookmarkCallback
 
 ```kotlin
-val MediaItem.bookmarks: List<BookmarkItem>
+val MediaItem.useBookmarkCallback: Boolean
 ```
 
 | 타입 | 설명 | 설정 |
 |:----:|---|:---:|
-|List\<[BookmarkItem](../bookmark-item/home.md)\>|북마크 정보| 불가능 |
+|Boolean|북마크 콜백 사용| 불가능 |
 
 ## returnUrl
 

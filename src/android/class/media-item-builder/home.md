@@ -14,14 +14,14 @@ import androidx.media3.common.MediaItem.Builder
 
 # 메서드
 
-## setBookmarks
+## setUseBookmarkCallback
 
 ```kotlin
-fun MediaItem.Builder.setBookmarks(bookmarks: List<BookmarkItem>): MediaItem.Builder
+fun MediaItem.Builder.setUseBookmarkCallback(useBookmarkCallback: Boolean): MediaItem.Builder
 ```
 |파라미터|타입|설명|필수|
 |:--:|:--:|:--:|:--:|
-|bookmarks|List\<[BookmarkItem](../bookmark-item/home.md)\>|북마크 설정|O|
+|useBookmarkCallback|Boolean|북마크 콜백 사용 여부|O|
 
 ## setSeekable
 
