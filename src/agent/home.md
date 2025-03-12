@@ -92,7 +92,7 @@ const LaunchType = {
 |subtitles|\[[Subtitle](#subtitle)\] \| undefined| 자막 설정 (옵션)|
 |metadata|[Metadata](#metadata) \| undefined| 메타데이터 설정 (옵션)|
 |clipping|[Clipping](#clipping) \| undefined| 미디어 클리핑 설정 (옵션)|
-|useBookmarkCallback| boolean \| undefined| 북마크 콜백 URL 사용 (옵션, 기본값: false)<br /><p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><th>true</th><th>[GetBookmarks](../callback-url/get-bookmarks.html), [UpdateBookmarks](../callback-url/update-bookmarks.html) Callback 사용</th></tr><tr><th>false</th><th>PlaynPlay 서비스에서 제공하는 북마크 불러오기 저장 방식 사용</th></tr></tbody></table>|
+|useBookmarkCallback| boolean \| undefined| 북마크 콜백 URL 사용 (옵션, 기본값: false)<br /><p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><td>true</td><td>[GetBookmarks](../callback-url/get-bookmarks.html), [UpdateBookmarks](../callback-url/update-bookmarks.html) Callback 사용</td></tr><tr><td>false</td><td>PlaynPlay 서비스에서 제공하는 북마크 불러오기 저장 방식 사용</td></tr></tbody></table>|
 
 DRM 설정, returnUrl 등을 포함한 미디어 아이템을 구성할 수 있습니다. [사용 예제](#사용-예제-동영상-재생)를 참고하세요.
 
