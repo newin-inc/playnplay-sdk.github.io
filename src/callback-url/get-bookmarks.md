@@ -17,7 +17,7 @@ content-type: application/json
 Authorization: Bearer <Authorization>
 
 {
-    "type": "UpdateBookmarks",
+    "type": "GetBookmarks",
     "appId": string,
     "sessionId": string,
     "userId": string,
