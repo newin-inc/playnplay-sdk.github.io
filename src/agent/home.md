@@ -85,18 +85,15 @@ const LaunchType = {
 |이름|타입|설명|
 ||||
 |url| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) |  미디어 URL|
-|seekable| boolean \| undefined| 탐색(Seek) 기능을 허용 여부  (옵션, 기본값: true)|
-|returnUrl| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| undefined | 리턴 URL  (옵션)|
-|startTime| number \| [StartTime](#starttime) \| undefined| 재생 시작 시간 설정  (옵션)|
 |drm| [DRM](#drm) \| undefined| [DRM](#drm) 설정 (옵션)|
 |subtitles|\[[Subtitle](#subtitle)\] \| undefined| 자막 설정 (옵션)|
 |metadata|[Metadata](#metadata) \| undefined| 메타데이터 설정 (옵션)|
 |clipping|[Clipping](#clipping) \| undefined| 미디어 클리핑 설정 (옵션)|
+|returnUrl| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| undefined | 리턴 URL  (옵션)|
+|seekable| boolean \| undefined| 탐색(Seek) 기능을 허용 여부  (옵션, 기본값: true)|
+|disablePlaybackRate| boolean \| undefined| 배속 기능을 허용 여부  (옵션, 기본값: false)|
+|startTime| number \| [StartTime](#starttime) \| undefined| 재생 시작 시간 설정  (옵션)|
 |useBookmarkCallback| boolean \| undefined| 북마크 콜백 URL 사용 (옵션, 기본값: false)<br /><p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><td>true</td><td>[GetBookmarks](../callback-url/get-bookmarks.html), [UpdateBookmarks](../callback-url/update-bookmarks.html) Callback 사용</td></tr><tr><td>false</td><td>PlaynPlay 서비스에서 제공하는 북마크 불러오기 저장 방식 사용</td></tr></tbody></table>|
-
-DRM 설정, returnUrl 등을 포함한 미디어 아이템을 구성할 수 있습니다. [사용 예제](#사용-예제-동영상-재생)를 참고하세요.
-
-returnUrl에는 반드시 **https://** 를 포함한 URL을 입력해야 정상적으로 작동합니다.
 
 ## DRM 
 

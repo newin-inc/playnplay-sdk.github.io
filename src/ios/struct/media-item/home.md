@@ -10,16 +10,6 @@ MediaItem은 미디어의 url, 자막 정보, 메타 데이터, DRM 설정 등�
 
 # 속성
 
-## useBookmarkCallback
-
-```swift
-var useBookmarkCallback: Bool
-```
-
-|타입|설명|
-|:--:|--|
-|Bool| 북마크 콜백 사용 여부 |
-
 ## clippingConfiguration
 
 ```swift
@@ -33,6 +23,16 @@ let clippingConfiguration: ClippingConfiguration?
 <div align="right">
 참고: <a href="../clipping-configuration/home.md">ClippingConfiguration</a>
 </div>
+
+## disablePlaybackRate
+
+```swift
+var disablePlaybackRate: Bool
+```
+
+|타입|설명|
+|:--:|--|
+|Bool| 미디어 배속 기능 허용 여부 |
 
 ## drmConfiguration
 
@@ -126,6 +126,16 @@ let url: URL
 </div>
 
 <br>
+
+## useBookmarkCallback
+
+```swift
+var useBookmarkCallback: Bool
+```
+
+|타입|설명|
+|:--:|--|
+|Bool| 북마크 콜백 사용 여부 |
 
 # 메서드
 

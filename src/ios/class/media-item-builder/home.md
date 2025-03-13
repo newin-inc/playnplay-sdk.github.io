@@ -28,15 +28,6 @@ init(url: URL)
 
 # 메서드
 
-## bookmarks(_)
-
-```swift
-func useBookmarkCallback(_ useBookmarkCallback: Bool)
-```
-|파라미터|타입|설명|필수|
-|:--:|:--:|:--:|:--:|
-|useBookmarkCallback|Bool|북마크 콜백 사용 여부|O|
-
 ## build()
 
 ```swift
@@ -64,6 +55,18 @@ func clippingConfiguration(_ clippingConfiguration: ClippingConfiguration?) -> M
 <div align="right">
 참고: <a href="../../struct/clipping-configuration/home.md">ClippingConfiguration</a>
 </div>
+
+## disablePlaybackRate(_)
+
+```swift
+func disablePlaybackRate(_ disablePlaybackRate: Bool) -> MediaItem.Builder
+```
+
+|파라미터|타입|설명|필수|
+|:--:|:--:|:--:|:--:|
+|disablePlaybackRate|Bool|배속 기능을 허용할 지에 대한 여부|O|
+
+배속 기능 허용 여부를 설정합니다. disablePlaybackRate(true)일 경우, 배속 기능이 제한됩니다.
 
 ## drmConfiguration(_)
 
@@ -155,3 +158,13 @@ func url(_ url: URL) -> MediaItem.Builder
 <div align="right">
 참고: <a href="https://developer.apple.com/documentation/foundation/url">URL</a>
 </div>
+
+## useBookmarkCallback(_)
+
+```swift
+func useBookmarkCallback(_ useBookmarkCallback: Bool)
+```
+|파라미터|타입|설명|필수|
+|:--:|:--:|:--:|:--:|
+|useBookmarkCallback|Bool|북마크 콜백 사용 여부|O|
+

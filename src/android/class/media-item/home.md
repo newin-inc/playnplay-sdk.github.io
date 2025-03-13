@@ -14,15 +14,17 @@ import androidx.media3.common.MediaItem
 
 # 속성
 
-## useBookmarkCallback
+## disablePlaybackRate
 
 ```kotlin
-val MediaItem.useBookmarkCallback: Boolean
+val MediaItem.disablePlaybackRate: Boolean
 ```
 
-| 타입 | 설명 | 설정 |
-|:----:|---|:---:|
-|Boolean|북마크 콜백 사용| 불가능 |
+| 타입 | 설명 | 설정 | 기본값 |
+|:----:|---|:---:|:---:|
+|Boolean|배속 기능 허용 여부 | 불가능 | false |
+
+미디어의 배속 기능 허용 여부를 나타내는 속성입니다.
 
 ## returnUrl
 
@@ -74,6 +76,16 @@ val MediaItem.uri: Uri?
 |[android.net.Uri](https://developer.android.com/reference/android/net/Uri)?| 미디어 아이템의 주소 | 불가능 |
 
 미디어 아이템에 따라 로컬 주소가 나올 수도 있고, 웹 주소도 나올 수 있습니다.
+
+## useBookmarkCallback
+
+```kotlin
+val MediaItem.useBookmarkCallback: Boolean
+```
+
+| 타입 | 설명 | 설정 |
+|:----:|---|:---:|
+|Boolean|북마크 콜백 사용| 불가능 |
 
 <br>
 
