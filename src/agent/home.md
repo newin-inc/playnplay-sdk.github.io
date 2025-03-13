@@ -20,7 +20,7 @@ async function launchAgent(type, mediaItemOrUrl, options);
 ||||
 |type|[LaunchType](#launchtype)|실행 타입|
 |mediaItemOrUrl|[MediaItem](#mediaitem) \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| string|재생 / 다운로드 항목 정보|
-|options|[Options](#options) \| undefined|플레이어 높이, 너비 등 옵션|
+|options|[Options](#options) \| null|플레이어 높이, 너비 등 옵션|
 
 [미디어 아이템](#mediaitem)이나 미디어 주소를 사용하여 플레이어를 실행시킬 수 있습니다. 이때 사용 목적에 따라 [타입](#launchtype)을 설정할 수 있습니다.
 
@@ -71,29 +71,29 @@ const LaunchType = {
 ```javascript
 {
     "url": string | URL, 
-    "seekable": boolean | undefined, 
-    "returnUrl": string | URL | undefined, 
-    "startTime": number | StartTime | undefined,
-    "drm": DRM | undefined, 
-    "subtitles": [Subtitle] | undefined, 
-    "metadata": Metadata | undefined,
-    "clipping": Clipping | undefined,
-    "useBookmarkCallback": boolean | undefined
+    "seekable": boolean | null, 
+    "returnUrl": string | URL | null, 
+    "startTime": number | StartTime | null,
+    "drm": DRM | null, 
+    "subtitles": [Subtitle] | null, 
+    "metadata": Metadata | null,
+    "clipping": Clipping | null,
+    "useBookmarkCallback": boolean | null
 }
 ```
 
 |이름|타입|설명|
 ||||
 |url| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) |  미디어 URL|
-|drm| [DRM](#drm) \| undefined| [DRM](#drm) 설정 (옵션)|
-|subtitles|\[[Subtitle](#subtitle)\] \| undefined| 자막 설정 (옵션)|
-|metadata|[Metadata](#metadata) \| undefined| 메타데이터 설정 (옵션)|
-|clipping|[Clipping](#clipping) \| undefined| 미디어 클리핑 설정 (옵션)|
-|returnUrl| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| undefined | 리턴 URL  (옵션)|
-|seekable| boolean \| undefined| 탐색(Seek) 기능을 허용 여부  (옵션, 기본값: true)|
-|disablePlaybackRate| boolean \| undefined| 배속 기능을 허용 여부  (옵션, 기본값: false)|
-|startTime| number \| [StartTime](#starttime) \| undefined| 재생 시작 시간 설정  (옵션)|
-|useBookmarkCallback| boolean \| undefined| 북마크 콜백 URL 사용 (옵션, 기본값: false)<br /><p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><td>true</td><td>[GetBookmarks](../callback-url/get-bookmarks.html), [UpdateBookmarks](../callback-url/update-bookmarks.html) Callback 사용</td></tr><tr><td>false</td><td>PlaynPlay 서비스에서 제공하는 북마크 불러오기 저장 방식 사용</td></tr></tbody></table>|
+|drm| [DRM](#drm) \| null| [DRM](#drm) 설정 (옵션)|
+|subtitles|\[[Subtitle](#subtitle)\] \| null| 자막 설정 (옵션)|
+|metadata|[Metadata](#metadata) \| null| 메타데이터 설정 (옵션)|
+|clipping|[Clipping](#clipping) \| null| 미디어 클리핑 설정 (옵션)|
+|returnUrl| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| null | 리턴 URL  (옵션)|
+|seekable| boolean \| null| 탐색(Seek) 기능을 허용 여부  (옵션, 기본값: true)|
+|disablePlaybackRate| boolean \| null| 배속 기능을 허용 여부  (옵션, 기본값: false)|
+|startTime| number \| [StartTime](#starttime) \| null| 재생 시작 시간 설정  (옵션)|
+|useBookmarkCallback| boolean \| null| 북마크 콜백 URL 사용 (옵션, 기본값: false)<br /><p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><td>true</td><td>[GetBookmarks](../callback-url/get-bookmarks.html), [UpdateBookmarks](../callback-url/update-bookmarks.html) Callback 사용</td></tr><tr><td>false</td><td>PlaynPlay 서비스에서 제공하는 북마크 불러오기 저장 방식 사용</td></tr></tbody></table>|
 
 ## DRM 
 
@@ -101,8 +101,8 @@ const LaunchType = {
 {
     "appId": string,
     "userId": string,
-    "userData": object | undefined,
-    "offlineAccessPeriod": number | undefined
+    "userData": object | null,
+    "offlineAccessPeriod": number | null
 }
 ```
 
@@ -110,8 +110,8 @@ const LaunchType = {
 ||||
 | appId | string | App 아이디 |
 | userId | string | 사용자 아이디 |
-| userData | object \| undefined | 고객사의 필요에 따라 Callback URL에 전달할 데이터 (옵션)|
-| offlineAccessPeriod | number \| undefined | 다운로드 컨텐츠의 오프라인 재생 기한 설정<br>(옵션, 단위: 초)<p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><th>undefined</th><th>제한없이 재생 가능</th></tr><tr><th>0</th><th>오프라인 재생 권한 없음</th></tr><tr><th>n</th><th>n초까지 재생 가능</th></tr></tbody></table>|
+| userData | object \| null | 고객사의 필요에 따라 Callback URL에 전달할 데이터 (옵션)|
+| offlineAccessPeriod | number \| null | 다운로드 컨텐츠의 오프라인 재생 기한 설정<br>(옵션, 단위: 초)<p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><th>null</th><th>제한없이 재생 가능</th></tr><tr><th>0</th><th>오프라인 재생 권한 없음</th></tr><tr><th>n</th><th>n초까지 재생 가능</th></tr></tbody></table>|
 
 [미디어 아이템](#mediaitem)을 구성할 때, 위와 같은 구성 요소를 포함하는 DRM 설정을 추가할 수 있습니다.
 
@@ -120,18 +120,18 @@ const LaunchType = {
 ```javascript
 {
     "url": string | URL,
-    "language": string | undefined,
-    "label": string | undefined,
-    "mode": "autoSelect" | "show" | "hidden" | undefined
+    "language": string | null,
+    "label": string | null,
+    "mode": "autoSelect" | "show" | "hidden" | null
 }
 ```
 
 |이름|타입|설명|
 ||||
 |url|string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)|자막 URL|
-|language| string \| undefined | 자막 언어 (옵션)|
-|label| string \| undefined | 자막 타이틀 (옵션)|
-|mode| string \| undefined | 자막 선택 모드<br>(옵션, 기본값: "autoSelect")<p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><th>autoSelect</th><th>자동 선택</th></tr><tr><th>show</th><th>자막 보이기</th></tr><tr><th>hidden</th><th>자막 숨기기</th></tr></tbody></table>|
+|language| string \| null | 자막 언어 (옵션)|
+|label| string \| null | 자막 타이틀 (옵션)|
+|mode| string \| null | 자막 선택 모드<br>(옵션, 기본값: "autoSelect")<p><table><thead><tr><th>값</th><th>설명</th></tr></thead><tbody><tr><th>autoSelect</th><th>자동 선택</th></tr><tr><th>show</th><th>자막 보이기</th></tr><tr><th>hidden</th><th>자막 숨기기</th></tr></tbody></table>|
 
 [미디어 아이템](#mediaitem)을 구성할 때, 위와 같은 요소를 포함하는 자막을 추가할 수 있습니다.
 
@@ -140,30 +140,30 @@ const LaunchType = {
 ```javascript
 {
     "value": number,
-    "syncedAt": Date | undefined
+    "syncedAt": Date | null
 }
 ```
 
 |이름|타입|설명|
 ||||
 | value | number | 시작 시간 값 (초) |
-| syncedAt | Date \| undefined |  시작 시간이 업데이트된 시간 (옵션)<br /> 설정한 시작 시간과 오프라인에 저장된 최근 저장된 재생 시간 중 가장 최근의 값을 선택하기 위한 목적 |
+| syncedAt | Date \| null |  시작 시간이 업데이트된 시간 (옵션)<br /> 설정한 시작 시간과 오프라인에 저장된 최근 저장된 재생 시간 중 가장 최근의 값을 선택하기 위한 목적 |
 
 ## Metadata 
 
 ```javascript
 {
-    "title": string | undefined,
-    "artworkUrl": string | URL | undefined,
-    "downloadPath": string | undefined
+    "title": string | null,
+    "artworkUrl": string | URL | null,
+    "downloadPath": string | null
 }
 ```
 
 |이름|타입|설명|
 ||||
-|title | string \| undefined | 모바일 플레이어 타임바에 표시되는 타이틀|
-|artworkUrl| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| undefined | artwork URL (옵션)|
-|downloadPath | string \| undefined | 다운로드 파일의 경로 표시 값 <br>[타입](#launchtype)이 LaunchType.DOWNLOAD의 경우 설정|
+|title | string \| null | 모바일 플레이어 타임바에 표시되는 타이틀|
+|artworkUrl| string \| [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) \| null | artwork URL (옵션)|
+|downloadPath | string \| null | 다운로드 파일의 경로 표시 값 <br>[타입](#launchtype)이 LaunchType.DOWNLOAD의 경우 설정|
 
 [미디어 아이템](#mediaitem)을 구성할 때, 메타데이터를 추가할 수 있습니다.
 
@@ -172,7 +172,7 @@ const LaunchType = {
 ```javascript
 {
     "startTime": number,
-    "endTime": number | undefined
+    "endTime": number | null
 }
 ```
 
@@ -181,14 +181,14 @@ const LaunchType = {
 ```javascript
 {
     "pos": number,
-    "title": string | undefined
+    "title": string | null
 }
 ```
 
 |이름|타입|설명|
 ||||
 |pos | number | 북마크 시간 (초) (필수)|
-|title | string \| undefined | 북마크 제목 (옵션: 지정하지 않으면 'Untitled')|
+|title | string \| null | 북마크 제목 (옵션: 지정하지 않으면 'Untitled')|
 
 미디어 항목을 사용자 지정 시작 및 끝 위치로 잘라냅니다. 
 [미디어 아이템](#mediaitem)을 구성할 때, 클리핑을 추가할 수 있습니다.
@@ -197,15 +197,15 @@ const LaunchType = {
 
 ```javascript
 {
-    "height": number | undefined,
-    "width": number | undefined
+    "height": number | null,
+    "width": number | null
 }
 ```
 
 |이름|타입|설명|
 ||||
-|height| number \| undefined| 플레이어의 높이 |
-|width| number \| undefined || 플레이어의 너비 |
+|height| number \| null| 플레이어의 높이 |
+|width| number \| null || 플레이어의 너비 |
 
 미디어 플레이어의 크기를 설정할 수 있습니다. [사용 예제](#사용-예제-동영상-재생)를 참고하세요.
 
@@ -214,9 +214,9 @@ const LaunchType = {
 ```javascript
 {
     "platform": string,
-    "platformVersion": string | undefined,
-    "architecture": string | undefined,
-    "model": string | undefined
+    "platformVersion": string | null,
+    "architecture": string | null,
+    "model": string | null
 }
 ```
 
