@@ -1,3 +1,23 @@
+# Agent 설정
+```javascript
+const PLAYNPLAY_CONFIG = {
+    "minVersion": "latest" | "1.x.x"
+};
+```
+
+|속성|타입|설명|참고|
+|||||
+|minVersion|string \| null|PlaynPlay 앱의 최소 버전|최소 버전 이상의 버전은 업데이트 알림을 하지 않습니다.|
+
+참고: 
+스크립트 추가시 'agent.js' 또는 'agent.min.js' 보다 먼저 추가해야합니다.
+
+
+```html
+<script type="text/javascript" src="https://설정 값을 저장한 파일 경로/playnplay_config.js">
+<script type="text/javascript" src="https://app.playnplay.com/modules/agent.min.js">
+```
+
 # Agent 실행
 
 플레이어를 실행시켜 DRM 패키징 된 미디어 파일을 재생 및 다운로드 할 수 있습니다. 
