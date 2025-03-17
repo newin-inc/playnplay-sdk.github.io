@@ -1,6 +1,6 @@
 # Agent 설정
 ```javascript
-const PLAYNPLAY_CONFIG = {
+var PLAYNPLAY_CONFIG = {
     "minVersion": "latest" | "1.x.x"
 };
 ```
