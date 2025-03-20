@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2025.03.20.](https://app.playnplay.com/sdks/2025-03-20/NPlayerSDK-iOS.zip)|<ul><li>[MediaItem](../struct/media-item/home.md)에 [disablePlaybackRate](../struct/media-item/home.html#disablePlaybackRate) 추가</li></ul>|
 |[2025.03.07.](https://app.playnplay.com/sdks/2025-03-07/NPlayerSDK-iOS.zip)|<ul><li>[MediaItem](../struct/media-item/home.md)에 [useBookmarkCallback](../struct/media-item/home.html#usebookmarkcallback) 추가</li></ul>|
 |[2025.02.27.](https://app.playnplay.com/sdks/2025-02-26/NPlayerSDK-iOS.zip)|<ul><li>[BookmarkItem](../struct/bookmark-item/home.md) 추가</li></ul>|
 |[2025.02.05.](https://app.playnplay.com/sdks/2025-02-05/NPlayerSDK-iOS.zip)|<ul><li>다운로드된 파일 이름에 일부 특수 문자가 포함되어있을 경우 재생되지 않는 문제 수정</li></ul>|
