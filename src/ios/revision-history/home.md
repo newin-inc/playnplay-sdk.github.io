@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2025.03.31.](https://app.playnplay.com/sdks/2025-03-31/NPlayerSDK-iOS.zip)|<ul><li>[MediaPlayerBaseViewController](../class/media-player-base-view-controller/home.md) 추가</li></ul><ul><li>[MediaPlayer.startScrubbing](../class/media-player/home.md#startscrubbingpositionfast) 추가</li></ul><ul><li>[MediaPlayer.updateScrubbing](../class/media-player/home.md#updatescrubbingposition) 추가</li></ul><ul><li>[MediaPlayer.stopScrubbing](../class/media-player/home.md#stopscrubbingposition) 추가</li></ul><ul><li>[MediaPlayer.subtitleTextFractionPosition](../class/media-player/home.md#subtitletextfractionposition) 추가</li></ul><ul><li>[MediaPlayer.subtitleTextPixelPosition](../class/media-player/home.md#subtitletextpixelposition) 추가</li></ul>|
 |[2025.03.20.](https://app.playnplay.com/sdks/2025-03-20/NPlayerSDK-iOS.zip)|<ul><li>[MediaItem](../struct/media-item/home.md)에 [disablePlaybackRate](../struct/media-item/home.html#disablePlaybackRate) 추가</li></ul>|
 |[2025.03.07.](https://app.playnplay.com/sdks/2025-03-07/NPlayerSDK-iOS.zip)|<ul><li>[MediaItem](../struct/media-item/home.md)에 [useBookmarkCallback](../struct/media-item/home.html#usebookmarkcallback) 추가</li></ul>|
 |[2025.02.27.](https://app.playnplay.com/sdks/2025-02-26/NPlayerSDK-iOS.zip)|<ul><li>[BookmarkItem](../struct/bookmark-item/home.md) 추가</li></ul>|

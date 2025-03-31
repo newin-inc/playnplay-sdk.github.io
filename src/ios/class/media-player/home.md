@@ -530,15 +530,40 @@ var subtitleDisplayPosition: SubtitleDisplayPosition { get set }
 참고: <a href="../../enum/media-player-subtitle-display-position/home.md">SubtitleDisplayPosition</a>
 </div>
 
-## subtitleTextSize
+## subtitleTextFractionPosition
 
 ```swift
- var subtitleTextSize: Double { get set }
+ var subtitleTextFractionPosition: CGFloat { get set }
+```
+
+|타입|설명|설정|기본값|
+|:--:|--|:--:|:--:|
+|Double|자막 텍스트 위치|가능|1|
+
+현재 미디어의 자막 텍스트 위치를 비율 단위로 나타내는 속성입니다. 
+이 속성은 화면에서 자막이 배치될 위치를 비율로 표현하며, 값의 범위는 0.0에서 1.0 사이입니다. 기본값은 1.0으로, 자막이 화면의 맨 아래에 위치함을 의미합니다.
+
+## subtitleTextPixelPosition
+
+```swift
+ var subtitleTextPixelPosition: CGFloat { get set }
 ```
 
 |타입|설명|설정|
 |:--:|--|:--:|
-|Double|자막 텍스트 크기|가능|
+|Double|자막 텍스트 위치|가능|
+
+현재 미디어의 자막 텍스트 위치를 픽셀 단위로 나타내는 속성입니다.
+
+## subtitleTextSize
+
+```swift
+ var subtitleTextSize: SubtitleTextSize { get set }
+```
+
+|타입|설명|설정|
+|:--:|--|:--:|
+|[SubtitleTextSize](../../enum/media-player-subtitle-text-size/home.md)|자막 텍스트 크기|가능|
 
 현재 미디어의 자막 텍스트 크기를 나타내는 속성입니다.
 
@@ -828,6 +853,14 @@ func removeEventListener(_ listener: MediaPlayer.EventListener)
 
 [addEventListener(_)](#addeventlistener_)로 추가된 [이벤트 리스너](../../protocol/event-listeners/home.md)를 제거하기 위한 메서드입니다.
 
+## resumePlayback()
+
+```swift
+func resumePlayback()
+```
+
+[suspendPlayback](#suspendplayback) 호출로 인한 일시 정지된 재생을 재기합니다.
+
 ## seekBack()
 
 ```swift
@@ -940,6 +973,20 @@ func startPictureInPicture()
 
 화면 속 화면 모드를 시작하는 메서드입니다.
 
+## startScrubbing(position:fast:)
+
+```swift
+func startScrubbing(position: Duration, fast: Bool = false)
+```
+
+|파라미터|타입|설명|필수|
+|:--:|:--:|--|:--:|
+|position|[Duration](../../struct/duration/home.md)|시작 위치|O|
+|fast|Bool|true이면 빠른 이동, false이면 정확한 이동을 합니다.|O|
+
+
+스크러빙을 시작합니다.
+
 ## stop()
 
 ```swift
@@ -955,6 +1002,36 @@ func stopPictureInPicture()
 ```
 
 화면 속 화면 모드를 종료하는 메서드입니다.
+
+## stopScrubbing(position:)
+
+```swift
+func stopScrubbing(position: Duration)
+```
+|파라미터|타입|설명|필수|
+|:--:|:--:|--|:--:|
+|position|[Duration](../../struct/duration/home.md)|시작 위치|O|
+
+스크러빙을 종료합니다.
+
+## suspendPlayback()
+
+```swift
+func suspendPlayback()
+```
+
+재생을 일시 정지합니다. 다시 재생을 재기하려면 [resumePlayback](#resumeplayback)을 호출합니다.
+
+## updateScrubbing(position:)
+
+```swift
+func updateScrubbing(position: Duration)
+```
+|파라미터|타입|설명|필수|
+|:--:|:--:|--|:--:|
+|position|[Duration](../../struct/duration/home.md)|시작 위치|O|
+
+스크러빙 위치를 갱신합니다.
 
 ## zoomVideo(_)
 

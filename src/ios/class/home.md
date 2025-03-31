@@ -14,9 +14,13 @@
 
 * [MediaPlayer.EventTarget](./event-target/home.md)
 
+<!--
 * [MediaPlayerControlViewController](./media-player-control-view-controller/home.md)
 
 * [MediaPlayerInfoViewController](./media-player-info-view-controller/home.md)
+-->
+
+* [MediaPlayerBaseViewController](./media-player-base-view-controller/home.md)
 
 * [MediaPlayerViewController](./media-player-view-controller/home.md)
 

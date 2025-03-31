@@ -137,12 +137,12 @@ var subtitleDisplayPosition: SubtitleDisplayPosition = .onVideo
 ## subtitleTextPosition
 
 ```swift
-var subtitleTextPosition: Float = 1
+var subtitleTextPosition: CGFloat = 1
 ```
 
 |타입|설명|설정|범위|기본값|
 |:--:|--|:--:|:--:|:--:|
-|Float|자막 위치|가능|0.0~1.0|1.0|
+|CGFloat|자막 위치|가능|0.0~1.0|1.0|
 
 자막 위치를 나타내는 속성입니다. 이 속성은 화면에서 자막이 배치될 위치를 비율로 표현하며, 값의 범위는 0.0에서 1.0 사이입니다. 기본값은 1.0으로, 자막이 화면의 맨 아래에 위치함을 의미합니다.
 
