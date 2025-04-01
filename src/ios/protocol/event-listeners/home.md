@@ -418,6 +418,18 @@ seek 작업이 시작되는 시점, 또는 seeking 값이 false에서 true로 �
 이벤트 핸들러: <a href="../../enum/event-handlers/home.md#seeking">MediaPlayer.EventHandler.seeking</a>
 </div>
 
+## onScrubMove(position: Duration)
+
+```swift
+func onScrubMove(position: Duration)
+```
+
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|position|[Duration](../../struct/duration/home.md)|스크러빙 위치|
+
+스크러빙 위치가 갱신되는 시점에 실행합니다.
+
 ## onScrubStart(position: Duration)
 
 ```swift
@@ -440,18 +452,6 @@ func onScrubStop(position: Duration)
 |position|[Duration](../../struct/duration/home.md)|스크러빙 위치|
 
 스크러빙이 종료되는 시점에 실행합니다.
-
-## onScrubUpdate(position: Duration)
-
-```swift
-func onScrubUpdate(position: Duration)
-```
-
-| 파라미터 이름 | 타입 | 설명 |
-|:--:|:--:|:--:|
-|position|[Duration](../../struct/duration/home.md)|스크러빙 위치|
-
-스크러빙 위치가 갱신되는 시점에 실행합니다.
 
 ## onTimeUpdate(position:)
 
