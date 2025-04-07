@@ -65,6 +65,12 @@ override fun onDestroy() {
 
 # 속성
 
+## allowsPictureInPicturePlayback
+
+```kotlin
+var allowsPictureInPicturePlayback: Boolean
+```
+
 ## allowsCellularAccess
 
 ```kotlin
@@ -80,7 +86,7 @@ var allowsCellularAccess: Boolean
 ## audioTracks
 
 ```kotlin
-val Player.audioTracks: List<Track>
+val audioTracks: List<Track>
 ```
 
 | 타입 | 설명 | 설정 |
@@ -176,7 +182,7 @@ var currentTime: Duration
 ## currentWatermarkSettings
 
 ```kotlin
-val Player.currentWatermarkSettings: WatermarkSettings?
+val currentWatermarkSettings: WatermarkSettings?
 ```
 
 | 타입 | 설명 | 설정 |
@@ -266,10 +272,16 @@ val error: PlaybackException?
 <a href="../../class/media-player-exception/home.md">MediaPlayerException</a>
 </div>
 
+## isCaptureAllowed
+
+```kotlin
+val isCaptureAllowed: Boolean
+````
+
 ## isSeekable
 
 ```kotlin
-val Player.isSeekable: Boolean
+val isSeekable: Boolean
 ```
 
 | 타입 | 설명 | 설정 |
@@ -277,6 +289,12 @@ val Player.isSeekable: Boolean
 |Boolean|Seek 기능 사용 가능 여부|불가능|
 
 현재 플레이어에서 Seek 기능을 사용할 수 있는지 여부를 반환하는 속성입니다.
+
+## isScrubbing
+
+```kotlin
+val isScrubbing: Boolean
+```
 
 ## loop
 
@@ -386,6 +404,12 @@ var resizeMode: @ResizeMode Int
 참고: <a href="https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode">AspectRatioFrameLayout.ResizeMode</a>
 </div> -->
 
+## screenBrightness
+
+```kotlin
+var screenBrightness: Float
+````
+
 ## seekBackIncrement
 
 ```kotlin
@@ -428,7 +452,7 @@ val seeking: Boolean
 ## subtitleTracks
 
 ```kotlin
-val Player.subtitleTracks: List<Track>
+val subtitleTracks: List<Track>
 ```
 
 | 타입 | 설명 | 설정 |
@@ -444,7 +468,7 @@ val Player.subtitleTracks: List<Track>
 ## videoTracks
 
 ```kotlin
-val Player.videoTracks: List<Track>
+val videoTracks: List<Track>
 ```
 
 | 타입 | 설명 | 설정 |
@@ -461,10 +485,16 @@ val Player.videoTracks: List<Track>
 
 # 메서드
 
+## beginSeekTo
+
+```kotlin
+fun beginSeekTo(direction: SeekDirection)
+```
+
 ## deselectTrack
 
 ```kotlin
-fun Player.deselectTrack(track: Track)
+fun deselectTrack(track: Track)
 ```
 
 |파라미터|타입|설명|
@@ -479,10 +509,16 @@ fun Player.deselectTrack(track: Track)
 <a href="#selecttrack">selectTrack</a>
 </div>
 
+## endSeekTo
+
+```kotlin
+fun endSeekTo(direction: SeekDirection)
+```
+
 ## enterPictureInPicture
 
 ```kotlin
-fun Player.enterPictureInPicture(activity: Activity, sourceRectHint: Rect? = null)
+fun enterPictureInPicture(activity: Activity, sourceRectHint: Rect? = null)
 ```
 
 |파라미터|타입|설명|
@@ -491,7 +527,7 @@ fun Player.enterPictureInPicture(activity: Activity, sourceRectHint: Rect? = nul
 |sourceRectHint|Rect?|[setSourceRectHint](https://developer.android.com/reference/android/app/PictureInPictureParams.Builder#setSourceRectHint(android.graphics.Rect)) 참고|
 
 ```kotlin
-fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
+fun enterPictureInPicture(activity: Activity, sourceView: View? = null)
 ```
 
 |파라미터|타입|설명|
@@ -673,7 +709,7 @@ fun seekTo(position: Duration, force: Boolean = false)
 ## selectTrack
 
 ```kotlin
-fun Player.selectTrack(track: Track)
+fun selectTrack(track: Track)
 ```
 
 |파라미터|타입|설명|
@@ -689,6 +725,24 @@ fun Player.selectTrack(track: Track)
 <a href="../../class/video-track/home.md">VideoTrack</a><br>
 <a href="#deselecttrack"></a>
 </div>
+
+## startScrubbing
+
+```
+fun startScrubbing(position: Duration)
+```
+
+## stopScrubbing
+
+```
+fun stopScrubbing(position: Duration)
+```
+
+## updateScrubbing
+
+```
+fun updateScrubbing(position: Duration)
+```
 
 ## addEventHandler
 
