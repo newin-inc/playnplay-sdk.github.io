@@ -8,7 +8,7 @@ import com.newin.nplayer.sdk.MediaPlayerBaseFragment
 open class MediaPlayerBaseFragment : Fragment()
 ```
 
-[android.app.Fragment](https://developer.android.com/reference/android/app/Fragment)를 상속한 미디어 플레이어 프레그먼의 기반 클래스입니다.
+[androidx.fragment.app.Fragment](https://developer.android.com/reference/androidx/fragment/app/Fragment)를 상속한 미디어 플레이어 프레그먼의 기반 클래스입니다.
 
 # 속성
 
