@@ -11,8 +11,7 @@ interface MediaPlayer : Player
 미디어 플레이어 인터페이스입니다. 활성화된 미디어 플레이어에 접근하는 방법은 [getMediaPlayer()](../../class/context/home.md#getmediaplayer)를 참고하세요.
 
 <div align="right">
-참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player">androidx.media3.common.Player</a><br>
-<a href="../player/home.md">Player 확장 문서</a>
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player">androidx.media3.common.Player</a>
 </div>
 
 <br>
@@ -77,6 +76,22 @@ var allowsCellularAccess: Boolean
 |Boolean|동영상 재생 시, 셀룰러 데이터 사용 여부| 가능 | true |
 
 동영상을 재생(스트리밍)할 때, 셀룰러 데이터를 사용할 지 여부를 나타내는 속성입니다.
+
+## audioTracks
+
+```kotlin
+val Player.audioTracks: List<Track>
+```
+
+| 타입 | 설명 | 설정 |
+|:----:|---|:---:|
+|List\<[Track](../../class/track/home.md)\>|오디오 트랙 목록|불가능|
+
+현재 재생 중인 미디어의 오디오 트랙을 가져오는 속성입니다.
+
+<div align="right">
+참고: <a href="../../class/audio-track/home.md">AudioTrack</a>
+</div>
 
 ## autoplay
 
@@ -158,6 +173,22 @@ var currentTime: Duration
 
 현재 재생 위치를 Duration 단위로 지정합니다.
 
+## currentWatermarkSettings
+
+```kotlin
+val Player.currentWatermarkSettings: WatermarkSettings?
+```
+
+| 타입 | 설명 | 설정 |
+|:----:|---|:---:|
+|[WatermarkSettings](../../class/watermark-settings/home.md)|오디오 트랙 목록|불가능|
+
+현재 워터마크 설정 상태를 반환하는 속성입니다.
+
+<div align="right">
+참고: <a href="../../class/watermark-settings/home.md">WatermarkSettings</a>
+</div>
+
 ## defaultMuted
 
 ```kotlin
@@ -234,6 +265,18 @@ val error: PlaybackException?
 참고: <a href="https://developer.android.com/reference/kotlin/androidx/media3/common/PlaybackException">androidx.media3.common.PlaybackException</a><br>
 <a href="../../class/media-player-exception/home.md">MediaPlayerException</a>
 </div>
+
+## isSeekable
+
+```kotlin
+val Player.isSeekable: Boolean
+```
+
+| 타입 | 설명 | 설정 |
+|:----:|---|:---:|
+|Boolean|Seek 기능 사용 가능 여부|불가능|
+
+현재 플레이어에서 Seek 기능을 사용할 수 있는지 여부를 반환하는 속성입니다.
 
 ## loop
 
@@ -327,7 +370,7 @@ var repeatRange: RepeatRange?
 반복 구간 범위를 나타내는 속성입니다.
 null이 아닌 값으로 설정을 했을 경우 해당 구간을 지속해서 반복 재생합니다. start가 설정되어 있지 않을 경우에는 반복 구간의 시작은 미디어의 맨 앞부분이며, end가 설정되어 있지 않을 경우에는 반복 구간의 끝은 미디어의 맨 마지막 부분으로 간주합니다.
 
-## resizeMode
+<!-- ## resizeMode
 
 ```kotlin
 var resizeMode: @ResizeMode Int
@@ -341,7 +384,7 @@ var resizeMode: @ResizeMode Int
 
 <div align="right">
 참고: <a href="https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode">AspectRatioFrameLayout.ResizeMode</a>
-</div>
+</div> -->
 
 ## seekBackIncrement
 
@@ -382,7 +425,81 @@ val seeking: Boolean
 
 <br>
 
+## subtitleTracks
+
+```kotlin
+val Player.subtitleTracks: List<Track>
+```
+
+| 타입 | 설명 | 설정 |
+|:----:|---|:---:|
+|List\<[Track](../../class/track/home.md)\>|자막 트랙 목록|불가능|
+
+현재 재생 중인 미디어의 자막 트랙을 가져오는 속성입니다.
+
+<div align="right">
+참고: <a href="../../class/subtitle-track/home.md">SubtitleTrack</a>
+</div>
+
+## videoTracks
+
+```kotlin
+val Player.videoTracks: List<Track>
+```
+
+| 타입 | 설명 | 설정 |
+|:----:|---|:---:|
+|List\<[Track](../../class/track/home.md)\>|비디오 트랙 목록|불가능|
+
+현재 재생 중인 미디어의 비디오 트랙을 가져오는 속성입니다.
+
+<div align="right">
+참고: <a href="../../class/video-track/home.md">VideoTrack</a>
+</div>
+
+<br>
+
 # 메서드
+
+## deselectTrack
+
+```kotlin
+fun Player.deselectTrack(track: Track)
+```
+
+|파라미터|타입|설명|
+|:--:|:--:|---|
+|track|[Track](../../class/track/home.md)|선택을 해제할 (자막) 트랙|
+
+트랙 선택을 해제하여 비활성화하는 메서드입니다. 자막 트랙만 해제 가능합니다.
+
+<div align="right">
+참고: <a href="../../class/track/home.md">Track</a><br>
+<a href="../../class/subtitle-track/home.md">SubtitleTrack</a><br>
+<a href="#selecttrack">selectTrack</a>
+</div>
+
+## enterPictureInPicture
+
+```kotlin
+fun Player.enterPictureInPicture(activity: Activity, sourceRectHint: Rect? = null)
+```
+
+|파라미터|타입|설명|
+|:--:|:--:|---|
+|activity|Activity|현재 액티비티|
+|sourceRectHint|Rect?|[setSourceRectHint](https://developer.android.com/reference/android/app/PictureInPictureParams.Builder#setSourceRectHint(android.graphics.Rect)) 참고|
+
+```kotlin
+fun Player.enterPictureInPicture(activity: Activity, sourceView: View? = null)
+```
+
+|파라미터|타입|설명|
+|:--:|:--:|---|
+|activity|Activity|현재 액티비티|
+|sourceView|View?|현재 뷰|
+
+화면 속 화면 모드로 전환하는 메서드입니다.
 
 ## fastSeek
 
@@ -553,6 +670,26 @@ fun seekTo(position: Duration, force: Boolean = false)
 
 입력된 시간 위치로 이동하기 위한 메서드입니다.
 
+## selectTrack
+
+```kotlin
+fun Player.selectTrack(track: Track)
+```
+
+|파라미터|타입|설명|
+|:--:|:--:|---|
+|track|[Track](../../class/track/home.md)|활성화 할 (오디오,비디오,자막)트랙|
+
+트랙을 선택하여 활성화하는 메서드입니다.
+
+<div align="right">
+참고: <a href="../../class/track/home.md">Track</a><br>
+<a href="../../class/audio-track/home.md">AudioTrack</a><br>
+<a href="../../class/subtitle-track/home.md">SubtitleTrack</a><br>
+<a href="../../class/video-track/home.md">VideoTrack</a><br>
+<a href="#deselecttrack"></a>
+</div>
+
 ## addEventHandler
 
 ```kotlin
@@ -579,29 +716,29 @@ fun removeEventHandler(handler: EventHandler)
 
 [addEventHandler()](#addeventhandler)로 추가된 [이벤트 핸들러](../../class/event-handlers/home.md)를 제거하기 위한 메서드입니다.
 
-## addEventListener
+## addListener
 
 ```kotlin
-fun addEventListener(listener: EventListener)
+fun addListener(listener: MediaPlayer.Listener)
 ```
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|listener|[EventListener](../event-listeners/home.md)|추가할 [이벤트 리스너](../event-listeners/home.md)|
+|listener|[MediaPlayer.Listener](../event-listeners/home.md)|추가할 [이벤트 리스너](../event-listeners/home.md)|
 
-[이벤트 리스너](../event-listeners/home.md)를 추가하기 위한 메서드입니다. 이벤트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener()](#removeeventlistener) 메서드를 사용해서 제거하세요.
+[이벤트 리스너](../event-listeners/home.md)를 추가하기 위한 메서드입니다. 이벤트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeListener()](#removelistener) 메서드를 사용해서 제거하세요.
 
-## removeEventListener
+## removeListener
 
 ```kotlin
-fun removeEventListener(listener: EventListener)
+fun removeListener(listener: MediaPlayer.Listener)
 ```
 
 |파라미터|타입|설명|
 |:--:|:--:|---|
-|listener|[EventListener](../event-listeners/home.md)|제거할 [이벤트 리스너](../event-listeners/home.md)|
+|listener|[MediaPlayer.Listener](../event-listeners/home.md)|제거할 [이벤트 리스너](../event-listeners/home.md)|
 
-[addEventListener()](#addeventlistener)로 추가된 [이벤트 리스너](../event-listeners/home.md)를 제거하기 위한 메서드입니다.
+[addListener()](#addlistener)로 추가된 [이벤트 리스너](../event-listeners/home.md)를 제거하기 위한 메서드입니다.
 
 <br>
 

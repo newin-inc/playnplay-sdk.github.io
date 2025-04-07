@@ -26,16 +26,16 @@ dependencies {
 
 ```kotlin
 dependencies {
-    implementation("androidx.media3:media3-ui:1.5.1")
-    implementation("androidx.media3:media3-session:1.5.1")
-    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.5.1")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.5")
-    implementation("androidx.navigation:navigation-compose:2.8.5")
+    implementation("androidx.media3:media3-ui:1.6.0")
+    implementation("androidx.media3:media3-session:1.6.0")
+    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.6.0")
+    implementation("androidx.fragment:fragment-ktx:1.8.6")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.9")
+    implementation("androidx.navigation:navigation-compose:2.8.9")
     implementation("androidx.room:room-runtime:2.6.1")
-    implementation("com.google.android.material:material:1.12.0")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 	implementation("net.java.dev.jna:jna:5.14.0@aar")
-
+    implementation("com.google.android.material:material:1.12.0")
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }
 ```
@@ -52,11 +52,11 @@ dependencies {
 android {
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
-		sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+		sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
- 		jvmTarget = "1.8"
+ 		jvmTarget = "11"
     }
 }
 ```

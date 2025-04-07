@@ -1,12 +1,20 @@
-# EventListener
+# MediaPlayer.Listener
 
 ```kotlin
-import com.newin.nplayer.sdk.EventListener
+import com.newin.nplayer.sdk.MediaPlayer.Listener
 ```
 
-EventListener는 이벤트 처리를 위한 인터페이스로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 [메서드](#메서드)를, 사용 방법은 [addEventListener()](../media-player/home.md#addeventlistener)를 참고하시면 됩니다. 이벤트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeEventListener()](../media-player/home.md#removeeventlistener) 메서드를 사용해서 제거하세요.<br>
+```kotlin
+interface MediaPlayer.Listener : Player.Listener
+```
+
+MediaPlayer.Listener는 이벤트 처리를 위한 인터페이스로, 위와 같은 메서드를 제공합니다. 각각 메서드에 대한 설명은 [메서드](#메서드)를, 사용 방법은 [addListener()](../media-player/home.md#addlistener)를 참고하시면 됩니다. 이벤트 리스너를 추가한 후, 해당 이벤트 리스너가 더 이상 필요 없을 때는 반드시 [removeListener()](../media-player/home.md#removelistener) 메서드를 사용해서 제거하세요.<br>
 Player에 이미 존재하는 이벤트 리스너일 경우에는, 안드로이드 SDK는 이벤트 핸들러만 제공합니다.<br>
 이벤트 리스너를 대신하여 사용 방법에 따라서 [이벤트 핸들러](../../class/event-handlers/home.md)를 사용하여 이벤트 처리를 할 수 있습니다. 이벤트 핸들러에서 사용되는 파라미터는 이벤트 리스너의 파라미터와 동일합니다. 이벤트 핸들러의 사용 방법은 [addEventHandler()](../media-player/home.md#addeventhandler)와 [클래스](../../class/event-handlers/home.md#클래스)를 참고하시면 됩니다.
+
+<div align="right">
+참고: <a href="https://developer.android.com/reference/androidx/media3/common/Player.Listener">androidx.media3.common.Player.Listener</a><br>
+</div>
 
 <br>
 
@@ -226,7 +234,7 @@ fun onRepeatRangeChange(repeatRange: MediaPlayer.RepeatRange?)
 참고: <a href="../../class/media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
 
-## onResizeModeChange
+<!-- ## onResizeModeChange
 
 ```kotlin
 fun onResizeModeChange(mode: @AspectRatioFrameLayout.ResizeMode Int)
@@ -241,7 +249,7 @@ fun onResizeModeChange(mode: @AspectRatioFrameLayout.ResizeMode Int)
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#resizemodechange">ResizeModeChange</a><br>
 참고: <a href="https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode">AspectRatioFrameLayout.ResizeMode</a>
-</div>
+</div> -->
 
 ## onSeeked
 
@@ -344,3 +352,42 @@ fun onWaiting()
 <div align="right">
 이벤트 핸들러: <a href="../../class/event-handlers/home.md#waiting">Waiting</a>
 </div>
+
+## onScrubStart
+
+```kotlin
+fun onScrubStart(position: Duration)
+```
+
+```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|스크러빙 위치|
+
+스크러빙이 시작되는 시점에 실행합니다.
+
+## onScrubMove
+
+```kotlin
+fun onScrubMove(position: Duration)
+```
+
+```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|스크러빙 위치|
+
+스크러빙 위치가 갱신되는 시점에 실행합니다.
+
+## onScrubMove
+
+```kotlin
+fun onScrubStop(position: Duration)
+```
+
+```
+| 파라미터 이름 | 타입 | 설명 |
+|:--:|:--:|:--:|
+|position|[java.time.Duration](https://developer.android.com/reference/java/time/Duration)|스크러빙 위치|
+
+스크러빙이 종료되는 시점에 실행합니다.

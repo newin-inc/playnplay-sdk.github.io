@@ -288,7 +288,7 @@ data class RepeatRangeChange(val listener: (MediaPlayer.RepeatRange?) -> Unit) :
 참고: <a href="../media-player-repeat-range/home.md">MediaPlayer.RepeatRange</a>
 </div>
 
-## ResizeModeChange
+<!-- ## ResizeModeChange
 
 ```kotlin
 data class ResizeModeChange(val listener: (@AspectRatioFrameLayout.ResizeMode Int) -> Unit) : EventHandler()
@@ -298,7 +298,7 @@ data class ResizeModeChange(val listener: (@AspectRatioFrameLayout.ResizeMode In
 |:--:|:--:|
 |@[ResizeMode](https://developer.android.com/reference/androidx/media3/ui/AspectRatioFrameLayout.ResizeMode) Int|화면의 크기 상태|
 
-화면 크기 조절을 하는 시점에 사용하기 위한 핸들러입니다.
+화면 크기 조절을 하는 시점에 사용하기 위한 핸들러입니다. -->
 
 <div align="right">
 이벤트 리스너: <a href="../../interface/event-listeners/home.md#onresizemodechange">onResizeModeChange</a><br>
