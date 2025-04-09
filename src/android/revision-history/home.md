@@ -2,7 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
-|[2025.04.07.](https://app.playnplay.com/sdks/2025-04-07/NPlayerSDK-android.zip)|<ul><li>[MediaPlayerBaseView](../class/media-player-base-view/home.html) 추가</li></ul><ul><li>[MediaPlayerBaseFragment](../class/media-player-base-fragment/home.html) 추가</li></ul><ul><li>[MediaPlayerBaseFragment.Parameters](../class/media-player-base-fragment-parameters/home.html) 추가</li></ul>|
+|[2025.04.07.](https://app.playnplay.com/sdks/2025-04-09/NPlayerSDK-android.zip)|<ul><li>[MediaPlayerBaseView](../class/media-player-base-view/home.html) 추가</li></ul><ul><li>[MediaPlayerBaseFragment](../class/media-player-base-fragment/home.html) 추가</li></ul><ul><li>[MediaPlayerBaseFragment.Parameters](../class/media-player-base-fragment-parameters/home.html) 추가</li></ul>|
 |[2025.03.26.](https://app.playnplay.com/sdks/2025-03-26/NPlayerSDK-android.zip)|<ul><li>[MediaPlayer#duration](../interface/media-player/home.html#duration) 오버플로우 예외 문제 수정</li></ul>|
 |[2025.03.20.](https://app.playnplay.com/sdks/2025-03-20/NPlayerSDK-android.zip)|<ul><li>[MediaItem](../class/media-item/home.md)에 [disablePlaybackRate](../class/media-item/home.html#disableplaybackrate) 추가</li></ul>|
 |[2025.03.07.](https://app.playnplay.com/sdks/2025-03-07/NPlayerSDK-android.zip)|<ul><li>[MediaItem](../class/media-item/home.md)에 [useBookmarkCallback](../class/media-item/home.html#usebookmarkcallback) 추가</li></ul>|

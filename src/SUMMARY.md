@@ -28,7 +28,7 @@
         - [DownloadItem.Progress](./android/class/download-item-progress/home.md)
         - [DownloadManager](./android/class/download-manager/home.md)
         - [EventHandler](./android/class/event-handlers/home.md)
-        - [File](./android/class/file/home.md)
+[//]: #        - [File](./android/class/file/home.md)
         - [FragmentManager](./android/class/fragment-manager/home.md)
         - [MediaItem](./android/class/media-item/home.md)
         - [MediaItem.Builder](./android/class/media-item-builder/home.md)
