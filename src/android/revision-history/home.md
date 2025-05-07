@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2025.05.07.](https://app.playnplay.com/sdks/2025-05-07/NPlayerSDK-android.zip)|<ul><li>버그 수정 및 안정성 개선</li></ul>|
 |[2025.04.21.](https://app.playnplay.com/sdks/2025-04-21/NPlayerSDK-android.zip)|<ul><li>버그 수정 및 안정성 개선</li></ul>|
 |[2025.04.07.](https://app.playnplay.com/sdks/2025-04-09/NPlayerSDK-android.zip)|<ul><li>[MediaPlayerBaseView](../class/media-player-base-view/home.html) 추가</li></ul><ul><li>[MediaPlayerBaseFragment](../class/media-player-base-fragment/home.html) 추가</li></ul><ul><li>[MediaPlayerBaseFragment.Parameters](../class/media-player-base-fragment-parameters/home.html) 추가</li></ul>|
 |[2025.03.26.](https://app.playnplay.com/sdks/2025-03-26/NPlayerSDK-android.zip)|<ul><li>[MediaPlayer#duration](../interface/media-player/home.html#duration) 오버플로우 예외 문제 수정</li></ul>|
