@@ -6,6 +6,7 @@
 - [Agent](./agent/home.md)
 - [Desktop](./desktop/home.md)
     - [사용 방법](./desktop/how-to-use/home.md)
+        - [커스텀 페이지](./desktop/how-to-use/custom/home.md)
         - [샘플](./desktop/how-to-use/samples/home.md)
         - [디버깅](./desktop/how-to-use/debugging/home.md)
 
