@@ -13,7 +13,7 @@ playnplay.startService= async (appId, scriptURL, options);
 
 PlaynPlay 보안 서비스를 실행합니다. 개발툴을 사용하려면 반드시 호출해야합니다.
 
-커스텀 페이지와 같은 경로에 'playnplay-service.js'를 생성하고 다음 코드를 추가합니다. (이미 다른 서비스워커를 사용 중이라면 해당 서비스워커에 추가합니다.)
+커스텀 페이지와 같은 경로에 '[playnplay-service.js](https://sample.playnplay.com/test/custom/sample/playnplay-service.js)'를 생성하고 다음 코드를 추가합니다. (이미 다른 서비스워커를 사용 중이라면 해당 서비스워커에 추가합니다.)
 ```javascript
 self.importScripts('https://app.playnplay.com/modules/playnplay-service.js');
 ```
