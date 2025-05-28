@@ -29,7 +29,7 @@ scriptURL이 커스텀 페이지와 다른 경로에 있을 경우 scope를 지�
 
 |이름|타입|설명|
 ||||
-|scope| string | 서비스 등록 스코프 |
+|scope| string \| null | 서비스 등록 스코프 |
 
 ## window: openDevTools()
 
