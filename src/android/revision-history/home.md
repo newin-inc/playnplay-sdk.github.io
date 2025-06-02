@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2025.06.02.](https://app.playnplay.com/sdks/2025-06-02/NPlayerSDK-android.zip)|<ul><li>DownloadManager 개선</li><li>제스쳐 동작 개선</li></ul>|
 |[2025.05.07.](https://app.playnplay.com/sdks/2025-05-12/NPlayerSDK-android.zip)|<ul><li>버그 수정 및 안정성 개선</li></ul>|
 |[2025.05.07.](https://app.playnplay.com/sdks/2025-05-07/NPlayerSDK-android.zip)|<ul><li>중복 다운로드 문제 수정</li><li>버그 수정 및 안정성 개선</li></ul>|
 |[2025.04.21.](https://app.playnplay.com/sdks/2025-04-21/NPlayerSDK-android.zip)|<ul><li>버그 수정 및 안정성 개선</li></ul>|
