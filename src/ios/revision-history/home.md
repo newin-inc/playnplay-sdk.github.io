@@ -2,7 +2,8 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
-|[2025.06.24.](https://app.playnplay.com/sdks/2025-06-24/NPlayerSDK-iOS.zip)|<ul><li>[오프라인 재생 정보 보고](../../callback-url/notify-offline-playback-log.html) 추가</ul>|
+|[2025.06.26.](https://app.playnplay.com/sdks/2025-06-26/NPlayerSDK-iOS.zip)|<ul><li>>버그 수정</li></ul>|
+|[2025.06.24.](https://app.playnplay.com/sdks/2025-06-24/NPlayerSDK-iOS.zip)|<ul><li>[오프라인 재생 정보 보고](../../callback-url/notify-offline-playback-log.html) 추가</li></ul>|
 |[2025.06.11.](https://app.playnplay.com/sdks/2025-06-11/NPlayerSDK-iOS.zip)|<ul><li>오프라인 재생 개선</li></ul>|
 |[2025.04.21.](https://app.playnplay.com/sdks/2025-04-21/NPlayerSDK-iOS.zip)|<ul><li>버그 수정 및 안정성 개선</li></ul>|
 |[2025.03.31.](https://app.playnplay.com/sdks/2025-04-09/NPlayerSDK-iOS.zip)|<ul><li>[MediaPlayerBaseViewController](../class/media-player-base-view-controller/home.md) 추가</li></ul><ul><li>[MediaPlayer.startScrubbing](../class/media-player/home.md#startscrubbingpositionfast) 추가</li></ul><ul><li>[MediaPlayer.updateScrubbing](../class/media-player/home.md#updatescrubbingposition) 추가</li></ul><ul><li>[MediaPlayer.stopScrubbing](../class/media-player/home.md#stopscrubbingposition) 추가</li></ul><ul><li>[MediaPlayer.subtitleTextFractionPosition](../class/media-player/home.md#subtitletextfractionposition) 추가</li></ul><ul><li>[MediaPlayer.subtitleTextPixelPosition](../class/media-player/home.md#subtitletextpixelposition) 추가</li></ul>|
