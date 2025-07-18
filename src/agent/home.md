@@ -31,10 +31,6 @@ var PLAYNPLAY_CONFIG = {
 ```javascript
 playnplay.launch = async (type, mediaItemOrUrl, options)
 ```
-```javascript
-// Deprecated
-async function launchAgent(type, mediaItemOrUrl, options);
-```
 
 |파라미터|타입|설명|
 ||||
@@ -59,19 +55,15 @@ playnplay.download = async (mediaItems)
 ```javascript
 playnplay.getDeviceInfo = async ()
 ```
-```javascript
-// Deprecated
-async function getDeviceInfo();
-```
 출력: [DeviceInfo](#deviceinfo)
 
 브라우저가 실행되고 있는 장치의 정보를 얻어옵니다.
 
 
-## LaunchType
+## playnplay: LaunchType
 
 ```javascript
-const LaunchType = {
+playnplay.LaunchType = {
     Streaming: 'streaming',
     Downloading: 'downloading',
     OpeningPage: 'opening-page'
@@ -84,7 +76,7 @@ const LaunchType = {
 |Downloading|동영상 다운로드|
 |OpeningPage|커스텀 페이지 열기|
 
-[launchAgent()](#launchagent)를 호출할 때, LaunchType.Streaming, LaunchType.Downloading 과 같이 타입으로 사용합니다. [사용 예제](#사용-예제-동영상-재생)를 참고하세요.
+[playnplay.launch()](#playnplay-launch)를 호출할 때, playnplay.LaunchType.Streaming, playnplay.LaunchType.Downloading 과 같이 타입으로 사용합니다. [사용 예제](#사용-예제-동영상-재생)를 참고하세요.
 
 ## MediaItem
 
@@ -257,7 +249,7 @@ const LaunchType = {
             title: "제목입니다."
         }
     };
-    playnplay.launch(LaunchType.Streaming, mediaItem, { width: 900, height: 600 });
+    playnplay.launch(playnplay.LaunchType.Streaming, mediaItem, { width: 900, height: 600 });
 </script>
 ```
 
