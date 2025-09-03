@@ -3,7 +3,7 @@
 ## playnplay: startService()
 
 ```javascript
-playnplay.startService= async (appId, scriptURL, options);
+playnplay.startService = async (appId, scriptURL, options);
 ```
 |이름|타입|설명|
 ||||
@@ -33,17 +33,31 @@ scriptURL이 커스텀 페이지와 다른 경로에 있을 경우 scope를 지�
 
 ## window: openDevTools()
 
+window.openDevTools = ();
+
 개발툴을 엽니다. 
 
 개발 시 디버깅 용도로만 사용하고 프로덕션 환경에 사용하지 않을 것을 권합니다.
 
 ## HTMLMediaElement: open()
 
+HTMLMediaElement.prototype.open = (mediaItem);
+
 |이름|타입|설명|
 ||||
 |mediaItem| [MediaItem](../../../agent/home.md#mediaitem) \| URL \| string | 재생 항목 |
 
 미디어를 엽니다.
+
+## HTMLMediaElement: getBookmarks()
+
+HTMLMediaElement.prototype.getBookmarks = async (): [Bookmark];
+
+|타입|설명|
+|||
+|[Bookmark](../../../agent/home.md#bookmark) | 북마크 |
+
+저장된 북마크 정보를 가져옵니다.
 
 ## 예시
 
@@ -74,3 +88,4 @@ scriptURL이 커스텀 페이지와 다른 경로에 있을 경우 scope를 지�
     </script>
 </body>
 ```
+
