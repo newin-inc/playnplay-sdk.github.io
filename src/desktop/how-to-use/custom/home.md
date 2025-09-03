@@ -63,7 +63,7 @@ HTMLMediaElement.prototype.getBookmarks = async (): Bookmark;
 
 ```javascript
 class Bookmark {
-    get items(): BookmarkItem
+    get items(): [BookmarkItem]
 
     add(bookmark: BookmarkItem)
 
