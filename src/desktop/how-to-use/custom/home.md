@@ -51,13 +51,40 @@ HTMLMediaElement.prototype.open = (mediaItem);
 
 ## HTMLMediaElement: getBookmarks()
 
-HTMLMediaElement.prototype.getBookmarks = async (): [Bookmark];
+HTMLMediaElement.prototype.getBookmarks = async (): Bookmark;
 
 |타입|설명|
 |||
-|[Bookmark](../../../agent/home.md#bookmark) | 북마크 |
+|[Bookmark](#bookmark) | 북마크 |
 
 저장된 북마크 정보를 가져옵니다.
+
+## Bookmark
+
+```javascript
+class Bookmark {
+    get items(): BookmarkItem
+
+    add(bookmark: BookmarkItem)
+
+    removeAt(index: number)
+
+    updateTitle(index: number, title: string)
+};
+```
+## BookmarkItem
+
+```javascript
+{
+    "pos": number,
+    "title": string | null
+}
+```
+
+|이름|타입|설명|
+||||
+|pos | number | 북마크 시간 (초) (필수)|
+|title | string \| null | 북마크 제목 (옵션: 지정하지 않으면 'Untitled')|
 
 ## 예시
 
