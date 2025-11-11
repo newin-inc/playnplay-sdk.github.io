@@ -40,7 +40,7 @@ Authorization: Bearer <Authorization>
 |mediaUrl|string|미디어 URL|
 |position|number|현재 재생 위치 (단위: 밀리초)|
 |duration|number|전체 재생 길이 (단위: 밀리초)|
-|progress|object|현재 세션의 진행 상태<p></p><table><thead><tr><th>이름</th><th>타입</th><th>설명</th></thead><tbody><tr><th>playTime</th><th>number</th><th>재생 시간 (배속 X)</th></tr><tr><th>watchTime</th><th>number</th><th>시청 시간 (배속 O)</th></tr></tbody></table>|
+|progress|object|현재 세션의 진행 상태<p></p><table><thead><tr><th>이름</th><th>타입</th><th>설명</th></thead><tbody><tr><th>playTime</th><th>number</th><th>재생 시간<br/>(비디오 시간 기준, 예: 2배속으로 1초 재생 시 2초)</th></tr><tr><th>watchTime</th><th>number</th><th>시청 시간<br/>(실제 시간 기준, 예: 2배속으로 1초 재생 시 1초)</th></tr></tbody></table>|
 
 ## 반환
 
