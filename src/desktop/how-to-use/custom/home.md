@@ -31,6 +31,14 @@ scriptURL이 커스텀 페이지와 다른 경로에 있을 경우 scope를 지�
 ||||
 |scope| string \| null | 서비스 등록 스코프 |
 
+## playnplay: close()
+
+```javascript
+playnplay.close = ();
+```
+
+PlaynPlay 앱을 종료합니다.
+
 ## window: openDevTools()
 
 window.openDevTools = ();
