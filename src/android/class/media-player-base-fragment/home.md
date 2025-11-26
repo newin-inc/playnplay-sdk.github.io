@@ -43,7 +43,7 @@ val parameters: MediaPlayerBaseFragment.Parameters
 
 | 타입 | 설명 | 설정 |
 |:--:|:--:|:--:|
-|[MediaPlayerBaseFragment.Parameters](../media-player-base-view/home.md)|미디어 플레이어 설정을 담고 있는 객체|불가능|
+|[MediaPlayerBaseFragment.Parameters](../media-player-base-fragment-parameters/home.md)|미디어 플레이어 설정을 담고 있는 객체|불가능|
 
 # 오버라이드 가능한 메서드
 
