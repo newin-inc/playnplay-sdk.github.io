@@ -26,11 +26,11 @@ dependencies {
 
 ```kotlin
 dependencies {
-    implementation("androidx.media3:media3-ui:1.6.0")
-    implementation("androidx.media3:media3-session:1.6.0")
-    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.6.0")
-    implementation("androidx.fragment:fragment-ktx:1.8.6")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.9")
+    implementation("androidx.media3:media3-ui:1.8.0")
+    implementation("androidx.media3:media3-session:1.8.0")
+    implementation("androidx.media3:media3-exoplayer-smoothstreaming:1.8.0")
+    implementation("androidx.fragment:fragment-ktx:1.8.9")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.9.6")
     implementation("androidx.navigation:navigation-compose:2.8.9")
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
