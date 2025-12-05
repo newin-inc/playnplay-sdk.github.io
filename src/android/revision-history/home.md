@@ -2,7 +2,8 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
-|[2025.12.04.](https://app.playnplay.com/sdks/2025-12-04/NPlayerSDK-android.zip)|<ul><li>블루투스 키보드 문제 수정</ul>|
+|[2025.12.05.](https://app.playnplay.com/sdks/2025-12-05/NPlayerSDK-android.zip)|<ul><li>볼륨 키 등 키 입력 관련 문제 수정<li>컨트롤러 자동 숨김’ 등 일부 설정 값이 반영되지 않는 문제 수정</ul>|
+|[2025.12.03.](https://app.playnplay.com/sdks/2025-12-03/NPlayerSDK-android.zip)|<ul><li>블루투스 키보드 문제 수정</ul>|
 |[2025.08.06.](https://app.playnplay.com/sdks/2025-06-24/NPlayerSDK-android.zip)|<ul><li>startMediaPlayerService의 sessionActivity 값이 null일 경우 비정상 종료되는 문제 수정</ul>|
 |[2025.06.24.](https://app.playnplay.com/sdks/2025-06-24/NPlayerSDK-android.zip)|<ul><li>[오프라인 재생 정보 보고](../../callback-url/notify-offline-playback-log.html) 추가</ul>|
 |[2025.06.16.](https://app.playnplay.com/sdks/2025-06-16/NPlayerSDK-android.zip)|<ul><li>백그라운드 다운로드 문제 수정</ul>|
