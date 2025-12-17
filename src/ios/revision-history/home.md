@@ -2,6 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
+|[2025.12.17.](https://app.playnplay.com/sdks/2025-12-17/NPlayerSDK-iOS.zip)|<ul><li>백그라운드 다운로드 실패 처리 개선</li></ul>|
 |[2025.07.18.](https://app.playnplay.com/sdks/2025-07-18/NPlayerSDK-iOS.zip)|<ul><li>녹화 차단 개선</li></ul>|
 |[2025.06.26.](https://app.playnplay.com/sdks/2025-06-26/NPlayerSDK-iOS.zip)|<ul><li>로컬 파일 재생 문제 수정</li></ul>|
 |[2025.06.24.](https://app.playnplay.com/sdks/2025-06-24/NPlayerSDK-iOS.zip)|<ul><li>[오프라인 재생 정보 보고](../../callback-url/notify-offline-playback-log.html) 추가</li></ul>|
