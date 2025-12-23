@@ -2,8 +2,7 @@
 
 | 날짜 | 변경 내용 |
 |:--:|--|
-|[2025.12.23.](https://app.playnplay.com/sdks/2025-12-23/NPlayerSDK-android.zip)|<ul><li>
-MediaPlayerBaseView를 상속 받은 View에서 onPlaybackFinish 호출 되지 않는 문제 수정</ul>|
+|[2025.12.23.](https://app.playnplay.com/sdks/2025-12-23/NPlayerSDK-android.zip)|<ul><li>MediaPlayerBaseView를 상속 받은 View에서 onPlaybackFinish 호출 되지 않는 문제 수정</ul>|
 |[2025.12.22.](https://app.playnplay.com/sdks/2025-12-22/NPlayerSDK-android.zip)|<ul><li>MediaPlayerActivity를 기본 sessionActivity에서 제거</ul>|
 |[2025.12.05.](https://app.playnplay.com/sdks/2025-12-05/NPlayerSDK-android.zip)|<ul><li>볼륨 키 등 키 입력 관련 문제 수정<li>'컨트롤러 자동 숨김' 등 일부 설정 값이 반영되지 않는 문제 수정</ul>|
 |[2025.12.03.](https://app.playnplay.com/sdks/2025-12-03/NPlayerSDK-android.zip)|<ul><li>블루투스 키보드 문제 수정</ul>|
